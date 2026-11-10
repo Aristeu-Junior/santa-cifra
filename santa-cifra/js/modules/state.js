@@ -58,11 +58,21 @@ window.SantaCifra.initDOM = function initDOM() {
     tabHomeBtn: byId('tabHomeBtn'),
     tabArtistsBtn: byId('tabArtistsBtn'),
     tabPlaylistsBtn: byId('tabPlaylistsBtn'),
+    tabCalendarBtn: byId('tabCalendarBtn'),
 
     catalogSection: byId('catalogSection'),
     artistsSection: byId('artistsSection'),
     playlistsSection: byId('playlistsSection'),
+    calendarSection: byId('calendarSection'),
     songViewSection: byId('songViewSection'),
+
+    calTodayBtn: byId('calTodayBtn'),
+    calPrevMonthBtn: byId('calPrevMonthBtn'),
+    calNextMonthBtn: byId('calNextMonthBtn'),
+    calCurrentMonthLabel: byId('calCurrentMonthLabel'),
+    calendarSeasonLabel: byId('calendarSeasonLabel'),
+    calDaysGrid: byId('calDaysGrid'),
+    calDayDetailPanel: byId('calDayDetailPanel'),
 
     heroShowcase: byId('heroShowcase'),
     heroBtnMostUsed: byId('heroBtnMostUsed'),
@@ -233,16 +243,20 @@ window.SantaCifra.switchTab = function switchTab(tabName, opts) {
   dom.tabHomeBtn.classList.toggle('active', tabName === 'home');
   dom.tabArtistsBtn.classList.toggle('active', tabName === 'artists');
   dom.tabPlaylistsBtn.classList.toggle('active', tabName === 'playlists');
+  if (dom.tabCalendarBtn) dom.tabCalendarBtn.classList.toggle('active', tabName === 'calendar');
 
   dom.catalogSection.style.display = tabName === 'home' ? 'block' : 'none';
   dom.artistsSection.style.display = tabName === 'artists' ? 'block' : 'none';
   dom.playlistsSection.style.display = tabName === 'playlists' ? 'block' : 'none';
+  if (dom.calendarSection) dom.calendarSection.style.display = tabName === 'calendar' ? 'block' : 'none';
   dom.songViewSection.style.display = tabName === 'song' ? 'block' : 'none';
 
   if (tabName === 'playlists' && window.SantaCifra.renderPlaylistsView) {
     window.SantaCifra.renderPlaylistsView();
   } else if (tabName === 'artists' && window.SantaCifra.renderArtistsView) {
     window.SantaCifra.renderArtistsView();
+  } else if (tabName === 'calendar' && window.SantaCifra.renderCalendarView) {
+    window.SantaCifra.renderCalendarView();
   } else if (tabName === 'home') {
     if (window.SantaCifra.renderHeroShowcase) window.SantaCifra.renderHeroShowcase();
     if (window.SantaCifra.renderCatalog) window.SantaCifra.renderCatalog();

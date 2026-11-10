@@ -85,6 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.SantaCifra.bindCatalogEvents();
   window.SantaCifra.bindArtistsEvents();
   window.SantaCifra.bindPlaylistsEvents();
+  if (window.SantaCifra.bindCalendarEvents) {
+    window.SantaCifra.bindCalendarEvents();
+  }
   window.SantaCifra.bindSongViewerEvents();
 
   // Modal de Nova Cifra & Tema
