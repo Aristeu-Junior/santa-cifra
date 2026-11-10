@@ -800,18 +800,21 @@ window.SantaCifra = window.SantaCifra || {};
     if (formRegister) formRegister.style.display = view === 'register' ? 'block' : 'none';
     if (formForgot) formForgot.style.display = view === 'forgot' ? 'block' : 'none';
 
-    setTimeout(() => {
-      if (view === 'login') {
-        const inp = document.getElementById('loginEmail');
-        if (inp) inp.focus();
-      } else if (view === 'register') {
-        const inp = document.getElementById('regName');
-        if (inp) inp.focus();
-      } else if (view === 'forgot') {
-        const inp = document.getElementById('forgotEmail');
-        if (inp) inp.focus();
-      }
-    }, 50);
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (!isTouchDevice) {
+      setTimeout(() => {
+        if (view === 'login') {
+          const inp = document.getElementById('loginEmail');
+          if (inp) inp.focus();
+        } else if (view === 'register') {
+          const inp = document.getElementById('regName');
+          if (inp) inp.focus();
+        } else if (view === 'forgot') {
+          const inp = document.getElementById('forgotEmail');
+          if (inp) inp.focus();
+        }
+      }, 50);
+    }
   }
 
   function openAuthDialog(initialView = 'login', message = null) {
@@ -865,14 +868,67 @@ window.SantaCifra = window.SantaCifra || {};
     dlg.showModal();
   }
 
+  let savedScrollY = 0;
+  let isScrollLocked = false;
+
+  function lockBodyScroll() {
+    if (isScrollLocked) return;
+    savedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+    document.body.classList.add('modal-open');
+    document.documentElement.classList.add('modal-open');
+    isScrollLocked = true;
+  }
+
+  function unlockBodyScroll() {
+    if (!isScrollLocked) return;
+    document.body.classList.remove('modal-open');
+    document.documentElement.classList.remove('modal-open');
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+    window.scrollTo(0, savedScrollY);
+    isScrollLocked = false;
+  }
+
+  function setupVisualViewportSync() {
+    if (!window.visualViewport) return;
+    function syncViewport() {
+      const vv = window.visualViewport;
+      const keyboardHeight = Math.max(0, window.innerHeight - vv.height - (vv.offsetTop || 0));
+      document.documentElement.style.setProperty('--keyboard-inset', `${keyboardHeight}px`);
+      document.documentElement.style.setProperty('--visual-viewport-h', `${vv.height}px`);
+    }
+    window.visualViewport.addEventListener('resize', syncViewport);
+    window.visualViewport.addEventListener('scroll', syncViewport);
+    syncViewport();
+  }
+
   function setupModalScrollLock() {
+    setupVisualViewportSync();
+
+    document.addEventListener('focusin', (e) => {
+      if (e.target && e.target.closest && e.target.closest('dialog[open]')) {
+        setTimeout(() => {
+          if (typeof e.target.scrollIntoView === 'function') {
+            e.target.scrollIntoView({ block: 'center', behavior: 'smooth' });
+          }
+        }, 150);
+      }
+    });
+
     if (typeof HTMLDialogElement === 'undefined') return;
     const origShowModal = HTMLDialogElement.prototype.showModal;
     const origClose = HTMLDialogElement.prototype.close;
 
     HTMLDialogElement.prototype.showModal = function () {
-      document.documentElement.classList.add('modal-open');
-      document.body.classList.add('modal-open');
+      lockBodyScroll();
       return origShowModal.apply(this, arguments);
     };
 
@@ -881,8 +937,7 @@ window.SantaCifra = window.SantaCifra || {};
       setTimeout(() => {
         const anyOpen = document.querySelectorAll('dialog[open]').length > 0;
         if (!anyOpen) {
-          document.documentElement.classList.remove('modal-open');
-          document.body.classList.remove('modal-open');
+          unlockBodyScroll();
         }
       }, 30);
       return res;
@@ -893,8 +948,7 @@ window.SantaCifra = window.SantaCifra || {};
         setTimeout(() => {
           const anyOpen = document.querySelectorAll('dialog[open]').length > 0;
           if (!anyOpen) {
-            document.documentElement.classList.remove('modal-open');
-            document.body.classList.remove('modal-open');
+            unlockBodyScroll();
           }
         }, 30);
       }
@@ -905,8 +959,7 @@ window.SantaCifra = window.SantaCifra || {};
         setTimeout(() => {
           const anyOpen = document.querySelectorAll('dialog[open]').length > 0;
           if (!anyOpen) {
-            document.documentElement.classList.remove('modal-open');
-            document.body.classList.remove('modal-open');
+            unlockBodyScroll();
           }
         }, 30);
       }
