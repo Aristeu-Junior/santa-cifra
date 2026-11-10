@@ -1,0 +1,354 @@
+/* ==========================================================================
+   SANTA CIFRA — Song Viewer, Studio Toolbar, Chord Diagrams & Auto-scroll
+   ========================================================================== */
+
+.playlist-queue-bar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  background-color: var(--text-main);
+  color: var(--bg-page);
+  border-radius: var(--radius-md);
+}
+
+.playlist-queue-bar.active {
+  display: flex;
+}
+
+.queue-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.queue-label {
+  opacity: 0.7;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.queue-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.queue-pos {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.song-header {
+  margin-bottom: 16px;
+}
+
+.song-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.song-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.song-main-title {
+  font-family: var(--font-display);
+  font-size: 2.15rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.song-main-composer {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.song-tags-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.meta-pill {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background-color: var(--accent-tint);
+  color: var(--chord-color);
+}
+
+.meta-pill-subtle {
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+}
+
+.meta-pill-liturgica {
+  background-color: rgba(22, 163, 74, 0.14);
+  color: #15803d;
+  border: 1px solid rgba(22, 163, 74, 0.32);
+}
+
+[data-theme="dark"] .meta-pill-liturgica {
+  background-color: rgba(34, 197, 94, 0.16);
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.32);
+}
+
+.meta-pill-popular {
+  background-color: rgba(217, 119, 6, 0.14);
+  color: #b45309;
+  border: 1px solid rgba(217, 119, 6, 0.32);
+}
+
+[data-theme="dark"] .meta-pill-popular {
+  background-color: rgba(245, 158, 11, 0.16);
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.32);
+}
+
+.song-norm-callout {
+  margin-top: 10px;
+  padding: 9px 13px;
+  font-size: 0.78rem;
+  line-height: 1.42;
+  color: var(--text-secondary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--chord-color);
+  border-radius: var(--radius-sm);
+}
+
+.song-norm-callout.callout-liturgica {
+  border-left-color: #16a34a;
+}
+
+.song-norm-callout.callout-popular {
+  border-left-color: #d97706;
+}
+
+/* Studio Toolbar */
+.cifra-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.toolbar-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-tool-btn {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 9px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.icon-tool-btn:hover {
+  background-color: var(--bg-hover);
+}
+
+.icon-tool-btn.active {
+  background-color: var(--text-main);
+  color: var(--bg-page);
+  border-color: var(--text-main);
+}
+
+.key-display {
+  min-width: 36px;
+  height: 34px;
+  padding: 0 8px;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-tint);
+  color: var(--chord-color);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bpm-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.beat-dots {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 4px;
+}
+
+.beat-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--text-muted);
+  opacity: 0.25;
+}
+
+/* Chords Strip */
+.chords-top-bar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 12px 4px;
+  margin-bottom: 14px;
+}
+
+.chord-mini-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  text-align: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease;
+}
+
+.chord-mini-box:hover {
+  border-color: var(--accent);
+}
+
+.chord-mini-title {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--chord-color);
+  margin-bottom: 4px;
+}
+
+/* Cifra Sheet */
+.cifra-container {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.cifra-pre {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-main);
+  white-space: pre;
+}
+
+.chord-token {
+  color: var(--chord-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.chord-token:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.section-label {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.song-bottom-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.rhythm-guide-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.meta-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.rhythm-arrows {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--chord-color);
+  letter-spacing: 0.08em;
+}
+
+/* Floating Auto-scroll Pill */
+.scroll-floating-controller {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 60;
+  background-color: var(--text-main);
+  color: var(--bg-page);
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-dialog);
+}
+
+.scroll-floating-controller button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}

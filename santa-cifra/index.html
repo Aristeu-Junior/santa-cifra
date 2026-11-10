@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#141413">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Santa Cifra">
+  <title>Santa Cifra</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="apple-touch-icon" href="assets/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css?v=8">
+  <link rel="stylesheet" href="css/layout.css?v=8">
+  <link rel="stylesheet" href="css/catalog.css?v=8">
+  <link rel="stylesheet" href="css/playlists.css?v=8">
+  <link rel="stylesheet" href="css/viewer.css?v=8">
+  <link rel="stylesheet" href="css/dialogs.css?v=8">
+</head>
+<body>
+
+  <!-- Barra Superior Compacta com Navegação por Ícones -->
+  <header class="app-header">
+    <div class="header-container">
+      <button type="button" class="logo-area" id="logoArea" aria-label="Início Santa Cifra">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v18"/>
+            <path d="M7 8h10"/>
+          </svg>
+        </span>
+        <span class="logo-title">Santa Cifra</span>
+      </button>
+
+      <!-- Busca Semântica -->
+      <search class="search-container">
+        <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/>
+          <path d="m20 20-3.5-3.5"/>
+        </svg>
+        <input type="search" id="searchInput" class="search-input" placeholder="Buscar música, autor, trecho ou tom..." aria-label="Buscar música, autor, trecho ou tom">
+        <button type="button" class="btn-clear-search" id="btnClearSearch" aria-label="Limpar busca">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6 6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </search>
+
+      <!-- Menu Principal em Ícones -->
+      <nav class="icon-nav" aria-label="Menu principal">
+        <button type="button" class="icon-nav-btn active" id="tabHomeBtn" aria-label="Catálogo de Cifras" title="Catálogo de Cifras">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+          </svg>
+          <span class="sr-only">Cifras</span>
+        </button>
+
+        <button type="button" class="icon-nav-btn" id="tabPlaylistsBtn" aria-label="Pastas e Repertórios" title="Pastas e Repertórios">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span class="icon-badge" id="totalPlaylistsCounter">9</span>
+        </button>
+
+        <button type="button" class="icon-nav-btn" id="btnOpenNewSong" aria-label="Adicionar Cifra" title="Adicionar Cifra">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          <span class="sr-only">Adicionar Cifra</span>
+        </button>
+
+        <a href="santa-cifra.apk" download="SantaCifra.apk" class="icon-nav-btn" id="btnDownloadApk" aria-label="Baixar Aplicativo Android (APK)" title="Baixar Aplicativo Android (APK)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <path d="M12 18h.01"/>
+            <path d="M12 7v6m0 0-2.5-2.5M12 13l2.5-2.5"/>
+          </svg>
+          <span class="sr-only">Baixar APK Android</span>
+        </a>
+
+        <button type="button" class="icon-nav-btn" id="btnToggleTheme" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+          <svg id="themeIconMoon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg id="themeIconSun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none;">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1 class="sr-only">Santa Cifra - Repertório Litúrgico</h1>
+
+    <!-- ========================================================
+         ABA 1: CATÁLOGO E DESTAQUES RÁPIDOS
+    ========================================================= -->
+    <section class="catalog-section" id="catalogSection">
+
+      <!-- Acesso Rápido (Mais Tocadas / Simplificadas) -->
+      <div class="hero-showcase" id="heroShowcase">
+        <div class="hero-top-row">
+          <h2 class="section-heading">Em Destaque</h2>
+          <div class="segmented-control" role="tablist" aria-label="Modo de destaque">
+            <button type="button" class="seg-btn active" id="heroBtnMostUsed" data-hero="mostUsed" title="Mais tocadas nas paróquias">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              <span>Mais Tocadas</span>
+            </button>
+            <button type="button" class="seg-btn" id="heroBtnSimple" data-hero="simple" title="3 a 4 acordes simples">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
+                <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
+                <line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
+              </svg>
+              <span>Simplificadas</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-quick-grid" id="heroQuickGrid"></div>
+      </div>
+
+      <!-- ========================================================
+           SEPARAÇÃO OFICIAL: LITÚRGICAS (MISSA) VS POPULARES (FORA DA MISSA)
+      ========================================================= -->
+      <div class="repertoire-division-block" aria-label="Classificação Litúrgica do Repertório">
+        <div class="repertoire-type-grid" id="repertoireTypeGrid" role="tablist">
+          <button type="button" class="rep-type-card active" data-reptype="all" role="tab" aria-selected="true">
+            <div class="rep-type-header">
+              <span class="rep-type-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+                </svg>
+              </span>
+              <span class="rep-type-title">Todo o Acervo</span>
+              <span class="rep-type-count" id="countRepAll">367</span>
+            </div>
+            <p class="rep-type-desc">Catálogo completo separado e classificado com rigor pastoral.</p>
+          </button>
+
+          <button type="button" class="rep-type-card rep-card-liturgica" data-reptype="liturgica" role="tab" aria-selected="false">
+            <div class="rep-type-header">
+              <span class="rep-type-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M7 7h10"/><circle cx="12" cy="7" r="3"/>
+                </svg>
+              </span>
+              <span class="rep-type-title">Músicas Litúrgicas (Missa)</span>
+              <span class="rep-type-count" id="countRepLiturgica">263</span>
+            </div>
+            <p class="rep-type-desc">Seguem as normas da IGMR e CNBB. Próprias e aprovadas para os ritos da Santa Missa.</p>
+          </button>
+
+          <button type="button" class="rep-type-card rep-card-popular" data-reptype="popular" role="tab" aria-selected="false">
+            <div class="rep-type-header">
+              <span class="rep-type-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </span>
+              <span class="rep-type-title">Músicas Populares (Fora da Missa)</span>
+              <span class="rep-type-count" id="countRepPopular">104</span>
+            </div>
+            <p class="rep-type-desc">Para Grupos de Oração, Encontros, Retiros e Shows (não usadas nos ritos da Missa).</p>
+          </button>
+        </div>
+
+        <!-- Aviso / Regra Litúrgica Contextual -->
+        <div class="repertoire-rule-banner" id="repertoireRuleBanner">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+          <span id="repertoireRuleText">
+            <strong>Ordem e Integridade Litúrgica:</strong> As músicas estão identificadas com selo <strong>Litúrgica · Missa</strong> (fiéis ao Missal Romano/CNBB) ou <strong>Popular · Fora da Missa</strong> (para grupos de oração, encontros e retiros).
+          </span>
+        </div>
+      </div>
+
+      <!-- ========================================================
+           DIAS ESPECÍFICOS, SOLENIDADES E TEMAS DO ANO LITÚRGICO
+      ========================================================= -->
+      <div class="special-days-section" aria-label="Dias Específicos e Solenidades da Igreja">
+        <div class="special-days-header">
+          <span class="special-days-label">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Dias Específicos, Solenidades e Temas da Igreja
+          </span>
+        </div>
+        <div class="special-days-strip" id="specialDaysStrip">
+          <button type="button" class="day-theme-chip active" data-day="all">Todos os Dias</button>
+          <button type="button" class="day-theme-chip" data-day="Domingo de Ramos">Domingo de Ramos</button>
+          <button type="button" class="day-theme-chip" data-day="Semana Santa (Quinta e Sexta)">Semana Santa (Lava-Pés e Paixão)</button>
+          <button type="button" class="day-theme-chip" data-day="Páscoa e Vigília Pascal">Vigília Pascal e Páscoa</button>
+          <button type="button" class="day-theme-chip" data-day="Quaresma e CF">Quaresma e Cinzas</button>
+          <button type="button" class="day-theme-chip" data-day="Natal do Senhor">Natal do Senhor</button>
+          <button type="button" class="day-theme-chip" data-day="Advento">Advento</button>
+          <button type="button" class="day-theme-chip" data-day="Pentecostes">Pentecostes</button>
+          <button type="button" class="day-theme-chip" data-day="Corpus Christi e Trindade">Corpus Christi e Trindade</button>
+          <button type="button" class="day-theme-chip" data-day="Solenidades Marianas">Festas Marianas e Aparecida</button>
+          <button type="button" class="day-theme-chip" data-day="Cristo Rei, Santos e Finados">Cristo Rei, Santos e Finados</button>
+          <button type="button" class="day-theme-chip" data-day="Missa Dominical (Tempo Comum)">Missa Dominical (Tempo Comum)</button>
+          <button type="button" class="day-theme-chip" data-day="Encontros, Retiros e Grupo de Oração">Encontros e Grupo de Oração</button>
+        </div>
+      </div>
+
+      <!-- Barra de Filtros -->
+      <div class="filters-bar">
+        <div class="filters-header-row">
+          <div class="filter-group-title" id="catalogResultsTitle">Repertório</div>
+          <div class="secondary-filters">
+            <button type="button" class="filter-chip-toggle" id="btnOnlySimpleToggle" aria-pressed="false" title="Filtrar músicas de 3 a 4 acordes">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Até 4 acordes</span>
+            </button>
+            <input type="checkbox" id="chkOnlySimple" class="sr-only">
+
+            <select id="artistFilterSelect" class="clean-select" aria-label="Filtrar por intérprete ou autor">
+              <option value="all">Todos os autores e fraternidades (367)</option>
+              <option value="Walmir Alencar">Walmir Alencar / Vida Reluz / Adoração e Vida</option>
+              <option value="Fraternidades">Fraternidades (São João Paulo II, Toca de Assis, O Caminho, Aliança...)</option>
+              <option value="Campanha da Fraternidade">Hinos das Campanhas da Fraternidade (CNBB)</option>
+              <option value="Padre Zezinho">Padre Zezinho, scj</option>
+              <option value="Padre Marcelo Rossi">Padre Marcelo Rossi</option>
+              <option value="Canção Nova">Canção Nova / Jonas Abib / Eugênio / Eliana / Dunga / Salette</option>
+              <option value="Shalom">Comunidade Shalom / Suely Façanha / Davidson Silva / MSH</option>
+              <option value="Frei Gilson">Frei Gilson / Colo de Deus / Thiago Brado / Flávio Vitor Jr.</option>
+              <option value="Anjos">Anjos de Resgate / Rosa de Saron / Celina Borges / Adriana Arydes</option>
+              <option value="Padres e Religiosos">Padres &amp; Irmãs (Fábio de Melo, Manzotti, Alessandro Campos, Kelly Patrícia, Ana Paula...)</option>
+              <option value="Cantores Católicos">Cantores &amp; Bandas (Tony Allysson, Diego Fernandes, Ana Gabriela, Juninho, Banda Dom...)</option>
+              <option value="CNBB">Hinário Litúrgico CNBB / Lecionário / Tradicionais</option>
+            </select>
+
+            <select id="seasonFilterSelect" class="clean-select" aria-label="Filtrar por Tempo Litúrgico">
+              <option value="all">Todos os tempos</option>
+              <option value="Tempo Comum">Tempo Comum</option>
+              <option value="Quaresma">Quaresma / Semana Santa</option>
+              <option value="Páscoa">Páscoa / Pentecostes</option>
+              <option value="Advento">Advento</option>
+              <option value="Natal">Natal</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pills-container" id="pillsContainer">
+          <button type="button" class="pill-filter active" data-moment="all">Todas</button>
+          <button type="button" class="pill-filter" data-moment="Entrada">Entrada</button>
+          <button type="button" class="pill-filter" data-moment="Ato Penitencial">Penitencial</button>
+          <button type="button" class="pill-filter" data-moment="Glória">Glória</button>
+          <button type="button" class="pill-filter" data-moment="Salmo">Salmo</button>
+          <button type="button" class="pill-filter" data-moment="Aclamação ao Evangelho">Aclamação</button>
+          <button type="button" class="pill-filter" data-moment="Ofertório">Ofertório</button>
+          <button type="button" class="pill-filter" data-moment="Santo">Santo</button>
+          <button type="button" class="pill-filter" data-moment="Cordeiro de Deus">Cordeiro</button>
+          <button type="button" class="pill-filter" data-moment="Comunhão">Comunhão</button>
+          <button type="button" class="pill-filter" data-moment="Ação de Graças">Pós-Comunhão</button>
+          <button type="button" class="pill-filter" data-moment="Final">Final</button>
+        </div>
+      </div>
+
+      <!-- Lista de Músicas -->
+      <div class="songs-list" id="songsGrid"></div>
+    </section>
+
+    <!-- ========================================================
+         ABA 2: PASTAS E REPERTÓRIOS
+    ========================================================= -->
+    <section class="playlists-section" id="playlistsSection" style="display: none;">
+      <div class="playlists-layout">
+        <aside class="folders-sidebar" aria-label="Pastas de repertório">
+          <div class="folders-sidebar-header">
+            <h2 class="sidebar-heading">Pastas</h2>
+            <button type="button" class="icon-btn-sm" id="btnOpenNewFolder" aria-label="Criar nova pasta" title="Criar nova pasta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="folders-list" id="foldersList"></ul>
+        </aside>
+
+        <div class="playlist-detail-panel" id="playlistDetailPanel"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         ABA 3: LEITOR DE CIFRA
+    ========================================================= -->
+    <section class="song-view-section" id="songViewSection" style="display: none;">
+
+      <!-- Barra de Execução de Pasta -->
+      <div class="playlist-queue-bar" id="playlistQueueBar">
+        <div class="queue-meta">
+          <span class="queue-label">Repertório</span>
+          <strong id="queueFolderName">Missa de Domingo</strong>
+        </div>
+        <div class="queue-controls">
+          <button type="button" class="icon-tool-btn" id="btnQueuePrev" aria-label="Música anterior" title="Anterior">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/>
+            </svg>
+          </button>
+          <span id="queuePositionText" class="queue-pos">1 / 5</span>
+          <button type="button" class="icon-tool-btn" id="btnQueueNext" aria-label="Próxima música" title="Próxima">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Cabeçalho da Cifra -->
+      <div class="song-header">
+        <div class="song-header-top">
+          <button type="button" class="icon-tool-btn" id="btnBack" aria-label="Voltar ao catálogo" title="Voltar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6"/>
+            </svg>
+          </button>
+
+          <div class="song-header-actions">
+            <button type="button" class="icon-tool-btn" id="btnFavoriteCurrentSong" aria-label="Favoritar cifra" title="Favoritar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+            <button type="button" class="icon-tool-btn" id="btnAddCurrentToFolder" aria-label="Salvar em pasta" title="Salvar em pasta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                <line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="song-title-block">
+          <h2 class="song-main-title" id="songTitle">Título da Música</h2>
+          <div class="song-main-composer" id="songComposer">Autor</div>
+          <div class="song-tags-row">
+            <span class="meta-pill" id="songRepertoireTypeBadge">Litúrgica · Santa Missa</span>
+            <span class="meta-pill" id="songMomentBadge">Comunhão</span>
+            <span class="meta-pill meta-pill-subtle" id="songSpecialDayBadge">Domingo de Ramos</span>
+            <span class="meta-pill meta-pill-subtle" id="songSeasonBadge">Tempo Comum</span>
+          </div>
+          <div class="song-norm-callout" id="songNormCallout"></div>
+        </div>
+      </div>
+
+      <!-- Barra de Ferramentas Musical em Ícones -->
+      <div class="cifra-toolbar">
+        <!-- Simplificar Acordes -->
+        <div class="toolbar-group">
+          <button type="button" class="icon-tool-btn" id="btnToggleSimplify" aria-label="Simplificar acordes" title="Simplificar acordes">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
+              <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
+              <line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Transposição de Tom -->
+        <div class="toolbar-group">
+          <button type="button" class="icon-tool-btn" id="btnTransposeDown" aria-label="Diminuir meio tom" title="Diminuir ½ tom">&minus;</button>
+          <div class="key-display" id="currentKeyDisplay" title="Tom atual">D</div>
+          <button type="button" class="icon-tool-btn" id="btnTransposeUp" aria-label="Aumentar meio tom" title="Aumentar ½ tom">+</button>
+          <button type="button" class="icon-tool-btn" id="btnTransposeReset" aria-label="Restaurar tom original" title="Tom original">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+              <path d="M3 3v5h5"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Seletor de Instrumento -->
+        <div class="toolbar-group">
+          <select id="instrumentSelect" class="clean-select" aria-label="Instrumento">
+            <option value="guitar">Violão</option>
+            <option value="keyboard">Teclado</option>
+            <option value="ukulele">Ukulele</option>
+            <option value="cavaquinho">Cavaquinho</option>
+          </select>
+        </div>
+
+        <!-- Rolagem e Metrônomo -->
+        <div class="toolbar-group">
+          <button type="button" class="icon-tool-btn" id="btnAutoScroll" aria-label="Rolagem automática" title="Rolagem automática">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+          </button>
+          <button type="button" class="icon-tool-btn" id="btnMetronome" aria-label="Metrônomo" title="Metrônomo">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m6 21 4-18h4l4 18Z"/>
+              <path d="m12 15 6-8"/>
+            </svg>
+            <span id="bpmDisplay" class="bpm-num">80</span>
+          </button>
+          <div id="metronomeBeatDots" class="beat-dots" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <!-- Tamanho da Fonte & Impressão -->
+        <div class="toolbar-group">
+          <button type="button" class="icon-tool-btn" id="btnFontDec" aria-label="Diminuir fonte" title="Diminuir fonte">A&minus;</button>
+          <button type="button" class="icon-tool-btn" id="btnFontInc" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+          <button type="button" class="icon-tool-btn" id="btnPrint" aria-label="Imprimir cifra" title="Imprimir">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 6 2 18 2 18 9"/>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grade de Diagramas de Acordes -->
+      <div class="chords-top-bar" id="chordsTopBar"></div>
+
+      <!-- Corpo da Cifra -->
+      <div class="cifra-container">
+        <pre class="cifra-pre" id="cifraPre" tabindex="0"></pre>
+      </div>
+
+      <!-- Rodapé Técnico da Música (Batida e Áudio) -->
+      <div class="song-bottom-meta">
+        <div class="rhythm-guide-card">
+          <span class="meta-label" id="rhythmName">Balada</span>
+          <span class="rhythm-arrows" id="rhythmArrows">↓ ↓ ↑ ↑ ↓ ↑</span>
+        </div>
+
+        <a id="youtubeLink" href="#" target="_blank" rel="noopener noreferrer" class="icon-tool-btn youtube-btn" aria-label="Ouvir referência no YouTube" title="Ouvir no YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Controle Flutuante de Rolagem -->
+  <div class="scroll-floating-controller" id="scrollFloatingController" style="display: none;">
+    <button type="button" id="btnFloatingPlay" aria-label="Pausar ou continuar rolagem">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+      </svg>
+    </button>
+    <button type="button" id="btnFloatingSpeed" aria-label="Velocidade da rolagem">1x</button>
+    <button type="button" id="btnFloatingClose" aria-label="Parar rolagem">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6 6 18M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ========================================================
+       MODAIS NATIVOS <dialog>
+  ========================================================= -->
+
+  <!-- 1. Dialog de Diagrama do Acorde -->
+  <dialog class="app-dialog" id="chordDialog" closedby="any" aria-labelledby="modalChordName">
+    <div class="dialog-header">
+      <h2 id="modalChordName">Acorde</h2>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <div class="chord-modal-grid">
+      <div>
+        <div class="chord-inst-label">Violão</div>
+        <div id="modalGuitarSvg"></div>
+      </div>
+      <div>
+        <div class="chord-inst-label">Teclado</div>
+        <div id="modalKeyboardSvg"></div>
+      </div>
+      <div>
+        <div class="chord-inst-label">Ukulele</div>
+        <div id="modalUkuleleSvg"></div>
+      </div>
+      <div>
+        <div class="chord-inst-label">Cavaquinho</div>
+        <div id="modalCavacoSvg"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 2. Dialog para Salvar em Pasta -->
+  <dialog class="app-dialog" id="addToFolderDialog" closedby="any" aria-labelledby="addToFolderTitle">
+    <div class="dialog-header">
+      <h2 id="addToFolderTitle">Salvar em Pasta</h2>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <p id="addToFolderSongSubtitle" class="dialog-subtitle"></p>
+    <div id="folderCheckboxesContainer" class="folder-checkbox-list"></div>
+    <div class="dialog-inline-create">
+      <input type="text" id="quickFolderNameInput" class="dialog-input" placeholder="Nova pasta...">
+      <button type="button" class="btn-primary-solid" id="btnQuickCreateFolder">Criar</button>
+    </div>
+  </dialog>
+
+  <!-- 3. Dialog para Criar Nova Pasta -->
+  <dialog class="app-dialog" id="newFolderDialog" closedby="any" aria-labelledby="newFolderTitle">
+    <div class="dialog-header">
+      <h2 id="newFolderTitle">Nova Pasta</h2>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <form id="formNewFolder">
+      <div class="form-field">
+        <label for="folderNameInput">Nome</label>
+        <input type="text" id="folderNameInput" class="dialog-input" required placeholder="Ex: Missa Domingo 19h" autofocus>
+      </div>
+      <div class="form-field">
+        <label for="folderDescInput">Observação</label>
+        <input type="text" id="folderDescInput" class="dialog-input" placeholder="Opcional">
+      </div>
+      <div class="dialog-actions">
+        <button type="button" class="btn-ghost" id="btnCancelNewFolder">Cancelar</button>
+        <button type="submit" class="btn-primary-solid">Criar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- 4. Dialog para Cadastrar Nova Cifra -->
+  <dialog class="app-dialog" id="newSongDialog" closedby="any" aria-labelledby="newSongModalTitle">
+    <div class="dialog-header">
+      <h2 id="newSongModalTitle">Adicionar Cifra</h2>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <form id="formNewSong">
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="newTitle">Título</label>
+          <input type="text" id="newTitle" class="dialog-input" required placeholder="Título da música">
+        </div>
+        <div class="form-field">
+          <label for="newComposer">Autor / Intérprete</label>
+          <input type="text" id="newComposer" class="dialog-input" placeholder="Ex: Padre Zezinho">
+        </div>
+      </div>
+
+      <div class="form-row-3">
+        <div class="form-field">
+          <label for="newMoment">Momento</label>
+          <select id="newMoment" class="clean-select">
+            <option value="Entrada">Entrada</option>
+            <option value="Ato Penitencial">Penitencial</option>
+            <option value="Glória">Glória</option>
+            <option value="Salmo">Salmo</option>
+            <option value="Aclamação ao Evangelho">Aclamação</option>
+            <option value="Ofertório">Ofertório</option>
+            <option value="Santo">Santo</option>
+            <option value="Cordeiro de Deus">Cordeiro</option>
+            <option value="Comunhão">Comunhão</option>
+            <option value="Ação de Graças">Pós-Comunhão</option>
+            <option value="Final">Final</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="newSeason">Tempo</label>
+          <select id="newSeason" class="clean-select">
+            <option value="Tempo Comum">Tempo Comum</option>
+            <option value="Advento">Advento</option>
+            <option value="Natal">Natal</option>
+            <option value="Quaresma">Quaresma</option>
+            <option value="Páscoa">Páscoa</option>
+            <option value="Qualquer">Qualquer</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="newKey">Tom</label>
+          <input type="text" id="newKey" class="dialog-input" value="C">
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="newCifraText">Cifra</label>
+        <textarea id="newCifraText" rows="8" required class="dialog-textarea" placeholder="[Intro] C  G  Am  F"></textarea>
+      </div>
+
+      <div class="dialog-actions">
+        <button type="submit" class="btn-primary-solid">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Motores de Transposição, Acordes e Metrônomo -->
+  <script src="js/transposition.js?v=8"></script>
+  <script src="js/chords-data.js?v=8"></script>
+  <script src="js/metronome.js?v=8"></script>
+
+  <!-- Catálogo Modularizado por Momentos Litúrgicos -->
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=8"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=8"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=8"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=8"></script>
+  <script src="js/songs-catalog.js?v=8"></script>
+  <script src="js/supabase-client.js?v=8"></script>
+
+  <!-- Módulos de Interface e Sincronização OTA -->
+  <script src="js/modules/icons.js?v=8"></script>
+  <script src="js/modules/state.js?v=8"></script>
+  <script src="js/modules/catalog-view.js?v=8"></script>
+  <script src="js/modules/playlists-view.js?v=8"></script>
+  <script src="js/modules/song-viewer.js?v=8"></script>
+  <script src="js/modules/ota-updater.js?v=8"></script>
+  <script src="js/app.js?v=8"></script>
+  <script>
+    if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!refreshing) {
+          refreshing = true;
+          window.location.reload();
+        }
+      });
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js?v=8').then((reg) => {
+          reg.update();
+        }).catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

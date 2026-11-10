@@ -1,0 +1,11 @@
+/* ==========================================================================
+   SANTA CIFRA — Modular Stylesheet Barrel
+   Each visual layer is split into its own focused module under css/
+   ========================================================================== */
+
+@import url('tokens.css');
+@import url('layout.css');
+@import url('catalog.css');
+@import url('playlists.css');
+@import url('viewer.css');
+@import url('dialogs.css');
