@@ -26,8 +26,8 @@ APKSIGNER = os.path.join(BUILD_TOOLS, "apksigner.bat")
 MANIFEST_XML = """<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.santacifra.liturgia"
-    android:versionCode="10"
-    android:versionName="3.6.1">
+    android:versionCode="11"
+    android:versionName="3.7.0">
 
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="35" />
     <uses-permission android:name="android.permission.INTERNET" />
