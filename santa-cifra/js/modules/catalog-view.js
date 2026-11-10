@@ -23,11 +23,15 @@ window.SantaCifra.renderHeroShowcase = function renderHeroShowcase() {
     const mini = document.createElement('button');
     mini.type = 'button';
     mini.className = 'hero-mini-card';
+    const coverUrl = window.SantaCifra.getSongCoverUrl(song);
     mini.innerHTML = `
-      <span class="song-key" title="Tom original">${esc(song.originalKey)}</span>
+      <div class="hero-mini-cover" aria-hidden="true">
+        <img class="hero-cover-img" src="${coverUrl}" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/artists/default-cover.jpg'">
+        <span class="hero-cover-key" title="Tom original: ${esc(song.originalKey)}">${esc(song.originalKey)}</span>
+      </div>
       <span class="hero-mini-info">
         <span class="hero-mini-title">${esc(song.title)}</span>
-        <span class="hero-mini-sub">${esc(song.liturgicalMoment)} &middot; ${song.chordCount || 4} acordes</span>
+        <span class="hero-mini-sub">${esc(song.liturgicalMoment)} &middot; Tom ${esc(song.originalKey)} &middot; ${song.chordCount || 4} acordes</span>
       </span>
     `;
     mini.addEventListener('click', () => {
@@ -139,13 +143,17 @@ window.SantaCifra.createSongRow = function createSongRow(song) {
     : '<span class="rep-badge rep-badge-popular" title="Música popular ou devocional, para encontros, retiros e grupos de oração">Fora da Missa</span>';
 
   const composer = window.SantaCifra.composerHtml(song);
+  const coverUrl = window.SantaCifra.getSongCoverUrl(song);
   const row = document.createElement('div');
   row.className = 'song-row';
   row.tabIndex = 0;
   row.setAttribute('role', 'link');
   row.setAttribute('aria-label', `Abrir cifra de ${song.title}`);
   row.innerHTML = `
-    <span class="song-key" title="Tom original">${esc(song.originalKey)}</span>
+    <div class="song-cover" aria-hidden="true">
+      <img class="song-cover-img" src="${coverUrl}" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/artists/default-cover.jpg'">
+      <span class="song-cover-key" title="Tom original: ${esc(song.originalKey)}">${esc(song.originalKey)}</span>
+    </div>
     <div class="song-row-main">
       <div class="song-row-title">${esc(song.title)}</div>
       <div class="song-row-sub">
@@ -153,6 +161,8 @@ window.SantaCifra.createSongRow = function createSongRow(song) {
       </div>
       <div class="song-row-sub">
         <span>${esc(song.liturgicalMoment)}</span>
+        <span class="sub-sep" aria-hidden="true">&middot;</span>
+        <span>Tom ${esc(song.originalKey)}</span>
         <span class="sub-sep" aria-hidden="true">&middot;</span>
         ${repBadgeHtml}
       </div>

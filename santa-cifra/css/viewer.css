@@ -91,6 +91,43 @@
   gap: 8px;
 }
 
+.song-hero-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.song-viewer-cover {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1.5px solid rgba(226, 181, 90, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  background-color: var(--bg-surface);
+}
+
+.song-viewer-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .song-viewer-cover {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.song-title-block {
+  min-width: 0;
+  flex: 1;
+}
+
 .song-main-title {
   font-family: var(--font-display);
   font-size: clamp(1.9rem, 1.3rem + 2.6vw, 2.9rem);

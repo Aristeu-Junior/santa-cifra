@@ -814,10 +814,13 @@ window.SantaCifra = window.SantaCifra || {};
     }, 50);
   }
 
-  function openAuthDialog(initialView = 'login') {
+  function openAuthDialog(initialView = 'login', message = null) {
     const dlg = document.getElementById('authDialog');
     if (!dlg) return;
     switchAuthTab(initialView);
+    if (message) {
+      showAlert(message, true);
+    }
     dlg.showModal();
   }
 
@@ -862,7 +865,56 @@ window.SantaCifra = window.SantaCifra || {};
     dlg.showModal();
   }
 
+  function setupModalScrollLock() {
+    if (typeof HTMLDialogElement === 'undefined') return;
+    const origShowModal = HTMLDialogElement.prototype.showModal;
+    const origClose = HTMLDialogElement.prototype.close;
+
+    HTMLDialogElement.prototype.showModal = function () {
+      document.documentElement.classList.add('modal-open');
+      document.body.classList.add('modal-open');
+      return origShowModal.apply(this, arguments);
+    };
+
+    HTMLDialogElement.prototype.close = function () {
+      const res = origClose.apply(this, arguments);
+      setTimeout(() => {
+        const anyOpen = document.querySelectorAll('dialog[open]').length > 0;
+        if (!anyOpen) {
+          document.documentElement.classList.remove('modal-open');
+          document.body.classList.remove('modal-open');
+        }
+      }, 30);
+      return res;
+    };
+
+    document.addEventListener('close', (e) => {
+      if (e.target && e.target.tagName === 'DIALOG') {
+        setTimeout(() => {
+          const anyOpen = document.querySelectorAll('dialog[open]').length > 0;
+          if (!anyOpen) {
+            document.documentElement.classList.remove('modal-open');
+            document.body.classList.remove('modal-open');
+          }
+        }, 30);
+      }
+    }, true);
+
+    document.addEventListener('cancel', (e) => {
+      if (e.target && e.target.tagName === 'DIALOG') {
+        setTimeout(() => {
+          const anyOpen = document.querySelectorAll('dialog[open]').length > 0;
+          if (!anyOpen) {
+            document.documentElement.classList.remove('modal-open');
+            document.body.classList.remove('modal-open');
+          }
+        }, 30);
+      }
+    }, true);
+  }
+
   function bindAuthEvents() {
+    setupModalScrollLock();
     const btnAuth = document.getElementById('btnUserAuth');
     if (btnAuth) {
       btnAuth.addEventListener('click', () => {
@@ -1044,6 +1096,8 @@ window.SantaCifra = window.SantaCifra || {};
     loadPlaylistsForActiveUser,
     savePlaylistsForActiveUser,
     updateAuthUI,
+    showAlert,
+    hideAlert,
     openAuthDialog,
     openProfileDialog,
     bindAuthEvents

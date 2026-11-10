@@ -117,6 +117,7 @@ window.SantaCifra.initDOM = function initDOM() {
     btnBack: byId('btnBack'),
     btnFavoriteCurrentSong: byId('btnFavoriteCurrentSong'),
     btnAddCurrentToFolder: byId('btnAddCurrentToFolder'),
+    songViewerCoverImg: byId('songViewerCoverImg'),
     songTitle: byId('songTitle'),
     songComposer: byId('songComposer'),
     songRepertoireTypeBadge: byId('songRepertoireTypeBadge'),

@@ -34,6 +34,11 @@ window.SantaCifra.openSongView = function openSongView(songOrId, opts) {
     dom.playlistQueueBar.classList.remove('active');
   }
 
+  if (dom.songViewerCoverImg) {
+    const coverUrl = window.SantaCifra.getSongCoverUrl ? window.SantaCifra.getSongCoverUrl(song) : 'assets/artists/default-cover.jpg';
+    dom.songViewerCoverImg.src = coverUrl;
+  }
+
   dom.songTitle.textContent = song.title;
   dom.songComposer.innerHTML = window.SantaCifra.composerHtml(song);
   dom.songMomentBadge.textContent = song.liturgicalMoment;

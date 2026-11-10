@@ -247,7 +247,14 @@ window.SantaCifra.isSongFavorited = function isSongFavorited(songId) {
 };
 
 window.SantaCifra.toggleFavoriteSong = function toggleFavoriteSong(songId) {
-  const { state } = window.SantaCifra;
+  const { state, auth } = window.SantaCifra;
+  const user = auth && auth.getCurrentUser ? auth.getCurrentUser() : null;
+  if (!user) {
+    if (auth && auth.openAuthDialog) {
+      auth.openAuthDialog('login', 'Faça login ou crie sua conta para salvar suas músicas favoritas.');
+    }
+    return;
+  }
   const favFolder = state.playlists.find(p => p.id === 'favorites');
   if (!favFolder) return;
   const idx = favFolder.songIds.indexOf(songId);
@@ -267,7 +274,65 @@ window.SantaCifra.toggleFavoriteSong = function toggleFavoriteSong(songId) {
 };
 
 window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
-  const { state, dom, ICONS, esc } = window.SantaCifra;
+  const { state, dom, ICONS, esc, auth } = window.SantaCifra;
+
+  const statusBar = document.getElementById('accountStatusBar');
+  if (statusBar) {
+    const user = auth && auth.getCurrentUser ? auth.getCurrentUser() : null;
+    if (user) {
+      const initials = user.name
+        .split(' ')
+        .filter(Boolean)
+        .slice(0, 2)
+        .map(p => p[0].toUpperCase())
+        .join('');
+      statusBar.innerHTML = `
+        <div class="account-card logged-in">
+          <div class="account-info">
+            <span class="account-avatar">${esc(initials)}</span>
+            <div class="account-texts">
+              <span class="account-name">Conectado como <strong>${esc(user.name)}</strong></span>
+              <span class="account-email">${esc(user.email)}${user.parish ? ` &middot; ${esc(user.parish)}` : ''}</span>
+            </div>
+          </div>
+          <button type="button" class="btn-account-logout" id="btnPastasLogout" title="Encerrar sessão nesta conta">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Sair da Conta</span>
+          </button>
+        </div>
+      `;
+      const btnLogout = document.getElementById('btnPastasLogout');
+      if (btnLogout) {
+        btnLogout.addEventListener('click', () => {
+          auth.logout();
+        });
+      }
+    } else {
+      statusBar.innerHTML = `
+        <div class="account-card logged-out">
+          <div class="account-info">
+            <span class="account-avatar-anon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <div class="account-texts">
+              <span class="account-name">Faça login para salvar suas músicas e pastas</span>
+              <span class="account-email">Acesse seu repertório em qualquer celular ou computador</span>
+            </div>
+          </div>
+          <button type="button" class="btn-account-login" id="btnPastasLogin">
+            <span>Entrar / Cadastrar</span>
+          </button>
+        </div>
+      `;
+      const btnLogin = document.getElementById('btnPastasLogin');
+      if (btnLogin) {
+        btnLogin.addEventListener('click', () => {
+          auth.openAuthDialog('login');
+        });
+      }
+    }
+  }
+
   dom.foldersList.innerHTML = '';
 
   state.playlists.forEach(folder => {
@@ -370,9 +435,14 @@ window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
   folderSongs.forEach((song, idx) => {
     const row = document.createElement('div');
     row.className = 'track-row';
+    const coverUrl = window.SantaCifra.getSongCoverUrl ? window.SantaCifra.getSongCoverUrl(song) : 'assets/artists/default-cover.jpg';
     row.innerHTML = `
       <button type="button" class="track-open">
         <span class="track-num">${idx + 1}</span>
+        <div class="song-cover track-cover" aria-hidden="true">
+          <img class="song-cover-img" src="${coverUrl}" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/artists/default-cover.jpg'">
+          <span class="song-cover-key" title="Tom original: ${esc(song.originalKey)}">${esc(song.originalKey)}</span>
+        </div>
         <span class="song-row-main">
           <span class="song-row-title">${esc(song.title)}</span>
           <span class="song-row-sub">${esc(song.liturgicalMoment)} &middot; Tom ${esc(song.originalKey)}</span>
@@ -418,7 +488,15 @@ window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
 };
 
 window.SantaCifra.openAddToFolderDialog = function openAddToFolderDialog(song) {
-  const { state, dom } = window.SantaCifra;
+  const { state, dom, auth } = window.SantaCifra;
+  const user = auth && auth.getCurrentUser ? auth.getCurrentUser() : null;
+  if (!user) {
+    if (auth && auth.openAuthDialog) {
+      auth.openAuthDialog('login', 'Faça login ou crie sua conta para organizar músicas em pastas.');
+    }
+    return;
+  }
+
   state.songIdToSaveInFolder = song.id;
   dom.addToFolderSongSubtitle.textContent = song.title;
   dom.folderCheckboxesContainer.innerHTML = '';
@@ -481,7 +559,17 @@ window.SantaCifra.bindPlaylistsEvents = function bindPlaylistsEvents() {
     if (targetSong) window.SantaCifra.openAddToFolderDialog(targetSong);
   });
 
-  dom.btnOpenNewFolder.addEventListener('click', () => dom.newFolderDialog.showModal());
+  dom.btnOpenNewFolder.addEventListener('click', () => {
+    const auth = window.SantaCifra.auth;
+    const user = auth && auth.getCurrentUser ? auth.getCurrentUser() : null;
+    if (!user) {
+      if (auth && auth.openAuthDialog) {
+        auth.openAuthDialog('login', 'Faça login ou crie sua conta para criar novas pastas de repertório.');
+      }
+      return;
+    }
+    dom.newFolderDialog.showModal();
+  });
   dom.btnCancelNewFolder.addEventListener('click', () => dom.newFolderDialog.close());
 
   dom.formNewFolder.addEventListener('submit', (e) => {

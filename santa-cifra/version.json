@@ -1,7 +1,7 @@
 {
-  "version": "3.5.0",
-  "apkVersionCode": 8,
-  "buildId": "sc-v3.5.0-538",
+  "version": "3.6.0",
+  "apkVersionCode": 9,
+  "buildId": "sc-v3.6.0-auth-pastas-fix",
   "totalSongs": 538,
   "liturgicalSongs": 294,
   "popularSongs": 244,

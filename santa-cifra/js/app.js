@@ -88,7 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.SantaCifra.bindSongViewerEvents();
 
   // Modal de Nova Cifra & Tema
-  dom.btnOpenNewSong.addEventListener('click', () => dom.newSongDialog.showModal());
+  if (dom.btnOpenNewSong) {
+    dom.btnOpenNewSong.addEventListener('click', () => dom.newSongDialog.showModal());
+  }
 
   dom.formNewSong.addEventListener('submit', (e) => {
     e.preventDefault();

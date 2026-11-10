@@ -85,6 +85,106 @@ window.SantaCifra = window.SantaCifra || {};
     return ALIASES[name] || name;
   };
 
+  const ARTIST_KEYWORD_MAP = [
+    ['zezinho', 'padre-zezinho'],
+    ['marcelo rossi', 'padre-marcelo-rossi'],
+    ['jonas abib', 'monsenhor-jonas-abib'],
+    ['rosa de saron', 'rosa-de-saron'],
+    ['brado', 'thiago-brado'],
+    ['banda dom', 'banda-dom'],
+    ['gilson', 'frei-gilson'],
+    ['som do monte', 'frei-gilson'],
+    ['colo de deus', 'colo-de-deus'],
+    ['kelly patrícia', 'irma-kelly-patricia'],
+    ['hesed', 'irma-kelly-patricia'],
+    ['fábio de melo', 'padre-fabio-de-melo'],
+    ['fabio de melo', 'padre-fabio-de-melo'],
+    ['celina', 'celina-borges'],
+    ['adriana', 'adriana-arydes'],
+    ['tony allysson', 'tony-allysson'],
+    ['diego fernandes', 'diego-fernandes'],
+    ['davidson', 'davidson-silva'],
+    ['dunga', 'dunga'],
+    ['manzotti', 'padre-reginaldo-manzotti'],
+    ['antônio maria', 'padre-antonio-maria'],
+    ['antonio maria', 'padre-antonio-maria'],
+    ['joãozinho', 'padre-joaozinho'],
+    ['joaozinho', 'padre-joaozinho'],
+    ['kolling', 'irma-miria-kolling'],
+    ['míria', 'irma-miria-kolling'],
+    ['miria', 'irma-miria-kolling'],
+    ['zé vicente', 'ze-vicente'],
+    ['ze vicente', 'ze-vicente'],
+    ['ziza', 'ziza-fernandes'],
+    ['dominus', 'banda-dominus'],
+    ['walmir', 'walmir-alencar'],
+    ['vida reluz', 'vida-reluz'],
+    ['adoração e vida', 'adoracao-e-vida'],
+    ['adoracao e vida', 'adoracao-e-vida'],
+    ['anjos de resgate', 'anjos-de-resgate'],
+    ['shalom', 'comunidade-shalom'],
+    ['canção nova', 'cancao-nova'],
+    ['cancao nova', 'cancao-nova'],
+    ['eliana ribeiro', 'eliana-ribeiro'],
+    ['nelsinho', 'nelsinho-correa'],
+    ['eugênio', 'eugenio-jorge'],
+    ['eugenio', 'eugenio-jorge'],
+    ['suely', 'suely-facanha'],
+    ['catequese', 'catequese-catolica'],
+    ['campanha da fraternidade', 'campanha-da-fraternidade'],
+    ['toca de assis', 'fraternidade-toca-de-assis'],
+    ['joão paulo ii', 'fraternidade-sjpii'],
+    ['taizé', 'comunidade-taize'],
+    ['taize', 'comunidade-taize'],
+    ['weber', 'padre-jose-weber'],
+    ['lecion', 'lecionario-dominical'],
+    ['missal', 'missal-romano'],
+    ['veloso', 'padre-reginaldo-veloso'],
+    ['zeca', 'padre-zeca'],
+    ['alessandro campos', 'padre-alessandro-campos'],
+    ['valverde', 'martin-valverde'],
+    ['biondini', 'eros-biondini'],
+    ['recado', 'comunidade-recado'],
+    ['aliança', 'alianca-de-misericordia'],
+    ['alianca', 'alianca-de-misericordia'],
+    ['ana paula', 'irma-ana-paula'],
+    ['fabreti', 'frei-fabreti'],
+    ['turra', 'frei-luiz-turra'],
+    ['farias', 'waldeci-farias'],
+    ['tomás', 'sao-tomas-de-aquino'],
+    ['tomas', 'sao-tomas-de-aquino'],
+    ['cnbb', 'hinario-liturgico-cnbb'],
+    ['hinário', 'hinario-liturgico-cnbb'],
+    ['hinario', 'hinario-liturgico-cnbb'],
+    ['litúrgic', 'hinario-liturgico-cnbb'],
+    ['liturgic', 'hinario-liturgico-cnbb'],
+    ['tradicional', 'hinario-liturgico-cnbb']
+  ];
+
+  SC.getArtistCoverUrl = function getArtistCoverUrl(name) {
+    const raw = String(name || '').toLowerCase();
+    for (let i = 0; i < ARTIST_KEYWORD_MAP.length; i++) {
+      if (raw.includes(ARTIST_KEYWORD_MAP[i][0])) {
+        return `assets/artists/${ARTIST_KEYWORD_MAP[i][1]}.jpg`;
+      }
+    }
+    return 'assets/artists/default-cover.jpg';
+  };
+
+  SC.getSongCoverUrl = function getSongCoverUrl(song) {
+    if (!song) return 'assets/artists/default-cover.jpg';
+    const comp = String(song.composer || '').toLowerCase();
+    for (let i = 0; i < ARTIST_KEYWORD_MAP.length; i++) {
+      if (comp.includes(ARTIST_KEYWORD_MAP[i][0])) {
+        return `assets/artists/${ARTIST_KEYWORD_MAP[i][1]}.jpg`;
+      }
+    }
+    if (song.liturgicalMoment && (song.repertoireType || 'liturgica') === 'liturgica') {
+      return 'assets/artists/hinario-liturgico-cnbb.jpg';
+    }
+    return 'assets/artists/default-cover.jpg';
+  };
+
   /** Nomes de artista (normalizados, sem repetição) de uma música. */
   SC.getSongArtists = function getSongArtists(song) {
     const seen = new Set();
@@ -149,7 +249,11 @@ window.SantaCifra = window.SantaCifra || {};
       const songs = SC.getArtistSongs(state.selectedArtist)
         .slice()
         .sort((a, b) => a.title.localeCompare(b.title, 'pt-BR'));
-      dom.artistDetailAvatar.textContent = SC.artistInitials(state.selectedArtist);
+      const coverUrl = SC.getArtistCoverUrl(state.selectedArtist);
+      dom.artistDetailAvatar.innerHTML = `
+        <img class="artist-avatar-img" src="${coverUrl}" alt="" onerror="this.remove()">
+        <span class="artist-avatar-text">${esc(SC.artistInitials(state.selectedArtist))}</span>
+      `;
       dom.artistDetailName.textContent = state.selectedArtist;
       dom.artistDetailCount.textContent = songs.length === 1 ? '1 música no acervo' : `${songs.length} músicas no acervo`;
       dom.artistSongsList.innerHTML = '';
@@ -185,8 +289,12 @@ window.SantaCifra = window.SantaCifra || {};
       card.className = 'artist-card';
       card.dataset.artist = artist.name;
       const n = artist.songs.length;
+      const coverUrl = SC.getArtistCoverUrl(artist.name);
       card.innerHTML = `
-        <span class="artist-avatar" aria-hidden="true">${esc(SC.artistInitials(artist.name))}</span>
+        <span class="artist-avatar" aria-hidden="true">
+          <img class="artist-avatar-img" src="${coverUrl}" alt="" loading="lazy" onerror="this.remove()">
+          <span class="artist-avatar-text">${esc(SC.artistInitials(artist.name))}</span>
+        </span>
         <span class="artist-card-info">
           <span class="artist-card-name">${esc(artist.name)}</span>
           <span class="artist-card-count">${n} ${n === 1 ? 'música' : 'músicas'}</span>
