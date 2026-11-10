@@ -69,11 +69,12 @@ window.SantaCifra.matchesArtistFilter = function matchesArtistFilter(song, af) {
   }
   if (af === 'Anjos') {
     return comp.includes('anjos de resgate') || comp.includes('dalvimar') || comp.includes('rosa de saron') ||
-      comp.includes('celina') || comp.includes('adriana') || comp.includes('ziza') || comp.includes('martin valverde');
+      comp.includes('celina') || comp.includes('adriana') || comp.includes('ziza') || comp.includes('martin valverde') ||
+      comp.includes('banda dom') || comp.includes('dominus');
   }
   if (af === 'Padres e Religiosos') {
     return comp.includes('padre') || comp.includes('pe.') || comp.includes('frei') ||
-      comp.includes('irmã') || comp.includes('ir.');
+      comp.includes('irmã') || comp.includes('ir.') || comp.includes('monsenhor') || comp.includes('diácono');
   }
   if (af === 'Cantores Católicos') {
     return comp.includes('tony allysson') || comp.includes('diego fernandes') || comp.includes('davidson') ||
@@ -81,14 +82,16 @@ window.SantaCifra.matchesArtistFilter = function matchesArtistFilter(song, af) {
       comp.includes('olívia') || comp.includes('banda') || comp.includes('ceremonya') ||
       comp.includes('nádia') || comp.includes('luciana') || comp.includes('eros') ||
       comp.includes('álvaro') || comp.includes('italo') || comp.includes('yuri') ||
-      comp.includes('laércio') || comp.includes('danilo') || comp.includes('flávio');
+      comp.includes('laércio') || comp.includes('danilo') || comp.includes('flávio') ||
+      comp.includes('thiago brado') || comp.includes('rosa de saron');
   }
   if (af === 'CNBB') {
     return comp.includes('cnbb') || comp.includes('lecionário') || comp.includes('missal') ||
       comp.includes('weber') || comp.includes('kolling') || comp.includes('fabreti') ||
       comp.includes('waldeci') || comp.includes('zé vicente') || comp.includes('tradicional') ||
       comp.includes('gregoriano') || comp.includes('taizé') || comp.includes('eurivaldo') ||
-      comp.includes('cândido') || comp.includes('custódia') || comp.includes('celerino') || comp.includes('palestrina');
+      comp.includes('cândido') || comp.includes('custódia') || comp.includes('celerino') ||
+      comp.includes('palestrina') || comp.includes('catequese');
   }
   if (af.startsWith('exact:')) {
     return comp.includes(af.slice(6).toLowerCase());

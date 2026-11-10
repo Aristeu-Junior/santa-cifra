@@ -1,5 +1,5 @@
 -- ============================================================================
--- SANTA CIFRA - SEED MASSIVO DE 367 MÚSICAS CATÓLICAS PARA SUPABASE
+-- SANTA CIFRA - SEED MASSIVO DE 538 MÚSICAS CATÓLICAS PARA SUPABASE
 -- ============================================================================
 INSERT INTO public.songs (
   id, title, composer, liturgical_moment, liturgical_season, original_key,
@@ -1455,7 +1455,7 @@ Fazei de nós, ó Jesus, testemunhas da caridade,
 Repartindo com os pobres o Pão da fraternidade!
 
 [Final] Dm  F  A7  Dm'),
-  ('estas-entre-nos-tu-es-minha-vida', 'Estás Entre Nós (Tu És Minha Vida, Outro Deus Não Há)', 'Pe. Jonas Abib / Tradicional', 'Comunhão', 'Tempo Comum', 'Em', 74, '4/4', 'Balada Suave', '↓   ↓ ↑   ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Tu+es+minha+vida+outro+Deus+nao+ha+cifra', '{"status": "Aprovado (Profissão de Fé Cristológica)", "score": 92, "documentRef": "IGMR 86 / João 14, 6", "biblicalRef": "Jo 14, 6; Fl 1, 21", "justification": "Usa a progressão circular clássica Em - C - D - G do início ao fim, sem pestanas.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Em  C  D  G  B7
+  ('estas-entre-nos-tu-es-minha-vida', 'Estás Entre Nós (Tu És Minha Vida, Outro Deus Não Há)', 'Pe. Jonas Abib / Tradicional', 'Comunhão', 'Tempo Comum', 'Em', 74, '4/4', 'Balada Suave', '↓   ↓ ↑   ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Tu+es+minha+vida+outro+Deus+nao+ha+cifra', '{"status": "Aprovado (Profissão de Fé Cristológica)", "score": 92, "documentRef": "IGMR 86 / João 14, 6", "biblicalRef": "Jo 14, 6; Fl 1, 21", "justification": "Usa a progressão circular clássica Em - C - D - G do início ao fim, sem pestanas.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  D  G  B7
 
 Em             C              D              G
 1. Tu és minha vida, outro Deus não há!
@@ -1825,7 +1825,7 @@ Fazei de nós, ó Jesus, testemunhas da caridade,
 Repartindo com os pobres o Pão da fraternidade!
 
 [Final] C  F  G7  C'),
-  ('sacramento-da-comunhao-nelsinho', 'Sacramento da Comunhão (Senhor, Quando Te Vejo)', 'Diácono Nelsinho Corrêa / Comunidade Canção Nova', 'Comunhão', 'Tempo Comum', 'D', 68, '4/4', 'Balada Eucarística Lenta', '↓   ↓ ↑   ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Sacramento+da+Comunhao+Nelsinho+Correa+cifra', '{"status": "Aprovado para Comunhão e Pós-Comunhão", "score": 95, "documentRef": "IGMR 86-88", "biblicalRef": "Jo 17, 21; 1Cor 10, 17", "justification": "Profunda oração de fé na Presença Real e súplica pela unidade da Igreja (''Fazei de nós um só corpo e um só espírito'').", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  A  Bm  G  A  D
+  ('sacramento-da-comunhao-nelsinho', 'Sacramento da Comunhão (Senhor, Quando Te Vejo)', 'Diácono Nelsinho Corrêa / Comunidade Canção Nova', 'Comunhão', 'Tempo Comum', 'D', 68, '4/4', 'Balada Eucarística Lenta', '↓   ↓ ↑   ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Sacramento+da+Comunhao+Nelsinho+Correa+cifra', '{"status": "Aprovado para Comunhão e Pós-Comunhão", "score": 95, "documentRef": "IGMR 86-88", "biblicalRef": "Jo 17, 21; 1Cor 10, 17", "justification": "Profunda oração de fé na Presença Real e súplica pela unidade da Igreja (''Fazei de nós um só corpo e um só espírito'').", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G  A  D
 
 D                A              Bm             F#m
 Senhor, quando te vejo no Sacramento da Comunhão,
@@ -3430,7 +3430,7 @@ Pela força do Espírito Santo santificai estes dons,
 Sacrifício de louvor pelos nossos irmãos!
 
 [Final] G  C  D7  G'),
-  ('derrama-o-teu-amor-aqui-pe-marcelo-rossi', 'Derrama o Teu Amor Aqui', 'Padre Marcelo Rossi / Celina Borges', 'Entrada', 'Pentecostes', 'G', 92, '4/4', 'Pop Rock Litúrgico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Derrama+o+Teu+Amor+Aqui+Padre+Marcelo+Rossi+cifra', '{"status": "Canto de Invocação do Amor de Deus e Fraternidade", "score": 94, "documentRef": "Rm 5, 5 / Pentecostes e Encontros", "biblicalRef": "Rm 5, 5; Ef 5, 14", "justification": "Quatro acordes (G, D, Em, C) em progressão universal, muito fácil e vibrante.", "repertoireType": "liturgica", "specialDay": "Pentecostes", "normExplanation": "Aprovada para a Santa Missa (Entrada • Pentecostes): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  D  Em  C  (2x)
+  ('derrama-o-teu-amor-aqui-pe-marcelo-rossi', 'Derrama o Teu Amor Aqui', 'Padre Marcelo Rossi / Celina Borges', 'Entrada', 'Pentecostes', 'G', 92, '4/4', 'Pop Rock Litúrgico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Derrama+o+Teu+Amor+Aqui+Padre+Marcelo+Rossi+cifra', '{"status": "Canto de Invocação do Amor de Deus e Fraternidade", "score": 94, "documentRef": "Rm 5, 5 / Pentecostes e Encontros", "biblicalRef": "Rm 5, 5; Ef 5, 14", "justification": "Quatro acordes (G, D, Em, C) em progressão universal, muito fácil e vibrante.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C  (2x)
 
 [Primeira Parte]
    G                        D               Em          C
@@ -3917,7 +3917,7 @@ Ao sabor do vento do Espírito de Deus!
 Leva-me onde queres, Senhor,
    Em                       C               G
 Faz em mim o Teu querer!'),
-  ('sacramento-da-comunhao-diacono-nelsinho-correa', 'Sacramento da Comunhão (Senhor, Quando Te Vejo no Sacramento)', 'Diácono Nelsinho Corrêa / Canção Nova', 'Comunhão', 'Qualquer', 'D', 74, '4/4', 'Balada Eucarística', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Sacramento+da+Comunhão+(Senhor,+Quando+Te+Vejo+no+Sacramento)+Diácono+Nelsinho+Corrêa+cifra', '{"status": "Canto Eucarístico de Comunhão e Unidade da Igreja", "score": 99, "documentRef": "IGMR 86 / Sacrosanctum Concilium 47", "biblicalRef": "Jo 17, 21; 1Cor 10, 17", "justification": "Canto estritamente eucarístico para o momento da Comunhão e adoração ao Santíssimo Sacramento.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  A/C#  Bm  G  Em  A7
+  ('sacramento-da-comunhao-diacono-nelsinho-correa', 'Sacramento da Comunhão (Senhor, Quando Te Vejo no Sacramento)', 'Diácono Nelsinho Corrêa / Canção Nova', 'Comunhão', 'Qualquer', 'D', 74, '4/4', 'Balada Eucarística', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Sacramento+da+Comunhão+(Senhor,+Quando+Te+Vejo+no+Sacramento)+Diácono+Nelsinho+Corrêa+cifra', '{"status": "Canto Eucarístico de Comunhão e Unidade da Igreja", "score": 99, "documentRef": "IGMR 86 / Sacrosanctum Concilium 47", "biblicalRef": "Jo 17, 21; 1Cor 10, 17", "justification": "Canto estritamente eucarístico para o momento da Comunhão e adoração ao Santíssimo Sacramento.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  Em  A7
 
 [Primeira Parte]
    D                        A               Bm
@@ -4134,7 +4134,7 @@ Fazei de nós, ó Jesus, testemunhas da caridade,
 Repartindo com os pobres o Pão da fraternidade!
 
 [Final] G  C  D7  G'),
-  ('vem-louvar-hoje-e-tempo-de-louvar-a-deus', 'Hoje É Tempo de Louvar a Deus (Vem Louvar)', 'Monsenhor Jonas Abib / Canção Nova', 'Entrada', 'Tempo Comum', 'D', 104, '4/4', 'Pop Louvor', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=Hoje+É+Tempo+de+Louvar+a+Deus+(Vem+Louvar)+Monsenhor+Jonas+Abib+cifra', '{"status": "Clássico Histórico de Louvor Comunitário", "score": 93, "documentRef": "1Cor 3, 16 / Encontros e Missas Jovens", "biblicalRef": "1Cor 3, 16; Sl 149", "justification": "Apenas 3 acordes (D, G, A7) na música inteira! Um dos maiores clássicos para iniciantes.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  G  A7  D  G  A7
+  ('vem-louvar-hoje-e-tempo-de-louvar-a-deus', 'Hoje É Tempo de Louvar a Deus (Vem Louvar)', 'Monsenhor Jonas Abib / Canção Nova', 'Entrada', 'Tempo Comum', 'D', 104, '4/4', 'Pop Louvor', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=Hoje+É+Tempo+de+Louvar+a+Deus+(Vem+Louvar)+Monsenhor+Jonas+Abib+cifra', '{"status": "Clássico Histórico de Louvor Comunitário", "score": 93, "documentRef": "1Cor 3, 16 / Encontros e Missas Jovens", "biblicalRef": "1Cor 3, 16; Sl 149", "justification": "Apenas 3 acordes (D, G, A7) na música inteira! Um dos maiores clássicos para iniciantes.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  G  A7  D  G  A7
 
 [Primeira Parte]
    D                        G               A7          D       G  A7
@@ -4153,7 +4153,7 @@ Vem louvar, vem louvar!
 [Segunda Parte]
    D                        G               A7          D       G  A7
 2. No meio dos louvores Deus habita, é Seu prazer cumprir o que nos diz!'),
-  ('o-senhor-e-rei-monsenhor-jonas-abib', 'O Senhor É Rei (O Senhor É Meu Pastor e Rei)', 'Monsenhor Jonas Abib / Pe. Marcelo Rossi', 'Entrada', 'Tempo Comum', 'Em', 108, '4/4', 'Rock / Balada Litúrgica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=O+Senhor+É+Rei+(O+Senhor+É+Meu+Pastor+e+Rei)+Monsenhor+Jonas+Abib+cifra', '{"status": "Hino para a Solenidade de Cristo Rei e Entrada", "score": 96, "documentRef": "Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo", "biblicalRef": "Sl 22; Sl 92; Ap 19, 16", "justification": "Apenas 3 acordes (Em, G, D, C) num dos maiores sucessos da música católica brasileira.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Em  G  D  C
+  ('o-senhor-e-rei-monsenhor-jonas-abib', 'O Senhor É Rei (O Senhor É Meu Pastor e Rei)', 'Monsenhor Jonas Abib / Pe. Marcelo Rossi', 'Entrada', 'Tempo Comum', 'Em', 108, '4/4', 'Rock / Balada Litúrgica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=O+Senhor+É+Rei+(O+Senhor+É+Meu+Pastor+e+Rei)+Monsenhor+Jonas+Abib+cifra', '{"status": "Hino para a Solenidade de Cristo Rei e Entrada", "score": 96, "documentRef": "Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo", "biblicalRef": "Sl 22; Sl 92; Ap 19, 16", "justification": "Apenas 3 acordes (Em, G, D, C) num dos maiores sucessos da música católica brasileira.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  G  D  C
 
 [Refrão]
    Em                                       G
@@ -5909,7 +5909,7 @@ Eu creio em Ti, Senhor, que fazes milagres,
 Sustenta a minha fé quando a força faltar!
 
 [Final] C  F  G7  C'),
-  ('sonda-me-usa-me-aline-pe-antonio-maria', 'Nossa Senhora (O Que É Que Eu Sou Sem Jesus)', 'Padre Antônio Maria', 'Final', 'Qualquer', 'D', 78, '4/4', 'Balada Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Nossa+Senhora+(O+Que+É+Que+Eu+Sou+Sem+Jesus)+Padre+Antônio+Maria+cifra', '{"status": "Canto Mariano Devocional", "score": 95, "documentRef": "Lumen Gentium 62", "biblicalRef": "Jo 2, 5", "justification": "Canto mariano apontando sempre para Jesus (''Fazei tudo o que Ele vos disser'').", "repertoireType": "liturgica", "specialDay": "Solenidades Marianas", "normExplanation": "Aprovada para a Santa Missa (Final • Solenidades Marianas): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  G  A7  D
+  ('sonda-me-usa-me-aline-pe-antonio-maria', 'Nossa Senhora (O Que É Que Eu Sou Sem Jesus)', 'Padre Antônio Maria', 'Final', 'Qualquer', 'D', 78, '4/4', 'Balada Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Nossa+Senhora+(O+Que+É+Que+Eu+Sou+Sem+Jesus)+Padre+Antônio+Maria+cifra', '{"status": "Canto Mariano Devocional", "score": 95, "documentRef": "Lumen Gentium 62", "biblicalRef": "Jo 2, 5", "justification": "Canto mariano apontando sempre para Jesus (''Fazei tudo o que Ele vos disser'').", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  G  A7  D
 
 [Primeira Parte]
    D                        A7              Bm
@@ -7651,7 +7651,7 @@ Soberano, Maravilhoso, Deus que não sabe o que é falhar!
 Fiel e Poderoso, diante de Ti quero me prostrar!
 
 [Final] D  G  A7  D'),
-  ('gratidao-eu-encontrei-um-amor-perfeito', 'Gratidão (Eu Encontrei um Amor Perfeito - Lucas 17, 15)', 'padre / Canção Nova / Raquel Carpenter', 'Ação de Graças', 'Qualquer', 'G', 72, '4/4', 'Balada de Ação de Graças', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Gratidão+(Eu+Encontrei+um+Amor+Perfeito+-+Lucas+17,+15)+padre+cifra', '{"status": "Canto de Ação de Graças (O Leproso Agradecido - Lucas 17)", "score": 96, "documentRef": "Lucas 17, 15-18 / Pós-Comunhão", "biblicalRef": "Lc 17, 15-18; Sl 115", "justification": "Quatro acordes (G, D, Em, C) para agradecer a Jesus Sacramentado após a Comunhão.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+  ('gratidao-eu-encontrei-um-amor-perfeito', 'Gratidão (Eu Encontrei um Amor Perfeito - Lucas 17, 15)', 'Canção Nova / Raquel Carpenter', 'Ação de Graças', 'Qualquer', 'G', 72, '4/4', 'Balada de Ação de Graças', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Gratidão+(Eu+Encontrei+um+Amor+Perfeito+-+Lucas+17,+15)+Canção+Nova+cifra', '{"status": "Canto de Ação de Graças (O Leproso Agradecido - Lucas 17)", "score": 96, "documentRef": "Lucas 17, 15-18 / Pós-Comunhão", "biblicalRef": "Lc 17, 15-18; Sl 115", "justification": "Quatro acordes (G, D, Em, C) para agradecer a Jesus Sacramentado após a Comunhão.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
 
 [Primeira Parte]
    G                        D               Em
@@ -10714,7 +10714,6363 @@ Acolhei nossa oração neste dia do Senhor,
    Am                       D7              G
 Para a glória de Deus Pai, nosso eterno Criador!
 
-[Final] G  C  D7  G')
+[Final] G  C  D7  G'),
+  ('rosa-de-saron-te-louvo-em-verdade', 'Te Louvo em Verdade', 'Rosa de Saron', 'Ação de Graças', 'Qualquer', 'E', 72, '4/4', 'Balada Rock / Dedilhado', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 6, 'https://www.youtube.com/results?search_query=Te+Louvo+em+Verdade+Rosa+de+Saron+cifra', '{"status": "Adoração Eucarística / Ação de Graças / Vigílias Jovens", "score": 90, "documentRef": "Doc. 53 CNBB / Pastoral da Juventude", "biblicalRef": "Jo 4, 23-24; Hc 3, 17-18", "justification": "Clássico de adoração e entrega em espírito e verdade, mesmo em meio às tribulações.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B/D#  C#m7  A9  E/G#  F#m7  B4  B
+
+[Primeira Parte]
+E                 B/D#                C#m7
+Mesmo na tempestade, mesmo que se agite o mar,
+        G#m7           A9          F#m7          B4  B
+Te louvo, te louvo em verdade!
+E                  B/D#              C#m7
+Mesmo longe dos meus, mesmo na solidão,
+        G#m7           A9          F#m7          B4  B
+Te louvo, te louvo em verdade!
+
+[Refrão]
+          A9                B/A
+Pois somente tenho a Ti, Tu és a minha herança!
+    G#m7             C#m7
+Te louvo, te louvo em verdade!
+          F#m7              B4  B
+Pois somente tenho a Ti, Tu és a minha herança!
+    A9        B7            E    B4  B
+Te louvo, te louvo em verdade!
+
+[Segunda Parte]
+E                   B/D#                 C#m7
+Mesmo que me faltem palavras, mesmo que eu não saiba louvar,
+        G#m7           A9          F#m7          B4  B
+Te louvo, te louvo em verdade!
+E                  B/D#                 C#m7
+No silêncio do altar, diante do Teu olhar,
+        G#m7           A9          F#m7          B4  B
+Te louvo, te louvo em verdade!
+
+[Final]
+    F#m7      B7            C#m7  A9
+Te louvo, te louvo em verdade!
+    F#m7      B7            E9
+Te louvo, te louvo em verdade!'),
+  ('rosa-de-saron-as-dores-do-silencio', 'As Dores do Silêncio', 'Rosa de Saron', 'Ação de Graças', 'Quaresma', 'B', 74, '4/4', 'Balada Acústica', '↓  ↓ ↑  ↑ ↓ ↑', true, false, 6, 'https://www.youtube.com/results?search_query=As+Dores+do+Silêncio+Rosa+de+Saron+cifra', '{"status": "Meditação / Retiros / Celebrações Penitenciais", "score": 85, "documentRef": "Estudo 79 CNBB / Pastoral Juvenil", "biblicalRef": "Sl 42, 2-6; Mt 11, 28", "justification": "Reflexão profunda sobre o encontro com Cristo nas feridas da alma e no silêncio interior.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] B  F#/A#  G#m7  E9  B/D#  C#m7  F#4  F#
+
+[Primeira Parte]
+B                    F#/A#
+Hoje a noite está tão fria,
+G#m7                      E9
+E o silêncio fala mais que mil palavras.
+B                    F#/A#
+Olho o céu buscando uma resposta,
+C#m7                     F#4      F#
+Para as dores que o meu peito cala.
+
+[Refrão]
+          E9                  F#/E
+Vem curar as dores do silêncio,
+        D#m7               G#m7
+Vem enxugar o pranto do meu rosto!
+       C#m7               F#4  F#
+Só o Teu amor refaz a minha vida,
+       E9        F#7        B
+Só em Ti encontro paz e abrigo!
+
+[Segunda Parte]
+B                    F#/A#
+Quando tudo parece perdido,
+G#m7                        E9
+Tua mão me alcança na escuridão.
+B                    F#/A#
+Tu conheces cada cicatriz,
+C#m7                     F#4      F#
+E devolves vida ao meu coração.
+
+[Final]
+       C#m7      F#7        G#m7  E9
+Só em Ti encontro paz e abrigo!
+       C#m7      F#7        B9
+Nas dores do silêncio, estás comigo!'),
+  ('rosa-de-saron-do-alto-da-pedra', 'Do Alto da Pedra', 'Rosa de Saron', 'Final', 'Qualquer', 'G', 80, '4/4', 'Pop Rock Acústico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Do+Alto+da+Pedra+Rosa+de+Saron+cifra', '{"status": "Envio Missionário / Encontros de Jovens", "score": 86, "documentRef": "Doc. 85 CNBB (Evangelização da Juventude)", "biblicalRef": "Sl 40, 3; Is 40, 31", "justification": "Canto de superação na fé, firmando os pés sobre a Rocha que é Cristo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em7  C9  G/B  Am7  D4  D
+
+[Primeira Parte]
+G                  D/F#
+Olho para trás e vejo a estrada,
+Em7                     C9
+Quantas pedras tive que transpor.
+G                    D/F#
+Mas a Tua graça me sustentou,
+Am7                     D4      D
+Me ergueu nos braços do Teu amor.
+
+[Refrão]
+          C9                D/C
+Do alto da pedra eu posso ver,
+        Bm7                 Em7
+Um novo horizonte se abrir pra mim!
+       Am7                  D4  D
+Contigo ao meu lado não vou temer,
+       C9         D7        G
+Tua luz me guia até o fim!
+
+[Segunda Parte]
+G                     D/F#
+Mesmo que o vento sopre forte,
+Em7                     C9
+Minha casa está firmada na Rocha.
+G                     D/F#
+Em Tuas promessas vou confiar,
+Am7                     D4      D
+Para sempre o Teu nome exaltar.
+
+[Final]
+       Am7        D7        Em7  C9
+Do alto da pedra eu posso ver,
+       Am7        D7        G9
+Que o Teu amor me faz viver!'),
+  ('rosa-de-saron-o-sol-da-meia-noite', 'O Sol da Meia-Noite', 'Rosa de Saron', 'Ação de Graças', 'Páscoa', 'Em', 84, '4/4', 'Rock Balada', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=O+Sol+da+Meia-Noite+Rosa+de+Saron+cifra', '{"status": "Vigília Pascal Jovem / Ação de Graças", "score": 88, "documentRef": "Doc. 53 CNBB", "biblicalRef": "Lc 1, 78-79; Jo 8, 12", "justification": "Cristo como o Sol que brilha mesmo na meia-noite das nossas provações.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C9  G  D/F#  Em  C9  D4  D
+
+[Primeira Parte]
+Em                    C9
+Quando a escuridão tenta encobrir,
+G                         D/F#
+A esperança que arde em meu coração,
+Em                    C9
+Eu levanto os olhos para o alto,
+Am7                       B7
+Pois de Ti vem a minha salvação.
+
+[Refrão]
+          C9                D9
+Tu és o Sol da meia-noite,
+        Bm7               Em7
+A estrela d''alva que não se apaga!
+       Am7                D4  D
+Brilha em mim a Tua luz divina,
+       C9        B7       Em
+Que a minha alma tanto esperava!
+
+[Segunda Parte]
+Em                    C9
+Não há trevas que possam vencer,
+G                         D/F#
+O fulgor da Tua ressurreição.
+Em                    C9
+Caminhando sob a Tua graça,
+Am7                       B7
+Renovado sou pelo Teu perdão.
+
+[Final]
+       C9         D9        Em7
+Tu és o Sol da meia-noite,
+       Am7        B7        Em9
+A luz eterna do meu viver!'),
+  ('rosa-de-saron-marcas', 'Marcas', 'Rosa de Saron', 'Comunhão', 'Quaresma', 'C', 70, '4/4', 'Balada Dedilhada', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Marcas+Rosa+de+Saron+cifra', '{"status": "Adoração da Cruz / Retiros Quaresmais", "score": 88, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Is 53, 5; Gl 6, 17", "justification": "Meditação sobre as marcas da Paixão de Cristo que curam as marcas da nossa história.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am7  F9  C/E  Dm7  G4  G
+
+[Primeira Parte]
+C                      G/B
+Tantas marcas trago pelo caminho,
+Am7                    F9
+Cicatrizes que o tempo deixou.
+C                      G/B
+Mas ao contemplar as Tuas chagas,
+Dm7                    G4      G
+Reconheço o preço do Teu amor.
+
+[Refrão]
+          F9                G/F
+Tuas marcas curam minhas feridas,
+        Em7                 Am7
+Teu sangue lava o meu coração!
+       Dm7                  G4  G
+Na Tua cruz encontro a nova vida,
+       F9         G7        C
+No Teu abraço, a restauração!
+
+[Segunda Parte]
+C                      G/B
+Hoje entrego tudo em Teu altar,
+Am7                    F9
+O meu passado e o meu amanhã.
+C                      G/B
+Que a minha vida tenha a Tua marca,
+Dm7                    G4      G
+Sinal eterno da Tua aliança.
+
+[Final]
+       Dm7        G7        Am7  F9
+Tuas marcas curam minhas feridas,
+       Dm7        G7        C9
+Senhor da minha vida!'),
+  ('rosa-de-saron-rara-calma', 'Rara Calma', 'Rosa de Saron', 'Ação de Graças', 'Qualquer', 'D', 72, '4/4', 'Balada Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Rara+Calma+Rosa+de+Saron+cifra', '{"status": "Ação de Graças / Momento de Paz Interior", "score": 89, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Jo 14, 27; Fl 4, 7", "justification": "Canto sobre a paz que o mundo não pode dar, a rara calma que vem da presença de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm7  G9  D/F#  Em7  A4  A
+
+[Primeira Parte]
+D                      A/C#
+No meio do barulho deste mundo,
+Bm7                    G9
+Ouço a Tua voz a me chamar.
+D                      A/C#
+Como brisa leve na manhã,
+Em7                    A4      A
+Vens o meu espírito acalmar.
+
+[Refrão]
+          G9                A/G
+Tua presença traz a rara calma,
+        F#m7                Bm7
+Que pacifica todo o meu interior!
+       Em7                  A4  A
+Descanso agora sob as Tuas asas,
+       G9         A7        D
+Seguro estou nos braços do Senhor!
+
+[Segunda Parte]
+D                      A/C#
+Passam as tormentas e os medos,
+Bm7                    G9
+Quando me abandono em Tuas mãos.
+D                      A/C#
+Tu és o porto onde ancoro a vida,
+Em7                    A4      A
+A paz perfeita do meu coração.
+
+[Final]
+       Em7        A7        Bm7  G9
+Tua presença traz a rara calma,
+       Em7        A7        D9
+Jesus, descanso da minha alma!'),
+  ('rosa-de-saron-monte-inverno', 'Monte Inverno', 'Rosa de Saron', 'Ação de Graças', 'Quaresma', 'Am', 76, '4/4', 'Balada Rock', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Monte+Inverno+Rosa+de+Saron+cifra', '{"status": "Retiros Espirituais / Vigílias", "score": 85, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Ct 2, 11-12; Sl 121, 1-2", "justification": "Mesmo no inverno espiritual mais rigoroso, a primavera da graça de Deus floresce.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Am  F9  C  G/B  Am  F9  E4  E
+
+[Primeira Parte]
+Am                     F9
+Subo o monte em meio ao frio intenso,
+C                      G/B
+Onde a neve cobre a direção.
+Am                     F9
+Mas no peito arde uma chama viva,
+Dm7                    E4      E
+Que aquece a minha oração.
+
+[Refrão]
+          F9                G9
+Mesmo no alto do Monte Inverno,
+        Em7                 Am7
+Teu calor derrete a solidão!
+       Dm7                  E4  E
+Faz brotar a flor da esperança,
+       F9         E7        Am
+Nova primavera no coração!
+
+[Segunda Parte]
+Am                     F9
+Não importa quão longa seja a noite,
+C                      G/B
+Sei que a alvorada vai chegar.
+Am                     F9
+Confiante sigo os Teus passos,
+Dm7                    E4      E
+Até no Teu santuário descansar.
+
+[Final]
+       Dm7        E7        F9
+Mesmo no alto do Monte Inverno,
+       Dm7        E7        Am9
+Teu amor é fogo eterno!'),
+  ('rosa-de-saron-menos-de-um-segundo', 'Menos de Um Segundo', 'Rosa de Saron', 'Ação de Graças', 'Qualquer', 'G', 75, '4/4', 'Balada Acústica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Menos+de+Um+Segundo+Rosa+de+Saron+cifra', '{"status": "Encontros de Jovens / Momento de Conversão", "score": 88, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Sl 84, 11; Lc 15, 20", "justification": "Basta menos de um segundo diante da graça de Deus para que toda uma vida seja transformada.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em7  C9  G/B  Am7  D4  D
+
+[Primeira Parte]
+G                      D/F#
+Quantas vezes procurei tão longe,
+Em7                    C9
+O que sempre esteve junto a mim.
+G                      D/F#
+Bastou um olhar para a Tua cruz,
+Am7                    D4      D
+Para o meu deserto chegar ao fim.
+
+[Refrão]
+          C9                D/C
+Em menos de um segundo tudo mudou,
+        Bm7                 Em7
+Quando a Tua graça me tocou!
+       Am7                  D4  D
+Um instante em Tua presença vale mais,
+       C9         D7        G
+Que mil dias longe da Tua paz!
+
+[Segunda Parte]
+G                      D/F#
+Não quero mais perder nenhum momento,
+Em7                    C9
+Sem viver no centro do Teu querer.
+G                      D/F#
+Cada batida do meu coração,
+Am7                    D4      D
+Seja para o Teu nome bendizer.
+
+[Final]
+       Am7        D7        Em7  C9
+Em menos de um segundo tudo mudou,
+       Am7        D7        G9
+Pois o Teu amor me resgatou!'),
+  ('rosa-de-saron-mais-que-um-mero-poema', 'Mais Que um Mero Poema', 'Rosa de Saron', 'Ação de Graças', 'Qualquer', 'C', 74, '4/4', 'Balada Pop', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Mais+Que+um+Mero+Poema+Rosa+de+Saron+cifra', '{"status": "Ação de Graças / Louvor Jovem", "score": 87, "documentRef": "Estudo 79 CNBB", "biblicalRef": "1Jo 3, 18; Ef 2, 10", "justification": "O amor a Deus e ao próximo deve ser mais que palavras ou um mero poema: deve ser vida doada.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am7  F9  C/E  Dm7  G4  G
+
+[Primeira Parte]
+C                      G/B
+Escrevi canções falando de amor,
+Am7                    F9
+Rimas belas sob a luz do luar.
+C                      G/B
+Mas compreendi olhando para Ti,
+Dm7                    G4      G
+Que amar é a própria vida entregar.
+
+[Refrão]
+          F9                G/F
+Mais que um mero poema em papel,
+        Em7                 Am7
+Teu amor foi escrito lá na cruz!
+       Dm7                  G4  G
+Faz da minha vida um verso vivo,
+       F9         G7        C
+Que reflita ao mundo a Tua luz!
+
+[Segunda Parte]
+C                      G/B
+Não bastam palavras sem verdade,
+Am7                    F9
+Nem promessas que o vento levou.
+C                      G/B
+Quero amar em obras e em silêncio,
+Dm7                    G4      G
+Como o Mestre um dia nos amou.
+
+[Final]
+       Dm7        G7        Am7  F9
+Mais que um mero poema em papel,
+       Dm7        G7        C9
+És a poesia que desceu do céu!'),
+  ('rosa-de-saron-chuva-fria', 'Chuva Fria', 'Rosa de Saron', 'Ação de Graças', 'Quaresma', 'Dm', 76, '4/4', 'Balada Dedilhada', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Chuva+Fria+Rosa+de+Saron+cifra', '{"status": "Retiros / Meditação Penitencial", "score": 85, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Os 6, 3; Sl 51, 9", "justification": "Clamor para que a chuva da graça lave a alma e renove a esperança após a tempestade.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Dm  Bb9  F  C/E  Dm  Bb9  A4  A
+
+[Primeira Parte]
+Dm                     Bb9
+Cai a chuva fria na janela,
+F                      C/E
+Enquanto penso em tudo o que passou.
+Dm                     Bb9
+As lágrimas se misturam à tempestade,
+Gm7                    A4      A
+Clamando pelo abrigo do Senhor.
+
+[Refrão]
+          Bb9               C9
+Depois da chuva fria vem o sol,
+        Am7                 Dm7
+Tua misericórdia me refaz!
+       Gm7                  A4  A
+Lava a minha alma e o meu pranto,
+       Bb9        A7        Dm
+Reacende em mim a Tua paz!
+
+[Segunda Parte]
+Dm                     Bb9
+Como a terra seca espera a água,
+F                      C/E
+Minha vida espera em Teu altar.
+Dm                     Bb9
+Transforma o meu inverno em alvorada,
+Gm7                    A4      A
+Ensina o meu coração a confiar.
+
+[Final]
+       Gm7        A7        Bb9
+Depois da chuva fria vem o sol,
+       Gm7        A7        Dm9
+Brilha em mim a graça do Senhor!'),
+  ('rosa-de-saron-folhas-do-chao', 'Folhas do Chão', 'Rosa de Saron', 'Ação de Graças', 'Qualquer', 'A', 78, '4/4', 'Pop Acústico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Folhas+do+Chão+Rosa+de+Saron+cifra', '{"status": "Encontros de Jovens / Renovação Espiritual", "score": 86, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Ez 37, 5; Ap 21, 5", "justification": "Deus recolhe as folhas caídas da nossa história e faz brotar vida nova em nós.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E/G#  F#m7  D9  A/C#  Bm7  E4  E
+
+[Primeira Parte]
+A                      E/G#
+Como folhas secas pelo chão,
+F#m7                   D9
+Espalhadas pelo vento do outono,
+A                      E/G#
+Assim estavam todos os meus sonhos,
+Bm7                    E4      E
+Antes de encontrar o Teu perdão.
+
+[Refrão]
+          D9                E/D
+Tu recolhes as folhas do chão,
+        C#m7                F#m7
+E devolves vida ao meu jardim!
+       Bm7                  E4  E
+Teu Espírito sopra sobre mim,
+       D9         E7        A
+Começando um tempo sem fim!
+
+[Segunda Parte]
+A                      E/G#
+Já não temo as estações da vida,
+F#m7                   D9
+Pois minhas raízes estão em Ti.
+A                      E/G#
+Darei frutos no tempo oportuno,
+Bm7                    E4      E
+Pela graça que de Ti recebi.
+
+[Final]
+       Bm7        E7        F#m7  D9
+Tu recolhes as folhas do chão,
+       Bm7        E7        A9
+E renovas o meu coração!'),
+  ('rosa-de-saron-invernia', 'Invernia', 'Rosa de Saron', 'Ação de Graças', 'Quaresma', 'Em', 74, '4/4', 'Balada Rock', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Invernia+Rosa+de+Saron+cifra', '{"status": "Vigílias / Meditação", "score": 85, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Sl 130, 5-6; Is 43, 2", "justification": "Canto poético de perseverança na fé durante o tempo de invernia e espera em Deus.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C9  G  D/F#  Em  C9  B4  B
+
+[Primeira Parte]
+Em                     C9
+Nos dias longos desta invernia,
+G                      D/F#
+Guardo a chama acesa no altar.
+Em                     C9
+Mesmo que o frio tente paralisar,
+Am7                    B4      B
+Minha fé não deixará de caminhar.
+
+[Refrão]
+          C9                D9
+Passará o tempo da invernia,
+        Bm7                 Em7
+A promessa eterna cumprirá!
+       Am7                  B4  B
+Quem espera no Senhor não cansa,
+       C9         B7        Em
+Novo canto em breve cantará!
+
+[Segunda Parte]
+Em                     C9
+Toda semente oculta sob a terra,
+G                      D/F#
+No silêncio aprende a germinar.
+Em                     C9
+Assim Deus trabalha em minha história,
+Am7                    B4      B
+Preparando o tempo de florir e amar.
+
+[Final]
+       Am7        B7        C9
+Passará o tempo da invernia,
+       Am7        B7        Em9
+Cristo é a nossa eterna alegria!'),
+  ('thiago-brado-foi-por-voce', 'Foi Por Você', 'Thiago Brado', 'Comunhão', 'Quaresma', 'G', 70, '4/4', 'Balada Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Foi+Por+Você+Thiago+Brado+cifra', '{"status": "Adoração da Cruz / Comunhão / Semana Santa", "score": 92, "documentRef": "Estudo 79 CNBB / Diretório de Liturgia", "biblicalRef": "Jo 15, 13; Rm 5, 8", "justification": "Contemplação do sacrifício de Cristo no Calvário, entregue pessoalmente por amor a cada um.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em7  C9  G/B  Am7  D4  D
+
+[Primeira Parte]
+G                      D/F#
+Cada passo rumo ao Calvário,
+Em7                    C9
+Cada gota de sangue que caiu,
+G                      D/F#
+O silêncio diante dos algozes,
+Am7                    D4      D
+Foi o maior amor que o mundo viu.
+
+[Refrão]
+          C9                D/C
+Foi por você que Ele subiu na cruz,
+        Bm7                 Em7
+Foi por você que Ele se entregou!
+       Am7                  D4  D
+De braços abertos entre o céu e a terra,
+       C9         D7        G
+Jesus Cristo a sua vida resgatou!
+
+[Segunda Parte]
+G                      D/F#
+Não foram os cravos que O prenderam,
+Em7                    C9
+Mas o amor imenso por você e por mim.
+G                      D/F#
+No terceiro dia a morte foi vencida,
+Am7                    D4      D
+Para nos dar a vida que não tem fim.
+
+[Final]
+       Am7        D7        Em7  C9
+Foi por você, foi por amor,
+       Am7        D7        G9
+Bendito seja o nosso Redentor!'),
+  ('thiago-brado-meu-alvo', 'Meu Alvo', 'Thiago Brado', 'Final', 'Qualquer', 'C', 76, '4/4', 'Pop Acústico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Meu+Alvo+Thiago+Brado+cifra', '{"status": "Envio / Encontros de Jovens / Crisma", "score": 90, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Fl 3, 13-14; Hb 12, 1-2", "justification": "Inspirado em Filipenses 3, 14: prosseguir decididamente para o alvo que é Cristo e o Céu.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am7  F9
+
+[Primeira Parte]
+C                      G/B
+Deixo para trás o que já passou,
+Am7                    F9
+Fixo os meus olhos no que está à frente.
+C                      G/B
+Não vou parar no meio do caminho,
+F9                     G4      G
+Tua graça me impulsiona diariamente.
+
+[Refrão]
+          F9                G9
+O meu alvo é o Céu, o meu alvo é Jesus!
+        Em7                 Am7
+Vou correndo para a meta da Tua luz!
+       Dm7                  G4  G
+Nada neste mundo vai me deter,
+       F9         G7        C
+Para Ti, Senhor, eu quero viver!
+
+[Segunda Parte]
+C                      G/B
+Se o cansaço tentar me abater,
+Am7                    F9
+Tua Palavra renova o meu vigor.
+C                      G/B
+Combato o bom combate da fé,
+F9                     G4      G
+Guardado nos braços do meu Salvador.
+
+[Final]
+       Dm7        G7        Am7  F9
+O meu alvo é o Céu, o meu alvo é Jesus!
+       Dm7        G7        C9
+Minha vida inteira a Ti conduz!'),
+  ('thiago-brado-o-bom-pastor', 'O Bom Pastor', 'Thiago Brado', 'Comunhão', 'Páscoa', 'D', 72, '4/4', 'Balada Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=O+Bom+Pastor+Thiago+Brado+cifra', '{"status": "Comunhão / 4º Domingo da Páscoa (Domingo do Bom Pastor)", "score": 95, "documentRef": "IGMR 86 / Lecionário Dominical (Jo 10)", "biblicalRef": "Jo 10, 11-16; Sl 23, 1-6", "justification": "Canto profundamente bíblico inspirado no Salmo 22(23) e no discurso do Bom Pastor em São João.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm7  G9  D/F#  Em7  A4  A
+
+[Primeira Parte]
+D                      A/C#
+Mesmo que eu ande pelo vale escuro,
+Bm7                    G9
+Mal nenhum eu temerei, Senhor.
+D                      A/C#
+Tua vara e Teu cajado me consolam,
+Em7                    A4      A
+Ouço a doce voz do meu Pastor.
+
+[Refrão]
+          G9                A/G
+Tu és o Bom Pastor que dá a vida,
+        F#m7                Bm7
+Que conhece cada ovelha pelo nome!
+       Em7                  A4  A
+Em verdes pastos me fazes repousar,
+       G9         A7        D
+Junto às águas tranquilas me refazes!
+
+[Segunda Parte]
+D                      A/C#
+Quando me perdi longe do aprisco,
+Bm7                    G9
+Deixaste as noventa e nove por amor.
+D                      A/C#
+Nos Teus ombros me trouxeste de volta,
+Em7                    A4      A
+Curando as feridas da minha dor.
+
+[Final]
+       Em7        A7        Bm7  G9
+Tu és o Bom Pastor que dá a vida,
+       Em7        A7        D9
+Nada me faltará em Tua guarida!'),
+  ('thiago-brado-terra-seca', 'Terra Seca', 'Thiago Brado', 'Ação de Graças', 'Quaresma', 'Am', 70, '4/4', 'Dedilhado Contemplativo', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Terra+Seca+Thiago+Brado+cifra', '{"status": "Adoração / Pós-Comunhão / Retiros", "score": 91, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Sl 63, 2; Sl 143, 6", "justification": "Oração da alma sedenta de Deus como a terra seca sem água (Salmo 62/63).", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Am  F9  C  G/B  Am  F9  E4  E
+
+[Primeira Parte]
+Am                     F9
+Minha alma tem sede de Ti, Senhor,
+C                      G/B
+Meu corpo Te deseja ardentemente,
+Am                     F9
+Como terra seca, árida e sem água,
+Dm7                    E4      E
+Clamo pela Tua graça, Deus vivente.
+
+[Refrão]
+          F9                G9
+Derrama sobre mim a Tua água viva,
+        Em7                 Am7
+Vem saciar a sede do meu coração!
+       Dm7                  E4  E
+Sou terra seca esperando a Tua chuva,
+       F9         E7        Am
+Transforma o meu deserto em jardim!
+
+[Segunda Parte]
+Am                     F9
+No Teu santuário contemplo a Tua glória,
+C                      G/B
+Pois Tua graça vale mais do que a vida.
+Am                     F9
+Meus lábios entoarão o Teu louvor,
+Dm7                    E4      E
+Minhas mãos se elevam em prece agradecida.
+
+[Final]
+       Dm7        E7        F9
+Derrama sobre mim a Tua água viva,
+       Dm7        E7        Am9
+Senhor, fonte de eterna vida!'),
+  ('thiago-brado-meu-mundo', 'Meu Mundo', 'Thiago Brado', 'Ação de Graças', 'Qualquer', 'E', 72, '4/4', 'Balada Acústica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Meu+Mundo+Thiago+Brado+cifra', '{"status": "Ação de Graças / Adoração Eucarística", "score": 89, "documentRef": "Doc. 53 CNBB", "biblicalRef": "Cl 3, 11; Gl 2, 20", "justification": "Declaração de intimidade e pertença total a Cristo, centro do nosso mundo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B/D#  C#m7  A9  E/G#  F#m7  B4  B
+
+[Primeira Parte]
+E                      B/D#
+Quando entras no silêncio do meu quarto,
+C#m7                   A9
+Todo o universo parece parar.
+E                      B/D#
+Basta um toque da Tua mão ferida,
+F#m7                   B4      B
+Para o meu coração se iluminar.
+
+[Refrão]
+          A9                B/A
+Tu és o meu mundo, meu princípio e fim,
+        G#m7                C#m7
+Tudo o que eu preciso encontro em Ti!
+       F#m7                 B4  B
+Não sei mais viver longe do Teu olhar,
+       A9         B7        E
+Para sempre quero Te adorar!
+
+[Segunda Parte]
+E                      B/D#
+Podes levar os meus planos humanos,
+C#m7                   A9
+Só não retires de mim o Teu Espírito.
+E                      B/D#
+Que o meu respirar seja uma oração,
+F#m7                   B4      B
+Unido ao Teu amor infinito.
+
+[Final]
+       F#m7       B7        C#m7  A9
+Tu és o meu mundo, meu princípio e fim,
+       F#m7       B7        E9
+Vive, Senhor Jesus, dentro de mim!'),
+  ('thiago-brado-nao-estou-so', 'Não Estou Só', 'Thiago Brado', 'Ação de Graças', 'Qualquer', 'G', 74, '4/4', 'Balada Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Não+Estou+Só+Thiago+Brado+cifra', '{"status": "Consolação / Ação de Graças / Grupos de Oração", "score": 90, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Mt 28, 20; Js 1, 9", "justification": "Certeza da promessa de Jesus: ''Eis que estou convosco todos os dias até o fim do mundo''.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em7  C9
+
+[Primeira Parte]
+G                      D/F#
+Às vezes a estrada parece deserta,
+Em7                    C9
+E o peso da cruz faz o passo falhar.
+G                      D/F#
+Mas sinto ao meu lado uma doce presença,
+C9                     D4      D
+Que enxuga meu pranto e me faz levantar.
+
+[Refrão]
+          C9                D9
+Eu não estou só, Tu estás comigo!
+        Bm7                 Em7
+És meu companheiro, meu fiel Amigo!
+       Am7                  D4  D
+Em cada momento, na dor ou na paz,
+       C9         D7        G
+Tua mão poderosa me sustenta e refaz!
+
+[Segunda Parte]
+G                      D/F#
+Prometeste ficar todos os dias,
+Em7                    C9
+Até a consumação dos séculos.
+G                      D/F#
+Por isso caminho sem medo da noite,
+C9                     D4      D
+Guiado pela luz do Teu Evangelho.
+
+[Final]
+       Am7        D7        Em7  C9
+Eu não estou só, Tu estás comigo,
+       Am7        D7        G9
+Jesus, meu eterno abrigo!'),
+  ('thiago-brado-nova-manha', 'Nova Manhã', 'Thiago Brado', 'Entrada', 'Páscoa', 'A', 78, '4/4', 'Pop Acústico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Nova+Manhã+Thiago+Brado+cifra', '{"status": "Canto de Abertura / Manhã de Páscoa / Laudes", "score": 91, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Lm 3, 22-23; Sl 30, 6", "justification": "As misericórdias do Senhor se renovam a cada nova manhã.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E/G#  F#m7  D9  A/C#  Bm7  E4  E
+
+[Primeira Parte]
+A                      E/G#
+O choro pode durar uma noite,
+F#m7                   D9
+Mas a alegria vem ao amanhecer.
+A                      E/G#
+Os raios do sol anunciam a graça,
+Bm7                    E4      E
+Que faz toda a criação renascer.
+
+[Refrão]
+          D9                E/D
+Nasce uma nova manhã de esperança,
+        C#m7                F#m7
+Tua misericórdia se renova em mim!
+       Bm7                  E4  E
+Louvado sejas, Senhor da Aliança,
+       D9         E7        A
+Teu amor é fiel e não tem fim!
+
+[Segunda Parte]
+A                      E/G#
+Abro as janelas da minha alma,
+F#m7                   D9
+Deixo a Tua luz invadir meu viver.
+A                      E/G#
+Entrego este dia em Tuas mãos santas,
+Bm7                    E4      E
+Para a Tua vontade sempre fazer.
+
+[Final]
+       Bm7        E7        F#m7  D9
+Nasce uma nova manhã de esperança,
+       Bm7        E7        A9
+Em Ti minha alma descansa!'),
+  ('thiago-brado-sopro-suave', 'Sopro Suave', 'Thiago Brado', 'Ação de Graças', 'Pentecostes', 'D', 68, '4/4', 'Dedilhado Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Sopro+Suave+Thiago+Brado+cifra', '{"status": "Pentecostes / Crisma / Invocação ao Espírito Santo", "score": 93, "documentRef": "Estudo 79 CNBB", "biblicalRef": "1Rs 19, 12; Jo 20, 22", "justification": "Inspirado na manifestação de Deus ao profeta Elias na brisa leve e no sopro do Espírito Santo.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm7  G9  D/F#  Em7  A4  A
+
+[Primeira Parte]
+D                      A/C#
+Não estavas no vento impetuoso,
+Bm7                    G9
+Nem no terremoto ou no fogo ardente.
+D                      A/C#
+Mas no murmúrio de uma brisa leve,
+Em7                    A4      A
+Reconheci Tua voz tão presente.
+
+[Refrão]
+          G9                A/G
+Sopro Suave, Espírito Santo,
+        F#m7                Bm7
+Vem envolver todo o meu coração!
+       Em7                  A4  A
+Acalma a minh''alma, enxuga o meu pranto,
+       G9         A7        D
+Derrama sobre mim a Tua unção!
+
+[Segunda Parte]
+D                      A/C#
+Como no Cenáculo sopra de novo,
+Bm7                    G9
+Restaura a paz e renova o ardor.
+D                      A/C#
+Faz de mim morada da Tua presença,
+Em7                    A4      A
+Templo vivo do Teu santo amor.
+
+[Final]
+       Em7        A7        Bm7  G9
+Sopro Suave, Espírito Santo,
+       Em7        A7        D9
+A Ti elevo o meu canto!'),
+  ('thiago-brado-teu-santo-nome', 'Teu Santo Nome', 'Thiago Brado', 'Ação de Graças', 'Qualquer', 'C', 72, '4/4', 'Balada Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Teu+Santo+Nome+Thiago+Brado+cifra', '{"status": "Adoração ao Santíssimo / Ação de Graças", "score": 94, "documentRef": "Doc. 53 CNBB", "biblicalRef": "Fl 2, 9-11; Sl 8, 2", "justification": "Adoração ao Nome de Jesus, Nome acima de todo nome diante do qual todo joelho se dobra.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am7  F9  C/E  Dm7  G4  G
+
+[Primeira Parte]
+C                      G/B
+Há um Nome que traz paz ao coração,
+Am7                    F9
+Que liberta o cativo e cura a dor.
+C                      G/B
+Diante d''Ele os mares se acalmam,
+Dm7                    G4      G
+E toda a criação rende louvor.
+
+[Refrão]
+          F9                G/F
+Bendito seja o Teu Santo Nome,
+        Em7                 Am7
+Nome acima de todo nome, Jesus!
+       Dm7                  G4  G
+Todo joelho se dobre no céu e na terra,
+       F9         G7        C
+Diante da majestade da Tua cruz!
+
+[Segunda Parte]
+C                      G/B
+Nos lábios o Teu Nome é melodia,
+Am7                    F9
+No peito é fortaleza e salvação.
+C                      G/B
+Proclamo que só Tu és o Senhor,
+Dm7                    G4      G
+Para a glória de Deus Pai em comunhão.
+
+[Final]
+       Dm7        G7        Am7  F9
+Bendito seja o Teu Santo Nome,
+       Dm7        G7        C9
+Jesus, nosso Deus e Senhor!'),
+  ('mons-jonas-abib-que-santidade-de-vida', 'Que Santidade de Vida', 'Monsenhor Jonas Abib / Canção Nova', 'Ofertório', 'Qualquer', 'D', 76, '4/4', 'Balada Litúrgica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Que+Santidade+de+Vida+Monsenhor+Jonas+Abib+cifra', '{"status": "Apresentação das Oferendas / Vocacional / Consagração", "score": 94, "documentRef": "Lumen Gentium 39-42 / IGMR 73", "biblicalRef": "1Pd 1, 15-16; Rm 12, 1", "justification": "Clássico vocacional e de ofertório de Monsenhor Jonas Abib sobre o chamado universal à santidade.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm7  G  Em7  A4  A7
+
+[Primeira Parte]
+D                      A/C#
+Que santidade de vida, Senhor,
+Bm7                    F#m7
+Posso eu Te ofertar neste altar?
+G                      D/F#
+Se sou tão pequeno e tão frágil assim,
+Em7                    A4      A7
+Só a Tua graça me pode transformar.
+
+[Refrão]
+          G                 A/G
+Toma a minha vida, faz-me santo, Senhor!
+        F#m7                Bm7
+Purifica o meu coração no Teu amor!
+       Em7                  A7
+Ou santos ou nada, queremos viver,
+       G          A7        D
+Totalmente consagrados ao Teu querer!
+
+[Segunda Parte]
+D                      A/C#
+Junto ao pão e ao vinho que apresentamos,
+Bm7                    F#m7
+Coloco os meus passos e a minha missão.
+G                      D/F#
+Faz de mim hóstia viva de louvor,
+Em7                    A4      A7
+Para a glória do Pai e dos irmãos.
+
+[Final]
+       Em7        A7        Bm7  G
+Ou santos ou nada, queremos viver,
+       Em7        A7        D9
+Santidade de vida pra Te oferecer!'),
+  ('mons-jonas-abib-cancao-do-espirito', 'Canção do Espírito (Deixa Jesus Encher Tua Vida)', 'Monsenhor Jonas Abib / Canção Nova', 'Ação de Graças', 'Pentecostes', 'D', 70, '4/4', 'Balada Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 6, 'https://www.youtube.com/results?search_query=Canção+do+Espírito+(Deixa+Jesus+Encher+Tua+Vida)+Monsenhor+Jonas+Abib+cifra', '{"status": "Pentecostes / Crisma / Ação de Graças / Grupos de Oração", "score": 95, "documentRef": "Estudo 79 CNBB / Renovação Carismática Católica", "biblicalRef": "Jo 7, 37-39; Rm 5, 5", "justification": "Hino histórico da renovação espiritual no Brasil, convidando a entregar todas as dores a Jesus no Espírito.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  G  A7  D  G  A7
+
+[Primeira Parte]
+   D                     G
+1. Deixa Jesus encher tua vida
+          A7                   F#m7  Bm7
+Com Seu Espírito e o Seu amor,
+       Em7               A7
+Encher teu coração de gozo e louvor!
+   D                      G
+Deixa Jesus cuidar das coisas
+          A7                   F#m7  Bm7
+Que te atormentam e te fazem chorar,
+       Em7        A7         D    D7
+E com repouso a tua vida se encherá!
+
+[Refrão]
+   G      A7    F#m7  Bm7
+Ó vem, ó vem, Jesus!
+   Em7    A7    D     D7
+Ó vem, ó vem, Jesus!
+   G      A7    F#m7  Bm7
+Ó vem, ó vem, Jesus,
+   Em7    A7    D
+Vem morar em mim!
+
+[Segunda Parte]
+   D                      G
+2. Entrega a Ele os teus caminhos,
+          A7                   F#m7  Bm7
+Os teus cansaços e a tua aflição,
+       Em7               A7
+No Santo Espírito terás consolação!
+   D                      G
+Água viva brotará no teu interior,
+          A7                   F#m7  Bm7
+Curando as marcas de toda a dor,
+       Em7        A7         D    D7
+Para cantares sempre a glória do Senhor!
+
+[Final]
+   G      A7    F#m7  Bm7
+Ó vem, ó vem, Jesus,
+   Em7    A7    D9
+Reinar em meu coração!'),
+  ('mons-jonas-abib-cantai-ao-senhor-cantico-novo', 'Cantai ao Senhor um Cântico Novo', 'Monsenhor Jonas Abib / Canção Nova', 'Entrada', 'Qualquer', 'Em', 110, '4/4', 'Marcha / Louvor', '↓  ↑ ↓ ↑  ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Cantai+ao+Senhor+um+Cântico+Novo+Monsenhor+Jonas+Abib+cifra', '{"status": "Canto de Entrada / Louvor Comunitário", "score": 93, "documentRef": "IGMR 47 / Estudo 79 CNBB", "biblicalRef": "Sl 96, 1-3; Sl 98, 1", "justification": "Canto bíblico de abertura e júbilo inspirado diretamente nos Salmos 95(96) e 97(98).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  D  C  B7  Em
+
+[Primeira Parte]
+Em                                   D
+Cantai ao Senhor um cântico novo,
+C                  B7          Em
+Cantai ao Senhor, toda a terra!
+Em                                   D
+Cantai ao Senhor, bendizei o Seu nome,
+C                  B7          Em
+Proclamai dia a dia a Sua salvação!
+
+[Refrão]
+   Am7                Em
+Cantai, cantai ao Senhor,
+   B7                 Em    E7
+Porque Ele fez maravilhas!
+   Am7                Em
+Cantai, cantai ao Senhor,
+   C        B7        Em
+Alegrai-vos em Sua presença!
+
+[Segunda Parte]
+Em                                   D
+Publicai entre os povos a Sua glória,
+C                  B7          Em
+Em todas as nações os Seus prodígios!
+Em                                   D
+Porque grande é o Senhor e digno de louvor,
+C                  B7          Em
+Revestido de esplendor e majestade!
+
+[Final]
+   Am7                Em
+Cantai, cantai ao Senhor,
+   C        B7        Em
+Aleluia, amém!'),
+  ('mons-jonas-abib-eu-e-minha-casa', 'Eu e Minha Casa Serviremos ao Senhor', 'Monsenhor Jonas Abib / Canção Nova', 'Final', 'Qualquer', 'G', 96, '4/4', 'Pop / Louvor', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Eu+e+Minha+Casa+Serviremos+ao+Senhor+Monsenhor+Jonas+Abib+cifra', '{"status": "Semana Nacional da Família / Festa da Sagrada Família / Envio", "score": 95, "documentRef": "Diretório da Pastoral Familiar CNBB", "biblicalRef": "Js 24, 15; At 16, 31", "justification": "Profissão de fé familiar baseada na declaração de Josué (Js 24, 15).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em7  C9  D7  G
+
+[Primeira Parte]
+G                      D/F#
+Diante das escolhas deste mundo,
+Em7                    Bm7
+Tomamos hoje a nossa decisão:
+C9                     G/B
+De abrir as portas do nosso lar,
+Am7                    D4      D7
+Para que Cristo seja o Rei e a Salvação!
+
+[Refrão]
+          G                 D/F#
+Eu e minha casa serviremos ao Senhor!
+        Em7                 Bm7
+Eu e minha casa serviremos ao Senhor!
+       C9                   G/B
+Com alegria, na fé e no amor,
+       Am7        D7        G
+Eu e minha casa serviremos ao Senhor!
+
+[Segunda Parte]
+G                      D/F#
+Não serviremos aos ídolos da terra,
+Em7                    Bm7
+Pois só o Senhor nos libertou do mal.
+C9                     G/B
+Ele é a Rocha que sustenta a família,
+Am7                    D4      D7
+Abençoando a nossa aliança conjugal!
+
+[Final]
+       C9                   G/B
+Com alegria, na fé e no amor,
+       Am7        D7        G9
+Eu e minha casa serviremos ao Senhor!'),
+  ('mons-jonas-abib-vigia-esperando-a-aurora', 'Vigia Esperando a Aurora', 'Monsenhor Jonas Abib / Canção Nova', 'Entrada', 'Advento', 'C', 74, '4/4', 'Balada Litúrgica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Vigia+Esperando+a+Aurora+Monsenhor+Jonas+Abib+cifra', '{"status": "Advento / Vigílias / Liturgia das Horas", "score": 96, "documentRef": "Estudo 79 CNBB / Discurso de João Paulo II em Toronto (JMJ 2002)", "biblicalRef": "Sl 130, 6; Is 21, 11-12", "justification": "Canto de esperança vigilante inspirado no Salmo 129(130) e no chamado aos jovens para serem sentinelas da manhã.", "repertoireType": "popular", "specialDay": "Advento", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am7  F9  Dm7  G4  G
+
+[Primeira Parte]
+C                      G/B
+Qual vigia esperando a aurora,
+Am7                    Em7
+Minha alma espera pelo meu Senhor.
+F9                     C/E
+Mais que as sentinelas pela manhã,
+Dm7                    G4      G
+Espera Israel pelo seu Redentor!
+
+[Refrão]
+          F9                G/F
+No silêncio da noite eu vigio,
+        Em7                 Am7
+Com a lâmpada acesa no altar!
+       Dm7                  G4  G
+Vem, Senhor Jesus, Sol da Justiça,
+       F9         G7        C
+Tua aurora já começa a brilhar!
+
+[Segunda Parte]
+C                      G/B
+Porque no Senhor está a misericórdia,
+Am7                    Em7
+E junto d''Ele copiosa redenção.
+F9                     C/E
+Anunciamos ao mundo um novo dia,
+Dm7                    G4      G
+Sentinelas da manhã em oração!
+
+[Final]
+       Dm7        G7        Am7  F9
+Qual vigia esperando a aurora,
+       Dm7        G7        C9
+Vem, Senhor Jesus, é chegada a hora!'),
+  ('mons-jonas-abib-inunda-meu-ser', 'Inunda Meu Ser', 'Monsenhor Jonas Abib / Canção Nova', 'Ação de Graças', 'Pentecostes', 'A', 68, '4/4', 'Dedilhado / Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Inunda+Meu+Ser+Monsenhor+Jonas+Abib+cifra', '{"status": "Pentecostes / Crisma / Pós-Comunhão", "score": 93, "documentRef": "Estudo 79 CNBB", "biblicalRef": "At 2, 1-4; Ef 5, 18", "justification": "Prece suave e profunda de efusão do Espírito Santo.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E/G#  F#m7  D9  Bm7  E4  E7
+
+[Primeira Parte]
+A                      E/G#
+Espírito Santo de Deus,
+F#m7                   C#m7
+Vem visitar o profundo do meu ser.
+D9                     A/C#
+Tu que conheces as minhas fraquezas,
+Bm7                    E4      E7
+Vem com Tua luz meu interior preencher.
+
+[Refrão]
+          D9                E/D
+Inunda meu ser, inunda meu ser,
+        C#m7                F#m7
+Espírito Santo, vem me transformar!
+       Bm7                  E7
+Com Teu amor, com Teu poder,
+       D9         E7        A
+Inunda meu ser neste santo altar!
+
+[Segunda Parte]
+A                      E/G#
+Lava as feridas da minha memória,
+F#m7                   C#m7
+Aquece a frieza do meu coração.
+D9                     A/C#
+Concede os Teus dons de sabedoria,
+Bm7                    E4      E7
+Para eu viver em perfeita comunhão.
+
+[Final]
+       Bm7        E7        F#m7  D9
+Inunda meu ser, Espírito de Amor,
+       Bm7        E7        A9
+Para a glória de Cristo Senhor!'),
+  ('mons-jonas-abib-juras-de-amor', 'Juras de Amor', 'Monsenhor Jonas Abib / Canção Nova', 'Comunhão', 'Qualquer', 'G', 72, '4/4', 'Balada Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Juras+de+Amor+Monsenhor+Jonas+Abib+cifra', '{"status": "Comunhão / Adoração / Renovação de Promessas", "score": 91, "documentRef": "Doc. 53 CNBB", "biblicalRef": "Os 2, 16.21; Ct 8, 6", "justification": "Diálogo esponsal entre a alma e Deus, inspirado no profeta Oseias.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em7  C9  Am7  D4  D7
+
+[Primeira Parte]
+G                      D/F#
+Tu me atraíste ao deserto, Senhor,
+Em7                    Bm7
+Para falar ao meu coração.
+C9                     G/B
+Recordo os dias da minha juventude,
+Am7                    D4      D7
+Quando me chamaste à consagração.
+
+[Refrão]
+          C9                D/C
+Renovo hoje as minhas juras de amor,
+        Bm7                 Em7
+Diante da Tua presença real!
+       Am7                  D7
+Só a Ti pertence a minha vida,
+       C9         D7        G
+Em aliança eterna e nupcial!
+
+[Segunda Parte]
+G                      D/F#
+Desposaste-me na justiça e no direito,
+Em7                    Bm7
+Na ternura e na fidelidade sem fim.
+C9                     G/B
+Como selo sobre o Teu coração,
+Am7                    D4      D7
+Guarda a Tua graça viva dentro de mim.
+
+[Final]
+       Am7        D7        Em7  C9
+Renovo hoje as minhas juras de amor,
+       Am7        D7        G9
+Meu Amado, meu Deus e Senhor!'),
+  ('mons-jonas-abib-nao-da-mais-pra-voltar', 'Não Dá Mais Pra Voltar (O Barco Está Virando)', 'Monsenhor Jonas Abib / Canção Nova', 'Final', 'Qualquer', 'D', 92, '4/4', 'Folk / Jovem', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Não+Dá+Mais+Pra+Voltar+(O+Barco+Está+Virando)+Monsenhor+Jonas+Abib+cifra', '{"status": "Envio Missionário / Encontros Vocacionais e Jovens", "score": 90, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Lc 9, 62; Mt 4, 19-20", "justification": "Canto histórico de decisão radical pelo Evangelho: quem põe a mão no arado não olha para trás.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  Bm7  G  A7  D  A7
+
+[Primeira Parte]
+   D                         Bm7
+1. Não dá mais pra voltar, o barco está em alto-mar,
+   G                         A7
+Não dá mais pra negar a voz de quem me pôs a navegar!
+   D                         Bm7
+Deixei na praia as redes do meu velho viver,
+   G             A7          D      D7
+Agora só por Cristo eu quero viver!
+
+[Refrão]
+          G                 A7
+Não dá mais pra voltar atrás,
+        F#m7                Bm7
+Quem pôs a mão no arado segue em paz!
+       Em7                  A7
+Com Jesus no leme da embarcação,
+       G          A7        D
+Levamos ao mundo a salvação!
+
+[Segunda Parte]
+   D                         Bm7
+2. Mesmo que as ondas tentem nos intimidar,
+   G                         A7
+O Mestre está no barco e manda o vento se acalmar!
+   D                         Bm7
+Avancemos para as águas mais profundas na fé,
+   G             A7          D      D7
+Pescadores de homens como São Pedro é!
+
+[Final]
+       Em7        A7        Bm7  G
+Não dá mais pra voltar atrás,
+       Em7        A7        D9
+Só Jesus é o Caminho e a Paz!'),
+  ('mons-jonas-abib-cristo-quero-ser-instrumento', 'Cristo, Quero Ser Instrumento de Tua Paz', 'Monsenhor Jonas Abib / Canção Nova', 'Ofertório', 'Qualquer', 'C', 74, '4/4', 'Balada Franciscana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Cristo,+Quero+Ser+Instrumento+de+Tua+Paz+Monsenhor+Jonas+Abib+cifra', '{"status": "Ofertório / Canto da Paz / Festa de São Francisco de Assis", "score": 98, "documentRef": "Estudo 79 CNBB / Hinário Litúrgico", "biblicalRef": "Mt 5, 9; Gl 5, 22", "justification": "Oração da Paz atribuída à espiritualidade de São Francisco de Assis, consagrada na liturgia.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  Am7  Dm7  G7  C  G7
+
+[Primeira Parte]
+   C                         Am7
+1. Cristo, quero ser instrumento de Tua paz e do Teu infinito amor:
+   Dm7                       G7                           C      G7
+Onde houver ódio e rancor, que eu leve a concórdia, que eu leve o amor!
+   C                      E7                     Am7
+Onde há ofensa que dói, que eu leve o perdão;
+   F                      Dm7                    G4    G7
+Onde houver a discórdia, que eu leve a união e Tua paz!
+
+[Refrão]
+          F                 G7
+Mestre, que eu não busque tanto ser consolado,
+        Em7                 Am7
+Mas consolar; ser compreendido, mas compreender;
+       Dm7                  G7
+Ser amado, mas amar com todo o ardor,
+       F          G7        C
+Pois é dando que se recebe o Teu amor!
+
+[Segunda Parte]
+   C                         Am7
+2. Mesmo que haja um só coração que duvide do bem, do amor e do Céu,
+   Dm7                       G7                           C      G7
+Quero com firmeza anunciar a Palavra que traz a clareza da fé!
+   C                      E7                     Am7
+Onde houver erro, Senhor, que eu leve a verdade;
+   F                      Dm7                    G4    G7
+No desespero e na tristeza, a esperança e a alegria da luz!
+
+[Final]
+       Dm7                  G7        Am7  F
+Perdoando é que se encontra o perdão,
+       Dm7        G7        C9
+E morrendo se vive para a eterna mansão!'),
+  ('banda-dom-seu-amor-e-demais', 'Seu Amor É Demais', 'Banda Dom', 'Final', 'Qualquer', 'G', 112, '4/4', 'Pop Rock Jovem', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Seu+Amor+É+Demais+Banda+Dom+cifra', '{"status": "Canto Final / Encontros de Jovens / Crisma", "score": 88, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Rm 8, 38-39; 1Jo 4, 16", "justification": "Clássico da música católica jovem celebrando a alegria transbordante do amor de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em7  C9  G  D  C9
+
+[Primeira Parte]
+G                      D
+Eu sei que nunca estou sozinho,
+Em7                    C9
+Mesmo quando tudo parece difícil.
+G                      D
+Tua mão me guia pelo caminho,
+Em7                    C9      D
+E transforma em festa o meu sorriso!
+
+[Refrão]
+          G                 D
+O Seu amor é demais, não tem igual,
+        Em7                 C9
+Me faz voar além do temporal!
+          G                 D
+O Seu amor é demais, me faz feliz,
+        C9        D7        G
+É tudo o que meu coração sempre quis!
+
+[Segunda Parte]
+G                      D
+Quero gritar para o mundo inteiro,
+Em7                    C9
+Que em Jesus encontrei a verdadeira vida.
+G                      D
+Um amor fiel e tão verdadeiro,
+Em7                    C9      D
+Que cura a alma de toda ferida!
+
+[Final]
+          G                 D
+O Seu amor é demais, não tem igual,
+        C9        D7        G9
+Amor eterno do Pai Celestial!'),
+  ('banda-dom-coracao-adorador', 'Coração Adorador', 'Banda Dom', 'Ação de Graças', 'Qualquer', 'D', 72, '4/4', 'Balada Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Coração+Adorador+Banda+Dom+cifra', '{"status": "Adoração ao Santíssimo / Pós-Comunhão", "score": 91, "documentRef": "Doc. 53 CNBB", "biblicalRef": "Jo 4, 23; Sl 51, 12", "justification": "Pedido por um coração purificado e inteiramente voltado à adoração ao Senhor.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm7  G9  Em7  A4  A
+
+[Primeira Parte]
+D                      A/C#
+Vem tocar, Senhor, em meu interior,
+Bm7                    G9
+Desfazer as pedras da indiferença.
+D                      A/C#
+Quero me prostrar diante do altar,
+Em7                    A4      A
+Mergulhado na Tua santa presença.
+
+[Refrão]
+          G9                A/G
+Dá-me um coração adorador,
+        F#m7                Bm7
+Que bata no compasso do Teu amor!
+       Em7                  A4  A
+Em espírito e em verdade quero viver,
+       G9         A7        D
+Para o Teu santo nome engrandecer!
+
+[Segunda Parte]
+D                      A/C#
+Mais do que palavras ou belas canções,
+Bm7                    G9
+Tu procuras vidas entregues a Ti.
+D                      A/C#
+Recebe o meu nada e faz-me Teu servo,
+Em7                    A4      A
+Eis-me aqui, Senhor, eis-me aqui!
+
+[Final]
+       Em7        A7        Bm7  G9
+Dá-me um coração adorador,
+       Em7        A7        D9
+Todo Teu, meu Deus e meu Senhor!'),
+  ('banda-dom-cancao-de-pedro', 'Canção de Pedro', 'Banda Dom', 'Comunhão', 'Páscoa', 'A', 74, '4/4', 'Balada Acústica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Canção+de+Pedro+Banda+Dom+cifra', '{"status": "Comunhão / Festa de São Pedro e São Paulo / Vocacional", "score": 92, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Jo 21, 15-17; Jo 6, 68", "justification": "Inspirada no diálogo de Jesus ressuscitado com Simão Pedro à beira do mar de Tiberíades: ''Senhor, Tu sabes tudo, Tu sabes que eu Te amo''.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E/G#  F#m7  D9  Bm7  E4  E
+
+[Primeira Parte]
+A                      E/G#
+Mesmo tendo falhado tantas vezes,
+F#m7                   D9
+Mesmo quando o medo me fez negar,
+A                      E/G#
+O Teu olhar de misericórdia,
+Bm7                    E4      E
+Me encontrou chorando à beira do mar.
+
+[Refrão]
+          D9                E/D
+Senhor, Tu sabes tudo o que sou,
+        C#m7                F#m7
+Tu sabes que eu Te amo, meu Salvador!
+       Bm7                  E4  E
+A quem iremos nós, se só Tu tens,
+       D9         E7        A
+Palavras de vida eterna, amém!
+
+[Segunda Parte]
+A                      E/G#
+Por três vezes perguntas ao meu coração,
+F#m7                   D9
+Restaurando em mim a vocação de amar.
+A                      E/G#
+Apascentarei as Tuas ovelhas,
+Bm7                    E4      E
+Tua Igreja sobre a Rocha vou servir e honrar.
+
+[Final]
+       Bm7        E7        F#m7  D9
+Senhor, Tu sabes tudo o que sou,
+       Bm7        E7        A9
+Tu sabes que eu Te amo, meu Senhor!'),
+  ('banda-dom-eu-sou-o-que-sou', 'Eu Sou o Que Sou', 'Banda Dom', 'Ação de Graças', 'Qualquer', 'E', 76, '4/4', 'Balada Pop', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Eu+Sou+o+Que+Sou+Banda+Dom+cifra', '{"status": "Ação de Graças / Retiros de Juventude", "score": 89, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Ex 3, 14; 1Cor 15, 10", "justification": "Contemplação do Deus que Se revela como ''Eu Sou'' e nos sustenta pela Sua graça.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B/D#  C#m7  A9  F#m7  B4  B
+
+[Primeira Parte]
+E                      B/D#
+Diante da sarça que arde sem consumir,
+C#m7                   A9
+Tiro as sandálias em solo sagrado.
+E                      B/D#
+Ouço a voz do Deus de nossos pais,
+F#m7                   B4      B
+Que caminha sempre ao nosso lado.
+
+[Refrão]
+          A9                B/A
+Eu Sou o que Sou, diz o Senhor,
+        G#m7                C#m7
+O Deus Eterno, teu Libertador!
+       F#m7                 B4  B
+Pela Tua graça hoje sou o que sou,
+       A9         B7        E
+Filho amado que o Pai resgatou!
+
+[Segunda Parte]
+E                      B/D#
+Não temo o Faraó nem o deserto,
+C#m7                   A9
+Pois Tua coluna de fogo me guia.
+E                      B/D#
+Abres o mar diante dos meus passos,
+F#m7                   B4      B
+E me alimentas com o Pão de cada dia.
+
+[Final]
+       F#m7       B7        C#m7  A9
+Eu Sou o que Sou, diz o Senhor,
+       F#m7       B7        E9
+A Ele toda a glória e o louvor!'),
+  ('banda-dom-aos-pes-da-tua-cruz', 'Aos Pés da Tua Cruz', 'Banda Dom', 'Comunhão', 'Quaresma', 'C', 70, '4/4', 'Dedilhado / Balada', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Aos+Pés+da+Tua+Cruz+Banda+Dom+cifra', '{"status": "Quaresma / Sexta-Feira Santa / Exaltação da Santa Cruz", "score": 92, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Jo 19, 25-27; Gl 6, 14", "justification": "Junto com Maria e o discípulo amado aos pés da Cruz de Jesus.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am7  F9  Dm7  G4  G
+
+[Primeira Parte]
+C                      G/B
+Aos pés da Tua cruz me coloco agora,
+Am7                    F9
+Com Maria e João em adoração.
+C                      G/B
+Contemplo o mistério da entrega total,
+Dm7                    G4      G
+Daquele que nos deu a redenção.
+
+[Refrão]
+          F9                G/F
+Aos pés da Tua cruz encontro o perdão,
+        Em7                 Am7
+Jorra do Teu lado água e salvação!
+       Dm7                  G4  G
+Recebo Maria por Mãe do meu viver,
+       F9         G7        C
+Aos pés da Tua cruz quero permanecer!
+
+[Segunda Parte]
+C                      G/B
+Quando o mundo tentar me afastar de Ti,
+Am7                    F9
+Lembrarei do preço que pagaste ali.
+C                      G/B
+Tua cruz é árvore de vida e paz,
+Dm7                    G4      G
+Que toda a minha história refaz.
+
+[Final]
+       Dm7        G7        Am7  F9
+Aos pés da Tua cruz encontro o perdão,
+       Dm7        G7        C9
+Jesus, Rei do meu coração!'),
+  ('banda-dom-fiat-faca-se', 'Fiat (Faça-se em Mim)', 'Banda Dom', 'Ofertório', 'Advento', 'G', 72, '4/4', 'Balada Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Fiat+(Faça-se+em+Mim)+Banda+Dom+cifra', '{"status": "Advento / Festas Marianas / Vocacional / Ofertório", "score": 94, "documentRef": "Marialis Cultus / Estudo 79 CNBB", "biblicalRef": "Lc 1, 38; Lc 1, 46-49", "justification": "Canto inspirado no ''Fiat'' de Nossa Senhora na Anunciação do Anjo Gabriel.", "repertoireType": "popular", "specialDay": "Advento", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em7  C9  Am7  D4  D
+
+[Primeira Parte]
+G                      D/F#
+Um anjo do céu trouxe a mensagem,
+Em7                    C9
+Para a jovem virgem lá em Nazaré.
+G                      D/F#
+No silêncio humilde do seu coração,
+Am7                    D4      D
+Brotou a resposta mais bela da fé.
+
+[Refrão]
+          C9                D/C
+Fiat, faça-se em mim segundo a Tua Palavra!
+        Bm7                 Em7
+Eis aqui a serva do Senhor!
+       Am7                  D4  D
+Como Maria quero dizer meu sim,
+       C9         D7        G
+Faz Tua vontade, ó Deus, dentro de mim!
+
+[Segunda Parte]
+G                      D/F#
+O Verbo Divino fez morada em nós,
+Em7                    C9
+Pelo sim perfeito da Mãe de Jesus.
+G                      D/F#
+Ensina-nos, Mãe, a acolher a missão,
+Am7                    D4      D
+De levar ao mundo o Filho da Luz.
+
+[Final]
+       Am7        D7        Em7  C9
+Fiat, faça-se em mim segundo a Tua Palavra,
+       Am7        D7        G9
+Por toda a minha jornada!'),
+  ('banda-dom-permanecer-no-amor', 'Permanecer no Amor', 'Banda Dom', 'Comunhão', 'Páscoa', 'D', 74, '4/4', 'Balada Litúrgica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Permanecer+no+Amor+Banda+Dom+cifra', '{"status": "Comunhão / 5º e 6º Domingos da Páscoa", "score": 94, "documentRef": "IGMR 86 / Lecionário Dominical (Jo 15)", "biblicalRef": "Jo 15, 4-10", "justification": "Baseado na alegoria da Videira e dos Ramos em João 15: ''Permanecei no Meu amor''.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm7  G9  Em7  A4  A
+
+[Primeira Parte]
+D                      A/C#
+Tu és a Videira verdadeira, Senhor,
+Bm7                    G9
+E nós somos os ramos unidos a Ti.
+D                      A/C#
+Sem a Tua seiva nada podemos fazer,
+Em7                    A4      A
+Só em Tua comunhão podemos florir.
+
+[Refrão]
+          G9                A/G
+Quero permanecer no Teu amor,
+        F#m7                Bm7
+Guardando os Teus mandamentos de luz!
+       Em7                  A4  A
+Para dar muitos frutos que permaneçam,
+       G9         A7        D
+Na alegria perfeita de Cristo Jesus!
+
+[Segunda Parte]
+D                      A/C#
+Como o Pai Te amou, também nos amaste,
+Bm7                    G9
+Chamas-nos amigos e não mais servos.
+D                      A/C#
+Na mesa sagrada do Pão e do Vinho,
+Em7                    A4      A
+Selamos contigo o amor eterno.
+
+[Final]
+       Em7        A7        Bm7  G9
+Quero permanecer no Teu amor,
+       Em7        A7        D9
+Unido a Ti, meu Salvador!'),
+  ('banda-dom-pescador-de-cristo', 'Pescador de Cristo', 'Banda Dom', 'Final', 'Qualquer', 'A', 98, '4/4', 'Pop Acústico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Pescador+de+Cristo+Banda+Dom+cifra', '{"status": "Envio Missionário / Mês Vocacional", "score": 91, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Lc 5, 4-11; Mc 1, 17", "justification": "Chamado missionário a lançar as redes em águas mais profundas em nome do Senhor.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m7  D9  A  E  D9
+
+[Primeira Parte]
+A                      E
+Trabalhamos a noite inteira no mar,
+F#m7                   D9
+Sem nada colher em nossa embarcação.
+A                      E
+Mas sob a Tua Palavra lançamos a rede,
+D9                     E4      E
+E vimos o milagre da multiplicação!
+
+[Refrão]
+          A                 E
+Sou pescador de Cristo, vou anunciar,
+        F#m7                D9
+Avançar para as águas profundas do mar!
+          A                 E
+Deixo tudo na praia pra Te seguir,
+        D9        E7        A
+Onde quer que me envies, eu vou partir!
+
+[Segunda Parte]
+A                      E
+Não tenhas medo, diz a Tua voz,
+F#m7                   D9
+De hoje em diante serás pescador.
+A                      E
+Resgatando vidas para o Reino do Céu,
+D9                     E4      E
+Nas redes benditas do Teu santo amor!
+
+[Final]
+          A                 E
+Sou pescador de Cristo, vou anunciar,
+        D9        E7        A9
+Tua Boa-Nova em todo lugar!'),
+  ('banda-dom-eu-vou-pelo-mundo', 'Eu Vou Pelo Mundo', 'Banda Dom', 'Final', 'Qualquer', 'E', 108, '4/4', 'Pop Rock Missionário', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Eu+Vou+Pelo+Mundo+Banda+Dom+cifra', '{"status": "Envio Missionário / Jornada Mundial da Juventude / Mês das Missões", "score": 90, "documentRef": "Doc. 100 CNBB / Evangelii Gaudium", "biblicalRef": "Mc 16, 15; Mt 28, 19", "justification": "Canto vibrante de envio missionário: ''Ide por todo o mundo e pregai o Evangelho''.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B  C#m7  A9  E  B  A9
+
+[Primeira Parte]
+E                      B
+A messe é grande e espera por nós,
+C#m7                   A9
+Não posso calar o que vi e ouvi.
+E                      B
+O fogo do Espírito arde no peito,
+A9                     B4      B
+Impulsiona meus pés a sair daqui!
+
+[Refrão]
+          E                 B
+Eu vou pelo mundo anunciar Jesus,
+        C#m7                A9
+Levar a esperança, ser sal e ser luz!
+          E                 B
+De norte a sul, em cada nação,
+        A9        B7        E
+Proclamar a alegria da salvação!
+
+[Segunda Parte]
+E                      B
+Quão belos são sobre as montanhas,
+C#m7                   A9
+Os pés do mensageiro que anuncia a paz.
+E                      B
+Com Maria, Estrela da Evangelização,
+A9                     B4      B
+Levamos o amor que o mundo refaz!
+
+[Final]
+          E                 B
+Eu vou pelo mundo anunciar Jesus,
+        A9        B7        E9
+Caminhando sempre na Sua luz!'),
+  ('banda-dom-deus-e-dez', 'Deus É Dez', 'Banda Dom', 'Final', 'Qualquer', 'G', 116, '4/4', 'Pop Jovem / Animação', '↓  ↑ ↓ ↑  ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Deus+É+Dez+Banda+Dom+cifra', '{"status": "Encontros de Jovens / Catequese / Retiros / Canto Final Festivo", "score": 85, "documentRef": "Doc. 85 CNBB", "biblicalRef": "Sl 100, 1-5; Fl 4, 4", "justification": "Clássico de animação juvenil e catequética celebrando a bondade infinita de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  C9  D  G  C9  D
+
+[Primeira Parte]
+G                      C9
+Olhe para o céu e veja a imensidão,
+D                      G       D/F#
+Sinta a alegria bater no coração.
+Em7                    C9
+Ele fez o sol, as estrelas e o mar,
+Am7                    D4      D
+E fez você e eu para a vida celebrar!
+
+[Refrão]
+          G                 C9
+Deus é dez, Deus é mil, Deus é tudo pra mim!
+        D                   G
+O Seu amor é perfeito e nunca tem fim!
+          G                 C9
+Deus é dez, Deus é paz, é a minha canção,
+        D         D7        G
+Alegria que transborda no meu coração!
+
+[Segunda Parte]
+G                      C9
+Quando estou triste Ele vem consolar,
+D                      G       D/F#
+Quando estou fraco me faz caminhar.
+Em7                    C9
+Não existe amigo mais fiel que o Senhor,
+Am7                    D4      D
+Vamos juntos cantar o Seu grande louvor!
+
+[Final]
+          G                 C9
+Deus é dez, Deus é mil, Deus é tudo pra mim,
+        D         D7        G9
+Bendito seja Deus agora e sempre, amém!'),
+  ('catequese-caminho-para-o-discipulado', 'Catequese, Caminho Para o Discipulado', 'Catequese Católica / CNBB', 'Entrada', 'Qualquer', 'G', 96, '4/4', 'Marcha / Hino Catequético', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Catequese,+Caminho+Para+o+Discipulado+Catequese+Católica+cifra', '{"status": "Missa com Crianças / Dia do Catequista / Iniciação à Vida Cristã", "score": 98, "documentRef": "Diretório Nacional de Catequese (Doc. 84 CNBB) / Doc. 107 CNBB", "biblicalRef": "Lc 24, 13-35; Mt 28, 19-20", "justification": "Hino oficial de inspiração catequética da CNBB sobre a Iniciação à Vida Cristã e o discipulado missionário.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  D/F#  Em7  C9  Am7  D7  G
+
+[Primeira Parte]
+   G                         D/F#
+1. Como os discípulos no caminho de Emaús,
+   Em7                       Bm7
+Sentimos arder o nosso coração,
+   C9                        G/B
+Quando escutamos a Palavra de Jesus,
+   Am7                       D4      D7
+E O reconhecemos ao partir o Pão!
+
+[Refrão]
+          G                 D/F#
+Catequese, caminho para o discipulado,
+        Em7                 Bm7
+Encontro vivo com Cristo Ressuscitado!
+       C9                   G/B
+Na comunidade aprendemos a viver,
+       Am7        D7        G
+Na fé, na esperança e no amor crescer!
+
+[Segunda Parte]
+   G                         D/F#
+2. Iniciação à vida cristã em missão,
+   Em7                       Bm7
+Fonte batismal, Crisma e Altar,
+   C9                        G/B
+Família e paróquia em santa comunhão,
+   Am7                       D4      D7
+Formando discípulos para o mundo transformar!
+
+[Final]
+       C9                   G/B
+Na comunidade aprendemos a viver,
+       Am7        D7        G9
+Catequese é a fé florescer!'),
+  ('catequese-vocacao-de-catequista', 'Vocação de Catequista', 'Catequese Católica / CNBB', 'Ofertório', 'Qualquer', 'D', 76, '4/4', 'Balada Pastoral', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Vocação+de+Catequista+Catequese+Católica+cifra', '{"status": "Mês Vocacional (4º Domingo - Dia do Catequista) / Envio de Catequistas", "score": 96, "documentRef": "Diretório para a Catequese / Doc. 84 CNBB", "biblicalRef": "Is 6, 8; 1Cor 9, 16", "justification": "Homenagem e oração de consagração do ministério do catequista na Igreja.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Ofertório • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  A/C#  Bm7  G9  Em7  A7  D
+
+[Primeira Parte]
+   D                         A/C#
+1. Chamaste-me pelo nome na comunidade,
+   Bm7                       F#m7
+Para semear a Tua Palavra de luz.
+   G9                        D/F#
+Com paciência, ternura e fidelidade,
+   Em7                       A4      A7
+Conduzir os pequenos ao encontro de Jesus!
+
+[Refrão]
+          G9                A/G
+Ser catequista é vocação de amor,
+        F#m7                Bm7
+Ser eco fiel da voz do Bom Pastor!
+       Em7                  A7
+Eis-me aqui, Senhor, envia-me a servir,
+       G9         A7        D
+Tua Igreja viva ajudar a construir!
+
+[Segunda Parte]
+   D                         A/C#
+2. Mais do que ensinar doutrinas no papel,
+   Bm7                       F#m7
+É testemunhar com a própria vida o Evangelho.
+   G9                        D/F#
+Guiados por Maria, a Catequista fiel,
+   Em7                       A4      A7
+Do amor do Pai queremos ser espelho!
+
+[Final]
+       Em7        A7        Bm7  G9
+Ser catequista é vocação de amor,
+       Em7        A7        D9
+Abençoa os catequistas, ó Senhor!'),
+  ('catequese-deixa-a-luz-do-ceu-entrar', 'Deixa a Luz do Céu Entrar', 'Catequese Católica / CNBB', 'Entrada', 'Qualquer', 'D', 100, '4/4', 'Marcha / Infantil', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Deixa+a+Luz+do+Céu+Entrar+Catequese+Católica+cifra', '{"status": "Missa com Crianças / Encontros de Catequese / Acolhida", "score": 92, "documentRef": "Diretório para Missas com Crianças", "biblicalRef": "Jo 8, 12; Ap 3, 20", "justification": "Clássico tradicional da catequese infantil sobre abrir o coração para a luz de Cristo.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  A7  D  G  A7  D
+
+[Primeira Parte]
+   D                                    A7
+1. Tu anseias, eu bem sei, por salvação,
+                                     D
+Tens desejo de banir a escuridão;
+                                     G
+Abre, pois, de par em par teu coração,
+        D          A7         D    D7
+E deixa a luz do céu entrar!
+
+[Refrão]
+          G                 D
+Deixa a luz do céu entrar,
+          A7                D    D7
+Deixa a luz do céu entrar!
+          G                 D    Bm7
+Abre bem as portas do teu coração,
+        Em7        A7         D
+E deixa a luz do céu entrar!
+
+[Segunda Parte]
+   D                                    A7
+2. Cristo, a luz do céu, em ti quer habitar,
+                                     D
+Para as trevas do pecado dissipar;
+                                     G
+Teu caminho e coração iluminar,
+        D          A7         D    D7
+E deixa a luz do céu entrar!
+
+[Final]
+          G                 D    Bm7
+Abre bem as portas do teu coração,
+        Em7        A7         D9
+E deixa a luz do céu entrar!'),
+  ('catequese-aperte-a-minha-mao', 'Aperte a Minha Mão (A Paz do Senhor)', 'Catequese Católica / CNBB', 'Entrada', 'Qualquer', 'G', 104, '4/4', 'Pop Infantil / Acolhida', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Aperte+a+Minha+Mão+(A+Paz+do+Senhor)+Catequese+Católica+cifra', '{"status": "Acolhida Fraterna / Missa com Crianças / Encontros de Catequese", "score": 90, "documentRef": "Diretório para Missas com Crianças", "biblicalRef": "Sl 133, 1; Rm 15, 7", "justification": "Canto tradicional de acolhida e fraternidade nas celebrações com crianças e catequizandos.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  D7  G  C  D7  G
+
+[Primeira Parte]
+   G                                    D7
+1. Aperte a minha mão, irmão, quero te dar a paz,
+                                     G
+Do meu Senhor que nos uniu e tão feliz nos faz!
+   G7                                   C
+Que alegria estar aqui na casa do Senhor,
+        G          D7         G
+Cantando juntos este hino de amor!
+
+[Refrão]
+          C                 G
+Aperte a minha mão, irmão,
+          D7                G    G7
+Com um sorriso no coração!
+          C                 G    Em7
+Somos família de Jesus Salvador,
+        Am7        D7         G
+Vivendo unidos na paz do Senhor!
+
+[Segunda Parte]
+   G                                    D7
+2. Olhe pro seu irmão ao lado e diga com fervor:
+                                     G
+Que Deus te abençoe sempre com o Seu amor!
+   G7                                   C
+Na mesa da Palavra e na fração do Pão,
+        G          D7         G
+Crescemos como Igreja em comunhão!
+
+[Final]
+          C                 G    Em7
+Somos família de Jesus Salvador,
+        Am7        D7         G9
+Vivendo unidos na paz do Senhor!'),
+  ('catequese-o-amor-de-deus-e-maravilhoso', 'O Amor de Deus É Maravilhoso', 'Catequese Católica / CNBB', 'Ação de Graças', 'Qualquer', 'C', 112, '4/4', 'Infantil / Gestos', '↓  ↑ ↓ ↑  ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=O+Amor+de+Deus+É+Maravilhoso+Catequese+Católica+cifra', '{"status": "Catequese Infantil / Missa com Crianças (Ação de Graças)", "score": 93, "documentRef": "Diretório para Missas com Crianças", "biblicalRef": "Ef 3, 18-19; Sl 103, 11", "justification": "Baseado diretamente em Efésios 3, 18 sobre a largura, comprimento, altura e profundidade do amor de Deus.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Ação de Graças • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] C  G7  C  F  G7  C
+
+[Primeira Parte]
+   C                                   G7
+1. O amor de Deus é maravilhoso,
+                                    C
+O amor de Deus é maravilhoso,
+   C7                                  F
+O amor de Deus é maravilhoso,
+        C          G7         C
+Grande é o amor de Deus!
+
+[Refrão]
+   C                                   G7
+Tão alto que eu não posso estar mais alto do que Ele,
+                                    C
+Tão baixo que eu não posso estar mais baixo do que Ele,
+   C7                                  F
+Tão amplo que eu não posso estar fora dele,
+        C          G7         C
+Grande é o amor de Deus!
+
+[Segunda Parte]
+   C                                   G7
+2. Nos braços do Papai do Céu seguro estou,
+                                    C
+Pois Seu Filho amado por nós Ele enviou!
+   C7                                  F
+Por isso batemos palmas com muita alegria,
+        C          G7         C
+Cantando o amor de Deus todo dia!
+
+[Final]
+   F               C          Am7
+Grande, imenso, maravilhoso,
+   Dm7      G7     C9
+Grande é o amor de Deus!'),
+  ('catequese-pedro-tiago-joao-no-barquinho', 'Pedro, Tiago, João no Barquinho', 'Catequese Católica / CNBB', 'Ação de Graças', 'Qualquer', 'D', 116, '4/4', 'Marcha Infantil', '↓  ↑ ↓ ↑  ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=Pedro,+Tiago,+João+no+Barquinho+Catequese+Católica+cifra', '{"status": "Catequese Infantil / Liturgia da Palavra com Crianças", "score": 92, "documentRef": "Diretório para Missas com Crianças", "biblicalRef": "Lc 5, 1-11; Jo 21, 1-6", "justification": "Canção bíblica tradicional que ensina às crianças o milagre da pesca maravilhosa no mar da Galileia.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Ação de Graças • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  A7  D  G  A7  D
+
+[Primeira Parte]
+   D                                    A7
+1. Pedro, Tiago, João no barquinho,
+                                     D
+Pedro, Tiago, João no barquinho,
+   D7                                   G
+Pedro, Tiago, João no barquinho,
+        D          A7         D
+No mar da Galileia!
+
+[Refrão]
+   D                                    A7
+Jogaram a rede, mas não pegaram peixe,
+                                     D
+Jogaram a rede, mas não pegaram peixe,
+   D7                                   G
+Jogaram a rede, mas não pegaram peixe,
+        D          A7         D
+No mar da Galileia!
+
+[Segunda Parte]
+   D                                    A7
+2. Jesus mandou jogar do outro lado,
+                                     D
+Jesus mandou jogar do outro lado,
+   D7                                   G
+Jesus mandou jogar do outro lado,
+        D          A7         D
+No mar da Galileia!
+   D                                    A7
+Puxaram a rede cheia de peixinhos,
+                                     D
+Puxaram a rede cheia de peixinhos,
+   D7                                   G
+Pois quem obedece a Jesus é abençoado,
+        D          A7         D
+No mar da Galileia!
+
+[Final]
+   G          A7         D    Bm7
+Com Jesus no nosso barquinho,
+   Em7        A7         D9
+Seguimos sempre no bom caminho!'),
+  ('catequese-por-dentro-fora-alto-e-baixo', 'Por Dentro, Fora, Alto e Baixo Sempre Sou Feliz', 'Catequese Católica / CNBB', 'Final', 'Qualquer', 'G', 120, '4/4', 'Infantil Animado', '↓  ↑ ↓ ↑  ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=Por+Dentro,+Fora,+Alto+e+Baixo+Sempre+Sou+Feliz+Catequese+Católica+cifra', '{"status": "Catequese Infantil / Canto Final com Crianças", "score": 90, "documentRef": "Diretório para Missas com Crianças", "biblicalRef": "1Cor 6, 19; Fl 4, 4", "justification": "Canto clássico de gestos ensinando às crianças que Jesus habita em nosso coração.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Final • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  D7  G  C  D7  G
+
+[Primeira Parte]
+   G                                    D7
+1. Por dentro, fora, alto e baixo sempre sou feliz!
+                                     G
+Por dentro, fora, alto e baixo sempre sou feliz!
+   G7                                   C
+Aqui Jesus entrou, meu coração limpou,
+        G          D7         G
+Por dentro, fora, alto e baixo sempre sou feliz!
+
+[Refrão]
+          C                 G
+Sempre sou feliz com Jesus no coração,
+          D7                G    G7
+Caminhando junto com o meu irmão!
+          C                 G    Em7
+Por dentro, fora, alto e baixo vou cantar,
+        Am7        D7         G
+A alegria de a Deus amar!
+
+[Segunda Parte]
+   G                                    D7
+2. Na minha casa, na escola e na igreja eu vou,
+                                     G
+Testemunhar a todo mundo o amor do Salvador!
+   G7                                   C
+Guardando a Palavra que na catequese ouvi,
+        G          D7         G
+Por dentro, fora, alto e baixo sempre sou feliz!
+
+[Final]
+          C                 G    Em7
+Aqui Jesus entrou, meu coração limpou,
+        Am7        D7         G9
+Por dentro, fora, alto e baixo sempre sou feliz!'),
+  ('catequese-tres-palavrinhas-so', 'Três Palavrinhas Só (Deus É Amor)', 'Catequese Católica / CNBB', 'Ação de Graças', 'Qualquer', 'C', 104, '4/4', 'Infantil Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 3, 'https://www.youtube.com/results?search_query=Três+Palavrinhas+Só+(Deus+É+Amor)+Catequese+Católica+cifra', '{"status": "Pré-Catequese / Primeira Eucaristia / Missa com Crianças", "score": 95, "documentRef": "Diretório para Missas com Crianças", "biblicalRef": "1Jo 4, 8.16", "justification": "A síntese teológica de 1 João 4, 8 (''Deus é Amor'') ensinada de forma simples e inesquecível às crianças.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Ação de Graças • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] C  Dm7  G7  C  G7
+
+[Primeira Parte]
+   C                        Dm7
+1. Três palavrinhas só,
+   G7                       C
+Eu aprendi de cor:
+   C7                       F
+Deus é Amor!
+   Dm7        G7            C
+Trá-lá-lá-lá-lá-lá-lá-lá!
+
+[Refrão]
+          F                 C
+Deus é Amor, diz a Bíblia Sagrada,
+          G7                C    C7
+Deus é Amor, luz da nossa caminhada!
+          F                 C    Am7
+Três palavrinhas guardadas no coração:
+        Dm7        G7         C
+Deus é Amor e nossa Salvação!
+
+[Segunda Parte]
+   C                        Dm7
+2. Quem ama o seu irmão,
+   G7                       C
+Vive em comunhão,
+   C7                       F
+Pois Deus é Amor!
+   Dm7        G7            C
+E nos deu Jesus, o Salvador!
+
+[Final]
+          F                 C    Am7
+Três palavrinhas só eu aprendi de cor:
+        Dm7        G7         C9
+Deus é Amor, Deus é Amor!'),
+  ('catequese-meu-barco-e-pequeno', 'Meu Barco É Pequeno', 'Catequese Católica / CNBB', 'Comunhão', 'Qualquer', 'F', 88, '4/4', 'Balada Infantil', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Meu+Barco+É+Pequeno+Catequese+Católica+cifra', '{"status": "Missa com Crianças / Primeira Eucaristia / Catequese", "score": 93, "documentRef": "Diretório para Missas com Crianças", "biblicalRef": "Mc 4, 35-41; Sl 23, 4", "justification": "Canto de confiança infantil em Jesus, que acalma a tempestade e guia o nosso pequeno barco.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] F  Bb  C7  F  C7
+
+[Primeira Parte]
+   F                        Gm7
+1. Meu barco é pequeno e tão grande é o mar,
+   C7                       F      C7
+Jesus segura minha mão!
+   F                        Bb
+Ele é meu Piloto e tudo vai bem,
+   F          C7            F      F7
+Na viagem para Jerusalém!
+
+[Refrão]
+          Bb                F
+Com Jesus no barco tudo vai muito bem,
+          C7                F      F7
+Não tenho medo da tempestade que vem!
+          Bb                F      Dm7
+Ele segura firme a minha mão,
+        Gm7        C7         F
+E guia em paz o meu coração!
+
+[Segunda Parte]
+   F                        Gm7
+2. Se as ondas subirem e o vento soprar,
+   C7                       F      C7
+A voz de Jesus faz o mar acalmar!
+   F                        Bb
+Com a Mãe do Céu e os amigos da fé,
+   F          C7            F      F7
+Navegamos firmes rumo a Nazaré!
+
+[Final]
+          Bb                F      Dm7
+Ele é meu Piloto e tudo vai bem,
+        Gm7        C7         F9
+Na viagem para Jerusalém! Amém!'),
+  ('catequese-crianca-feliz-jesus-ama', 'Criança Feliz (Jesus Ama as Crianças)', 'Catequese Católica / CNBB', 'Final', 'Qualquer', 'G', 108, '4/4', 'Marcha Festiva Infantil', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Criança+Feliz+(Jesus+Ama+as+Crianças)+Catequese+Católica+cifra', '{"status": "Dia das Crianças / Encerramento da Missa com Crianças / Primeira Eucaristia", "score": 95, "documentRef": "Diretório para Missas com Crianças (n. 1-55)", "biblicalRef": "Mt 19, 14; Mc 10, 13-16", "justification": "Inspirado nas palavras de Jesus: ''Deixai vir a Mim as criancinhas, porque delas é o Reino dos Céus''.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Final • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  C  D7  G  D7
+
+[Primeira Parte]
+   G                         Em7
+1. Deixai vir a Mim as criancinhas,
+   C                         D7
+Assim falou o Mestre Jesus!
+   G                         Em7
+Porque delas é o Reino dos Céus,
+   Am7        D7             G     G7
+Criança feliz caminha na luz!
+
+[Refrão]
+          C                 D7
+Sou criança feliz porque Jesus me ama,
+        Bm7                 Em7
+Pelo meu nome na Igreja me chama!
+       Am7                  D7
+Com Papai e Mamãe venho ao altar,
+       C          D7        G
+Para o nome do Senhor louvar!
+
+[Segunda Parte]
+   G                         Em7
+2. Jesus abraçou e abençoou os pequenos,
+   C                         D7
+Mostrando a pureza do coração.
+   G                         Em7
+Na catequese aprendo a rezar e a servir,
+   Am7        D7             G     G7
+Levando alegria a cada irmão!
+
+[Final]
+       Am7                  D7        Em7  C
+Deixai vir a Mim as criancinhas,
+       Am7        D7        G9
+Criança feliz com Jesus e Maria!'),
+  ('frei-gilson-eu-seguirei', 'Eu Seguirei', 'Frei Gilson / Som do Monte', 'Ofertório', 'Tempo Comum', 'E', 72, '4/4', 'Balada Vocacional', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Eu+Seguirei+Frei+Gilson+cifra', '{"status": "Hino Vocacional de Entrega Total (Cifra Club Top Frei Gilson)", "score": 96, "documentRef": "Estudo 79 CNBB / Vocacional", "biblicalRef": "Lc 9, 23; Mt 16, 24", "justification": "Um dos maiores clássicos vocacionais católicos do Cifra Club (Frei Gilson), em Mi maior.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B  C#m  A
+
+[Primeira Parte]
+   E                                        B
+1. Eu vou, deixando tudo para trás, eu vou;
+   C#m                                      A
+Respondendo ao Teu chamado, Senhor, aqui estou!
+   E                                        B
+Mesmo sem saber para onde ir, confio em Ti,
+   C#m                                      A           B
+Tua voz me basta, quero Te servir até o fim!
+
+[Refrão]
+   E                                        B
+Eu seguirei, eu irei aonde fores, Senhor!
+   C#m                                      A
+Tua graça me basta, Teu amor me conquistou!
+   E                                        B
+Nada vai me separar do Teu caminho, ó Rei:
+   C#m                      A               B           E
+De olhos fixos em Jesus, fiel eu seguirei!
+
+[Segunda Parte]
+   E                                        B
+2. Tomo a minha cruz de cada dia com amor,
+   C#m                                      A
+Pois quem perde a vida por Jesus a encontrará!
+   F#m                      C#m             A           B
+No altar da entrega, minha vida quero consagrar!
+
+[Final]
+   C#m                      A               B           E
+De olhos fixos em Jesus, fiel eu seguirei!'),
+  ('frei-gilson-colo-de-mae', 'Colo de Mãe', 'Frei Gilson / Som do Monte', 'Ação de Graças', 'Qualquer', 'G', 70, '4/4', 'Balada Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Colo+de+Mãe+Frei+Gilson+cifra', '{"status": "Canto Mariano de Consolação (Cifra Club Top Frei Gilson)", "score": 95, "documentRef": "Devoção Mariana", "biblicalRef": "Jo 19, 26-27", "justification": "Quatro acordes (G, D, Em, C) de entrega filial ao colo de Nossa Senhora.", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Quando o peso da cruz parece maior que a minha força,
+   Em                                       C
+E o silêncio da noite tenta me fazer parar,
+   G                                        D
+Sinto um manto sagrado enxugando o meu rosto:
+   Em                       C               D
+É Maria que vem me abraçar e me ensinar a esperar!
+
+[Refrão]
+   G                                        D
+No Teu colo de Mãe eu descanso o meu coração,
+   Em                                       C
+No Teu colo de Mãe encontro paz e proteção!
+   G                                        D
+Leva-me a Jesus, ensina-me a dizer o meu sim:
+   Em                       C               D           G
+Ó Maria, Mãe de Deus, cuida sempre de mim!
+
+[Segunda Parte]
+   G                                        D
+2. Junto à Cruz permaneceste de pé por amor,
+   Em                                       C
+Recebendo cada filho das mãos do Redentor!
+
+[Final]
+   Em                       C               D           G
+Ó Maria, Mãe de Deus, cuida sempre de mim!'),
+  ('frei-gilson-de-ti-preciso', 'De Ti Preciso', 'Frei Gilson / Som do Monte', 'Ação de Graças', 'Qualquer', 'D', 70, '4/4', 'Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=De+Ti+Preciso+Frei+Gilson+cifra', '{"status": "Canto de Adoração e Dependência de Deus", "score": 95, "documentRef": "Adoração Eucarística", "biblicalRef": "Sl 62, 2; Jo 15, 5", "justification": "Quatro acordes em Ré maior (D, A, Bm, G) para adoração ao Santíssimo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Mais que o ar que eu respiro, mais que a luz do amanhecer,
+   Bm                                       G
+Minha alma tem sede de Ti, razão do meu viver!
+   D                                        A
+Sem Tua presença sou terra árida e sem flor,
+   Bm                       G               A
+Vem saciar minha sede com a fonte do Teu amor!
+
+[Refrão]
+   D                                        A
+De Ti preciso, Jesus, a cada instante!
+   Bm                                       G
+De Ti preciso para continuar avante!
+   D                                        A
+Toma o meu coração, reina dentro de mim:
+   Bm                       G               A           D
+De Ti preciso hoje e até o fim!
+
+[Segunda Parte]
+   D                                        A
+2. Diante da Hóstia Santa entrego todo o meu ser,
+   Bm                       G               A           D
+Pois só em Ti, Senhor, encontro forças pra vencer!'),
+  ('frei-gilson-deixa-deus-sonhar-em-ti', 'Deixa Deus Sonhar em Ti', 'Frei Gilson / Som do Monte', 'Ofertório', 'Tempo Comum', 'C', 72, '4/4', 'Balada de Esperança', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Deixa+Deus+Sonhar+em+Ti+Frei+Gilson+cifra', '{"status": "Canto Vocacional e de Esperança Cristã", "score": 94, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Jr 29, 11; Ef 3, 20", "justification": "Cifra fácil em Dó maior (C, G, Am, F) inspirada em Jeremias 29, 11.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Os planos de Deus são maiores que os meus,
+   Am                                       F
+Seus caminhos mais altos que o próprio céu!
+   C                                        G
+Quando uma porta se fecha, Ele abre um novo mar:
+   Am                       F               G
+Confia no Senhor, Ele não sabe falhar!
+
+[Refrão]
+   C                                        G
+Deixa Deus sonhar em ti, deixa Deus guiar teus passos!
+   Am                                       F
+Entrega o teu futuro no calor dos Seus abraços!
+   C                                        G
+O que Ele preparou olho algum jamais viu:
+   Am                       F               G           C
+Deixa Deus sonhar em ti, pois Ele te escolheu!
+
+[Segunda Parte]
+   C                                        G
+2. Não temas as ondas nem o vento a soprar,
+   Am                       F               G           C
+Quem te chamou pelo nome jamais vai te abandonar!'),
+  ('frei-gilson-o-sangue-de-jesus', 'O Sangue de Jesus Tem Poder', 'Frei Gilson / Som do Monte', 'Ação de Graças', 'Quaresma', 'Am', 76, '4/4', 'Clamor / Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=O+Sangue+de+Jesus+Tem+Poder+Frei+Gilson+cifra', '{"status": "Canto de Clamor pela Redenção de Cristo", "score": 94, "documentRef": "Grupo de Oração / Retiros", "biblicalRef": "Ap 12, 11; 1Jo 1, 7", "justification": "Quatro acordes menores (Am, F, C, G) para vigílias e grupos de oração.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Am  F  C  G
+
+[Primeira Parte]
+   Am                                       F
+1. Foi no alto do Calvário que o Cordeiro Se entregou,
+   C                                        G
+E por cada gota santa nossa dívida pagou!
+   Am                                       F
+Nenhuma treva resiste ao poder da Tua Cruz,
+   C                        G               Am
+Liberdade e vida nova encontramos em Jesus!
+
+[Refrão]
+   Am                                       F
+O Sangue de Jesus tem poder para salvar!
+   C                                        G
+O Sangue de Jesus tem poder para curar!
+   Am                                       F
+Lava a nossa história, restaura o nosso ser:
+   C                        G               Am
+O Sangue do Cordeiro nos faz vencer!
+
+[Segunda Parte]
+   Am                                       F
+2. Pelo Sangue da Aliança entramos no santuário,
+   C                        G               Am
+Adorando o Rei da Glória que venceu no Calvário!'),
+  ('frei-gilson-eu-te-levantarei', 'Eu Te Levantarei', 'Frei Gilson / Som do Monte', 'Ação de Graças', 'Qualquer', 'G', 72, '4/4', 'Balada de Cura', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Eu+Te+Levantarei+Frei+Gilson+cifra', '{"status": "Canto de Consolo e Restauração (Cifra Club Top Frei Gilson)", "score": 96, "documentRef": "Retiros e Adoração", "biblicalRef": "Is 41, 10; Sl 145, 14", "justification": "Sucesso de Frei Gilson em quatro acordes (G, D, Em, C) sobre a mão de Deus que reergue os abatidos.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Filho, Eu conheço cada lágrima que caiu no chão,
+   Em                                       C
+Conheço o cansaço que aperta o teu coração;
+   G                                        D
+Não penses que estás sozinho nessa caminhada:
+   Em                       C               D
+Eu sou o Teu Deus, Tua força e Tua morada!
+
+[Refrão]
+   G                                        D
+Eu te levantarei quando tudo parecer cair!
+   Em                                       C
+Eu te sustentarei, minha mão está sobre ti!
+   G                                        D
+Mesmo que passem os montes, Meu amor não passará:
+   Em                       C               D           G
+Confia em Mim, filho Meu, Eu vou te levantar!
+
+[Segunda Parte]
+   G                                        D
+2. Das cinzas faço brotar um jardim de esplendor,
+   Em                       C               D           G
+Pois sou o Deus da vida, o Teu Restaurador!'),
+  ('frei-gilson-santo-espirito-de-deus', 'Santo Espírito de Deus', 'Frei Gilson / Som do Monte', 'Ação de Graças', 'Pentecostes', 'D', 70, '4/4', 'Adoração / Pentecostes', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Santo+Espírito+de+Deus+Frei+Gilson+cifra', '{"status": "Invocação ao Espírito Santo", "score": 95, "documentRef": "Vigília de Pentecostes", "biblicalRef": "At 2, 1-4; Rm 8, 26", "justification": "Quatro acordes em Ré maior invocando a presença do Espírito Santo.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Como no Cenáculo, reunidos em oração,
+   Bm                                       G
+Abrimos as portas da alma à Tua visitação!
+   D                                        A
+Vem, Hóspede da alma, doce brisa do céu,
+   Bm                       G               A
+Inflama a Tua Igreja, torna o nosso amor fiel!
+
+[Refrão]
+   D                                        A
+Santo Espírito de Deus, vem inundar este lugar!
+   Bm                                       G
+Santo Espírito de Deus, vem os corações transformar!
+   D                                        A
+Com Teu fogo abrasador, faz-nos de novo nascer:
+   Bm                       G               A           D
+Santo Espírito de Deus, queremos em Ti viver!
+
+[Segunda Parte]
+   D                                        A
+2. Dá-nos sabedoria, fortaleza e temor do Senhor,
+   Bm                       G               A           D
+Para testemunharmos Cristo com intrepidez e amor!'),
+  ('colo-de-deus-queima-de-novo', 'Queima de Novo', 'Comunidade Colo de Deus', 'Ação de Graças', 'Pentecostes', 'Em', 70, '4/4', 'Worship / Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Queima+de+Novo+Comunidade+Colo+de+Deus+cifra', '{"status": "Clássico de Adoração e Avivamento (Cifra Club Top Colo de Deus)", "score": 96, "documentRef": "Adoração / Vigília Jovem", "biblicalRef": "Lc 24, 32; Lv 6, 6", "justification": "Um dos hinos mais tocados da Comunidade Colo de Deus no Cifra Club, em apenas quatro acordes (Em, C, G, D).", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  G  D
+
+[Primeira Parte]
+   Em                                       C
+1. Sarça que só queima, que não se apaga,
+   G                                        D
+Somos Tua Igreja, viemos Te adorar!
+   Em                                       C
+Neste Teu altar somos sacrifício vivo,
+   G                                        D
+Vem com Tua glória este lugar incendiar!
+
+[Refrão]
+   Em                                       C
+Queima de novo, queima de novo!
+   G                                        D
+Como na primeira vez, queima em nós o Teu amor!
+   Em                                       C
+Queima de novo, queima de novo!
+   G                        D               Em
+Não deixes o fogo apagar no nosso coração, Senhor!
+
+[Segunda Parte]
+   Em                                       C
+2. Como os discípulos a caminho de Emaús,
+   G                                        D
+Arde o nosso peito ao escutar Tua voz, Jesus!
+   Em                       C               G           D
+Fica conosco, Senhor, acende a chama que não vai passar!
+
+[Final]
+   Em                       C               G     D     Em
+Queima de novo em nós, Espírito Consolador!'),
+  ('colo-de-deus-mistica-sublime', 'Mística Sublime', 'Comunidade Colo de Deus', 'Comunhão', 'Tempo Comum', 'G', 70, '4/4', 'Adoração Eucarística', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Mística+Sublime+Comunidade+Colo+de+Deus+cifra', '{"status": "Canto Eucarístico e Mariano (Cifra Club Top Colo de Deus)", "score": 95, "documentRef": "Adoração Eucarística", "biblicalRef": "Jo 6, 51; Lc 1, 38", "justification": "Quatro acordes em Sol maior contemplando o mistério da Eucaristia e da Virgem Maria.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. No silêncio do altar, o Céu inteiro desce aqui,
+   Em                                       C
+Os anjos se prostram adorando o Rei que está em mim!
+   G                                        D
+Ó Hóstia Imaculada, Pão da Vida e do Amor,
+   Em                       C               D
+Em Teu Corpo e Sangue encontro o meu Salvador!
+
+[Refrão]
+   G                                        D
+Mística sublime, comunhão de amor sem fim!
+   Em                                       C
+O Deus do universo Se fez alimento para mim!
+   G                                        D
+Com Maria aos pés da Cruz e diante do altar,
+   Em                       C               D           G
+Para sempre, ó Jesus, quero Te adorar!
+
+[Segunda Parte]
+   G                                        D
+2. Faz do meu coração um sacrário vivo Teu,
+   Em                       C               D           G
+Onde habite para sempre a glória do meu Deus!'),
+  ('colo-de-deus-casa', 'Casa (Fica à Vontade)', 'Comunidade Colo de Deus', 'Ação de Graças', 'Qualquer', 'C', 68, '4/4', 'Balada de Intimidade', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Casa+(Fica+à+Vontade)+Comunidade+Colo+de+Deus+cifra', '{"status": "Canto de Intimidade e Morada Interior", "score": 94, "documentRef": "Adoração e Grupo de Oração", "biblicalRef": "Jo 14, 23; Ap 3, 20", "justification": "Quatro acordes suaves (C, G, Am, F) convidando Jesus a fazer morada no coração.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Eu limpei cada canto do meu coração,
+   Am                                       F
+Abri as janelas pra Tua luz entrar;
+   C                                        G
+Não quero que sejas apenas visita, Senhor:
+   Am                       F               G
+A chave é toda Tua, vem aqui morar!
+
+[Refrão]
+   C                                        G
+Fica à vontade, a casa é Tua, meu Senhor!
+   Am                                       F
+Descansa em meu peito, recebe o meu amor!
+   C                                        G
+Não há lugar melhor do que aos Teus pés estar:
+   Am                       F               G           C
+Esta casa é Tua, Jesus, vem reinar!
+
+[Segunda Parte]
+   C                                        G
+2. Como em Betânia, na casa de Marta e Maria,
+   Am                       F               G           C
+Escolho a melhor parte: Tua eterna companhia!'),
+  ('colo-de-deus-eis-me-aqui', 'Eis-Me Aqui (Colo de Deus)', 'Comunidade Colo de Deus', 'Ofertório', 'Tempo Comum', 'D', 72, '4/4', 'Balada Vocacional', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Eis-Me+Aqui+(Colo+de+Deus)+Comunidade+Colo+de+Deus+cifra', '{"status": "Canto de Oferta de Vida e Missão", "score": 94, "documentRef": "Retiros Vocacionais", "biblicalRef": "Is 6, 8", "justification": "Quatro acordes em Ré maior (D, A, Bm, G) em resposta ao envio missionário.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Ouvi a Tua voz chamando no silêncio:
+   Bm                                       G
+"Quem enviarei? Quem irá por nós?"
+   D                                        A
+Toquei os meus lábios na brasa do altar,
+   Bm                       G               A
+Não posso me calar, quero Te anunciar!
+
+[Refrão]
+   D                                        A
+Eis-me aqui, Senhor! Envia-me a mim!
+   Bm                                       G
+Usa a minha vida do começo até o fim!
+   D                                        A
+Onde houver escuridão, Tua luz vou levar:
+   Bm                       G               A           D
+Eis-me aqui, Jesus, pronto para amar!
+
+[Segunda Parte]
+   D                                        A
+2. Não olho para trás, meu tesouro está no Céu,
+   Bm                       G               A           D
+Serei em tuas mãos um servo sempre fiel!'),
+  ('colo-de-deus-abba-pai', 'Abba Pai', 'Comunidade Colo de Deus', 'Ação de Graças', 'Qualquer', 'A', 70, '4/4', 'Adoração Filial', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Abba+Pai+Comunidade+Colo+de+Deus+cifra', '{"status": "Canto de Filiação Divina (Romanos 8, 15)", "score": 95, "documentRef": "Retiros e Adoração", "biblicalRef": "Rm 8, 15; Gl 4, 6", "justification": "Quatro acordes em Lá maior (A, E, F#m, D) celebrando a paternidade amorosa de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. Não recebi um espírito de escravidão
+   F#m                                      D
+Para viver outra vez dominado pelo temor;
+   A                                        E
+Mas recebi o Espírito de adoção filial,
+   F#m                      D               E
+Que clama dentro de mim com infinito amor!
+
+[Refrão]
+   A                                        E
+Abba, Pai! Eu sou Teu filho amado!
+   F#m                                      D
+Abba, Pai! Por Teu Sangue resgatado!
+   A                                        E
+Em Teus braços eternos seguro eu estou:
+   F#m                      D               E           A
+Abba, Pai, fonte de todo amor!
+
+[Segunda Parte]
+   A                                        E
+2. Ainda que eu andasse longe da Tua casa,
+   F#m                      D               E           A
+Correste ao meu encontro e me deste nova vida!'),
+  ('colo-de-deus-a-paz-que-o-mundo-nao-me-da', 'A Paz Que o Mundo Não Me Dá', 'Comunidade Colo de Deus', 'Ação de Graças', 'Páscoa', 'G', 72, '4/4', 'Balada da Paz', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=A+Paz+Que+o+Mundo+Não+Me+Dá+Comunidade+Colo+de+Deus+cifra', '{"status": "Canto Baseado em João 14, 27", "score": 95, "documentRef": "Encontros e Vigílias", "biblicalRef": "Jo 14, 27; Fl 4, 7", "justification": "Quatro acordes em Sol maior proclamando a paz verdadeira que vem de Cristo.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Procurei em tantos lugares acalmar o meu interior,
+   Em                                       C
+Mas só encontrei vazio longe de Ti, Senhor;
+   G                                        D
+Quando olhei para a Tua Cruz e ouvi o Teu perdão,
+   Em                       C               D
+Uma paz inexplicável inundou meu coração!
+
+[Refrão]
+   G                                        D
+Tu és a paz que o mundo não me dá!
+   Em                                       C
+Tu és a alegria que ninguém pode roubar!
+   G                                        D
+Em meio à tempestade, seguro em Ti estou:
+   Em                       C               D           G
+Jesus, minha Paz, meu Salvador!
+
+[Segunda Parte]
+   G                                        D
+2. Não se perturbe o coração nem tenha medo algum,
+   Em                       C               D           G
+Pois quem habita em Cristo jamais caminha só!'),
+  ('colo-de-deus-desperta', 'Desperta (Levanta-te)', 'Comunidade Colo de Deus', 'Entrada', 'Tempo Comum', 'Em', 118, '4/4', 'Pop Rock Jovem', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Desperta+(Levanta-te)+Comunidade+Colo+de+Deus+cifra', '{"status": "Canto de Avivamento Jovem (Efésios 5, 14)", "score": 94, "documentRef": "Encontros de Jovens / Retiros", "biblicalRef": "Ef 5, 14; Is 60, 1", "justification": "Quatro acordes vibrantes (Em, C, G, D) para abertura de encontros de jovens.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  G  D
+
+[Primeira Parte]
+   Em                                       C
+1. Já é hora de acordar do sono da indiferença,
+   G                                        D
+Uma geração eleita se levanta em Tua presença!
+   Em                                       C
+O Leão da Tribo de Judá já rugiu sobre a nação,
+   G                        D               Em
+Despertando os filhos para a salvação!
+
+[Refrão]
+   Em                                       C
+Desperta, tu que dormes! Levanta-te dentre os mortos,
+   G                                        D
+E Cristo te iluminará com Seu esplendor!
+   Em                                       C
+Desperta, Igreja santa! Anuncia ao mundo inteiro
+   G                        D               Em
+Que Jesus Cristo é o único Senhor!
+
+[Segunda Parte]
+   Em                                       C
+2. Revestidos da armadura da luz e da fé,
+   G                        D               Em
+Marchará o povo santo proclamando quem Deus é!'),
+  ('irma-kelly-patricia-passarinho', 'Passarinho', 'Irmã Kelly Patrícia / Instituto Hesed', 'Ação de Graças', 'Qualquer', 'G', 72, '4/4', 'Balada Contemplativa', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Passarinho+Irmã+Kelly+Patrícia+cifra', '{"status": "Clássico Inspirado em Santa Teresinha (Cifra Club Top Ir. Kelly Patrícia)", "score": 96, "documentRef": "Espiritualidade Carmelita / Retiros", "biblicalRef": "Sl 83, 4; Mt 6, 26", "justification": "Um dos maiores clássicos da Irmã Kelly Patrícia no Cifra Club, inspirado na Pequena Via de Santa Teresinha.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Como um passarinho que encontra abrigo no Teu altar,
+   Em                                       C
+Pequeno e frágil sou, mas aprendi a confiar;
+   G                                        D
+Mesmo quando as nuvens escondem o brilho do Sol,
+   Em                       C               D
+Sei que o Sol do Amor continua a me iluminar!
+
+[Refrão]
+   G                                        D
+Sou teu passarinho, Senhor, dependo só de Ti!
+   Em                                       C
+Nas asas da Tua graça quero sempre subir!
+   G                                        D
+Não tenho méritos em mim, tudo é misericórdia Tua:
+   Em                       C               D           G
+No Teu Coração, Jesus, minha alma repousa!
+
+[Segunda Parte]
+   G                                        D
+2. Minha vocação é o Amor no coração da Santa Igreja,
+   Em                       C               D           G
+Que cada batida do meu peito um ato de amor seja!'),
+  ('irma-kelly-patricia-via-sacra', 'Via Sacra (Pela Via Dolorosa)', 'Irmã Kelly Patrícia / Instituto Hesed', 'Comunhão', 'Quaresma', 'Em', 68, '4/4', 'Balada Quaresmal', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Via+Sacra+(Pela+Via+Dolorosa)+Irmã+Kelly+Patrícia+cifra', '{"status": "Canto Meditativo da Paixão do Senhor (Cifra Club Top Ir. Kelly Patrícia)", "score": 96, "documentRef": "Quaresma e Semana Santa", "biblicalRef": "Is 53, 4-5; Lc 23, 26-34", "justification": "Clássico quaresmal de Irmã Kelly Patrícia meditando o caminho da Cruz.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  G  B7
+
+[Primeira Parte]
+   Em                                       C
+1. Pela via dolorosa caminhava o meu Senhor,
+   G                                        B7
+Carregando sobre os ombros todo o peso da nossa dor;
+   Em                                       C
+Seu olhar buscava o meu no meio da multidão,
+   G                        B7              Em
+E em cada passo difícil pulsava a redenção!
+
+[Refrão]
+   Em                       C               G           D
+Nós Vos adoramos, Senhor Jesus Cristo, e Vos bendizemos,
+   Em                       C               B7          Em
+Porque pela Vossa Santa Cruz remistes o mundo inteiro!
+
+[Segunda Parte]
+   Em                                       C
+2. Verônica enxuga a Face, Cirineu ajuda a levar,
+   G                                        B7
+E a Mãe das Dores caminha sem jamais desanimar;
+   Em                       C               B7          Em
+Fazei que ao pé do Calvário saibamos também amar!'),
+  ('irma-kelly-patricia-prisioneiro-do-amor', 'Prisioneiro do Amor', 'Irmã Kelly Patrícia / Instituto Hesed', 'Comunhão', 'Tempo Comum', 'D', 70, '4/4', 'Adoração Eucarística', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Prisioneiro+do+Amor+Irmã+Kelly+Patrícia+cifra', '{"status": "Hino Eucarístico ao Santíssimo Sacramento", "score": 97, "documentRef": "IGMR 86 / Adoração Eucarística", "biblicalRef": "Jo 6, 51; Lc 22, 19", "justification": "Belo canto eucarístico de Irmã Kelly Patrícia contemplando Jesus no Sacrário.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Silencioso no Sacrário, esperas por mim noite e dia,
+   Bm                                       G
+Ó Rei dos reis escondido sob o véu da Eucaristia!
+   D                                        A
+Não quiseste deixar órfãos aqueles que tanto amaste:
+   Bm                       G               A
+No Pão consagrado do altar para sempre ficaste!
+
+[Refrão]
+   D                                        A
+Prisioneiro do amor, Jesus Sacramentado!
+   Bm                                       G
+Meu Deus, meu Tudo, meu Amado!
+   D                                        A
+Diante da Tua Hóstia Santa entrego o meu coração:
+   Bm                       G               A           D
+És o Pão vivo descido do Céu, nossa salvação!
+
+[Segunda Parte]
+   D                                        A
+2. Que jamais fiques sozinho nos altares desta terra,
+   Bm                       G               A           D
+Recebe o nosso louvor e a paz que Teu peito encerra!'),
+  ('irma-kelly-patricia-morada', 'Morada (Faz em Mim Tua Morada)', 'Irmã Kelly Patrícia / Instituto Hesed', 'Ação de Graças', 'Qualquer', 'C', 70, '4/4', 'Balada Contemplativa', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Morada+(Faz+em+Mim+Tua+Morada)+Irmã+Kelly+Patrícia+cifra', '{"status": "Canto de Pós-Comunhão e Inabitação Trinitária", "score": 96, "documentRef": "Pós-Comunhão / Santa Elisabete da Trindade", "biblicalRef": "Jo 14, 23", "justification": "Quatro acordes em Dó maior inspirados na oração de Santa Elisabete da Trindade.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Ó meu Deus, Trindade que adoro, ajuda-me a esquecer-me inteiramente
+   Am                                       F
+Para estabelecer-me em Ti, imóvel e serena,
+   C                                        G
+Como se a minha alma já estivesse na eternidade,
+   Am                       F               G
+E nada possa perturbar a Tua paz em mim!
+
+[Refrão]
+   C                                        G
+Faz em mim Tua morada, ó Trindade de Amor!
+   Am                                       F
+Que eu seja o Teu céu na terra, Teu descanso, Senhor!
+   C                                        G
+Adorar-Te em espírito e verdade a cada respirar:
+   Am                       F               G           C
+Para sempre em Teu coração quero habitar!
+
+[Segunda Parte]
+   C                                        G
+2. Ó Fogo consumidor, Espírito de Amor, vem sobre mim,
+   Am                       F               G           C
+Para que em minha alma se faça uma encarnação do Verbo!'),
+  ('irma-kelly-patricia-viver-de-amor', 'Viver de Amor (Santa Teresinha)', 'Irmã Kelly Patrícia / Instituto Hesed', 'Comunhão', 'Tempo Comum', 'A', 72, '4/4', 'Balada Carmelita', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Viver+de+Amor+(Santa+Teresinha)+Irmã+Kelly+Patrícia+cifra', '{"status": "Poema Litúrgico-Espiritual de Santa Teresinha do Menino Jesus", "score": 96, "documentRef": "Memória de Santa Teresinha / Comunhão", "biblicalRef": "1Cor 13, 1-13; Jo 15, 9", "justification": "Adaptação musical do famoso poema de Santa Teresinha do Menino Jesus em quatro acordes.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. Na tarde do Amor, falando sem parábolas, Jesus dizia:
+   F#m                                      D
+"Se alguém Me ama, guardará toda a Minha Palavra,
+   A                                        E
+E Meu Pai o amará, e viremos até ele,
+   F#m                      D               E
+Fazendo dele para sempre a Nossa morada!"
+
+[Refrão]
+   A                                        E
+Viver de amor é dar tudo, é dar-se a si mesmo!
+   F#m                                      D
+Viver de amor é enxugar o Teu rosto, Jesus!
+   A                                        E
+Sem medir sacrifícios, sem pedir recompensa aqui:
+   F#m                      D               E           A
+Viver de amor é morrer de amor por Ti!
+
+[Segunda Parte]
+   A                                        E
+2. Viver de amor é navegar sem medo na tempestade,
+   F#m                      D               E           A
+Sabendo que no meu barco dorme o Rei da eternidade!'),
+  ('irma-kelly-patricia-buscai-as-coisas-do-alto', 'Buscai as Coisas do Alto (Colossenses 3, 1)', 'Irmã Kelly Patrícia / Instituto Hesed', 'Final', 'Páscoa', 'G', 96, '4/4', 'Pop Contemplativo', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Buscai+as+Coisas+do+Alto+(Colossenses+3,+1)+Irmã+Kelly+Patrícia+cifra', '{"status": "Canto Bíblico de Envio (Colossenses 3, 1-2)", "score": 96, "documentRef": "IGMR 90 / Colossenses 3, 1-2", "biblicalRef": "Cl 3, 1-4", "justification": "Quatro acordes em Sol maior baseados na epístola pascal de São Paulo aos Colossenses.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Refrão]
+   G                                        D
+Buscai as coisas do alto, onde Cristo está sentado à direita de Deus!
+   Em                                       C
+Pensai nas coisas do alto, não nas que são daqui da terra!
+   G                        D               C           G
+Pois a nossa pátria definitiva está nos Céus!
+
+[Primeira Parte]
+   G                                        D
+1. Se ressuscitastes com Cristo para uma vida nova,
+   Em                                       C
+Caminhai na luz da graça que tudo renova!
+   G                                        D
+Vossa vida está escondida com Cristo em Deus:
+   Em                       C               D           G
+Quando Ele se manifestar, brilhareis na glória!
+
+[Segunda Parte]
+   G                                        D
+2. Revesti-vos de bondade, mansidão e caridade,
+   Em                       C               D           G
+E a paz de Cristo reine sempre em vossos corações!'),
+  ('irma-kelly-patricia-soberano-rei', 'Soberano Rei (São Miguel Arcanjo)', 'Irmã Kelly Patrícia / Instituto Hesed', 'Final', 'Tempo Comum', 'Am', 92, '4/4', 'Marcha Épica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Soberano+Rei+(São+Miguel+Arcanjo)+Irmã+Kelly+Patrícia+cifra', '{"status": "Hino da Quaresma de São Miguel Arcanjo (Instituto Hesed)", "score": 95, "documentRef": "Devoção Arcangélica / Festa dos Arcanjos (29 de Setembro)", "biblicalRef": "Ap 12, 7-9; Dn 12, 1", "justification": "Hino emblemático do Exército de São Miguel do Instituto Hesed em Lá menor.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Am  F  C  G
+
+[Primeira Parte]
+   Am                                       F
+1. Quem como Deus? Ninguém é como o Senhor dos Exércitos!
+   C                                        G
+Levanta-se no Céu o Príncipe da milícia celeste!
+   Am                                       F
+Com a espada da verdade e o escudo da fé,
+   C                        G               Am
+Defende a Santa Igreja que permanece de pé!
+
+[Refrão]
+   Am                                       F
+Soberano Rei é o Senhor Jesus!
+   C                                        G
+Venceu as trevas pelo Sangue da Sua Cruz!
+   Am                                       F
+São Miguel Arcanjo, defendei-nos no combate:
+   C                        G               Am
+Quem como Deus? Só o Senhor é Deus!
+
+[Segunda Parte]
+   Am                                       F
+2. Seja nosso amparo contra as ciladas do inimigo,
+   C                        G               Am
+Conduzindo o povo eleito ao eterno abrigo!'),
+  ('pe-fabio-de-melo-tudo-e-do-pai', 'Tudo É do Pai', 'Padre Fábio de Melo / Frederico Cruz', 'Ação de Graças', 'Tempo Comum', 'C', 72, '4/4', 'Balada MPB Católica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Tudo+É+do+Pai+Padre+Fábio+de+Melo+cifra', '{"status": "Clássico da Música Católica Brasileira (Cifra Club #1 Pe. Fábio de Melo)", "score": 96, "documentRef": "Encontros e Retiros / Parábola do Filho Pródigo", "biblicalRef": "Lc 15, 11-32", "justification": "A música mais tocada de Padre Fábio de Melo no Cifra Club, inspirada no retorno à casa do Pai.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am  F  G7
+
+[Primeira Parte]
+   C                        G/B             Am
+1. Eu pensei que podia viver por mim mesmo,
+   F                        Dm              G7
+Eu pensei que as coisas do mundo não iriam me derrubar;
+   C                        G/B             Am
+O orgulho tomou conta do meu ser e o pecado devastou o meu viver:
+   F                        Dm              G7
+Fui embora, disse ao Pai: "Dá-me o que é meu!"
+
+[Refrão]
+   C                        G/B             Am
+Tudo é do Pai! Toda honra e toda a glória,
+   F                        Dm              G7
+É Dele a vitória alcançada em minha vida!
+   C                        G/B             Am
+Tudo é do Pai! Se sou fraco e pecador,
+   F                        G7              C
+Bem mais forte é o meu Senhor, que me cura por amor!
+
+[Segunda Parte]
+   C                        G/B             Am
+2. Hoje volto arrependido para os braços do meu Pai,
+   F                        G7              C
+Pois na mesa da Sua graça a alegria nunca sai!'),
+  ('pe-fabio-de-melo-incendeia-minha-alma', 'Incendeia Minha Alma', 'Padre Fábio de Melo / Rogério / Júlio', 'Ação de Graças', 'Pentecostes', 'G', 74, '4/4', 'Balada ao Espírito Santo', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Incendeia+Minha+Alma+Padre+Fábio+de+Melo+cifra', '{"status": "Clássico de Invocação ao Espírito Santo (Cifra Club Top Pe. Fábio de Melo)", "score": 96, "documentRef": "Pentecostes e Grupos de Oração", "biblicalRef": "Lc 12, 49; At 2, 1-4", "justification": "Quatro acordes (G, D, Em, C) consagrados em todo o Brasil para invocação ao Espírito Santo.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Espírito Santo, vinde falar em mim!
+   Em                                       C
+Espírito Santo, vinde orar em mim!
+   G                                        D
+Vinde curar, vinde libertar
+   Em                       C               D
+Nossos corações de toda opressão!
+   G                        D               Em          C
+Vinde transformar, vem incendiar: traz fogo do céu neste lugar!
+
+[Refrão]
+   G                                        D
+Incendeia minha alma! Incendeia minha alma!
+   Em                       C               G           D
+Incendeia minha alma, Senhor!
+   G                                        D
+Incendeia minha alma! Incendeia minha alma!
+   Em                       C               D           G
+Incendeia minha alma, Senhor!
+
+[Segunda Parte]
+   G                                        D
+2. Vem como em Pentecostes batizar o nosso ser,
+   Em                       C               D           G
+Com Teu sopro de vida faz a Igreja renascer!'),
+  ('pe-fabio-de-melo-Deus-cuida-de-mim', 'Deus Cuida de Mim', 'Padre Fábio de Melo / Kleber Lucas', 'Ação de Graças', 'Tempo Comum', 'D', 72, '4/4', 'Balada de Confiança', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Deus+Cuida+de+Mim+Padre+Fábio+de+Melo+cifra', '{"status": "Canto de Confiança na Providência Divina", "score": 94, "documentRef": "Encontros e Pastorais", "biblicalRef": "1Pd 5, 7; Sl 22", "justification": "Quatro acordes simples em Ré maior sobre o cuidado amoroso de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Eu preciso aprender um pouco aqui, eu preciso aprender um pouco ali,
+   Bm                                       G
+Eu preciso aprender mais de Deus, porque Ele é quem cuida de mim!
+   D                                        A
+Se uma porta se fecha aqui, outras portas se abrem ali:
+   Bm                       G               A
+Eu preciso aprender mais de Deus, porque Ele é quem cuida de mim!
+
+[Refrão]
+   D                                        A
+Deus cuida de mim na sombra das Suas asas!
+   Bm                                       G
+Deus cuida de mim, eu amo a Sua casa!
+   D                                        A
+E não ando sozinho, não estou sozinho, pois sei:
+   Bm                       G               A           D
+Deus cuida de mim!
+
+[Segunda Parte]
+   D                                        A
+2. Na alegria ou na dor, na bonança ou no temporal,
+   Bm                       G               A           D
+Sua mão me sustenta com amor paternal!'),
+  ('pe-fabio-de-melo-vida', 'Vida (Já Não Sei Viver Sem Teu Amor)', 'Padre Fábio de Melo', 'Ação de Graças', 'Qualquer', 'A', 74, '4/4', 'Balada Poética', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Vida+(Já+Não+Sei+Viver+Sem+Teu+Amor)+Padre+Fábio+de+Melo+cifra', '{"status": "Canto Cristocêntrico sobre a Vida em Deus", "score": 94, "documentRef": "Encontros e Retiros", "biblicalRef": "Jo 14, 6; Jo 10, 10", "justification": "Sucesso poético gravado por Padre Fábio de Melo em Lá maior.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. Quando a luz do Teu olhar iluminou meu caminhar,
+   F#m                                      D
+Descobri que a verdadeira vida nasce no altar;
+   A                                        E
+Tudo o que antes parecia ter valor ficou pra trás,
+   F#m                      D               E
+Pois só Tu, ó Cristo vivo, me preenches de paz!
+
+[Refrão]
+   A                                        E
+Tu és a Vida que pulsa dentro do meu coração!
+   F#m                                      D
+Tu és a estrada, a verdade e a salvação!
+   A                                        E
+Já não sei viver distante do Teu grande amor:
+   F#m                      D               E           A
+Minha vida inteira pertence a Ti, Senhor!
+
+[Segunda Parte]
+   A                                        E
+2. Vieste para que todos tenham vida em plenitude,
+   F#m                      D               E           A
+Transformando nossa história com Tua eterna juventude!'),
+  ('pe-fabio-de-melo-direcao', 'Direção', 'Padre Fábio de Melo', 'Ofertório', 'Tempo Comum', 'E', 74, '4/4', 'Balada Acústica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Direção+Padre+Fábio+de+Melo+cifra', '{"status": "Canto de Discernimento e Entrega do Caminho", "score": 94, "documentRef": "Encontros Vocacionais e Retiros", "biblicalRef": "Sl 24, 4; Pr 3, 5-6", "justification": "Quatro acordes em Mi maior pedindo a direção de Deus para cada decisão da vida.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B  C#m  A
+
+[Primeira Parte]
+   E                                        B
+1. Diante de tantas estradas que o mundo vem me oferecer,
+   C#m                                      A
+Silencio a minha alma para Tua voz perceber;
+   E                                        B
+Não quero dar nenhum passo longe da Tua vontade,
+   C#m                      A               B
+Guia os meus pés, Senhor, no caminho da verdade!
+
+[Refrão]
+   E                                        B
+Sê a minha direção, o norte do meu caminhar!
+   C#m                                      A
+Farol em noite escura a me orientar!
+   E                                        B
+Nas Tuas mãos seguras entrego a minha história:
+   C#m                      A               B           E
+Conduz a minha vida rumo à Tua glória!
+
+[Segunda Parte]
+   E                                        B
+2. Tua Palavra é lâmpada que clareia o meu chão,
+   C#m                      A               B           E
+Contigo nunca perco o rumo da salvação!'),
+  ('pe-fabio-de-melo-seja-bem-vindo', 'Seja Bem-Vindo', 'Padre Fábio de Melo', 'Entrada', 'Tempo Comum', 'G', 98, '4/4', 'Pop Acolhida', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Seja+Bem-Vindo+Padre+Fábio+de+Melo+cifra', '{"status": "Canto de Acolhida Fraterna para Encontros", "score": 93, "documentRef": "Acolhida Pastoral e Encontros Paroquiais", "biblicalRef": "Rm 15, 7; Sl 132", "justification": "Quatro acordes alegres em Sol maior para recepcionar irmãos em encontros e retiros.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Que alegria ver você chegar aqui neste lugar,
+   Em                                       C
+Onde o amor de Jesus Cristo vem nos abraçar!
+   G                                        D
+Deixe lá fora toda tristeza e preocupação,
+   Em                       C               D
+Abra um sorriso e prepare o coração!
+
+[Refrão]
+   G                                        D
+Seja bem-vindo à casa do Senhor!
+   Em                                       C
+Aqui você é acolhido com carinho e com amor!
+   G                                        D
+Somos família reunida pela fé:
+   Em                       C               D           G
+Seja bem-vindo, Deus te ama como és!
+
+[Segunda Parte]
+   G                                        D
+2. Como é bom e agradável os irmãos viverem em união,
+   Em                       C               D           G
+Onde o Senhor derrama a bênção e a salvação!'),
+  ('pe-fabio-de-melo-solo-sagrado', 'Solo Sagrado', 'Padre Fábio de Melo', 'Ação de Graças', 'Qualquer', 'D', 70, '4/4', 'Balada de Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Solo+Sagrado+Padre+Fábio+de+Melo+cifra', '{"status": "Canto de Reverência diante da Presença de Deus (Êxodo 3, 5)", "score": 95, "documentRef": "Adoração Eucarística", "biblicalRef": "Ex 3, 5; Sl 98", "justification": "Quatro acordes em Ré maior inspirados em Moisés diante da sarça ardente.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Tiro as sandálias dos meus pés ao entrar neste lugar,
+   Bm                                       G
+Pois a presença do Altíssimo vem tudo santificar;
+   D                                        A
+Como Moisés diante da sarça que ardia sem se consumir,
+   Bm                       G               A
+Dobro os meus joelhos e me rendo a Ti aqui!
+
+[Refrão]
+   D                                        A
+Estou pisando em solo sagrado na presença do Senhor!
+   Bm                                       G
+Onde o Céu toca a terra em mistério de amor!
+   D                                        A
+Santo, Santo é o Deus vivo que habita no altar:
+   Bm                       G               A           D
+Neste solo sagrado quero Te adorar!
+
+[Segunda Parte]
+   D                                        A
+2. Tua glória enche o templo e cura toda dor,
+   Bm                       G               A           D
+Purifica os nossos lábios com Teu fogo, ó Senhor!'),
+  ('celina-borges-tudo-posso', 'Tudo Posso (Naquele Que Me Fortalece)', 'Celina Borges', 'Ação de Graças', 'Tempo Comum', 'G', 72, '4/4', 'Balada Bíblica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Tudo+Posso+(Naquele+Que+Me+Fortalece)+Celina+Borges+cifra', '{"status": "Clássico Bíblico de Filipenses 4, 13 (Cifra Club #1 Celina Borges)", "score": 96, "documentRef": "Retiros e Encontros / Filipenses 4, 13", "biblicalRef": "Fl 4, 13; 2Cor 12, 9-10", "justification": "O maior sucesso de Celina Borges no Cifra Club, em quatro acordes (G, D, Em, C).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Posso, tudo posso Naquele que me fortalece:
+   Em                                       C
+Nada e ninguém no mundo vai me fazer desistir!
+   G                                        D
+Quero, tudo quero, sem medo entregar meus projetos:
+   Em                       C               D
+Deixar-me guiar nos caminhos que Deus desejou pra mim e ali estar!
+
+[Refrão]
+   G                                        D
+Vou perseguir tudo aquilo que Deus já escolheu pra mim!
+   Em                                       C
+Vou persistir, e mesmo nas marcas daquela dor,
+   G                        D               C           D     G
+Do que ficou, vou me lembrar e realizar o sonho mais lindo de Deus!
+
+[Segunda Parte]
+   G                                        D
+2. Vou crer que um novo tempo já começou sobre a minha história,
+   Em                       C               D           G
+Pois quem espera no Senhor alcança a vitória!'),
+  ('celina-borges-nas-asas-do-senhor', 'Nas Asas do Senhor', 'Celina Borges', 'Ação de Graças', 'Tempo Comum', 'D', 74, '4/4', 'Balada de Louvor', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Nas+Asas+do+Senhor+Celina+Borges+cifra', '{"status": "Canto Baseado em Isaías 40, 31 (Cifra Club Top Celina Borges)", "score": 95, "documentRef": "Retiros e Encontros", "biblicalRef": "Is 40, 31; Sl 90", "justification": "Clássico de Celina Borges em Ré maior sobre voar como águia nas asas de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Sei que os que confiam no Senhor renovam suas forças,
+   Bm                                       G
+Correm sem cansar, caminham sem jamais desfalecer;
+   D                                        A
+Mesmo quando o vento sopra forte contra mim,
+   Bm                       G               A
+Abro as minhas asas na presença do Rei sem fim!
+
+[Refrão]
+   D                                        A
+Nas asas do Senhor vou planar acima da tempestade!
+   Bm                                       G
+No abrigo do Altíssimo encontro liberdade!
+   D                                        A
+Ele é minha rocha, meu refúgio e salvação:
+   Bm                       G               A           D
+Nas asas do Senhor descansa o meu coração!
+
+[Segunda Parte]
+   D                                        A
+2. Como a águia que se eleva em direção ao Sol nascente,
+   Bm                       G               A           D
+Minha alma exalta o Deus Eterno e Onipotente!'),
+  ('celina-borges-lava-me', 'Lava-me (Purifica o Meu Coração)', 'Celina Borges', 'Ato Penitencial', 'Quaresma', 'Am', 70, '4/4', 'Balada Penitencial', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Lava-me+(Purifica+o+Meu+Coração)+Celina+Borges+cifra', '{"status": "Canto de Purificação e Contrição (Salmo 50)", "score": 95, "documentRef": "Retiros Penitenciais e Adoração", "biblicalRef": "Sl 50, 4.9; Jo 13, 8", "justification": "Quatro acordes em Lá menor suplicando a purificação do coração pelo amor de Cristo.", "repertoireType": "liturgica", "specialDay": "Quaresma e CF", "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Am  Dm  G  C  E7
+
+[Primeira Parte]
+   Am                                       Dm
+1. Senhor, Tu conheces o mais profundo do meu ser,
+   G                                        C           E7
+As manchas que o tempo deixou em meu viver;
+   Am                                       Dm
+Vem com a água viva que jorrou do Teu lado aberto,
+   F                                        E7
+Transforma em jardim florido o meu deserto!
+
+[Refrão]
+   Am                                       Dm
+Lava-me, Senhor, nas fontes da Tua misericórdia!
+   G                                        C           E7
+Purifica o meu coração, escreve em mim nova história!
+   Am                                       Dm
+Mais branco que a neve ficarei em Teu perdão:
+   F                        E7              Am
+Lava-me, Jesus, restaura a minha comunhão!
+
+[Segunda Parte]
+   Am                                       Dm
+2. Cria em mim, ó Deus, um coração puro e sincero,
+   F                        E7              Am
+Pois somente a Tua graça e o Teu amor eu quero!'),
+  ('celina-borges-diamante', 'Diamante (Lapidado por Deus)', 'Celina Borges', 'Ofertório', 'Tempo Comum', 'C', 72, '4/4', 'Balada Espiritual', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Diamante+(Lapidado+por+Deus)+Celina+Borges+cifra', '{"status": "Canto sobre o Processo de Santificação em Deus", "score": 94, "documentRef": "Retiros e Encontros de Formação", "biblicalRef": "Ml 3, 3; Is 43, 4", "justification": "Quatro acordes em Dó maior sobre o trabalho do Divino Artista que lapida nossa alma.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Como uma pedra bruta escondida no fundo da terra,
+   Am                                       F
+Assim tu me encontraste com o teu olhar de amor;
+   C                                        G
+E com paciência santa começaste a me lapidar,
+   Am                       F               G
+Para que a Tua própria luz pudesse em mim brilhar!
+
+[Refrão]
+   C                                        G
+Sou um diamante nas mãos do meu Senhor!
+   Am                                       F
+Cada prova me moldou, revelou o meu valor!
+   C                                        G
+Precioso aos Teus olhos, comprado na Cruz:
+   Am                       F               G           C
+Quero refletir ao mundo o brilho de Jesus!
+
+[Segunda Parte]
+   C                                        G
+2. Não temo o cinzel do Artista que me quer perfeito,
+   Am                       F               G           C
+Pois tudo o que Ele faz é por amor ao Seu eleito!'),
+  ('celina-borges-buscai-primeiro', 'Buscai Primeiro o Reino de Deus (Celina Borges)', 'Celina Borges', 'Aclamação ao Evangelho', 'Tempo Comum', 'D', 84, '4/4', 'Balada Evangélica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Buscai+Primeiro+o+Reino+de+Deus+(Celina+Borges)+Celina+Borges+cifra', '{"status": "Canto Bíblico de Mateus 6, 33", "score": 96, "documentRef": "Mateus 6, 33 / Encontros Bíblicos", "biblicalRef": "Mt 6, 33; Mt 4, 4", "justification": "Clássica meditação de Mateus 6, 33 em Ré maior com cânone de Aleluia.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Aclamação ao Evangelho • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  F#m  G  D  G  D  A7  D
+
+[Primeira Parte]
+   D            F#m         G               D
+1. Buscai primeiro o Reino de Deus
+   G            D           Em              A7
+E a Sua justiça,
+   D            F#m         G               D
+E todas as coisas vos serão acrescentadas:
+   G            D           A7              D
+Aleluia, Aleluia!
+
+[Refrão]
+   D            F#m         G               D
+Aleluia, Aleluia, Aleluia,
+   G            D           A7              D
+Aleluia, Aleluia!
+
+[Segunda Parte]
+   D            F#m         G               D
+2. Não só de pão o homem viverá,
+   G            D           Em              A7
+Mas de toda Palavra
+   D            F#m         G               D
+Que procede da boca de Deus:
+   G            D           A7              D
+Aleluia, Aleluia!'),
+  ('celina-borges-back-to-faith', 'De Volta à Fé (Renascer no Amor)', 'Celina Borges', 'Ação de Graças', 'Qualquer', 'A', 74, '4/4', 'Balada Pop', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=De+Volta+à+Fé+(Renascer+no+Amor)+Celina+Borges+cifra', '{"status": "Canto de Retorno ao Primeiro Amor (Apocalipse 2, 4)", "score": 94, "documentRef": "Retiros de Reavivamento", "biblicalRef": "Ap 2, 4-5; Lc 15, 20", "justification": "Quatro acordes em Lá maior sobre voltar ao fervor do primeiro encontro com Cristo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. Quando o frio da rotina tenta apagar a chama,
+   F#m                                      D
+Ouço a voz suave Daquele que sempre me ama;
+   A                                        E
+Recordo o primeiro dia em que Te conheci,
+   F#m                      D               E
+E corro de braços abertos de volta para Ti!
+
+[Refrão]
+   A                                        E
+Estou de volta à fé, de volta ao primeiro amor!
+   F#m                                      D
+Onde a minha alma encontra paz e esplendor!
+   A                                        E
+Nada no mundo se compara a estar aos pés da Cruz:
+   F#m                      D               E           A
+Renasço a cada dia na presença de Jesus!
+
+[Segunda Parte]
+   A                                        E
+2. Renova em mim a alegria da Tua salvação,
+   F#m                      D               E           A
+E sustenta com Espírito generoso o meu coração!'),
+  ('adriana-arydes-abraco-de-pai', 'Abraço de Pai', 'Adriana Arydes / Walmir Alencar', 'Ação de Graças', 'Qualquer', 'G', 70, '4/4', 'Balada de Cura Interior', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Abraço+de+Pai+Adriana+Arydes+cifra', '{"status": "Clássico da Música Católica Brasileira (Cifra Club #1 Adriana Arydes)", "score": 97, "documentRef": "Adoração e Cura Interior / Lucas 15, 20", "biblicalRef": "Lc 15, 20; Sl 102, 13", "justification": "Um dos hinos mais amados de Adriana Arydes e Walmir Alencar no Cifra Club, em Sol maior.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em  C  D
+
+[Primeira Parte]
+   G                        D/F#            Em
+1. Quanto eu esperei! Ansioso queria te ver,
+   C                        Am              D
+E te falar tudo o que há em Mim;
+   G                        D/F#            Em
+Já não podias ficar tão longe assim de Mim:
+   C                        Am              D
+Mesmo sem merecer, nunca deixei de te amar!
+
+[Refrão]
+   G                        D/F#            Em
+Vem, recebe o Meu abraço de Pai!
+   C                        Am              D
+No Meu peito há um lugar que é todo teu!
+   G                        D/F#            Em
+Esquece o passado, descansa em Minha paz:
+   C                        D               G
+Sou Teu Pai e jamais te esquecerei!
+
+[Segunda Parte]
+   G                        D/F#            Em
+2. Enxugo dos teus olhos toda lágrima de dor,
+   C                        D               G
+Visto-te de festa com a túnica do Meu amor!'),
+  ('adriana-arydes-humano-amor-de-deus', 'Humano Amor de Deus', 'Adriana Arydes', 'Comunhão', 'Natal', 'D', 72, '4/4', 'Balada da Encarnação', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Humano+Amor+de+Deus+Adriana+Arydes+cifra', '{"status": "Canto sobre o Mistério da Encarnação (Cifra Club Top Adriana Arydes)", "score": 96, "documentRef": "Natal e Tempo Comum / João 1, 14", "biblicalRef": "Jo 1, 14; Fl 2, 6-8", "justification": "Quatro acordes em Ré maior celebrando o Verbo que Se fez carne por amor.", "repertoireType": "popular", "specialDay": "Natal do Senhor", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Tão grande Deus, quis Se fazer pequeno por amor,
+   Bm                                       G
+Desceu do Trono eterno pra sentir a nossa dor;
+   D                                        A
+Nas mãos de uma Virgem aprendeu a caminhar,
+   Bm                       G               A
+Para que a humanidade aprendesse a amar!
+
+[Refrão]
+   D                                        A
+Ó humano amor de Deus, mistério sem igual!
+   Bm                                       G
+O Céu beijou a terra e venceu todo o mal!
+   D                                        A
+Em cada gesto simples brilha a luz do Redentor:
+   Bm                       G               A           D
+Jesus, rosto humano do eterno Amor!
+
+[Segunda Parte]
+   D                                        A
+2. Chorou com os que choram, partiu o pão aos seus,
+   Bm                       G               A           D
+Mostrando em Sua vida o coração de Deus!'),
+  ('adriana-arydes-coracao-sagrado', 'Coração Sagrado', 'Adriana Arydes', 'Comunhão', 'Tempo Comum', 'C', 70, '4/4', 'Balada ao Sagrado Coração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Coração+Sagrado+Adriana+Arydes+cifra', '{"status": "Hino à Solenidade do Sagrado Coração de Jesus", "score": 97, "documentRef": "IGMR 86 / Solenidade do Sagrado Coração de Jesus", "biblicalRef": "Jo 19, 34; Mt 11, 28-30", "justification": "Quatro acordes em Dó maior dedicados ao Sagrado Coração de Jesus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Fonte inesgotável de ternura e compaixão,
+   Am                                       F
+Aberto pela lança para a nossa redenção;
+   C                                        G
+Vinde a Mim vós todos que estais cansados de sofrer,
+   Am                       F               G
+Pois sou manso e humilde e vos faço reviver!
+
+[Refrão]
+   C                                        G
+Coração Sagrado de Jesus, fornalha de caridade!
+   Am                                       F
+Abrigo seguro para toda a humanidade!
+   C                                        G
+Fazei o nosso coração semelhante ao Vosso aqui:
+   Am                       F               G           C
+Coração Sagrado, confiamos sempre em Ti!
+
+[Segunda Parte]
+   C                                        G
+2. Do Vosso lado aberto brotam Sangue e Água viva,
+   Am                       F               G           C
+Que lavam a Igreja e a mantêm sempre cativa!'),
+  ('adriana-arydes-nova-manha', 'Nova Manhã (Adriana Arydes)', 'Adriana Arydes', 'Ação de Graças', 'Páscoa', 'A', 74, '4/4', 'Balada de Esperança', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Nova+Manhã+(Adriana+Arydes)+Adriana+Arydes+cifra', '{"status": "Canto de Esperança e Ressurreição (Salmo 29, 6)", "score": 95, "documentRef": "Encontros e Retiros", "biblicalRef": "Sl 29, 6; Lm 3, 22-23", "justification": "Quatro acordes em Lá maior anunciando que a alegria vem ao amanhecer.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. Ainda que a noite pareça longa demais,
+   F#m                                      D
+E o vento frio tente roubar a tua paz,
+   A                                        E
+As misericórdias do Senhor se renovam no alvorecer:
+   F#m                      D               E
+Levanta o teu olhar, um novo dia vai nascer!
+
+[Refrão]
+   A                                        E
+Uma nova manhã já desponta no horizonte!
+   F#m                                      D
+A luz de Jesus brilha no alto do monte!
+   A                                        E
+O choro pode durar uma noite inteira, mas eu sei:
+   F#m                      D               E           A
+A alegria vem pela manhã com o nosso Rei!
+
+[Segunda Parte]
+   A                                        E
+2. Deixa o Sol da Justiça aquecer o teu viver,
+   F#m                      D               E           A
+Pois em Cristo Ressuscitado tudo volta a florescer!'),
+  ('adriana-arydes-guardioes', 'Guardiões (Anjos de Deus)', 'Adriana Arydes', 'Ação de Graças', 'Tempo Comum', 'E', 76, '4/4', 'Balada Angélica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Guardiões+(Anjos+de+Deus)+Adriana+Arydes+cifra', '{"status": "Canto sobre os Santos Anjos da Guarda (Salmo 90, 11)", "score": 94, "documentRef": "Memória dos Santos Anjos da Guarda (2 de Outubro)", "biblicalRef": "Sl 90, 11-12; Ex 23, 20", "justification": "Quatro acordes em Mi maior celebrando a proteção dos Santos Anjos.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B  C#m  A
+
+[Primeira Parte]
+   E                                        B
+1. Deus deu ordens aos Seus anjos a teu respeito,
+   C#m                                      A
+Para te guardarem em todos os teus caminhos;
+   E                                        B
+Eles te sustentarão em suas mãos luminosas,
+   C#m                      A               B
+Para que o teu pé não tropece em pedra alguma!
+
+[Refrão]
+   E                                        B
+Guardiões do Céu caminham ao nosso lado!
+   C#m                                      A
+Enviados pelo Pai ao Seu povo amado!
+   E                                        B
+Na batalha da fé não estamos sós jamais:
+   C#m                      A               B           E
+Os anjos do Senhor nos conduzem na paz!
+
+[Segunda Parte]
+   E                                        B
+2. Santo Anjo do Senhor, meu zeloso guardador,
+   C#m                      A               B           E
+Governa e ilumina minha vida no amor!'),
+  ('adriana-arydes-chave-do-coracao', 'A Chave do Coração', 'Adriana Arydes', 'Ação de Graças', 'Qualquer', 'G', 72, '4/4', 'Balada de Entrega', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=A+Chave+do+Coração+Adriana+Arydes+cifra', '{"status": "Clássico de Entrega Pessoal a Cristo (Cifra Club Top Adriana Arydes)", "score": 95, "documentRef": "Retiros e Grupos de Oração", "biblicalRef": "Ap 3, 20; Pr 23, 26", "justification": "Clássico de Adriana Arydes em Sol maior entregando a chave do coração a Jesus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Qual é a chave que abre as portas do meu interior?
+   Em                                       C
+Só Tu a possuis, ó Mestre e meu Senhor!
+   G                                        D
+Por muito tempo tentei guardar segredos para mim,
+   Em                       C               D
+Mas hoje me rendo inteiramente ao Teu amor sem fim!
+
+[Refrão]
+   G                                        D
+Toma a chave do meu coração, entra e faz morada!
+   Em                                       C
+Ilumina cada quarto desta casa tão cansada!
+   G                                        D
+Tu és o Dono da minha vida, meu único Bem:
+   Em                       C               D           G
+Reina em meu coração hoje e para sempre, amém!
+
+[Segunda Parte]
+   G                                        D
+2. Onde havia medo, planta a Tua segurança,
+   Em                       C               D           G
+E faz florescer em mim a eterna esperança!'),
+  ('tony-allysson-poderoso-deus', 'Poderoso Deus', 'Tony Allysson', 'Ação de Graças', 'Qualquer', 'D', 70, '4/4', 'Worship / Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Poderoso+Deus+Tony+Allysson+cifra', '{"status": "Clássico de Adoração Carismática (Cifra Club Top Tony Allysson)", "score": 96, "documentRef": "Adoração e Grupo de Oração", "biblicalRef": "Ap 4, 8; Is 6, 3", "justification": "Um dos hinos mais tocados de Tony Allysson no Cifra Club, em quatro acordes (D, A, Bm, G).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Ao que está assentado no trono e ao Cordeiro
+   Bm                                       G
+Seja o louvor, a honra, a glória e o domínio
+   D                                        A
+Pelos séculos dos séculos, sem jamais cessar:
+   Bm                       G               A
+Toda a criação se prostra para Te adorar!
+
+[Refrão]
+   D                                        A
+Poderoso Deus! Poderoso Deus!
+   Bm                                       G
+Minha alma anseia por Ti, Senhor!
+   D                                        A
+Poderoso Deus! Poderoso Deus!
+   Bm                       G               A           D
+Como a corça suspira pelas águas, tenho sede de Ti!
+
+[Segunda Parte]
+   D                                        A
+2. Derrama a Tua glória sobre este santo altar,
+   Bm                       G               A           D
+Pois nascemos, ó Senhor, para Te adorar!'),
+  ('tony-allysson-marca-da-vitoria', 'Marca da Vitória', 'Tony Allysson', 'Ação de Graças', 'Páscoa', 'G', 74, '4/4', 'Balada Carismática', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Marca+da+Vitória+Tony+Allysson+cifra', '{"status": "Canto de Vitória pela Cruz de Cristo (Cifra Club Top Tony Allysson)", "score": 95, "documentRef": "Encontros e Vigílias", "biblicalRef": "Gl 6, 17; Rm 8, 37", "justification": "Grande sucesso de Tony Allysson em Sol maior proclamando a marca da vitória em Cristo.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Eu tenho a marca da promessa que ninguém pode apagar,
+   Em                                       C
+Gravada com o Sangue do Cordeiro que morreu em meu lugar;
+   G                                        D
+Ainda que se levantem muralhas diante de mim,
+   Em                       C               D
+No Nome de Jesus verei todas caírem ao fim!
+
+[Refrão]
+   G                                        D
+Eu trago em mim a marca da vitória!
+   Em                                       C
+Jesus escreveu de novo a minha história!
+   G                                        D
+Em todas as coisas sou mais que vencedor:
+   Em                       C               D           G
+Pelo poder do Sangue de Cristo, o Senhor!
+
+[Segunda Parte]
+   G                                        D
+2. Quem poderá nos separar do amor do nosso Rei?
+   Em                       C               D           G
+De cabeça erguida na fé eu caminharei!'),
+  ('tony-allysson-aguas-profundas', 'Águas Profundas', 'Tony Allysson', 'Ação de Graças', 'Pentecostes', 'C', 72, '4/4', 'Adoração Carismática', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Águas+Profundas+Tony+Allysson+cifra', '{"status": "Canto Baseado na Visão do Templo (Ezequiel 47)", "score": 95, "documentRef": "Grupo de Oração e Retiros", "biblicalRef": "Ez 47, 1-9; Jo 7, 37-39", "justification": "Quatro acordes em Dó maior inspirados no rio de água viva da profecia de Ezequiel 47.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Não quero ficar apenas na margem do Teu rio,
+   Am                                       F
+Molhando somente os pés enquanto o coração está frio;
+   C                                        G
+Vem me conduzir mais fundo na torrente do altar,
+   Am                       F               G
+Onde só pela fé eu posso mergulhar!
+
+[Refrão]
+   C                                        G
+Leva-me às águas profundas do Teu Espírito, Senhor!
+   Am                                       F
+Inunda todo o meu ser com o rio do Teu amor!
+   C                                        G
+Onde essa água passa, tudo volta a viver:
+   Am                       F               G           C
+Nas águas profundas quero permanecer!
+
+[Segunda Parte]
+   C                                        G
+2. Dos tornozelos aos joelhos, até não dar mais pé,
+   Am                       F               G           C
+Entrego-me inteiro à correnteza da fé!'),
+  ('tony-allysson-purifica-me', 'Purifica-me', 'Tony Allysson', 'Ato Penitencial', 'Quaresma', 'Am', 70, '4/4', 'Balada de Contrição', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Purifica-me+Tony+Allysson+cifra', '{"status": "Canto Penitencial de Cura e Libertação", "score": 94, "documentRef": "Retiros e Vigílias Penitenciais", "biblicalRef": "Sl 50, 12; Is 6, 6-7", "justification": "Quatro acordes em Lá menor (Am, F, C, G) pedindo um coração puro diante de Deus.", "repertoireType": "liturgica", "specialDay": "Quaresma e CF", "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Am  F  C  G
+
+[Primeira Parte]
+   Am                                       F
+1. Rasgo o meu coração, não apenas as minhas vestes,
+   C                                        G
+Diante do Deus Santo que habita nas alturas celestes;
+   Am                                       F
+Toca os meus lábios com a brasa viva do altar,
+   C                        G               Am
+E toda iniquidade vem agora perdoar!
+
+[Refrão]
+   Am                                       F
+Purifica-me, Senhor, com o fogo do Teu Espírito!
+   C                                        G
+Acolhe o clamor de um coração contrito!
+   Am                                       F
+Faz-me vaso novo em Tuas santas mãos:
+   C                        G               Am
+Purifica-me e renova a minha vocação!
+
+[Segunda Parte]
+   Am                                       F
+2. Onde abundou o pecado, superabundou a Tua graça,
+   C                        G               Am
+Que cura as feridas e toda culpa desfaça!'),
+  ('tony-allysson-sustenta-o-fogo', 'Sustenta o Fogo', 'Tony Allysson', 'Ação de Graças', 'Pentecostes', 'Em', 76, '4/4', 'Adoração e Avivamento', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Sustenta+o+Fogo+Tony+Allysson+cifra', '{"status": "Canto Baseado em Levítico 6, 6 (O Fogo Contínuo no Altar)", "score": 95, "documentRef": "Vigílias e Encontros Carismáticos", "biblicalRef": "Lv 6, 5-6; 2Tm 1, 6", "justification": "Sucesso de Tony Allysson em Mi menor (Em, C, G, D) sobre manter acesa a chama da oração.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  G  D
+
+[Primeira Parte]
+   Em                                       C
+1. O fogo sobre o altar jamais deverá se apagar,
+   G                                        D
+A cada manhã o sacerdote lenha nova vai colocar;
+   Em                                       C
+Eu sou templo vivo do Espírito Consolador,
+   G                        D               Em
+E guardo em meu peito a chama do primeiro amor!
+
+[Refrão]
+   Em                                       C
+Sustenta o fogo no meu coração, Senhor!
+   G                                        D
+Não deixes esfriar a chama do louvor!
+   Em                                       C
+Ainda que soprem ventos contrários ao redor:
+   G                        D               Em
+Sustenta em minha alma o Teu fogo abrasador!
+
+[Segunda Parte]
+   Em                                       C
+2. Reaviva o dom de Deus que recebi pela imposição das mãos,
+   G                        D               Em
+Espírito de força, de amor e de unção!'),
+  ('diego-fernandes-templo-vivo', 'Templo Vivo', 'Diego Fernandes', 'Ação de Graças', 'Pentecostes', 'G', 96, '4/4', 'Pop Rock Católico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Templo+Vivo+Diego+Fernandes+cifra', '{"status": "Canto Baseado em 1 Coríntios 3, 16 (Somostemplo do Espírito)", "score": 95, "documentRef": "Encontros de Jovens e Crisma", "biblicalRef": "1Cor 3, 16; 1Cor 6, 19", "justification": "Sucesso de Diego Fernandes em Sol maior proclamando que somos templo vivo do Espírito Santo.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Não sabeis que sois santuário do Deus vivo,
+   Em                                       C
+E que o Espírito Santo habita dentro de vós?
+   G                                        D
+Não em pedras frias, mas em corações de carne,
+   Em                       C               D
+O Senhor estabeleceu o Seu trono entre nós!
+
+[Refrão]
+   G                                        D
+Eu sou templo vivo do Espírito Santo!
+   Em                                       C
+Morada escolhida do Deus Trino e Santo!
+   G                                        D
+Com minha vida inteira quero glorificar
+   Em                       C               D           G
+Aquele que em meu peito veio habitar!
+
+[Segunda Parte]
+   G                                        D
+2. Fomos comprados por um preço de infinito valor,
+   Em                       C               D           G
+Glorifiquemos em nosso corpo a Cristo, o Senhor!'),
+  ('diego-fernandes-danca-de-avivamento', 'Dança de Avivamento', 'Diego Fernandes', 'Final', 'Pentecostes', 'Em', 122, '4/4', 'Pop Louvor Festivo', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Dança+de+Avivamento+Diego+Fernandes+cifra', '{"status": "Canto de Louvor Festivo (Salmo 150 / 2 Samuel 6, 14)", "score": 94, "documentRef": "Encontros de Jovens e Retiros", "biblicalRef": "Sl 150; 2Sm 6, 14", "justification": "Quatro acordes alegres em Mi menor (Em, C, G, D) para animação de encontros juvenis.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  G  D
+
+[Primeira Parte]
+   Em                                       C
+1. Como o rei Davi dançava diante da Arca do Senhor,
+   G                                        D
+Sem se importar com os olhares, transbordando de amor;
+   Em                                       C
+Mudaste o nosso pranto em festa de libertação,
+   G                        D               Em
+Por isso celebramos de todo o coração!
+
+[Refrão]
+   Em                                       C
+É dança de avivamento na presença do Rei!
+   G                                        D
+Com júbilo e alegria o Seu Nome exaltarei!
+   Em                                       C
+O Espírito de Deus derrama vida neste chão:
+   G                        D               Em
+Cante, dance e louve a geração da salvação!
+
+[Segunda Parte]
+   Em                                       C
+2. Todo ser que respira louve ao Senhor dos céus,
+   G                        D               Em
+Pois grande em nosso meio é a vitória de Deus!'),
+  ('diego-fernandes-eu-nao-esqueco', 'Eu Não Esqueço (As Promessas de Deus)', 'Diego Fernandes', 'Ação de Graças', 'Tempo Comum', 'C', 76, '4/4', 'Balada Pop', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Eu+Não+Esqueço+(As+Promessas+de+Deus)+Diego+Fernandes+cifra', '{"status": "Canto de Memória Agradecida (Salmo 102, 2)", "score": 94, "documentRef": "Encontros de Jovens", "biblicalRef": "Sl 102, 2; Js 21, 45", "justification": "Quatro acordes em Dó maior recordando a fidelidade das promessas de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Olho para trás e vejo de onde o Senhor me tirou,
+   Am                                       F
+Quantos livramentos Sua mão fiel realizou;
+   C                                        G
+Mesmo quando eu duvidei, Ele permaneceu fiel:
+   Am                       F               G
+Nenhuma de Suas promessas caiu vazia do Céu!
+
+[Refrão]
+   C                                        G
+Eu não esqueço tudo o que Deus já fez por mim!
+   Am                                       F
+Sua misericórdia é eterna e não tem fim!
+   C                                        G
+Bendize, ó minha alma, ao Senhor em todo tempo:
+   Am                       F               G           C
+Sem esquecer nenhum só de Seus benefícios!
+
+[Segunda Parte]
+   C                                        G
+2. Aquele que começou a boa obra em minha vida,
+   Am                       F               G           C
+Há de completá-la até a vinda prometida!'),
+  ('diego-fernandes-no-colo-de-maria', 'No Colo de Maria', 'Diego Fernandes', 'Ação de Graças', 'Qualquer', 'D', 72, '4/4', 'Balada Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=No+Colo+de+Maria+Diego+Fernandes+cifra', '{"status": "Canto Mariano de Entrega Filial", "score": 95, "documentRef": "Devoção Mariana e Encontros", "biblicalRef": "Lc 1, 42-45; Jo 19, 27", "justification": "Bela canção mariana de Diego Fernandes em Ré maior.", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Quando as lutas da jornada ferem o meu caminhar,
+   Bm                                       G
+Procuro o silêncio doce do teu maternal olhar;
+   D                                        A
+Cheia de graça, escolhida pelo Pai Criador,
+   Bm                       G               A
+Acolhe este teu filho em teu manto de amor!
+
+[Refrão]
+   D                                        A
+No colo de Maria aprendo a adorar Jesus!
+   Bm                                       G
+No colo de Maria encontro força junto à Cruz!
+   D                                        A
+Mãe da Igreja e Rainha da Paz:
+   Bm                       G               A           D
+Teu carinho de Mãe todo medo desfaz!
+
+[Segunda Parte]
+   D                                        A
+2. Fazei tudo o que Ele vos disser, tu nos ensinas,
+   Bm                       G               A           D
+Transformando a nossa água em bênçãos divinas!'),
+  ('diego-fernandes-marcado-pelo-fogo', 'Marcado Pelo Fogo', 'Diego Fernandes', 'Final', 'Pentecostes', 'A', 112, '4/4', 'Pop Rock de Pentecostes', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Marcado+Pelo+Fogo+Diego+Fernandes+cifra', '{"status": "Canto para Crisma e Encontros de Jovens", "score": 94, "documentRef": "Crisma e Juventude", "biblicalRef": "Mt 3, 11; At 1, 8", "justification": "Quatro acordes em Lá maior celebrando o selo do Espírito Santo na Crisma.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. João batizava na água para a conversão,
+   F#m                                      D
+Mas Jesus batiza no Espírito e no fogo do perdão!
+   A                                        E
+Recebemos a força do alto para testemunhar,
+   F#m                      D               E
+Até os confins da terra o Evangelho anunciar!
+
+[Refrão]
+   A                                        E
+Sou marcado pelo fogo do Espírito de Deus!
+   F#m                                      D
+Consagrado para sempre ao Rei dos céus!
+   A                                        E
+Não me envergonho do Evangelho do Senhor:
+   F#m                      D               E           A
+Sou jovem missionário inflamado de amor!
+
+[Segunda Parte]
+   A                                        E
+2. Ninguém despreze a tua juventude, mas sê modelo na fé,
+   F#m                      D               E           A
+Na palavra, na pureza e no amor que permanece de pé!'),
+  ('diego-fernandes-ser-diferente', 'Ser Diferente (Sal da Terra e Luz do Mundo)', 'Diego Fernandes', 'Final', 'Tempo Comum', 'E', 104, '4/4', 'Pop Rock Jovem', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Ser+Diferente+(Sal+da+Terra+e+Luz+do+Mundo)+Diego+Fernandes+cifra', '{"status": "Canto Baseado em Mateus 5, 13-16 e Romanos 12, 2", "score": 95, "documentRef": "Pastoral da Juventude / Mateus 5, 13-16", "biblicalRef": "Mt 5, 13-16; Rm 12, 2", "justification": "Quatro acordes em Mi maior chamando os jovens à santidade no mundo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B  C#m  A
+
+[Primeira Parte]
+   E                                        B
+1. Não vos conformeis com a mentalidade deste mundo,
+   C#m                                      A
+Mas transformai-vos por um espírito novo e profundo;
+   E                                        B
+Para discernirdes qual é a vontade do Senhor:
+   C#m                      A               B
+O que é bom, agradável e perfeito no amor!
+
+[Refrão]
+   E                                        B
+Eu escolho ser diferente, ser sal da terra e luz!
+   C#m                                      A
+Mostrar em minha vida a alegria de Jesus!
+   E                                        B
+A santidade é a mais bela aventura de viver:
+   C#m                      A               B           E
+Para a glória de Deus Pai quero resplandecer!
+
+[Segunda Parte]
+   E                                        B
+2. Não se acende uma candeia para esconder no chão,
+   C#m                      A               B           E
+Mas no alto para iluminar cada irmão!'),
+  ('davidson-silva-cada-dia', 'Cada Dia', 'Davidson Silva / Comunidade Católica Shalom', 'Ação de Graças', 'Tempo Comum', 'G', 72, '4/4', 'Balada Shalom', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Cada+Dia+Davidson+Silva+cifra', '{"status": "Clássico de Fidelidade Cotidiana (Cifra Club Top Davidson Silva)", "score": 96, "documentRef": "Comunidade Shalom / Espiritualidade", "biblicalRef": "Lm 3, 22-23; Lc 9, 23", "justification": "Um dos maiores sucessos de Davidson Silva no Cifra Club, em quatro acordes (G, D, Em, C).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. A cada novo amanhecer que o Senhor me concede viver,
+   Em                                       C
+Renovo no altar da minha alma o desejo de Te pertencer;
+   G                                        D
+Não vivo de ontem nem temo o amanhã que virá,
+   Em                       C               D
+Pois a graça de hoje me basta para Te amar!
+
+[Refrão]
+   G                                        D
+Cada dia Te escolher de novo, meu Senhor!
+   Em                                       C
+Cada dia responder com vida ao Teu amor!
+   G                                        D
+No pequeno e no escondido ser todo Teu:
+   Em                       C               D           G
+Cada dia mais unido ao coração de Deus!
+
+[Segunda Parte]
+   G                                        D
+2. Quem é fiel no pouco, no muito será colocado,
+   Em                       C               D           G
+Caminhando passo a passo ao lado do Amado!'),
+  ('davidson-silva-sinal-do-meu-amor', 'Sinal do Meu Amor', 'Davidson Silva / Comunidade Católica Shalom', 'Comunhão', 'Tempo Comum', 'D', 70, '4/4', 'Balada Eucarística', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Sinal+do+Meu+Amor+Davidson+Silva+cifra', '{"status": "Canto Eucarístico e de Aliança Esponsal", "score": 97, "documentRef": "IGMR 86 / Comunhão e Adoração", "biblicalRef": "Jo 13, 1; Ct 8, 6", "justification": "Belo canto de comunhão e adoração gravado por Davidson Silva em Ré maior.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Antes da festa da Páscoa, sabendo que chegara a Sua hora,
+   Bm                                       G
+Tendo amado os Seus que estavam no mundo, amou-os até o fim!
+   D                                        A
+Tomou o pão em Suas mãos e entregou-Se por inteiro:
+   Bm                       G               A
+Mistério de aliança do Cordeiro verdadeiro!
+
+[Refrão]
+   D                                        A
+Este Pão é o sinal do Meu amor por ti!
+   Bm                                       G
+Este Cálice é a vida que derramei aqui!
+   D                                        A
+Permanece em Mim como Eu permaneço em ti:
+   Bm                       G               A           D
+Para sempre te amei e por ti Me ofereci!
+
+[Segunda Parte]
+   D                                        A
+2. Põe-Me como selo sobre o teu coração,
+   Bm                       G               A           D
+Pois mais forte que a morte é a Minha paixão!'),
+  ('davidson-silva-nada-nos-separara', 'Nada Nos Separará (Romanos 8, 35)', 'Davidson Silva / Comunidade Católica Shalom', 'Comunhão', 'Tempo Comum', 'C', 74, '4/4', 'Balada Bíblica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Nada+Nos+Separará+(Romanos+8,+35)+Davidson+Silva+cifra', '{"status": "Hino Bíblico de Romanos 8, 35-39", "score": 97, "documentRef": "IGMR 86 / Romanos 8, 35-39", "biblicalRef": "Rm 8, 31-39", "justification": "Quatro acordes em Dó maior proclamando o hino da vitória do amor de Cristo em Romanos 8.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Se Deus é por nós, quem será contra nós?
+   Am                                       F
+Aquele que não poupou o Seu próprio Filho,
+   C                                        G
+Mas O entregou por todos nós na Cruz do Calvário,
+   Am                       F               G
+Como não nos dará também com Ele todas as coisas?
+
+[Refrão]
+   C                                        G
+Quem nos separará do amor de Cristo?
+   Am                                       F
+A tribulação, a angústia ou a perseguição?
+   C                                        G
+Nem a morte, nem a vida, nem altura ou profundidade:
+   Am                       F               G           C
+Nada nos separará do amor de Deus em Cristo Jesus!
+
+[Segunda Parte]
+   C                                        G
+2. Em todas essas coisas somos mais que vencedores,
+   Am                       F               G           C
+Por Aquele que nos amou e curou nossas dores!'),
+  ('davidson-silva-tome', 'Tomé (Manda-me Vir até Ti / Meu Senhor e Meu Deus)', 'Davidson Silva / Comunidade Católica Shalom', 'Comunhão', 'Páscoa', 'A', 72, '4/4', 'Balada Pascal', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Tomé+(Manda-me+Vir+até+Ti+/+Meu+Senhor+e+Meu+Deus)+Davidson+Silva+cifra', '{"status": "Canto do 2º Domingo da Páscoa (Domingo da Divina Misericórdia - João 20)", "score": 98, "documentRef": "IGMR 86 / 2º Domingo da Páscoa (Jo 20, 24-29)", "biblicalRef": "Jo 20, 24-29", "justification": "Canto pascal inspirado na confissão de fé do apóstolo São Tomé diante das chagas gloriosas.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. De portas fechadas, com medo no coração,
+   F#m                                      D
+Entraste em nosso meio trazendo a paz e o perdão;
+   A                                        E
+"Põe aqui o teu dedo, vê as Minhas mãos chagadas,
+   F#m                      D               E
+Não sejas incrédulo, mas crê na vida ressuscitada!"
+
+[Refrão]
+   A                                        E
+Meu Senhor e meu Deus! Eu creio em Ti!
+   F#m                                      D
+Nas Tuas chagas gloriosas a vida descobri!
+   A                                        E
+Felizes os que creram sem precisar tocar:
+   F#m                      D               E           A
+Meu Senhor e meu Deus, para sempre vou Te adorar!
+
+[Segunda Parte]
+   A                                        E
+2. Das Tuas santas chagas jorra a Divina Misericórdia,
+   F#m                      D               E           A
+Que vence toda dúvida e nos conduz à glória!'),
+  ('davidson-silva-insuperavel-amor', 'Insuperável Amor', 'Davidson Silva / Comunidade Católica Shalom', 'Ação de Graças', 'Qualquer', 'E', 70, '4/4', 'Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Insuperável+Amor+Davidson+Silva+cifra', '{"status": "Canto de Adoração e Contemplação (Efésios 3, 18-19)", "score": 96, "documentRef": "Adoração Eucarística", "biblicalRef": "Ef 3, 18-19; Jo 15, 13", "justification": "Quatro acordes em Mi maior contemplando a largura, o comprimento, a altura e a profundidade do amor de Cristo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B  C#m  A
+
+[Primeira Parte]
+   E                                        B
+1. Quem poderá medir a altura e a profundidade,
+   C#m                                      A
+A largura e o comprimento da Tua caridade?
+   E                                        B
+Um amor que excede todo conhecimento humano,
+   C#m                      A               B
+Que nos amou primeiro em Seu divino plano!
+
+[Refrão]
+   E                                        B
+Insuperável Amor, Jesus Eucaristia!
+   C#m                                      A
+Beleza tão antiga e tão nova a cada dia!
+   E                                        B
+Tarde Te amei, Senhor, mas hoje sou todo Teu:
+   C#m                      A               B           E
+Insuperável Amor do coração de Deus!
+
+[Segunda Parte]
+   E                                        B
+2. Criaste-nos para Ti e inquieto está o nosso coração,
+   C#m                      A               B           E
+Enquanto não repousa na Tua comunhão!'),
+  ('davidson-silva-tu-es-minha-vida', 'Tu És Minha Vida (Outro Deus Não Há)', 'Davidson Silva / Comunidade Católica Shalom', 'Comunhão', 'Tempo Comum', 'Am', 72, '4/4', 'Balada Cristocêntrica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Tu+És+Minha+Vida+(Outro+Deus+Não+Há)+Davidson+Silva+cifra', '{"status": "Clássico Litúrgico-Comunitário Cristocêntrico (Symbolum 77)", "score": 97, "documentRef": "IGMR 86 / João 6, 68", "biblicalRef": "Jo 6, 68; Jo 14, 6", "justification": "Clássico católico (Symbolum 77) gravado por Davidson Silva em Lá menor.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Am  Dm  G  C  F  Dm  E7  Am
+
+[Primeira Parte]
+   Am                       Dm              G           C
+1. Tu és minha vida, outro Deus não há!
+   Am                       Dm              E7          Am
+Tu és minha estrada, a minha verdade!
+   Dm                       G               C           Am
+Em Tua Palavra eu caminharei,
+   F                        G               C           E7
+Enquanto eu viver e até quando Tu quiseres!
+   Am                       Dm              G           C
+Já não sentirei temor, pois estás aqui:
+   F                        Dm              E7          Am
+Tu estás no meio de nós!
+
+[Segunda Parte]
+   Am                       Dm              G           C
+2. Creio em Ti, Senhor, vindo de Maria,
+   Am                       Dm              E7          Am
+Filho eterno e santo, homem como nós!
+   Dm                       G               C           Am
+Tu morreste por amor, vivo estás em nós:
+   F                        G               C           E7
+Unidade Trina com o Espírito e o Pai!
+   Am                       Dm              G           C
+E um dia, eu bem sei, Tu retornarás,
+   F                        Dm              E7          Am
+E abrirás o Reino dos Céus!'),
+  ('dunga-consagrado', 'Consagrado (Consagrado para Amar)', 'Dunga / Canção Nova', 'Ofertório', 'Tempo Comum', 'G', 74, '4/4', 'Balada Vocacional', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Consagrado+(Consagrado+para+Amar)+Dunga+cifra', '{"status": "Canto de Consagração Batismal e Vocacional (Cifra Club Top Dunga)", "score": 95, "documentRef": "Encontros e Retiros / Jeremias 1, 5", "biblicalRef": "Jr 1, 5; Jo 17, 19", "justification": "Sucesso de Dunga (Canção Nova) em Sol maior sobre ser consagrado desde o ventre materno.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Antes mesmo que eu me formasse no ventre de minha mãe,
+   Em                                       C
+O Senhor já me conhecia e pelo nome me chamou;
+   G                                        D
+Ungiu a minha fronte com o óleo da alegria,
+   Em                       C               D
+E para ser testemunha da luz me separou!
+
+[Refrão]
+   G                                        D
+Sou consagrado ao Senhor, separado para amar!
+   Em                                       C
+Minha vida é oferta viva sobre o Teu altar!
+   G                                        D
+No mundo, mas sem pertencer ao mundo eu viverei:
+   Em                       C               D           G
+Consagrado na verdade ao serviço do meu Rei!
+
+[Segunda Parte]
+   G                                        D
+2. Toma os meus talentos, minha juventude e voz,
+   Em                       C               D           G
+Faz de mim instrumento da Tua paz entre nós!'),
+  ('dunga-restauracao', 'Restauração (Deus Quer Restaurar)', 'Dunga / Canção Nova', 'Ação de Graças', 'Qualquer', 'D', 72, '4/4', 'Balada de Cura', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Restauração+(Deus+Quer+Restaurar)+Dunga+cifra', '{"status": "Clássico da Canção Nova de Cura e Restauração (Cifra Club #1 Dunga)", "score": 96, "documentRef": "Acampamentos de Oração e Cura Interior", "biblicalRef": "Jr 18, 4; Jl 2, 25", "justification": "Um dos maiores hinos de Dunga na Canção Nova, em quatro acordes (D, A, Bm, G).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+   D                                        A
+1. Deus vê o coração, sonda a tua dor,
+   Bm                                       G
+Conhece cada marca que o passado deixou;
+   D                                        A
+Como o barro que se quebrou nas mãos do oleiro,
+   Bm                       G               A
+Ele te refaz agora por inteiro!
+
+[Refrão]
+   D                                        A
+É tempo de restauração na casa do Senhor!
+   Bm                                       G
+Deus reconstrói a tua história com Seu grande amor!
+   D                                        A
+Onde houve perda, Ele traz restituição:
+   Bm                       G               A           D
+Recebe agora a graça da restauração!
+
+[Segunda Parte]
+   D                                        A
+2. A glória da segunda casa será maior que a da primeira,
+   Bm                       G               A           D
+Diz o Senhor dos Exércitos à Sua Igreja inteira!'),
+  ('dunga-vida-nova', 'Vida Nova (2 Coríntios 5, 17)', 'Dunga / Canção Nova', 'Final', 'Páscoa', 'C', 104, '4/4', 'Pop Rock Cristão', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Vida+Nova+(2+Coríntios+5,+17)+Dunga+cifra', '{"status": "Canto Bíblico de 2 Coríntios 5, 17", "score": 95, "documentRef": "Encontros de Jovens e PHN", "biblicalRef": "2Cor 5, 17; Gl 2, 20", "justification": "Quatro acordes alegres em Dó maior proclamando a vida nova em Cristo.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F
+
+[Primeira Parte]
+   C                                        G
+1. Quem está em Cristo nova criatura é,
+   Am                                       F
+As coisas antigas já ficaram para trás;
+   C                                        G
+Eis que tudo se fez novo pela força da fé,
+   Am                       F               G
+Caminho livre na presença do Príncipe da Paz!
+
+[Refrão]
+   C                                        G
+Vida nova eu encontrei nos braços de Jesus!
+   Am                                       F
+Liberdade verdadeira que brotou da Cruz!
+   C                                        G
+Já não sou eu quem vivo, mas Cristo vive em mim:
+   Am                       F               G           C
+Canto ao mundo a alegria de um amor sem fim!
+
+[Segunda Parte]
+   C                                        G
+2. Deixei as velhas estradas, escolhi a santidade,
+   Am                       F               G           C
+Pois só a verdade de Cristo traz felicidade!'),
+  ('dunga-como-nao-falar-do-seu-amor', 'Como Não Falar do Seu Amor', 'Dunga / Canção Nova', 'Final', 'Tempo Comum', 'A', 92, '4/4', 'Pop Missionário', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Como+Não+Falar+do+Seu+Amor+Dunga+cifra', '{"status": "Canto Missionário baseado em Atos 4, 20", "score": 95, "documentRef": "Envio Missionário e Grupos de Oração", "biblicalRef": "At 4, 20; 1Cor 9, 16", "justification": "Quatro acordes em Lá maior expressando o ardor missionário dos apóstolos.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E  F#m  D
+
+[Primeira Parte]
+   A                                        E
+1. Não podemos calar o que vimos e ouvimos,
+   F#m                                      D
+As maravilhas que em nossa própria pele sentimos;
+   A                                        E
+Ai de mim se eu não anunciar o Evangelho da paz,
+   F#m                      D               E
+Que liberta os cativos e a esperança refaz!
+
+[Refrão]
+   A                                        E
+Como não falar do Seu amor?
+   F#m                                      D
+Como esconder a luz do meu Salvador?
+   A                                        E
+Em cada esquina e praça eu vou proclamar:
+   F#m                      D               E           A
+Só Jesus Cristo tem poder para salvar!
+
+[Segunda Parte]
+   A                                        E
+2. Que formosos são os pés dos que anunciam o bem,
+   F#m                      D               E           A
+Levando a Boa Nova a todo irmão também!'),
+  ('dunga-quero-e-preciso', 'Quero e Preciso', 'Dunga / Canção Nova', 'Ação de Graças', 'Qualquer', 'E', 72, '4/4', 'Balada de Oração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Quero+e+Preciso+Dunga+cifra', '{"status": "Canto de Oração e Intimidade com Deus", "score": 94, "documentRef": "Adoração e Grupo de Oração", "biblicalRef": "Sl 41, 2-3; Fl 3, 8", "justification": "Quatro acordes em Mi maior expressando o desejo ardente pela presença de Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B  C#m  A
+
+[Primeira Parte]
+   E                                        B
+1. Mais do que palavras bonitas diante do altar,
+   C#m                                      A
+É a minha própria vida que eu venho Te entregar;
+   E                                        B
+Tu conheces minhas lutas, minha sede de conversão,
+   C#m                      A               B
+Sacia com Tua graça este pobre coração!
+
+[Refrão]
+   E                                        B
+Eu quero e preciso de Ti, Senhor Jesus!
+   C#m                                      A
+Não sei dar um só passo longe da Tua luz!
+   E                                        B
+Fica comigo sempre, sustenta a minha fé:
+   C#m                      A               B           E
+Pois o Teu amor me mantém de pé!
+
+[Segunda Parte]
+   E                                        B
+2. Tudo considero perda diante da alegria de Te conhecer,
+   C#m                      A               B           E
+Para mim, ó Cristo, Tu és o próprio viver!'),
+  ('dunga-phn-por-hoje-nao', 'PHN (Por Hoje Não Vou Mais Pecar)', 'Dunga / Canção Nova', 'Final', 'Tempo Comum', 'G', 118, '4/4', 'Rock Jovem Católico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=PHN+(Por+Hoje+Não+Vou+Mais+Pecar)+Dunga+cifra', '{"status": "Hino Oficial do Movimento Jovem PHN (Canção Nova)", "score": 95, "documentRef": "Acampamento PHN / Pastoral da Juventude", "biblicalRef": "Rm 6, 12-14; 1Jo 2, 14", "justification": "Hino histórico do movimento PHN (Por Hoje Não) criado por Dunga na Canção Nova, em Sol maior.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C
+
+[Primeira Parte]
+   G                                        D
+1. Um dia de cada vez eu decido caminhar na luz,
+   Em                                       C
+Dizendo não ao pecado e dizendo sim a Jesus!
+   G                                        D
+Jovens fortes que venceram o maligno pela fé,
+   Em                       C               D
+Pela Palavra de Deus permanecemos de pé!
+
+[Refrão]
+   G                                        D
+Por hoje não! Por hoje eu não vou mais pecar!
+   Em                                       C
+Escolho a santidade, escolho a Deus amar!
+   G                                        D
+PHN no peito, coragem na missão:
+   Em                       C               D           G
+Somos a juventude do coração de Cristo, o Rei da nação!
+
+[Segunda Parte]
+   G                                        D
+2. Se cair, levanto rápido no abraço da Confissão,
+   Em                       C               D           G
+Pois a misericórdia de Deus é a nossa força e canção!'),
+  ('pe-reginaldo-manzotti-pelo-nome', 'Pelo Nome (As Muralhas Vão Cair)', 'Padre Reginaldo Manzotti', 'Ação de Graças', 'Qualquer', 'G', 118, '4/4', 'Pop Rock / Marcha de Louvor', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Pelo+Nome+(As+Muralhas+Vão+Cair)+Padre+Reginaldo+Manzotti+cifra', '{"status": "Cântico de Louvor, Clamor e Envio em Encontros e Missas de Cura", "score": 88, "documentRef": "Estudo 79 CNBB (Cânticos de Encontros e Celebrações Temáticas)", "biblicalRef": "Js 6, 1-20; Is 43, 1", "justification": "Hino de fé inspirado na queda das muralhas de Jericó e no chamado pessoal de Deus pelo nome (Is 43,1).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C  G  D
+
+[Primeira Parte]
+G                             D
+Deus te conhece e te chama pelo nome
+Em                          C
+Sabe as lutas que tu levas no coração
+G                             D
+Mesmo quando a caminhada te consome
+Em             C            D
+Ele estende sobre ti a Sua mão
+
+[Refrão]
+             G                         D
+As muralhas vão cair, as muralhas vão cair
+         Em                       C
+Pelo poder do Nome Santo de Jesus!
+             G                         D
+As muralhas vão cair, o Senhor vai agir
+         Em          C        D       G
+E a vitória brilhará na tua vida em Sua luz!
+
+[Segunda Parte]
+G                                 D
+Dê uma volta ao redor dessa muralha
+Em                              C
+Ergue a voz em oração e em louvor
+G                                  D
+Pois o Senhor é quem vence esta batalha
+Em               C            D
+Não há cadeias que resistam ao Seu amor
+
+[Refrão]
+             G                         D
+As muralhas vão cair, as muralhas vão cair
+         Em                       C
+Pelo poder do Nome Santo de Jesus!
+             G                         D
+As muralhas vão cair, o Senhor vai agir
+         Em          C        D       G
+E a vitória brilhará na tua vida em Sua luz!
+
+[Final]
+     C               D            G   Em
+Pelo nome o Senhor hoje te chamou!
+     C               D            G
+Toda muralha pelo sangue tombou!'),
+  ('pe-reginaldo-manzotti-a-tempestade-vai-passar', 'A Tempestade Vai Passar', 'Padre Reginaldo Manzotti', 'Ação de Graças', 'Qualquer', 'D', 74, '4/4', 'Balada Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=A+Tempestade+Vai+Passar+Padre+Reginaldo+Manzotti+cifra', '{"status": "Ação de Graças, Consolação e Esperança Cristã", "score": 90, "documentRef": "IGMR nº 88 (Ação de Graças)", "biblicalRef": "Mc 4, 35-41; Sl 46", "justification": "Canção baseada na tempestade acalmada no Evangelho de São Marcos, ideal para pós-comunhão e momentos de oração.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  A7  D
+
+[Primeira Parte]
+D                     A/C#
+Por que tens medo se Eu estou no barco?
+Bm                    G
+Por que duvidas do poder da Minha mão?
+D                     A/C#
+Se o vento sopra forte e o mar é bravo
+Em                    G           A7
+Confia em Mim e aquieta o teu coração
+
+[Refrão]
+D                    A/C#
+A tempestade vai passar, tudo vai se acalmar
+Bm                   G
+O sol de novo vai brilhar sobre o teu viver
+D                    A/C#
+Segura firme em Minha mão, escuta a Minha voz
+Em         A7               D
+Eu sou teu Deus e cuido de você!
+
+[Segunda Parte]
+D                      A/C#
+Nenhuma noite dura para sempre
+Bm                     G
+A madrugada traz a aurora do Senhor
+D                      A/C#
+Entrega o leme da tua vida inteiramente
+Em                     G            A7
+Descansa em paz no colo do teu Salvador
+
+[Refrão]
+D                    A/C#
+A tempestade vai passar, tudo vai se acalmar
+Bm                   G
+O sol de novo vai brilhar sobre o teu viver
+D                    A/C#
+Segura firme em Minha mão, escuta a Minha voz
+Em         A7               D
+Eu sou teu Deus e cuido de você!
+
+[Final]
+G          A7               Bm   G
+Eu sou teu Deus e cuido de você!
+Em         A7               D
+A tempestade já começa a passar!'),
+  ('pe-reginaldo-manzotti-o-amigo-mais-certo', 'O Amigo Mais Certo', 'Padre Reginaldo Manzotti', 'Ação de Graças', 'Qualquer', 'C', 72, '4/4', 'Balada / Dedilhado', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=O+Amigo+Mais+Certo+Padre+Reginaldo+Manzotti+cifra', '{"status": "Meditação Pós-Comunhão e Amizade com Cristo", "score": 90, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Jo 15, 13-15; Eclo 6, 14", "justification": "Cântico que exalta a amizade fiel de Cristo nos momentos de provação e comunhão.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am  F  G7  C
+
+[Primeira Parte]
+C                      G/B
+Nas horas incertas da minha caminhada
+Am                     Em
+Quando a solidão tenta ferir meu coração
+F                      C/E
+Olho para o alto e vejo a Tua face amada
+Dm                     G7
+Estendendo para mim a Tua santa mão
+
+[Refrão]
+   C                        G/B
+Tu és o amigo mais certo nas horas incertas
+Am                          Em
+A luz que ilumina as minhas trevas mais desertas
+F              G7         C        Am
+Jesus, meu Senhor, meu abrigo fiel
+Dm             G7         C
+Contigo na terra já vivo o céu!
+
+[Segunda Parte]
+C                       G/B
+Não me chamaste servo, mas sim Teu amigo
+Am                      Em
+Deste a Tua vida sobre a cruz pra me salvar
+F                       C/E
+Por isso nada temo se caminhas cá comigo
+Dm                      G7
+Contigo para sempre eu quero caminhar
+
+[Refrão]
+   C                        G/B
+Tu és o amigo mais certo nas horas incertas
+Am                          Em
+A luz que ilumina as minhas trevas mais desertas
+F              G7         C        Am
+Jesus, meu Senhor, meu abrigo fiel
+Dm             G7         C
+Contigo na terra já vivo o céu!
+
+[Final]
+F              G7         C   Am
+Jesus, meu Senhor, meu amigo fiel
+Dm             G7         C
+Contigo na terra já vivo o céu!'),
+  ('pe-reginaldo-manzotti-o-grito-de-misericordia', 'O Grito de Misericórdia', 'Padre Reginaldo Manzotti', 'Ato Penitencial', 'Quaresma', 'Am', 70, '4/4', 'Balada Solene', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=O+Grito+de+Misericórdia+Padre+Reginaldo+Manzotti+cifra', '{"status": "Súplica de Misericórdia, Adoração e Celebrações Penitenciais", "score": 92, "documentRef": "IGMR nº 51; Festa da Divina Misericórdia", "biblicalRef": "Sl 50 (51); Lc 18, 13", "justification": "Clamor profundo à Divina Misericórdia que brota do lado aberto de Cristo na Cruz.", "repertoireType": "liturgica", "specialDay": "Quaresma e CF", "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Am  Dm  G  C  E7  Am
+
+[Primeira Parte]
+Am                           Dm
+Do fundo do abismo da minha fraqueza
+G                            C       E7
+Elevo a Ti, Senhor, o meu clamor sincero
+Am                           Dm
+Lava minha alma, tira toda a tristeza
+F                            E7
+Pois só no Teu perdão eu vivo e espero
+
+[Refrão]
+       Am                     Dm
+Misericórdia, Senhor, misericórdia!
+        G                      C    E7
+Ouve o grito que brota do meu coração!
+       Am                     Dm
+Pelo Sangue e pela Água do Teu lado aberto
+    E7                   Am
+Derrama sobre nós a salvação!
+
+[Segunda Parte]
+Am                           Dm
+Como o filho pródigo retorno à Tua casa
+G                            C       E7
+Cansado do pecado e sedento de amor
+Am                           Dm
+O Teu abraço santo me aquece e me abrasa
+F                            E7
+Restaura a minha vida, ó meu Redentor
+
+[Refrão]
+       Am                     Dm
+Misericórdia, Senhor, misericórdia!
+        G                      C    E7
+Ouve o grito que brota do meu coração!
+       Am                     Dm
+Pelo Sangue e pela Água do Teu lado aberto
+    E7                   Am
+Derrama sobre nós a salvação!
+
+[Final]
+       Dm       E7        Am   F
+Jesus, eu confio em Vós!
+       Dm       E7        Am
+Jesus, eu confio em Vós!'),
+  ('pe-reginaldo-manzotti-oracao-pela-paz', 'Oração pela Paz', 'Padre Reginaldo Manzotti', 'Comunhão', 'Tempo Comum', 'E', 78, '4/4', 'Balada / Canção da Paz', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Oração+pela+Paz+Padre+Reginaldo+Manzotti+cifra', '{"status": "Comunhão, Envio ou Oração pela Paz", "score": 92, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Jo 14, 27; Mt 5, 9", "justification": "Prece inspirada na espiritualidade franciscana e no dom da paz de Cristo ressuscitado.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B7  C#m  A  B7  E
+
+[Primeira Parte]
+E                        B/D#
+Senhor, faz de mim instrumento de Tua paz
+C#m                      G#m
+Onde houver discórdia, que eu leve a união
+A                        E/G#
+Onde houver ofensa, o perdão que refaz
+F#m                      B7
+Onde houver a treva, a Tua clara visão
+
+[Refrão]
+E                     B7
+Dai-nos a paz, Senhor, a Tua santa paz!
+C#m                   A
+Paz que o mundo inteiro não pode nos dar
+E                     B7            C#m
+Vem curar as famílias, vem unir as nações
+A            B7           E
+E reinar para sempre nos corações!
+
+[Segunda Parte]
+E                         B/D#
+Que eu não busque tanto ser consolado
+C#m                       G#m
+Mas saiba consolar a quem sofre na dor
+A                         E/G#
+Pois é dando a vida e perdoando o pecado
+F#m                       B7
+Que nascemos de novo para o Teu amor
+
+[Refrão]
+E                     B7
+Dai-nos a paz, Senhor, a Tua santa paz!
+C#m                   A
+Paz que o mundo inteiro não pode nos dar
+E                     B7            C#m
+Vem curar as famílias, vem unir as nações
+A            B7           E
+E reinar para sempre nos corações!
+
+[Final]
+A            B7           C#m  A
+E reinar para sempre nos corações!
+F#m          B7           E
+Senhor, dai-nos a Tua paz!'),
+  ('pe-antonio-maria-hino-do-terco-dos-homens', 'Hino do Terço dos Homens', 'Padre Antônio Maria', 'Ação de Graças', 'Festas Marianas', 'G', 104, '4/4', 'Marcha / Guarânia', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Hino+do+Terço+dos+Homens+Padre+Antônio+Maria+cifra', '{"status": "Canto Mariano, Encontros do Terço dos Homens e Final da Missa", "score": 94, "documentRef": "Diretório sobre Piedade Popular e Liturgia nº 197", "biblicalRef": "Lc 1, 28.42; At 1, 14", "justification": "Hino oficial do movimento do Terço dos Homens no Brasil, celebrando a oração em família com a Mãe Aparecida.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D7  C  G  D7  G
+
+[Primeira Parte]
+G                             D7
+Homens de fé, de joelhos no chão
+C                             G
+De terço nos dedos e amor no coração
+G                             D7
+Viemos rezar com a Mãe do Senhor
+C                  D7         G
+Pedindo às famílias a paz e o amor
+
+[Refrão]
+   G                     D7
+Terço dos Homens, escola de fé!
+   C                     G
+Com Nossa Senhora ficamos de pé!
+   C                     G          Em
+Rezando em família, servindo ao Senhor
+   Am        D7          G
+Levando ao mundo a paz e o amor!
+
+[Segunda Parte]
+G                             D7
+Em cada mistério da vida de Cristo
+C                             G
+Maria nos mostra o caminho bendito
+G                             D7
+Homens que rezam constroem a paz
+C                  D7         G
+E levam a bênção que o Evangelho traz
+
+[Refrão]
+   G                     D7
+Terço dos Homens, escola de fé!
+   C                     G
+Com Nossa Senhora ficamos de pé!
+   C                     G          Em
+Rezando em família, servindo ao Senhor
+   Am        D7          G
+Levando ao mundo a paz e o amor!
+
+[Final]
+   C         D7          G   Em
+Ave Maria, Rainha da Paz!
+   Am        D7          G
+Abençoa os homens e nossos casais!'),
+  ('pe-antonio-maria-e-bom-ter-familia', 'É Bom Ter Família', 'Padre Antônio Maria', 'Ação de Graças', 'Qualquer', 'D', 82, '4/4', 'Balada / Canção Familiar', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=É+Bom+Ter+Família+Padre+Antônio+Maria+cifra', '{"status": "Ação de Graças, Semana da Família e Bênção Matrimonial", "score": 93, "documentRef": "Estudo 79 CNBB / Pastoral Familiar", "biblicalRef": "Sl 127 (128); Cl 3, 12-17", "justification": "Clássico da Pastoral Familiar imortalizado pelo Padre Antônio Maria sobre a graça da família cristã.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  Bm  Em  A7  D  A7
+
+[Primeira Parte]
+D                       Bm
+É no campo da vida que se esconde um tesouro
+Em                      A7
+Vale mais que a prata, vale mais que o ouro
+D                       Bm
+É presente de Deus, é o céu já aqui
+Em          A7          D      D7
+O amor mora ali e se chama família!
+
+[Refrão]
+G                       D
+Como é bom ter a minha família, como é bom!
+Em                      A7                 D   D7
+Vale a pena vender tudo mais para poder comprar
+G                       D                  Bm
+Esse campo que esconde um tesouro, que é puro dom
+Em          A7          D
+É meu ouro, meu céu, meu lugar!
+
+[Segunda Parte]
+D                       Bm
+Até mesmo o céu desejou ser família
+Em                      A7
+Para que a família desejasse ser céu
+D                       Bm
+Nela se faz a paz no ouvir, no falar
+Em          A7          D      D7
+E na arte de amar o amargo vira mel!
+
+[Refrão]
+G                       D
+Como é bom ter a minha família, como é bom!
+Em                      A7                 D   D7
+Vale a pena vender tudo mais para poder comprar
+G                       D                  Bm
+Esse campo que esconde um tesouro, que é puro dom
+Em          A7          D
+É meu ouro, meu céu, meu lugar!
+
+[Final]
+Em          A7          Bm     G
+Na família a gente aprende a amar
+Em          A7          D
+Abençoa, Senhor, nosso lar!'),
+  ('pe-antonio-maria-mae-peregrina', 'Mãe Peregrina', 'Padre Antônio Maria', 'Ação de Graças', 'Festas Marianas', 'C', 76, '3/4', 'Valsa Mariana', '↓  ↑ ↓  ↑ ↓', true, true, 5, 'https://www.youtube.com/results?search_query=Mãe+Peregrina+Padre+Antônio+Maria+cifra', '{"status": "Canto Mariano, Visita da Mãe Peregrina e Encerramento", "score": 94, "documentRef": "Diretório sobre Piedade Popular e Liturgia nº 186", "biblicalRef": "Lc 1, 39-45", "justification": "Cântico dedicado à Mãe e Rainha Três Vezes Admirável de Schoenstatt, que visita os lares como Maria visitou Isabel.", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G7  C  F  G7  C
+
+[Primeira Parte]
+C                          G7
+Mãe Admirável, ó Mãe Peregrina
+Dm            G7           C
+A Tua visita aquece e ilumina
+C7                         F
+Pois trazes contigo Teu Filho Jesus
+    C         Am     Dm   G7   C
+Que é vida, caminho, verdade e luz!
+
+[Refrão]
+   G7                        C
+Por brisa suave entraste em meu lar
+   G7                        C     C7
+Vem tudo, Senhora, aqui transformar
+   F                         C      Am
+Abençoa a família, ensina a rezar
+   Dm        G7              C
+Mãe Peregrina, vem conosco ficar!
+
+[Segunda Parte]
+C                          G7
+Saindo apressada pelas montanhas vais
+Dm            G7           C
+Levando às famílias a graça e a paz
+C7                         F
+Transforma as casas em santuários de amor
+    C         Am     Dm   G7   C
+Fiéis servidores de Cristo Senhor!
+
+[Refrão]
+   G7                        C
+Por brisa suave entraste em meu lar
+   G7                        C     C7
+Vem tudo, Senhora, aqui transformar
+   F                         C      Am
+Abençoa a família, ensina a rezar
+   Dm        G7              C
+Mãe Peregrina, vem conosco ficar!
+
+[Final]
+   F         G7              C   Am
+Mãe Três Vezes Admirável de amor
+   Dm        G7              C
+Leva nossa família a Jesus, o Senhor!'),
+  ('pe-antonio-maria-pegadas-na-areia', 'Pegadas na Areia', 'Padre Antônio Maria', 'Ação de Graças', 'Qualquer', 'A', 72, '4/4', 'Balada / Dedilhado', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=Pegadas+na+Areia+Padre+Antônio+Maria+cifra', '{"status": "Meditação Pós-Comunhão e Confiança na Providência Divina", "score": 89, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Is 46, 4; Dt 1, 31", "justification": "Cântico devocional clássico sobre a presença de Cristo que nos carrega nos braços nas horas de maior dor.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  E/G#  F#m  D  E7  A
+
+[Primeira Parte]
+A                         E/G#
+Sonhei que caminhava pela praia com o Senhor
+F#m                       C#m
+E no céu passavam cenas da minha vida inteira
+D                         A/C#
+Percebi que na areia do caminho em que passei
+Bm                        E7
+Havia dois pares de pegadas na beira
+
+[Refrão]
+   A                            E/G#
+Meu filho, Eu te amo e jamais te deixei só
+   F#m                          C#m
+Nas horas de angústia, de tristeza e de dor
+   D                            A/C#       F#m
+Quando viste na areia um só par de pegadas
+   Bm             E7            A
+Era Eu te carregando nos braços de amor!
+
+[Segunda Parte]
+A                         E/G#
+Perguntei então a Cristo: "Meu Senhor, por que razão
+F#m                       C#m
+Nos momentos mais difíceis só vi um rastro no chão?"
+D                         A/C#
+E Jesus olhou pra mim com ternura sem igual
+Bm                        E7
+Respondendo com doçura e amor celestial:
+
+[Refrão]
+   A                            E/G#
+Meu filho, Eu te amo e jamais te deixei só
+   F#m                          C#m
+Nas horas de angústia, de tristeza e de dor
+   D                            A/C#       F#m
+Quando viste na areia um só par de pegadas
+   Bm             E7            A
+Era Eu te carregando nos braços de amor!
+
+[Final]
+   D              E7            F#m  D
+Quando viste na areia um só par de pegadas
+   Bm             E7            A
+Era Eu te carregando nos braços de amor!'),
+  ('pe-antonio-maria-cura-senhor-onde-doi', 'Cura, Senhor, Onde Dói', 'Padre Antônio Maria', 'Ação de Graças', 'Qualquer', 'E', 68, '4/4', 'Balada de Oração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Cura,+Senhor,+Onde+Dói+Padre+Antônio+Maria+cifra', '{"status": "Oração Pós-Comunhão, Adoração ao Santíssimo e Missas pelos Enfermos", "score": 92, "documentRef": "Ritual da Unção dos Enfermos / Adoração Eucarística", "biblicalRef": "Is 53, 4-5; Lc 4, 40", "justification": "Cântico profundamente orante para momentos de súplica, cura interior e ação de graças após a Comunhão.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  B/D#  C#m  A  B7  E
+
+[Primeira Parte]
+E                        B/D#
+Vamos, Jesus, passear na minha vida
+C#m                      G#m
+Quero voltar aos lugares em que fiquei só
+A                        E/G#
+Quero voltar lá contigo, vendo que estavas comigo
+F#m                      B7
+Quero sentir Teu amor a meembalar
+
+[Refrão]
+E                     B/D#
+Cura, Senhor, onde dói!
+C#m                   G#m
+Cura, Senhor, bem aqui!
+A                     E/G#         C#m
+Cura, Senhor, onde eu não posso ir
+      F#m        B7            E
+Quando a lembrança me faz refletir!
+
+[Segunda Parte]
+E                        B/D#
+Quando o silêncio da noite aperta o peito
+C#m                      G#m
+E as feridas antigas começam a sangrar
+A                        E/G#
+Toca com Tuas chagas santas meu coração imperfeito
+F#m                      B7
+Só Tua graça divina me pode curar
+
+[Refrão]
+E                     B/D#
+Cura, Senhor, onde dói!
+C#m                   G#m
+Cura, Senhor, bem aqui!
+A                     E/G#         C#m
+Cura, Senhor, onde eu não posso ir
+      F#m        B7            E
+Quando a lembrança me faz refletir!
+
+[Final]
+A         B7          C#m  A
+Cura, Senhor, onde dói!
+F#m       B7          E
+Jesus, eu confio em Ti!'),
+  ('pe-joaozinho-conheco-um-coracao', 'Conheço um Coração', 'Padre Joãozinho, scj', 'Comunhão', 'Tempo Comum', 'C', 76, '4/4', 'Balada Litúrgica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Conheço+um+Coração+Padre+Joãozinho,+scj+cifra', '{"status": "Comunhão e Solenidade do Sagrado Coração de Jesus", "score": 98, "documentRef": "Missal Romano (Solenidade do Sagrado Coração de Jesus); Hinário CNBB", "biblicalRef": "Mt 11, 28-30; Jo 19, 34", "justification": "Um dos cânticos de Comunhão mais cantados e amados da Igreja no Brasil, de profunda teologia bíblica e eucarística.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] C  Em  F  G7  C  G7
+
+[Primeira Parte]
+   C                  Em
+1. Conheço um coração tão manso, humilde e sereno
+   F                  G7
+Que louva o Pai por revelar Seu nome aos pequenos
+   F                  G7         C          Am
+Que tem o dom de amar, que sabe perdoar
+   Dm                 F          G7
+E deu a vida para nos salvar!
+
+[Refrão]
+   F      G7          C          Am
+Jesus, manda Teu Espírito
+   Dm         G7               C     C7
+Para transformar meu coração!
+   F      G7          C          Am
+Jesus, manda Teu Espírito
+   Dm         G7               C
+Para transformar meu coração!
+
+[Segunda Parte]
+   C                  Em
+2. Às vezes no meu peito bate um coração de pedra
+   F                  G7
+Magoado, frio, sem vida, aqui dentro ele me aperta
+   F                  G7         C            Am
+Não quer saber de amar, nem sabe perdoar
+   Dm                 F          G7
+Quer tudo e não sabe partilhar!
+
+   C                  Em
+3. Lava, purifica e restaura-me de novo
+   F                  G7
+Serás o nosso Deus e nós seremos o Teu povo
+   F                  G7         C           Am
+Derrama sobre nós a água do amor
+   Dm                 F          G7
+O Espírito de Deus, nosso Senhor!
+
+[Refrão]
+   F      G7          C          Am
+Jesus, manda Teu Espírito
+   Dm         G7               C     C7
+Para transformar meu coração!
+   F      G7          C          Am
+Jesus, manda Teu Espírito
+   Dm         G7               C
+Para transformar meu coração!
+
+[Final]
+   Dm         G7               C   Am
+Para transformar meu coração!
+   Dm         G7               C
+Manda Teu Espírito, Senhor!'),
+  ('pe-joaozinho-mestre-bom-e-estarmos-aqui', 'Mestre (Bom É Estarmos Aqui)', 'Padre Joãozinho, scj', 'Comunhão', 'Quaresma', 'D', 74, '4/4', 'Balada / Dedilhado', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=Mestre+(Bom+É+Estarmos+Aqui)+Padre+Joãozinho,+scj+cifra', '{"status": "Comunhão (2º Domingo da Quaresma e Festa da Transfiguração do Senhor)", "score": 97, "documentRef": "Lecionário Dominical (2º Dom. da Quaresma / 6 de Agosto)", "biblicalRef": "Mt 17, 1-9; Mc 9, 2-10; Lc 9, 28-36", "justification": "Cântico bíblico-litúrgico exemplar sobre a Transfiguração no Monte Tabor e a missão de descer do monte para servir.", "repertoireType": "liturgica", "specialDay": "Quaresma e CF", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  A/C#  Bm  G  A7  D
+
+[Primeira Parte]
+D                       A/C#
+Mestre, bom é estarmos aqui
+Bm                      F#m
+Reunidos bem perto de Ti
+G                       D/F#
+No silêncio e na paz deste monte
+Em                      A7
+Contemplando a Tua glória sem fim!
+
+[Refrão]
+   D              A/C#           Bm      F#m
+Mas precisamos descer da montanha
+   G              D/F#           Em      A7
+Voltar para a vida, servir aos irmãos
+   D              A/C#           Bm      G
+Levando no rosto a luz do Tabor
+   D              A7             D
+E no coração a Tua missão!
+
+[Segunda Parte]
+D                       A/C#
+Mestre, ouvimos a voz de Deus Pai:
+Bm                      F#m
+"Este é o Meu Filho amado, escutai!"
+G                       D/F#
+Tua Palavra transforma o viver
+Em                      A7
+Dá-nos coragem pra nunca temer!
+
+[Refrão]
+   D              A/C#           Bm      F#m
+Mas precisamos descer da montanha
+   G              D/F#           Em      A7
+Voltar para a vida, servir aos irmãos
+   D              A/C#           Bm      G
+Levando no rosto a luz do Tabor
+   D              A7             D
+E no coração a Tua missão!
+
+[Final]
+   G              A7             Bm   G
+Levando no rosto a luz do Tabor
+   D              A7             D
+E no coração a Tua missão!'),
+  ('pe-joaozinho-gloria-a-deus-nos-altos-ceus', 'Glória a Deus nos Altos Céus', 'Padre Joãozinho, scj', 'Glória', 'Tempo Comum', 'G', 112, '4/4', 'Marcha Festiva', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Glória+a+Deus+nos+Altos+Céus+Padre+Joãozinho,+scj+cifra', '{"status": "Hino de Louvor (Glória) Fiel ao Texto Litúrgico", "score": 98, "documentRef": "IGMR nº 53; Missal Romano", "biblicalRef": "Lc 2, 14; Ap 15, 3-4", "justification": "Versão musical do Hino de Louvor (Glória) fiel à estrutura trinitária do Missal Romano.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Glória • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  C  D7  G
+
+[Refrão]
+G                       C
+Glória a Deus nos altos céus!
+D7                      G
+Paz na terra aos Seus amados!
+Em                      Am
+A Vós louvam, Rei celeste,
+D7                      G
+Os que foram libertados!
+
+[Primeira Parte]
+G                             C
+1. Deus e Pai, nós Vos louvamos,
+D7                            G
+Adoramos, bendizemos,
+Em                            Am
+Damos glória ao Vosso nome,
+D7                            G
+Vossos dons agradecemos!
+
+[Refrão]
+G                       C
+Glória a Deus nos altos céus!
+D7                      G
+Paz na terra aos Seus amados!
+Em                      Am
+A Vós louvam, Rei celeste,
+D7                      G
+Os que foram libertados!
+
+[Segunda Parte]
+G                             C
+2. Senhor nosso, Jesus Cristo,
+D7                            G
+Unigênito do Pai,
+Em                            Am
+Vós, de Deus Cordeiro Santo,
+D7                            G
+Nossas culpas perdoai!
+
+G                             C
+3. Vós, que estais junto do Pai,
+D7                            G
+Como nosso intercessor,
+Em                            Am
+Acolhei nossos pedidos,
+D7                            G
+Atendei nosso clamor!
+
+G                             C
+4. Vós somente sois o Santo,
+D7                            G
+O Altíssimo, o Senhor,
+Em                            Am
+Com o Espírito Divino,
+D7                            G
+De Deus Pai no esplendor!
+
+[Final]
+C         D7            G   Em
+Com o Espírito Divino,
+Am        D7            G
+De Deus Pai no esplendor! Amém!'),
+  ('pe-joaozinho-salve-rainha', 'Salve Rainha, Mãe de Deus', 'Padre Joãozinho, scj', 'Ação de Graças', 'Festas Marianas', 'F', 84, '4/4', 'Balada Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Salve+Rainha,+Mãe+de+Deus+Padre+Joãozinho,+scj+cifra', '{"status": "Antífona Mariana Final da Missa e Celebrações Marianas", "score": 97, "documentRef": "Liturgia das Horas (Completas); Missal Romano", "biblicalRef": "Lc 1, 28-48", "justification": "Versão melódica acessível e profundamente litúrgica da tradicional antífona Salve Rainha.", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] F  Bb  C7  F
+
+[Refrão]
+F             Bb        C7        F
+Salve Rainha, Mãe de Deus,
+Dm            Gm        C7        F
+És Senhora, nossa Mãe,
+Bb            C7        Am        Dm
+Nossa doçura, nossa luz,
+Gm            C7        F
+Doce Virgem Maria!
+
+[Primeira Parte]
+F                           Bb
+1. Nós a Ti clamamos, filhos exilados,
+C7                          F
+Nós a Ti voltamos nosso olhar confiante,
+Dm                          Gm
+Volta para nós, ó Mãe, Teu semblante de amor,
+C7                          F
+Depois deste exílio mostra-nos Jesus!
+
+[Refrão]
+F             Bb        C7        F
+Salve Rainha, Mãe de Deus,
+Dm            Gm        C7        F
+És Senhora, nossa Mãe,
+Bb            C7        Am        Dm
+Nossa doçura, nossa luz,
+Gm            C7        F
+Doce Virgem Maria!
+
+[Segunda Parte]
+F                           Bb
+2. Ó clemente, ó piedosa,
+C7                          F
+Ó sempre doce Virgem Maria,
+Dm                          Gm
+Roga pelo povo santo de Deus,
+C7                          F
+Para que sejamos dignos das promessas do Senhor!
+
+[Final]
+Bb            C7        Am        Dm
+Nossa doçura, nossa luz,
+Gm            C7        F
+Doce Virgem Maria!'),
+  ('pe-joaozinho-vento-do-espirito', 'Vento do Espírito', 'Padre Joãozinho, scj', 'Final', 'Páscoa', 'Am', 110, '4/4', 'Pop Litúrgico / Baião Suave', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Vento+do+Espírito+Padre+Joãozinho,+scj+cifra', '{"status": "Solenidade de Pentecostes, Crisma e Envio Missionário", "score": 95, "documentRef": "Missal Romano (Domingo de Pentecostes)", "biblicalRef": "At 2, 1-11; Jo 20, 22", "justification": "Cântico vibrante de invocação ao Espírito Santo para Pentecostes e celebrações do Sacramento da Confirmação.", "repertoireType": "liturgica", "specialDay": "Pentecostes", "normExplanation": "Aprovada para a Santa Missa (Final • Pentecostes): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Am  Dm  G  C  E7  Am
+
+[Refrão]
+Am                        Dm
+Sopra, Vento do Espírito!
+G                         C       E7
+Vem renovar a face da terra!
+Am                        Dm
+Acende em nós o fogo do amor
+E7                        Am
+Que toda tristeza e medo destrói e encerra!
+
+[Primeira Parte]
+Am                        Dm
+1. Como no dia de Pentecostes
+G                         C       E7
+Reunidos com Maria em oração
+Am                        Dm
+Desce sobre a Tua Igreja santa
+E7                        Am
+E faz de nós um só coração!
+
+[Refrão]
+Am                        Dm
+Sopra, Vento do Espírito!
+G                         C       E7
+Vem renovar a face da terra!
+Am                        Dm
+Acende em nós o fogo do amor
+E7                        Am
+Que toda tristeza e medo destrói e encerra!
+
+[Segunda Parte]
+Am                        Dm
+2. Dá-nos sabedoria e fortaleza
+G                         C       E7
+Ciência, conselho e temor de Deus
+Am                        Dm
+Piedade e entendimento verdadeiro
+E7                        Am
+Para anunciar a paz aos filhos Teus!
+
+[Final]
+Dm         E7             Am   F
+Vem, Espírito Santo de Deus!
+Dm         E7             Am
+Vem renovar o coração dos filhos Teus!'),
+  ('ir-miria-kolling-os-olhos-jamais-contemplaram', 'Os Olhos Jamais Contemplaram', 'Irmã Miria T. Kolling', 'Comunhão', 'Páscoa', 'D', 78, '4/4', 'Balada Litúrgica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Os+Olhos+Jamais+Contemplaram+Irmã+Miria+T.+Kolling+cifra', '{"status": "Comunhão (Tempo Comum, Páscoa e Exéquias/Finados)", "score": 98, "documentRef": "Hinário Litúrgico da CNBB; IGMR nº 86", "biblicalRef": "1Cor 2, 9; Is 64, 3", "justification": "Obra-prima litúrgica da Irmã Miria Kolling baseada em 1Cor 2,9, exaltando as maravilhas que Deus preparou para os que O amam.", "repertoireType": "liturgica", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Páscoa e Vigília Pascal): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  G  A7  D  Bm  Em  A7  D
+
+[Refrão]
+   D                     G
+Os olhos jamais contemplaram,
+   A7                    D        Bm
+Ninguém sabe explicar o que Deus preparou
+   Em                    A7
+Aquele que em vida O amar!
+   D                     G
+Os olhos jamais contemplaram,
+   A7                    D        Bm
+Ninguém sabe explicar o que Deus preparou
+   Em        A7          D
+Aquele que em vida O amar!
+
+[Primeira Parte]
+   Bm                    F#m
+1. Subiu além das nuvens a nossa oração
+   G                     D
+Chegou até o trono do Pai a louvação
+   Em                    A7              D     Bm
+Na mesa da Eucaristia provamos o penhor
+   E7                                    A7
+Da glória prometida no Reino do Senhor!
+
+[Refrão]
+   D                     G
+Os olhos jamais contemplaram,
+   A7                    D        Bm
+Ninguém sabe explicar o que Deus preparou
+   Em        A7          D
+Aquele que em vida O amar!
+
+[Segunda Parte]
+   Bm                    F#m
+2. Quem come deste Pão viverá eternamente
+   G                     D
+Pois traz dentro do peito a divina semente
+   Em                    A7              D     Bm
+Caminha na esperança até o dia chegar
+   E7                                    A7
+Em que face a face a Deus há de contemplar!
+
+[Final]
+   G         A7          D    Bm
+O que Deus preparou por amor
+   Em        A7          D
+Aquele que em vida O amar!'),
+  ('ir-miria-kolling-quero-ouvir-teu-apelo', 'Quero Ouvir Teu Apelo', 'Irmã Miria T. Kolling', 'Final', 'Tempo Comum', 'G', 84, '4/4', 'Canção Vocacional', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Quero+Ouvir+Teu+Apelo+Irmã+Miria+T.+Kolling+cifra', '{"status": "Comunhão ou Envio Vocacional (Mês Vocacional / Ordenações)", "score": 97, "documentRef": "Hinário Litúrgico CNBB (Vocacional)", "biblicalRef": "Is 6, 8; Mc 1, 16-20", "justification": "Clássico vocacional das comunidades brasileiras para resposta generosa ao chamado do Senhor.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Final • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  C  D7  G  Em  Am  D7  G
+
+[Primeira Parte]
+G                         Bm
+1. Quero ouvir Teu apelo, Senhor,
+C                         G
+Ao Teu chamado de amor responder!
+C                         G        Em
+Na alegria Te quero servir
+Am            D7          G      G7
+E anunciar o Teu Reino de amor!
+
+[Refrão]
+   C                  D7             G         Em
+E pelo mundo eu vou, cantando o Teu amor,
+   Am                 D7             G         G7
+Pois disponível estou para servir-Te, Senhor!
+   C                  D7             G         Em
+E pelo mundo eu vou, cantando o Teu amor,
+   Am                 D7             G
+Pois disponível estou para servir-Te, Senhor!
+
+[Segunda Parte]
+G                         Bm
+2. Dia a dia Tua graça me dás,
+C                         G
+Nela se apoia o meu caminhar!
+C                         G        Em
+Se estás a meu lado, Senhor,
+Am            D7          G      G7
+O que, então, poderei eu temer?
+
+[Refrão]
+   C                  D7             G         Em
+E pelo mundo eu vou, cantando o Teu amor,
+   Am                 D7             G         G7
+Pois disponível estou para servir-Te, Senhor!
+   C                  D7             G         Em
+E pelo mundo eu vou, cantando o Teu amor,
+   Am                 D7             G
+Pois disponível estou para servir-Te, Senhor!
+
+[Final]
+   Am                 D7             G   C   G
+Pois disponível estou para servir-Te, Senhor!'),
+  ('ir-miria-kolling-a-forca-da-eucaristia', 'A Força da Eucaristia', 'Irmã Miria T. Kolling', 'Comunhão', 'Tempo Comum', 'C', 80, '4/4', 'Balada Eucarística', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=A+Força+da+Eucaristia+Irmã+Miria+T.+Kolling+cifra', '{"status": "Canto de Comunhão e Solenidade de Corpus Christi", "score": 98, "documentRef": "IGMR nº 86; Hinário Litúrgico da CNBB", "biblicalRef": "Jo 6, 51-58; 1Cor 10, 16-17", "justification": "Cântico eucarístico de alta densidade teológica que une o Pão da Vida ao compromisso fraterno da comunidade.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] C  F  G7  C  Am  Dm  G7  C
+
+[Primeira Parte]
+C                        Em
+1. Quando te aproximas do altar do Senhor
+F                        G7
+Para receber o Pão da Vida e do Amor
+Am                       Em
+Não vens sozinho, trazes contigo o irmão
+Dm             G7        C         C7
+Formando em Cristo um só corpo e coração!
+
+[Refrão]
+   F              G7         C           Am
+É a força da Eucaristia que nos faz caminhar
+   Dm             G7         C           C7
+Partilhando a esperança, aprendendo a amar!
+   F              G7         C           Am
+É a força da Eucaristia que transforma o viver
+   Dm             G7         C
+Em oferta viva pra o Reino crescer!
+
+[Segunda Parte]
+C                        Em
+2. Este Pão do Céu é alimento dos fortes
+F                        G7
+Vence o egoísmo e destrói toda morte
+Am                       Em
+Une os pequenos ao redor do Senhor
+Dm             G7        C         C7
+Numa aliança eterna de paz e louvor!
+
+[Refrão]
+   F              G7         C           Am
+É a força da Eucaristia que nos faz caminhar
+   Dm             G7         C           C7
+Partilhando a esperança, aprendendo a amar!
+   F              G7         C           Am
+É a força da Eucaristia que transforma o viver
+   Dm             G7         C
+Em oferta viva pra o Reino crescer!
+
+[Final]
+   Dm             G7         C   F   C
+Em oferta viva pra o Reino crescer!'),
+  ('ir-miria-kolling-glorifica-minha-alma-magnificat', 'Glorifica Minha Alma ao Senhor (Magnificat)', 'Irmã Miria T. Kolling', 'Ação de Graças', 'Advento', 'F', 96, '4/4', 'Marcha Festiva / Cântico Bíblico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Glorifica+Minha+Alma+ao+Senhor+(Magnificat)+Irmã+Miria+T.+Kolling+cifra', '{"status": "Cântico Evangélico de Maria (Festas Marianas, Advento e Vésperas)", "score": 99, "documentRef": "Liturgia das Horas (Vésperas); Lecionário (4º Dom. do Advento / Assunção)", "biblicalRef": "Lc 1, 46-55", "justification": "Versão litúrgica consagrada do Cântico de Maria (Magnificat), exaltando a ação de Deus em favor dos humildes.", "repertoireType": "liturgica", "specialDay": "Advento", "normExplanation": "Aprovada para a Santa Missa (Ação de Graças • Advento): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] F  Bb  C7  F  Dm  Gm  C7  F
+
+[Refrão]
+F                         Bb
+Glorifica minha alma ao Senhor,
+C7                        F
+Exulta meu espírito em Deus, meu Salvador!
+Dm                        Gm
+Porque olhou a humildade de Sua serva,
+C7                        F
+Doravante as gerações me chamarão bem-aventurada!
+
+[Primeira Parte]
+F                              Bb
+1. O Todo-Poderoso fez em mim maravilhas,
+C7                             F
+Santo, eternamente Santo é o Seu Nome!
+Dm                             Gm
+Seu amor se estende de geração em geração
+C7                             F
+Sobre todos aqueles que O temem de coração!
+
+[Refrão]
+F                         Bb
+Glorifica minha alma ao Senhor,
+C7                        F
+Exulta meu espírito em Deus, meu Salvador!
+Dm                        Gm
+Porque olhou a humildade de Sua serva,
+C7                        F
+Doravante as gerações me chamarão bem-aventurada!
+
+[Segunda Parte]
+F                              Bb
+2. Manifestou o poder do Seu braço forte,
+C7                             F
+Derrubou os poderosos de seus tronos e exaltou os humildes!
+Dm                             Gm
+Saciou de bens os famintos e despediu os ricos sem nada,
+C7                             F
+Socorreu Israel, Seu servo, lembrado de Sua misericórdia!
+
+[Final]
+Bb        C7              Am   Dm
+Glória ao Pai e ao Filho e ao Espírito Santo,
+Gm        C7              F
+Pelos séculos dos séculos. Amém!'),
+  ('ir-miria-kolling-reunidos-aqui', 'Reunidos Aqui Só Pra Louvar o Senhor', 'Irmã Miria T. Kolling', 'Entrada', 'Tempo Comum', 'G', 108, '4/4', 'Marcha Alegre', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Reunidos+Aqui+Só+Pra+Louvar+o+Senhor+Irmã+Miria+T.+Kolling+cifra', '{"status": "Canto de Entrada e Acolhida Fraterna da Assembleia", "score": 95, "documentRef": "IGMR nº 47; Hinário Litúrgico da CNBB", "biblicalRef": "Sl 132 (133), 1; Mt 18, 20", "justification": "Cântico clássico e extremamente acessível de abertura da celebração, reunindo a assembleia no amor do Senhor.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  C  D7  G  D7
+
+[Primeira Parte]
+G                             D7
+Reunidos aqui só pra louvar o Senhor,
+                              G       G7
+Novamente aqui, em união!
+C                             G          Em
+Algo bom vai acontecer, algo bom Deus tem pra nós:
+Am            D7              G
+Reunidos aqui só pra louvar o Senhor!
+
+[Refrão]
+   C                          G
+O Pai nos chamou para formarmos um povo,
+   D7                         G          G7
+Em Cristo Jesus somos um homem novo!
+   C                          G          Em
+No Espírito Santo cantamos em coro:
+   Am         D7              G
+Reunidos aqui só pra louvar o Senhor!
+
+[Segunda Parte]
+G                             D7
+Trazemos no peito a alegria da fé,
+                              G       G7
+Igreja que marcha unida e de pé!
+C                             G          Em
+Ouvindo a Palavra, partindo o Pão,
+Am            D7              G
+Vivendo na graça da comunhão!
+
+[Refrão]
+   C                          G
+O Pai nos chamou para formarmos um povo,
+   D7                         G          G7
+Em Cristo Jesus somos um homem novo!
+   C                          G          Em
+No Espírito Santo cantamos em coro:
+   Am         D7              G
+Reunidos aqui só pra louvar o Senhor!
+
+[Final]
+   C          D7              G   Em
+Algo bom Deus tem pra nós:
+   Am         D7              G
+Reunidos aqui só pra louvar o Senhor!'),
+  ('ir-miria-kolling-a-biblia-e-a-palavra-de-deus', 'A Bíblia É a Palavra de Deus', 'Irmã Miria T. Kolling', 'Aclamação ao Evangelho', 'Tempo Comum', 'D', 104, '4/4', 'Marcha Bíblica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=A+Bíblia+É+a+Palavra+de+Deus+Irmã+Miria+T.+Kolling+cifra', '{"status": "Entronização da Palavra e Mês da Bíblia (Setembro)", "score": 97, "documentRef": "IGMR nº 55; Dei Verbum nº 21", "biblicalRef": "Sl 118 (119), 105; Hb 4, 12", "justification": "Hino tradicional do Mês da Bíblia nas paróquias brasileiras para procissão e acolhida do Lecionário.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Aclamação ao Evangelho • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  G  A7  D  A7
+
+[Refrão]
+D                              A7
+A Bíblia é a Palavra de Deus semeada no meio do povo,
+Em             A7              D                     D7
+Que cresceu, cresceu e nos transformou,
+G              A7              F#m         Bm
+Ensinando a viver um mundo novo,
+Em             A7              D
+Ensinando a viver um mundo novo!
+
+[Primeira Parte]
+D                              A7
+1. Deus é bom, nos ensina a viver,
+                               D
+Nos revela o caminho a seguir:
+D7                             G
+Só no amor partilhando Seus dons,
+       D           A7          D
+Sua presença iremos sentir!
+
+[Refrão]
+D                              A7
+A Bíblia é a Palavra de Deus semeada no meio do povo,
+Em             A7              D                     D7
+Que cresceu, cresceu e nos transformou,
+G              A7              F#m         Bm
+Ensinando a viver um mundo novo,
+Em             A7              D
+Ensinando a viver um mundo novo!
+
+[Segunda Parte]
+D                              A7
+2. Somos povo, o povo de Deus,
+                               D
+E formamos o Reino de irmãos;
+D7                             G
+E a Palavra que é viva nos guia
+       D           A7          D
+E alimenta a nossa união!
+
+[Final]
+G              A7              F#m         Bm
+Ensinando a viver um mundo novo,
+Em             A7              D
+A Palavra de Deus nos transformou!'),
+  ('ze-vicente-pai-nosso-dos-martires', 'Pai Nosso dos Mártires', 'Zé Vicente', 'Comunhão', 'Quaresma', 'Am', 80, '4/4', 'Toada / Canção das CEBs', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Pai+Nosso+dos+Mártires+Zé+Vicente+cifra', '{"status": "Memória dos Mártires, Celebrações da Esperança e Quaresma (Não substitui o Pai-Nosso ritual)", "score": 93, "documentRef": "Estudo 79 CNBB (Nota: usar na Comunhão ou Meditação, nunca em substituição à Oração Dominical ritual da Missa)", "biblicalRef": "Mt 6, 9-13; Ap 6, 9-11", "justification": "Clássico da caminhada pastoral latino-americana em memória dos mártires da justiça e do Evangelho.", "repertoireType": "liturgica", "specialDay": "Quaresma e CF", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Am  Dm  G  C  E7  Am
+
+[Refrão]
+Am                         Dm
+Pai nosso dos pobres marginalizados,
+G                          C         E7
+Pai nosso dos mártires, dos torturados!
+Am                         Dm
+Teu Nome é santificado naqueles que morrem defendendo a vida,
+G                          C         E7
+Teu Nome é glorificado quando a justiça é nossa medida!
+Dm         G               C         Am
+Teu Reino é de liberdade, de fraternidade, paz e comunhão,
+Dm         E7              Am
+Maldita toda violência que devora a vida pela repressão!
+
+[Primeira Parte]
+Am                         G
+1. Queremos fazer Tua vontade, és o verdadeiro Deus libertador!
+F                          E7
+Não vamos seguir as doutrinas corrompidas pelo poder opressor!
+Am                         G
+Pedimos-Te o pão da vida, o pão da segurança, o pão das multidões,
+F                          E7
+O pão que traz humanidade, que constrói o homem em vez de canhões!
+
+[Refrão]
+Am                         Dm
+Pai nosso dos pobres marginalizados,
+G                          C         E7
+Pai nosso dos mártires, dos torturados!
+Dm         G               C         Am
+Teu Reino é de liberdade, de fraternidade, paz e comunhão,
+Dm         E7              Am
+Maldita toda violência que devora a vida pela repressão!
+
+[Segunda Parte]
+Am                         G
+2. Perdoa-nos quando por medo ficamos calados diante da morte,
+F                          E7
+Perdoa e destrói os reinos em que a corrupção é a lei mais forte!
+Am                         G
+Protege-nos da crueldade, do esquadrão da morte, dos prevalecidos,
+F                          E7
+Pai nosso revolucionário, parceiro dos pobres, Deus dos oprimidos!
+
+[Final]
+Dm         E7              Am   F
+Pai nosso dos mártires, Deus dos oprimidos!
+Dm         E7              Am
+Vem fazer justiça aos Teus escolhidos!'),
+  ('ze-vicente-e-missao-de-todos-nos', 'É Missão de Todos Nós', 'Zé Vicente', 'Final', 'Tempo Comum', 'G', 98, '4/4', 'Baião / Marcha Missionária', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=É+Missão+de+Todos+Nós+Zé+Vicente+cifra', '{"status": "Canto de Envio Missionário e Campanha da Fraternidade", "score": 96, "documentRef": "Hinário Litúrgico da CNBB; Diretrizes Gerais da Ação Evangelizadora", "biblicalRef": "Gn 1, 28; Mc 16, 15", "justification": "Um dos cânticos de envio mais conhecidos do Brasil, convocando toda a Igreja a transformar o mundo.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Final • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  C  D7  G  D7
+
+[Primeira Parte]
+G                             Bm
+1. O Deus que me criou, me quis, me consagrou
+C             D7              G       G7
+Para anunciar o Seu amor!
+C                             G          Em
+Eu sou como a chuva em terra seca,
+Am            D7              G          G7
+Pra saciar, fazer brotar eu vivo pra amar e pra servir!
+C                             G          Em
+Eu sou como a chuva em terra seca,
+Am            D7              G
+Pra saciar, fazer brotar eu vivo pra amar e pra servir!
+
+[Refrão]
+   D7                         G
+É missão de todos nós, Deus chama, eu quero ouvir a Sua voz!
+   D7                         G                                G7
+É missão de todos nós, Deus chama, eu quero ouvir a Sua voz!
+   C                          G          Em
+Proclamar a libertação, construir a nova criação,
+   Am         D7              G
+É missão de todos nós!
+
+[Segunda Parte]
+G                             Bm
+2. Em casa e no trabalho, na rua e na igreja
+C             D7              G       G7
+Eu vou testemunhar o meu Senhor!
+C                             G          Em
+Semeando a paz e a esperança,
+Am            D7              G          G7
+Onde houver dor e solidão eu levo a alegria do irmão!
+
+[Refrão]
+   D7                         G
+É missão de todos nós, Deus chama, eu quero ouvir a Sua voz!
+   D7                         G                                G7
+É missão de todos nós, Deus chama, eu quero ouvir a Sua voz!
+   C                          G          Em
+Proclamar a libertação, construir a nova criação,
+   Am         D7              G
+É missão de todos nós!
+
+[Final]
+   C          D7              G   Em
+Construir a nova criação:
+   Am         D7              G
+É missão de todos nós!'),
+  ('ze-vicente-as-mesmas-maos', 'As Mesmas Mãos que Plantaram a Semente', 'Zé Vicente', 'Ofertório', 'Tempo Comum', 'D', 92, '4/4', 'Toada Nordestina', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=As+Mesmas+Mãos+que+Plantaram+a+Semente+Zé+Vicente+cifra', '{"status": "Apresentação das Oferendas (Ofertório)", "score": 97, "documentRef": "IGMR nº 73; Hinário Litúrgico da CNBB", "biblicalRef": "Sl 103 (104), 14-15; At 2, 42-47", "justification": "Belíssimo canto de Ofertório que une o trabalho das mãos que plantam a semente ao pão e vinho trazidos ao altar.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Ofertório • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  G  A7  D  A7
+
+[Refrão]
+   D                              A7
+As mesmas mãos que plantaram a semente aqui estão!
+   Em             A7              D                     D7
+O mesmo pão que a mulher preparou aqui está!
+   G              A7              F#m         Bm
+O vinho novo que a uva sangrou jorrará
+   Em             A7              D
+No nosso altar!
+
+[Primeira Parte]
+   D                              A7
+1. A liberdade haverá, a igualdade haverá,
+   G              A7              D
+E nesta festa onde a gente é irmão,
+   D7                             G
+O Deus da vida se faz comunhão!
+   D              A7              D
+O Deus da vida se faz comunhão!
+
+[Refrão]
+   D                              A7
+As mesmas mãos que plantaram a semente aqui estão!
+   Em             A7              D                     D7
+O mesmo pão que a mulher preparou aqui está!
+   G              A7              F#m         Bm
+O vinho novo que a uva sangrou jorrará
+   Em             A7              D
+No nosso altar!
+
+[Segunda Parte]
+   D                              A7
+2. Na flor do altar o sonho da paz mundial,
+   G              A7              D
+A luz acesa é a fé que palpita hoje em nós!
+   D7                             G
+Do livro aberto o amor se derrama total,
+   D              A7              D
+No Santo sacrifício de Cristo Jesus!
+
+[Final]
+   G              A7              F#m         Bm
+O vinho novo que a uva sangrou jorrará
+   Em             A7              D
+No nosso altar!'),
+  ('ze-vicente-de-todos-os-cantos-viemos', 'De Todos os Cantos Viemos', 'Zé Vicente', 'Entrada', 'Tempo Comum', 'C', 104, '4/4', 'Baião / Marcha de Romaria', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=De+Todos+os+Cantos+Viemos+Zé+Vicente+cifra', '{"status": "Canto de Entrada para Missas Comunitárias e Romarias", "score": 96, "documentRef": "IGMR nº 47; Hinário das Comunidades", "biblicalRef": "Is 2, 2-5; Sl 121 (122)", "justification": "Canto de abertura festivo que celebra a reunião do povo de Deus vindo de todos os cantos para celebrar a fé.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] C  F  G7  C  G7
+
+[Refrão]
+   C                          F
+De todos os cantos viemos, para louvar o Senhor,
+   G7                         C                  C7
+Pai de eterna bondade, Deus de infinito amor!
+   F                          C          Am
+Todo o povo reunido num só canto de louvor,
+   Dm         G7              C
+Louvado seja o Senhor!
+
+[Primeira Parte]
+   C                          G7
+1. Trazemos a nossa lida, o suor de cada irmão,
+   F          G7              C
+A esperança florida que brota no coração!
+   C7                         F
+Na mesa da Eucaristia o Reino já começou,
+   Dm         G7              C
+Louvado seja o Senhor!
+
+[Refrão]
+   C                          F
+De todos os cantos viemos, para louvar o Senhor,
+   G7                         C                  C7
+Pai de eterna bondade, Deus de infinito amor!
+   F                          C          Am
+Todo o povo reunido num só canto de louvor,
+   Dm         G7              C
+Louvado seja o Senhor!
+
+[Segunda Parte]
+   C                          G7
+2. Mulheres, homens, crianças, jovens e anciãos na fé,
+   F          G7              C
+Cantando a nova aliança, Igreja viva e de pé!
+   C7                         F
+O Espírito nos anima na força do Seu amor,
+   Dm         G7              C
+Louvado seja o Senhor!
+
+[Final]
+   F                          C          Am
+Todo o povo reunido num só canto de louvor,
+   Dm         G7              C
+Louvado seja o Senhor!'),
+  ('ze-vicente-agua-sagrada', 'Água Sagrada', 'Zé Vicente', 'Entrada', 'Páscoa', 'E', 88, '4/4', 'Toada Batismal', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Água+Sagrada+Zé+Vicente+cifra', '{"status": "Rito de Aspersão da Água Benta e Renovação Batismal", "score": 97, "documentRef": "Missal Romano (Rito de Bênção e Aspersão da Água)", "biblicalRef": "Ez 36, 25-26; Jo 4, 14", "justification": "Cântico poético e bíblico para o momento da aspersão da água batismal nos domingos e no Tempo Pascal.", "repertoireType": "liturgica", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Aprovada para a Santa Missa (Entrada • Páscoa e Vigília Pascal): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] E  A  B7  E  B7
+
+[Refrão]
+   E                          A
+Água sagrada, fonte da vida,
+   B7                         E          E7
+Lava este povo que quer renascer!
+   A                          E          C#m
+Água bendita que traz alegria,
+   F#m        B7              E
+Faz a semente do Reino crescer!
+
+[Primeira Parte]
+   E                          B7
+1. Desde o princípio pairava o Espírito
+   A          B7              E
+Sobre as águas da criação!
+   E7                         A
+No Rio Jordão foi Jesus batizado,
+   F#m        B7              E
+Abrindo os céus à nossa salvação!
+
+[Refrão]
+   E                          A
+Água sagrada, fonte da vida,
+   B7                         E          E7
+Lava este povo que quer renascer!
+   A                          E          C#m
+Água bendita que traz alegria,
+   F#m        B7              E
+Faz a semente do Reino crescer!
+
+[Segunda Parte]
+   E                          B7
+2. Quem desta água beber com fé viva
+   A          B7              E
+Nunca mais sede no peito terá!
+   E7                         A
+Pois do seu íntimo jorram nascentes
+   F#m        B7              E
+Para a vida eterna que Deus nos dá!
+
+[Final]
+   A                          E          C#m
+Água bendita que traz alegria,
+   F#m        B7              E
+Faz a semente do Reino crescer!'),
+  ('ze-vicente-baiao-das-comunidades', 'Baião das Comunidades', 'Zé Vicente', 'Entrada', 'Tempo Comum', 'A', 112, '4/4', 'Baião Nordestino', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Baião+das+Comunidades+Zé+Vicente+cifra', '{"status": "Canto de Entrada ou Envio das Comunidades Eclesiais", "score": 95, "documentRef": "Estudo 79 CNBB (Inculturação da Música Litúrgica)", "biblicalRef": "At 2, 42-47; Sl 132 (133)", "justification": "Cântico inculturado em ritmo de baião que celebra a comunhão fraterna das comunidades paroquiais.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Entrada • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] A  D  E7  A  E7
+
+[Refrão]
+   A                                   E7
+Somos gente nova vivendo a união,
+   D                  E7               A         A7
+Somos povo semente de uma nova nação, ê, ê!
+   D                                   A         F#m
+Somos gente nova vivendo o amor,
+   Bm                 E7               A
+Somos comunidade, povo do Senhor, ê, ê!
+
+[Primeira Parte]
+   A                                   E7
+1. Vou convidar os meus irmãos trabalhadores,
+   D                  E7               A
+Operários, lavradores, biscateiros e outros mais!
+   A7                                  D
+E juntos vamos celebrar a confiança,
+   Bm                 E7               A
+Nossa luta na esperança de ter terra, pão e paz, ê, ê!
+
+[Refrão]
+   A                                   E7
+Somos gente nova vivendo a união,
+   D                  E7               A         A7
+Somos povo semente de uma nova nação, ê, ê!
+   D                                   A         F#m
+Somos gente nova vivendo o amor,
+   Bm                 E7               A
+Somos comunidade, povo do Senhor, ê, ê!
+
+[Segunda Parte]
+   A                                   E7
+2. Vamos chamar os jovens, mulheres e crianças,
+   D                  E7               A
+Construindo a aliança que o Evangelho nos propôs!
+   A7                                  D
+Partindo o pão e escutando a Palavra,
+   Bm                 E7               A
+Nossa fé jamais se acaba, pois Jesus está entre nós, ê, ê!
+
+[Final]
+   D                                   A         F#m
+Somos gente nova vivendo o amor,
+   Bm                 E7               A
+Somos comunidade, povo do Senhor, ê, ê!'),
+  ('ziza-fernandes-o-que-agrada-a-deus', 'O Que Agrada a Deus', 'Ziza Fernandes', 'Ação de Graças', 'Qualquer', 'D', 72, '4/4', 'Balada / MPB Católica', 'P  I  M  A  M  I', true, true, 6, 'https://www.youtube.com/results?search_query=O+Que+Agrada+a+Deus+Ziza+Fernandes+cifra', '{"status": "Ação de Graças, Meditação Pós-Comunhão e Festas de Santa Teresinha", "score": 94, "documentRef": "Escritos de Santa Teresinha do Menino Jesus (Manuscrito B)", "biblicalRef": "Sl 130 (131); Mt 18, 3-4", "justification": "Obra-prima musical inspirada nos escritos de Santa Teresinha do Menino Jesus sobre a pequena via da confiança.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  Em  A7  D
+
+[Primeira Parte]
+D                        A/C#
+O que agrada a Deus em minha pequena alma
+Bm                       F#m
+É ver que eu amo a minha pequenez
+G                        D/F#
+E a minha pobreza, a minha pequenez
+Em                       A7
+É a esperança cega que tenho em Sua misericórdia!
+
+[Refrão]
+   D                     A/C#
+Na Tua misericórdia eu confio, Senhor,
+   Bm                    F#m
+Mesmo sendo tão frágil, sou alvo do Teu amor!
+   G                     D/F#          Bm
+Toma minha pequenez, faz-me toda Tua enfim,
+   Em         A7         D
+Pois o Teu olhar pousou sobre mim!
+
+[Segunda Parte]
+D                        A/C#
+Não tenho grandes obras para Te oferecer
+Bm                       F#m
+Senão as flores simples do meu cotidiano
+G                        D/F#
+Colhidas no silêncio do meu pequeno ser
+Em                       A7
+E entregues no altar do Teu plano soberano!
+
+[Refrão]
+   D                     A/C#
+Na Tua misericórdia eu confio, Senhor,
+   Bm                    F#m
+Mesmo sendo tão frágil, sou alvo do Teu amor!
+   G                     D/F#          Bm
+Toma minha pequenez, faz-me toda Tua enfim,
+   Em         A7         D
+Pois o Teu olhar pousou sobre mim!
+
+[Final]
+   G                     A7            Bm    G
+É a esperança cega que tenho em Teu amor,
+   Em         A7         D
+Em Tua misericórdia, Senhor!'),
+  ('ziza-fernandes-fogo-suave', 'Fogo Suave', 'Ziza Fernandes', 'Ação de Graças', 'Páscoa', 'G', 76, '4/4', 'Balada Acústica', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Fogo+Suave+Ziza+Fernandes+cifra', '{"status": "Invocação ao Espírito Santo, Crisma, Pentecostes e Adoração", "score": 95, "documentRef": "Sequência de Pentecostes (Veni Sancte Spiritus)", "biblicalRef": "1Rs 19, 12; At 2, 3", "justification": "Cântico contemplativo e poético ao Espírito Santo, descrevendo Sua ação simultaneamente abrasadora e suave.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em  C  D7  G
+
+[Primeira Parte]
+G                          D/F#
+Teus dedos tocam meu pensar,
+Em                         Bm
+Carinho em minh''alma, sossega e acalma
+C                          G/B
+Minha vida agitada com Tua presença
+Am                         D7
+Me acolhe, não vou mais temer!
+
+[Refrão]
+   G                D/F#
+Fogo suave, queima-me!
+   Em               Bm
+Vento impetuoso, leva-me!
+   C                G/B          Em
+Hóspede da alma, entra e fica em mim,
+   Am       D7      G
+Espírito de Amor sem fim!
+
+[Segunda Parte]
+G                          D/F#
+Brisa leve que sopra onde quer,
+Em                         Bm
+Luz bendita que aquece o inverno da vida
+C                          G/B
+Derrama Teu óleo sobre as feridas
+Am                         D7
+E refaz todo o meu interior!
+
+[Refrão]
+   G                D/F#
+Fogo suave, queima-me!
+   Em               Bm
+Vento impetuoso, leva-me!
+   C                G/B          Em
+Hóspede da alma, entra e fica em mim,
+   Am       D7      G
+Espírito de Amor sem fim!
+
+[Final]
+   C        D7      Em    C
+Fogo suave, queima-me!
+   Am       D7      G
+Espírito Santo, habita em mim!'),
+  ('ziza-fernandes-alma-missionaria', 'Alma Missionária (Senhor, Toma Minha Vida Nova)', 'Ziza Fernandes', 'Final', 'Tempo Comum', 'C', 82, '4/4', 'Balada Missionária', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Alma+Missionária+(Senhor,+Toma+Minha+Vida+Nova)+Ziza+Fernandes+cifra', '{"status": "Comunhão Vocacional, Envio Missionário e Crisma", "score": 96, "documentRef": "Estudo 79 CNBB; Documento de Aparecida", "biblicalRef": "Is 6, 8; Rm 10, 14-15", "justification": "Consagrada versão de ''Alma Missionária'', oração de entrega total da juventude e dos missionários à evangelização.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Final • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] C  G/B  Am  F  G7  C
+
+[Primeira Parte]
+C                          G/B
+Senhor, toma minha vida nova
+Am                         Em
+Antes que a espera desgaste anos em mim
+F                          C/E
+Estou disposto ao que queiras,
+Dm                         G7
+Não importa o que seja, Tu chamas-me a servir!
+
+[Refrão]
+   C                       G/B
+Leva-me aonde os homens necessitem Tua Palavra,
+   Am                      Em
+Necessitem de força de viver!
+   F                       C/E         Am
+Onde falte a esperança, onde tudo seja triste
+   Dm                      G7          C
+Simplesmente por não saber de Ti!
+
+[Segunda Parte]
+C                          G/B
+Te dou meu coração sincero
+Am                         Em
+Para gritar sem medo: formoso é Teu amor!
+F                          C/E
+Senhor, tenho alma missionária,
+Dm                         G7
+Conduze-me à terra que tenha sede de Ti!
+
+[Refrão]
+   C                       G/B
+Leva-me aonde os homens necessitem Tua Palavra,
+   Am                      Em
+Necessitem de força de viver!
+   F                       C/E         Am
+Onde falte a esperança, onde tudo seja triste
+   Dm                      G7          C
+Simplesmente por não saber de Ti!
+
+[Final]
+   F                       G7          Am    F
+Assim, em marcha irei cantando,
+   Dm                      G7          C
+Por povos pregando Tua grandeza, Senhor!'),
+  ('ziza-fernandes-celebra-a-vida', 'Celebra a Vida', 'Ziza Fernandes', 'Entrada', 'Páscoa', 'A', 112, '4/4', 'Pop Acústico Festivo', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Celebra+a+Vida+Ziza+Fernandes+cifra', '{"status": "Acolhida, Louvor e Celebrações da Vida", "score": 88, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Sl 117 (118), 24; Jo 10, 10", "justification": "Cântico luminoso de gratidão pelo dom da vida e pela presença de Cristo que faz novas todas as coisas.", "repertoireType": "liturgica", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Aprovada para a Santa Missa (Entrada • Páscoa e Vigília Pascal): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] A  E/G#  F#m  D  E7  A
+
+[Primeira Parte]
+A                         E/G#
+Acorda, olha o dia que o Senhor já fez brilhar
+F#m                       C#m
+A graça se renova em cada passo do andar
+D                         A/C#
+Deixa a tristeza fora, abre a janela à luz
+Bm                        E7
+Pois a vida inteira é dom das mãos de Jesus!
+
+[Refrão]
+   A                      E/G#
+Celebra a vida, canta um canto de louvor!
+   F#m                    D
+Bendize ao Pai que nos criou por Seu amor!
+   A                      E/G#         F#m
+Em cada instante Ele nos chama a renascer,
+   Bm         E7          A
+Celebra a vida que Deus deu a você!
+
+[Segunda Parte]
+A                         E/G#
+Mesmo se houver espinhos pelo chão a caminhar
+F#m                       C#m
+O perfume da esperança não deixará de exalar
+D                         A/C#
+Com os irmãos unidos ao redor do mesmo altar
+Bm                        E7
+A festa da alegria vamos juntos celebrar!
+
+[Refrão]
+   A                      E/G#
+Celebra a vida, canta um canto de louvor!
+   F#m                    D
+Bendize ao Pai que nos criou por Seu amor!
+   A                      E/G#         F#m
+Em cada instante Ele nos chama a renascer,
+   Bm         E7          A
+Celebra a vida que Deus deu a você!
+
+[Final]
+   D          E7          F#m   D
+Em cada instante Ele nos chama a renascer,
+   Bm         E7          A
+Celebra a vida no Senhor!'),
+  ('ziza-fernandes-me-faz-capaz', 'Me Faz Capaz', 'Ziza Fernandes', 'Ofertório', 'Tempo Comum', 'E', 76, '4/4', 'Balada de Entrega', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Me+Faz+Capaz+Ziza+Fernandes+cifra', '{"status": "Ofertório Vocacional e Oração de Consagração", "score": 90, "documentRef": "Estudo 79 CNBB", "biblicalRef": "2Cor 3, 5; Fl 4, 13", "justification": "Canção inspirada em São Paulo (2Cor 3,5): nossa capacidade vem de Deus, que acolhe nossa oferta humilde.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Ofertório • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] E  B/D#  C#m  A  B7  E
+
+[Primeira Parte]
+E                         B/D#
+Olho para as minhas mãos tão pequenas, Senhor
+C#m                       G#m
+Diante da grandeza da missão do Teu amor
+A                         E/G#
+Mas sei que não escolhes os que já prontos estão
+F#m                       B7
+Capacitas os chamados com a força de Tua mão!
+
+[Refrão]
+   E                      B/D#
+A Tua graça me faz capaz de ir além,
+   C#m                    A
+De ofertar a minha vida para o bem!
+   E                      B/D#         C#m
+Toma o meu nada e transforma em comunhão,
+   F#m        B7          E
+Eis-me aqui em Tuas mãos!
+
+[Segunda Parte]
+E                         B/D#
+Dependo no Teu altar meu suor e meu cansaço
+C#m                       G#m
+No pão e no vinho encontro a paz do Teu abraço
+A                         E/G#
+Tudo posso Naquele que me fortalece assim
+F#m                       B7
+Vivo não mais eu, mas Cristo vive em mim!
+
+[Refrão]
+   E                      B/D#
+A Tua graça me faz capaz de ir além,
+   C#m                    A
+De ofertar a minha vida para o bem!
+   E                      B/D#         C#m
+Toma o meu nada e transforma em comunhão,
+   F#m        B7          E
+Eis-me aqui em Tuas mãos!
+
+[Final]
+   A          B7          C#m   A
+Toma o meu nada e transforma em comunhão,
+   F#m        B7          E
+Tua graça me faz capaz, Senhor!'),
+  ('ziza-fernandes-abre-tua-porta', 'Abre Tua Porta', 'Ziza Fernandes', 'Ato Penitencial', 'Advento', 'Dm', 74, '4/4', 'Balada Contemplativa', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Abre+Tua+Porta+Ziza+Fernandes+cifra', '{"status": "Advento, Reconciliação e Meditação Interior", "score": 91, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Ap 3, 20; Ct 5, 2", "justification": "Cântico baseado em Apocalipse 3,20 (''Eis que estou à porta e bato''), propício para o Advento e momentos penitenciais.", "repertoireType": "liturgica", "specialDay": "Advento", "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Advento): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Dm  Gm  A7  Dm  Bb  A7  Dm
+
+[Primeira Parte]
+Dm                        Gm
+Eis que estou à porta e bato suavemente
+C                         F            A7
+Esperando que escutes Minha voz no coração
+Dm                        Gm
+Não forço a fechadura, sou amigo paciente
+Bb                        A7
+Que deseja cear contigo em santa comunhão!
+
+[Refrão]
+   Dm                     Gm
+Abre tua porta, deixa a luz entrar!
+   C                      F            A7
+Deixa o Amor Divino tua casa visitar!
+   Dm                     Gm
+Não tenhas receio da tua imperfeição,
+   Bb         A7          Dm
+Eu venho fazer morada em teu coração!
+
+[Segunda Parte]
+Dm                        Gm
+Arruma a tua mesa com sinceridade e fé
+C                         F            A7
+Entrega tuas sombras ao calor do Meu olhar
+Dm                        Gm
+Perdoo as tuas faltas e te ponho em pé
+Bb                        A7
+Para que uma vida nova possas começar!
+
+[Refrão]
+   Dm                     Gm
+Abre tua porta, deixa a luz entrar!
+   C                      F            A7
+Deixa o Amor Divino tua casa visitar!
+   Dm                     Gm
+Não tenhas receio da tua imperfeição,
+   Bb         A7          Dm
+Eu venho fazer morada em teu coração!
+
+[Final]
+   Gm         A7          Dm    Bb
+Eis que estou à porta e bato por amor:
+   Gm         A7          Dm
+Abre o coração ao teu Senhor!'),
+  ('banda-dominus-imenso-amor', 'Imenso Amor', 'Banda Dominus', 'Ação de Graças', 'Qualquer', 'G', 78, '4/4', 'Pop Rock Balada', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Imenso+Amor+Banda+Dominus+cifra', '{"status": "Ação de Graças, Adoração e Encontros de Jovens", "score": 90, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Rm 8, 35-39; Ef 3, 18-19", "justification": "Clássico da Banda Dominus exaltando a dimensão insondável do amor de Deus revelada em Jesus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D  Em  C  G  D
+
+[Primeira Parte]
+G                          D
+Como explicar um amor tão grande assim
+Em                         C
+Que entregou Sua vida na cruz por mim?
+G                          D
+Mesmo quando eu me afasto do Teu olhar
+Em             C           D
+Tuas mãos abertas continuam a me esperar!
+
+[Refrão]
+   G                       D
+Imenso amor que invade o meu coração,
+   Em                      C
+Trazendo vida nova, paz e salvação!
+   G                       D            Em
+Nada poderá me separar de Ti, Senhor,
+   C          D            G
+Eu vivo mergulhado nesse imenso amor!
+
+[Segunda Parte]
+G                          D
+Nem a altura, nem a profundidade ou dor
+Em                         C
+Podem apagar a chama desse amor
+G                          D
+Em Tua presença encontro o meu lugar
+Em             C           D
+Para sempre o Teu Nome eu quero exaltar!
+
+[Refrão]
+   G                       D
+Imenso amor que invade o meu coração,
+   Em                      C
+Trazendo vida nova, paz e salvação!
+   G                       D            Em
+Nada poderá me separar de Ti, Senhor,
+   C          D            G
+Eu vivo mergulhado nesse imenso amor!
+
+[Final]
+   C          D            Em   C
+Nada poderá me separar de Ti, Senhor,
+   Am         D            G
+Eu vivo mergulhado nesse imenso amor!'),
+  ('banda-dominus-o-amor', 'O Amor (Ainda que Eu Falasse a Língua dos Anjos)', 'Banda Dominus', 'Comunhão', 'Tempo Comum', 'D', 82, '4/4', 'Pop Acústico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=O+Amor+(Ainda+que+Eu+Falasse+a+Língua+dos+Anjos)+Banda+Dominus+cifra', '{"status": "Comunhão, Matrimônios e Celebrações da Caridade", "score": 93, "documentRef": "Lecionário Matrimonial; IGMR nº 86", "biblicalRef": "1Cor 13, 1-13", "justification": "Versão vibrante do Hino à Caridade do Apóstolo São Paulo (1Cor 13).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  A7  D
+
+[Primeira Parte]
+D                          A/C#
+Ainda que eu falasse a língua dos homens e dos anjos
+Bm                         G
+E tivesse a fé capaz de transportar os montes
+D                          A/C#
+Se eu não tivesse o amor que vem de Deus
+Em                         A7
+Nada disso adiantaria aos olhos Seus!
+
+[Refrão]
+   D                       A/C#
+O amor é paciente, o amor é prestativo,
+   Bm                      G
+Não se alegra com a injustiça, mas no bem é sempre vivo!
+   D                       A/C#         Bm
+Tudo sofre, tudo crê, tudo espera e suporta,
+   Em         A7           D
+O amor jamais acaba, o amor é o que importa!
+
+[Segunda Parte]
+D                          A/C#
+Passarão as profecias, cessarão todas as línguas
+Bm                         G
+Mas a caridade eterna permanece e nos abriga
+D                          A/C#
+Fé, esperança e amor permanecem entre nós
+Em                         A7
+Mas o maior deles é o amor que nos faz um só!
+
+[Refrão]
+   D                       A/C#
+O amor é paciente, o amor é prestativo,
+   Bm                      G
+Não se alegra com a injustiça, mas no bem é sempre vivo!
+   D                       A/C#         Bm
+Tudo sofre, tudo crê, tudo espera e suporta,
+   Em         A7           D
+O amor jamais acaba, o amor é o que importa!
+
+[Final]
+   G          A7           Bm   G
+Tudo sofre, tudo crê, tudo espera e suporta,
+   Em         A7           D
+O amor jamais acaba!'),
+  ('banda-dominus-com-jesus-e-festa', 'Com Jesus É Festa', 'Banda Dominus', 'Ação de Graças', 'Qualquer', 'A', 126, '4/4', 'Pop / Axé Cristão', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Com+Jesus+É+Festa+Banda+Dominus+cifra', '{"status": "Louvor em Encontros de Jovens, Retiros e Acampamentos", "score": 86, "documentRef": "Estudo 79 CNBB (Encontros Pastorais e Juventude)", "biblicalRef": "Jo 2, 1-11; Sl 150", "justification": "Hino de alegria cristã da juventude católica inspirado nas Bodas de Caná, onde a presença de Jesus garante o vinho novo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] A  D  E7  A  D  E7
+
+[Primeira Parte]
+A                          D
+Onde está Jesus a tristeza não tem vez
+E7                         A
+Como em Caná da Galileia a água em vinho Ele fez!
+A                          D
+Convida Maria e chama os irmãos
+E7                         A
+Pois o Senhor transforma o nosso coração!
+
+[Refrão]
+   A                       D
+Com Jesus é festa, é alegria de viver!
+   E7                      A
+O vinho novo da graça não vai faltar pra você!
+   A                       D            F#m
+Levante as mãos pro céu e comece a louvar,
+   Bm         E7           A
+Pois Jesus está presente neste lugar!
+
+[Segunda Parte]
+A                          D
+Não existe vida morna pra quem segue o Salvador
+E7                         A
+Cada dia é uma festa de serviço e de amor!
+A                          D
+Na força do Espírito vamos anunciar
+E7                         A
+Que só em Jesus Cristo há razão pra celebrar!
+
+[Refrão]
+   A                       D
+Com Jesus é festa, é alegria de viver!
+   E7                      A
+O vinho novo da graça não vai faltar pra você!
+   A                       D            F#m
+Levante as mãos pro céu e comece a louvar,
+   Bm         E7           A
+Pois Jesus está presente neste lugar!
+
+[Final]
+   D          E7           F#m  D
+O vinho novo da graça não vai faltar!
+   Bm         E7           A
+Com Jesus é festa!'),
+  ('banda-dominus-discipulo', 'Discípulo', 'Banda Dominus', 'Final', 'Tempo Comum', 'E', 108, '4/4', 'Pop Rock Missionário', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 4, 'https://www.youtube.com/results?search_query=Discípulo+Banda+Dominus+cifra', '{"status": "Envio Missionário, Crisma e Pastoral da Juventude", "score": 91, "documentRef": "Documento de Aparecida (Discípulos e Missionários)", "biblicalRef": "Jo 13, 35; Mt 28, 19", "justification": "Canção vocacional e missionária sobre a identidade do discípulo de Cristo no mundo.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] E  A  B7  E  B7
+
+[Primeira Parte]
+E                          A
+Tu me chamaste pela graça do Teu olhar
+B7                         E
+Deixei as redes na praia para Te acompanhar
+C#m                        A
+Aprendi nos Teus passos a servir e perdoar
+F#m                        B7
+E hoje a minha vida é o Teu Reino anunciar!
+
+[Refrão]
+   E                       A
+Quero ser Teu discípulo, Senhor Jesus,
+   B7                      E
+Caminhar na Tua verdade, viver na Tua luz!
+   C#m                     A
+Nisto todos saberão que somos Teus irmãos:
+   F#m        B7           E
+Se tivermos amor no coração!
+
+[Segunda Parte]
+E                          A
+Não importa a distância nem o vento a soprar
+B7                         E
+Tua Palavra é a bússola a me orientar
+C#m                        A
+Com a força do Espírito vou testemunhar
+F#m                        B7
+Que só Tu tens palavras de vida pra nos dar!
+
+[Refrão]
+   E                       A
+Quero ser Teu discípulo, Senhor Jesus,
+   B7                      E
+Caminhar na Tua verdade, viver na Tua luz!
+   C#m                     A
+Nisto todos saberão que somos Teus irmãos:
+   F#m        B7           E
+Se tivermos amor no coração!
+
+[Final]
+   A          B7           C#m  A
+Caminhar na Tua verdade, viver na Tua luz!
+   F#m        B7           E
+Sou Teu discípulo, Senhor Jesus!'),
+  ('banda-dominus-autor-da-vida', 'Autor da Vida', 'Banda Dominus', 'Ação de Graças', 'Páscoa', 'C', 80, '4/4', 'Balada de Louvor', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 4, 'https://www.youtube.com/results?search_query=Autor+da+Vida+Banda+Dominus+cifra', '{"status": "Ação de Graças e Louvor Pascal", "score": 90, "documentRef": "Estudo 79 CNBB", "biblicalRef": "At 3, 15; Hb 12, 2", "justification": "Cântico cristocêntrico que aclama Jesus Ressuscitado como o Autor e Consumador da vida e da fé.", "repertoireType": "popular", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G  Am  F  G7  C
+
+[Primeira Parte]
+C                          G
+Fixo os meus olhos em Ti, Senhor Jesus
+Am                         F
+Que por amor venceste a morte lá na cruz
+C                          G
+Tua ressurreição abriu as portas da manhã
+Am            F            G7
+E renovou a esperança da família cristã!
+
+[Refrão]
+   C                       G
+Tu és o Autor da Vida, o Princípio e o Fim,
+   Am                      F
+O Cordeiro exaltado que se entregou por mim!
+   C                       G            Am
+Toda a criação proclama o Teu louvor:
+   F          G7           C
+Jesus Cristo é o Senhor!
+
+[Segunda Parte]
+C                          G
+Em Tuas mãos entrego a história do meu ser
+Am                         F
+Escreve em minha alma o Teu santo querer
+C                          G
+Pois onde Tu estás floresce a salvação
+Am            F            G7
+E a vida eterna pulsa em nosso coração!
+
+[Refrão]
+   C                       G
+Tu és o Autor da Vida, o Princípio e o Fim,
+   Am                      F
+O Cordeiro exaltado que se entregou por mim!
+   C                       G            Am
+Toda a criação proclama o Teu louvor:
+   F          G7           C
+Jesus Cristo é o Senhor!
+
+[Final]
+   F          G7           Am   F
+Toda a criação proclama o Teu louvor:
+   Dm         G7           C
+Tu és o Autor da Vida, Senhor!'),
+  ('banda-dominus-joga-pra-la', 'Joga pra Lá', 'Banda Dominus', 'Ação de Graças', 'Qualquer', 'G', 122, '4/4', 'Samba-Reggae / Pop Jovem', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 4, 'https://www.youtube.com/results?search_query=Joga+pra+Lá+Banda+Dominus+cifra', '{"status": "Animação em Encontros de Jovens e Retiros", "score": 85, "documentRef": "Estudo 79 CNBB (Animação Pastoral)", "biblicalRef": "1Pd 5, 7; Fl 4, 4", "justification": "Canção de animação juvenil que convida a lançar fora a tristeza e entregar todas as preocupações a Deus.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  C  D7  G  C  D7
+
+[Primeira Parte]
+G                          C
+Por que ficar parado olhando para o chão
+D7                         G
+Se Deus já preparou a tua libertação?
+G                          C
+Entrega a ansiedade nas mãos do Salvador
+D7                         G
+Pois Ele tem cuidado de ti com Seu amor!
+
+[Refrão]
+   G                       C
+Joga pra lá toda tristeza e solidão!
+   D7                      G
+Deixa a alegria de Jesus encher teu coração!
+   Em                      C
+Quem tem a fé em Cristo não anda mais sozinho,
+   Am         D7           G
+Tem a luz do Evangelho clareando o seu caminho!
+
+[Segunda Parte]
+G                          C
+A graça do Senhor renova o teu viver
+D7                         G
+Com Ele a vitória já pertence a você!
+G                          C
+Sorria para a vida e cante ao Criador
+D7                         G
+Levando a todo o mundo a chama desse amor!
+
+[Refrão]
+   G                       C
+Joga pra lá toda tristeza e solidão!
+   D7                      G
+Deixa a alegria de Jesus encher teu coração!
+   Em                      C
+Quem tem a fé em Cristo não anda mais sozinho,
+   Am         D7           G
+Tem a luz do Evangelho clareando o seu caminho!
+
+[Final]
+   C          D7           G   Em
+Deixa a alegria de Jesus encher teu coração!
+   Am         D7           G
+Alegra-te no Senhor!'),
+  ('eugenio-jorge-eis-que-faco-novas', 'Eis Que Faço Novas Todas as Coisas', 'Eugênio Jorge', 'Entrada', 'Páscoa', 'D', 104, '4/4', 'Marcha Pascal / Louvor', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Eis+Que+Faço+Novas+Todas+as+Coisas+Eugênio+Jorge+cifra', '{"status": "Entrada e Envio no Tempo Pascal e Ano Novo", "score": 96, "documentRef": "Lecionário Dominical (5º Domingo da Páscoa - Ano C)", "biblicalRef": "Ap 21, 5; 2Cor 5, 17", "justification": "Cântico pascal diretamente inspirado em Apocalipse 21,5, proclamando que Cristo renova todas as coisas.", "repertoireType": "liturgica", "specialDay": "Páscoa e Vigília Pascal", "normExplanation": "Aprovada para a Santa Missa (Entrada • Páscoa e Vigília Pascal): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] D  G  A7  D  G  A7
+
+[Refrão]
+   D                                  G
+Eis que faço novas todas as coisas,
+                    D
+Que faço novas todas as coisas,
+                    A7                D     A7
+Que faço novas todas as coisas!
+
+[Primeira Parte]
+   D                                  G
+1. É vida que brota da vida, é fruto que cresce do amor,
+   D                                  A7
+É vida que vence a morte, é vida que vem do Senhor!
+   D                                  G
+ É vida que brota da vida, é fruto que cresce do amor,
+   D                  A7              D
+É vida que vence a morte, é vida que vem do Senhor!
+
+[Refrão]
+   D                                  G
+Eis que faço novas todas as coisas,
+                    D
+Que faço novas todas as coisas,
+                    A7                D     A7
+Que faço novas todas as coisas!
+
+[Segunda Parte]
+   D                                  G
+2. Deixei o sepulcro vazio, a morte não me segurou,
+   D                                  A7
+A pedra que então me prendia no terceiro dia rolou!
+   D                                  G
+Deixei o sepulcro vazio, a morte não me segurou,
+   D                  A7              D
+A pedra que então me prendia no terceiro dia rolou!
+
+   D                                  G
+3. Eu hoje lhe dou vida nova, renovo em ti o amor,
+   D                                  A7
+Lhe dou uma nova esperança, tudo o que era velho passou!
+
+[Final]
+   G                  A7              D   Bm
+Tudo o que era velho já passou:
+   Em                 A7              D
+Eis que faço novas todas as coisas!'),
+  ('eugenio-jorge-louvor-e-gloria', 'Louvor e Glória a Ti, Senhor', 'Eugênio Jorge', 'Aclamação ao Evangelho', 'Quaresma', 'G', 88, '4/4', 'Balada Solene de Aclamação', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Louvor+e+Glória+a+Ti,+Senhor+Eugênio+Jorge+cifra', '{"status": "Aclamação ao Evangelho na Quaresma (Substitui o Aleluia)", "score": 98, "documentRef": "IGMR nº 62b; Lecionário da Quaresma", "biblicalRef": "Jo 6, 68; Mt 4, 4", "justification": "Uma das aclamações quaresmais mais tradicionais e cantadas nas paróquias brasileiras durante a Quaresma.", "repertoireType": "liturgica", "specialDay": "Quaresma e CF", "normExplanation": "Aprovada para a Santa Missa (Aclamação ao Evangelho • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] G  C  D7  G  D7
+
+[Refrão]
+   G              C        D7             G
+Louvor e glória a Ti, Senhor,
+   Em             Am       D7             G    G7
+Cristo Palavra, Cristo Palavra de Deus!
+   C              D7       G              Em
+Louvor e glória a Ti, Senhor,
+   Am             D7       G
+Cristo Palavra de Deus!
+
+[Primeira Parte]
+   G                       C
+1. O homem não vive somente de pão,
+   D7                      G
+Mas de toda palavra da boca de Deus!
+   Em                      Am
+Fala, Senhor, que Teu povo escuta,
+   D7                      G
+Tens palavras de vida eterna!
+
+[Refrão]
+   G              C        D7             G
+Louvor e glória a Ti, Senhor,
+   Em             Am       D7             G    G7
+Cristo Palavra, Cristo Palavra de Deus!
+   C              D7       G              Em
+Louvor e glória a Ti, Senhor,
+   Am             D7       G
+Cristo Palavra de Deus!
+
+[Segunda Parte]
+   G                       C
+2. Convertei-vos a Mim de todo o coração,
+   D7                      G
+Porque o Reino dos Céus está próximo a vós!
+   Em                      Am
+Preparai os caminhos do vosso Senhor,
+   D7                      G
+Acolhei a Palavra que salva!
+
+[Final]
+   C              D7       G              Em
+Louvor e glória a Ti, Senhor,
+   Am             D7       G
+Cristo Palavra de Deus!'),
+  ('eugenio-jorge-ao-teu-encontro', 'Ao Teu Encontro', 'Eugênio Jorge', 'Ação de Graças', 'Qualquer', 'C', 70, '4/4', 'Dedilhado / Adoração', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=Ao+Teu+Encontro+Eugênio+Jorge+cifra', '{"status": "Adoração ao Santíssimo Sacramento e Pós-Comunhão", "score": 94, "documentRef": "Ritual da Sagrada Comunhão e o Culto do Mistério Eucarístico Fora da Missa", "biblicalRef": "Sl 41 (42), 2-3; Ct 3, 1-4", "justification": "Cântico intimista de adoração eucarística e busca ardente pela face do Senhor.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am  F  G7  C
+
+[Primeira Parte]
+C                          G/B
+O meu coração tem sede de amar
+Am                         Em
+Venho ao Teu encontro para Te adorar
+F                          C/E
+Como a corça suspira pelas águas vivas
+Dm                         G7
+Minha alma procura a Tua presença divina!
+
+[Refrão]
+   C                       G/B
+Eis-me aqui, Senhor, diante do Teu altar,
+   Am                      Em
+Nada mais importa senão Te contemplar!
+   F                       C/E         Am
+Tua paz me envolve, Teu amor me refaz,
+   Dm         G7           C
+Só em Ti minha alma descansa em paz!
+
+[Segunda Parte]
+C                          G/B
+No silêncio sagrado desta comunhão
+Am                         Em
+Escuto o bater do Teu manso coração
+F                          C/E
+Transforma a minha vida em hóstia de louvor
+Dm                         G7
+Totalmente entregue ao Teu eterno amor!
+
+[Refrão]
+   C                       G/B
+Eis-me aqui, Senhor, diante do Teu altar,
+   Am                      Em
+Nada mais importa senão Te contemplar!
+   F                       C/E         Am
+Tua paz me envolve, Teu amor me refaz,
+   Dm         G7           C
+Só em Ti minha alma descansa em paz!
+
+[Final]
+   F          G7           C   Am
+Tua paz me envolve, Teu amor me refaz,
+   Dm         G7           C
+Venho ao Teu encontro, Senhor!'),
+  ('eugenio-jorge-sonda-me-senhor', 'Sonda-me, Senhor (Tu Me Conheces)', 'Eugênio Jorge', 'Comunhão', 'Tempo Comum', 'Am', 72, '4/4', 'Balada Salmódica', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=Sonda-me,+Senhor+(Tu+Me+Conheces)+Eugênio+Jorge+cifra', '{"status": "Meditação do Salmo 138 (139), Pós-Comunhão e Reconciliação", "score": 96, "documentRef": "Liturgia das Horas; Lecionário Dominical (Salmo 138/139)", "biblicalRef": "Sl 138 (139), 1-24", "justification": "Cântico profundamente bíblico baseado no Salmo 138 (139), rezando a onisciência amorosa de Deus.", "repertoireType": "liturgica", "specialDay": "Missa Dominical (Tempo Comum)", "normExplanation": "Aprovada para a Santa Missa (Comunhão • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] Am  Dm  G  C  E7  Am
+
+[Primeira Parte]
+Am                         Dm
+Senhor, Tu me sondas e me conheces
+G                          C        E7
+Sabes quando me sento e quando me levanto
+Am                         Dm
+De longe penetras os meus pensamentos
+F                          E7
+Percebes meus passos e o meu descanso!
+
+[Refrão]
+   Am                      Dm
+Sonda-me, Senhor, e conhece o meu coração!
+   G                       C        E7
+Prova-me os sentimentos na Tua clara visão!
+   Am                      Dm
+Vê se estou no caminho da iniquidade
+   E7                      Am
+E conduz-me pelo caminho da eternidade!
+
+[Segunda Parte]
+Am                         Dm
+Para onde irei longe do Teu Espírito?
+G                          C        E7
+Para onde fugirei da Tua santa face?
+Am                         Dm
+Se subo até os céus, lá estás comigo,
+F                          E7
+Tua mão direita sempre me conduz e abraça!
+
+[Refrão]
+   Am                      Dm
+Sonda-me, Senhor, e conhece o meu coração!
+   G                       C        E7
+Prova-me os sentimentos na Tua clara visão!
+   Am                      Dm
+Vê se estou no caminho da iniquidade
+   E7                      Am
+E conduz-me pelo caminho da eternidade!
+
+[Final]
+   Dm         E7           Am   F
+Pões sobre mim a Tua santa mão:
+   Dm         E7           Am
+Sonda-me, Senhor, e guarda o meu coração!'),
+  ('nelsinho-correa-quem-perde-sua-vida', 'Quem Perde Sua Vida a Encontrará', 'Diácono Nelsinho Corrêa / Canção Nova', 'Comunhão', 'Quaresma', 'D', 76, '4/4', 'Balada Eucarística / Vocacional', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Quem+Perde+Sua+Vida+a+Encontrará+Diácono+Nelsinho+Corrêa+cifra', '{"status": "Comunhão (5º Domingo da Quaresma, Tempo Comum e Vocacional)", "score": 97, "documentRef": "Lecionário Dominical (5º Dom. da Quaresma - Ano B)", "biblicalRef": "Jo 12, 24-25; Mc 8, 35", "justification": "Clássico litúrgico e vocacional baseado na parábola do grão de trigo que morre para produzir muito fruto (Jo 12,24).", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  A7  D
+
+[Primeira Parte]
+D                          A/C#
+Quem perde sua vida por Mim a encontrará,
+Bm                         F#m
+Quem deixa seu pai por Mim, sua mãe por Mim, me encontrará!
+G                          D/F#
+Não tenhas medo, não tenhas medo,
+Em            A7           D      D7
+Eu estou aqui, Eu estou aqui!
+
+[Refrão]
+   G                       A7
+Quem deixa sua terra por Mim, seus bens por Mim,
+   F#m                     Bm
+Seus filhos por Mim, me encontrará!
+   Em                      A7
+Não tenhas medo, Eu conheço aqueles que escolhi,
+   D                       D7
+Aqueles que escolhi!
+   G                       A7
+Quem perde sua vida por Mim a encontrará,
+   F#m                     Bm
+Quem perde sua vida por Mim a encontrará,
+   Em         A7           D
+Quem perde sua vida por Mim a encontrará!
+
+[Segunda Parte]
+D                          A/C#
+Se o grão de trigo não morre na terra, fica só,
+Bm                         F#m
+Mas se entrega a vida no chão, produz muito fruto!
+G                          D/F#
+Onde Eu estiver, estará também o Meu servidor,
+Em            A7           D      D7
+E o Pai O honrará no Seu imenso amor!
+
+[Refrão]
+   G                       A7
+Quem deixa sua terra por Mim, seus bens por Mim,
+   F#m                     Bm
+Seus filhos por Mim, me encontrará!
+   Em                      A7
+Não tenhas medo, Eu conheço aqueles que escolhi,
+   D                       D7
+Aqueles que escolhi!
+
+[Final]
+   Em         A7           Bm   G
+Não tenhas medo, Eu estou aqui:
+   Em         A7           D
+Quem perde sua vida por Mim a encontrará!'),
+  ('nelsinho-correa-caminhando-com-maria', 'Caminhando com Maria', 'Diácono Nelsinho Corrêa / Canção Nova', 'Ação de Graças', 'Festas Marianas', 'G', 94, '4/4', 'Marcha Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Caminhando+com+Maria+Diácono+Nelsinho+Corrêa+cifra', '{"status": "Canto Mariano Final, Procissões e Romarias", "score": 94, "documentRef": "Diretório sobre Piedade Popular e Liturgia", "biblicalRef": "Lc 1, 38-45; Jo 19, 26-27", "justification": "Cântico mariano de caminhada pastoral, celebrando a presença materna de Maria junto ao povo peregrino.", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  C  D7  G  D7
+
+[Primeira Parte]
+G                          Bm
+Santa Mãe Maria, nessa travessia
+C             D7           G       G7
+Cubra-nos Teu manto cor de anil!
+C                          G          Em
+Guarda nossa vida, Mãe Aparecida,
+Am            D7           G          G7
+Santa Padroeira do Brasil!
+
+[Refrão]
+   C          D7           G          Em
+Ave, Maria! Ave, Maria!
+   Am         D7           G          G7
+Caminhando com Maria vamos a Jesus!
+   C          D7           G          Em
+Ave, Maria! Ave, Maria!
+   Am         D7           G
+Caminhando com Maria vamos para a luz!
+
+[Segunda Parte]
+G                          Bm
+Mulher peregrina, força feminina
+C             D7           G       G7
+A mais importante que existiu!
+C                          G          Em
+Com justiça queres que nossas mulheres
+Am            D7           G          G7
+Sejam construtoras do Brasil!
+
+[Refrão]
+   C          D7           G          Em
+Ave, Maria! Ave, Maria!
+   Am         D7           G          G7
+Caminhando com Maria vamos a Jesus!
+   C          D7           G          Em
+Ave, Maria! Ave, Maria!
+   Am         D7           G
+Caminhando com Maria vamos para a luz!
+
+[Final]
+   C          D7           G   Em
+Guarda nossa vida, Mãe Aparecida:
+   Am         D7           G
+Caminhando com Maria vamos a Jesus!'),
+  ('nelsinho-correa-foi-assim', 'Foi Assim', 'Diácono Nelsinho Corrêa / Canção Nova', 'Ação de Graças', 'Qualquer', 'C', 74, '4/4', 'Balada Testemunhal', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Foi+Assim+Diácono+Nelsinho+Corrêa+cifra', '{"status": "Ação de Graças e Testemunho Vocacional", "score": 90, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Jr 20, 7; Fl 3, 8-12", "justification": "Canção de gratidão pelo encontro pessoal com Cristo que transforma toda a história de vida.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am  F  G7  C
+
+[Primeira Parte]
+C                          G/B
+Conheci um mundo mau e com ele seus ardis
+Am                         Em
+Me afastei do Teu caminho procurando ser feliz
+F                          C/E
+Mas Tu vieste ao meu encontro com Teu olhar de compaixão
+Dm                         G7
+E resgataste a minha vida segurando a minha mão!
+
+[Refrão]
+   C                       G/B
+Foi assim que me salvaste, meu Senhor,
+   Am                      Em
+Com a força invencível do Teu amor!
+   F                       C/E         Am
+Hoje tudo o que eu sou pertence a Ti,
+   Dm         G7           C
+Pois a verdadeira vida em Ti descobri!
+
+[Segunda Parte]
+C                          G/B
+Já não olho para trás, deixei tudo por Jesus
+Am                         Em
+Para seguir os Teus passos carregando a minha cruz
+F                          C/E
+Tua graça me sustenta em cada novo alvorecer
+Dm                         G7
+Para sempre em Tua casa eu desejo permanecer!
+
+[Refrão]
+   C                       G/B
+Foi assim que me salvaste, meu Senhor,
+   Am                      Em
+Com a força invencível do Teu amor!
+   F                       C/E         Am
+Hoje tudo o que eu sou pertence a Ti,
+   Dm         G7           C
+Pois a verdadeira vida em Ti descobri!
+
+[Final]
+   F          G7           C   Am
+Hoje tudo o que eu sou pertence a Ti:
+   Dm         G7           C
+Obrigado, meu Senhor, por me amar assim!'),
+  ('nelsinho-correa-primeiro-amor', 'Quero Voltar ao Meu Primeiro Amor', 'Diácono Nelsinho Corrêa / Canção Nova', 'Ato Penitencial', 'Quaresma', 'A', 72, '4/4', 'Balada de Conversão', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Quero+Voltar+ao+Meu+Primeiro+Amor+Diácono+Nelsinho+Corrêa+cifra', '{"status": "Celebrações Penitenciais, Retiros e Pós-Comunhão", "score": 91, "documentRef": "Estudo 79 CNBB", "biblicalRef": "Ap 2, 4-5; Os 2, 16", "justification": "Prece de retorno ao fervor original da aliança com Deus, inspirada na carta à Igreja de Éfeso (Ap 2,4).", "repertoireType": "liturgica", "specialDay": "Quaresma e CF", "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."}'::jsonb, '[Intro] A  E/G#  F#m  D  E7  A
+
+[Primeira Parte]
+A                          E/G#
+Senhor, o tempo foi passando e meu coração esfriou
+F#m                        C#m
+Na correria desta vida a minha chama vacilou
+D                          A/C#
+Mas hoje escuto o Teu chamado a me atrair ao deserto
+Bm                         E7
+Para falar ao meu ouvido e ter-me sempre por perto!
+
+[Refrão]
+   A                       E/G#
+Quero voltar ao meu primeiro amor,
+   F#m                     C#m
+Sentir de novo o Teu abraço, meu Senhor!
+   D                       A/C#        F#m
+Reacende em minha alma o fogo da paixão,
+   Bm         E7           A
+Toma inteiramente o meu coração!
+
+[Segunda Parte]
+A                          E/G#
+Como no dia do batismo e da primeira comunhão
+F#m                        C#m
+Devolve a pureza santa à minha humilde oração
+D                          A/C#
+Sem Ti eu nada posso ser, Tu és a fonte do viver
+Bm                         E7
+Somente aos pés da Tua cruz eu quero permanecer!
+
+[Refrão]
+   A                       E/G#
+Quero voltar ao meu primeiro amor,
+   F#m                     C#m
+Sentir de novo o Teu abraço, meu Senhor!
+   D                       A/C#        F#m
+Reacende em minha alma o fogo da paixão,
+   Bm         E7           A
+Toma inteiramente o meu coração!
+
+[Final]
+   D          E7           F#m   D
+Reacende em minha alma o fogo da paixão:
+   Bm         E7           A
+Volto a Ti, meu primeiro amor!'),
+  ('toca-de-assis-pra-sempre-teu', 'Pra Sempre Teu', 'Fraternidade Toca de Assis', 'Ação de Graças', 'Qualquer', 'G', 70, '4/4', 'Dedilhado Eucarístico', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=Pra+Sempre+Teu+Fraternidade+Toca+de+Assis+cifra', '{"status": "Adoração ao Santíssimo Sacramento, Pós-Comunhão e Consagração", "score": 95, "documentRef": "Ritual do Culto Eucarístico; Espiritualidade Eucarística", "biblicalRef": "Ct 6, 3; Jo 6, 68", "justification": "Cântico de adoração profunda ao Santíssimo Sacramento e consagração total da vida a Jesus Hóstia Santa.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em  C  D7  G
+
+[Primeira Parte]
+G                          D/F#
+Diante da Hóstia Santa me coloco em adoração
+Em                         Bm
+Contemplo o Mistério excelso da Tua imolação
+C                          G/B
+Tão pequeno no ostensório e tão grande no amor
+Am                         D7
+Tu és o Rei do Universo, meu Deus e meu Senhor!
+
+[Refrão]
+   G                       D/F#
+Quero ser pra sempre Teu, somente Teu, Jesus,
+   Em                      Bm
+Adorar-Te no altar e abraçar a Tua cruz!
+   C                       G/B         Em
+Nos pobres sofredores ver o Teu olhar brilhar,
+   Am         D7           G
+Pra sempre Teu eu quero ser e Te amar!
+
+[Segunda Parte]
+G                          D/F#
+Como São Francisco em Assis quero viver na pobreza
+Em                         Bm
+Encontrando em Teu Corpo a verdadeira riqueza
+C                          G/B
+Sacia a fome da minh''alma com o Pão Celestial
+Am                         D7
+E recebe a minha entrega num amor esponsal!
+
+[Refrão]
+   G                       D/F#
+Quero ser pra sempre Teu, somente Teu, Jesus,
+   Em                      Bm
+Adorar-Te no altar e abraçar a Tua cruz!
+   C                       G/B         Em
+Nos pobres sofredores ver o Teu olhar brilhar,
+   Am         D7           G
+Pra sempre Teu eu quero ser e Te amar!
+
+[Final]
+   C          D7           Em   C
+Adorado seja sempre o Santíssimo Sacramento:
+   Am         D7           G
+Sou pra sempre Teu, Senhor!'),
+  ('toca-de-assis-todo-teu-o-mae', 'Todo Teu, ó Mãe', 'Fraternidade Toca de Assis', 'Ação de Graças', 'Festas Marianas', 'D', 72, '4/4', 'Balada Mariana Suave', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=Todo+Teu,+ó+Mãe+Fraternidade+Toca+de+Assis+cifra', '{"status": "Consagração a Nossa Senhora e Canto Mariano Final", "score": 94, "documentRef": "Lumen Gentium nº 60-62; Tratado da Verdadeira Devoção", "biblicalRef": "Jo 19, 26-27; Lc 1, 38", "justification": "Oração cantada do ''Totus Tuus'', consagrando a vida a Jesus pelas mãos imaculadas da Virgem Maria.", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  A7  D
+
+[Primeira Parte]
+D                          A/C#
+Aos pés da cruz o Teu Filho nos confiou a Ti
+Bm                         F#m
+"Eis aí a tua Mãe!", com amor eu acolhi
+G                          D/F#
+Recebe em tua casa o meu frágil coração
+Em                         A7
+Modela a minha vida na escola da oração!
+
+[Refrão]
+   D                       A/C#
+Sou todo Teu, ó Mãe, tudo o que sou pertence a Ti!
+   Bm                      F#m
+Conduze os meus passos no caminho que escolhi!
+   G                       D/F#        Bm
+Ensina-me a adorar Teu Filho no altar,
+   Em         A7           D
+Todo Teu, ó Mãe, para mais a Cristo amar!
+
+[Segunda Parte]
+D                          A/C#
+Virgem do silêncio, Esposa do Espírito de Amor
+Bm                         F#m
+Guarda minha vocação sob o teu manto protetor
+G                          D/F#
+Quando a noite for escura sê estrela a reluzir
+Em                         A7
+E ajuda-me fiel até o fim perseverar e servir!
+
+[Refrão]
+   D                       A/C#
+Sou todo Teu, ó Mãe, tudo o que sou pertence a Ti!
+   Bm                      F#m
+Conduze os meus passos no caminho que escolhi!
+   G                       D/F#        Bm
+Ensina-me a adorar Teu Filho no altar,
+   Em         A7           D
+Todo Teu, ó Mãe, para mais a Cristo amar!
+
+[Final]
+   G          A7           Bm   G
+Totus Tuus, Maria, Mãe do Salvador:
+   Em         A7           D
+Sou todo Teu por amor!'),
+  ('toca-de-assis-cantico-das-criaturas', 'Cântico das Criaturas (Altíssimo, Onipotente, Bom Senhor)', 'Fraternidade Toca de Assis', 'Ação de Graças', 'Tempo Comum', 'C', 96, '4/4', 'Balada Franciscana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Cântico+das+Criaturas+(Altíssimo,+Onipotente,+Bom+Senhor)+Fraternidade+Toca+de+Assis+cifra', '{"status": "Ação de Graças, Festa de São Francisco de Assis (4 de Outubro) e Ecologia Integral", "score": 97, "documentRef": "Fontes Franciscanas (Cântico do Irmão Sol); Laudato Si''", "biblicalRef": "Dn 3, 57-88; Sl 148", "justification": "Adaptação musical do Cântico das Criaturas de São Francisco de Assis (''Laudato Si, mi Signore'').", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  F  G7  C  Am  Dm  G7  C
+
+[Primeira Parte]
+C                          Em
+Altíssimo, Onipotente, Bom Senhor,
+F                          G7
+Teus são o louvor, a glória e a honra e toda a bênção!
+Am                         Em
+A Ti só, Altíssimo, se hão de prestar,
+Dm            G7           C        C7
+E homem algum é digno de Te mencionar!
+
+[Refrão]
+   F          G7           C          Am
+Louvado sejas, meu Senhor, com todas as Tuas criaturas!
+   Dm         G7           C          C7
+Louvado sejas, meu Senhor, pelo Irmão Sol que nos ilumina!
+   F          G7           C          Am
+Pela Irmã Lua e as estrelas claras e preciosas no céu,
+   Dm         G7           C
+Louvado sejas, meu Senhor!
+
+[Segunda Parte]
+C                          Em
+Louvado sejas pelo Irmão Vento e pelo ar,
+F                          G7
+Pela Irmã Água, tão humilde, útil e casta!
+Am                         Em
+Pelo Irmão Fogo que ilumina a noite e é robusto e forte,
+Dm            G7           C        C7
+E pela nossa Irmã, a Mãe Terra, que nos sustenta e governa!
+
+   C                          Em
+Louvado sejas pelos que perdoam pelo Teu amor,
+F                          G7
+E suportam enfermidades e tribulações em paz!
+Am                         Em
+Louvai e bendizei a meu Senhor e dai-Lhe graças,
+Dm            G7           C        C7
+E servi-O com grande humildade!
+
+[Refrão]
+   F          G7           C          Am
+Louvado sejas, meu Senhor, com todas as Tuas criaturas!
+   Dm         G7           C          C7
+Louvado sejas, meu Senhor, pelo Irmão Sol que nos ilumina!
+   F          G7           C          Am
+Pela Irmã Lua e as estrelas claras e preciosas no céu,
+   Dm         G7           C
+Louvado sejas, meu Senhor!
+
+[Final]
+   F          G7           C   Am
+Louvai e bendizei a meu Senhor:
+   Dm         G7           C
+Servi-O com grande humildade!'),
+  ('fsjpii-exercito-de-deus', 'Exército de Deus', 'Fraternidade São João Paulo II', 'Final', 'Tempo Comum', 'Em', 116, '4/4', 'Pop Rock / Marcha Jovem', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Exército+de+Deus+Fraternidade+São+João+Paulo+II+cifra', '{"status": "Envio em Missas da Juventude, Encontros Vocacionais e Retiros", "score": 89, "documentRef": "Estudo 79 CNBB (Pastoral Juvenil)", "biblicalRef": "Ef 6, 10-17; Jl 2, 11", "justification": "Cântico de ardor missionário da Fraternidade São João Paulo II sobre o combate espiritual pela fé e pelo amor.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  G  D  Em  C  G  D
+
+[Primeira Parte]
+Em                         C
+Ouço o som da trombeta que chama a despertar
+G                          D
+É tempo de levantar e o Evangelho proclamar!
+Em                         C
+Revestidos da armadura da justiça e da fé
+G                          D
+Com a Virgem Maria permanecemos de pé!
+
+[Refrão]
+   Em                      C
+Somos o exército de Deus marchando na luz!
+   G                       D
+Nossa vitória é o Sangue de Jesus!
+   Em                      C
+Com o terço na mão e o Evangelho no coração,
+   G          D            Em
+Levamos ao mundo a salvação!
+
+[Segunda Parte]
+Em                         C
+Não tememos as sombras, pois Cristo já venceu
+G                          D
+O Seu Espírito Santo sobre nós já desceu!
+Em                         C
+Jovens consagrados à verdade e ao amor
+G                          D
+Inteiramente entregues a serviço do Senhor!
+
+[Refrão]
+   Em                      C
+Somos o exército de Deus marchando na luz!
+   G                       D
+Nossa vitória é o Sangue de Jesus!
+   Em                      C
+Com o terço na mão e o Evangelho no coração,
+   G          D            Em
+Levamos ao mundo a salvação!
+
+[Final]
+   C          D            G    Em
+Nossa vitória é o Sangue de Jesus:
+   C          D            Em
+Marchando sempre na Tua luz!'),
+  ('fsjpii-maria-porta-do-ceu', 'Maria, Porta do Céu', 'Fraternidade São João Paulo II', 'Ação de Graças', 'Festas Marianas', 'G', 74, '4/4', 'Balada Mariana', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Maria,+Porta+do+Céu+Fraternidade+São+João+Paulo+II+cifra', '{"status": "Canto Mariano Final e Festas da Virgem Maria", "score": 94, "documentRef": "Ladainha Lauretana (Ianua Coeli); Missal Romano", "biblicalRef": "Gn 28, 17; Lc 1, 28", "justification": "Hino mariano contemplativo que invoca Nossa Senhora sob o título litúrgico de Porta do Céu.", "repertoireType": "popular", "specialDay": "Solenidades Marianas", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em  C  D7  G
+
+[Primeira Parte]
+G                          D/F#
+Mais bela que a aurora que anuncia o novo dia
+Em                         Bm
+És o lírio imaculado onde o próprio Deus habita
+C                          G/B
+Arca da Nova Aliança, escolhida pelo Pai
+Am                         D7
+Ao encontro do Teu Filho nossa alma atraí!
+
+[Refrão]
+   G                       D/F#
+Maria, Porta do Céu, Estrela da Manhã,
+   Em                      Bm
+Refúgio seguro da família cristã!
+   C                       G/B         Em
+Acolhe em Teu colo este povo em oração
+   Am         D7           G
+E leva-nos sempre a Jesus, a salvação!
+
+[Segunda Parte]
+G                          D/F#
+Com São João Paulo Segundo aprendemos a dizer:
+Em                         Bm
+"Totus Tuus, ó Maria!", em Teu manto me esconder
+C                          G/B
+Guarda os sacerdotes, os jovens e os casais
+Am                         D7
+Derrama sobre a Igreja o perfume da Tua paz!
+
+[Refrão]
+   G                       D/F#
+Maria, Porta do Céu, Estrela da Manhã,
+   Em                      Bm
+Refúgio seguro da família cristã!
+   C                       G/B         Em
+Acolhe em Teu colo este povo em oração
+   Am         D7           G
+E leva-nos sempre a Jesus, a salvação!
+
+[Final]
+   C          D7           Em   C
+Maria, Porta do Céu, rogai por nós:
+   Am         D7           G
+Leva-nos sempre a Jesus!'),
+  ('alianca-misericordia-o-espirito-do-senhor', 'O Espírito do Senhor Está Sobre Mim', 'Comunidade Aliança de Misericórdia', 'Entrada', 'Tempo Comum', 'Am', 92, '4/4', 'Toada Profética / Balada', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=O+Espírito+do+Senhor+Está+Sobre+Mim+Comunidade+Aliança+de+Misericórdia+cifra', '{"status": "Entrada, Envio Missionário, Crisma e Missa do Crisma", "score": 97, "documentRef": "Lecionário (3º Dom. do Tempo Comum - Ano C; Missa do Crisma)", "biblicalRef": "Is 61, 1-2; Lc 4, 18-19", "justification": "Canto carismático e profundamente bíblico baseado na leitura de Jesus na sinagoga de Nazaré (Lc 4,18-19).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Am  Dm  E7  Am  E7
+
+[Refrão]
+   Am                                    Dm
+O Espírito do Senhor está sobre mim!
+   G                                     C          E7
+O Espírito do Senhor me ungiu e me enviou:
+   Am                                    Dm
+Para evangelizar os pobres, curar os corações feridos,
+   E7                                    Am
+E proclamar o ano da graça do Senhor!
+
+[Primeira Parte]
+   Am                                    Dm
+1. Enviou-me a levar a Boa Nova aos pequeninos,
+   G                                     C          E7
+Anunciar aos cativos a libertação!
+   Am                                    Dm
+Dar a vista aos cegos e a luz aos oprimidos,
+   E7                                    Am
+Derramando nos irmãos a Sua compaixão!
+
+[Refrão]
+   Am                                    Dm
+O Espírito do Senhor está sobre mim!
+   G                                     C          E7
+O Espírito do Senhor me ungiu e me enviou:
+   Am                                    Dm
+Para evangelizar os pobres, curar os corações feridos,
+   E7                                    Am
+E proclamar o ano da graça do Senhor!
+
+[Segunda Parte]
+   Am                                    Dm
+2. Trocar a cinza da tristeza em coroa de alegria,
+   G                                     C          E7
+O pranto da noite em óleo de consolação!
+   Am                                    Dm
+Veste de louvor para o povo que sofria,
+   E7                                    Am
+Igreja viva da Misericórdia em missão!
+
+[Final]
+   Dm                    E7              Am   F
+Para evangelizar os pobres me enviou:
+   Dm                    E7              Am
+Hoje se cumpre esta Palavra entre nós!'),
+  ('alianca-misericordia-pai-das-misericordias', 'Pai das Misericórdias', 'Comunidade Aliança de Misericórdia', 'Ação de Graças', 'Quaresma', 'D', 72, '4/4', 'Balada de Adoração', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 5, 'https://www.youtube.com/results?search_query=Pai+das+Misericórdias+Comunidade+Aliança+de+Misericórdia+cifra', '{"status": "Pós-Comunhão, Domingo da Divina Misericórdia e Quaresma", "score": 95, "documentRef": "Missal Romano (2º Domingo da Páscoa / 4º Dom. da Quaresma - Ano C)", "biblicalRef": "2Cor 1, 3; Lc 15, 11-32", "justification": "Hino ao Pai das Misericórdias e Deus de toda consolação (2Cor 1,3), inspirado na parábola do Pai Misericordioso.", "repertoireType": "popular", "specialDay": "Quaresma e CF", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  A7  D
+
+[Primeira Parte]
+D                          A/C#
+Mesmo de longe Tu me viste retornar
+Bm                         F#m
+E correste ao meu encontro só pra me abraçar
+G                          D/F#
+Pões o anel em meu dedo, sandálias em meus pés
+Em                         A7
+Tu és o Pai bondoso e para sempre fiel!
+
+[Refrão]
+   D                       A/C#
+Pai das Misericórdias, Deus de toda consolação,
+   Bm                      G
+No Teu colo santo encontra paz meu coração!
+   D                       A/C#        Bm
+Teu amor é maior que toda a minha dor,
+   Em         A7           D
+Bendito sejas para sempre, meu Senhor!
+
+[Segunda Parte]
+D                          A/C#
+Não olhaste para a poeira da minha ingratidão
+Bm                         F#m
+Fizeste festa em Tua casa pelo meu perdão
+G                          D/F#
+Este teu filho estava morto e voltou a viver
+Em                         A7
+Em Tua misericórdia quero sempre permanecer!
+
+[Refrão]
+   D                       A/C#
+Pai das Misericórdias, Deus de toda consolação,
+   Bm                      G
+No Teu colo santo encontra paz meu coração!
+   D                       A/C#        Bm
+Teu amor é maior que toda a minha dor,
+   Em         A7           D
+Bendito sejas para sempre, meu Senhor!
+
+[Final]
+   G          A7           Bm   G
+No Teu colo santo encontra paz meu coração:
+   Em         A7           D
+Pai das Misericórdias!'),
+  ('comunidade-recado-seja-luz', 'Seja Luz', 'Comunidade Recado', 'Final', 'Tempo Comum', 'G', 98, '4/4', 'Pop Litúrgico', '↓  ↓ ↑  ↑ ↓ ↑', true, true, 4, 'https://www.youtube.com/results?search_query=Seja+Luz+Comunidade+Recado+cifra', '{"status": "Comunhão ou Envio no 5º Domingo do Tempo Comum (Ano A)", "score": 96, "documentRef": "Lecionário Dominical (5º Dom. do Tempo Comum - Ano A)", "biblicalRef": "Mt 5, 13-16; Ef 5, 8", "justification": "Cântico diretamente inspirado no Sermão da Montanha (''Vós sois o sal da terra e a luz do mundo'', Mt 5,13-16).", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] G  D/F#  Em  C  D7  G
+
+[Primeira Parte]
+G                          D/F#
+Não se acende uma lâmpada para a esconder
+Em                         Bm
+Mas no alto se coloca para a todos esclarecer
+C                          G/B
+Vós sois o sal da terra, vós sois a luz do mundo
+Am                         D7
+Levai a toda parte este amor tão profundo!
+
+[Refrão]
+   G                       D/F#
+Seja luz onde houver escuridão,
+   Em                      C
+Seja sal que dá sabor ao coração!
+   G                       D/F#        Em
+Brilhe a vossa luz diante dos irmãos,
+   Am         D7           G
+Para que glorifiquem o Pai da criação!
+
+[Segunda Parte]
+G                          D/F#
+Com gestos de bondade, justiça e compaixão
+Em                         Bm
+Mostrai que o Evangelho transforma a nação
+C                          G/B
+Unidos a Jesus, a verdadeira Luz
+Am                         D7
+Caminhemos confiantes na graça que conduz!
+
+[Refrão]
+   G                       D/F#
+Seja luz onde houver escuridão,
+   Em                      C
+Seja sal que dá sabor ao coração!
+   G                       D/F#        Em
+Brilhe a vossa luz diante dos irmãos,
+   Am         D7           G
+Para que glorifiquem o Pai da criação!
+
+[Final]
+   C          D7           Em   C
+Brilhe a vossa luz diante dos irmãos:
+   Am         D7           G
+Seja luz no Senhor!'),
+  ('comunidade-recado-renascer', 'Renascer no Espírito', 'Comunidade Recado', 'Ação de Graças', 'Páscoa', 'C', 76, '4/4', 'Balada de Renovação', '↓  ↓ ↑  ↑ ↓ ↑', false, true, 5, 'https://www.youtube.com/results?search_query=Renascer+no+Espírito+Comunidade+Recado+cifra', '{"status": "Pós-Comunhão no Tempo Pascal, Pentecostes e Batismo", "score": 93, "documentRef": "Lecionário Pascal (Diálogo com Nicodemos)", "biblicalRef": "Jo 3, 3-8; Tt 3, 5", "justification": "Cântico inspirado no diálogo de Jesus com Nicodemos (Jo 3,5) sobre o renascimento da água e do Espírito.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] C  G/B  Am  F  G7  C
+
+[Primeira Parte]
+C                          G/B
+O vento sopra onde quer e ouves a sua voz
+Am                         Em
+Assim é o Espírito de Deus agindo hoje em nós
+F                          C/E
+Quem não nascer da água e do Espírito de Amor
+Dm                         G7
+Não pode contemplar a beleza do Senhor!
+
+[Refrão]
+   C                       G/B
+Faz-me renascer no Teu Espírito, Senhor,
+   Am                      Em
+Dá-me um coração novo, cheio do Teu fervor!
+   F                       C/E         Am
+Lava o meu passado na fonte do perdão,
+   Dm         G7           C
+Faz de mim criatura nova em Tua mão!
+
+[Segunda Parte]
+C                          G/B
+Do alto vem a graça que restaura o meu viver
+Am                         Em
+Em Cristo ressurgido aprendo a vencer
+F                          C/E
+Guiado pela luz que emana lá da cruz
+Dm                         G7
+Camino na alegria do Espírito de Jesus!
+
+[Refrão]
+   C                       G/B
+Faz-me renascer no Teu Espírito, Senhor,
+   Am                      Em
+Dá-me um coração novo, cheio do Teu fervor!
+   F                       C/E         Am
+Lava o meu passado na fonte do perdão,
+   Dm         G7           C
+Faz de mim criatura nova em Tua mão!
+
+[Final]
+   F          G7           C   Am
+Lava o meu passado na fonte do perdão:
+   Dm         G7           C
+Renascer no Teu Espírito, Senhor!'),
+  ('ir-ana-paula-fogo-abrasador', 'Fogo Abrasador (Vem, Espírito)', 'Irmã Ana Paula', 'Ação de Graças', 'Páscoa', 'Em', 70, '4/4', 'Balada Contemplativa / Carmelita', 'P  I  M  A  M  I', true, true, 4, 'https://www.youtube.com/results?search_query=Fogo+Abrasador+(Vem,+Espírito)+Irmã+Ana+Paula+cifra', '{"status": "Vigília de Pentecostes, Adoração ao Santíssimo e Oração Interior", "score": 94, "documentRef": "Liturgia de Pentecostes; Mística Carmelita (São João da Cruz)", "biblicalRef": "At 2, 1-4; Ct 8, 6", "justification": "Cântico profundamente contemplativo da Irmã Ana Paula, invocando o Fogo Abrasador do Espírito Santo.", "repertoireType": "popular", "specialDay": "Pentecostes", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] Em  C  G  D  Em  C  G  D
+
+[Primeira Parte]
+Em                         C
+No silêncio do cenáculo esperamos por Ti
+G                          D
+Com Maria em oração, vem, Senhor, descer aqui
+Em                         C
+Toca o mais profundo da nossa solidão
+G                          D
+E inflama de amor todo o nosso coração!
+
+[Refrão]
+   Em                      C
+Vem, Espírito, Fogo Abrasador!
+   G                       D
+Chama viva de eterno amor!
+   Em                      C
+Queima em nós tudo o que não vem de Ti,
+   G          D            Em
+Vem, Espírito Santo, habitar aqui!
+
+[Segunda Parte]
+Em                         C
+Ó Doce Hóspede da alma, orvalho divinal
+G                          D
+Consolo no deserto e luz celestial
+Em                         C
+Transforma a nossa vida num altar de adoração
+G                          D
+Totalmente consumida pela Tua unção!
+
+[Refrão]
+   Em                      C
+Vem, Espírito, Fogo Abrasador!
+   G                       D
+Chama viva de eterno amor!
+   Em                      C
+Queima em nós tudo o que não vem de Ti,
+   G          D            Em
+Vem, Espírito Santo, habitar aqui!
+
+[Final]
+   C          D            G    Em
+Chama viva de eterno amor:
+   C          D            Em
+Vem, Espírito, Fogo Abrasador!'),
+  ('ir-ana-paula-meu-hospede', 'Meu Hóspede', 'Irmã Ana Paula', 'Ação de Graças', 'Qualquer', 'D', 68, '4/4', 'Dedilhado / Oração Carmelita', 'P  I  M  A  M  I', true, true, 5, 'https://www.youtube.com/results?search_query=Meu+Hóspede+Irmã+Ana+Paula+cifra', '{"status": "Ação de Graças Pós-Comunhão e Oração de Recolhimento", "score": 96, "documentRef": "IGMR nº 88 (Silêncio e Cântico de Ação de Graças); Santa Teresa d''Ávila (Caminho de Perfeição)", "biblicalRef": "Jo 14, 23; Ap 3, 20", "justification": "Joia da música contemplativa católica para o momento de recolhimento interior após receber a Sagrada Comunhão.", "repertoireType": "popular", "specialDay": "Encontros, Retiros e Grupo de Oração", "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."}'::jsonb, '[Intro] D  A/C#  Bm  G  A7  D
+
+[Primeira Parte]
+D                          A/C#
+Fecho os olhos para o mundo e abro a porta interior
+Bm                         F#m
+Pois em meu peito agora habita o meu Deus e meu Senhor
+G                          D/F#
+Não preciso ir tão longe para Te procurar
+Em                         A7
+Se dentro de minh''alma escolheste repousar!
+
+[Refrão]
+   D                       A/C#
+Meu Hóspede Divino, meu Amado e meu Rei,
+   Bm                      F#m
+Em Tua doce presença para sempre ficarei!
+   G                       D/F#        Bm
+Fala no meu silêncio, reclina em mim a Tua fronte,
+   Em         A7           D
+Pois Tu és o meu céu e a minha fonte!
+
+[Segunda Parte]
+D                          A/C#
+Como em Betânia na casa de Marta e de Maria
+Bm                         F#m
+Escolho a melhor parte aos Teus pés em alegria
+G                          D/F#
+Nada me perturbe, nada me espante o coração
+Em                         A7
+Quem a Deus tem nada lhe falta nesta santa comunhão!
+
+[Refrão]
+   D                       A/C#
+Meu Hóspede Divino, meu Amado e meu Rei,
+   Bm                      F#m
+Em Tua doce presença para sempre ficarei!
+   G                       D/F#        Bm
+Fala no meu silêncio, reclina em mim a Tua fronte,
+   Em         A7           D
+Pois Tu és o meu céu e a minha fonte!
+
+[Final]
+   G          A7           Bm   G
+Só Deus basta ao meu coração:
+   Em         A7           D
+Fica comigo, meu Hóspede e Senhor!')
 ON CONFLICT (id) DO UPDATE SET
   title = EXCLUDED.title,
   composer = EXCLUDED.composer,

@@ -1001,11 +1001,13 @@ def classify_song_liturgical_and_theme(song):
                 "rosa de saron", "anjos de resgate", "colo de deus", "thiago brado",
                 "frei gilson", "tony allysson", "diego fernandes", "dunga",
                 "pe. ferguson", "alessandro campos", "reginaldo manzotti",
-                "fábio de melo", "martin valverde", "banda dom", "ceremonya",
+                "fábio de melo", "martin valverde", "banda dom", "dominus", "ceremonya",
                 "juninho cassimiro", "ana gabriela", "italo vilar", "eros biondini",
                 "fraternidade", "toca de assis", "aliança de misericórdia",
                 "recado", "pantokrator", "obra de maria", "sementes do verbo",
-                "palavra viva", "mar a dentro", "hesed",
+                "palavra viva", "mar a dentro", "hesed", "kelly patrícia",
+                "celina borges", "adriana arydes", "davidson silva", "catequese",
+                "nelsinho", "jonas abib", "antônio maria",
             ]
         ) and "igmr" not in igmr:
             is_popular = True

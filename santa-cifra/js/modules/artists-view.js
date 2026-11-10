@@ -10,29 +10,77 @@ window.SantaCifra = window.SantaCifra || {};
 (function () {
   const SC = window.SantaCifra;
 
-  // Trechos do campo composer que descrevem a origem do texto, não um artista.
-  const NOT_AN_ARTIST = /^(salmo|sl\b|mateus|marcos|lucas|jo[aã]o \d|melodia|f[oó]rmula|meditativo|lit[uú]rgico$|popular lit[uú]rgico|solenidade|texto oficial|repert[oó]rio|vers[aã]o|adapta[cç][aã]o|letra|m[uú]sica:)/i;
+  // Trechos do campo composer que descrevem a origem bíblica/litúrgica do texto, não um artista.
+  const NOT_AN_ARTIST = /^(salmo|sl\b|isa[ií]as|mateus|marcos|lucas|jo[aã]o\b|1\s*jo[aã]o|apocalipse|ef[eé]sios|filipenses|romanos|g[eê]nesis|[eê]xodo|c[aâ]ntico\b|melodia|f[oó]rmula|meditativo|lit[uú]rgico$|liturgia\b|popular lit[uú]rgico|solenidade|texto oficial|repert[oó]rio|vers[aã]o|adapta[cç][aã]o|letra|m[uú]sica:|padre$|adora[cç][aã]o$|comunh[aã]o$|ofert[oó]rio$|devocional$|ora[cç][aã]o\b|sequ[eê]ncia\b|ant[ií]fona\b|hino\b|hin[aá]rio (de|do|da|eucar[ií]stico|mariano|paroquial|popular|tradicional)|tradi[cç][aã]o\b|tradicional\b)/i;
 
   const ALIASES = {
+    'Padre Jonas Abib': 'Monsenhor Jonas Abib',
+    'Jonas Abib': 'Monsenhor Jonas Abib',
+    'Reginaldo Veloso': 'Padre Reginaldo Veloso',
+    'Lindberg Pires': 'Padre Lindberg Pires',
+    'Padre José Cândido da Silva': 'Padre José Cândido',
+    'José Cândido': 'Padre José Cândido',
+    'José Weber': 'Padre José Weber',
+    'Jocy Rodrigues': 'Padre Jocy Rodrigues',
+    'Ney Brasil': 'Padre Ney Brasil',
+    'Ney Brasil Pereira': 'Padre Ney Brasil',
+    'Padre Ney Brasil Pereira': 'Padre Ney Brasil',
+    'Silvio Milanez': 'Padre Silvio Milanez',
+    'Lúcio Floro': 'Padre Lúcio Floro',
+    'Nelsinho Corrêa': 'Diácono Nelsinho Corrêa',
+    'Padre Nelsinho Corrêa': 'Diácono Nelsinho Corrêa',
+    'Irmã Miria Kolling': 'Irmã Miria T. Kolling',
+    'Irmã Míria T. Kolling': 'Irmã Miria T. Kolling',
+    'Irmã Míria Kolling': 'Irmã Miria T. Kolling',
+    'Miria T. Kolling': 'Irmã Miria T. Kolling',
+    'Santo Tomás de Aquino': 'São Tomás de Aquino',
+    'São Francisco': 'São Francisco de Assis',
+    'Taizé': 'Comunidade de Taizé',
+    'Taizé & Liturgia': 'Comunidade de Taizé',
+    'Comunidade Canção Nova': 'Canção Nova',
+    'Ministério Canção Nova': 'Canção Nova',
     'Comunidade Shalom': 'Comunidade Católica Shalom',
-    'Hinário Litúrgico': 'Hinário Litúrgico CNBB',
-    'Lecionário': 'Lecionário Dominical',
-    'Tradicional': 'Tradicional Litúrgico',
+    'Missionário Shalom': 'Comunidade Católica Shalom',
+    'Shalom': 'Comunidade Católica Shalom',
     'Colo de Deus': 'Comunidade Colo de Deus',
-    'Adoração e Vida': 'Ministério Adoração e Vida'
+    'Adoração e Vida': 'Ministério Adoração e Vida',
+    'Amor e Adoração': 'Ministério Amor e Adoração',
+    'Toca de Assis': 'Fraternidade Toca de Assis',
+    'Obra de Maria': 'Comunidade Obra de Maria',
+    'Doce Mãe de Deus': 'Comunidade Doce Mãe de Deus',
+    'Catequese': 'Catequese Católica',
+    'Pastoral Catequética': 'Catequese Católica',
+    'Catequese Infantil': 'Catequese Católica',
+    'Hinário Litúrgico': 'Hinário Litúrgico CNBB',
+    'Hinário CNBB': 'Hinário Litúrgico CNBB',
+    'CNBB': 'Hinário Litúrgico CNBB',
+    'Lecionário': 'Lecionário Dominical'
   };
 
   SC.normalizeArtistName = function normalizeArtistName(raw) {
     let name = String(raw || '')
       .replace(/\([^)]*\)/g, ' ')
-      .replace(/,\s*(scj|svd|ofm|cmc|sj|o\.\s*de\s*m\.?)\.?\s*$/i, '')
+      .replace(/,\s*(scj|svd|ofm|cmc|sj|fsp|ep|sdb|cssr|o\.\s*de\s*m\.?)\.?\s*$/i, '')
       .replace(/\s+/g, ' ')
       .trim();
     name = name
       .replace(/^Pe\.?\s+/i, 'Padre ')
       .replace(/^Ir\.?\s+/i, 'Irmã ')
       .replace(/^Fr\.?\s+/i, 'Frei ')
-      .replace(/^Mons\.?\s+/i, 'Monsenhor ');
+      .replace(/^Mons\.?\s+/i, 'Monsenhor ')
+      .replace(/^Di[aá]c\.?\s+/i, 'Diácono ');
+    if (/^(CNBB\s*-\s*)?Campanha da Fraternidade\b/i.test(name)) {
+      return 'Campanha da Fraternidade (CNBB)';
+    }
+    if (/^Hin[aá]rio Lit[uú]rgico CNBB\b/i.test(name)) {
+      return 'Hinário Litúrgico CNBB';
+    }
+    if (/^Lecion[aá]rio\b/i.test(name)) {
+      return 'Lecionário Dominical';
+    }
+    if (/^Missal Romano\b/i.test(name)) {
+      return 'Missal Romano';
+    }
     if (name.length <= 2 || NOT_AN_ARTIST.test(name)) return '';
     return ALIASES[name] || name;
   };

@@ -43,6 +43,18 @@ from part5_special_days_and_classification import (
     SPECIAL_LITURGICAL_DAYS_SONGS,
     classify_song_liturgical_and_theme,
 )
+try:
+    from part6_rosa_thiago_jonas_dom_catequese import PART6_SONGS
+except ImportError:
+    PART6_SONGS = []
+try:
+    from part7_singers_and_communities_expansion import PART7_SONGS
+except ImportError:
+    PART7_SONGS = []
+try:
+    from part8_padres_and_liturgical_authors import PART8_SONGS
+except ImportError:
+    PART8_SONGS = []
 
 EXTRA_10_SONGS = [
     make_song(
@@ -144,7 +156,7 @@ Fiel e Poderoso, diante de Ti quero me prostrar!"""
     make_song(
         "gratidao-eu-encontrei-um-amor-perfeito",
         "Gratidão (Eu Encontrei um Amor Perfeito - Lucas 17, 15)",
-        "padre / Canção Nova / Raquel Carpenter",
+        "Canção Nova / Raquel Carpenter",
         "Ação de Graças", "Qualquer", "G", 72, "4/4", "Balada de Ação de Graças", "↓  ↓ ↑  ↑ ↓ ↑",
         True, True, 4, "Canto de Ação de Graças (O Leproso Agradecido - Lucas 17)", 96,
         "Lucas 17, 15-18 / Pós-Comunhão", "Lc 17, 15-18; Sl 115",
@@ -268,6 +280,9 @@ def main():
         + EXTRA_10_SONGS
         + FRATERNIDADES_E_CAMPANHAS_SONGS
         + FIFTY_CATHOLIC_SINGERS_SONGS
+        + PART6_SONGS
+        + PART7_SONGS
+        + PART8_SONGS
     )
 
     seen_ids = set(s["id"] for s in base_songs)
@@ -277,6 +292,10 @@ def main():
             s["liturgicalMoment"] = "Aclamação ao Evangelho"
         elif s["liturgicalMoment"] == "Cordeiro":
             s["liturgicalMoment"] = "Cordeiro de Deus"
+        elif s["liturgicalMoment"] == "Envio":
+            s["liturgicalMoment"] = "Final"
+        elif s["liturgicalMoment"] in ("Canto Mariano", "Louvor", "Adoração"):
+            s["liturgicalMoment"] = "Ação de Graças"
         if s["id"] not in seen_ids:
             seen_ids.add(s["id"])
             all_songs.append(classify_song_liturgical_and_theme(ensure_full_cifra(s)))
@@ -363,9 +382,9 @@ def main():
         json.dump(all_songs, f, ensure_ascii=False, indent=2)
 
     version_manifest = {
-        "version": "3.1.0",
-        "apkVersionCode": 4,
-        "buildId": f"sc-v3.1.0-{len(all_songs)}",
+        "version": "3.5.0",
+        "apkVersionCode": 8,
+        "buildId": f"sc-v3.5.0-{len(all_songs)}",
         "totalSongs": len(all_songs),
         "liturgicalSongs": len(cat_ordinario) + len(cat_entrada_final) + len(cat_ofertorio_comunhao),
         "popularSongs": len(cat_adoracao),
@@ -375,13 +394,22 @@ def main():
     with open(os.path.join(web_dir, "version.json"), "w", encoding="utf-8") as f:
         json.dump(version_manifest, f, ensure_ascii=False, indent=2)
 
-    # 3. Write supabase/schema.sql
+    # 3. Write supabase/schema.sql (Anti-IDOR RLS Schema)
     schema_sql = """-- ============================================================================
--- SANTA CIFRA - SCHEMA OFICIAL SUPABASE (PostgreSQL + Row Level Security)
+-- SANTA CIFRA - SCHEMA OFICIAL SUPABASE (PostgreSQL + Anti-IDOR Row Level Security)
 -- Execute este script no SQL Editor do seu projeto Supabase
 -- ============================================================================
 
--- 1. Tabela de Músicas / Cifras Litúrgicas
+-- 1. Tabela de Perfis de Usuários (Vinculada a auth.users)
+CREATE TABLE IF NOT EXISTS public.profiles (
+    id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
+    name TEXT NOT NULL CHECK (char_length(name) BETWEEN 2 AND 60),
+    email TEXT NOT NULL,
+    parish TEXT DEFAULT '' CHECK (char_length(parish) <= 80),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- 2. Tabela de Músicas / Cifras Litúrgicas (Catálogo Público + Contribuições)
 CREATE TABLE IF NOT EXISTS public.songs (
     id TEXT PRIMARY KEY,
     title TEXT NOT NULL,
@@ -402,39 +430,54 @@ CREATE TABLE IF NOT EXISTS public.songs (
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
--- Índices para busca rápida no Santa Cifra
 CREATE INDEX IF NOT EXISTS idx_songs_moment ON public.songs (liturgical_moment);
 CREATE INDEX IF NOT EXISTS idx_songs_season ON public.songs (liturgical_season);
 CREATE INDEX IF NOT EXISTS idx_songs_most_used ON public.songs (is_most_used);
 CREATE INDEX IF NOT EXISTS idx_songs_simple ON public.songs (is_simple);
 CREATE INDEX IF NOT EXISTS idx_songs_composer ON public.songs (composer);
 
--- 2. Tabela de Pastas / Playlists (Estilo Spotify)
+-- 3. Tabela de Pastas Pessoais (Protegida contra IDOR por user_id)
 CREATE TABLE IF NOT EXISTS public.folders (
-    id TEXT PRIMARY KEY,
-    name TEXT NOT NULL,
-    icon TEXT NOT NULL DEFAULT '📁',
-    description TEXT NOT NULL DEFAULT '',
+    id TEXT NOT NULL,
+    user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+    name TEXT NOT NULL CHECK (char_length(name) BETWEEN 1 AND 60),
+    icon TEXT NOT NULL DEFAULT 'folder',
+    description TEXT NOT NULL DEFAULT '' CHECK (char_length(description) <= 120),
     is_system BOOLEAN NOT NULL DEFAULT false,
     song_ids JSONB NOT NULL DEFAULT '[]'::jsonb,
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    PRIMARY KEY (user_id, id)
 );
 
--- 3. Habilitar Row Level Security (RLS) com acesso para o cliente Web (anon/authenticated)
+CREATE INDEX IF NOT EXISTS idx_folders_user_id ON public.folders (user_id);
+
+-- 4. Row Level Security (RLS) Estrito contra IDOR
+ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.songs ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.folders ENABLE ROW LEVEL SECURITY;
 
+-- Políticas de Perfil: cada usuário só lê e edita o próprio perfil
+DROP POLICY IF EXISTS "Perfil proprio leitura e edicao" ON public.profiles;
+CREATE POLICY "Perfil proprio leitura e edicao" ON public.profiles
+    FOR ALL
+    USING (auth.uid() = id)
+    WITH CHECK (auth.uid() = id);
+
+-- Políticas de Músicas: leitura pública; escrita apenas autenticada
 DROP POLICY IF EXISTS "Leitura publica de cifras" ON public.songs;
 CREATE POLICY "Leitura publica de cifras" ON public.songs
     FOR SELECT USING (true);
 
-DROP POLICY IF EXISTS "Insercao e atualizacao publica de cifras" ON public.songs;
-CREATE POLICY "Insercao e atualizacao publica de cifras" ON public.songs
-    FOR ALL USING (true) WITH CHECK (true);
+DROP POLICY IF EXISTS "Insercao autenticada de cifras" ON public.songs;
+CREATE POLICY "Insercao autenticada de cifras" ON public.songs
+    FOR INSERT WITH CHECK (auth.role() = 'authenticated');
 
-DROP POLICY IF EXISTS "Acesso publico a pastas" ON public.folders;
-CREATE POLICY "Acesso publico a pastas" ON public.folders
-    FOR ALL USING (true) WITH CHECK (true);
+-- Políticas de Pastas (Anti-IDOR): usuário autenticado SÓ acessa/modifica pastas onde user_id = auth.uid()
+DROP POLICY IF EXISTS "Pastas isoladas por usuario Anti-IDOR" ON public.folders;
+CREATE POLICY "Pastas isoladas por usuario Anti-IDOR" ON public.folders
+    FOR ALL
+    USING (auth.uid() = user_id)
+    WITH CHECK (auth.uid() = user_id);
 """
     with open(os.path.join(supabase_dir, "schema.sql"), "w", encoding="utf-8") as f:
         f.write(schema_sql)
