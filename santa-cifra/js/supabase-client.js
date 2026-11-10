@@ -70,10 +70,20 @@ CREATE POLICY "Acesso publico folders" ON public.folders FOR ALL USING (true) WI
   }
 
   function getHeaders(cfg, extra = {}) {
+    let bearerToken = cfg.anonKey;
+    try {
+      const rawSession = localStorage.getItem('santa_cifra_active_session_v1');
+      if (rawSession) {
+        const parsed = JSON.parse(rawSession);
+        if (parsed && parsed.token && !String(parsed.token).startsWith('local_session_')) {
+          bearerToken = parsed.token;
+        }
+      }
+    } catch (_) {}
     return Object.assign(
       {
         apikey: cfg.anonKey,
-        Authorization: `Bearer ${cfg.anonKey}`,
+        Authorization: `Bearer ${bearerToken}`,
         'Content-Type': 'application/json'
       },
       extra
@@ -163,16 +173,19 @@ CREATE POLICY "Acesso publico folders" ON public.folders FOR ALL USING (true) WI
   async function pushFoldersToSupabase(foldersArray) {
     const cfg = getConfig();
     if (!cfg.enabled) return 0;
+    const currentUser = window.SantaCifra && window.SantaCifra.auth ? window.SantaCifra.auth.getCurrentUser() : null;
+    if (!currentUser || !currentUser.id) return 0;
     const rows = foldersArray.map((f) => ({
       id: f.id,
+      user_id: currentUser.id,
       name: f.name,
-      icon: f.icon || '📁',
+      icon: f.icon || 'folder',
       description: f.description || '',
       is_system: Boolean(f.isSystem),
       song_ids: f.songIds || [],
       updated_at: new Date().toISOString()
     }));
-    const res = await fetch(`${cfg.url}/rest/v1/folders?on_conflict=id`, {
+    const res = await fetch(`${cfg.url}/rest/v1/folders?on_conflict=user_id,id`, {
       method: 'POST',
       headers: getHeaders(cfg, { Prefer: 'resolution=merge-duplicates,return=minimal' }),
       body: JSON.stringify(rows)
@@ -187,21 +200,26 @@ CREATE POLICY "Acesso publico folders" ON public.folders FOR ALL USING (true) WI
   async function fetchFoldersFromSupabase() {
     const cfg = getConfig();
     if (!cfg.enabled) return null;
-    const res = await fetch(`${cfg.url}/rest/v1/folders?select=*`, {
+    const currentUser = window.SantaCifra && window.SantaCifra.auth ? window.SantaCifra.auth.getCurrentUser() : null;
+    if (!currentUser || !currentUser.id) return null;
+    const safeUserId = encodeURIComponent(currentUser.id);
+    const res = await fetch(`${cfg.url}/rest/v1/folders?user_id=eq.${safeUserId}&select=*`, {
       method: 'GET',
       headers: getHeaders(cfg)
     });
     if (!res.ok) return null;
     const rows = await res.json();
     if (!Array.isArray(rows) || rows.length === 0) return null;
-    return rows.map((r) => ({
-      id: r.id,
-      name: r.name,
-      icon: r.icon || '📁',
-      description: r.description || '',
-      isSystem: Boolean(r.is_system),
-      songIds: Array.isArray(r.song_ids) ? r.song_ids : []
-    }));
+    return rows
+      .filter((r) => r.user_id === currentUser.id)
+      .map((r) => ({
+        id: r.id,
+        name: r.name,
+        icon: r.icon || 'folder',
+        description: r.description || '',
+        isSystem: Boolean(r.is_system),
+        songIds: Array.isArray(r.song_ids) ? r.song_ids : []
+      }));
   }
 
   window.SantaCifraSupabase = {

@@ -69,6 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Inicializa os módulos de interface
+  if (window.SantaCifra.auth && window.SantaCifra.auth.bindAuthEvents) {
+    window.SantaCifra.auth.bindAuthEvents();
+  }
   window.SantaCifra.bindCatalogEvents();
   window.SantaCifra.bindArtistsEvents();
   window.SantaCifra.bindPlaylistsEvents();

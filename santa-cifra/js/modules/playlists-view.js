@@ -206,19 +206,31 @@ window.SantaCifra.initPlaylists = function initPlaylists() {
     }
   ];
 
-  const saved = localStorage.getItem('santa_cifra_playlists_v4');
-  if (saved) {
-    state.playlists = JSON.parse(saved);
+  if (window.SantaCifra.auth && typeof window.SantaCifra.auth.loadPlaylistsForActiveUser === 'function') {
+    state.playlists = window.SantaCifra.auth.loadPlaylistsForActiveUser();
   } else {
-    state.playlists = defaultPlaylists;
-    window.SantaCifra.savePlaylists();
+    const saved = localStorage.getItem('santa_cifra_playlists_v4');
+    if (saved) {
+      try {
+        state.playlists = JSON.parse(saved);
+      } catch (_) {
+        state.playlists = defaultPlaylists;
+      }
+    } else {
+      state.playlists = defaultPlaylists;
+      window.SantaCifra.savePlaylists();
+    }
   }
   window.SantaCifra.updatePlaylistsCounter();
 };
 
 window.SantaCifra.savePlaylists = function savePlaylists() {
   const { state } = window.SantaCifra;
-  localStorage.setItem('santa_cifra_playlists_v4', JSON.stringify(state.playlists));
+  if (window.SantaCifra.auth && typeof window.SantaCifra.auth.savePlaylistsForActiveUser === 'function') {
+    state.playlists = window.SantaCifra.auth.savePlaylistsForActiveUser(state.playlists);
+  } else {
+    localStorage.setItem('santa_cifra_playlists_v4', JSON.stringify(state.playlists));
+  }
   window.SantaCifra.updatePlaylistsCounter();
 };
 

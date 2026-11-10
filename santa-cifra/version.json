@@ -1,7 +1,7 @@
 {
-  "version": "3.1.0",
-  "apkVersionCode": 4,
-  "buildId": "sc-v3.1.0-367",
+  "version": "3.2.0",
+  "apkVersionCode": 5,
+  "buildId": "sc-v3.2.0-367-auth",
   "totalSongs": 367,
   "liturgicalSongs": 263,
   "popularSongs": 104,
