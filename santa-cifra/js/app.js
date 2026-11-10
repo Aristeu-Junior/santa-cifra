@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.SantaCifra.initCatalog();
   window.SantaCifra.initPlaylists();
+  window.SantaCifra.bindHistory();
 
   function syncThemeIcons() {
     const isDark = document.body.classList.contains('dark-mode');
@@ -37,15 +38,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  if (localStorage.getItem('santa_cifra_theme') === 'dark') {
+  // Tema salvo pelo usuário; sem escolha salva, segue o tema do aparelho.
+  const savedTheme = localStorage.getItem('santa_cifra_theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
     document.body.classList.add('dark-mode');
   }
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const syncThemeColor = () => {
+    if (themeMeta) themeMeta.content = document.body.classList.contains('dark-mode') ? '#0e1013' : '#f3f4f6';
+  };
   syncThemeIcons();
+  syncThemeColor();
 
   // Navegação Superior
   dom.tabHomeBtn.addEventListener('click', () => {
     state.activeQueuePlaylistId = null;
     window.SantaCifra.switchTab('home');
+    window.scrollTo({ top: 0 });
   });
 
   dom.tabPlaylistsBtn.addEventListener('click', () => {
@@ -60,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inicializa os módulos de interface
   window.SantaCifra.bindCatalogEvents();
+  window.SantaCifra.bindArtistsEvents();
   window.SantaCifra.bindPlaylistsEvents();
   window.SantaCifra.bindSongViewerEvents();
 
@@ -103,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('santa_cifra_theme', isDark ? 'dark' : 'light');
     syncThemeIcons();
+    syncThemeColor();
   });
 
   // Renderização Inicial e Auto-Atualizador OTA

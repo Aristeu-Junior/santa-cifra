@@ -248,29 +248,35 @@ window.SantaCifra.toggleFavoriteSong = function toggleFavoriteSong(songId) {
   window.SantaCifra.renderCatalog();
   window.SantaCifra.renderHeroShowcase();
   if (state.activeTab === 'playlists') window.SantaCifra.renderPlaylistsView();
+  if (state.activeTab === 'artists') window.SantaCifra.renderArtistsView();
   if (state.currentSong && state.currentSong.id === songId && window.SantaCifra.updateFavoriteButtonState) {
     window.SantaCifra.updateFavoriteButtonState();
   }
 };
 
 window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
-  const { state, dom, ICONS } = window.SantaCifra;
+  const { state, dom, ICONS, esc } = window.SantaCifra;
   dom.foldersList.innerHTML = '';
 
   state.playlists.forEach(folder => {
+    const isActive = folder.id === state.selectedPlaylistId;
     const li = document.createElement('li');
-    li.className = 'folder-item' + (folder.id === state.selectedPlaylistId ? ' active' : '');
-    li.innerHTML = `
-      <div class="folder-item-left">
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'folder-item' + (isActive ? ' active' : '');
+    if (isActive) btn.setAttribute('aria-current', 'true');
+    btn.innerHTML = `
+      <span class="folder-item-left">
         ${folder.id === 'favorites' ? ICONS.heartOutline : ICONS.folder}
-        <span class="folder-item-name">${folder.name}</span>
-      </div>
+        <span class="folder-item-name">${esc(folder.name)}</span>
+      </span>
       <span class="folder-item-count">${folder.songIds.length}</span>
     `;
-    li.addEventListener('click', () => {
+    btn.addEventListener('click', () => {
       state.selectedPlaylistId = folder.id;
       window.SantaCifra.renderPlaylistsView();
     });
+    li.appendChild(btn);
     dom.foldersList.appendChild(li);
   });
 
@@ -283,20 +289,21 @@ window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
 
   dom.playlistDetailPanel.innerHTML = `
     <div class="playlist-banner">
-      <div>
-        <h3>${currentFolder.name}</h3>
-        <p>${currentFolder.description || 'Pasta de repertório'}</p>
+      <div class="playlist-banner-text">
+        <h3>${esc(currentFolder.name)}</h3>
+        <p>${esc(currentFolder.description || 'Pasta de repertório')} &middot; ${folderSongs.length} ${folderSongs.length === 1 ? 'música' : 'músicas'}</p>
       </div>
       <div class="playlist-banner-actions">
         ${folderSongs.length > 0 ? `
-          <button type="button" class="icon-tool-btn active" id="btnPlayFolderSequence" title="Tocar na sequência">
+          <button type="button" class="btn-primary-solid" id="btnPlayFolderSequence">
             ${ICONS.play}
-            <span>Abrir sequência</span>
+            <span>Tocar em sequência</span>
           </button>
         ` : ''}
         ${!currentFolder.isSystem ? `
-          <button type="button" class="icon-tool-btn" id="btnDeleteFolder" title="Excluir pasta" aria-label="Excluir pasta">
+          <button type="button" class="btn-outline" id="btnDeleteFolder">
             ${ICONS.trash}
+            <span>Excluir</span>
           </button>
         ` : ''}
       </div>
@@ -316,6 +323,19 @@ window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
   const btnDelFolder = document.getElementById('btnDeleteFolder');
   if (btnDelFolder) {
     btnDelFolder.addEventListener('click', () => {
+      // Dois toques para excluir: evita apagar uma pasta por engano.
+      if (btnDelFolder.dataset.armed !== '1') {
+        btnDelFolder.dataset.armed = '1';
+        btnDelFolder.querySelector('span').textContent = 'Confirmar exclusão';
+        btnDelFolder.classList.add('active');
+        setTimeout(() => {
+          if (!btnDelFolder.isConnected) return;
+          btnDelFolder.dataset.armed = '';
+          btnDelFolder.querySelector('span').textContent = 'Excluir';
+          btnDelFolder.classList.remove('active');
+        }, 4000);
+        return;
+      }
       state.playlists = state.playlists.filter(p => p.id !== currentFolder.id);
       state.selectedPlaylistId = 'favorites';
       window.SantaCifra.savePlaylists();
@@ -326,10 +346,12 @@ window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
   const tracksContainer = document.getElementById('playlistTracksContainer');
   if (folderSongs.length === 0) {
     tracksContainer.innerHTML = `
-      <div style="padding: 28px 12px; text-align: center; color: var(--text-muted); font-size: 0.85rem;">
-        Nenhuma música adicionada a esta pasta.
+      <div class="empty-state">
+        <span>Esta pasta ainda está vazia. Abra uma cifra e toque em "Salvar em pasta".</span>
+        <button type="button" class="btn-outline" id="btnEmptyFolderBrowse">Ver cifras</button>
       </div>
     `;
+    document.getElementById('btnEmptyFolderBrowse').addEventListener('click', () => window.SantaCifra.switchTab('home'));
     return;
   }
 
@@ -337,19 +359,21 @@ window.SantaCifra.renderPlaylistsView = function renderPlaylistsView() {
     const row = document.createElement('div');
     row.className = 'track-row';
     row.innerHTML = `
-      <div class="track-num">${idx + 1}</div>
-      <div class="song-row-main" style="cursor:pointer;">
-        <div class="song-row-title">${song.title}</div>
-        <div class="song-row-sub">${song.liturgicalMoment} &middot; Tom ${song.originalKey}</div>
-      </div>
+      <button type="button" class="track-open">
+        <span class="track-num">${idx + 1}</span>
+        <span class="song-row-main">
+          <span class="song-row-title">${esc(song.title)}</span>
+          <span class="song-row-sub">${esc(song.liturgicalMoment)} &middot; Tom ${esc(song.originalKey)}</span>
+        </span>
+      </button>
       <div class="song-row-actions">
-        <button type="button" class="row-icon-btn btn-up" ${idx === 0 ? 'disabled' : ''} title="Mover para cima" aria-label="Subir">${ICONS.up}</button>
-        <button type="button" class="row-icon-btn btn-down" ${idx === folderSongs.length - 1 ? 'disabled' : ''} title="Mover para baixo" aria-label="Descer">${ICONS.down}</button>
-        <button type="button" class="row-icon-btn btn-rem" title="Remover da pasta" aria-label="Remover">${ICONS.trash}</button>
+        <button type="button" class="row-icon-btn btn-up" ${idx === 0 ? 'disabled' : ''} title="Mover para cima" aria-label="Mover ${esc(song.title)} para cima">${ICONS.up}</button>
+        <button type="button" class="row-icon-btn btn-down" ${idx === folderSongs.length - 1 ? 'disabled' : ''} title="Mover para baixo" aria-label="Mover ${esc(song.title)} para baixo">${ICONS.down}</button>
+        <button type="button" class="row-icon-btn btn-rem" title="Remover da pasta" aria-label="Remover ${esc(song.title)} da pasta">${ICONS.trash}</button>
       </div>
     `;
 
-    row.querySelector('.song-row-main').addEventListener('click', () => {
+    row.querySelector('.track-open').addEventListener('click', () => {
       state.activeQueuePlaylistId = currentFolder.id;
       state.activeQueueIndex = idx;
       window.SantaCifra.openSongView(song);
@@ -390,10 +414,10 @@ window.SantaCifra.openAddToFolderDialog = function openAddToFolderDialog(song) {
   state.playlists.forEach(folder => {
     const checked = folder.songIds.includes(song.id);
     const label = document.createElement('label');
-    label.style.cssText = 'display:flex; align-items:center; justify-content:space-between; padding:8px 10px; border:1px solid var(--border-color); border-radius:6px; cursor:pointer; font-size:0.85rem;';
+    label.className = 'folder-check';
     label.innerHTML = `
-      <span>${folder.name}</span>
-      <input type="checkbox" ${checked ? 'checked' : ''} data-folder-id="${folder.id}">
+      <input type="checkbox" ${checked ? 'checked' : ''} data-folder-id="${window.SantaCifra.esc(folder.id)}">
+      <span>${window.SantaCifra.esc(folder.name)}</span>
     `;
     label.querySelector('input').addEventListener('change', (e) => {
       const isChecked = e.target.checked;
@@ -402,6 +426,7 @@ window.SantaCifra.openAddToFolderDialog = function openAddToFolderDialog(song) {
       if (!isChecked && idx !== -1) folder.songIds.splice(idx, 1);
       window.SantaCifra.savePlaylists();
       window.SantaCifra.renderCatalog();
+      if (state.activeTab === 'artists') window.SantaCifra.renderArtistsView();
       if (state.currentSong && state.currentSong.id === song.id && window.SantaCifra.updateFavoriteButtonState) {
         window.SantaCifra.updateFavoriteButtonState();
       }

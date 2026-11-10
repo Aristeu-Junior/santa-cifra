@@ -1,10 +1,10 @@
 /**
- * SANTA CIFRA — Catálogo, Destaques (Hero Showcase), Busca e Filtros
+ * SANTA CIFRA — Catálogo, Destaques, Busca e Filtros
  */
 window.SantaCifra = window.SantaCifra || {};
 
 window.SantaCifra.renderHeroShowcase = function renderHeroShowcase() {
-  const { state, dom } = window.SantaCifra;
+  const { state, dom, esc } = window.SantaCifra;
   if (state.searchQuery.length > 0) {
     dom.heroShowcase.style.display = 'none';
     return;
@@ -20,14 +20,15 @@ window.SantaCifra.renderHeroShowcase = function renderHeroShowcase() {
   }
 
   list.forEach(song => {
-    const mini = document.createElement('div');
+    const mini = document.createElement('button');
+    mini.type = 'button';
     mini.className = 'hero-mini-card';
     mini.innerHTML = `
-      <div class="hero-mini-info">
-        <div class="hero-mini-title">${song.title}</div>
-        <div class="hero-mini-sub">${song.liturgicalMoment} &middot; ${song.chordCount || 4} acordes</div>
-      </div>
-      <div class="hero-mini-key">${song.originalKey}</div>
+      <span class="song-key" title="Tom original">${esc(song.originalKey)}</span>
+      <span class="hero-mini-info">
+        <span class="hero-mini-title">${esc(song.title)}</span>
+        <span class="hero-mini-sub">${esc(song.liturgicalMoment)} &middot; ${song.chordCount || 4} acordes</span>
+      </span>
     `;
     mini.addEventListener('click', () => {
       state.activeQueuePlaylistId = null;
@@ -105,28 +106,144 @@ window.SantaCifra.updateRepertoireDivisionCounters = function updateRepertoireDi
   if (dom.countRepLiturgica) dom.countRepLiturgica.textContent = String(litCount);
   if (dom.countRepPopular) dom.countRepPopular.textContent = String(popCount);
 
+  // A regra litúrgica só aparece quando o usuário escolhe um dos dois tipos.
   if (dom.repertoireRuleBanner && dom.repertoireRuleText) {
     dom.repertoireRuleBanner.classList.remove('banner-liturgica', 'banner-popular');
     if (state.activeRepertoireTypeFilter === 'liturgica') {
+      dom.repertoireRuleBanner.hidden = false;
       dom.repertoireRuleBanner.classList.add('banner-liturgica');
       dom.repertoireRuleText.innerHTML =
-        '<strong>Músicas Litúrgicas (Aprovadas para a Santa Missa — IGMR e CNBB):</strong> Cantos fiéis ao Missal Romano e ao Lecionário, recomendados por padres e liturgistas para os ritos da Missa.';
+        '<strong>Músicas litúrgicas, aprovadas para a Santa Missa (IGMR e CNBB).</strong> Cantos fiéis ao Missal Romano e ao Lecionário, recomendados por padres e liturgistas para os ritos da Missa.';
     } else if (state.activeRepertoireTypeFilter === 'popular') {
+      dom.repertoireRuleBanner.hidden = false;
       dom.repertoireRuleBanner.classList.add('banner-popular');
       dom.repertoireRuleText.innerHTML =
-        '<strong>Músicas Populares e Devocionais (Fora da Missa):</strong> Indicadas para Grupos de Oração, Encontros, Retiros, Shows e Adoração livre. Segundo as normas litúrgicas (IGMR / Estudos 43 e 79 da CNBB), não devem substituir os cantos rituais da Santa Missa.';
+        '<strong>Músicas populares e devocionais, para fora da Missa.</strong> Indicadas para grupos de oração, encontros, retiros, shows e adoração livre. Segundo as normas litúrgicas (IGMR e Estudos 43 e 79 da CNBB), não devem substituir os cantos rituais da Santa Missa.';
     } else {
-      dom.repertoireRuleText.innerHTML =
-        '<strong>Ordem e Integridade Litúrgica:</strong> Todas as cifras possuem identificação clara entre <strong>Litúrgica · Missa</strong> (uso ritual na Missa) e <strong>Popular · Fora da Missa</strong> (encontros, grupos de oração e retiros), além dos temas de cada solenidade.';
+      dom.repertoireRuleBanner.hidden = true;
+      dom.repertoireRuleText.textContent = '';
     }
   }
 };
 
+/** Linha de música reutilizada no catálogo e na página do artista. */
+window.SantaCifra.createSongRow = function createSongRow(song) {
+  const { state, ICONS, esc } = window.SantaCifra;
+  const isFav = window.SantaCifra.isSongFavorited(song.id);
+  const isLit = (song.repertoireType || 'liturgica') === 'liturgica';
+  const repBadgeHtml = isLit
+    ? '<span class="rep-badge rep-badge-liturgica" title="Aprovada para os ritos da Santa Missa (IGMR / CNBB)">Para a Missa</span>'
+    : '<span class="rep-badge rep-badge-popular" title="Música popular ou devocional, para encontros, retiros e grupos de oração">Fora da Missa</span>';
+
+  const composer = window.SantaCifra.composerHtml(song);
+  const row = document.createElement('div');
+  row.className = 'song-row';
+  row.tabIndex = 0;
+  row.setAttribute('role', 'link');
+  row.setAttribute('aria-label', `Abrir cifra de ${song.title}`);
+  row.innerHTML = `
+    <span class="song-key" title="Tom original">${esc(song.originalKey)}</span>
+    <div class="song-row-main">
+      <div class="song-row-title">${esc(song.title)}</div>
+      <div class="song-row-sub">
+        ${composer ? `<span class="song-row-composer">${composer}</span>` : ''}
+      </div>
+      <div class="song-row-sub">
+        <span>${esc(song.liturgicalMoment)}</span>
+        <span class="sub-sep" aria-hidden="true">&middot;</span>
+        ${repBadgeHtml}
+      </div>
+    </div>
+    <div class="song-row-actions">
+      <button type="button" class="row-icon-btn btn-fav ${isFav ? 'is-fav' : ''}" title="${isFav ? 'Remover das favoritas' : 'Favoritar'}" aria-label="${isFav ? 'Remover das favoritas' : 'Favoritar'}" aria-pressed="${isFav}">
+        ${isFav ? ICONS.heartFilled : ICONS.heartOutline}
+      </button>
+      <button type="button" class="row-icon-btn btn-folder" title="Salvar em pasta" aria-label="Salvar em pasta">
+        ${ICONS.folderPlus}
+      </button>
+    </div>
+  `;
+
+  const open = () => {
+    state.activeQueuePlaylistId = null;
+    window.SantaCifra.openSongView(song);
+  };
+
+  row.addEventListener('click', (e) => {
+    if (e.target.closest('.artist-link')) return;
+    if (e.target.closest('.btn-fav')) {
+      e.stopPropagation();
+      window.SantaCifra.toggleFavoriteSong(song.id);
+      return;
+    }
+    if (e.target.closest('.btn-folder')) {
+      e.stopPropagation();
+      window.SantaCifra.openAddToFolderDialog(song);
+      return;
+    }
+    open();
+  });
+
+  row.addEventListener('keydown', (e) => {
+    if (e.target !== row) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      open();
+    }
+  });
+
+  return row;
+};
+
+window.SantaCifra.countActiveFilters = function countActiveFilters() {
+  const { state } = window.SantaCifra;
+  let extra = 0;
+  if (state.activeSpecialDayFilter !== 'all') extra++;
+  if (state.activeSeasonFilter !== 'all') extra++;
+  if (state.activeArtistFilter !== 'all') extra++;
+  if (state.onlySimpleFilter) extra++;
+  let total = extra;
+  if (state.activeRepertoireTypeFilter !== 'all') total++;
+  if (state.activeMomentFilter !== 'all') total++;
+  return { extra, total };
+};
+
+window.SantaCifra.clearAllFilters = function clearAllFilters() {
+  const { state, dom } = window.SantaCifra;
+  state.activeRepertoireTypeFilter = 'all';
+  state.activeSpecialDayFilter = 'all';
+  state.activeMomentFilter = 'all';
+  state.activeSeasonFilter = 'all';
+  state.activeArtistFilter = 'all';
+  state.onlySimpleFilter = false;
+  state.searchQuery = '';
+
+  dom.searchInput.value = '';
+  dom.btnClearSearch.style.display = 'none';
+  dom.specialDaySelect.value = 'all';
+  dom.seasonFilterSelect.value = 'all';
+  dom.artistFilterSelect.value = 'all';
+  dom.btnOnlySimpleToggle.setAttribute('aria-pressed', 'false');
+  dom.chkOnlySimple.checked = false;
+  dom.repertoireTypeGrid.querySelectorAll('.rep-type-card').forEach(c => {
+    const on = c.getAttribute('data-reptype') === 'all';
+    c.classList.toggle('active', on);
+    c.setAttribute('aria-pressed', String(on));
+  });
+  dom.pillsContainer.querySelectorAll('.pill-filter').forEach(p => {
+    p.classList.toggle('active', p.getAttribute('data-moment') === 'all');
+  });
+
+  window.SantaCifra.renderHeroShowcase();
+  window.SantaCifra.renderCatalog();
+};
+
 window.SantaCifra.renderCatalog = function renderCatalog() {
-  const { state, dom, ICONS } = window.SantaCifra;
+  const { state, dom, esc } = window.SantaCifra;
   dom.songsGrid.innerHTML = '';
   window.SantaCifra.updateRepertoireDivisionCounters();
 
+  const q = state.searchQuery.toLowerCase();
   const filtered = state.songs.filter(song => {
     const repType = song.repertoireType || 'liturgica';
     const specDay = song.specialDay || 'Missa Dominical (Tempo Comum)';
@@ -138,120 +255,45 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
     if (state.onlySimpleFilter && !song.isSimple) return false;
     if (!window.SantaCifra.matchesArtistFilter(song, state.activeArtistFilter)) return false;
 
-    if (state.searchQuery) {
-      const q = state.searchQuery.toLowerCase();
-      const matchTitle = song.title.toLowerCase().includes(q);
-      const matchComp = song.composer.toLowerCase().includes(q);
-      const matchMom = song.liturgicalMoment.toLowerCase().includes(q);
-      const matchDay = specDay.toLowerCase().includes(q);
-      const matchCifra = song.cifra.toLowerCase().includes(q);
-      if (!matchTitle && !matchComp && !matchMom && !matchDay && !matchCifra) return false;
+    if (q) {
+      const haystack = [song.title, song.composer, song.liturgicalMoment, specDay, song.cifra]
+        .map(v => String(v || '').toLowerCase());
+      if (!haystack.some(v => v.includes(q))) return false;
     }
     return true;
   });
 
-  const typeLabel = state.activeRepertoireTypeFilter === 'liturgica'
-    ? 'músicas litúrgicas (Missa)'
-    : state.activeRepertoireTypeFilter === 'popular'
-      ? 'músicas populares (fora da Missa)'
-      : 'músicas';
-
+  const n = filtered.length;
+  const noun = n === 1 ? 'música' : 'músicas';
   dom.catalogResultsTitle.textContent = state.searchQuery
-    ? `${filtered.length} resultados para "${state.searchQuery}"`
-    : state.activeSpecialDayFilter !== 'all'
-      ? `${filtered.length} ${typeLabel} • ${state.activeSpecialDayFilter}`
-      : `${filtered.length} ${typeLabel}`;
+    ? `${n} ${n === 1 ? 'resultado' : 'resultados'} para "${state.searchQuery}"`
+    : `${n} ${noun}`;
 
-  if (filtered.length === 0) {
+  const { extra, total } = window.SantaCifra.countActiveFilters();
+  dom.filtersCount.hidden = extra === 0;
+  dom.filtersCount.textContent = String(extra);
+  dom.btnClearFilters.hidden = total === 0 && !state.searchQuery;
+
+  if (n === 0) {
     dom.songsGrid.innerHTML = `
-      <div style="padding: 36px 20px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
-        Nenhuma cifra encontrada para esta combinação de filtros. Clique em "Todo o Acervo" ou "Todos os Dias" para limpar.
+      <div class="empty-state">
+        <span>Nenhuma cifra encontrada${state.searchQuery ? ` para "${esc(state.searchQuery)}"` : ' com esses filtros'}.</span>
+        <button type="button" class="btn-outline" id="btnEmptyClear">Limpar busca e filtros</button>
       </div>
     `;
+    document.getElementById('btnEmptyClear').addEventListener('click', window.SantaCifra.clearAllFilters);
     return;
   }
 
-  filtered.forEach(song => {
-    const isFav = window.SantaCifra.isSongFavorited(song.id);
-    const repType = song.repertoireType || 'liturgica';
-    const isLit = repType === 'liturgica';
-    const repBadgeHtml = isLit
-      ? `<span class="rep-badge rep-badge-liturgica" title="Aprovada para os ritos da Santa Missa (IGMR / CNBB)">Litúrgica · Missa</span>`
-      : `<span class="rep-badge rep-badge-popular" title="Música Popular / Devocional para Encontros, Retiros e Grupos de Oração (Fora da Missa)">Popular · Fora da Missa</span>`;
-
-    const specDay = song.specialDay || '';
-    const dayTagHtml = specDay && specDay !== 'Missa Dominical (Tempo Comum)' && specDay !== 'Encontros, Retiros e Grupo de Oração'
-      ? `<span class="special-day-tag">${specDay}</span>`
-      : '';
-
-    const row = document.createElement('div');
-    row.className = 'song-row';
-    row.innerHTML = `
-      <div class="song-row-main">
-        <div class="song-row-title">
-          <span>${song.title}</span>
-          ${repBadgeHtml}
-          ${dayTagHtml}
-        </div>
-        <div class="song-row-sub">
-          <span>${song.composer} &middot; ${song.chordCount || 4} acordes</span>
-          ${specDay ? `<span>&middot; ${specDay}</span>` : ''}
-        </div>
-      </div>
-      <span class="song-row-moment">${song.liturgicalMoment}</span>
-      <span class="song-row-key" title="Tom original">${song.originalKey}</span>
-      <div class="song-row-actions">
-        <button type="button" class="row-icon-btn btn-fav ${isFav ? 'is-fav' : ''}" title="${isFav ? 'Remover dos favoritos' : 'Favoritar'}" aria-label="Favoritar">
-          ${isFav ? ICONS.heartFilled : ICONS.heartOutline}
-        </button>
-        <button type="button" class="row-icon-btn btn-folder" title="Salvar em pasta" aria-label="Salvar em pasta">
-          ${ICONS.folderPlus}
-        </button>
-      </div>
-    `;
-
-    row.addEventListener('click', (e) => {
-      if (e.target.closest('.btn-fav')) {
-        e.stopPropagation();
-        window.SantaCifra.toggleFavoriteSong(song.id);
-        return;
-      }
-      if (e.target.closest('.btn-folder')) {
-        e.stopPropagation();
-        window.SantaCifra.openAddToFolderDialog(song);
-        return;
-      }
-      state.activeQueuePlaylistId = null;
-      window.SantaCifra.openSongView(song);
-    });
-
-    dom.songsGrid.appendChild(row);
-  });
+  const frag = document.createDocumentFragment();
+  filtered.forEach(song => frag.appendChild(window.SantaCifra.createSongRow(song)));
+  dom.songsGrid.appendChild(frag);
 };
 
+/** Mantido por compatibilidade com o atualizador OTA: recalcula o índice de artistas. */
 window.SantaCifra.populateArtistOptGroup = function populateArtistOptGroup() {
-  const { state, dom } = window.SantaCifra;
-  if (!dom.artistFilterSelect) return;
-  const existingOptGroup = dom.artistFilterSelect.querySelector('optgroup');
-  if (existingOptGroup) existingOptGroup.remove();
-
-  const artistSet = new Set();
-  state.songs.forEach(s => {
-    (s.composer || '').split('/').forEach(part => {
-      const clean = part.replace(/, scj|, cmc|, O\. de M\./gi, '').trim();
-      if (clean && clean.length > 2) artistSet.add(clean);
-    });
-  });
-  const sortedArtists = Array.from(artistSet).sort((a, b) => a.localeCompare(b, 'pt-BR'));
-  const optGroup = document.createElement('optgroup');
-  optGroup.label = 'Todos os Intérpretes e Fraternidades (A–Z)';
-  sortedArtists.forEach(artist => {
-    const opt = document.createElement('option');
-    opt.value = 'exact:' + artist;
-    opt.textContent = artist;
-    optGroup.appendChild(opt);
-  });
-  dom.artistFilterSelect.appendChild(optGroup);
+  window.SantaCifra.buildArtistIndex();
+  if (window.SantaCifra.state.activeTab === 'artists') window.SantaCifra.renderArtistsView();
 };
 
 window.SantaCifra.bindCatalogEvents = function bindCatalogEvents() {
@@ -271,71 +313,71 @@ window.SantaCifra.bindCatalogEvents = function bindCatalogEvents() {
     window.SantaCifra.renderHeroShowcase();
   });
 
+  let searchTimer = null;
   dom.searchInput.addEventListener('input', (e) => {
     state.searchQuery = e.target.value.trim();
     dom.btnClearSearch.style.display = state.searchQuery ? 'inline-flex' : 'none';
-    if (state.activeTab !== 'home') window.SantaCifra.switchTab('home');
-    else {
-      window.SantaCifra.renderHeroShowcase();
-      window.SantaCifra.renderCatalog();
-    }
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      if (state.activeTab !== 'home') window.SantaCifra.switchTab('home');
+      else {
+        window.SantaCifra.renderHeroShowcase();
+        window.SantaCifra.renderCatalog();
+      }
+    }, 120);
   });
 
   dom.btnClearSearch.addEventListener('click', () => {
     dom.searchInput.value = '';
     state.searchQuery = '';
     dom.btnClearSearch.style.display = 'none';
+    dom.searchInput.focus();
     window.SantaCifra.renderHeroShowcase();
     window.SantaCifra.renderCatalog();
   });
 
-  if (dom.btnOnlySimpleToggle) {
-    dom.btnOnlySimpleToggle.addEventListener('click', () => {
-      state.onlySimpleFilter = !state.onlySimpleFilter;
-      dom.btnOnlySimpleToggle.setAttribute('aria-pressed', String(state.onlySimpleFilter));
-      dom.chkOnlySimple.checked = state.onlySimpleFilter;
-      window.SantaCifra.renderCatalog();
-    });
-  }
+  dom.btnToggleFilters.addEventListener('click', () => {
+    const open = dom.filtersPanel.classList.toggle('open');
+    dom.btnToggleFilters.setAttribute('aria-expanded', String(open));
+    dom.btnToggleFilters.classList.toggle('active', open);
+  });
 
-  window.SantaCifra.populateArtistOptGroup();
-  if (dom.artistFilterSelect) {
-    dom.artistFilterSelect.addEventListener('change', (e) => {
-      state.activeArtistFilter = e.target.value;
-      window.SantaCifra.renderCatalog();
-    });
-  }
+  dom.btnClearFilters.addEventListener('click', window.SantaCifra.clearAllFilters);
+
+  dom.btnOnlySimpleToggle.addEventListener('click', () => {
+    state.onlySimpleFilter = !state.onlySimpleFilter;
+    dom.btnOnlySimpleToggle.setAttribute('aria-pressed', String(state.onlySimpleFilter));
+    dom.chkOnlySimple.checked = state.onlySimpleFilter;
+    window.SantaCifra.renderCatalog();
+  });
+
+  dom.artistFilterSelect.addEventListener('change', (e) => {
+    state.activeArtistFilter = e.target.value;
+    window.SantaCifra.renderCatalog();
+  });
 
   dom.seasonFilterSelect.addEventListener('change', (e) => {
     state.activeSeasonFilter = e.target.value;
     window.SantaCifra.renderCatalog();
   });
 
-  if (dom.repertoireTypeGrid) {
-    dom.repertoireTypeGrid.addEventListener('click', (e) => {
-      const card = e.target.closest('.rep-type-card');
-      if (!card) return;
-      dom.repertoireTypeGrid.querySelectorAll('.rep-type-card').forEach(c => {
-        c.classList.remove('active');
-        c.setAttribute('aria-selected', 'false');
-      });
-      card.classList.add('active');
-      card.setAttribute('aria-selected', 'true');
-      state.activeRepertoireTypeFilter = card.getAttribute('data-reptype') || 'all';
-      window.SantaCifra.renderCatalog();
-    });
-  }
+  dom.specialDaySelect.addEventListener('change', (e) => {
+    state.activeSpecialDayFilter = e.target.value || 'all';
+    window.SantaCifra.renderCatalog();
+  });
 
-  if (dom.specialDaysStrip) {
-    dom.specialDaysStrip.addEventListener('click', (e) => {
-      const chip = e.target.closest('.day-theme-chip');
-      if (!chip) return;
-      dom.specialDaysStrip.querySelectorAll('.day-theme-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      state.activeSpecialDayFilter = chip.getAttribute('data-day') || 'all';
-      window.SantaCifra.renderCatalog();
+  dom.repertoireTypeGrid.addEventListener('click', (e) => {
+    const card = e.target.closest('.rep-type-card');
+    if (!card) return;
+    dom.repertoireTypeGrid.querySelectorAll('.rep-type-card').forEach(c => {
+      c.classList.remove('active');
+      c.setAttribute('aria-pressed', 'false');
     });
-  }
+    card.classList.add('active');
+    card.setAttribute('aria-pressed', 'true');
+    state.activeRepertoireTypeFilter = card.getAttribute('data-reptype') || 'all';
+    window.SantaCifra.renderCatalog();
+  });
 
   dom.pillsContainer.addEventListener('click', (e) => {
     const pill = e.target.closest('.pill-filter');

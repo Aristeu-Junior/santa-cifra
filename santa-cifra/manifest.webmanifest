@@ -4,8 +4,8 @@
   "description": "Repertório e Cifras Litúrgicas Católicas",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f6f4ef",
-  "theme_color": "#181715",
+  "background_color": "#f3f4f6",
+  "theme_color": "#8f1d24",
   "icons": [
     {
       "src": "assets/icon.svg",

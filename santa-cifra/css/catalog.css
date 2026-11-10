@@ -1,412 +1,311 @@
 /* ==========================================================================
-   SANTA CIFRA — Hero Showcase, Filters & High-Density Song Tracklist
+   SANTA CIFRA — Catálogo: destaques, filtros, lista de músicas e artistas
    ========================================================================== */
 
+/* ---------- Destaques ---------- */
 .hero-showcase {
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 
 .hero-top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.section-heading {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  color: var(--text-main);
-}
-
-.segmented-control {
-  display: inline-flex;
-  background-color: var(--bg-subtle);
-  padding: 3px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
-}
-
-.seg-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 11px;
-  border: none;
-  border-radius: 7px;
-  background: transparent;
-  color: var(--text-secondary);
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-.seg-btn.active {
-  background-color: var(--bg-surface);
-  color: var(--text-main);
-  box-shadow: var(--shadow-soft);
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-bottom: 14px;
 }
 
 .hero-quick-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .hero-mini-card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 12px;
-  padding: 10px 14px;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
-}
-
-.hero-mini-card:hover {
-  background-color: var(--bg-hover);
-  border-color: var(--accent);
-}
-
-.hero-mini-info {
-  min-width: 0;
-}
-
-.hero-mini-title {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-main);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.hero-mini-sub {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
-}
-
-.hero-mini-key {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--chord-color);
-  background-color: var(--accent-tint);
-  padding: 3px 8px;
-  border-radius: var(--radius-sm);
-  flex-shrink: 0;
-}
-
-/* ==========================================================================
-   Repertoire Division Block (Litúrgicas da Missa vs Populares Fora da Missa)
-   ========================================================================== */
-.repertoire-division-block {
-  margin-bottom: 20px;
-}
-
-.repertoire-type-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.rep-type-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  padding: 13px 15px;
+  min-height: 64px;
+  padding: 10px 14px 10px 10px;
   text-align: left;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   cursor: pointer;
-  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.2s ease, transform 0.2s var(--ease-out);
 }
 
-.rep-type-card:hover {
-  background-color: var(--bg-hover);
+.hero-mini-card:hover {
   border-color: var(--accent);
-}
-
-.rep-type-card.active {
-  border-color: var(--text-main);
-  background-color: var(--bg-subtle);
   box-shadow: var(--shadow-soft);
+  transform: translateY(-1px);
 }
 
-.rep-type-card.rep-card-liturgica.active {
-  border-color: #16a34a;
-  background-color: rgba(22, 163, 74, 0.08);
+.hero-mini-info {
+  min-width: 0;
+  flex: 1;
 }
 
-.rep-type-card.rep-card-popular.active {
-  border-color: #d97706;
-  background-color: rgba(217, 119, 6, 0.08);
+.hero-mini-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-main);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.rep-type-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+.hero-mini-sub {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.rep-type-icon {
+/* Selo do tom (usado nos destaques e na lista) */
+.song-key {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-tint);
   color: var(--chord-color);
-}
-
-.rep-card-liturgica .rep-type-icon {
-  color: #16a34a;
-}
-
-.rep-card-popular .rep-type-icon {
-  color: #d97706;
-}
-
-.rep-type-title {
-  flex: 1;
-  font-size: 0.86rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
   font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Controles do repertório ---------- */
+.catalog-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.repertoire-type-grid {
+  display: inline-flex;
+  align-self: flex-start;
+  max-width: 100%;
+  background-color: var(--bg-subtle);
+  padding: 4px;
+  border-radius: var(--radius-pill);
+}
+
+.rep-type-card {
+  min-height: 40px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.rep-type-card:hover {
   color: var(--text-main);
 }
 
+.rep-type-card.active {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  box-shadow: var(--shadow-soft);
+}
+
+.rep-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rep-card-liturgica .rep-dot {
+  background-color: var(--lit);
+}
+
+.rep-card-popular .rep-dot {
+  background-color: var(--pop);
+}
+
 .rep-type-count {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 999px;
-  background-color: var(--bg-page);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-muted);
   font-variant-numeric: tabular-nums;
 }
 
-.rep-type-desc {
-  margin: 0;
-  font-size: 0.76rem;
-  line-height: 1.38;
-  color: var(--text-muted);
-}
-
 .repertoire-rule-banner {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 14px;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-left: 3px solid var(--chord-color);
-  border-radius: var(--radius-sm);
-  font-size: 0.79rem;
-  line-height: 1.4;
+  max-width: 75ch;
+  padding: 12px 16px;
+  font-size: 0.92rem;
+  line-height: 1.5;
   color: var(--text-secondary);
-}
-
-.repertoire-rule-banner svg {
-  flex-shrink: 0;
-  color: var(--chord-color);
-}
-
-.repertoire-rule-banner.banner-liturgica {
-  border-left-color: #16a34a;
-}
-
-.repertoire-rule-banner.banner-liturgica svg {
-  color: #16a34a;
-}
-
-.repertoire-rule-banner.banner-popular {
-  border-left-color: #d97706;
-}
-
-.repertoire-rule-banner.banner-popular svg {
-  color: #d97706;
-}
-
-/* ==========================================================================
-   Special Liturgical Days & Solemnities Strip
-   ========================================================================== */
-.special-days-section {
-  margin-bottom: 18px;
-  padding: 12px 14px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
 }
 
-.special-days-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 9px;
+.repertoire-rule-banner.banner-liturgica {
+  background-color: var(--lit-tint);
+  border-color: transparent;
 }
 
-.special-days-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-secondary);
+.repertoire-rule-banner.banner-popular {
+  background-color: var(--pop-tint);
+  border-color: transparent;
 }
 
-.special-days-label svg {
-  color: var(--chord-color);
-}
-
-.special-days-strip {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-}
-
-.day-theme-chip {
-  padding: 5px 11px;
-  font-family: var(--font-sans);
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background-color: var(--bg-page);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.day-theme-chip:hover {
-  background-color: var(--bg-hover);
+.repertoire-rule-banner strong {
   color: var(--text-main);
-  border-color: var(--accent);
 }
 
-.day-theme-chip.active {
-  background-color: var(--chord-color);
-  color: #ffffff;
-  border-color: var(--chord-color);
-}
-
-@media (max-width: 780px) {
-  .repertoire-type-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Filter Bar & Moment Pills */
-.filters-bar {
-  margin-bottom: 16px;
-}
-
-.filters-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.filter-group-title {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  font-variant-numeric: tabular-nums;
-}
-
-.secondary-filters {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.filter-chip-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 11px;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-}
-
-.filter-chip-toggle[aria-pressed="true"] {
-  background-color: var(--text-main);
-  color: var(--bg-page);
-  border-color: var(--text-main);
-}
-
-.clean-select {
-  padding: 6px 10px;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--text-main);
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-}
-
+/* Momentos da celebração */
 .pills-container {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  scrollbar-width: none;
+  margin-inline: -24px;
+  padding: 2px 24px;
+  scroll-padding-inline: 24px;
+}
+
+.pills-container::-webkit-scrollbar {
+  display: none;
 }
 
 .pill-filter {
-  padding: 5px 12px;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
+  min-height: 40px;
+  padding: 0 16px;
+  font-size: 0.92rem;
+  font-weight: 700;
   color: var(--text-secondary);
-  background-color: transparent;
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   white-space: nowrap;
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  flex-shrink: 0;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
 .pill-filter:hover {
-  background-color: var(--bg-subtle);
+  border-color: var(--text-muted);
   color: var(--text-main);
 }
 
 .pill-filter.active {
-  background-color: var(--text-main);
-  color: var(--bg-page);
-  border-color: var(--text-main);
+  background-color: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
 }
 
-/* High-Density Song Tracklist */
+/* Barra de resultados e filtros extras */
+.filters-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: var(--tap);
+}
+
+.filter-group-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+  min-width: 0;
+}
+
+.filters-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.filters-count {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--radius-pill);
+  background-color: var(--accent);
+  color: var(--on-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters-panel {
+  display: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+  padding: 16px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.filters-panel.open {
+  display: grid;
+  animation: view-in 0.24s var(--ease-out);
+}
+
+.filter-chip-toggle {
+  grid-column: 1 / -1;
+  justify-self: start;
+  min-height: var(--tap);
+  padding: 0 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: none;
+  color: var(--text-main);
+  font-size: 0.98rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.toggle-box {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--text-muted);
+  border-radius: 6px;
+  color: transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.filter-chip-toggle[aria-pressed="true"] .toggle-box {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+/* ---------- Lista de músicas ---------- */
 .songs-list {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
@@ -415,11 +314,10 @@
 }
 
 .song-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto auto;
+  display: flex;
   align-items: center;
   gap: 14px;
-  padding: 11px 16px;
+  padding: 10px 10px 10px 14px;
   border-bottom: 1px solid var(--border-subtle);
   cursor: pointer;
   transition: background-color 0.12s ease;
@@ -430,112 +328,125 @@
 }
 
 .song-row:hover {
-  background-color: var(--bg-subtle);
+  background-color: var(--bg-page);
+}
+
+.song-row:focus-visible {
+  outline-offset: -2px;
 }
 
 .song-row-main {
   min-width: 0;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
 .song-row-title {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 7px;
-  font-size: 0.925rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
   color: var(--text-main);
+  overflow-wrap: anywhere;
 }
 
 .song-row-sub {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6px;
-  font-size: 0.78rem;
+  gap: 2px 8px;
+  font-size: 0.86rem;
+  line-height: 1.35;
   color: var(--text-muted);
+}
+
+.song-row-composer,
+.song-main-composer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 6px;
+  min-width: 0;
+}
+
+.sub-sep {
+  color: var(--border-color);
+}
+
+.artist-link {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: var(--border-color);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  position: relative;
+}
+
+/* área de toque maior sem mudar o layout */
+.artist-link::after {
+  content: '';
+  position: absolute;
+  inset: -8px -4px;
+}
+
+.artist-link:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
 }
 
 .rep-badge {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 0.68rem;
+  gap: 5px;
+  font-size: 0.8rem;
   font-weight: 700;
-  padding: 1px 7px;
-  border-radius: 999px;
-  letter-spacing: 0.02em;
   white-space: nowrap;
+}
+
+.rep-badge::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: currentColor;
 }
 
 .rep-badge-liturgica {
-  color: #15803d;
-  background-color: rgba(22, 163, 74, 0.12);
-  border: 1px solid rgba(22, 163, 74, 0.3);
-}
-
-[data-theme="dark"] .rep-badge-liturgica {
-  color: #4ade80;
-  background-color: rgba(34, 197, 94, 0.14);
-  border-color: rgba(74, 222, 128, 0.3);
+  color: var(--lit);
 }
 
 .rep-badge-popular {
-  color: #b45309;
-  background-color: rgba(217, 119, 6, 0.12);
-  border: 1px solid rgba(217, 119, 6, 0.3);
-}
-
-[data-theme="dark"] .rep-badge-popular {
-  color: #fbbf24;
-  background-color: rgba(245, 158, 11, 0.14);
-  border-color: rgba(251, 191, 36, 0.3);
-}
-
-.special-day-tag {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--chord-color);
-  background-color: var(--accent-tint);
-  padding: 1px 7px;
-  border-radius: 4px;
-  white-space: nowrap;
+  color: var(--pop);
 }
 
 .song-row-moment {
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background-color: var(--bg-page);
-  border: 1px solid var(--border-color);
-  padding: 2px 9px;
-  border-radius: 999px;
-  white-space: nowrap;
-}
-
-.song-row-key {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  color: var(--chord-color);
-  min-width: 34px;
-  text-align: center;
-  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  background-color: var(--bg-subtle);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .song-row-actions {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  flex-shrink: 0;
 }
 
 .row-icon-btn {
-  width: 30px;
-  height: 30px;
-  border-radius: var(--radius-sm);
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: 50%;
   border: none;
   background: transparent;
   color: var(--text-muted);
@@ -543,13 +454,205 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.12s ease, color 0.12s ease;
 }
 
-.row-icon-btn:hover {
-  background-color: var(--bg-hover);
+.row-icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.row-icon-btn:hover:not(:disabled) {
+  background-color: var(--bg-subtle);
   color: var(--text-main);
 }
 
 .row-icon-btn.is-fav {
-  color: var(--chord-color);
+  color: var(--accent);
+}
+
+/* ---------- Artistas ---------- */
+.artist-search {
+  margin-bottom: 16px;
+  max-width: 480px;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.artist-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 68px;
+  padding: 10px 14px 10px 10px;
+  text-align: left;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.2s ease, transform 0.2s var(--ease-out);
+}
+
+.artist-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-1px);
+}
+
+.artist-avatar {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--accent-tint);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.artist-avatar-lg {
+  width: 72px;
+  height: 72px;
+  font-size: 1.9rem;
+  background-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.artist-card-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.artist-card-name {
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-main);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.artist-card-count {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.artist-card-chevron {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.artist-hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0 20px;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1040px) {
+  .hero-quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .filters-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 900px) {
+  .hero-showcase {
+    margin-bottom: 28px;
+  }
+
+  /* destaques viram carrossel horizontal */
+  .hero-quick-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-inline: -16px;
+    padding: 2px 16px 4px;
+    scroll-padding-inline: 16px;
+  }
+
+  .hero-quick-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-mini-card {
+    flex: 0 0 min(78%, 280px);
+    scroll-snap-align: start;
+  }
+
+  .pills-container {
+    margin-inline: -16px;
+    padding-inline: 16px;
+    scroll-padding-inline: 16px;
+  }
+
+  .repertoire-type-grid {
+    display: flex;
+    align-self: stretch;
+  }
+
+  .rep-type-card {
+    flex: 1;
+    justify-content: center;
+    padding: 0 6px;
+    gap: 6px;
+    font-size: 0.86rem;
+  }
+
+  .filters-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .songs-list {
+    margin-inline: -16px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .song-row {
+    gap: 12px;
+    padding: 10px 6px 10px 16px;
+  }
+
+  .song-row-moment {
+    display: none;
+  }
+
+  .artists-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 8px;
+  }
+
+  .artist-avatar-lg {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .rep-type-count {
+    display: none;
+  }
+  .song-row .btn-folder {
+    display: none;
+  }
 }

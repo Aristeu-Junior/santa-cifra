@@ -1,5 +1,5 @@
 /**
- * SANTA CIFRA — Estado Central, Registro de DOM, Tema e Navegação
+ * SANTA CIFRA — Estado Central, Registro de DOM e Navegação entre telas
  */
 window.SantaCifra = window.SantaCifra || {};
 
@@ -15,9 +15,10 @@ window.SantaCifra.state = {
   currentSemitones: 0,
   simplifyChords: false,
   selectedInstrument: 'guitar',
-  fontSize: 15,
+  fontSize: window.matchMedia('(max-width: 480px)').matches ? 13 : 15,
 
   activeTab: 'home',
+  historyDepth: 0,
   heroMode: 'mostUsed',
   activeRepertoireTypeFilter: 'all',
   activeSpecialDayFilter: 'all',
@@ -27,6 +28,11 @@ window.SantaCifra.state = {
   onlySimpleFilter: false,
   searchQuery: '',
 
+  artists: [],
+  selectedArtist: null,
+  artistSort: 'count',
+  artistQuery: '',
+
   songIdToSaveInFolder: null,
 
   isScrolling: false,
@@ -35,110 +41,143 @@ window.SantaCifra.state = {
   isMetronomeActive: false
 };
 
+/** Escapa texto antes de inserir em innerHTML (cifras personalizadas vêm do usuário). */
+window.SantaCifra.esc = function esc(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+};
+
 window.SantaCifra.initDOM = function initDOM() {
+  const byId = (id) => document.getElementById(id);
   const dom = {
-    logoArea: document.getElementById('logoArea'),
-    tabHomeBtn: document.getElementById('tabHomeBtn'),
-    tabPlaylistsBtn: document.getElementById('tabPlaylistsBtn'),
+    logoArea: byId('logoArea'),
+    tabHomeBtn: byId('tabHomeBtn'),
+    tabArtistsBtn: byId('tabArtistsBtn'),
+    tabPlaylistsBtn: byId('tabPlaylistsBtn'),
 
-    catalogSection: document.getElementById('catalogSection'),
-    playlistsSection: document.getElementById('playlistsSection'),
-    songViewSection: document.getElementById('songViewSection'),
+    catalogSection: byId('catalogSection'),
+    artistsSection: byId('artistsSection'),
+    playlistsSection: byId('playlistsSection'),
+    songViewSection: byId('songViewSection'),
 
-    heroShowcase: document.getElementById('heroShowcase'),
-    heroBtnMostUsed: document.getElementById('heroBtnMostUsed'),
-    heroBtnSimple: document.getElementById('heroBtnSimple'),
-    heroQuickGrid: document.getElementById('heroQuickGrid'),
+    heroShowcase: byId('heroShowcase'),
+    heroBtnMostUsed: byId('heroBtnMostUsed'),
+    heroBtnSimple: byId('heroBtnSimple'),
+    heroQuickGrid: byId('heroQuickGrid'),
 
-    repertoireTypeGrid: document.getElementById('repertoireTypeGrid'),
-    countRepAll: document.getElementById('countRepAll'),
-    countRepLiturgica: document.getElementById('countRepLiturgica'),
-    countRepPopular: document.getElementById('countRepPopular'),
-    repertoireRuleBanner: document.getElementById('repertoireRuleBanner'),
-    repertoireRuleText: document.getElementById('repertoireRuleText'),
-    specialDaysStrip: document.getElementById('specialDaysStrip'),
+    repertoireTypeGrid: byId('repertoireTypeGrid'),
+    countRepAll: byId('countRepAll'),
+    countRepLiturgica: byId('countRepLiturgica'),
+    countRepPopular: byId('countRepPopular'),
+    repertoireRuleBanner: byId('repertoireRuleBanner'),
+    repertoireRuleText: byId('repertoireRuleText'),
+    specialDaySelect: byId('specialDaySelect'),
 
-    searchInput: document.getElementById('searchInput'),
-    btnClearSearch: document.getElementById('btnClearSearch'),
-    btnOnlySimpleToggle: document.getElementById('btnOnlySimpleToggle'),
-    chkOnlySimple: document.getElementById('chkOnlySimple'),
-    artistFilterSelect: document.getElementById('artistFilterSelect'),
-    seasonFilterSelect: document.getElementById('seasonFilterSelect'),
-    pillsContainer: document.getElementById('pillsContainer'),
-    catalogResultsTitle: document.getElementById('catalogResultsTitle'),
-    songsGrid: document.getElementById('songsGrid'),
+    searchInput: byId('searchInput'),
+    btnClearSearch: byId('btnClearSearch'),
+    btnOnlySimpleToggle: byId('btnOnlySimpleToggle'),
+    chkOnlySimple: byId('chkOnlySimple'),
+    artistFilterSelect: byId('artistFilterSelect'),
+    seasonFilterSelect: byId('seasonFilterSelect'),
+    pillsContainer: byId('pillsContainer'),
+    catalogResultsTitle: byId('catalogResultsTitle'),
+    btnToggleFilters: byId('btnToggleFilters'),
+    btnClearFilters: byId('btnClearFilters'),
+    filtersPanel: byId('filtersPanel'),
+    filtersCount: byId('filtersCount'),
+    songsGrid: byId('songsGrid'),
 
-    foldersList: document.getElementById('foldersList'),
-    playlistDetailPanel: document.getElementById('playlistDetailPanel'),
-    btnOpenNewFolder: document.getElementById('btnOpenNewFolder'),
+    artistsIndexView: byId('artistsIndexView'),
+    artistDetailView: byId('artistDetailView'),
+    artistsCountText: byId('artistsCountText'),
+    artistSortCount: byId('artistSortCount'),
+    artistSortAlpha: byId('artistSortAlpha'),
+    artistSearchInput: byId('artistSearchInput'),
+    artistsGrid: byId('artistsGrid'),
+    btnArtistBack: byId('btnArtistBack'),
+    artistDetailAvatar: byId('artistDetailAvatar'),
+    artistDetailName: byId('artistDetailName'),
+    artistDetailCount: byId('artistDetailCount'),
+    artistSongsList: byId('artistSongsList'),
 
-    playlistQueueBar: document.getElementById('playlistQueueBar'),
-    queueFolderName: document.getElementById('queueFolderName'),
-    queuePositionText: document.getElementById('queuePositionText'),
-    btnQueuePrev: document.getElementById('btnQueuePrev'),
-    btnQueueNext: document.getElementById('btnQueueNext'),
+    foldersList: byId('foldersList'),
+    playlistDetailPanel: byId('playlistDetailPanel'),
+    btnOpenNewFolder: byId('btnOpenNewFolder'),
 
-    btnBack: document.getElementById('btnBack'),
-    btnFavoriteCurrentSong: document.getElementById('btnFavoriteCurrentSong'),
-    btnAddCurrentToFolder: document.getElementById('btnAddCurrentToFolder'),
-    songTitle: document.getElementById('songTitle'),
-    songComposer: document.getElementById('songComposer'),
-    songRepertoireTypeBadge: document.getElementById('songRepertoireTypeBadge'),
-    songMomentBadge: document.getElementById('songMomentBadge'),
-    songSpecialDayBadge: document.getElementById('songSpecialDayBadge'),
-    songSeasonBadge: document.getElementById('songSeasonBadge'),
-    songNormCallout: document.getElementById('songNormCallout'),
+    playlistQueueBar: byId('playlistQueueBar'),
+    queueFolderName: byId('queueFolderName'),
+    queuePositionText: byId('queuePositionText'),
+    btnQueuePrev: byId('btnQueuePrev'),
+    btnQueueNext: byId('btnQueueNext'),
 
-    btnToggleSimplify: document.getElementById('btnToggleSimplify'),
-    currentKeyDisplay: document.getElementById('currentKeyDisplay'),
-    btnTransposeDown: document.getElementById('btnTransposeDown'),
-    btnTransposeUp: document.getElementById('btnTransposeUp'),
-    btnTransposeReset: document.getElementById('btnTransposeReset'),
-    instrumentSelect: document.getElementById('instrumentSelect'),
-    btnFontDec: document.getElementById('btnFontDec'),
-    btnFontInc: document.getElementById('btnFontInc'),
-    btnPrint: document.getElementById('btnPrint'),
+    btnBack: byId('btnBack'),
+    btnFavoriteCurrentSong: byId('btnFavoriteCurrentSong'),
+    btnAddCurrentToFolder: byId('btnAddCurrentToFolder'),
+    songTitle: byId('songTitle'),
+    songComposer: byId('songComposer'),
+    songRepertoireTypeBadge: byId('songRepertoireTypeBadge'),
+    songMomentBadge: byId('songMomentBadge'),
+    songSpecialDayBadge: byId('songSpecialDayBadge'),
+    songSeasonBadge: byId('songSeasonBadge'),
+    songNormCallout: byId('songNormCallout'),
 
-    btnAutoScroll: document.getElementById('btnAutoScroll'),
-    scrollFloatingController: document.getElementById('scrollFloatingController'),
-    btnFloatingPlay: document.getElementById('btnFloatingPlay'),
-    btnFloatingSpeed: document.getElementById('btnFloatingSpeed'),
-    btnFloatingClose: document.getElementById('btnFloatingClose'),
+    cifraToolbar: byId('cifraToolbar'),
+    btnToolbarMore: byId('btnToolbarMore'),
+    toolbarMore: byId('toolbarMore'),
+    btnToggleSimplify: byId('btnToggleSimplify'),
+    currentKeyDisplay: byId('currentKeyDisplay'),
+    btnTransposeDown: byId('btnTransposeDown'),
+    btnTransposeUp: byId('btnTransposeUp'),
+    btnTransposeReset: byId('btnTransposeReset'),
+    instrumentSelect: byId('instrumentSelect'),
+    btnFontDec: byId('btnFontDec'),
+    btnFontInc: byId('btnFontInc'),
+    btnPrint: byId('btnPrint'),
 
-    btnMetronome: document.getElementById('btnMetronome'),
-    bpmDisplay: document.getElementById('bpmDisplay'),
-    metronomeBeatDots: document.getElementById('metronomeBeatDots'),
+    btnAutoScroll: byId('btnAutoScroll'),
+    scrollFloatingController: byId('scrollFloatingController'),
+    btnFloatingPlay: byId('btnFloatingPlay'),
+    btnFloatingSpeed: byId('btnFloatingSpeed'),
+    btnFloatingClose: byId('btnFloatingClose'),
 
-    chordsTopBar: document.getElementById('chordsTopBar'),
-    cifraPre: document.getElementById('cifraPre'),
-    rhythmName: document.getElementById('rhythmName'),
-    rhythmArrows: document.getElementById('rhythmArrows'),
-    youtubeLink: document.getElementById('youtubeLink'),
+    btnMetronome: byId('btnMetronome'),
+    bpmDisplay: byId('bpmDisplay'),
+    metronomeBeatDots: byId('metronomeBeatDots'),
 
-    chordDialog: document.getElementById('chordDialog'),
-    modalChordName: document.getElementById('modalChordName'),
-    modalGuitarSvg: document.getElementById('modalGuitarSvg'),
-    modalKeyboardSvg: document.getElementById('modalKeyboardSvg'),
-    modalUkuleleSvg: document.getElementById('modalUkuleleSvg'),
-    modalCavacoSvg: document.getElementById('modalCavacoSvg'),
+    chordsTopBar: byId('chordsTopBar'),
+    cifraPre: byId('cifraPre'),
+    rhythmName: byId('rhythmName'),
+    rhythmArrows: byId('rhythmArrows'),
+    youtubeLink: byId('youtubeLink'),
 
-    addToFolderDialog: document.getElementById('addToFolderDialog'),
-    addToFolderSongSubtitle: document.getElementById('addToFolderSongSubtitle'),
-    folderCheckboxesContainer: document.getElementById('folderCheckboxesContainer'),
-    quickFolderNameInput: document.getElementById('quickFolderNameInput'),
-    btnQuickCreateFolder: document.getElementById('btnQuickCreateFolder'),
+    chordDialog: byId('chordDialog'),
+    modalChordName: byId('modalChordName'),
+    modalGuitarSvg: byId('modalGuitarSvg'),
+    modalKeyboardSvg: byId('modalKeyboardSvg'),
+    modalUkuleleSvg: byId('modalUkuleleSvg'),
+    modalCavacoSvg: byId('modalCavacoSvg'),
 
-    newFolderDialog: document.getElementById('newFolderDialog'),
-    formNewFolder: document.getElementById('formNewFolder'),
-    btnCancelNewFolder: document.getElementById('btnCancelNewFolder'),
+    addToFolderDialog: byId('addToFolderDialog'),
+    addToFolderSongSubtitle: byId('addToFolderSongSubtitle'),
+    folderCheckboxesContainer: byId('folderCheckboxesContainer'),
+    quickFolderNameInput: byId('quickFolderNameInput'),
+    btnQuickCreateFolder: byId('btnQuickCreateFolder'),
 
-    newSongDialog: document.getElementById('newSongDialog'),
-    btnOpenNewSong: document.getElementById('btnOpenNewSong'),
-    formNewSong: document.getElementById('formNewSong'),
+    newFolderDialog: byId('newFolderDialog'),
+    formNewFolder: byId('formNewFolder'),
+    btnCancelNewFolder: byId('btnCancelNewFolder'),
 
-    btnToggleTheme: document.getElementById('btnToggleTheme'),
-    themeIconMoon: document.getElementById('themeIconMoon'),
-    themeIconSun: document.getElementById('themeIconSun')
+    newSongDialog: byId('newSongDialog'),
+    btnOpenNewSong: byId('btnOpenNewSong'),
+    formNewSong: byId('formNewSong'),
+
+    btnToggleTheme: byId('btnToggleTheme'),
+    themeIconMoon: byId('themeIconMoon'),
+    themeIconSun: byId('themeIconSun')
   };
 
   window.SantaCifra.dom = dom;
@@ -158,28 +197,101 @@ window.SantaCifra.initCatalog = function initCatalog() {
     } catch (_) {}
   }
 
-  const savedCustom = localStorage.getItem('santa_cifra_custom_songs');
-  const customSongs = savedCustom ? JSON.parse(savedCustom) : [];
+  let customSongs = [];
+  try {
+    const savedCustom = localStorage.getItem('santa_cifra_custom_songs');
+    customSongs = savedCustom ? JSON.parse(savedCustom) : [];
+  } catch (_) {}
   state.songs = [...baseCatalog, ...customSongs];
+  if (window.SantaCifra.buildArtistIndex) window.SantaCifra.buildArtistIndex();
 };
 
-window.SantaCifra.switchTab = function switchTab(tabName) {
+/**
+ * Troca a tela visível. Telas: home, artists, playlists, song.
+ * opts.history: 'push' empilha uma entrada (botão voltar do celular retorna),
+ * 'replace' (padrão) troca a entrada atual, 'none' não mexe no histórico.
+ */
+window.SantaCifra.switchTab = function switchTab(tabName, opts) {
   const { state, dom } = window.SantaCifra;
+  const historyMode = (opts && opts.history) || 'replace';
   if (window.SantaCifra.stopAutoScroll) window.SantaCifra.stopAutoScroll();
   if (window.SantaCifra.stopMetronome) window.SantaCifra.stopMetronome();
+  if (dom.scrollFloatingController) dom.scrollFloatingController.style.display = 'none';
+  if (window.SantaCifra.closeToolbarMore) window.SantaCifra.closeToolbarMore();
+
+  if (tabName !== 'song') state.activeQueuePlaylistId = null;
   state.activeTab = tabName;
+  document.body.dataset.view = tabName;
 
   dom.tabHomeBtn.classList.toggle('active', tabName === 'home');
+  dom.tabArtistsBtn.classList.toggle('active', tabName === 'artists');
   dom.tabPlaylistsBtn.classList.toggle('active', tabName === 'playlists');
 
   dom.catalogSection.style.display = tabName === 'home' ? 'block' : 'none';
+  dom.artistsSection.style.display = tabName === 'artists' ? 'block' : 'none';
   dom.playlistsSection.style.display = tabName === 'playlists' ? 'block' : 'none';
   dom.songViewSection.style.display = tabName === 'song' ? 'block' : 'none';
 
   if (tabName === 'playlists' && window.SantaCifra.renderPlaylistsView) {
     window.SantaCifra.renderPlaylistsView();
+  } else if (tabName === 'artists' && window.SantaCifra.renderArtistsView) {
+    window.SantaCifra.renderArtistsView();
   } else if (tabName === 'home') {
     if (window.SantaCifra.renderHeroShowcase) window.SantaCifra.renderHeroShowcase();
     if (window.SantaCifra.renderCatalog) window.SantaCifra.renderCatalog();
   }
+
+  window.SantaCifra.syncHistory(historyMode);
+};
+
+/** Guarda a tela atual no histórico do navegador para o botão "voltar" funcionar. */
+window.SantaCifra.syncHistory = function syncHistory(mode) {
+  const { state } = window.SantaCifra;
+  if (mode === 'none' || !window.history || !window.history.pushState) return;
+  const entry = {
+    tab: state.activeTab,
+    songId: state.activeTab === 'song' && state.currentSong ? state.currentSong.id : null,
+    artist: state.activeTab === 'artists' ? state.selectedArtist : null,
+    queueId: state.activeQueuePlaylistId,
+    queueIndex: state.activeQueueIndex
+  };
+  try {
+    if (mode === 'push') {
+      window.history.pushState(entry, '');
+      state.historyDepth += 1;
+    } else {
+      window.history.replaceState(entry, '');
+    }
+  } catch (_) {}
+};
+
+/** Volta uma tela; se não houver histórico do app, vai para a tela indicada. */
+window.SantaCifra.goBack = function goBack(fallbackTab) {
+  const { state } = window.SantaCifra;
+  if (state.historyDepth > 0) {
+    window.history.back();
+    return;
+  }
+  if (fallbackTab === 'artists') state.selectedArtist = null;
+  window.SantaCifra.switchTab(fallbackTab || 'home');
+};
+
+window.SantaCifra.bindHistory = function bindHistory() {
+  const { state } = window.SantaCifra;
+  window.SantaCifra.syncHistory('replace');
+
+  window.addEventListener('popstate', (e) => {
+    state.historyDepth = Math.max(0, state.historyDepth - 1);
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const entry = e.state || { tab: 'home' };
+
+    if (entry.tab === 'song' && entry.songId) {
+      state.activeQueuePlaylistId = entry.queueId || null;
+      state.activeQueueIndex = entry.queueIndex || 0;
+      window.SantaCifra.openSongView(entry.songId, { history: 'none' });
+      return;
+    }
+    if (entry.tab === 'artists') state.selectedArtist = entry.artist || null;
+    window.SantaCifra.switchTab(entry.tab || 'home', { history: 'none' });
+  });
 };

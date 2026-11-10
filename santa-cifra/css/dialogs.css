@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SANTA CIFRA — Native <dialog> Modals, Forms & OTA Update Toast
+   SANTA CIFRA — Diálogos nativos <dialog>, formulários e aviso de atualização
    ========================================================================== */
 
 dialog:modal {
@@ -9,45 +9,62 @@ dialog:modal {
 dialog::backdrop {
   overflow: hidden;
   overscroll-behavior: contain;
-  background-color: rgba(18, 18, 16, 0.55);
-  backdrop-filter: blur(2px);
+  background-color: rgba(14, 16, 19, 0.6);
 }
 
 dialog.app-dialog[open] {
   display: block;
+  animation: dialog-in 0.26s var(--ease-out);
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
 }
 
 .app-dialog {
   margin: auto;
-  width: min(92vw, 480px);
+  width: min(calc(100vw - 32px), 480px);
+  max-height: min(calc(100dvh - 32px), 760px);
+  overflow-y: auto;
   background-color: var(--bg-surface);
   color: var(--text-main);
-  border: none;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 20px;
+  padding: 22px;
   box-shadow: var(--shadow-dialog);
+}
+
+.app-dialog-wide {
+  width: min(calc(100vw - 32px), 620px);
 }
 
 .dialog-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 14px;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
 .dialog-header h2 {
   font-family: var(--font-display);
-  font-size: 1.45rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .btn-close-dialog {
-  width: 30px;
-  height: 30px;
+  width: var(--tap);
+  height: var(--tap);
+  margin: -8px -8px -8px 0;
   border: none;
   background: transparent;
   color: var(--text-muted);
-  border-radius: var(--radius-sm);
+  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -62,111 +79,129 @@ dialog.app-dialog[open] {
 .chord-modal-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 16px 12px;
   text-align: center;
 }
 
 .chord-inst-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  margin-bottom: 4px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
 }
 
 .dialog-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   color: var(--text-muted);
-  margin-bottom: 12px;
+  margin: -8px 0 14px;
 }
 
 .folder-checkbox-list {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  max-height: 220px;
+  gap: 2px;
+  max-height: 300px;
   overflow-y: auto;
-  margin-bottom: 14px;
+  margin: 0 -8px 14px;
+}
+
+.folder-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.folder-check:hover {
+  background-color: var(--bg-page);
+}
+
+.folder-check input {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
 .dialog-inline-create {
   display: flex;
   gap: 8px;
-  padding-top: 12px;
+  padding-top: 14px;
   border-top: 1px solid var(--border-color);
 }
 
+.dialog-inline-create .dialog-input {
+  flex: 1;
+  min-width: 0;
+}
+
 .form-field {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .form-field label {
   display: block;
-  font-size: 0.76rem;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 700;
   color: var(--text-secondary);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .form-row-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 12px;
 }
 
 .form-row-3 {
   display: grid;
-  grid-template-columns: 1fr 1fr 80px;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 90px;
+  gap: 12px;
 }
 
 .dialog-input,
 .dialog-textarea {
   width: 100%;
-  padding: 8px 10px;
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
+  min-height: var(--tap);
+  padding: 10px 14px;
+  font-size: 1rem;
   color: var(--text-main);
-  background-color: var(--bg-page);
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
+}
+
+.dialog-input::placeholder,
+.dialog-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.dialog-input:focus,
+.dialog-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-tint);
 }
 
 .dialog-textarea {
   font-family: var(--font-mono);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  resize: vertical;
 }
 
 .dialog-actions {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
-.btn-primary-solid {
-  padding: 7px 14px;
-  border: none;
-  border-radius: var(--radius-sm);
-  background-color: var(--text-main);
-  color: var(--bg-page);
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.btn-ghost {
-  padding: 7px 14px;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  background: transparent;
-  color: var(--text-secondary);
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* OTA Live Update Banner */
+/* Aviso de atualização OTA */
 .ota-update-toast {
   position: fixed;
   bottom: 18px;
@@ -176,13 +211,13 @@ dialog.app-dialog[open] {
   background-color: var(--text-main);
   color: var(--bg-page);
   padding: 8px 14px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   display: none;
   align-items: center;
   gap: 10px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  box-shadow: var(--shadow-dialog);
+  font-size: 0.88rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-raised);
 }
 
 .ota-update-toast.visible {
@@ -191,12 +226,56 @@ dialog.app-dialog[open] {
 
 .ota-update-toast button {
   background-color: var(--accent);
-  color: #ffffff;
+  color: var(--on-accent);
   border: none;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+/* ---------- Celular: diálogos sobem de baixo ---------- */
+@media (max-width: 600px) {
+  .app-dialog,
+  .app-dialog-wide {
+    width: 100%;
+    max-width: 100%;
+    max-height: 92dvh;
+    margin: auto 0 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 20px 16px calc(20px + env(safe-area-inset-bottom, 0px));
+  }
+
+  @keyframes dialog-in {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-row-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-row-3 .form-field:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .dialog-actions .btn-primary-solid {
+    flex: 1;
+  }
+}
+
+.chord-modal-grid:focus,
+.folder-checkbox-list:focus {
+  outline: none;
 }

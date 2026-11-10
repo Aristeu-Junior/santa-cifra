@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="112" fill="#181715"/>
-  <path d="M256 108v296M176 188h160" stroke="#f6f4ef" stroke-width="36" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Santa Cifra">
+  <rect width="512" height="512" fill="#8f1d24"/>
+  <g fill="none" stroke="#ffffff" stroke-width="30" stroke-linecap="round">
+    <path d="M276 136v196"/>
+    <path d="M198 208h156"/>
+  </g>
+  <ellipse cx="230" cy="338" rx="54" ry="40" transform="rotate(-22 230 338)" fill="#ffffff"/>
 </svg>

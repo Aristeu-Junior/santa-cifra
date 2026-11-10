@@ -1,16 +1,23 @@
 /* ==========================================================================
-   SANTA CIFRA — Song Viewer, Studio Toolbar, Chord Diagrams & Auto-scroll
+   SANTA CIFRA — Leitor de cifra, ferramentas, diagramas e rolagem
    ========================================================================== */
 
+.song-view-section {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Barra da pasta em execução */
 .playlist-queue-bar {
   display: none;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding: 10px 16px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  padding: 8px 8px 8px 16px;
   margin-bottom: 16px;
-  background-color: var(--text-main);
-  color: var(--bg-page);
+  background-color: var(--accent);
+  color: var(--on-accent);
   border-radius: var(--radius-md);
 }
 
@@ -20,60 +27,88 @@
 
 .queue-meta {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.85rem;
+  flex-direction: column;
+  min-width: 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
 }
 
 .queue-label {
-  opacity: 0.7;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  opacity: 0.85;
 }
 
 .queue-controls {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.queue-btn {
+  min-height: 40px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background-color: color-mix(in srgb, var(--on-accent) 16%, transparent);
+  color: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.queue-btn:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--on-accent) 28%, transparent);
 }
 
 .queue-pos {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
+  min-width: 52px;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
 
+/* Cabeçalho da música */
 .song-header {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .song-header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  gap: 8px;
+  margin-bottom: 14px;
 }
 
 .song-header-actions {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .song-main-title {
   font-family: var(--font-display);
-  font-size: 2.15rem;
-  font-weight: 400;
-  line-height: 1.15;
+  font-size: clamp(1.9rem, 1.3rem + 2.6vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
   color: var(--text-main);
-  margin-bottom: 2px;
+  text-wrap: balance;
+  margin-bottom: 6px;
 }
 
 .song-main-composer {
-  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+  font-size: 1rem;
   color: var(--text-muted);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .song-tags-row {
@@ -84,10 +119,10 @@
 }
 
 .meta-pill {
-  font-size: 0.74rem;
-  font-weight: 600;
-  padding: 3px 10px;
-  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
   background-color: var(--accent-tint);
   color: var(--chord-color);
 }
@@ -98,141 +133,253 @@
 }
 
 .meta-pill-liturgica {
-  background-color: rgba(22, 163, 74, 0.14);
-  color: #15803d;
-  border: 1px solid rgba(22, 163, 74, 0.32);
-}
-
-[data-theme="dark"] .meta-pill-liturgica {
-  background-color: rgba(34, 197, 94, 0.16);
-  color: #4ade80;
-  border-color: rgba(74, 222, 128, 0.32);
+  background-color: var(--lit-tint);
+  color: var(--lit);
 }
 
 .meta-pill-popular {
-  background-color: rgba(217, 119, 6, 0.14);
-  color: #b45309;
-  border: 1px solid rgba(217, 119, 6, 0.32);
+  background-color: var(--pop-tint);
+  color: var(--pop);
 }
 
-[data-theme="dark"] .meta-pill-popular {
-  background-color: rgba(245, 158, 11, 0.16);
-  color: #fbbf24;
-  border-color: rgba(251, 191, 36, 0.32);
+.song-norm-details {
+  margin-top: 12px;
+  max-width: 75ch;
+}
+
+.song-norm-details summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+  list-style: none;
+  text-decoration: underline;
+  text-decoration-color: var(--border-color);
+  text-underline-offset: 3px;
+}
+
+.song-norm-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.song-norm-details summary::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.2s var(--ease-out);
+}
+
+.song-norm-details[open] summary::after {
+  transform: translateY(2px) rotate(-135deg);
 }
 
 .song-norm-callout {
-  margin-top: 10px;
-  padding: 9px 13px;
-  font-size: 0.78rem;
-  line-height: 1.42;
+  margin-top: 6px;
+  padding: 12px 16px;
+  font-size: 0.92rem;
+  line-height: 1.5;
   color: var(--text-secondary);
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-left: 3px solid var(--chord-color);
-  border-radius: var(--radius-sm);
-}
-
-.song-norm-callout.callout-liturgica {
-  border-left-color: #16a34a;
-}
-
-.song-norm-callout.callout-popular {
-  border-left-color: #d97706;
-}
-
-/* Studio Toolbar */
-.cifra-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px 14px;
-  margin-bottom: 14px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
 }
 
-.toolbar-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+.song-norm-callout.callout-liturgica {
+  background-color: var(--lit-tint);
+  border-color: transparent;
 }
 
-.icon-tool-btn {
-  min-width: 34px;
-  height: 34px;
-  padding: 0 9px;
-  border-radius: var(--radius-sm);
+.song-norm-callout.callout-popular {
+  background-color: var(--pop-tint);
+  border-color: transparent;
+}
+
+/* ---------- Barra de ferramentas ---------- */
+.cifra-toolbar {
+  position: sticky;
+  top: calc(var(--header-h) + 8px);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+  margin-bottom: 16px;
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.tb-more {
+  display: contents;
+}
+
+.cifra-toolbar .tb-more-toggle {
+  display: none;
+}
+
+.tb-key,
+.tb-font {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
   background-color: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+}
+
+.tb-step {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
   color: var(--text-main);
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
   cursor: pointer;
-  text-decoration: none;
+  box-shadow: var(--shadow-soft);
   transition: background-color 0.12s ease, color 0.12s ease;
 }
 
-.icon-tool-btn:hover {
-  background-color: var(--bg-hover);
+.tb-step:hover {
+  background-color: var(--accent);
+  color: var(--on-accent);
 }
 
-.icon-tool-btn.active {
-  background-color: var(--text-main);
-  color: var(--bg-page);
-  border-color: var(--text-main);
+.tb-step:active {
+  transform: scale(0.94);
+}
+
+.tb-font .tb-step {
+  font-size: 0.86rem;
 }
 
 .key-display {
-  min-width: 36px;
-  height: 34px;
-  padding: 0 8px;
-  border-radius: var(--radius-sm);
-  background-color: var(--accent-tint);
-  color: var(--chord-color);
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-  font-weight: 700;
+  min-width: 56px;
+  padding: 0 6px;
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  line-height: 1.05;
+}
+
+.key-label,
+.tb-font-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.tb-font-label {
+  display: none;
+  padding: 0 6px;
+  font-size: 0.82rem;
+}
+
+.key-display strong {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--chord-color);
+}
+
+.tb-btn {
+  min-height: var(--tap);
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.tb-btn svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.tb-btn:hover {
+  background-color: var(--bg-subtle);
+  color: var(--text-main);
+}
+
+.tb-btn.active {
+  background-color: var(--accent);
+  color: var(--on-accent);
 }
 
 .bpm-num {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
   font-variant-numeric: tabular-nums;
+  font-weight: 700;
 }
 
 .beat-dots {
   display: inline-flex;
   gap: 4px;
-  margin-left: 4px;
 }
 
 .beat-dots span {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--text-muted);
+  background-color: currentColor;
   opacity: 0.25;
+  transition: opacity 0.08s linear, transform 0.08s linear;
 }
 
-/* Chords Strip */
+/* ---------- Diagramas de acordes ---------- */
+.chords-panel {
+  margin-bottom: 16px;
+}
+
+.chords-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.panel-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.chords-panel-head .clean-select {
+  width: auto;
+  min-width: 150px;
+}
+
 .chords-top-bar {
   display: flex;
   gap: 10px;
   overflow-x: auto;
-  padding: 12px 4px;
-  margin-bottom: 14px;
+  scrollbar-width: thin;
+  padding: 2px 2px 8px;
 }
 
 .chord-mini-box {
@@ -243,43 +390,56 @@
   text-align: center;
   cursor: pointer;
   flex-shrink: 0;
-  transition: border-color 0.15s ease;
+  color: var(--text-main);
+  transition: border-color 0.15s ease, box-shadow 0.2s ease;
 }
 
 .chord-mini-box:hover {
   border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
 }
 
 .chord-mini-title {
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--chord-color);
   margin-bottom: 4px;
 }
 
-/* Cifra Sheet */
+/* ---------- Folha da cifra ---------- */
 .cifra-container {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 28px 24px;
+  padding: 28px 28px 32px;
   margin-bottom: 16px;
   overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 .cifra-pre {
   font-family: var(--font-mono);
   font-size: 15px;
-  line-height: 1.65;
+  font-weight: 500;
+  line-height: 1.7;
   color: var(--text-main);
   white-space: pre;
+  tab-size: 4;
+  font-variant-ligatures: none;
+  width: max-content;
+  min-width: 100%;
+}
+
+.cifra-pre:focus-visible {
+  outline-offset: 6px;
 }
 
 .chord-token {
   color: var(--chord-color);
   font-weight: 700;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .chord-token:hover {
@@ -296,59 +456,245 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
-  padding: 12px 16px;
+  padding: 12px 12px 12px 18px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
 }
 
 .rhythm-guide-card {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 4px 14px;
 }
 
 .meta-label {
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 0.92rem;
+  font-weight: 700;
   color: var(--text-secondary);
 }
 
 .rhythm-arrows {
   font-family: var(--font-mono);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--chord-color);
   letter-spacing: 0.08em;
 }
 
-/* Floating Auto-scroll Pill */
+/* ---------- Controle flutuante da rolagem ---------- */
 .scroll-floating-controller {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   z-index: 60;
   background-color: var(--text-main);
   color: var(--bg-page);
-  padding: 6px 10px;
-  border-radius: 999px;
+  padding: 4px;
+  border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  box-shadow: var(--shadow-dialog);
+  gap: 2px;
+  box-shadow: var(--shadow-raised);
 }
 
 .scroll-floating-controller button {
+  min-width: var(--tap);
+  height: var(--tap);
+  padding: 0 10px;
   background: transparent;
   border: none;
+  border-radius: var(--radius-pill);
   color: inherit;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
+}
+
+.scroll-floating-controller button:hover {
+  background-color: color-mix(in srgb, var(--bg-page) 18%, transparent);
+}
+
+/* ---------- Celular: ferramentas viram barra inferior ---------- */
+@media (max-width: 900px) {
+  .song-header-actions .btn-outline {
+    padding: 0 14px;
+    font-size: 0.88rem;
+  }
+
+  .cifra-toolbar {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 55;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto repeat(3, minmax(0, 1fr));
+    gap: 4px;
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom, 0px));
+    border: none;
+    border-top: 1px solid var(--border-color);
+    border-radius: 0;
+    box-shadow: 0 -4px 16px rgba(17, 19, 23, 0.08);
+  }
+
+  .cifra-toolbar > .tb-btn {
+    min-height: 50px;
+    padding: 0 4px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    border-radius: var(--radius-md);
+    font-size: 0.74rem;
+  }
+
+  .cifra-toolbar > .tb-btn svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .cifra-toolbar > .tb-btn.active {
+    background-color: var(--accent-tint);
+    color: var(--accent);
+  }
+
+  .cifra-toolbar .tb-more-toggle {
+    display: inline-flex;
+  }
+
+  .tb-font-label {
+    display: inline;
+  }
+
+  .tb-key {
+    align-self: center;
+  }
+
+  .tb-key .tb-step {
+    width: 44px;
+    height: 44px;
+  }
+
+  .key-display {
+    min-width: 46px;
+  }
+
+  /* painel "Mais" abre acima da barra */
+  .tb-more {
+    display: none;
+    position: absolute;
+    right: 8px;
+    bottom: calc(100% + 8px);
+    width: min(280px, calc(100vw - 16px));
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 8px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-raised);
+  }
+
+  .tb-more.open {
+    display: flex;
+    animation: view-in 0.22s var(--ease-out);
+  }
+
+  .tb-more .tb-btn {
+    justify-content: flex-start;
+    border-radius: var(--radius-md);
+    min-height: 48px;
+    font-size: 0.95rem;
+  }
+
+  .tb-more .beat-dots {
+    margin-left: auto;
+  }
+
+  .tb-font {
+    justify-content: space-between;
+    margin: 4px 0;
+  }
+
+  .song-view-section {
+    padding-bottom: 24px;
+  }
+
+  .cifra-container {
+    margin-inline: -16px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding: 20px 16px 24px;
+  }
+
+  .song-bottom-meta {
+    padding: 14px 16px;
+  }
+
+  .song-bottom-meta .btn-outline {
+    width: 100%;
+  }
+
+  .scroll-floating-controller {
+    right: 12px;
+    bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* ---------- Diagramas SVG: cores seguem o tema ---------- */
+.chord-svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* o nome do acorde já aparece no título da caixa ou do diálogo */
+.chord-svg text[font-family] {
+  display: none;
+}
+
+.chord-svg text {
+  fill: var(--text-muted);
+}
+
+.chord-svg circle[fill="#8b0000"] {
+  fill: var(--chord-color);
+}
+
+.guitar-svg line,
+.ukulele-svg line,
+.cavaquinho-svg line {
+  stroke: var(--text-muted);
+}
+
+.guitar-svg rect,
+.ukulele-svg rect,
+.cavaquinho-svg rect {
+  fill: var(--text-main);
+}
+
+.guitar-svg circle[fill="none"],
+.ukulele-svg circle[fill="none"],
+.cavaquinho-svg circle[fill="none"] {
+  stroke: var(--text-secondary);
+}
+
+@media (max-width: 420px) {
+  .hide-xs {
+    display: none;
+  }
+
+  .song-header-actions {
+    gap: 6px;
+  }
 }
