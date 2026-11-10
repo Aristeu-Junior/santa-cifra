@@ -1,5 +1,6 @@
 /* ========================================================
-   SANTA CIFRA — Estilos do Calendário Litúrgico
+   SANTA CIFRA — Estilos do Calendário Litúrgico (v3.8.1)
+   Separação Rigorosa de Solenidades, Festas e Memórias de Santos
    ======================================================== */
 
 .calendar-section {
@@ -10,7 +11,7 @@
 .calendar-layout {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -22,7 +23,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
-  padding: 8px 0;
+  padding: 4px 0;
 }
 
 .calendar-title-wrap h1 {
@@ -105,18 +106,85 @@
   color: var(--text-primary);
 }
 
-/* Legenda de cores */
-.liturgical-legend {
+/* ========================================================
+   Filtros Rápidos: Todos / Solenidades / Memórias / Domingos
+   ======================================================== */
+.calendar-controls-bar {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px 16px;
-  padding: 10px 16px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px 0;
+}
+
+.calendar-controls-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.calendar-filter-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+}
+
+.cal-filter-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.18s ease;
+}
+
+.cal-filter-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.cal-filter-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(163, 29, 29, 0.25);
+}
+
+/* ========================================================
+   Legenda Estruturada (Graus Litúrgicos vs Cores)
+   ======================================================== */
+.liturgical-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   font-size: 0.82rem;
   color: var(--text-secondary);
+}
+
+.legend-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.legend-group-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  min-width: 52px;
 }
 
 .legend-chip {
@@ -126,10 +194,32 @@
   font-weight: 500;
 }
 
+.legend-badge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.legend-badge-icon.badge-solenidade {
+  color: #eab308;
+  font-weight: 900;
+  filter: drop-shadow(0 0 2px rgba(234, 179, 8, 0.5));
+}
+
+.legend-badge-icon.badge-festa {
+  color: #3b82f6;
+}
+
+.legend-badge-icon.badge-memoria {
+  font-size: 0.95rem;
+}
+
 /* Bolinhas de cores litúrgicas */
 .lit-dot {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   display: inline-block;
   flex-shrink: 0;
@@ -157,26 +247,31 @@
   background-color: #ec4899;
 }
 
-/* Grid & Painel lado a lado */
+.dot-solenidade {
+  box-shadow: 0 0 0 2px #eab308, 0 0 6px rgba(234, 179, 8, 0.6);
+}
+
+/* ========================================================
+   Grid do Mês e Layout
+   ======================================================== */
 .calendar-body-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 20px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 920px) {
   .calendar-body-grid {
     grid-template-columns: 460px 1fr;
     align-items: start;
   }
 }
 
-/* Card do Mês */
 .calendar-grid-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 18px 16px;
+  padding: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
@@ -184,16 +279,16 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .calendar-weekdays span:first-child {
-  color: var(--accent); /* Domingo em destaque */
+  color: var(--accent); /* Domingo */
 }
 
 .calendar-days-grid {
@@ -208,12 +303,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   background: var(--bg-card);
   cursor: pointer;
-  padding: 4px;
+  padding: 5px 3px 4px 3px;
   position: relative;
   transition: all 0.15s ease;
   user-select: none;
@@ -228,13 +323,29 @@
 .cal-day-cell.empty-day {
   background: transparent;
   cursor: default;
-  opacity: 0.3;
+  opacity: 0.25;
+}
+
+.cal-day-cell.cell-filtered-out {
+  opacity: 0.2;
+  filter: grayscale(0.8);
+}
+
+/* Destaque Solene: Solenidades ganham borda e aura especial */
+.cal-day-cell.rank-solenidade {
+  border-color: rgba(234, 179, 8, 0.45);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(234, 179, 8, 0.08) 100%);
+  box-shadow: 0 1px 4px rgba(234, 179, 8, 0.15);
+}
+
+.cal-day-cell.rank-solenidade .cal-day-num {
+  font-weight: 800;
 }
 
 .cal-day-cell.is-selected {
   background: var(--accent-tint, rgba(163, 29, 29, 0.12));
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px var(--accent);
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px var(--accent) !important;
 }
 
 .cal-day-cell.is-today .cal-day-num {
@@ -245,25 +356,55 @@
 .cal-day-cell.is-today::after {
   content: '';
   position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 6px;
-  height: 6px;
+  top: 3px;
+  right: 3px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: var(--accent);
 }
 
+.cal-day-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2px;
+  line-height: 1;
+}
+
 .cal-day-num {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--text-primary);
   line-height: 1;
-  margin-bottom: 5px;
 }
 
 .cal-day-cell.is-sunday .cal-day-num {
   color: var(--accent);
   font-weight: 700;
+}
+
+/* Distinção clara de Solenidade, Festa e Memória no topo do dia */
+.cal-rank-icon {
+  font-size: 0.65rem;
+  line-height: 1;
+}
+
+.cal-rank-icon.icon-solenidade {
+  color: #eab308;
+  font-weight: 900;
+  font-size: 0.72rem;
+  text-shadow: 0 0 4px rgba(234, 179, 8, 0.5);
+}
+
+.cal-rank-icon.icon-festa {
+  color: #3b82f6;
+  font-size: 0.65rem;
+}
+
+.cal-rank-icon.icon-memoria {
+  font-size: 0.7rem;
 }
 
 .cal-day-dots {
@@ -274,25 +415,27 @@
   min-height: 10px;
 }
 
-/* Painel de Detalhes do Dia */
+/* ========================================================
+   Painel de Detalhes do Dia Selecionado
+   ======================================================== */
 .calendar-day-detail-panel {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
 .cal-day-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 22px 20px;
+  padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .cal-day-card-header {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .cal-day-badge-row {
@@ -300,7 +443,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .cal-color-pill {
@@ -318,15 +461,84 @@
   color: var(--text-primary);
 }
 
+/* Badges de Grau Litúrgico com distinção rigorosa */
 .cal-rank-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cal-rank-pill.pill-solenidade {
+  background: #fef08a;
+  color: #854d0e;
+  border: 1px solid #eab308;
+  box-shadow: 0 2px 6px rgba(234, 179, 8, 0.2);
+}
+
+[data-theme="dark"] .cal-rank-pill.pill-solenidade {
+  background: rgba(234, 179, 8, 0.18);
+  color: #fef08a;
+  border-color: rgba(234, 179, 8, 0.6);
+}
+
+.cal-rank-pill.pill-festa {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #93c5fd;
+}
+
+[data-theme="dark"] .cal-rank-pill.pill-festa {
+  background: rgba(59, 130, 246, 0.2);
+  color: #bfdbfe;
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.cal-rank-pill.pill-memoria {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #d8b4fe;
+}
+
+[data-theme="dark"] .cal-rank-pill.pill-memoria {
+  background: rgba(147, 51, 234, 0.2);
+  color: #e9d5ff;
+  border-color: rgba(147, 51, 234, 0.5);
+}
+
+.cal-rank-pill.pill-memoria-fac {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px dashed var(--border-color);
+}
+
+.cal-rank-pill.pill-domingo {
+  background: var(--accent-tint, rgba(163, 29, 29, 0.1));
+  color: var(--accent);
+  border: 1px solid var(--accent-light);
+}
+
+.cal-rank-pill.pill-feria {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.cal-cycle-pill {
   display: inline-flex;
   align-items: center;
   padding: 4px 10px;
   border-radius: var(--radius-pill);
   font-size: 0.78rem;
   font-weight: 600;
-  background: var(--accent-tint, rgba(163, 29, 29, 0.08));
-  color: var(--accent);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
 }
 
 .cal-date-title {
@@ -339,8 +551,8 @@
 
 .cal-celebration-title {
   font-family: var(--font-title);
-  font-size: 1.5rem;
-  margin: 0 0 8px 0;
+  font-size: 1.55rem;
+  margin: 0 0 10px 0;
   color: var(--text-primary);
   line-height: 1.25;
 }
@@ -348,9 +560,58 @@
 .cal-color-explanation {
   font-size: 0.85rem;
   color: var(--text-secondary);
-  margin: 0;
+  margin: 0 0 12px 0;
   line-height: 1.45;
   font-style: italic;
+}
+
+/* ========================================================
+   Caixa de Regra Litúrgica Oficial (IGMR / Missal Romano)
+   ======================================================== */
+.cal-liturgical-rule-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  margin-top: 6px;
+}
+
+.cal-liturgical-rule-box .rule-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cal-liturgical-rule-box.rule-solenidade {
+  background: rgba(234, 179, 8, 0.12);
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  color: var(--text-primary);
+}
+
+.cal-liturgical-rule-box.rule-solenidade .rule-icon {
+  color: #eab308;
+}
+
+.cal-liturgical-rule-box.rule-memoria {
+  background: rgba(147, 51, 234, 0.08);
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  color: var(--text-primary);
+}
+
+.cal-liturgical-rule-box.rule-festa {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--text-primary);
+}
+
+.cal-liturgical-rule-box.rule-feria {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
 }
 
 /* Leituras do Dia */
@@ -500,15 +761,18 @@
     font-size: 0.95rem;
   }
   .cal-day-cell {
-    padding: 2px;
+    padding: 3px 2px;
   }
   .cal-day-num {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
   }
   .cal-day-card {
     padding: 16px 14px;
   }
   .cal-celebration-title {
     font-size: 1.3rem;
+  }
+  .legend-group {
+    gap: 6px 10px;
   }
 }

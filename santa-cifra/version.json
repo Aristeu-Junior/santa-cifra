@@ -1,7 +1,7 @@
 {
-  "version": "3.8.0",
-  "apkVersionCode": 13,
-  "buildId": "sc-v3.8.0-liturgical-calendar",
+  "version": "3.8.1",
+  "apkVersionCode": 14,
+  "buildId": "sc-v3.8.1-solenidades-vs-memorias",
   "totalSongs": 541,
   "liturgicalSongs": 297,
   "popularSongs": 244,

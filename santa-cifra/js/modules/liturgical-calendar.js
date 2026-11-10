@@ -21,7 +21,8 @@ window.SantaCifra = window.SantaCifra || {};
   const calState = {
     viewYear: new Date().getFullYear(),
     viewMonth: new Date().getMonth(), // 0-11
-    selectedDate: new Date()
+    selectedDate: new Date(),
+    filter: 'all' // 'all', 'solenidades', 'memorias', 'domingos'
   };
 
   /**
@@ -398,6 +399,79 @@ window.SantaCifra = window.SantaCifra || {};
     const readings = getDailyReadings(date, title, season, rank);
     const suggestions = getSongSuggestions(date, title, color, season, rank, readings);
 
+    const isSolenidade = rank === 'Solenidade' || rank === 'Solenidade Litúrgica';
+    const isFesta = rank === 'Festa' || rank === 'Festa no Brasil';
+    const isMemoria = rank === 'Memória' || rank === 'Memória no Brasil' || rank === 'Memória Facultativa';
+    const isDomingo = date.getDay() === 0;
+    const isFeria = !isSolenidade && !isFesta && !isMemoria && !isDomingo;
+
+    let rankLabel = rank;
+    let rankPillClass = 'pill-feria';
+    let rankRuleHtml = '';
+
+    if (isSolenidade) {
+      rankLabel = '✦ Solenidade (Grau Máximo)';
+      rankPillClass = 'pill-solenidade';
+      rankRuleHtml = `
+        <div class="cal-liturgical-rule-box rule-solenidade">
+          <div class="rule-icon">✦</div>
+          <div class="rule-text">
+            <strong>Norma Litúrgica de Solenidade:</strong>
+            Grau supremo do Ano Litúrgico. Missa solene com Hino de Louvor (Glória), três leituras bíblicas completas (1ª Leitura, 2ª Leitura e Evangelho) e Profissão de Fé (Credo). O repertório musical deve expressar júbilo e solenidade festiva.
+          </div>
+        </div>
+      `;
+    } else if (isFesta) {
+      rankLabel = '★ Festa';
+      rankPillClass = 'pill-festa';
+      rankRuleHtml = `
+        <div class="cal-liturgical-rule-box rule-festa">
+          <div class="rule-icon">★</div>
+          <div class="rule-text">
+            <strong>Norma Litúrgica de Festa:</strong>
+            Celebração festiva com Hino de Louvor (Glória), duas leituras bíblicas (1ª Leitura e Evangelho) e <u>sem Credo</u>.
+          </div>
+        </div>
+      `;
+    } else if (isMemoria) {
+      const isFac = rank === 'Memória Facultativa';
+      rankLabel = isFac ? '🕊️ Memória Facultativa' : '🕊️ Memória de Santo';
+      rankPillClass = isFac ? 'pill-memoria-fac' : 'pill-memoria';
+      rankRuleHtml = `
+        <div class="cal-liturgical-rule-box rule-memoria">
+          <div class="rule-icon">🕊️</div>
+          <div class="rule-text">
+            <strong>Distinção Litúrgica — Memória de Santo:</strong>
+            Nem toda memória é Solenidade! Conforme a Instrução Geral do Missal Romano (IGMR 53 e 68), na Memória de Santo a liturgia preserva a sobriedade ferial: <u>NÃO se canta o Glória nem se reza o Credo</u> (salvo se for padroeiro principal local), havendo apenas uma leitura antes do Evangelho. Os cantos devem sintonizar com as virtudes, o serviço fraterno ou o martírio do santo.
+          </div>
+        </div>
+      `;
+    } else if (isDomingo) {
+      rankLabel = '📅 Domingo do Senhor';
+      rankPillClass = 'pill-domingo';
+      rankRuleHtml = `
+        <div class="cal-liturgical-rule-box rule-feria">
+          <div class="rule-icon">📅</div>
+          <div class="rule-text">
+            <strong>Domingo do Senhor:</strong>
+            Dia do Senhor e Páscoa semanal dos cristãos. Missa com Glória (exceto no Advento e Quaresma), três leituras completas e Credo.
+          </div>
+        </div>
+      `;
+    } else {
+      rankLabel = '🌿 Dia Ferial';
+      rankPillClass = 'pill-feria';
+      rankRuleHtml = `
+        <div class="cal-liturgical-rule-box rule-feria">
+          <div class="rule-icon">🌿</div>
+          <div class="rule-text">
+            <strong>Dia Ferial do Tempo Litúrgico:</strong>
+            Missa cotidiana da assembleia sem Glória e sem Credo, focada na meditação contínua da Palavra de Deus.
+          </div>
+        </div>
+      `;
+    }
+
     return {
       date,
       dayNumber: date.getDate(),
@@ -409,6 +483,14 @@ window.SantaCifra = window.SantaCifra || {};
       colorName: colorNames[color] || 'Verde',
       colorMeaning: COLOR_MEANINGS[color] || COLOR_MEANINGS.verde,
       rank,
+      isSolenidade,
+      isFesta,
+      isMemoria,
+      isDomingo,
+      isFeria,
+      rankLabel,
+      rankPillClass,
+      rankRuleHtml,
       season,
       cycle: getLiturgicalCycle(date),
       weekOrNote,
@@ -881,18 +963,43 @@ window.SantaCifra = window.SantaCifra || {};
   };
 
   /**
-   * Cria uma célula de dia para o grid
+   * Cria uma célula de dia para o grid com separação visual de Solenidades vs Memórias
    */
   function createDayCell(date, info, isPadding, isToday, isSelected) {
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = `cal-day-cell ${isPadding ? 'empty-day' : ''} ${isToday ? 'is-today' : ''} ${isSelected ? 'is-selected' : ''} ${date.getDay() === 0 ? 'is-sunday' : ''}`;
-    btn.setAttribute('aria-label', `${date.getDate()} de ${MONTH_NAMES[date.getMonth()]} de ${date.getFullYear()}: ${info.celebration} (${info.colorName})`);
+
+    let rankClass = 'rank-feria';
+    if (info.isSolenidade) rankClass = 'rank-solenidade';
+    else if (info.isFesta) rankClass = 'rank-festa';
+    else if (info.isMemoria) rankClass = 'rank-memoria';
+
+    let isFilteredOut = false;
+    if (!isPadding) {
+      if (calState.filter === 'solenidades' && !info.isSolenidade) isFilteredOut = true;
+      if (calState.filter === 'memorias' && !info.isMemoria) isFilteredOut = true;
+      if (calState.filter === 'domingos' && !info.isDomingo) isFilteredOut = true;
+    }
+
+    btn.className = `cal-day-cell ${isPadding ? 'empty-day' : ''} ${isToday ? 'is-today' : ''} ${isSelected ? 'is-selected' : ''} ${date.getDay() === 0 ? 'is-sunday' : ''} ${rankClass} ${isFilteredOut ? 'cell-filtered-out' : ''}`;
+    btn.setAttribute('aria-label', `${date.getDate()} de ${MONTH_NAMES[date.getMonth()]} de ${date.getFullYear()}: ${info.celebration} (${info.colorName} • ${info.rank})`);
+
+    let rankIcon = '';
+    if (info.isSolenidade) {
+      rankIcon = '<span class="cal-rank-icon icon-solenidade" title="Solenidade">✦</span>';
+    } else if (info.isFesta) {
+      rankIcon = '<span class="cal-rank-icon icon-festa" title="Festa">★</span>';
+    } else if (info.isMemoria) {
+      rankIcon = '<span class="cal-rank-icon icon-memoria" title="Memória de Santo">🕊️</span>';
+    }
 
     btn.innerHTML = `
-      <span class="cal-day-num">${date.getDate()}</span>
+      <div class="cal-day-top-bar">
+        <span class="cal-day-num">${date.getDate()}</span>
+        ${rankIcon}
+      </div>
       <div class="cal-day-dots">
-        <span class="lit-dot dot-${info.color}" title="${SC.esc(info.colorName)}: ${SC.esc(info.celebration)}"></span>
+        <span class="lit-dot dot-${info.color} ${info.isSolenidade ? 'dot-solenidade' : ''}" title="${SC.esc(info.colorName)}: ${SC.esc(info.celebration)} (${SC.esc(info.rank)})"></span>
       </div>
     `;
 
@@ -1025,12 +1132,13 @@ window.SantaCifra = window.SantaCifra || {};
             <span class="lit-dot dot-${info.color}"></span>
             Cor ${SC.esc(info.colorName)}
           </span>
-          <span class="cal-rank-pill">${SC.esc(info.rank)}</span>
-          <span class="cal-rank-pill">${SC.esc(info.cycle)}</span>
+          <span class="cal-rank-pill ${info.rankPillClass}">${SC.esc(info.rankLabel)}</span>
+          <span class="cal-cycle-pill">${SC.esc(info.cycle)}</span>
         </div>
         <p class="cal-date-title">${SC.esc(dateFormatted)}</p>
         <h2 class="cal-celebration-title">${SC.esc(info.celebration)}</h2>
         <p class="cal-color-explanation">${SC.esc(info.colorMeaning)}</p>
+        ${info.rankRuleHtml}
       </div>
 
       ${readingsHtml}
@@ -1057,11 +1165,21 @@ window.SantaCifra = window.SantaCifra || {};
   };
 
   /**
-   * Vincula eventos de navegação do calendário
+   * Vincula eventos de navegação e filtros do calendário
    */
   SC.bindCalendarEvents = function bindCalendarEvents() {
     const { dom } = SC;
     if (!dom) return;
+
+    // Filtros por grau litúrgico
+    const filterBtns = document.querySelectorAll('[data-cal-filter]');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        calState.filter = btn.getAttribute('data-cal-filter') || 'all';
+        filterBtns.forEach(b => b.classList.toggle('active', b === btn));
+        SC.renderCalendarView();
+      });
+    });
 
     if (dom.calPrevMonthBtn) {
       dom.calPrevMonthBtn.addEventListener('click', () => {

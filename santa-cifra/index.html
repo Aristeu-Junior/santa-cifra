@@ -13,7 +13,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>Santa Cifra</title>
-  <link rel="manifest" href="manifest.webmanifest?v=18">
+  <link rel="manifest" href="manifest.webmanifest?v=19">
   <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -21,13 +21,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=18">
-  <link rel="stylesheet" href="css/layout.css?v=18">
-  <link rel="stylesheet" href="css/catalog.css?v=18">
-  <link rel="stylesheet" href="css/playlists.css?v=18">
-  <link rel="stylesheet" href="css/calendar.css?v=18">
-  <link rel="stylesheet" href="css/viewer.css?v=18">
-  <link rel="stylesheet" href="css/dialogs.css?v=18">
+  <link rel="stylesheet" href="css/tokens.css?v=19">
+  <link rel="stylesheet" href="css/layout.css?v=19">
+  <link rel="stylesheet" href="css/catalog.css?v=19">
+  <link rel="stylesheet" href="css/playlists.css?v=19">
+  <link rel="stylesheet" href="css/calendar.css?v=19">
+  <link rel="stylesheet" href="css/viewer.css?v=19">
+  <link rel="stylesheet" href="css/dialogs.css?v=19">
 </head>
 <body data-view="home">
 
@@ -352,12 +352,32 @@
           </div>
         </header>
 
-        <div class="liturgical-legend" aria-label="Legenda das cores litúrgicas">
-          <span class="legend-chip"><span class="lit-dot dot-verde"></span> Verde (Tempo Comum)</span>
-          <span class="legend-chip"><span class="lit-dot dot-branco"></span> Branco (Festas e Solenidades)</span>
-          <span class="legend-chip"><span class="lit-dot dot-vermelho"></span> Vermelho (Mártires e Pentecostes)</span>
-          <span class="legend-chip"><span class="lit-dot dot-roxo"></span> Roxo (Advento, Quaresma e Finados)</span>
-          <span class="legend-chip"><span class="lit-dot dot-rosa"></span> Rosa (Gaudete e Laetare)</span>
+        <!-- Filtros Rápidos de Grau Litúrgico -->
+        <div class="calendar-controls-bar">
+          <div class="calendar-filter-tabs" role="tablist" aria-label="Filtrar por grau litúrgico">
+            <button type="button" class="cal-filter-btn active" data-cal-filter="all">Todos os dias</button>
+            <button type="button" class="cal-filter-btn" data-cal-filter="solenidades">✦ Solenidades</button>
+            <button type="button" class="cal-filter-btn" data-cal-filter="memorias">🕊️ Memórias de Santos</button>
+            <button type="button" class="cal-filter-btn" data-cal-filter="domingos">📅 Domingos</button>
+          </div>
+        </div>
+
+        <!-- Legenda Estruturada: Graus Litúrgicos vs Cores -->
+        <div class="liturgical-legend" aria-label="Legenda do calendário litúrgico">
+          <div class="legend-group">
+            <span class="legend-group-title">Graus:</span>
+            <span class="legend-chip"><span class="legend-badge-icon badge-solenidade">✦</span> Solenidade (Grau Máximo com Glória e Credo)</span>
+            <span class="legend-chip"><span class="legend-badge-icon badge-festa">★</span> Festa</span>
+            <span class="legend-chip"><span class="legend-badge-icon badge-memoria">🕊️</span> Memória de Santo (Sem Glória nem Credo)</span>
+          </div>
+          <div class="legend-group">
+            <span class="legend-group-title">Cores:</span>
+            <span class="legend-chip"><span class="lit-dot dot-verde"></span> Verde (Tempo Comum)</span>
+            <span class="legend-chip"><span class="lit-dot dot-branco"></span> Branco (Luz, Senhor, Maria e Santos)</span>
+            <span class="legend-chip"><span class="lit-dot dot-vermelho"></span> Vermelho (Espírito Santo, Mártires e Apóstolos)</span>
+            <span class="legend-chip"><span class="lit-dot dot-roxo"></span> Roxo (Penitência, Advento, Quaresma e Finados)</span>
+            <span class="legend-chip"><span class="lit-dot dot-rosa"></span> Rosa (Alegria: Gaudete e Laetare)</span>
+          </div>
         </div>
 
         <div class="calendar-body-grid">
@@ -815,27 +835,27 @@
     </div>
   </dialog>
 
-  <script src="js/transposition.js?v=18"></script>
-  <script src="js/chords-data.js?v=18"></script>
-  <script src="js/metronome.js?v=18"></script>
+  <script src="js/transposition.js?v=19"></script>
+  <script src="js/chords-data.js?v=19"></script>
+  <script src="js/metronome.js?v=19"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=18"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=18"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=18"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=18"></script>
-  <script src="js/songs-catalog.js?v=18"></script>
-  <script src="js/supabase-client.js?v=18"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=19"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=19"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=19"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=19"></script>
+  <script src="js/songs-catalog.js?v=19"></script>
+  <script src="js/supabase-client.js?v=19"></script>
 
-  <script src="js/modules/icons.js?v=18"></script>
-  <script src="js/modules/auth.js?v=18"></script>
-  <script src="js/modules/state.js?v=18"></script>
-  <script src="js/modules/artists-view.js?v=18"></script>
-  <script src="js/modules/catalog-view.js?v=18"></script>
-  <script src="js/modules/playlists-view.js?v=18"></script>
-  <script src="js/modules/liturgical-calendar.js?v=18"></script>
-  <script src="js/modules/song-viewer.js?v=18"></script>
-  <script src="js/modules/ota-updater.js?v=18"></script>
-  <script src="js/app.js?v=18"></script>
+  <script src="js/modules/icons.js?v=19"></script>
+  <script src="js/modules/auth.js?v=19"></script>
+  <script src="js/modules/state.js?v=19"></script>
+  <script src="js/modules/artists-view.js?v=19"></script>
+  <script src="js/modules/catalog-view.js?v=19"></script>
+  <script src="js/modules/playlists-view.js?v=19"></script>
+  <script src="js/modules/liturgical-calendar.js?v=19"></script>
+  <script src="js/modules/song-viewer.js?v=19"></script>
+  <script src="js/modules/ota-updater.js?v=19"></script>
+  <script src="js/app.js?v=19"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -846,7 +866,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=18').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=19').then((reg) => {
           reg.update();
         }).catch(() => {});
       });
