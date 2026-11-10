@@ -230,8 +230,8 @@
 .tb-font {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
-  padding: 2px;
+  gap: 4px;
+  padding: 4px;
   background-color: var(--bg-page);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-pill);
