@@ -26,8 +26,8 @@ APKSIGNER = os.path.join(BUILD_TOOLS, "apksigner.bat")
 MANIFEST_XML = """<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.santacifra.liturgia"
-    android:versionCode="6"
-    android:versionName="3.3.0">
+    android:versionCode="7"
+    android:versionName="3.4.0">
 
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="35" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -35,6 +35,7 @@ MANIFEST_XML = """<?xml version="1.0" encoding="utf-8"?>
 
     <application
         android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
         android:hardwareAccelerated="true"
         android:usesCleartextTraffic="false"
         android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
@@ -224,13 +225,16 @@ def main():
     os.makedirs(BUILD_DIR, exist_ok=True)
 
     res_values_dir = os.path.join(BUILD_DIR, "res", "values")
+    res_mipmap_dir = os.path.join(BUILD_DIR, "res", "mipmap-xxhdpi")
     src_dir = os.path.join(BUILD_DIR, "src", "app", "santacifra", "liturgia")
     assets_www_dir = os.path.join(BUILD_DIR, "assets", "www")
     gen_dir = os.path.join(BUILD_DIR, "gen")
     obj_dir = os.path.join(BUILD_DIR, "obj")
 
-    for d in [res_values_dir, src_dir, assets_www_dir, gen_dir, obj_dir]:
+    for d in [res_values_dir, res_mipmap_dir, src_dir, assets_www_dir, gen_dir, obj_dir]:
         os.makedirs(d, exist_ok=True)
+
+    shutil.copy2(os.path.join(WEB_DIR, "assets", "icon-192.png"), os.path.join(res_mipmap_dir, "ic_launcher.png"))
 
     manifest_path = os.path.join(BUILD_DIR, "AndroidManifest.xml")
     with open(manifest_path, "w", encoding="utf-8") as f:

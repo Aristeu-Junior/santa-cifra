@@ -606,14 +606,21 @@
   .repertoire-type-grid {
     display: flex;
     align-self: stretch;
+    width: 100%;
+    overflow: hidden;
   }
 
   .rep-type-card {
-    flex: 1;
+    flex: 1 1 0%;
+    min-width: 0;
     justify-content: center;
     padding: 0 6px;
-    gap: 6px;
-    font-size: 0.86rem;
+    gap: 4px;
+    font-size: clamp(0.75rem, 3.1vw, 0.85rem);
+  }
+
+  .rep-type-count {
+    font-size: clamp(0.68rem, 2.7vw, 0.76rem);
   }
 
   .filters-panel {

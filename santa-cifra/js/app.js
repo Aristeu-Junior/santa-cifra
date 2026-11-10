@@ -10,6 +10,16 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Detecta modo Web App instalado (PWA / iOS Tela de Início) e iOS para ajuste de safe-area
+  const isStandalone = window.navigator.standalone === true ||
+    (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+  if (isStandalone) {
+    document.documentElement.classList.add('is-standalone');
+  }
+  if (/iPad|iPhone|iPod/.test(navigator.userAgent || '')) {
+    document.documentElement.classList.add('is-ios');
+  }
+
   // Fallback para light-dismiss em <dialog closedby="any">
   if (!('closedBy' in HTMLDialogElement.prototype)) {
     const outside = (e, dialog) => {
