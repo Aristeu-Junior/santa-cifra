@@ -454,13 +454,25 @@ window.SantaCifra.bindPlaylistsEvents = function bindPlaylistsEvents() {
   const { state, dom } = window.SantaCifra;
 
   dom.btnQuickCreateFolder.addEventListener('click', () => {
-    const name = dom.quickFolderNameInput.value.trim();
-    if (!name || !state.songIdToSaveInFolder) return;
+    const rawName = dom.quickFolderNameInput.value;
+    if (!rawName || !rawName.trim() || !state.songIdToSaveInFolder) return;
+    const sec = window.SantaCifra.security;
+    let validated;
+    try {
+      validated = sec
+        ? sec.validateFolderInput({ name: rawName, description: 'Pasta personalizada', honeypot: '' })
+        : { name: rawName.trim().slice(0, 60), description: 'Pasta personalizada' };
+    } catch (_) {
+      return;
+    }
+    const maxFolders = (sec && sec.MAX_USER_FOLDERS) ? sec.MAX_USER_FOLDERS : 100;
+    if (state.playlists.length >= maxFolders) return;
+
     const newFolder = {
       id: 'folder-' + Date.now(),
-      name,
+      name: validated.name,
       isSystem: false,
-      description: 'Pasta personalizada',
+      description: validated.description,
       songIds: [state.songIdToSaveInFolder]
     };
     state.playlists.push(newFolder);
@@ -474,14 +486,30 @@ window.SantaCifra.bindPlaylistsEvents = function bindPlaylistsEvents() {
 
   dom.formNewFolder.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById('folderNameInput').value.trim();
-    const desc = document.getElementById('folderDescInput').value.trim();
-    if (!name) return;
+    const rawName = document.getElementById('folderNameInput').value;
+    const rawDesc = document.getElementById('folderDescInput').value;
+    const hpEl = document.getElementById('hpNewFolder');
+    const sec = window.SantaCifra.security;
+    let validated;
+    try {
+      validated = sec
+        ? sec.validateFolderInput({
+            name: rawName,
+            description: rawDesc,
+            honeypot: hpEl ? hpEl.value : ''
+          })
+        : { name: rawName.trim().slice(0, 60), description: rawDesc.trim().slice(0, 120) || 'Pasta personalizada' };
+    } catch (_) {
+      return;
+    }
+    const maxFolders = (sec && sec.MAX_USER_FOLDERS) ? sec.MAX_USER_FOLDERS : 100;
+    if (state.playlists.length >= maxFolders) return;
+
     const newFolder = {
       id: 'folder-' + Date.now(),
-      name,
+      name: validated.name,
       isSystem: false,
-      description: desc || 'Pasta personalizada',
+      description: validated.description,
       songIds: []
     };
     state.playlists.push(newFolder);

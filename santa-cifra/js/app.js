@@ -82,13 +82,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   dom.formNewSong.addEventListener('submit', (e) => {
     e.preventDefault();
+    const sec = window.SantaCifra.security;
+    const hpEl = document.getElementById('hpNewSong');
+    let validated;
+    try {
+      validated = sec ? sec.validateSongInput({
+        title: document.getElementById('newTitle').value,
+        composer: document.getElementById('newComposer').value,
+        moment: document.getElementById('newMoment').value,
+        season: document.getElementById('newSeason').value,
+        key: document.getElementById('newKey').value,
+        cifra: document.getElementById('newCifraText').value,
+        honeypot: hpEl ? hpEl.value : ''
+      }) : {
+        title: document.getElementById('newTitle').value.trim(),
+        composer: document.getElementById('newComposer').value.trim() || 'Tradicional',
+        liturgicalMoment: document.getElementById('newMoment').value,
+        liturgicalSeason: document.getElementById('newSeason').value,
+        originalKey: document.getElementById('newKey').value || 'C',
+        cifra: document.getElementById('newCifraText').value.trim()
+      };
+    } catch (err) {
+      alert(err.message || 'Dados inválidos na cifra.');
+      return;
+    }
+
     const newSong = {
       id: 'custom-' + Date.now(),
-      title: document.getElementById('newTitle').value.trim(),
-      composer: document.getElementById('newComposer').value.trim() || 'Tradicional',
-      liturgicalMoment: document.getElementById('newMoment').value,
-      liturgicalSeason: document.getElementById('newSeason').value,
-      originalKey: document.getElementById('newKey').value || 'C',
+      title: validated.title,
+      composer: validated.composer,
+      liturgicalMoment: validated.liturgicalMoment,
+      liturgicalSeason: validated.liturgicalSeason,
+      originalKey: validated.originalKey,
       bpm: 80,
       timeSignature: '4/4',
       rhythmName: 'Balada',
@@ -97,11 +122,16 @@ document.addEventListener('DOMContentLoaded', () => {
       isSimple: true,
       chordCount: 4,
       youtubeUrl: 'https://www.youtube.com',
-      cifra: document.getElementById('newCifraText').value.trim()
+      cifra: validated.cifra
     };
 
     const saved = localStorage.getItem('santa_cifra_custom_songs');
-    const customList = saved ? JSON.parse(saved) : [];
+    const parseFn = (sec && sec.safeJsonParse) ? sec.safeJsonParse : JSON.parse;
+    const customList = saved ? (parseFn(saved, []) || []) : [];
+    const maxSongs = (sec && sec.MAX_CUSTOM_SONGS) ? sec.MAX_CUSTOM_SONGS : 200;
+    if (customList.length >= maxSongs) {
+      customList.shift();
+    }
     customList.push(newSong);
     localStorage.setItem('santa_cifra_custom_songs', JSON.stringify(customList));
 

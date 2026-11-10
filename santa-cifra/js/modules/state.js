@@ -186,22 +186,28 @@ window.SantaCifra.initDOM = function initDOM() {
 
 window.SantaCifra.initCatalog = function initCatalog() {
   const { state } = window.SantaCifra;
+  const sec = window.SantaCifra.security;
+  const safeParse = (sec && sec.safeJsonParse) ? sec.safeJsonParse : (raw) => {
+    try { return JSON.parse(raw); } catch (_) { return null; }
+  };
+
   const otaCached = localStorage.getItem('santa_cifra_ota_catalog_v2');
   let baseCatalog = window.SongsCatalog || [];
   if (otaCached) {
-    try {
-      const parsedOta = JSON.parse(otaCached);
-      if (Array.isArray(parsedOta) && parsedOta.length >= baseCatalog.length) {
-        baseCatalog = parsedOta;
-      }
-    } catch (_) {}
+    const parsedOta = safeParse(otaCached, null);
+    if (Array.isArray(parsedOta) && parsedOta.length >= baseCatalog.length) {
+      baseCatalog = parsedOta;
+    }
   }
 
   let customSongs = [];
-  try {
-    const savedCustom = localStorage.getItem('santa_cifra_custom_songs');
-    customSongs = savedCustom ? JSON.parse(savedCustom) : [];
-  } catch (_) {}
+  const savedCustom = localStorage.getItem('santa_cifra_custom_songs');
+  if (savedCustom) {
+    const parsedCustom = safeParse(savedCustom, []);
+    if (Array.isArray(parsedCustom)) {
+      customSongs = parsedCustom.filter(s => s && typeof s.id === 'string' && typeof s.title === 'string' && typeof s.cifra === 'string');
+    }
+  }
   state.songs = [...baseCatalog, ...customSongs];
   if (window.SantaCifra.buildArtistIndex) window.SantaCifra.buildArtistIndex();
 };

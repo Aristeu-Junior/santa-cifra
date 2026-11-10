@@ -9,6 +9,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Santa Cifra">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://santa-cifra.surge.sh https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>Santa Cifra</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
@@ -16,12 +19,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=9">
-  <link rel="stylesheet" href="css/layout.css?v=9">
-  <link rel="stylesheet" href="css/catalog.css?v=9">
-  <link rel="stylesheet" href="css/playlists.css?v=9">
-  <link rel="stylesheet" href="css/viewer.css?v=9">
-  <link rel="stylesheet" href="css/dialogs.css?v=9">
+  <link rel="stylesheet" href="css/tokens.css?v=11">
+  <link rel="stylesheet" href="css/layout.css?v=11">
+  <link rel="stylesheet" href="css/catalog.css?v=11">
+  <link rel="stylesheet" href="css/playlists.css?v=11">
+  <link rel="stylesheet" href="css/viewer.css?v=11">
+  <link rel="stylesheet" href="css/dialogs.css?v=11">
 </head>
 <body data-view="home">
 
@@ -505,13 +508,14 @@
       </form>
     </div>
     <form id="formNewFolder">
+      <input type="text" id="hpNewFolder" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="form-field">
         <label for="folderNameInput">Nome</label>
-        <input type="text" id="folderNameInput" class="dialog-input" required placeholder="Ex.: Missa de domingo, 19h" autofocus>
+        <input type="text" id="folderNameInput" class="dialog-input" required maxlength="60" placeholder="Ex.: Missa de domingo, 19h" autofocus>
       </div>
       <div class="form-field">
         <label for="folderDescInput">Observação (opcional)</label>
-        <input type="text" id="folderDescInput" class="dialog-input">
+        <input type="text" id="folderDescInput" class="dialog-input" maxlength="120">
       </div>
       <div class="dialog-actions">
         <button type="button" class="btn-ghost" id="btnCancelNewFolder">Cancelar</button>
@@ -530,14 +534,15 @@
       </form>
     </div>
     <form id="formNewSong">
+      <input type="text" id="hpNewSong" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="form-row-2">
         <div class="form-field">
           <label for="newTitle">Título</label>
-          <input type="text" id="newTitle" class="dialog-input" required autofocus placeholder="Título da música">
+          <input type="text" id="newTitle" class="dialog-input" required maxlength="100" autofocus placeholder="Título da música">
         </div>
         <div class="form-field">
           <label for="newComposer">Autor ou intérprete</label>
-          <input type="text" id="newComposer" class="dialog-input" placeholder="Ex.: Padre Zezinho">
+          <input type="text" id="newComposer" class="dialog-input" maxlength="80" placeholder="Ex.: Padre Zezinho">
         </div>
       </div>
 
@@ -571,13 +576,13 @@
         </div>
         <div class="form-field">
           <label for="newKey">Tom</label>
-          <input type="text" id="newKey" class="dialog-input" value="C">
+          <input type="text" id="newKey" class="dialog-input" maxlength="4" value="C">
         </div>
       </div>
 
       <div class="form-field">
         <label for="newCifraText">Cifra (acordes na linha de cima da letra)</label>
-        <textarea id="newCifraText" rows="8" required class="dialog-textarea" placeholder="[Intro] C  G  Am  F"></textarea>
+        <textarea id="newCifraText" rows="8" required maxlength="15000" class="dialog-textarea" placeholder="[Intro] C  G  Am  F"></textarea>
       </div>
 
       <div class="dialog-actions">
@@ -611,16 +616,17 @@
 
     <!-- 1. Formulário de Login -->
     <form id="formAuthLogin" class="auth-form-panel">
+      <input type="text" id="hpAuthLogin" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="form-field">
         <label for="loginEmail">E-mail</label>
-        <input type="email" id="loginEmail" class="dialog-input" required placeholder="seu@email.com" autocomplete="email" autofocus>
+        <input type="email" id="loginEmail" class="dialog-input" required maxlength="100" placeholder="seu@email.com" autocomplete="email" autofocus>
       </div>
       <div class="form-field">
         <div class="field-label-row">
           <label for="loginPassword">Senha</label>
           <button type="button" class="link-btn-sm" id="btnGoToForgot">Esqueceu a senha?</button>
         </div>
-        <input type="password" id="loginPassword" class="dialog-input" required placeholder="Sua senha secreta" autocomplete="current-password">
+        <input type="password" id="loginPassword" class="dialog-input" required maxlength="128" placeholder="Sua senha secreta" autocomplete="current-password">
       </div>
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitLogin">Entrar no Santa Cifra</button>
@@ -633,34 +639,35 @@
 
     <!-- 2. Formulário de Cadastro (Pastas Zeradas no Primeiro Acesso) -->
     <form id="formAuthRegister" class="auth-form-panel" style="display: none;">
+      <input type="text" id="hpAuthRegister" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
       <p class="auth-hint-text">
         Crie sua conta para salvar seus repertórios pessoais. Suas pastas iniciam <strong>zeradas</strong> para você organizar como quiser.
       </p>
       <div class="form-field">
         <label for="regName">Nome completo</label>
-        <input type="text" id="regName" class="dialog-input" required placeholder="Ex: Maria da Silva" autocomplete="name">
+        <input type="text" id="regName" class="dialog-input" required maxlength="60" placeholder="Ex: Maria da Silva" autocomplete="name">
       </div>
       <div class="form-field">
         <label for="regEmail">E-mail</label>
-        <input type="email" id="regEmail" class="dialog-input" required placeholder="seu@email.com" autocomplete="email">
+        <input type="email" id="regEmail" class="dialog-input" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
       </div>
       <div class="form-field">
         <label for="regParish">Paróquia / Ministério (Opcional)</label>
-        <input type="text" id="regParish" class="dialog-input" placeholder="Ex: Paróquia São José - Coral da Manhã">
+        <input type="text" id="regParish" class="dialog-input" maxlength="80" placeholder="Ex: Paróquia São José - Coral da Manhã">
       </div>
       <div class="form-row-2">
         <div class="form-field">
           <label for="regPassword">Senha</label>
-          <input type="password" id="regPassword" class="dialog-input" required minlength="8" placeholder="Mínimo 8 dígitos" autocomplete="new-password">
+          <input type="password" id="regPassword" class="dialog-input" required minlength="8" maxlength="128" placeholder="Mínimo 8 dígitos" autocomplete="new-password">
         </div>
         <div class="form-field">
           <label for="regConfirmPassword">Confirmar senha</label>
-          <input type="password" id="regConfirmPassword" class="dialog-input" required minlength="8" placeholder="Repita a senha" autocomplete="new-password">
+          <input type="password" id="regConfirmPassword" class="dialog-input" required minlength="8" maxlength="128" placeholder="Repita a senha" autocomplete="new-password">
         </div>
       </div>
       <div class="auth-security-badge">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        <span>Dados protegidos com criptografia. Acesso exclusivo às suas pastas.</span>
+        <span>Dados protegidos com criptografia PBKDF2. Acesso exclusivo às suas pastas.</span>
       </div>
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitRegister">Criar Minha Conta</button>
@@ -673,12 +680,13 @@
 
     <!-- 3. Formulário de Recuperação de Senha -->
     <form id="formAuthForgot" class="auth-form-panel" style="display: none;">
+      <input type="text" id="hpAuthForgot" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
       <p class="auth-hint-text">
         Digite seu e-mail cadastrado. Enviaremos as instruções de recuperação de forma segura.
       </p>
       <div class="form-field">
         <label for="forgotEmail">E-mail cadastrado</label>
-        <input type="email" id="forgotEmail" class="dialog-input" required placeholder="seu@email.com" autocomplete="email">
+        <input type="email" id="forgotEmail" class="dialog-input" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
       </div>
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitForgot">Enviar Instruções</button>
@@ -727,26 +735,26 @@
     </div>
   </dialog>
 
-  <script src="js/transposition.js?v=10"></script>
-  <script src="js/chords-data.js?v=10"></script>
-  <script src="js/metronome.js?v=10"></script>
+  <script src="js/transposition.js?v=11"></script>
+  <script src="js/chords-data.js?v=11"></script>
+  <script src="js/metronome.js?v=11"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=10"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=10"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=10"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=10"></script>
-  <script src="js/songs-catalog.js?v=10"></script>
-  <script src="js/supabase-client.js?v=10"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=11"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=11"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=11"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=11"></script>
+  <script src="js/songs-catalog.js?v=11"></script>
+  <script src="js/supabase-client.js?v=11"></script>
 
-  <script src="js/modules/icons.js?v=10"></script>
-  <script src="js/modules/auth.js?v=10"></script>
-  <script src="js/modules/state.js?v=10"></script>
-  <script src="js/modules/artists-view.js?v=10"></script>
-  <script src="js/modules/catalog-view.js?v=10"></script>
-  <script src="js/modules/playlists-view.js?v=10"></script>
-  <script src="js/modules/song-viewer.js?v=10"></script>
-  <script src="js/modules/ota-updater.js?v=10"></script>
-  <script src="js/app.js?v=10"></script>
+  <script src="js/modules/icons.js?v=11"></script>
+  <script src="js/modules/auth.js?v=11"></script>
+  <script src="js/modules/state.js?v=11"></script>
+  <script src="js/modules/artists-view.js?v=11"></script>
+  <script src="js/modules/catalog-view.js?v=11"></script>
+  <script src="js/modules/playlists-view.js?v=11"></script>
+  <script src="js/modules/song-viewer.js?v=11"></script>
+  <script src="js/modules/ota-updater.js?v=11"></script>
+  <script src="js/app.js?v=11"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -757,7 +765,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=10').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=11').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

@@ -1,19 +1,16 @@
 /**
- * SANTA CIFRA — Módulo de Autenticação Segura (AppSec / Anti-IDOR / Anti-Input Falso)
+ * SANTA CIFRA — Módulo de Segurança Aplicacional & Autenticação (AppSec v3.3)
  *
- * Funcionalidades:
- * 1. Cadastro de Usuário (Nome, E-mail, Paróquia/Ministério, Senha com hashing seguro SHA-256)
- * 2. Login de Usuário (com rate-limiting e prevenção de força bruta)
- * 3. Recuperação de Senha (via e-mail seguro / chave de recuperação)
- * 4. Proteção contra IDOR (Insecure Direct Object Reference):
- *    - Todas as pastas, favoritos e repertórios pertencem exclusivamente ao user_id autenticado.
- *    - Bloqueio de acesso cruzado a recursos de outros usuários.
- * 5. Pastas Zeradas no Primeiro Acesso:
- *    - O novo usuário inicia com suas pastas 100% limpas (apenas "Favoritas" vazia),
- *      permitindo montar o repertório litúrgico do zero como preferir.
- * 6. Suporte Híbrido:
- *    - Supabase GoTrue Auth quando configurado.
- *    - Web Crypto API (W3C standard) nativa offline/local-first quando sem servidor ou no APK offline.
+ * Camadas de Segurança Implementadas:
+ * 1. Prevenção contra Prototype Pollution (safeJsonParse bloqueando __proto__, constructor, prototype)
+ * 2. Sanitização Anti-XSS Estrita para Textos, Cifras e URLs (bloqueio de javascript:, data:, vbscript:)
+ * 3. Validação por Allowlist (Momentos Litúrgicos, Tempos Litúrgicos, Tons Musicais, Limites de Quota)
+ * 4. Proteção Anti-Bot via Campos Honeypot Invisíveis em todos os formulários
+ * 5. Criptografia de Senhas com PBKDF2-HMAC-SHA256 (100.000 iterações via Web Crypto API) + Salt de 128 bits
+ * 6. Assinatura de Integridade de Sessão (Anti-Tampering / Anti-IDOR):
+ *    - Qualquer edição manual de user.id ou email no localStorage invalida a sessão imediatamente.
+ * 7. Isolamento Estrito por Usuário (ownerId vinculado ao user_id autenticado + pastas 100% zeradas no cadastro)
+ * 8. Validação de Esquema para Catálogo OTA (Over-The-Air)
  */
 
 window.SantaCifra = window.SantaCifra || {};
@@ -23,27 +20,101 @@ window.SantaCifra = window.SantaCifra || {};
 
   const STORAGE_SESSION_KEY = 'santa_cifra_active_session_v1';
   const STORAGE_USERS_DB_KEY = 'santa_cifra_secure_users_v1';
+  const STORAGE_PEPPER_KEY = 'santa_cifra_device_pepper_v1';
   const RATE_LIMIT_KEY = 'santa_cifra_auth_attempts_v1';
 
+  const ALLOWED_MOMENTS = new Set([
+    'Entrada',
+    'Ato Penitencial',
+    'Glória',
+    'Salmo',
+    'Aclamação ao Evangelho',
+    'Ofertório',
+    'Santo',
+    'Cordeiro de Deus',
+    'Comunhão',
+    'Ação de Graças',
+    'Final'
+  ]);
+
+  const ALLOWED_SEASONS = new Set([
+    'Tempo Comum',
+    'Advento',
+    'Natal',
+    'Quaresma',
+    'Páscoa',
+    'Pentecostes',
+    'Qualquer'
+  ]);
+
+  const VALID_KEY_REGEX = /^[A-G](#|b)?m?$/;
+  const MAX_CUSTOM_SONGS = 200;
+  const MAX_USER_FOLDERS = 100;
+  const MAX_SONGS_PER_FOLDER = 500;
+
   // =========================================================================
-  // 1. Sanitização Rigorosa & Prevenção de Input Falso / XSS / Injeção
+  // 1. Prevenção contra Prototype Pollution & Sanitização Universal
   // =========================================================================
+
+  function safeJsonParse(raw, fallback = null) {
+    if (typeof raw !== 'string' || !raw.trim()) return fallback;
+    try {
+      return JSON.parse(raw, (key, value) => {
+        if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+          return undefined;
+        }
+        return value;
+      });
+    } catch (_) {
+      return fallback;
+    }
+  }
 
   function sanitizeText(input, maxLength = 80) {
     if (typeof input !== 'string') return '';
-    // Remove tags HTML, caracteres de controle perigosos e normaliza espaços
+    // Remove tags HTML, payloads de eventos inline e caracteres de controle
     const clean = input
       .replace(/<[^>]*>/g, '')
-      .replace(/[\u0000-\u001F\u007F-\u009F]/g, '')
+      .replace(/javascript\s*:/gi, '')
+      .replace(/data\s*:/gi, '')
+      .replace(/vbscript\s*:/gi, '')
+      .replace(/on[a-z]+\s*=/gi, '')
+      .replace(/[\u0000-\u001F\u007F-\u009F]/g, ' ')
+      .replace(/\s+/g, ' ')
       .trim();
     return clean.slice(0, maxLength);
+  }
+
+  function sanitizeCifraText(input, maxLength = 15000) {
+    if (typeof input !== 'string') return '';
+    // Preserva quebras de linha e espaços de alinhamento dos acordes, mas elimina HTML e scripts
+    const clean = input
+      .replace(/<[^>]*>/g, '')
+      .replace(/javascript\s*:/gi, '')
+      .replace(/vbscript\s*:/gi, '')
+      .replace(/on[a-z]+\s*=/gi, '')
+      .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F]/g, '')
+      .replace(/\r\n/g, '\n');
+    return clean.slice(0, maxLength).trim();
+  }
+
+  function sanitizeUrl(url, fallback = 'https://www.youtube.com') {
+    if (typeof url !== 'string' || !url.trim()) return fallback;
+    try {
+      const parsed = new URL(url.trim(), window.location.origin);
+      if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') {
+        return fallback;
+      }
+      return parsed.href;
+    } catch (_) {
+      return fallback;
+    }
   }
 
   function validateEmail(email) {
     if (typeof email !== 'string') return false;
     const clean = email.trim();
     if (clean.length < 5 || clean.length > 100) return false;
-    // Regex RFC 5322 simplificado e seguro contra ReDoS
     const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
     return re.test(clean);
   }
@@ -56,7 +127,6 @@ window.SantaCifra = window.SantaCifra || {};
     if (password.length > 128) {
       return { valid: false, message: 'A senha excede o comprimento máximo permitido.' };
     }
-    // Exigir pelo menos 1 letra e 1 número
     const hasLetter = /[a-zA-Z]/.test(password);
     const hasNumber = /[0-9]/.test(password);
     if (!hasLetter || !hasNumber) {
@@ -65,12 +135,90 @@ window.SantaCifra = window.SantaCifra || {};
     return { valid: true };
   }
 
-  // Rate Limiting no cliente para mitigar ataques de força bruta
+  function isHoneypotTriggered(honeypotValue) {
+    return typeof honeypotValue === 'string' && honeypotValue.trim().length > 0;
+  }
+
+  // =========================================================================
+  // 2. Validação Estrita de Formulários do Site (Cifras, Pastas e OTA)
+  // =========================================================================
+
+  function validateSongInput({ title, composer, moment, season, key, cifra, honeypot }) {
+    if (isHoneypotTriggered(honeypot)) {
+      throw new Error('Submissão bloqueada pela verificação anti-bot.');
+    }
+
+    const cleanTitle = sanitizeText(title, 100);
+    if (cleanTitle.length < 2) {
+      throw new Error('O título da música deve ter pelo menos 2 caracteres válidos.');
+    }
+
+    const cleanComposer = sanitizeText(composer, 80) || 'Tradicional';
+    const cleanMoment = ALLOWED_MOMENTS.has(moment) ? moment : 'Entrada';
+    const cleanSeason = ALLOWED_SEASONS.has(season) ? season : 'Tempo Comum';
+
+    const rawKey = typeof key === 'string' ? key.trim() : 'C';
+    const cleanKey = VALID_KEY_REGEX.test(rawKey) ? rawKey : 'C';
+
+    const cleanCifra = sanitizeCifraText(cifra, 15000);
+    if (cleanCifra.length < 6) {
+      throw new Error('A cifra informada é muito curta ou contém caracteres inválidos.');
+    }
+
+    return {
+      title: cleanTitle,
+      composer: cleanComposer,
+      liturgicalMoment: cleanMoment,
+      liturgicalSeason: cleanSeason,
+      originalKey: cleanKey,
+      cifra: cleanCifra
+    };
+  }
+
+  function validateFolderInput({ name, description, honeypot }) {
+    if (isHoneypotTriggered(honeypot)) {
+      throw new Error('Operação bloqueada pela proteção anti-bot.');
+    }
+    const cleanName = sanitizeText(name, 60);
+    if (cleanName.length < 1) {
+      throw new Error('Informe um nome válido para a pasta.');
+    }
+    const cleanDesc = sanitizeText(description || '', 120) || 'Pasta personalizada';
+    return { name: cleanName, description: cleanDesc };
+  }
+
+  function validateOtaCatalog(songsArray) {
+    if (!Array.isArray(songsArray) || songsArray.length === 0 || songsArray.length > 2000) {
+      return null;
+    }
+    const valid = [];
+    for (let i = 0; i < songsArray.length; i++) {
+      const s = songsArray[i];
+      if (!s || typeof s !== 'object') continue;
+      if (typeof s.id !== 'string' || typeof s.title !== 'string' || typeof s.cifra !== 'string') continue;
+      valid.push({
+        ...s,
+        id: sanitizeText(s.id, 100),
+        title: sanitizeText(s.title, 140),
+        composer: sanitizeText(s.composer || 'Tradicional', 120),
+        originalKey: VALID_KEY_REGEX.test(String(s.originalKey || '').trim()) ? String(s.originalKey).trim() : 'C',
+        youtubeUrl: s.youtubeUrl ? sanitizeUrl(s.youtubeUrl) : undefined,
+        cifra: sanitizeCifraText(s.cifra, 25000)
+      });
+    }
+    return valid.length > 0 ? valid : null;
+  }
+
+  // =========================================================================
+  // 3. Rate Limiting Anti-Brute-Force
+  // =========================================================================
+
   function checkRateLimit() {
     try {
       const raw = localStorage.getItem(RATE_LIMIT_KEY);
       if (!raw) return { allowed: true };
-      const data = JSON.parse(raw);
+      const data = safeJsonParse(raw, null);
+      if (!data) return { allowed: true };
       const now = Date.now();
       if (data.blockedUntil && data.blockedUntil > now) {
         const remainingSeconds = Math.ceil((data.blockedUntil - now) / 1000);
@@ -89,13 +237,12 @@ window.SantaCifra = window.SantaCifra || {};
     try {
       const raw = localStorage.getItem(RATE_LIMIT_KEY);
       const now = Date.now();
-      let data = raw ? JSON.parse(raw) : { count: 0, firstAttempt: now, blockedUntil: 0 };
-      if (now - data.firstAttempt > 60000) {
+      let data = safeJsonParse(raw, { count: 0, firstAttempt: now, blockedUntil: 0 });
+      if (!data || now - data.firstAttempt > 60000) {
         data = { count: 0, firstAttempt: now, blockedUntil: 0 };
       }
       data.count += 1;
       if (data.count >= 5) {
-        // Bloqueia por 30 segundos
         data.blockedUntil = now + 30000;
         data.count = 0;
       }
@@ -110,16 +257,68 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // =========================================================================
-  // 2. Criptografia Segura (Web Crypto API SHA-256 + Salt Criptográfico)
+  // 4. Criptografia Forte (PBKDF2-HMAC-SHA256 100.000 iterações + Assinatura de Sessão)
   // =========================================================================
 
-  function generateSaltHex() {
-    const arr = new Uint8Array(16);
+  function generateSaltHex(bytes = 16) {
+    const arr = new Uint8Array(bytes);
     crypto.getRandomValues(arr);
     return Array.from(arr, (b) => b.toString(16).padStart(2, '0')).join('');
   }
 
-  async function hashPasswordWithSalt(password, saltHex) {
+  function getDevicePepper() {
+    try {
+      let pepper = localStorage.getItem(STORAGE_PEPPER_KEY);
+      if (!pepper || pepper.length < 32) {
+        pepper = generateSaltHex(24);
+        localStorage.setItem(STORAGE_PEPPER_KEY, pepper);
+      }
+      return pepper;
+    } catch (_) {
+      return 'santa_cifra_fallback_device_pepper_2026';
+    }
+  }
+
+  function computeSessionMacSync(user, token, expiresAt) {
+    const pepper = getDevicePepper();
+    const payload = `${user.id}|${user.email}|${user.name}|${token}|${expiresAt}|${pepper}`;
+    // FNV-1a 64-bit dual-lane deterministic MAC for synchronous integrity verification
+    let h1 = 0x811c9dc5;
+    let h2 = 0xc9dc5118;
+    for (let i = 0; i < payload.length; i++) {
+      const c = payload.charCodeAt(i);
+      h1 ^= c;
+      h1 = Math.imul(h1, 0x01000193);
+      h2 ^= (c + i);
+      h2 = Math.imul(h2, 0x01000193);
+    }
+    return 'scmac_v2_' + (h1 >>> 0).toString(16).padStart(8, '0') + (h2 >>> 0).toString(16).padStart(8, '0');
+  }
+
+  async function hashPasswordPBKDF2(password, saltHex) {
+    const enc = new TextEncoder();
+    const keyMaterial = await crypto.subtle.importKey(
+      'raw',
+      enc.encode(password),
+      { name: 'PBKDF2' },
+      false,
+      ['deriveBits']
+    );
+    const derivedBits = await crypto.subtle.deriveBits(
+      {
+        name: 'PBKDF2',
+        salt: enc.encode(`santa_cifra_pbkdf2_v2::${saltHex}`),
+        iterations: 100000,
+        hash: 'SHA-256'
+      },
+      keyMaterial,
+      256
+    );
+    const hashArray = Array.from(new Uint8Array(derivedBits));
+    return 'pbkdf2_v2$' + hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  async function hashPasswordLegacySHA256(password, saltHex) {
     const enc = new TextEncoder();
     const data = enc.encode(`${saltHex}::${password}::santa_cifra_salt_2026`);
     const hashBuffer = await crypto.subtle.digest('SHA-256', data);
@@ -130,7 +329,7 @@ window.SantaCifra = window.SantaCifra || {};
   function getLocalUsersDB() {
     try {
       const raw = localStorage.getItem(STORAGE_USERS_DB_KEY);
-      return raw ? JSON.parse(raw) : {};
+      return safeJsonParse(raw, {}) || {};
     } catch (_) {
       return {};
     }
@@ -141,51 +340,66 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // =========================================================================
-  // 3. Gerenciamento de Sessão & Proteção contra IDOR
+  // 5. Gerenciamento de Sessão Assinada & Proteção Anti-IDOR
   // =========================================================================
 
   function getCurrentUser() {
     try {
       const raw = localStorage.getItem(STORAGE_SESSION_KEY);
       if (!raw) return null;
-      const session = JSON.parse(raw);
-      // Validar expiração de sessão (7 dias)
-      if (session && session.expiresAt && Date.now() > session.expiresAt) {
+      const session = safeJsonParse(raw, null);
+      if (!session || !session.user || !session.user.id || !session.user.email) {
+        return null;
+      }
+      // 1. Validar expiração de sessão (7 dias)
+      if (!session.expiresAt || Date.now() > session.expiresAt) {
         logout();
         return null;
       }
-      return session.user || null;
+      // 2. Verificar assinatura de integridade contra adulteração de user.id / IDOR local
+      const expectedSig = computeSessionMacSync(session.user, session.token, session.expiresAt);
+      if (session.sig !== expectedSig) {
+        console.warn('[Santa Cifra Security] Assinatura de sessão inválida detectada. Encerrando sessão adulterada.');
+        localStorage.removeItem(STORAGE_SESSION_KEY);
+        return null;
+      }
+      return session.user;
     } catch (_) {
       return null;
     }
   }
 
   function setSession(user, token = null) {
+    const cleanUser = {
+      id: sanitizeText(user.id, 64),
+      email: sanitizeText(user.email, 100).toLowerCase(),
+      name: sanitizeText(user.name, 60),
+      parish: sanitizeText(user.parish || '', 80),
+      createdAt: user.createdAt || new Date().toISOString()
+    };
+    const sessionToken = token || 'local_session_' + generateSaltHex(12);
+    const expiresAt = Date.now() + 7 * 24 * 60 * 60 * 1000;
+    const sig = computeSessionMacSync(cleanUser, sessionToken, expiresAt);
+
     const session = {
-      user: {
-        id: user.id,
-        email: user.email,
-        name: user.name,
-        parish: user.parish || '',
-        createdAt: user.createdAt || new Date().toISOString()
-      },
-      token: token || 'local_session_' + Date.now(),
-      expiresAt: Date.now() + 7 * 24 * 60 * 60 * 1000 // 7 dias
+      user: cleanUser,
+      token: sessionToken,
+      expiresAt,
+      sig
     };
     localStorage.setItem(STORAGE_SESSION_KEY, JSON.stringify(session));
     return session.user;
   }
 
   // =========================================================================
-  // 4. Operações de Autenticação (Cadastro, Login, Recuperação, Logout)
+  // 6. Operações de Autenticação (Cadastro, Login, Recuperação, Logout)
   // =========================================================================
 
-  /**
-   * Criar Conta (Sign Up)
-   * Garante validação estrita, proteção contra e-mails duplicados e criação de
-   * pastas 100% ZERADAS para o novo usuário.
-   */
-  async function registerUser({ name, email, parish, password, confirmPassword }) {
+  async function registerUser({ name, email, parish, password, confirmPassword, honeypot }) {
+    if (isHoneypotTriggered(honeypot)) {
+      throw new Error('Operação bloqueada pela verificação de segurança.');
+    }
+
     const rateCheck = checkRateLimit();
     if (!rateCheck.allowed) {
       throw new Error(rateCheck.message);
@@ -210,7 +424,6 @@ window.SantaCifra = window.SantaCifra || {};
       throw new Error(passCheck.message);
     }
 
-    // Se o Supabase estiver configurado, tenta cadastrar via GoTrue
     const supabaseCfg = window.SantaCifraSupabase ? window.SantaCifraSupabase.getConfig() : null;
     if (supabaseCfg && supabaseCfg.enabled) {
       try {
@@ -237,33 +450,30 @@ window.SantaCifra = window.SantaCifra || {};
 
         const data = await res.json();
         const userObj = {
-          id: (data.user && data.user.id) || (data.id) || 'usr_' + Date.now(),
+          id: (data.user && data.user.id) || data.id || 'usr_' + Date.now(),
           email: cleanEmail,
           name: cleanName,
           parish: cleanParish,
           createdAt: new Date().toISOString()
         };
 
-        // Inicializa as pastas do novo usuário 100% ZERADAS
         initEmptyUserPlaylists(userObj.id);
         setSession(userObj, data.access_token);
         resetRateLimit();
         return userObj;
       } catch (err) {
-        // Se o Supabase falhar por indisponibilidade, prossegue para autenticação segura local
-        console.warn('Supabase Auth indisponível, usando armazenamento local seguro:', err.message);
+        console.warn('Usando armazenamento local seguro:', err.message);
       }
     }
 
-    // Armazenamento Local Seguro com Hashing SHA-256
     const db = getLocalUsersDB();
     if (db[cleanEmail]) {
       throw new Error('Já existe uma conta cadastrada com este endereço de e-mail.');
     }
 
-    const saltHex = generateSaltHex();
-    const passwordHash = await hashPasswordWithSalt(password, saltHex);
-    const userId = 'usr_' + (crypto.randomUUID ? crypto.randomUUID() : Date.now() + '_' + Math.random().toString(36).slice(2));
+    const saltHex = generateSaltHex(16);
+    const passwordHash = await hashPasswordPBKDF2(password, saltHex);
+    const userId = 'usr_' + (crypto.randomUUID ? crypto.randomUUID() : Date.now() + '_' + generateSaltHex(6));
 
     const newUser = {
       id: userId,
@@ -278,17 +488,17 @@ window.SantaCifra = window.SantaCifra || {};
     db[cleanEmail] = newUser;
     saveLocalUsersDB(db);
 
-    // Inicializa pastas do novo usuário 100% ZERADAS
     initEmptyUserPlaylists(userId);
     setSession(newUser);
     resetRateLimit();
     return newUser;
   }
 
-  /**
-   * Fazer Login (Sign In)
-   */
-  async function loginUser({ email, password }) {
+  async function loginUser({ email, password, honeypot }) {
+    if (isHoneypotTriggered(honeypot)) {
+      throw new Error('Operação bloqueada pela verificação de segurança.');
+    }
+
     const rateCheck = checkRateLimit();
     if (!rateCheck.allowed) {
       throw new Error(rateCheck.message);
@@ -305,7 +515,6 @@ window.SantaCifra = window.SantaCifra || {};
       throw new Error('E-mail ou senha incorretos.');
     }
 
-    // Se o Supabase estiver configurado, tenta login via GoTrue
     const supabaseCfg = window.SantaCifraSupabase ? window.SantaCifraSupabase.getConfig() : null;
     if (supabaseCfg && supabaseCfg.enabled) {
       try {
@@ -335,22 +544,32 @@ window.SantaCifra = window.SantaCifra || {};
           resetRateLimit();
           return userObj;
         }
-      } catch (_) {
-        // Fallback local se estiver offline
-      }
+      } catch (_) {}
     }
 
-    // Login local seguro via hash SHA-256
     const db = getLocalUsersDB();
     const userRecord = db[cleanEmail];
     if (!userRecord) {
       recordFailedAttempt();
-      // Mensagem genérica para mitigar User Enumeration
       throw new Error('E-mail ou senha incorretos.');
     }
 
-    const computedHash = await hashPasswordWithSalt(password, userRecord.salt);
-    if (computedHash !== userRecord.passwordHash) {
+    let isMatch = false;
+    if (String(userRecord.passwordHash || '').startsWith('pbkdf2_v2$')) {
+      const computed = await hashPasswordPBKDF2(password, userRecord.salt);
+      isMatch = computed === userRecord.passwordHash;
+    } else {
+      const legacyComputed = await hashPasswordLegacySHA256(password, userRecord.salt);
+      isMatch = legacyComputed === userRecord.passwordHash;
+      if (isMatch) {
+        // Auto-upgrade transparente do hash antigo para PBKDF2 100.000 iterações
+        userRecord.passwordHash = await hashPasswordPBKDF2(password, userRecord.salt);
+        db[cleanEmail] = userRecord;
+        saveLocalUsersDB(db);
+      }
+    }
+
+    if (!isMatch) {
       recordFailedAttempt();
       throw new Error('E-mail ou senha incorretos.');
     }
@@ -367,10 +586,11 @@ window.SantaCifra = window.SantaCifra || {};
     return sessionUser;
   }
 
-  /**
-   * Recuperação de Senha (Forgot Password)
-   */
-  async function recoverPassword(email) {
+  async function recoverPassword(email, honeypot = '') {
+    if (isHoneypotTriggered(honeypot)) {
+      throw new Error('Operação bloqueada pela verificação de segurança.');
+    }
+
     const rateCheck = checkRateLimit();
     if (!rateCheck.allowed) {
       throw new Error(rateCheck.message);
@@ -395,22 +615,17 @@ window.SantaCifra = window.SantaCifra || {};
       } catch (_) {}
     }
 
-    // Sempre retorna mensagem amigável sem expor se o e-mail existe ou não (Security Best Practice)
     return {
       success: true,
       message: `Se o e-mail ${cleanEmail} estiver cadastrado no Santa Cifra, as instruções de redefinição de senha foram processadas com sucesso.`
     };
   }
 
-  /**
-   * Logout Seguro
-   */
   function logout() {
     try {
       localStorage.removeItem(STORAGE_SESSION_KEY);
     } catch (_) {}
 
-    // Recarrega as playlists para o estado anônimo ou limpo
     if (window.SantaCifra.initPlaylists) {
       window.SantaCifra.initPlaylists();
     }
@@ -421,31 +636,26 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // =========================================================================
-  // 5. Pastas Isoladas por Usuário (Prevenção Anti-IDOR & Pastas Zeradas)
+  // 7. Pastas Isoladas por Usuário (Anti-IDOR + Pastas 100% Zeradas no Cadastro)
   // =========================================================================
 
   function getUserPlaylistsKey(userId) {
     if (!userId || typeof userId !== 'string') return 'santa_cifra_guest_playlists';
-    // Sanitizar ID do usuário para evitar manipulação de chaves
     const safeId = userId.replace(/[^a-zA-Z0-9_-]/g, '');
     return `santa_cifra_user_${safeId}_playlists`;
   }
 
-  /**
-   * Inicializa as pastas de um NOVO usuário de forma 100% ZERADA.
-   * Não insere nenhuma pasta pré-fabricada de domingo ou comunidade:
-   * apenas a pasta de sistema "Favoritas" vazia, para o usuário montar
-   * o repertório dele como bem entender.
-   */
   function initEmptyUserPlaylists(userId) {
-    const key = getUserPlaylistsKey(userId);
+    const safeOwner = sanitizeText(userId, 64);
+    const key = getUserPlaylistsKey(safeOwner);
     const emptyPlaylists = [
       {
         id: 'favorites',
         name: 'Favoritas',
         isSystem: true,
+        ownerId: safeOwner,
         description: 'Suas cifras favoritas salvas para acesso rápido.',
-        songIds: [] // 100% ZERADA
+        songIds: []
       }
     ];
     localStorage.setItem(key, JSON.stringify(emptyPlaylists));
@@ -455,19 +665,20 @@ window.SantaCifra = window.SantaCifra || {};
   function loadPlaylistsForActiveUser() {
     const user = getCurrentUser();
     if (!user) {
-      // Modo visitante anônimo
       const guestKey = 'santa_cifra_guest_playlists';
       const saved = localStorage.getItem(guestKey);
       if (saved) {
-        try {
-          return JSON.parse(saved);
-        } catch (_) {}
+        const parsed = safeJsonParse(saved, null);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed;
+        }
       }
       return [
         {
           id: 'favorites',
           name: 'Favoritas',
           isSystem: true,
+          ownerId: 'guest',
           description: 'Cifras salvas para acesso rápido.',
           songIds: []
         }
@@ -477,33 +688,40 @@ window.SantaCifra = window.SantaCifra || {};
     const key = getUserPlaylistsKey(user.id);
     const saved = localStorage.getItem(key);
     if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch (_) {}
+      const parsed = safeJsonParse(saved, null);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        // Filtrar rigorosamente pastas que pertençam ao usuário autenticado (Anti-IDOR)
+        const owned = parsed.filter((f) => !f.ownerId || f.ownerId === user.id);
+        if (owned.length > 0) return owned;
+      }
     }
     return initEmptyUserPlaylists(user.id);
   }
 
   function savePlaylistsForActiveUser(playlistsArray) {
     const user = getCurrentUser();
+    const ownerId = user ? user.id : 'guest';
     const key = user ? getUserPlaylistsKey(user.id) : 'santa_cifra_guest_playlists';
 
-    // Validação estrita dos objetos de pasta contra manipulação maliciosa (Anti-IDOR)
-    const sanitizedPlaylists = (playlistsArray || []).map((folder) => ({
-      id: sanitizeText(folder.id, 50) || 'folder-' + Date.now(),
-      name: sanitizeText(folder.name, 60),
-      isSystem: Boolean(folder.isSystem),
-      description: sanitizeText(folder.description || '', 120),
-      songIds: Array.isArray(folder.songIds)
-        ? folder.songIds
-            .filter((id) => typeof id === 'string')
-            .map((id) => sanitizeText(id, 80))
-        : []
-    }));
+    const cappedFolders = (Array.isArray(playlistsArray) ? playlistsArray : []).slice(0, MAX_USER_FOLDERS);
+    const sanitizedPlaylists = cappedFolders
+      .filter((folder) => folder && (!folder.ownerId || folder.ownerId === ownerId || folder.ownerId === 'guest'))
+      .map((folder) => ({
+        id: sanitizeText(folder.id, 50) || 'folder-' + Date.now(),
+        name: sanitizeText(folder.name, 60) || 'Pasta',
+        isSystem: Boolean(folder.isSystem),
+        ownerId,
+        description: sanitizeText(folder.description || '', 120),
+        songIds: Array.isArray(folder.songIds)
+          ? folder.songIds
+              .filter((id) => typeof id === 'string')
+              .slice(0, MAX_SONGS_PER_FOLDER)
+              .map((id) => sanitizeText(id, 80))
+          : []
+      }));
 
     localStorage.setItem(key, JSON.stringify(sanitizedPlaylists));
 
-    // Se o usuário estiver autenticado e o Supabase configurado, sincroniza na nuvem com RLS
     if (user && window.SantaCifraSupabase) {
       const cfg = window.SantaCifraSupabase.getConfig();
       if (cfg && cfg.enabled) {
@@ -515,7 +733,7 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // =========================================================================
-  // 6. Atualização Visual da Interface (Botão de Login / Perfil no Cabeçalho)
+  // 8. Atualização Visual da Interface & Eventos dos Diálogos
   // =========================================================================
 
   function updateAuthUI() {
@@ -550,10 +768,6 @@ window.SantaCifra = window.SantaCifra || {};
     }
   }
 
-  // =========================================================================
-  // 7. Vinculação de Eventos dos Diálogos (Login, Cadastro, Recuperação, Perfil)
-  // =========================================================================
-
   function showAlert(msg, isError = true) {
     const box = document.getElementById('authAlertBox');
     if (!box) return;
@@ -586,7 +800,6 @@ window.SantaCifra = window.SantaCifra || {};
     if (formRegister) formRegister.style.display = view === 'register' ? 'block' : 'none';
     if (formForgot) formForgot.style.display = view === 'forgot' ? 'block' : 'none';
 
-    // Foco acessível no primeiro campo visível
     setTimeout(() => {
       if (view === 'login') {
         const inp = document.getElementById('loginEmail');
@@ -638,7 +851,7 @@ window.SantaCifra = window.SantaCifra || {};
     }
 
     const state = window.SantaCifra.state;
-    const folders = (state && state.playlists) ? state.playlists : [];
+    const folders = state && state.playlists ? state.playlists : [];
     const customFolders = folders.filter((f) => !f.isSystem);
     const favFolder = folders.find((f) => f.id === 'favorites');
     const favCount = favFolder ? favFolder.songIds.length : 0;
@@ -662,7 +875,6 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
-    // Abas do diálogo de autenticação
     const tabButtons = document.querySelectorAll('.auth-tab-btn');
     tabButtons.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -671,7 +883,6 @@ window.SantaCifra = window.SantaCifra || {};
       });
     });
 
-    // Links de alternância entre telas
     const btnGoToRegister = document.getElementById('btnGoToRegister');
     if (btnGoToRegister) btnGoToRegister.addEventListener('click', () => switchAuthTab('register'));
 
@@ -684,7 +895,6 @@ window.SantaCifra = window.SantaCifra || {};
     const btnBackToLogin = document.getElementById('btnBackToLoginFromForgot');
     if (btnBackToLogin) btnBackToLogin.addEventListener('click', () => switchAuthTab('login'));
 
-    // Formulário de Login
     const formLogin = document.getElementById('formAuthLogin');
     if (formLogin) {
       formLogin.addEventListener('submit', async (e) => {
@@ -692,6 +902,8 @@ window.SantaCifra = window.SantaCifra || {};
         hideAlert();
         const email = document.getElementById('loginEmail').value;
         const password = document.getElementById('loginPassword').value;
+        const hpEl = document.getElementById('hpAuthLogin');
+        const honeypot = hpEl ? hpEl.value : '';
         const submitBtn = document.getElementById('btnSubmitLogin');
 
         try {
@@ -699,12 +911,11 @@ window.SantaCifra = window.SantaCifra || {};
             submitBtn.disabled = true;
             submitBtn.textContent = 'Verificando...';
           }
-          await loginUser({ email, password });
+          await loginUser({ email, password, honeypot });
           const dlg = document.getElementById('authDialog');
           if (dlg) dlg.close();
           formLogin.reset();
 
-          // Atualiza as playlists do usuário logado
           if (window.SantaCifra.initPlaylists) window.SantaCifra.initPlaylists();
           if (window.SantaCifra.renderPlaylistsView && window.SantaCifra.state && window.SantaCifra.state.activeTab === 'playlists') {
             window.SantaCifra.renderPlaylistsView();
@@ -722,7 +933,6 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
-    // Formulário de Cadastro (Pastas Zeradas)
     const formRegister = document.getElementById('formAuthRegister');
     if (formRegister) {
       formRegister.addEventListener('submit', async (e) => {
@@ -733,6 +943,8 @@ window.SantaCifra = window.SantaCifra || {};
         const parish = document.getElementById('regParish').value;
         const password = document.getElementById('regPassword').value;
         const confirmPassword = document.getElementById('regConfirmPassword').value;
+        const hpEl = document.getElementById('hpAuthRegister');
+        const honeypot = hpEl ? hpEl.value : '';
         const submitBtn = document.getElementById('btnSubmitRegister');
 
         try {
@@ -740,12 +952,11 @@ window.SantaCifra = window.SantaCifra || {};
             submitBtn.disabled = true;
             submitBtn.textContent = 'Criando sua conta...';
           }
-          await registerUser({ name, email, parish, password, confirmPassword });
+          await registerUser({ name, email, parish, password, confirmPassword, honeypot });
           const dlg = document.getElementById('authDialog');
           if (dlg) dlg.close();
           formRegister.reset();
 
-          // Atualiza playlists: o novo usuário recebe as pastas ZERADAS
           if (window.SantaCifra.initPlaylists) window.SantaCifra.initPlaylists();
           if (window.SantaCifra.renderPlaylistsView && window.SantaCifra.state && window.SantaCifra.state.activeTab === 'playlists') {
             window.SantaCifra.renderPlaylistsView();
@@ -763,13 +974,14 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
-    // Formulário de Recuperação
     const formForgot = document.getElementById('formAuthForgot');
     if (formForgot) {
       formForgot.addEventListener('submit', async (e) => {
         e.preventDefault();
         hideAlert();
         const email = document.getElementById('forgotEmail').value;
+        const hpEl = document.getElementById('hpAuthForgot');
+        const honeypot = hpEl ? hpEl.value : '';
         const submitBtn = document.getElementById('btnSubmitForgot');
 
         try {
@@ -777,7 +989,7 @@ window.SantaCifra = window.SantaCifra || {};
             submitBtn.disabled = true;
             submitBtn.textContent = 'Enviando...';
           }
-          const res = await recoverPassword(email);
+          const res = await recoverPassword(email, honeypot);
           showAlert(res.message, false);
           formForgot.reset();
         } catch (err) {
@@ -791,7 +1003,6 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
-    // Botão de Logout no Perfil
     const btnLogout = document.getElementById('btnLogoutUser');
     if (btnLogout) {
       btnLogout.addEventListener('click', () => {
@@ -802,13 +1013,27 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
-    // Inicializa a UI com base na sessão existente
     updateAuthUI();
   }
 
-  // Expor API no namespace SantaCifra
+  // Expor motor de segurança global + autenticação
+  window.SantaCifra.security = {
+    safeJsonParse,
+    sanitizeText,
+    sanitizeCifraText,
+    sanitizeUrl,
+    validateSongInput,
+    validateFolderInput,
+    validateOtaCatalog,
+    MAX_CUSTOM_SONGS,
+    MAX_USER_FOLDERS,
+    MAX_SONGS_PER_FOLDER
+  };
+
   window.SantaCifra.auth = {
     sanitizeText,
+    sanitizeUrl,
+    safeJsonParse,
     validateEmail,
     validatePassword,
     getCurrentUser,

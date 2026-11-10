@@ -80,7 +80,9 @@ window.SantaCifra.openSongView = function openSongView(songOrId, opts) {
   dom.bpmDisplay.textContent = `${song.bpm || 80}`;
   dom.rhythmName.textContent = song.rhythmName || 'Balada';
   dom.rhythmArrows.textContent = song.rhythmPattern || '↓ ↓ ↑ ↑ ↓ ↑';
-  dom.youtubeLink.href = song.youtubeUrl || `https://www.youtube.com/results?search_query=${encodeURIComponent(song.title + ' ' + song.composer)}`;
+  const defaultYt = `https://www.youtube.com/results?search_query=${encodeURIComponent(song.title + ' ' + song.composer)}`;
+  const sanitizeUrl = (window.SantaCifra.security && window.SantaCifra.security.sanitizeUrl) || ((u) => u);
+  dom.youtubeLink.href = sanitizeUrl(song.youtubeUrl || defaultYt, defaultYt);
 
   window.SantaCifra.updateFavoriteButtonState();
   window.SantaCifra.renderCifraAndChords();
@@ -96,7 +98,7 @@ window.SantaCifra.updateFavoriteButtonState = function updateFavoriteButtonState
 };
 
 window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
-  const { state, dom } = window.SantaCifra;
+  const { state, dom, esc } = window.SantaCifra;
   if (!state.currentSong) return;
 
   const T = window.Transposition || window.TranspositionEngine;
@@ -120,22 +122,22 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
   const lines = processedText.split('\n');
   const htmlLines = lines.map(line => {
     if (/^\s*\[[^\]]+\]\s*$/.test(line)) {
-      return line.replace(/\[([^\]]+)\]/g, '<span class="section-label">[$1]</span>');
+      return esc(line).replace(/\[([^\]]+)\]/g, '<span class="section-label">[$1]</span>');
     }
 
     if (T.isChordLine(line)) {
       return line.replace(/(\[[^\]]+\]|\S+)/g, (token) => {
         if (token.startsWith('[') && token.endsWith(']')) {
-          return `<span class="section-label">${token}</span>`;
+          return `<span class="section-label">${esc(token)}</span>`;
         }
         const clean = token.replace(/[(),]/g, '');
         if (isChordTok(clean)) {
-          return `<span class="chord-token" data-chord="${clean}">${token}</span>`;
+          return `<span class="chord-token" data-chord="${esc(clean)}">${esc(token)}</span>`;
         }
-        return token;
+        return esc(token);
       });
     }
-    return line;
+    return esc(line);
   });
 
   dom.cifraPre.innerHTML = htmlLines.join('\n');
@@ -149,7 +151,7 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
     box.tabIndex = 0;
     box.setAttribute('aria-label', `Ver acorde ${chordName} em todos os instrumentos`);
     box.innerHTML = `
-      <div class="chord-mini-title">${chordName}</div>
+      <div class="chord-mini-title">${esc(chordName)}</div>
       <div>${renderDiag(chordName, state.selectedInstrument)}</div>
     `;
     box.addEventListener('keydown', (e) => {

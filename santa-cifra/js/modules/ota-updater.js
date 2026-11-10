@@ -20,13 +20,15 @@ window.SantaCifra.checkForOTAUpdates = async function checkForOTAUpdates() {
     const localVersion = localStorage.getItem(OTA_VERSION_KEY);
 
     // Se a versão remota mudou ou o número de músicas aumentou, sincroniza o catálogo completo
-    if (remoteMeta.buildId && remoteMeta.buildId !== localVersion) {
+    if (remoteMeta.buildId && typeof remoteMeta.buildId === 'string' && remoteMeta.buildId !== localVersion) {
       const songsRes = await fetch(`${OTA_BASE_URL}/data/songs.json?t=${Date.now()}`, { cache: 'no-store' });
       if (songsRes.ok) {
-        const remoteSongs = await songsRes.json();
+        const rawSongs = await songsRes.json();
+        const validateOta = window.SantaCifra.security && window.SantaCifra.security.validateOtaCatalog;
+        const remoteSongs = validateOta ? validateOta(rawSongs) : (Array.isArray(rawSongs) ? rawSongs : null);
         if (Array.isArray(remoteSongs) && remoteSongs.length > 0) {
           localStorage.setItem(OTA_CATALOG_KEY, JSON.stringify(remoteSongs));
-          localStorage.setItem(OTA_VERSION_KEY, remoteMeta.buildId);
+          localStorage.setItem(OTA_VERSION_KEY, remoteMeta.buildId.slice(0, 64));
           window.SongsCatalog = remoteSongs;
 
           if (window.SantaCifra.initCatalog) {
