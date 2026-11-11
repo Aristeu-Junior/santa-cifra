@@ -1,0 +1,1019 @@
+[
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 20,
+    "id": "pelo-irmao-que-nao-amei-piedade",
+    "title": "Senhor, Tende Piedade e Perdoai a Nossa Culpa",
+    "composer": "Pe. Zezinho, scj",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1.",
+      "2.",
+      "3."
+    ],
+    "cifraPreview": "[Intro] D  G  A  D / D                        G              D / 1. Senhor, tende piedade e perdoai a nossa culpa, / G                        A              D / E perdoai a nossa culpa! / Bm                       Em             A              D"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 25,
+    "id": "aleluia-alguem-do-povo-exclama",
+    "title": "Aleluia, Alguém do Povo Exclama",
+    "composer": "Pe. Zezinho, scj",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  G  A  D / [Refrão] / D        G       A        D / Aleluia, aleluia, aleluia! / D        G       A        D / Aleluia, aleluia, aleluia!"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 34,
+    "id": "alo-meu-deus-pe-zezinho",
+    "title": "Alô, Meu Deus",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] C  Dm  G7  C / [Primeira Parte] /    C                                       Dm / 1. Alô, meu Deus, fazia tanto tempo que eu não mais Te procurava, /    G7                                      C / Alô, meu Deus, senti saudades Tuas e acabei voltando aqui!"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 35,
+    "id": "palavra-de-salvacao-pe-zezinho",
+    "title": "Palavra de Salvação",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] C  F  G7  C / [Primeira Parte] /    C                                       G7 / 1. Palavra de salvação somente o Céu tem pra dar, /    F                       G7              C / Por isso meu coração se abre para escutar!"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 36,
+    "id": "fala-senhor-pe-zezinho",
+    "title": "Fala, Senhor, Palavra de Fraternidade",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  G  A7  D / [Refrão] / D             G         A7            D / Fala, Senhor! Fala, Senhor! / Bm            Em        A7            D / Palavra de fraternidade!"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 37,
+    "id": "gloria-a-deus-na-imensidao-pe-zezinho",
+    "title": "Glória a Deus na Imensidão",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1.",
+      "2.",
+      "3."
+    ],
+    "cifraPreview": "[Intro] G  C  D7  G / [Refrão] / G                       C / Glória a Deus na imensidão, / D7                      G / E paz na terra ao homem nosso irmão! (2x)"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 38,
+    "id": "cantico-de-maria-magnificat-pe-zezinho",
+    "title": "Cântico de Maria (Meu Espírito Exulta de Alegria)",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 16,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] C  Am  Dm  G7  C / [Refrão] / C             Am         Dm          G7 / A minh'alma engrandece o Senhor, / Dm            G7         C / E meu espírito exulta em Deus, meu Salvador!"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 39,
+    "id": "sonda-me-pe-marcelo-rossi",
+    "title": "Sonda-me, Senhor, e Me Conhece (Salmo 138)",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 27,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] Em  Am  D7  G  B7 / [Primeira Parte] /    Em                                      Am / 1. Senhor, eu sei que Tu me sondas, /    D7                                      G       B7 / Sei também que me conheces;"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 40,
+    "id": "seja-engrandecido-pe-marcelo-rossi",
+    "title": "Seja Engrandecido",
+    "composer": "Padre Marcelo Rossi / Guilherme Kerr",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  Em  C  D7  G / [Primeira Parte] /    G                                        Em / 1. Seja engrandecido, ó Deus da minha vida, /    C                        Am              D7 / Tu és o meu Rochedo e a minha salvação!"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 41,
+    "id": "pai-nosso-pe-marcelo-rossi",
+    "title": "Pai Nosso (Padre Marcelo Rossi)",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 23,
+    "numberedVerses": [],
+    "cifraPreview": "[Intro] G  Em  C  D  G / [Primeira Parte] /    G                        Em / Pai nosso que estais no céu, /    C                        D / Santificado seja o Vosso nome,"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 42,
+    "id": "abraco-de-pai-walmir-alencar",
+    "title": "Abraço de Pai (Quanto Eu Esperei)",
+    "composer": "Walmir Alencar / Ministério Adoração e Vida",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A  Bm  G  A7  D / [Primeira Parte] /    D                        A               Bm / 1. Quanto Eu esperei! Ansioso queria te ver, /    G                        Em              A7 / E te falar do que há em Mim, já não podia me conter!"
+  },
+  {
+    "file": "Ordinario",
+    "varName": "SongsCatalogOrdinario",
+    "idx": 50,
+    "id": "oracao-da-noite-perdoai-nos-senhor-pe-zezinho",
+    "title": "Oração da Noite (Perdoai-nos, Senhor)",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 16,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] Dm  Gm  A7  Dm / [Primeira Parte] /    Dm                                       Gm / 1. Pelo bem que não fizemos, pelo amor que retivemos: /    A7                                       Dm / Perdoai-nos, Senhor! Perdoai-nos, Senhor!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 8,
+    "id": "a-escolhida-uma-entre-todas",
+    "title": "A Escolhida (Uma Entre Todas Foi a Escolhida)",
+    "composer": "Pe. Zezinho / Tradicional Mariano",
+    "linesCount": 20,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A  Bm  G  A  D / D                     A / 1. Uma entre todas foi a escolhida: / Bm                    F#m / Foste tu, Maria, a serva preferida! / G                     D"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 9,
+    "id": "maria-de-nazare",
+    "title": "Maria de Nazaré",
+    "composer": "Pe. Zezinho, scj",
+    "linesCount": 26,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] D  Em  A7  D / D                        Em / 1. Maria de Nazaré, Maria me cativou, / A7                       D / Fez mais forte a minha fé e por filho me adotou! / D7                       G"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 27,
+    "id": "nova-geracao-pe-zezinho",
+    "title": "Nova Geração (Eu Venho do Sul e do Norte)",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] Dm  A7  Dm / [Primeira Parte] /    Dm                                       A7 / 1. Eu venho do Sul e do Norte, do Oeste e do Leste, de todo lugar! /                                             Dm / Estradas da vida eu percorro, levando socorro a quem precisar!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 28,
+    "id": "quando-jesus-passar-pe-zezinho",
+    "title": "Quando Jesus Passar",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 23,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  Em  A7  D / [Refrão] /    D                                Em / Quando Jesus passar, quando Jesus passar, /    A7                               D / Eu quero estar no meu lugar!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 31,
+    "id": "ilumina-ilumina-pe-zezinho",
+    "title": "Ilumina, Ilumina",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 21,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] Am  Dm  E7  Am / [Primeira Parte] /    Am                                       Dm / 1. Meu povo estava no escuro, sem direção a caminhar, /    E7                                       Am / Mas veio a Luz de Jesus Cristo para o meu povo iluminar!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 32,
+    "id": "de-la-do-interior-pe-zezinho",
+    "title": "De Lá do Interior",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 21,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  C  D7  G / [Primeira Parte] /    G                                        D7 / 1. De lá do interior eu vim, trazendo a minha fé no peito, /    C                    D7                  G / Pra agradecer ao bom Deus tudo o que Ele tem feito!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 33,
+    "id": "rosto-de-cristo-como-sao-belos-pe-zezinho",
+    "title": "Como São Belos os Pés do Mensageiro",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  Em  C  D7  G / [Refrão] / G             Em          C               D7 / Como são belos os pés do mensageiro / C             D7          G               D7 / Que anuncia a paz!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 34,
+    "id": "erguei-as-maos-pe-marcelo-rossi",
+    "title": "Erguei as Mãos",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 26,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] A  D  E  A / [Refrão] /    A                        D / Erguei as mãos e dai glória a Deus! /    E                        A / Erguei as mãos e dai glória a Deus!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 35,
+    "id": "anjos-de-deus-pe-marcelo-rossi",
+    "title": "Anjos de Deus (Se Acontecer um Barulho)",
+    "composer": "Padre Marcelo Rossi / Elizeu Gomes",
+    "linesCount": 27,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A  G  D / [Primeira Parte] /    D                                        A / 1. Se acontecer um barulho perto de você, /                                             G / É um anjo chegando para receber"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 36,
+    "id": "senhor-poe-teus-anjos-aqui-pe-marcelo-rossi",
+    "title": "Senhor, Põe Teus Anjos Aqui",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  Em  A7  D / [Refrão] /    D                                        Em / Senhor, põe Teus anjos aqui! /    A7                                       D / Senhor, põe Teus anjos aqui!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 38,
+    "id": "reunidos-aqui-pe-marcelo-rossi",
+    "title": "Reunidos Aqui Só Pra Louvar o Senhor",
+    "composer": "Padre Marcelo Rossi / Tradicional Carismático",
+    "linesCount": 25,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  C  D7  G / [Primeira Parte] /    G                                        D7 / Reunidos aqui só pra louvar o Senhor, /    C                        D7              G     G7 / Novamente aqui, em união!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 39,
+    "id": "quem-e-esta-que-avanca-como-a-aurora-pe-marcelo",
+    "title": "Quem É Esta Que Avança Como a Aurora",
+    "composer": "Padre Marcelo Rossi / Cântico dos Cânticos 6,10",
+    "linesCount": 25,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  C  D  G / [Primeira Parte] /    G                                        C / Quem é esta que avança como a aurora, /    D                                        G / Temível como exército em ordem de batalha?"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 43,
+    "id": "perfeito-e-quem-te-criou-vida-reluz",
+    "title": "Perfeito É Quem Te Criou",
+    "composer": "Walmir Alencar / Vida Reluz",
+    "linesCount": 27,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] E  B  C#m  A  B7  E / [Primeira Parte] /    E                        B               C#m / 1. Se um dia um anjo declarou que tu eras cheia de Deus, /    A                        F#m             B7 / Agora penso: quem sou eu para não te dizer também"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 44,
+    "id": "celebra-a-vitoria-walmir-alencar-vida-reluz",
+    "title": "Celebra a Vitória (Vê Quem Te Elegeu, Te Ungiu e Consagrou)",
+    "composer": "Walmir Alencar / Vida Reluz",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] E  B/D#  C#m  A  F#m  B7 / [Primeira Parte] /    E                        B/D#            C#m / 1. Vê quem te elegeu, te ungiu e consagrou: /    A                        F#m             B7 / Não temas, nos lábios santos teu nome ressoou!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 45,
+    "id": "obra-nova-cristo-quer-fazer-vida-reluz",
+    "title": "Obra Nova (Cristo Quer Fazer em Mim uma Obra Nova)",
+    "composer": "Walmir Alencar / Vida Reluz",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  Bm  G  A7  D  A7 / [Refrão] /    D                        Bm / Tou, tou, tou, batendo na porta do teu coração: /    G                        A7 / Cristo quer fazer em mim uma obra nova!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 52,
+    "id": "um-certo-dia-a-beira-mar-versao-completa-pe-zezinho",
+    "title": "Cântico da Paz (Cristo Quero Ser Instrumento)",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 21,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  C  D7  G / [Refrão] /    G                        C               D7          G / Vai, leva a paz ao mundo inteiro, sê de Cristo o mensageiro, /    Em                       Am              D7          G / Onde houver escuridão, acende a luz!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 53,
+    "id": "deus-e-dez-pe-marcelo-rossi",
+    "title": "Deus É Dez",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 21,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  Em  C  D / [Primeira Parte] /    G                        Em              C           D / 1. Venha viver uma grande emoção e sentir no peito uma explosão: /    G                        Em              C           D / O amor verdadeiro Ele quer te dar, vale a pena abrir o coração!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 54,
+    "id": "o-vira-de-jesus-pe-marcelo-rossi",
+    "title": "O Vira de Jesus",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 21,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] A  E7  A / [Refrão] /    A                                        E7 / E o cristão dá um pulinho, e o cristão dá um pulinho, /    D                        E7              A / E vai girando no amor do Senhor!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 55,
+    "id": "santo-espirito-es-bem-vindo-aqui-pe-marcelo",
+    "title": "Santo Espírito, És Bem-Vindo Aqui",
+    "composer": "Padre Marcelo Rossi / Adoração",
+    "linesCount": 25,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  G  D  G / [Primeira Parte] /    D                                        G / Não há nada igual, não há nada melhor /    Em                       A               D / A que se compara à esperança viva: Tua presença!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 74,
+    "id": "forca-de-paz-padre-zezinho",
+    "title": "Força de Paz (Paz Inquieta)",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 21,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  G  A7  D / [Refrão] /    D                        G               A7          D / Quero ser força de paz, onde houver guerra levar o amor; /    Bm                       Em              A7          D / Ser um cristão que não cansa jamais de anunciar o Senhor!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 75,
+    "id": "louvemos-ao-senhor-pe-marcelo-rossi",
+    "title": "Louvemos ao Senhor (Subamos à Montanha do Senhor)",
+    "composer": "Padre Marcelo Rossi / Adhemar de Campos",
+    "linesCount": 18,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  Em  C  D7 / [Primeira Parte] /    G                        Em              C           D7 / 1. Louvemos ao Senhor, louvemos ao Senhor, /    G                        Em              C     D7    G / Adoremos no Seu santo monte, nosso Pai amado!"
+  },
+  {
+    "file": "Entrada/Final",
+    "varName": "SongsCatalogEntradaFinal",
+    "idx": 91,
+    "id": "a-cruz-sagrada-seja-a-minha-luz-ricardo-sa",
+    "title": "A Cruz Sagrada Seja a Minha Luz (Oração de São Bento)",
+    "composer": "Ricardo Sá / Canção Nova",
+    "linesCount": 29,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] Em  Am  D  G  B7  Em / [Refrão] /    Em                       Am / A Cruz Sagrada seja a minha luz, /    D                        G               B7 / Não seja o dragão o meu guia!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 14,
+    "id": "um-coracao-para-amar",
+    "title": "Um Coração para Amar",
+    "composer": "Pe. Zezinho, scj",
+    "linesCount": 18,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  Am  D  G / G                        Am / 1. Um coração para amar, pra perdoar e sentir, / D                        G / Para chorar e sorrir, ao me criar Tu me deste! / G                        Am"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 27,
+    "id": "cantiga-por-sao-francisco-pe-zezinho",
+    "title": "Cantiga por São Francisco",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 21,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] C  Am  Dm  G7  C / [Primeira Parte] /    C                      Am              Dm          G7 / 1. O mundo precisa de paz, o mundo precisa de amor, /    Dm                     G7              C / E de gente que saiba seguir o Evangelho de Nosso Senhor!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 28,
+    "id": "amar-e-doar-se-pe-zezinho",
+    "title": "Amar É Doar-se",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 21,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  Em  Am  D7  G / [Refrão] / G             Em          Am              D7 / Amar é doar-se sem medir o que se dá, / Am            D7          G / É fazer da própria vida um eterno ofertar!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 29,
+    "id": "a-minha-vida-e-do-mestre-pe-marcelo-rossi",
+    "title": "Meu Mestre (A Minha Vida É do Mestre)",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  Em  C  D  G / [Refrão] /    G                        Em / A minha vida é do Mestre, meu coração é do meu Mestre, /    C                        Am              D / O meu caminho é do Mestre, minha esperança é meu Mestre!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 30,
+    "id": "batiza-me-senhor-no-teu-espirito-pe-marcelo",
+    "title": "Batiza-me, Senhor, no Teu Espírito (Vem, Espírito Santo)",
+    "composer": "Padre Marcelo Rossi / Tradicional",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] Em  B7  Em / [Primeira Parte] /    Em                                      B7 / 1. Batiza-me, Senhor, no Teu Espírito, /                                             Em / Batiza-me, Senhor, no Teu Espírito,"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 31,
+    "id": "so-por-ti-jesus-eugenio-jorge",
+    "title": "Só Por Ti, Jesus (Quero Me Consumir)",
+    "composer": "Eugênio Jorge / Canção Nova",
+    "linesCount": 21,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] D  G  Em  A7  D / [Primeira Parte] /    D                        G               A7          Bm / 1. Só por Ti, Jesus, quero me consumir, /    G                        Em              A7 / Como vela que queima no altar, me consumir de amor!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 32,
+    "id": "barco-a-vela-eliana-ribeiro",
+    "title": "Barco a Vela",
+    "composer": "Eliana Ribeiro / Canção Nova",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  D  Em  C / [Primeira Parte] /    G                        D               Em / 1. Insisto em perseguir meus desejos, /    C                        Am              D7 / Insisto em só fazer do meu jeito;"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 36,
+    "id": "em-teu-altar-adoracao-e-vida",
+    "title": "Em Teu Altar",
+    "composer": "Walmir Alencar / Ministério Adoração e Vida",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  D  Em  C / [Primeira Parte] /    G                        D               Em / 1. Diante de Tua presença me encontro, Senhor, Deus infinito; /    C                        Am              D / O Teu olhar me acompanha e sabes quem sou!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 37,
+    "id": "invade-minh-alma-walmir-alencar-vida-reluz",
+    "title": "Invade Minh'Alma",
+    "composer": "Walmir Alencar / Vida Reluz",
+    "linesCount": 20,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] C  G/B  Am  F  Dm  G7 / [Primeira Parte] /    C                        G/B             Am / 1. Vem, Senhor, visitar o interior do meu coração, /    F                        Dm              G7 / Onde há sede de paz, derrama a Tua consolação!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 44,
+    "id": "um-coracao-para-amar-ofertorio",
+    "title": "Um Coração Para Amar",
+    "composer": "Pe. Zezinho, scj / Hinário de Ofertório",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  Em  C  D7  G / [Primeira Parte] /    G                                        D7 / 1. Um coração para amar, pra perdoar e sentir, /    C                        D7              G / Para chorar e sorrir, ao me criar Tu me deste!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 58,
+    "id": "deus-e-amor-pe-zezinho",
+    "title": "Deus É Amor (1 João 4, 8)",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 21,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] C  Am  Dm  G7  C / [Refrão] /    C                        Am              Dm          G7 / Deus é Amor, Deus é Amor: quem vive no amor vive em Deus, /    Dm                       G7              C / E Deus vive nele, porque Deus é Amor!"
+  },
+  {
+    "file": "Ofertorio/Comunhao",
+    "varName": "SongsCatalogOfertorioComunhao",
+    "idx": 64,
+    "id": "a-forca-do-amor-marcio-todeschini",
+    "title": "A Força do Amor",
+    "composer": "Márcio Todeschini / Canção Nova",
+    "linesCount": 21,
+    "numberedVerses": [
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A  Bm  G / [Refrão] /    D                        A               Bm / Quem nos separará do amor de Cristo? /    G                        A7              D / Em todas as coisas somos mais que vencedores!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 2,
+    "id": "estas-entre-nos-tu-es-minha-vida",
+    "title": "Estás Entre Nós (Tu És Minha Vida, Outro Deus Não Há)",
+    "composer": "Pe. Jonas Abib / Tradicional",
+    "linesCount": 23,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] Em  C  D  G  B7 / Em             C              D              G / 1. Tu és minha vida, outro Deus não há! / Em             C              D              G / Tu és minha estrada, a minha verdade! / Am             D              G              Em"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 4,
+    "id": "obrigado-senhor-porque-es-meu-amigo",
+    "title": "Obrigado, Senhor, Porque És Meu Amigo",
+    "composer": "Pe. Zezinho / Tradicional",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  C  D  G / [Refrão] / G                        C / Obrigado, Senhor, porque és meu amigo, / D                        G / Porque sempre comigo Tu estás a falar!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 14,
+    "id": "quero-te-dar-a-paz-pe-marcelo-rossi",
+    "title": "Paz (Quero Te Dar a Paz do Meu Senhor)",
+    "composer": "Padre Marcelo Rossi",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] D  A/C#  Bm  G  A7 / [Primeira Parte] /    D                        A/C# / 1. Quero te dar a paz do meu Senhor, /    Bm                       F#m / Essa paz que o mundo não pode dar!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 28,
+    "id": "quero-mergulhar-nas-profundezas-cancao-nova",
+    "title": "Quero Mergulhar nas Profundezas",
+    "composer": "Canção Nova / Salette Ferreira",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  D/F#  Em7  C9  D4  D / [Primeira Parte] /    G                        D/F# / 1. Quero mergulhar nas profundezas /    Em7                      C9 / Do amor de Deus, meu Criador!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 29,
+    "id": "vem-louvar-hoje-e-tempo-de-louvar-a-deus",
+    "title": "Hoje É Tempo de Louvar a Deus (Vem Louvar)",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "linesCount": 16,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  G  A7  D  G  A7 / [Primeira Parte] /    D                        G               A7          D       G  A7 / 1. Hoje é tempo de louvar a Deus, em nós agora habita o Seu Espírito! /    D                        G               A7          D / Então é só cantar e a Cristo exaltar,"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 30,
+    "id": "o-senhor-e-rei-monsenhor-jonas-abib",
+    "title": "O Senhor É Rei (O Senhor É Meu Pastor e Rei)",
+    "composer": "Monsenhor Jonas Abib / Pe. Marcelo Rossi",
+    "linesCount": 17,
+    "numberedVerses": [],
+    "cifraPreview": "[Intro] Em  G  D  C / [Refrão] /    Em                                       G / O Senhor é Rei, o Senhor é meu Pastor e Rei! /    D                                        C           Em / O Senhor está no Céu, o Senhor está no mar,"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 47,
+    "id": "sublime-walmir-alencar-adoracao-e-vida",
+    "title": "Sublime (Sublime É o Teu Amor Por Mim)",
+    "composer": "Walmir Alencar / Ministério Adoração e Vida",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  D/F#  Em  C  D7  G / [Primeira Parte] /    G                        D/F#            Em / 1. Tão sublime é o Teu amor por mim, não consigo compreender; /    C                        Am              D7 / Sendo Deus infinito e Santo, vieste em meu coração viver!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 48,
+    "id": "deus-imenso-walmir-alencar-vida-reluz",
+    "title": "Deus Imenso (Não Sou Nada, Eu Bem Sei)",
+    "composer": "Walmir Alencar / Vida Reluz",
+    "linesCount": 25,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A/C#  Bm  G  Em  A7 / [Primeira Parte] /    D                        A/C#            Bm / 1. Não sou nada, eu bem sei, tão pequeno é o meu viver, /    G                        Em              A7 / Mas quando olho para o céu vejo a grandeza do Teu poder!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 58,
+    "id": "teu-sol-vai-brilhar-pe-zezinho",
+    "title": "Teu Sol Vai Brilhar",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] F  Bb  C7  F / [Primeira Parte] /    F                        C7 / 1. Se a noite é escura e fria em teu caminhar, /    Bb                       F / E as pedras da estrada te fazem chorar,"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 59,
+    "id": "se-eu-fosse-um-cristal-pe-zezinho",
+    "title": "Se Eu Fosse um Cristal",
+    "composer": "Padre Zezinho, scj",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] C  G/B  Am  F  G7  C / [Primeira Parte] /    C                        G/B             Am / 1. Se eu fosse um cristal, refletiria a Tua luz, /    F                        Dm              G7 / Se eu fosse uma flor, perfumaria Tua cruz!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 66,
+    "id": "faz-um-milagre-em-mim-pe-marcelo-rossi",
+    "title": "Faz um Milagre em Mim (Como Zaqueu)",
+    "composer": "Padre Marcelo Rossi / Régis Danese",
+    "linesCount": 23,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  D  Em  C / [Primeira Parte] /    G                                        D / 1. Como Zaqueu, eu quero subir /    Em                                       C / O mais alto que eu puder;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 67,
+    "id": "soberano-eliana-ribeiro",
+    "title": "Soberano, Maravilhoso",
+    "composer": "Eliana Ribeiro / Canção Nova",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] A  E/G#  F#m7  D9  E4  E / [Primeira Parte] /    A                        E/G# / 1. Finalmente, irmãos, fortalecei-vos no Senhor, /    F#m7                     D9 / Pelo Seu soberano e infinito poder!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 68,
+    "id": "gratidao-eu-encontrei-um-amor-perfeito",
+    "title": "Gratidão (Eu Encontrei um Amor Perfeito - Lucas 17, 15)",
+    "composer": "Canção Nova / Raquel Carpenter",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] C  G/B  Am7  F9  G4  G / [Primeira Parte] /    C                        G/B / 1. Eu encontrei um amor perfeito, /    Am7                      F9 / Que sarou a dor do meu coração!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 85,
+    "id": "a-vitoria-e-nossa-pitter-di-laura",
+    "title": "A Vitória É Nossa Pelo Sangue de Jesus",
+    "composer": "Pitter Di Laura / Canção Nova",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] Em  C  G  D / [Primeira Parte] /    Em                       C / 1. O inimigo tentou nos abater e nos vencer, /    G                        D / Mas o sangue de Jesus tem poder pra nos erguer!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 86,
+    "id": "tu-es-meu-tudo-thiago-tome",
+    "title": "Senhor, Tu És Meu Tudo",
+    "composer": "Thiago Tomé / Canção Nova",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] G  D/F#  Em  C  D / [Primeira Parte] /    G                        D/F# / 1. Quando olho pro Teu altar, sinto a paz me envolver, /    Em                       C / Tua presença viva dá sentido ao meu viver!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 87,
+    "id": "coracao-adorador-rogerinha-moreira",
+    "title": "Coração Adorador",
+    "composer": "Rogerinha Moreira / Canção Nova",
+    "linesCount": 19,
+    "numberedVerses": [
+      "1."
+    ],
+    "cifraPreview": "[Intro] C  G/B  Am7  F  G4  G / [Primeira Parte] /    C                        G/B / 1. Senhor, sonda o meu íntimo, purifica o meu ser, /    Am7                      F / Queima toda vaidade que me impede de crescer!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 155,
+    "id": "frei-gilson-o-sangue-de-jesus",
+    "title": "O Sangue de Jesus Tem Poder",
+    "composer": "Frei Gilson / Som do Monte",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] Am  F  C  G / [Primeira Parte] /    Am                                       F / 1. Foi no alto do Calvário que o Cordeiro Se entregou, /    C                                        G / E por cada gota santa nossa dívida pagou!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 157,
+    "id": "frei-gilson-santo-espirito-de-deus",
+    "title": "Santo Espírito de Deus",
+    "composer": "Frei Gilson / Som do Monte",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A  Bm  G / [Primeira Parte] /    D                                        A / 1. Como no Cenáculo, reunidos em oração, /    Bm                                       G / Abrimos as portas da alma à Tua visitação!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 159,
+    "id": "colo-de-deus-mistica-sublime",
+    "title": "Mística Sublime",
+    "composer": "Comunidade Colo de Deus",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  D  Em  C / [Primeira Parte] /    G                                        D / 1. No silêncio do altar, o Céu inteiro desce aqui, /    Em                                       C / Os anjos se prostram adorando o Rei que está em mim!"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 161,
+    "id": "colo-de-deus-eis-me-aqui",
+    "title": "Eis-Me Aqui (Colo de Deus)",
+    "composer": "Comunidade Colo de Deus",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A  Bm  G / [Primeira Parte] /    D                                        A / 1. Ouvi a Tua voz chamando no silêncio: /    Bm                                       G / \"Quem enviarei? Quem irá por nós?\""
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 162,
+    "id": "colo-de-deus-abba-pai",
+    "title": "Abba Pai",
+    "composer": "Comunidade Colo de Deus",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] A  E  F#m  D / [Primeira Parte] /    A                                        E / 1. Não recebi um espírito de escravidão /    F#m                                      D / Para viver outra vez dominado pelo temor;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 163,
+    "id": "colo-de-deus-a-paz-que-o-mundo-nao-me-da",
+    "title": "A Paz Que o Mundo Não Me Dá",
+    "composer": "Comunidade Colo de Deus",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  D  Em  C / [Primeira Parte] /    G                                        D / 1. Procurei em tantos lugares acalmar o meu interior, /    Em                                       C / Mas só encontrei vazio longe de Ti, Senhor;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 183,
+    "id": "adriana-arydes-abraco-de-pai",
+    "title": "Abraço de Pai",
+    "composer": "Adriana Arydes / Walmir Alencar",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  D/F#  Em  C  D / [Primeira Parte] /    G                        D/F#            Em / 1. Quanto eu esperei! Ansioso queria te ver, /    C                        Am              D / E te falar tudo o que há em Mim;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 205,
+    "id": "dunga-consagrado",
+    "title": "Consagrado (Consagrado para Amar)",
+    "composer": "Dunga / Canção Nova",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  D  Em  C / [Primeira Parte] /    G                                        D / 1. Antes mesmo que eu me formasse no ventre de minha mãe, /    Em                                       C / O Senhor já me conhecia e pelo nome me chamou;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 206,
+    "id": "dunga-restauracao",
+    "title": "Restauração (Deus Quer Restaurar)",
+    "composer": "Dunga / Canção Nova",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] D  A  Bm  G / [Primeira Parte] /    D                                        A / 1. Deus vê o coração, sonda a tua dor, /    Bm                                       G / Conhece cada marca que o passado deixou;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 207,
+    "id": "dunga-vida-nova",
+    "title": "Vida Nova (2 Coríntios 5, 17)",
+    "composer": "Dunga / Canção Nova",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] C  G  Am  F / [Primeira Parte] /    C                                        G / 1. Quem está em Cristo nova criatura é, /    Am                                       F / As coisas antigas já ficaram para trás;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 208,
+    "id": "dunga-como-nao-falar-do-seu-amor",
+    "title": "Como Não Falar do Seu Amor",
+    "composer": "Dunga / Canção Nova",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] A  E  F#m  D / [Primeira Parte] /    A                                        E / 1. Não podemos calar o que vimos e ouvimos, /    F#m                                      D / As maravilhas que em nossa própria pele sentimos;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 209,
+    "id": "dunga-quero-e-preciso",
+    "title": "Quero e Preciso",
+    "composer": "Dunga / Canção Nova",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] E  B  C#m  A / [Primeira Parte] /    E                                        B / 1. Mais do que palavras bonitas diante do altar, /    C#m                                      A / É a minha própria vida que eu venho Te entregar;"
+  },
+  {
+    "file": "Adoracao/Comunidades",
+    "varName": "SongsCatalogAdoracaoComunidades",
+    "idx": 210,
+    "id": "dunga-phn-por-hoje-nao",
+    "title": "PHN (Por Hoje Não Vou Mais Pecar)",
+    "composer": "Dunga / Canção Nova",
+    "linesCount": 24,
+    "numberedVerses": [
+      "1.",
+      "2."
+    ],
+    "cifraPreview": "[Intro] G  D  Em  C / [Primeira Parte] /    G                                        D / 1. Um dia de cada vez eu decido caminhar na luz, /    Em                                       C / Dizendo não ao pecado e dizendo sim a Jesus!"
+  }
+]

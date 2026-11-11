@@ -20,6 +20,31 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.classList.add('is-ios');
   }
 
+  // Suporte global a teclado virtual móvel (iOS / Android) para todos os diálogos
+  function setupVisualViewport() {
+    if (!window.visualViewport) return;
+    const sync = () => {
+      const vv = window.visualViewport;
+      const keyboardHeight = Math.max(0, window.innerHeight - vv.height);
+      document.documentElement.style.setProperty('--keyboard-inset', `${keyboardHeight}px`);
+      document.documentElement.style.setProperty('--visual-viewport-h', `${vv.height}px`);
+
+      const active = document.activeElement;
+      if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.tagName === 'SELECT')) {
+        const dialog = active.closest('dialog[open]');
+        if (dialog) {
+          setTimeout(() => {
+            active.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 60);
+        }
+      }
+    };
+    window.visualViewport.addEventListener('resize', sync);
+    window.visualViewport.addEventListener('scroll', sync);
+    sync();
+  }
+  setupVisualViewport();
+
   // Fallback para light-dismiss em <dialog closedby="any">
   if (!('closedBy' in HTMLDialogElement.prototype)) {
     const outside = (e, dialog) => {

@@ -1,4 +1,11 @@
-// Santa Cifra — Módulo de Catálogo: Litúrgicas: Ordinário da Missa e Salmos (90 músicas)
+/**
+ * Catálogo de Cifras - Ordinário da Missa e Salmos Responsoriais
+ * Santa Cifra - Plataforma de Cifras Litúrgicas Católicas
+ * 
+ * Contém cantos rituais do Ordinário: Entrada, Ato Penitencial, Glória,
+ * Salmos Responsoriais, Aclamação ao Evangelho, Santo, Cordeiro de Deus.
+ */
+
 window.SongsCatalogOrdinario = [
   {
     "id": "senhor-que-viestes-salvar",
@@ -253,7 +260,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓   ↓ ↑   ↑ ↓",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Enviai+o+vosso+Espirito+Senhor+Salmo+103",
     "liturgicalAnalysis": {
       "status": "Salmo Oficial do Lecionário (Vigília Pascal e Pentecostes)",
@@ -265,7 +272,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Pentecostes",
       "normExplanation": "Aprovada para a Santa Missa (Salmo • Pentecostes): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] C  Am  F  G  C\n\n[Refrão]\nC                      Am\nEnviai o vosso Espírito, Senhor,\nF              G               C\nE da terra toda a face renovai!\n\n[Estrofe 1]\nAm                     Em\n1. Bendize, ó minha alma, ao Senhor!\nF                      G\nÓ meu Deus e meu Senhor, como sois grande!\nAm                     Em\nQuão numerosas, ó Senhor, são vossas obras,\nF                      G\nE que sabedoria em todas elas!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] C  Am  F  G  C\n\n[Refrão]\nC                      Am\nEnviai o vosso Espírito, Senhor,\nF              G               C\nE da terra toda a face renovai!\nC                      Am\nEnviai o vosso Espírito, Senhor,\nF              G               C\nE da terra toda a face renovai!\n\n[Estrofe 1]\nAm                     Em\n1. Bendize, ó minha alma, ao Senhor!\nF                      G\nÓ meu Deus e meu Senhor, como sois grande!\nAm                     Em\nQuão numerosas, ó Senhor, são vossas obras,\nF                      G               C\nE que sabedoria em todas elas transborda!\n\n[Refrão]\nC                      Am\nEnviai o vosso Espírito, Senhor,\nF              G               C\nE da terra toda a face renovai!\n\n[Estrofe 2]\nAm                     Em\n2. Todos eles, ó Senhor, de vós esperam\nF                      G\nQue a seu tempo vós lhes deis o alimento;\nAm                     Em\nVós lhes dais o que comer e eles recolhem,\nF                      G               C\nVós abris a vossa mão e todos se fartam!\n\n[Refrão]\nC                      Am\nEnviai o vosso Espírito, Senhor,\nF              G               C\nE da terra toda a face renovai!\n\n[Estrofe 3]\nAm                     Em\n3. Se tirais o seu respiro, eles perecem\nF                      G\nE voltam para o pó de onde vieram;\nAm                     Em\nEnviais o vosso Espírito e renascem,\nF                      G               C\nE da terra toda a face vós renovais!\n\n[Refrão]\nC                      Am\nEnviai o vosso Espírito, Senhor,\nF              G               C\nE da terra toda a face renovai!\n\n[Estrofe 4]\nAm                     Em\n4. Glória ao Senhor pelos seus feitos eternos,\nF                      G\nAlegre-se o Senhor em suas criaturas!\nAm                     Em\nQue o meu canto seja a Ele agradável,\nF                      G               C\nNo Senhor eu ponho toda a minha alegria!\n\n[Refrão Final]\nC                      Am\nEnviai o vosso Espírito, Senhor,\nF              G               C\nE da terra toda a face renovai!",
     "repertoireType": "liturgica",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Salmo • Pentecostes): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -283,7 +290,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "P  i  m  a",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 3,
+    "chordCount": 4,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Misericordia+o+Senhor+pois+pecamos+Salmo+50",
     "liturgicalAnalysis": {
       "status": "Salmo Oficial da Quarta-Feira de Cinzas e Quaresma",
@@ -295,7 +302,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Quaresma e CF",
       "normExplanation": "Aprovada para a Santa Missa (Salmo • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] Em  Am  B7  Em\n\n[Refrão]\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!\n\n[Estrofe 1]\nEm                               Am\n1. Tende piedade, ó meu Deus, misericórdia!\nB7                               Em\nNa imensidão de vosso amor, purificai-me!\nEm                               Am\nLavai-me todo inteiro do pecado,\nB7                               Em\nE apagai completamente a minha culpa!\n\n[Final] Em  G  B7  Em",
+    "cifra": "[Intro] Em  Am  B7  Em\n\n[Refrão]\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!\n\n[Estrofe 1]\nEm                               Am\n1. Tende piedade, ó meu Deus, misericórdia!\nB7                               Em\nNa imensidão de vosso amor, purificai-me!\nEm                               Am\nLavai-me todo inteiro do pecado,\nB7                               Em\nE apagai completamente a minha culpa!\n\n[Refrão]\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!\n\n[Estrofe 2]\nEm                               Am\n2. Eu reconheço toda a minha iniquidade,\nB7                               Em\nO meu pecado está sempre à minha frente;\nEm                               Am\nFoi contra vós, só contra vós que eu pequei,\nB7                               Em\nE pratiquei o que é mau aos vossos olhos!\n\n[Refrão]\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!\n\n[Estrofe 3]\nEm                               Am\n3. Criai em mim um coração que seja puro,\nB7                               Em\nDai-me de novo um espírito decidido;\nEm                               Am\nÓ Senhor, não me afasteis de vossa face,\nB7                               Em\nNem retireis de mim vosso Santo Espírito!\n\n[Refrão]\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!\n\n[Estrofe 4]\nEm                               Am\n4. Dai-me de novo a alegria de ser salvo,\nB7                               Em\nE confirmai-me com espírito generoso;\nEm                               Am\nAbri meus lábios, ó Senhor, para cantar,\nB7                               Em\nE minha boca anunciará vosso louvor!\n\n[Refrão Final]\nEm             Am          B7         Em\nMisericórdia, ó Senhor, pois pecamos!",
     "repertoireType": "liturgica",
     "specialDay": "Quaresma e CF",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Salmo • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -673,7 +680,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓   ↓ ↑   ↑ ↓",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=A+vos+o+meu+Senhor+elevo+a+minha+alma+Salmo+24",
     "liturgicalAnalysis": {
       "status": "Salmo Oficial do 1º Domingo do Advento",
@@ -685,7 +692,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Advento",
       "normExplanation": "Aprovada para a Santa Missa (Salmo • Advento): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] Em  Am  B7  Em\n\n[Refrão]\nEm             Am          B7             Em\nA vós, ó meu Senhor, elevo a minha alma!\nEm             Am          B7             Em\nA vós, ó meu Senhor, elevo a minha alma!\n\n[Estrofe 1]\nAm                         Em\n1. Mostrai-me, ó Senhor, vossos caminhos,\nB7                         Em\nE fazei-me conhecer a vossa estrada!\nAm                         Em\nVossa verdade me oriente e me conduza,\nB7                         Em\nPorque sois o Deus da minha salvação!\n\n[Final] Em  G  B7  Em",
+    "cifra": "[Intro] Em  Am  B7  Em\n\n[Refrão]\nEm             Am          B7             Em\nA vós, ó meu Senhor, elevo a minha alma!\nEm             Am          B7             Em\nA vós, ó meu Senhor, elevo a minha alma!\n\n[Estrofe 1]\nAm                         Em\n1. Mostrai-me, ó Senhor, vossos caminhos,\nB7                         Em\nE fazei-me conhecer a vossa estrada!\nAm                         Em\nVossa verdade me oriente e me conduza,\nB7                         Em\nPorque sois o Deus da minha salvação!\n\n[Refrão]\nEm             Am          B7             Em\nA vós, ó meu Senhor, elevo a minha alma!\n\n[Estrofe 2]\nAm                         Em\n2. Recordai, Senhor meu Deus, vossa ternura\nB7                         Em\nE a vossa compaixão que são eternas!\nAm                         Em\nDe mim lembrai-vos, porque sois misericórdia\nB7                         Em\nE sois bondade sem limites, ó Senhor!\n\n[Refrão]\nEm             Am          B7             Em\nA vós, ó meu Senhor, elevo a minha alma!\n\n[Estrofe 3]\nAm                         Em\n3. O Senhor é piedade e retidão,\nB7                         Em\nE reconduz ao bom caminho os pecadores;\nAm                         Em\nEle dirige os humildes na justiça\nB7                         Em\nE aos pobres ensina o seu caminho!\n\n[Refrão Final]\nEm             Am          B7             Em\nA vós, ó meu Senhor, elevo a minha alma!",
     "repertoireType": "liturgica",
     "specialDay": "Advento",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Salmo • Advento): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -703,7 +710,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓   ↓ ↑   ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Hoje+nasceu+para+nos+o+Salvador+Salmo+95",
     "liturgicalAnalysis": {
       "status": "Salmo Oficial da Missa da Noite de Natal",
@@ -715,7 +722,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Natal do Senhor",
       "normExplanation": "Aprovada para a Santa Missa (Salmo • Natal do Senhor): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] D  G  A  D\n\n[Refrão]\nD              G          A              D\nHoje nasceu para nós o Salvador,\nBm             G          A              D\nQue é Cristo, o Senhor!\n\n[Estrofe 1]\nD                         G\n1. Cantai ao Senhor Deus um canto novo,\nA                         D\nCantai ao Senhor Deus, ó terra inteira!\nBm                        G\nCantai e bendizei seu santo Nome,\nA                         D\nDia após dia anunciai sua salvação!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] F  C  G7  C\n\n[Refrão]\nC              F           G7            C\nHoje nasceu para nós o Salvador, que é Cristo, o Senhor!\nC              F           G7            C\nHoje nasceu para nós o Salvador, que é Cristo, o Senhor!\n\n[Estrofe 1]\nC                      F\n1. Cantai ao Senhor Deus um canto novo,\nDm                     G7\nCantai ao Senhor Deus, ó terra inteira!\nC                      F\nCantai e bendizei seu santo nome,\nDm                     G7                C\nDia após dia anunciai sua salvação!\n\n[Refrão]\nC              F           G7            C\nHoje nasceu para nós o Salvador, que é Cristo, o Senhor!\n\n[Estrofe 2]\nC                      F\n2. Manifestai a sua glória entre as nações,\nDm                     G7\nE entre os povos do universo as suas maravilhas!\nC                      F\nPorque grande é o Senhor e mui digno de louvor,\nDm                     G7                C\nMais terrível e soberano que os falsos deuses!\n\n[Refrão]\nC              F           G7            C\nHoje nasceu para nós o Salvador, que é Cristo, o Senhor!\n\n[Estrofe 3]\nC                      F\n3. O céu se rejubile e exulte a terra,\nDm                     G7\nAplauda o mar com tudo o que ele encerra!\nC                      F\nOs campos com seus frutos rejubilem,\nDm                     G7                C\nE exultem as florestas na presença do Senhor!\n\n[Refrão]\nC              F           G7            C\nHoje nasceu para nós o Salvador, que é Cristo, o Senhor!\n\n[Estrofe 4]\nC                      F\n4. Pois Ele vem, Ele vem para julgar a terra,\nDm                     G7\nGovernar o mundo inteiro com justiça!\nC                      F\nE os povos julgará com lealdade,\nDm                     G7                C\nCom sua verdade e eterna fidelidade!\n\n[Refrão Final]\nC              F           G7            C\nHoje nasceu para nós o Salvador, que é Cristo, o Senhor!",
     "repertoireType": "liturgica",
     "specialDay": "Natal do Senhor",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Salmo • Natal do Senhor): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -733,7 +740,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Este+e+o+dia+que+o+Senhor+fez+para+nos+Salmo+117",
     "liturgicalAnalysis": {
       "status": "Salmo Oficial do Domingo da Ressurreição",
@@ -745,7 +752,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Páscoa e Vigília Pascal",
       "normExplanation": "Aprovada para a Santa Missa (Salmo • Páscoa e Vigília Pascal): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] G  C  D  G\n\n[Refrão]\nG              C             D              G\nEste é o dia que o Senhor fez para nós:\nEm             C             D              G\nAlegremo-nos e nele exultemos!\n\n[Estrofe 1]\nG                            C\n1. Dai graças ao Senhor, porque Ele é bom!\nD                            G\n\"Eterna é a sua misericórdia!\"\nEm                           C\nA casa de Israel agora o diga:\nD                            G\n\"Eterna é a sua misericórdia!\"\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  G  A7  D\n\n[Refrão]\nD              G           A7             D\nEste é o dia que o Senhor fez para nós:\nBm             Em          A7             D\nAlegremo-nos e nele exultemos!\nD              G           A7             D\nEste é o dia que o Senhor fez para nós:\nBm             Em          A7             D\nAlegremo-nos e nele exultemos!\n\n[Estrofe 1]\nD                          G\n1. Dai graças ao Senhor, porque Ele é bom,\nA7                         D\nPorque eterna é a sua misericórdia!\nBm                         Em\nA casa de Israel agora o diga:\nA7                         D\nEterna é a sua misericórdia!\n\n[Refrão]\nD              G           A7             D\nEste é o dia que o Senhor fez para nós:\nBm             Em          A7             D\nAlegremo-nos e nele exultemos!\n\n[Estrofe 2]\nD                          G\n2. A mão direita do Senhor fez maravilhas,\nA7                         D\nA mão direita do Senhor me levantou!\nBm                         Em\nNão hei de morrer, mas viverei,\nA7                         D\nPara cantar as santas obras do Senhor!\n\n[Refrão]\nD              G           A7             D\nEste é o dia que o Senhor fez para nós:\nBm             Em          A7             D\nAlegremo-nos e nele exultemos!\n\n[Estrofe 3]\nD                          G\n3. A pedra que os pedreiros rejeitaram\nA7                         D\nTornou-se agora a pedra angular!\nBm                         Em\nPelo Senhor é que foi feito tudo isso:\nA7                         D\nQue maravilha Ele fez a nossos olhos!\n\n[Refrão Final]\nD              G           A7             D\nEste é o dia que o Senhor fez para nós:\nBm             Em          A7             D\nAlegremo-nos e nele exultemos!",
     "repertoireType": "liturgica",
     "specialDay": "Páscoa e Vigília Pascal",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Salmo • Páscoa e Vigília Pascal): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1033,7 +1040,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 9,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Alô,+Meu+Deus+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Reconciliação e Retorno ao Pai",
@@ -1045,7 +1052,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Quaresma e CF",
       "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] C  Dm  G7  C\n\n[Primeira Parte]\n   C                                       Dm\n1. Alô, meu Deus, fazia tanto tempo que eu não mais Te procurava,\n   G7                                      C\nAlô, meu Deus, senti saudades Tuas e acabei voltando aqui!\n   C7                                      F\nAndei por mil caminhos e, como as andorinhas,\n   C                       G7              C\nEu vim fazer meu ninho em Tua casa e repousar!\n\n[Refrão]\n   F                                       C\nEmbora eu me afastasse e andasse desligado,\n   Dm                      G7              C      C7\nMeu coração cansado resolveu voltar!\n   F                                       C      Am\nEu não me acostumei nas terras onde andei,\n   Dm                      G7              C\nEu vim fazer meu ninho em Tua casa e repousar!",
+    "cifra": "[Intro] D  A  D  A  Dm  D\n\n[Primeira Parte]\n\n         D                 Em\nAlô meu Deus, fazia tanto tempo\n\n            A            D   A\nQue eu não mais te procurava\n\n         D                    Em\nAlô meu Deus, senti saudades tuas\n\n      A              D\nE acabei voltando aqui\n\n[Pré-Refrão]\n\n   D7            G\nAndei por mil caminhos\n\n   Gm          D\nE como as andorinhas\n\n    Bm            Em\nEu vim fazer meu ninho\n\n        A           D\nEm tua casa e repousar\n\n   D7             G\nEmbora eu me afastasse\n\n     Gm         D\nE andasse desligado\n\n     Bm         Em\nMeu coração cansado\n\n      A      D\nResolveu voltar\n\n[Refrão]\n\n                 Em\nEu não me acostumei\n\n     A             D\nNas terras onde andei\n\n                 Em\nEu não me acostumei\n\n     A             D\nNas terras onde andei\n\n( A  Dm  D )\n\n[Primeira Parte]\n\n         D                 Em\nAlô meu Deus, fazia tanto tempo\n\n            A            D   A\nQue eu não mais te procurava\n\n         D                    Em\nAlô meu Deus, senti saudades tuas\n\n      A              D\nE acabei voltando aqui\n\n[Pré-Refrão]\n\n    D7            G\nGastei a minha herança\n\n     Gm         D\nComprando só matéria\n\n    Bm           Em\nRestou-me a esperança\n\n          A            D\nDe outra vez te encontrar\n\n    D7         G\nVoltei arrependido\n\n    Gm        D\nMeu coração ferido\n\n   Bm          Em\nE volto convencido\n\n              A     D\nQue este é o meu lugar\n\n[Refrão]\n\n                 Em\nEu não me acostumei\n\n     A             D\nNas terras onde andei\n\n                 Em\nEu não me acostumei\n\n     A             D\nNas terras onde andei\n\n                 Em\nEu não me acostumei\n\n     A             D\nNas terras onde andei",
     "repertoireType": "liturgica",
     "specialDay": "Quaresma e CF",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1063,7 +1070,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 3,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Palavra+de+Salvação+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Aclamação à Palavra de Deus",
@@ -1075,7 +1082,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Missa Dominical (Tempo Comum)",
       "normExplanation": "Aprovada para a Santa Missa (Aclamação ao Evangelho • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] C  F  G7  C\n\n[Primeira Parte]\n   C                                       G7\n1. Palavra de salvação somente o Céu tem pra dar,\n   F                       G7              C\nPor isso meu coração se abre para escutar!\n\n[Refrão]\n   F                       C\nPor mais difícil que seja seguir,\n   G7                      C       C7\nTua Palavra queremos ouvir!\n   F                       C       Am\nPor mais difícil de se praticar,\n   Dm         G7           C\nTua Palavra queremos guardar!\n\n[Segunda Parte]\n   C                        F               G          C\n2. Abri o nosso coração ao Santo Evangelho da paz,\n   Am                       Dm              G7          C\nSemente do Reino de Deus que fruto abundante nos traz;\n   F                        G               Am\nFala, Senhor, que a Tua Igreja com amor quer Te escutar,\n   Dm                       G7              C\nE viver o Teu anúncio em cada canto e lugar!\n\n[Final] C  F  G7  C",
+    "cifra": "E          B7\nPalavra de Salvação\n\n F#m   B7        E\nSomente o céu tem pra dar\n\n            B7\nPor isso o meu coração\n\n A    B7     E  E7\nSe abre para escutar\n\nA      E        B7    E   E7\nPor mais difícil que seja seguir\n\nA   E      B7    E E7\nTua palavra queremos ouvir\n\nA      E       B7      E E7\nPor mais difícil de se praticar\n\nA   E     B7      E  A B7\nTua Palavra queremos guardar\n\nE          B7\nPalavra de Salvação\n\n F#m   B7        E\nSomente o céu tem pra dar\n\n            B7\nPor isso o meu coração\n\n A    B7     E  E7\nSe abre para escutar\n\nA     E   B7      E E7\nCom Simão Pedro diremos também\n\nA     E     B7          E E7\nQue não é fácil dizer sempre amém\n\nA      E     B7        E E7\nMas não há outro na terra e no céu\n\nA      E      B7      E  A B7\nMais companheiro, mais santo e fiel\n\nE          B7\nPalavra de Salvação\n\n F#m   B7        E\nSomente o céu tem pra dar\n\n            B7\nPor isso o meu coração\n\n A    B7     E  C#m\nSe abre para escutar\n\n F#m   B7      E  C#m\nSe abre para escutar\n\n F#m   B7      E  A B7 E\nSe abre para escutar",
     "repertoireType": "liturgica",
     "specialDay": "Missa Dominical (Tempo Comum)",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Aclamação ao Evangelho • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1093,7 +1100,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Fala,+Senhor,+Palavra+de+Fraternidade+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Escuta da Palavra",
@@ -1105,7 +1112,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Missa Dominical (Tempo Comum)",
       "normExplanation": "Aprovada para a Santa Missa (Aclamação ao Evangelho • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] D  G  A7  D\n\n[Refrão]\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nPalavra de fraternidade!\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nÉs luz da humanidade!\n\n[Estrofe]\n   G                    D\n1. A Tua Palavra é fonte que corre,\n   Em         A7        D\nPenetra a nossa vida e não morre!\n\n[Segunda Parte]\n   D                        G               A7          D\n2. Abri o nosso coração ao Santo Evangelho da paz,\n   Bm                       Em              A7          D\nSemente do Reino de Deus que fruto abundante nos traz;\n   G                        A7              Bm\nFala, Senhor, que a Tua Igreja com amor quer Te escutar,\n   Em                       A7              D\nE viver o Teu anúncio em cada canto e lugar!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] D  G  A7  D\n\n[Refrão]\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nPalavra de fraternidade!\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nÉs Luz da nossa verdade!\n\n[Primeira Parte]\n   D                                  G\n1. Tua Palavra é lâmpada para os meus pés,\n   A7                                 D\nÉ farol luminoso na noite escura da vida!\n   Bm                                 Em\nSe escuto a Tua voz, não vacilo em meu rumo,\n   A7                                 D\nTua Palavra me guia e cura minha ferida!\n\n[Refrão]\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nPalavra de fraternidade!\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nÉs Luz da nossa verdade!\n\n[Segunda Parte]\n   D                                  G\n2. Fala, Senhor, ao coração dos aflitos,\n   A7                                 D\nDá fortaleza ao que luta na dor e na prova!\n   Bm                                 Em\nQue a Tua Palavra transforme o nosso viver,\n   A7                                 D\nE faça no mundo nascer uma terra tão nova!\n\n[Refrão]\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nPalavra de fraternidade!\nD             G         A7            D\nFala, Senhor! Fala, Senhor!\nBm            Em        A7            D\nÉs Luz da nossa verdade!",
     "repertoireType": "liturgica",
     "specialDay": "Missa Dominical (Tempo Comum)",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Aclamação ao Evangelho • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1123,7 +1130,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Glória+a+Deus+na+Imensidão+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Hino de Louvor Trinitário",
@@ -1135,7 +1142,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Missa Dominical (Tempo Comum)",
       "normExplanation": "Aprovada para a Santa Missa (Glória • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] G  C  D7  G\n\n[Refrão]\nG                       C\nGlória a Deus na imensidão,\nD7                      G\nE paz na terra ao homem nosso irmão! (2x)\n\n[Estrofes]\n   G                    C\n1. Senhor Deus Pai Criador, onipotente Senhor,\n   D7                   G\nNós Vos louvamos e bendizemos por Vosso imenso amor!\n\n   G                    C\n2. Senhor Jesus Unigênito, Cordeiro de Deus Salvador,\n   D7                   G\nVós que tirais o pecado do mundo, acolhei nosso clamor!\n\n   G                    C\n3. Só Vós sois o Santo e Altíssimo, com o Espírito Consolador,\n   D7                   G\nNa glória de Deus Pai para sempre, amém, nosso louvor!",
+    "cifra": "G       C        D7    G\nGlória a Deus na imensidão\n\n  C       G       A7            D\ne paz na terra ao homem nosso irmão\n\n G         C            D7\nGlória a Deus na imensidão\n\n  G      C        G    D7        G\ne paz na terra ao homem nosso irmão\n\n                Am      D7               G         Am\n1. Senhor, Deus Pai Criador onipotente, nós vos louvamos\n\n    D7       G                    Am    D7          G\ne vos bendizemos por nos terdes dado o Cristo Salvador.\n\n              Am   D7               G               Am\n2. Senhor, Jesus unigênito do Pai, nós vos damos graças\n\n    D7            G                      Am         D7         G\npor terdes vindo ao mundo, feito nosso irmão, sois nosso redentor.\n\n             Am     D7               G        Am       D7\n3.Senhor, Espírito Santo, Deus Amor, nós vos adoramos\n\n                G               Am        D7                G\ne vos glorificamos por nos conduzirdes por Cristo, a nosso Pai.\n\n            Am           D7               G          Am     D7\n4.Glória ao Pai e a Cristo sejam dadas, glória ao Espírito Santo\n\n       G                  Am    D7                G\nsem cessar, agora e para sempre, por toda eternidade.",
     "repertoireType": "liturgica",
     "specialDay": "Missa Dominical (Tempo Comum)",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Glória • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1153,7 +1160,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Cântico+de+Maria+(Meu+Espírito+Exulta+de+Alegria)+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Cântico Evangélico de Nossa Senhora (Magnificat)",
@@ -1165,7 +1172,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Advento",
       "normExplanation": "Aprovada para a Santa Missa (Salmo • Advento): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] C  Am  Dm  G7  C\n\n[Refrão]\nC             Am         Dm          G7\nA minh'alma engrandece o Senhor,\nDm            G7         C\nE meu espírito exulta em Deus, meu Salvador!\n\n[Estrofes]\n   C                     Am          Dm\n1. Olhou a humildade de sua serva fiel,\n   G7                                C\nDoravante as gerações me chamarão bem-aventurada!\n\n   C                     Am          Dm\n2. O Poderoso fez em mim maravilhas,\n   G7                                C\nE Santo, eternamente Santo é o Seu Nome!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] C  Am  Dm  G7  C\n\n[Refrão]\nC             Am         Dm          G7\nA minh'alma engrandece o Senhor,\nDm            G7         C\nE meu espírito exulta em Deus, meu Salvador!\nC             Am         Dm          G7\nA minh'alma engrandece o Senhor,\nDm            G7         C\nE meu espírito exulta em Deus, meu Salvador!\n\n[Primeira Parte]\n   C                      Am\n1. Porque olhou para a humildade de sua serva,\n   Dm                         G7\nDoravante as gerações me proclamarão feliz!\n   C                          Am\nO Todo-Poderoso fez em mim grandes maravilhas,\n   Dm                 G7             C\nSanto é o Seu nome de ternura e de raiz!\n\n[Refrão]\nC             Am         Dm          G7\nA minh'alma engrandece o Senhor,\nDm            G7         C\nE meu espírito exulta em Deus, meu Salvador!\n\n[Segunda Parte]\n   C                      Am\n2. Seu amor para sempre se estende,\n   Dm                         G7\nDe geração em geração sobre os que O temem!\n   C                          Am\nCom o poder do Seu braço dispersou os soberbos,\n   Dm                 G7             C\nDerrubou os poderosos de seus tronos altaneiros!\n\n[Refrão]\nC             Am         Dm          G7\nA minh'alma engrandece o Senhor,\nDm            G7         C\nE meu espírito exulta em Deus, meu Salvador!\n\n[Terceira Parte]\n   C                      Am\n3. Elevou os mais humildes e encheu de bens os famintos,\n   Dm                         G7\nE despediu os ricos de mãos vazias!\n   C                          Am\nSocorreu a Israel, Seu servo fiel,\n   Dm                 G7             C\nLembrado de sua misericórdia e aliança bravia!\n\n[Refrão Final]\nC             Am         Dm          G7\nA minh'alma engrandece o Senhor,\nDm            G7         C\nE meu espírito exulta em Deus, meu Salvador!",
     "repertoireType": "liturgica",
     "specialDay": "Advento",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Salmo • Advento): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1183,7 +1190,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 12,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Sonda-me,+Senhor,+e+Me+Conhece+(Salmo+138)+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Oração Salmódica de Exame de Consciência (Salmo 138)",
@@ -1195,7 +1202,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Quaresma e CF",
       "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] Em  Am  D7  G  B7\n\n[Primeira Parte]\n   Em                                      Am\n1. Senhor, eu sei que Tu me sondas,\n   D7                                      G       B7\nSei também que me conheces;\n   Em                                      Am\nSe me assento ou me levanto,\n   B7                                      Em\nConheces meus pensamentos!\n\n   Em                                      Am\n2. Quer deitado ou quer andando,\n   D7                                      G       B7\nSabes todos os meus passos;\n   Em                                      Am\nE antes que haja em mim palavras,\n   B7                                      Em      E7\nSei que em tudo me conheces!\n\n[Refrão]\n   Am                       D7\nSenhor, eu sei que Tu me sondas!\n   G                        Em\nSenhor, eu sei que Tu me sondas!\n   Am                       B7\nSenhor, eu sei que Tu me sondas,\n   Em\nDeus de amor!",
+    "cifra": "[Intro] Am  Dm7  G  C7M\n\n        F  Bb  E7(4)  E7\n\n[Primeira Parte]\n\n Am                       Dm7\nSenhor, eu sei que Tu me sondas\n\n G                    C7M  G/B\nSei também que me conheces\n\n Am                  Dm7\nSe me assento ou me levanto\n\n     E              Am\nConheces meus pensamentos\n\n                        Dm7\nQuer deitado ou quer andando\n\n G                   C7M   G/B\nSabes todos os meus passos\n\n   Am                      Dm7\nE antes que haja em mim palavras\n\n G                     C    E7\nSei que em tudo me conheces\n\n[Refrão]\n\n Am                       Dm7\nSenhor, eu sei que Tu me sondas\n\n  G                        C7M\nSenhor, eu sei que Tu me sondas\n\n F                       Bm7(5-)\nSenhor, eu sei que Tu me sondas\n\n E7                       Am\nSenhor, eu sei que Tu me sondas\n\n   A                      Dm7\nSenhor, eu sei que Tu me sondas\n\n  G                        C7M\nSenhor, eu sei que Tu me sondas\n\n F                       Bm7(5-)\nSenhor, eu sei que Tu me sondas\n\n E7                       Am\nSenhor, eu sei que Tu me sondas\n\n( Dm7  G  C7M )\n\n( F  Bb  E7(4)  E7 )\n\n[Segunda Parte]\n\n Am                      Dm7\nDeus, Tu me cercaste em volta\n\n  G                  C7M\nTuas mãos em mim repousam\n\n Am                 Dm7\nTal ciência é grandiosa\n\n G                 C\nNão alcanço de tão alta\n\nAm                   Dm7\n   Se eu subo até o céu\n\n G                       C7M\nSei que ali também Te encontro\n\n Am                Dm7\nSe no abismo está minh&#x27;alma\n\n G                   C    E7\nSei que aí também me amas\n\n[Refrão]\n\n Am                       Dm7\nSenhor, eu sei que Tu me sondas\n\n  G                        C7M\nSenhor, eu sei que Tu me sondas\n\n F                       Bm7(5-)\nSenhor, eu sei que Tu me sondas\n\n E7                       Am\nSenhor, eu sei que Tu me sondas\n\n   A                      Dm7\nSenhor, eu sei que Tu me sondas\n\n  G                        C7M\nSenhor, eu sei que Tu me sondas\n\n F                       Bm7(5-)\nSenhor, eu sei que Tu me sondas\n\n E7                       Am\nSenhor, eu sei que Tu me sondas",
     "repertoireType": "liturgica",
     "specialDay": "Quaresma e CF",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1213,7 +1220,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Seja+Engrandecido+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Louvor e Exaltação a Deus",
@@ -1225,7 +1232,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Missa Dominical (Tempo Comum)",
       "normExplanation": "Aprovada para a Santa Missa (Glória • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] G  Em  C  D7  G\n\n[Primeira Parte]\n   G                                        Em\n1. Seja engrandecido, ó Deus da minha vida,\n   C                        Am              D7\nTu és o meu Rochedo e a minha salvação!\n   G                                        Em\nÉs a minha rocha, a minha segurança,\n   C                        D7              G     G7\nÉs a minha paz, és o meu Senhor!\n\n[Refrão]\n   C                        D7              G     Em\nAleluia, aleluia, aleluia,\n   Am                       D7              G     G7\nLouvemos ao Senhor!\n   C                        D7              G     Em\nAleluia, aleluia, aleluia,\n   Am                       D7              G\nPara sempre, amém!",
+    "cifra": "E                     G#m\nSeja engrandecido, oh Deus da minha vida\n\n   A            F#m         B   A\nTú És o Deus da minha salvação\n\nE                   G#m\nÉs a minha rocha, a minha segurança\n\n      A            F#m       B   A\nMeus lábios sempre te exaltarão\n\nE                      D/E\nAleluia (aleluia), te louvo (te louvo)\n\n     A        F#m         B     E   A\nPois sei que sobre todos És Senhor\n\nE                      D/E\nAleluia (aleluia), te louvo (te louvo)\n\n     A        F#m           B    A\nPois sei que sobre todos És Senhor\n\n E                  D/E\nAleluia (aleluia), aleluia, (aleluia)\n\n    A        F#m       B4   B\nAleluia,  louvemos ao Senhor\n\n E                  D/E\nAleluia (aleluia), aleluia, (aleluia)\n\n    A        F#m      B   A   D E\nAleluia,  louvemos ao senhor",
     "repertoireType": "liturgica",
     "specialDay": "Missa Dominical (Tempo Comum)",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Glória • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1273,7 +1280,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 25,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Abraço+de+Pai+(Quanto+Eu+Esperei)+Walmir+Alencar+cifra",
     "liturgicalAnalysis": {
       "status": "Canto do Pai Misericordioso (Lucas 15)",
@@ -1285,7 +1292,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Quaresma e CF",
       "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] D  A  Bm  G  A7  D\n\n[Primeira Parte]\n   D                        A               Bm\n1. Quanto Eu esperei! Ansioso queria te ver,\n   G                        Em              A7\nE te falar do que há em Mim, já não podia me conter!\n   D                        A               Bm\nMe decidiste voltar, de braços abertos vou te acolher,\n   G                        A7              D\nPois te amo desde a eternidade, meu filho!\n\n[Refrão]\n   G                        A7              F#m     Bm\nDá-me teu coração, recebe o Meu abraço de Pai,\n   Em                       A7              D\nNão importa onde andaste: voltaste para Mim!\n\n[Segunda Parte]\n   D                        G               A7          D\n2. Vós que viestes chamar os pecadores à conversão,\n   Bm                       Em              A7          D\nCurai as nossas feridas e dai-nos Vosso perdão;\n   G                        A7              Bm\nPurificai nossas vidas para a Santa Comunhão,\n   Em                       A7              D\nConduzi os nossos passos no caminho da salvação!\n\n[Final] D  G  A7  D",
+    "cifra": "Intro: F#m  C#m  D  A/C#  F#m  C#m  G9  D/F#  E4  E\n\nE|---4h5-4----------4h5-4----------------------------| \nB|---------5-5/7----------5-5/7--5-5-5h7-5-3h5-2-0h2-| \nG|-6---------------6---------------------------------| \nD|---------------------------------------------------| \n\nE|---4h5-4-------4h5-4-----------------------------0-| \nB|---------5-5/7-------5-----5--3-2---3-2---3-2----0-| \nG|-6---------------------4h6--------2-----2-----2--2-| \nD|-------------------------------------------------2-| \n\nA9          A7+/9\nQuanto eu esperei!\n\nF#m9            C#m7\nAnsioso queria te ver\n\n   Bm7           C#m7   D7+\nE te falar o que há em mim\n\nBm7     Bm7/A  (E/G#  E  D/F#  E/G#  D/F#  E/G#)\nJá não podia        me conter\n\n      A9       A7+/9\nMe decidi, Senhor\n\nF#m9             C#m7\nHoje quero rasgar meu viver\n\n   Bm7             C#m7   D7+\nE te mostrar meu cora__ção\n\nBm7     Bm7/A  G    D/F#  (E/G#  E  D/F#  E/G#)\nTudo que tenho e    sou\n\n A9                                F#m\nE por mais que me falem, não vou desistir!\n\n Bm7                             E4       E\nEu sei que nada sou, por isso estou aqui\n\n    A9                                   F#m\nMas eu sei que o amor que o Senhor tem por mim\n\n   Bm7           Bm7/A     E4        E7        A7+  (D/F#  E/G#)\nÉ muito mais que o meu, sou gota derramada no mar\n\n            A9                   F#m\nQuanto tempo também o Senhor me esperou\n\n      Bm7                E4           E\nNas tardes encontrou saudade em meu lugar\n\n  A9                                 F#m\nMas ao me ver na estrada ao longe voltar\n\n Bm7            Bm7/A   E4          E7       A7+   E4  E\nNum salto se alegrou e   foi correndo me encontrar\n\n       A9                       F#m\nE não me perguntou nem por onde eu andei\n\n  Bm7                            E4        E9\nDos bens que eu gastei, mais nada me restou\n\n         A9                          F#m\nMas olhando em meus olhos somente me amou\n\nC#m7       D9 (A/C# Bm7)   Bm7/A  E/G#  E\nE ao me beijar,             me acolheu\n E/F#  F#m  E/F#  F#m  E/D  D9  E/D  D9 (bis) Bm7  Bm7/A (E/G# E D/F# E/G#)\nnum abraço de pai\n\n(A9  A7+/9  G6  D9/F#  A9)",
     "repertoireType": "liturgica",
     "specialDay": "Quaresma e CF",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Ato Penitencial • Quaresma e CF): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
@@ -1513,7 +1520,7 @@ window.SongsCatalogOrdinario = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Oração+da+Noite+(Perdoai-nos,+Senhor)+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Exame de Consciência Comunitário",
@@ -1525,7 +1532,7 @@ window.SongsCatalogOrdinario = [
       "specialDay": "Missa Dominical (Tempo Comum)",
       "normExplanation": "Aprovada para a Santa Missa (Ato Penitencial • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
     },
-    "cifra": "[Intro] Dm  Gm  A7  Dm\n\n[Primeira Parte]\n   Dm                                       Gm\n1. Pelo bem que não fizemos, pelo amor que retivemos:\n   A7                                       Dm\nPerdoai-nos, Senhor! Perdoai-nos, Senhor!\n\n[Segunda Parte]\n   Dm                       F               A7          Dm\n2. Vós que viestes chamar os pecadores à conversão,\n   C7                       Bb              A7          Dm\nCurai as nossas feridas e dai-nos Vosso perdão;\n   F                        Gm              C7\nPurificai nossas vidas para a Santa Comunhão,\n   Bb                       A7              Dm\nConduzi os nossos passos no caminho da salvação!\n\n[Final] Dm  F  A7  Dm",
+    "cifra": "F                          A7      Bb   C          F\nMais outro dia findou, eu venho te ver para conversar\n\n                             A7         Bb  C              F\nMais outra noite chegou, eu venho agradecer antes de repousar\n\n               Gm7          C            F\nAndei o dia inteiro procurando o meu irmão\n\n                   Gm7          C               F\nEu quis ser instrumento do teu amor, do teu perdão\n\n                             A7              Bb\nMuito obrigado, Senhor pelo amor que eu ensinei\n\n       C              F\nPelo amor que eu recebi\n\n                             A7          Bb          C           F\nMuito obrigado, Senhor pela dor que suavizei por sorrisos que sorri\n\n                         A7  Bb  C  F\nSou peregrino do amor e venho agradcer o dia que vivi\n\n                           A7             Bb         C           F\nHouve tristeza, Senhor mas eu não quis sofrer, pois caminhei em ti",
     "repertoireType": "liturgica",
     "specialDay": "Missa Dominical (Tempo Comum)",
     "liturgicalNormNote": "Aprovada para a Santa Missa (Ato Penitencial • Missa Dominical (Tempo Comum)): Segue as normas da IGMR e dos Documentos 43 e 79 da CNBB, com texto fiel ao mistério celebrado."
