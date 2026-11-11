@@ -202,7 +202,15 @@ window.SantaCifra.initCatalog = function initCatalog() {
     try { return JSON.parse(raw); } catch (_) { return null; }
   };
 
-  const otaCached = localStorage.getItem('santa_cifra_ota_catalog_v2');
+  // Expurgar caches legados desatualizados
+  try {
+    localStorage.removeItem('santa_cifra_ota_catalog_v2');
+    localStorage.removeItem('santa_cifra_ota_version_v2');
+    localStorage.removeItem('santa_cifra_ota_catalog');
+    localStorage.removeItem('santa_cifra_ota_version');
+  } catch (_) {}
+
+  const otaCached = localStorage.getItem('santa_cifra_ota_catalog_v3');
   let baseCatalog = window.SongsCatalog || [];
   if (otaCached) {
     const parsedOta = safeParse(otaCached, null);

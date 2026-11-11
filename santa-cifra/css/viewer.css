@@ -680,7 +680,8 @@
   }
 
   .cifra-pre {
-    line-height: 1.6;
+    line-height: 1.55;
+    font-size: clamp(12px, 3.4vw, 14.5px);
   }
 
   .song-bottom-meta {

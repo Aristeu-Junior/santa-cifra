@@ -1,10 +1,10 @@
 {
-  "version": "3.8.4",
-  "apkVersionCode": 17,
-  "buildId": "sc-v3.8.4-mobile-responsive-cifras-kyrie-clean-format",
-  "totalSongs": 541,
-  "liturgicalSongs": 296,
-  "popularSongs": 245,
+  "version": "3.8.5",
+  "apkVersionCode": 18,
+  "buildId": "sc-v3.8.5-ota-v3-mobile-cifraclub-full-audit-clean",
+  "totalSongs": 521,
+  "liturgicalSongs": 283,
+  "popularSongs": 238,
   "apkDownloadUrl": "https://santa-cifra.surge.sh/santa-cifra.apk",
   "liveUrl": "https://santa-cifra.surge.sh"
 }

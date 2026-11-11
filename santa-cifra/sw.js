@@ -1,4 +1,4 @@
-const CACHE_NAME = 'santa-cifra-v22';
+const CACHE_NAME = 'santa-cifra-v23';
 const ASSETS = [
   './',
   './index.html',
