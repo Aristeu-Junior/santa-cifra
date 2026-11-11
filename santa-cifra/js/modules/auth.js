@@ -909,8 +909,8 @@ window.SantaCifra = window.SantaCifra || {};
 
     if (nameEl) nameEl.textContent = user.name;
     if (emailEl) emailEl.textContent = user.email;
-    if (parishEl) parishEl.textContent = user.parish ? `Paróquia: ${user.parish}` : 'Paróquia Santo Antônio de Pádua';
-    if (minDisplayEl) minDisplayEl.textContent = user.ministry ? `Ministério: ${user.ministry}` : 'Ministério Amor e Vida';
+    if (parishEl) parishEl.textContent = user.parish ? `Paróquia: ${user.parish}` : 'Paróquia: Não vinculada';
+    if (minDisplayEl) minDisplayEl.textContent = user.ministry ? `Ministério: ${user.ministry}` : 'Ministério: Não informado';
 
     if (roleBadgeEl) {
       const isPadre = user.role === 'padre';
@@ -936,8 +936,8 @@ window.SantaCifra = window.SantaCifra || {};
     const inpMin = document.getElementById('inputProfileMinistry');
     const inpParish = document.getElementById('inputProfileParish');
     const selRole = document.getElementById('selectProfileRole');
-    if (inpMin) inpMin.value = user.ministry || 'Ministério Amor e Vida';
-    if (inpParish) inpParish.value = user.parish || 'Paróquia Santo Antônio de Pádua';
+    if (inpMin) inpMin.value = user.ministry || '';
+    if (inpParish) inpParish.value = user.parish || '';
     if (selRole) selRole.value = user.role || 'musico';
 
     const state = window.SantaCifra.state;
@@ -1166,7 +1166,8 @@ window.SantaCifra = window.SantaCifra || {};
         hideAlert();
         const name = document.getElementById('regName').value;
         const email = document.getElementById('regEmail').value;
-        const parish = document.getElementById('regParish').value;
+        const parishEl = document.getElementById('regParish');
+        const parish = parishEl ? parishEl.value : '';
         const password = document.getElementById('regPassword').value;
         const confirmPassword = document.getElementById('regConfirmPassword').value;
         const hpEl = document.getElementById('hpAuthRegister');
@@ -1290,7 +1291,7 @@ window.SantaCifra = window.SantaCifra || {};
         const role = document.getElementById('selectProfileRole').value || 'musico';
 
         curUser.ministry = ministry;
-        curUser.parish = parish || 'Paróquia Santo Antônio de Pádua';
+        curUser.parish = parish;
         curUser.role = role;
 
         persistUpdatedUser(curUser);

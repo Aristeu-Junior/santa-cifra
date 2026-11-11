@@ -1,21 +1,14 @@
 /**
- * SANTA CIFRA — Módulo de Paróquias, Ministérios, Escalas & Convite Pastoral (v3.9.0)
+ * SANTA CIFRA — Módulo de Paróquias, Ministérios, Escalas & Gestão Pastoral (v3.9.4)
  *
- * Funcionalidades Principais:
- * 1. Base de dados zerada (Clean Slate / sem dados fictícios pré-populados)
- * 2. Menu de Paróquias (Listagem de todas as paróquias cadastradas e alternância)
- * 3. Convite Exclusivo para o Pároco via Link (?convite_padre=TOKEN)
- *    - O padre preenche: nome, e-mail, senha, nome da paróquia, diocese, cidade e telefone
- *    - Nas próximas vezes, o padre entra normalmente apenas com seu e-mail e senha!
- * 4. Modal de Ministérios de Música da Paróquia (#parishMinistriesDialog)
- *    - Listagem dos ministérios daquela paróquia (vem zerada)
- *    - Registro de novo ministério (nome, responsável, instrumentos, contato)
- *    - Convite de músicos para o ministério via link exclusivo (?convite_ministerio=ID&paroquia=ID)
- * 5. Calendário de Missas & Lançamento de Múltiplos Horários pelo Padre (#launchMassScheduleDialog)
- *    - Seleção do dia da celebração
- *    - Seleção múltipla de horários (chips rápidos: 08:00, 10:00, 19:00, etc.)
- *    - Candidatura de ministérios para vagas abertas (#claimScheduleDialog)
- *    - Sugestão litúrgica de cantos pelo Padre com link direto para o leitor de cifras
+ * Funcionalidades Canônicas:
+ * 1. Base sóbria e resumida: Usuários sem paróquia iniciam em estado não-filiado com busca
+ * 2. Filtro e busca de paróquias por Estado (UF), Município, Diocese e Nome
+ * 3. Base cadastrada autêntica: Paróquia Santo Antônio de Pádua - Ferraz de Vasconcelos (Diocese de Mogi das Cruzes / Pe. Marlson Assis de Araújo)
+ * 4. Filiação de Ministérios com autorização pastoral: Músicos solicitam filiação e o Pároco aprova ou recusa
+ * 5. Edição pastoral: Pároco pode atualizar os dados oficiais da sua paróquia
+ * 6. Calendário e escalas de missas: Lançamento de múltiplos horários e candidatura de grupos filiados
+ * 7. Design estrito: Proibição total de emojis decorativos, tipografia refinada e layout 100% responsivo para celular
  */
 
 window.SantaCifra = window.SantaCifra || {};
@@ -27,6 +20,7 @@ window.SantaCifra = window.SantaCifra || {};
   const STORAGE_SCHEDULES_KEY = 'santa_cifra_mass_schedules_v1';
   const STORAGE_MINISTRIES_KEY = 'santa_cifra_ministries_v1';
   const STORAGE_ACTIVE_PARISH_KEY = 'santa_cifra_active_parish_id_v1';
+  const STORAGE_USER_ORIGIN_PARISH_KEY = 'santa_cifra_user_origin_parish_id_v2';
 
   const sec = window.SantaCifra.security || {};
   const safeParse = sec.safeJsonParse || ((raw, fb) => { try { return JSON.parse(raw); } catch (_) { return fb; } });
@@ -39,6 +33,7 @@ window.SantaCifra = window.SantaCifra || {};
     priestName: 'Pe. Marlson Assis de Araújo',
     priestEmail: 'padre.marlson@santoantonio.org.br',
     city: 'Ferraz de Vasconcelos - SP',
+    state: 'SP',
     diocese: 'Diocese de Mogi das Cruzes',
     address: 'Rua Francisco Fernandes Barroso, 30 - Vila Santo Antônio, Ferraz de Vasconcelos - SP',
     creationDate: 'Criada aos 31 de julho de 2013',
@@ -49,7 +44,7 @@ window.SantaCifra = window.SantaCifra || {};
   };
 
   // ---------------------------------------------------------------------------
-  // 1. Persistência de Dados (100% Zerada por Padrão)
+  // 1. Persistência de Dados
   // ---------------------------------------------------------------------------
 
   function getParishes() {
@@ -58,26 +53,23 @@ window.SantaCifra = window.SantaCifra || {};
     if (!Array.isArray(list) || list.length === 0) {
       list = [OFFICIAL_PARISH_SANTO_ANTONIO];
       saveParishes(list);
-      setActiveParishId(OFFICIAL_PARISH_SANTO_ANTONIO.id);
     } else {
       const found = list.find(p => p.id === OFFICIAL_PARISH_SANTO_ANTONIO.id || p.name.toLowerCase().includes('santo antônio de pádua'));
       if (!found) {
         list.unshift(OFFICIAL_PARISH_SANTO_ANTONIO);
         saveParishes(list);
       } else {
-        let changed = false;
-        // Atualização estrita para os dados autênticos da Paróquia
         found.name = OFFICIAL_PARISH_SANTO_ANTONIO.name;
         found.priestName = OFFICIAL_PARISH_SANTO_ANTONIO.priestName;
         found.priestEmail = OFFICIAL_PARISH_SANTO_ANTONIO.priestEmail;
         found.city = OFFICIAL_PARISH_SANTO_ANTONIO.city;
+        found.state = OFFICIAL_PARISH_SANTO_ANTONIO.state;
         found.diocese = OFFICIAL_PARISH_SANTO_ANTONIO.diocese;
         found.address = OFFICIAL_PARISH_SANTO_ANTONIO.address;
         found.creationDate = OFFICIAL_PARISH_SANTO_ANTONIO.creationDate;
         found.description = OFFICIAL_PARISH_SANTO_ANTONIO.description;
         found.facebookUrl = OFFICIAL_PARISH_SANTO_ANTONIO.facebookUrl;
-        changed = true;
-        if (changed) saveParishes(list);
+        saveParishes(list);
       }
     }
     return list;
@@ -129,27 +121,41 @@ window.SantaCifra = window.SantaCifra || {};
     const parishes = getParishes();
     if (parishes.length === 0) return null;
 
+    const user = (window.SantaCifra.auth && window.SantaCifra.auth.getCurrentUser)
+      ? window.SantaCifra.auth.getCurrentUser()
+      : null;
+
+    // Se o usuário logado for Pároco, acessa diretamente sua paróquia
+    if (user && (user.role === 'padre' || user.role === 'paroco')) {
+      if (user.parishId) {
+        const found = parishes.find(p => p.id === user.parishId);
+        if (found) return found;
+      }
+      return parishes[0];
+    }
+
+    // Se o usuário tem paróquia associada em seu perfil
+    if (user && user.parishId) {
+      const userParish = parishes.find(p => p.id === user.parishId);
+      if (userParish) return userParish;
+    }
+
+    // Se o usuário selecionou uma paróquia de origem na busca
+    const originParishId = localStorage.getItem(STORAGE_USER_ORIGIN_PARISH_KEY);
+    if (originParishId) {
+      const originMatch = parishes.find(p => p.id === originParishId);
+      if (originMatch) return originMatch;
+    }
+
+    // Se alternou manualmente a paróquia ativa
     const savedId = getActiveParishId();
     if (savedId) {
       const found = parishes.find(p => p.id === savedId);
       if (found) return found;
     }
 
-    const user = (window.SantaCifra.auth && window.SantaCifra.auth.getCurrentUser)
-      ? window.SantaCifra.auth.getCurrentUser()
-      : null;
-
-    if (user && user.parishId) {
-      const userParish = parishes.find(p => p.id === user.parishId);
-      if (userParish) return userParish;
-    }
-
-    if (user && user.parish) {
-      const nameMatch = parishes.find(p => p.name.toLowerCase() === user.parish.toLowerCase());
-      if (nameMatch) return nameMatch;
-    }
-
-    return parishes[0];
+    // Caso contrário: estado não-filiado (não expõe paróquias aleatoriamente)
+    return null;
   }
 
   // ---------------------------------------------------------------------------
@@ -164,14 +170,18 @@ window.SantaCifra = window.SantaCifra || {};
       priestName: sanitize(data.priestName || 'Pároco', 80),
       priestEmail: sanitize(data.priestEmail || '', 100).toLowerCase(),
       city: sanitize(data.city || '', 80),
+      state: sanitize(data.state || '', 10),
       diocese: sanitize(data.diocese || '', 80),
       contactPhone: sanitize(data.contactPhone || '', 30),
+      address: sanitize(data.address || '', 160),
+      facebookUrl: sanitize(data.facebookUrl || '', 150),
       description: sanitize(data.description || '', 240),
       createdAt: new Date().toISOString()
     };
     list.push(newParish);
     saveParishes(list);
     setActiveParishId(newParish.id);
+    localStorage.setItem(STORAGE_USER_ORIGIN_PARISH_KEY, newParish.id);
     return newParish;
   }
 
@@ -187,24 +197,51 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // ---------------------------------------------------------------------------
-  // 3. Operações de Ministérios de Música
+  // 3. Operações de Ministérios de Música (com Aprovação Pastoral)
   // ---------------------------------------------------------------------------
 
   function registerMinistry(parishId, data) {
     const list = getMinistries();
+    const user = (window.SantaCifra.auth && window.SantaCifra.auth.getCurrentUser)
+      ? window.SantaCifra.auth.getCurrentUser()
+      : null;
+    const isPriest = user && (user.role === 'padre' || user.role === 'paroco');
+
     const newMin = {
       id: 'min_' + Date.now().toString(36) + '_' + Math.random().toString(36).substring(2, 6),
       parishId: parishId,
       name: sanitize(data.name || 'Ministério de Música', 80),
-      leaderName: sanitize(data.leaderName || '', 60),
+      leaderName: sanitize(data.leaderName || (user ? user.name : 'Líder'), 60),
       leaderPhone: sanitize(data.leaderPhone || '', 30),
       instruments: sanitize(data.instruments || '', 120),
-      members: data.leaderName ? [data.leaderName] : [],
+      members: data.leaderName ? [data.leaderName] : (user ? [user.name] : []),
+      status: isPriest ? 'approved' : 'pending',
+      requestedBy: user ? (user.email || user.name) : (data.leaderName || 'Músico'),
       createdAt: new Date().toISOString()
     };
     list.push(newMin);
     saveMinistries(list);
     return newMin;
+  }
+
+  function approveMinistry(ministryId) {
+    const list = getMinistries();
+    const min = list.find(m => m.id === ministryId);
+    if (!min) return false;
+    min.status = 'approved';
+    min.approvedAt = new Date().toISOString();
+    saveMinistries(list);
+    return true;
+  }
+
+  function rejectMinistry(ministryId) {
+    const list = getMinistries();
+    const min = list.find(m => m.id === ministryId);
+    if (!min) return false;
+    min.status = 'rejected';
+    min.rejectedAt = new Date().toISOString();
+    saveMinistries(list);
+    return true;
   }
 
   function addMemberToMinistry(ministryId, musicianName, instrument) {
@@ -303,43 +340,45 @@ window.SantaCifra = window.SantaCifra || {};
     item.priestSuggestions = item.priestSuggestions || [];
     item.priestSuggestions.push({
       moment: sanitize(moment, 40),
-      songTitle: sanitize(songTitle, 100),
-      songId: sanitize(songId, 100)
+      songTitle: sanitize(songTitle, 80),
+      songId: sanitize(songId, 80)
     });
     saveSchedules(list);
     return true;
   }
 
-  function removePriestSuggestion(scheduleId, index) {
+  function removePriestSuggestion(scheduleId, suggestionIndex) {
     const list = getSchedules();
     const item = list.find(s => s.id === scheduleId);
     if (!item || !item.priestSuggestions) return false;
 
-    item.priestSuggestions.splice(index, 1);
+    item.priestSuggestions.splice(suggestionIndex, 1);
     saveSchedules(list);
     return true;
   }
 
   // ---------------------------------------------------------------------------
-  // 5. Links de Convite (Padre e Ministérios) & Detecção de URL
+  // 5. Convites Exclusivos via Link
   // ---------------------------------------------------------------------------
 
   function buildPriestInviteUrl() {
-    const token = 'sc_priest_' + Date.now().toString(36) + '_' + Math.random().toString(36).substring(2, 8);
-    const base = window.location.origin + window.location.pathname;
-    return `${base}?convite_padre=${token}`;
+    const origin = window.location.origin && window.location.origin !== 'null'
+      ? window.location.origin + window.location.pathname
+      : 'https://santa-cifra.surge.sh';
+    return origin + '?convite_padre=sacerdote_paroco_' + Date.now().toString(36);
   }
 
   function buildMinistryInviteUrl(ministryId, parishId) {
-    const base = window.location.origin + window.location.pathname;
-    return `${base}?convite_ministerio=${encodeURIComponent(ministryId)}&paroquia=${encodeURIComponent(parishId)}`;
+    const origin = window.location.origin && window.location.origin !== 'null'
+      ? window.location.origin + window.location.pathname
+      : 'https://santa-cifra.surge.sh';
+    return origin + '?convite_ministerio=' + encodeURIComponent(ministryId) + '&paroquia=' + encodeURIComponent(parishId);
   }
 
   function checkUrlForInvites() {
     try {
       const urlParams = new URLSearchParams(window.location.search);
 
-      // 1. Convite para o Padre
       if (urlParams.has('convite_padre')) {
         setTimeout(() => {
           openPriestRegisterDialog();
@@ -350,7 +389,6 @@ window.SantaCifra = window.SantaCifra || {};
         return true;
       }
 
-      // 2. Convite para Integrar Ministério
       if (urlParams.has('convite_ministerio')) {
         const minId = urlParams.get('convite_ministerio');
         const parId = urlParams.get('paroquia') || '';
@@ -367,7 +405,7 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // ---------------------------------------------------------------------------
-  // 6. Diálogo Unificado de Compartilhamento (#shareInviteLinkDialog)
+  // 6. Diálogo de Compartilhamento (#shareInviteLinkDialog)
   // ---------------------------------------------------------------------------
 
   function openShareInviteDialog({ title, subtitle, desc, url, whatsappText }) {
@@ -417,7 +455,7 @@ window.SantaCifra = window.SantaCifra || {};
       subtitle: 'Envie este link para o Padre cadastrar a paróquia',
       desc: 'Somente quem acessa através deste link exclusivo poderá preencher o formulário pastoral de Pároco e gerenciar a paróquia:',
       url: inviteUrl,
-      whatsappText: `✝️ Olá Padre! Segue o convite exclusivo para criar sua conta de Pároco no Santa Cifra e gerenciar a liturgia, os ministérios e as escalas de missas da nossa paróquia: ${inviteUrl}`
+      whatsappText: 'Olá Padre! Segue o convite exclusivo para criar sua conta de Pároco no Santa Cifra e gerenciar a liturgia, os ministérios e as escalas de missas da nossa paróquia: ' + inviteUrl
     });
   }
 
@@ -425,11 +463,11 @@ window.SantaCifra = window.SantaCifra || {};
     const parish = getParishes().find(p => p.id === parishId) || { name: 'nossa paróquia' };
     const inviteUrl = buildMinistryInviteUrl(ministryId, parishId);
     openShareInviteDialog({
-      title: `Convite para ${ministryName}`,
-      subtitle: `Adicionar músicos ao ministério (${parish.name})`,
-      desc: `Envie este link para os músicos do grupo. Ao abrir, eles poderão confirmar a participação no ${ministryName}:`,
+      title: 'Convite para ' + ministryName,
+      subtitle: 'Adicionar músicos ao ministério (' + parish.name + ')',
+      desc: 'Envie este link para os músicos do grupo. Ao abrir, eles poderão confirmar a participação no ' + ministryName + ':',
       url: inviteUrl,
-      whatsappText: `🎸 Olá! Venha fazer parte do nosso Ministério de Música "${ministryName}" (${parish.name}) no Santa Cifra! Acesse o link para ver o repertório e as escalas: ${inviteUrl}`
+      whatsappText: 'Olá! Venha fazer parte do nosso Ministério de Música "' + ministryName + '" (' + parish.name + ') no Santa Cifra! Acesse o link para ver o repertório e as escalas: ' + inviteUrl
     });
   }
 
@@ -463,15 +501,24 @@ window.SantaCifra = window.SantaCifra || {};
       const name = document.getElementById('priestRegName').value.trim();
       const email = document.getElementById('priestRegEmail').value.trim();
       const password = document.getElementById('priestRegPassword').value;
-      const confirmPassword = document.getElementById('priestRegConfirm').value;
+      const confirmPass = document.getElementById('priestRegConfirm').value;
+
       const parishName = document.getElementById('priestRegParish').value.trim();
       const diocese = document.getElementById('priestRegDiocese').value.trim();
       const city = document.getElementById('priestRegCity').value.trim();
       const phone = document.getElementById('priestRegPhone').value.trim();
 
-      if (password !== confirmPassword) {
+      if (password !== confirmPass) {
         if (alertBox) {
-          alertBox.textContent = 'A confirmação de senha não confere.';
+          alertBox.textContent = 'As senhas digitadas não coincidem.';
+          alertBox.style.display = 'block';
+        }
+        return;
+      }
+
+      if (password.length < 6) {
+        if (alertBox) {
+          alertBox.textContent = 'A senha deve ter no mínimo 6 caracteres.';
           alertBox.style.display = 'block';
         }
         return;
@@ -480,34 +527,28 @@ window.SantaCifra = window.SantaCifra || {};
       try {
         if (submitBtn) {
           submitBtn.disabled = true;
-          submitBtn.textContent = 'Cadastrando Pároco...';
+          submitBtn.textContent = 'Cadastrando paróquia...';
         }
 
-        // 1. Criar a paróquia no sistema
         const newParish = createParish({
           name: parishName,
           priestName: name,
           priestEmail: email,
-          diocese: diocese,
-          city: city,
+          diocese,
+          city,
           contactPhone: phone,
-          description: `Paróquia ${parishName}, pastoreada por ${name}. Diocese de ${diocese}.`
+          description: 'Paróquia ' + parishName + ' em ' + city + ', ' + diocese + '. Pároco: ' + name + '.'
         });
 
-        // 2. Cadastrar a conta do Padre
         if (window.SantaCifra.auth && window.SantaCifra.auth.registerUser) {
           await window.SantaCifra.auth.registerUser({
             name,
             email,
             password,
-            confirmPassword,
-            parish: parishName,
-            parishId: newParish.id,
+            confirmPassword: password,
             role: 'padre',
-            diocese,
-            city,
-            phone,
-            ministry: 'Pároco Responsável'
+            parish: newParish.name,
+            parishId: newParish.id
           });
         }
 
@@ -515,19 +556,11 @@ window.SantaCifra = window.SantaCifra || {};
         if (dlg) dlg.close();
         form.reset();
 
-        if (window.SantaCifra.auth && window.SantaCifra.auth.updateAuthUI) {
-          window.SantaCifra.auth.updateAuthUI();
-        }
-        if (window.SantaCifra.switchTab) {
-          window.SantaCifra.switchTab('parish');
-        } else {
-          renderParishView();
-        }
-
-        alert(`✝️ Bem-vindo, ${name}! A ${parishName} foi cadastrada com sucesso sob sua gestão pastoral.`);
+        renderParishView();
+        alert('Paróquia "' + newParish.name + '" cadastrada com sucesso! Bem-vindo, ' + name + '.');
       } catch (err) {
         if (alertBox) {
-          alertBox.textContent = err.message || 'Erro ao realizar cadastro pastoral.';
+          alertBox.textContent = 'Erro ao cadastrar: ' + (err.message || 'Tente novamente.');
           alertBox.style.display = 'block';
         }
       } finally {
@@ -540,7 +573,201 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // ---------------------------------------------------------------------------
-  // 8. Diálogo de Acolhida de Convite de Ministério (#joinMinistryDialog)
+  // 8. Diálogo de Busca / Filtro de Paróquias (#searchParishDialog)
+  // ---------------------------------------------------------------------------
+
+  function openSearchParishDialog() {
+    const dlg = document.getElementById('searchParishDialog');
+    if (!dlg) return;
+
+    const stateSelect = document.getElementById('filterParishState');
+    const cityInput = document.getElementById('filterParishCity');
+    const dioceseInput = document.getElementById('filterParishDiocese');
+    const nameInput = document.getElementById('filterParishName');
+
+    if (stateSelect) stateSelect.value = '';
+    if (cityInput) cityInput.value = '';
+    if (dioceseInput) dioceseInput.value = '';
+    if (nameInput) nameInput.value = '';
+
+    renderParishSearchResults();
+    dlg.showModal();
+  }
+
+  function renderParishSearchResults() {
+    const container = document.getElementById('parishResultsContainer');
+    const countEl = document.getElementById('parishResultsCount');
+    if (!container) return;
+
+    const stateEl = document.getElementById('filterParishState');
+    const cityEl = document.getElementById('filterParishCity');
+    const dioceseEl = document.getElementById('filterParishDiocese');
+    const nameEl = document.getElementById('filterParishName');
+
+    const stateVal = (stateEl ? stateEl.value : '').trim().toLowerCase();
+    const cityVal = (cityEl ? cityEl.value : '').trim().toLowerCase();
+    const dioceseVal = (dioceseEl ? dioceseEl.value : '').trim().toLowerCase();
+    const nameVal = (nameEl ? nameEl.value : '').trim().toLowerCase();
+
+    const parishes = getParishes();
+    const matches = parishes.filter(p => {
+      if (stateVal && stateVal !== 'outros') {
+        const pCity = (p.city || '').toLowerCase();
+        const pState = (p.state || '').toLowerCase();
+        if (!pCity.includes(stateVal) && !pState.includes(stateVal)) return false;
+      }
+      if (cityVal) {
+        const pCity = (p.city || '').toLowerCase();
+        if (!pCity.includes(cityVal)) return false;
+      }
+      if (dioceseVal) {
+        const pDiocese = (p.diocese || '').toLowerCase();
+        if (!pDiocese.includes(dioceseVal)) return false;
+      }
+      if (nameVal) {
+        const pName = (p.name || '').toLowerCase();
+        const pShort = (p.shortName || '').toLowerCase();
+        if (!pName.includes(nameVal) && !pShort.includes(nameVal)) return false;
+      }
+      return true;
+    });
+
+    if (countEl) {
+      countEl.textContent = matches.length + ' paróquia(s) encontrada(s):';
+    }
+
+    if (matches.length === 0) {
+      container.innerHTML = `
+        <div class="search-res-empty">
+          <p>Nenhuma paróquia encontrada com os filtros informados.</p>
+          <p style="font-size:0.84rem;margin-top:6px;color:var(--text-secondary);">
+            Verifique a digitação ou remova alguns filtros para expandir a busca.
+          </p>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = matches.map(p => `
+      <article class="parish-search-result-card">
+        <div class="search-res-info">
+          <h3 class="search-res-name">${p.name}</h3>
+          <p class="search-res-sub"><span>${p.diocese}</span> • <span>${p.city}</span></p>
+          <p class="search-res-priest"><strong>Pároco:</strong> ${p.priestName}</p>
+          ${p.address ? `<p class="search-res-addr">${p.address}</p>` : ''}
+        </div>
+        <div class="search-res-action">
+          <button type="button" class="btn-primary-solid btn-select-parish" data-parish-id="${p.id}">
+            Definir como Minha Paróquia
+          </button>
+        </div>
+      </article>
+    `).join('');
+
+    container.querySelectorAll('.btn-select-parish').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const parishId = btn.getAttribute('data-parish-id');
+        localStorage.setItem(STORAGE_USER_ORIGIN_PARISH_KEY, parishId);
+        setActiveParishId(parishId);
+
+        const curUser = (window.SantaCifra.auth && window.SantaCifra.auth.getCurrentUser)
+          ? window.SantaCifra.auth.getCurrentUser()
+          : null;
+        if (curUser) {
+          const chosen = matches.find(m => m.id === parishId);
+          if (chosen) {
+            curUser.parish = chosen.name;
+            curUser.parishId = chosen.id;
+            if (window.SantaCifra.auth && window.SantaCifra.auth.setSession) {
+              window.SantaCifra.auth.setSession(curUser);
+            }
+          }
+        }
+
+        const dlg = document.getElementById('searchParishDialog');
+        if (dlg) dlg.close();
+
+        renderParishView();
+        alert('Paróquia vinculada com sucesso!');
+      });
+    });
+  }
+
+  function bindSearchParishEvents() {
+    ['filterParishState', 'filterParishCity', 'filterParishDiocese', 'filterParishName'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && !el.dataset.bound) {
+        el.dataset.bound = 'true';
+        el.addEventListener('input', () => renderParishSearchResults());
+        el.addEventListener('change', () => renderParishSearchResults());
+      }
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // 9. Diálogo de Edição de Dados da Paróquia (#editParishDialog - Pároco)
+  // ---------------------------------------------------------------------------
+
+  function openEditParishDialog() {
+    const dlg = document.getElementById('editParishDialog');
+    if (!dlg) return;
+
+    const parish = getActiveParish();
+    if (!parish) return;
+
+    const nameInput = document.getElementById('editParishName');
+    const priestInput = document.getElementById('editParishPriest');
+    const dioceseInput = document.getElementById('editParishDiocese');
+    const cityInput = document.getElementById('editParishCity');
+    const phoneInput = document.getElementById('editParishPhone');
+    const addressInput = document.getElementById('editParishAddress');
+    const fbInput = document.getElementById('editParishFacebook');
+    const descInput = document.getElementById('editParishDescription');
+
+    if (nameInput) nameInput.value = parish.name || '';
+    if (priestInput) priestInput.value = parish.priestName || '';
+    if (dioceseInput) dioceseInput.value = parish.diocese || '';
+    if (cityInput) cityInput.value = parish.city || '';
+    if (phoneInput) phoneInput.value = parish.contactPhone || '';
+    if (addressInput) addressInput.value = parish.address || '';
+    if (fbInput) fbInput.value = parish.facebookUrl || '';
+    if (descInput) descInput.value = parish.description || '';
+
+    dlg.showModal();
+  }
+
+  function bindEditParishEvents() {
+    const form = document.getElementById('formEditParish');
+    if (!form || form.dataset.bound) return;
+    form.dataset.bound = 'true';
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const parish = getActiveParish();
+      if (!parish) return;
+
+      const updated = {
+        name: sanitize(document.getElementById('editParishName')?.value || parish.name, 120),
+        priestName: sanitize(document.getElementById('editParishPriest')?.value || parish.priestName, 80),
+        diocese: sanitize(document.getElementById('editParishDiocese')?.value || parish.diocese, 80),
+        city: sanitize(document.getElementById('editParishCity')?.value || parish.city, 80),
+        contactPhone: sanitize(document.getElementById('editParishPhone')?.value || '', 30),
+        address: sanitize(document.getElementById('editParishAddress')?.value || '', 160),
+        facebookUrl: sanitize(document.getElementById('editParishFacebook')?.value || '', 150),
+        description: sanitize(document.getElementById('editParishDescription')?.value || '', 250)
+      };
+
+      updateParishData(parish.id, updated);
+      const dlg = document.getElementById('editParishDialog');
+      if (dlg) dlg.close();
+
+      renderParishView();
+      alert('Dados da Paróquia atualizados com sucesso!');
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // 10. Diálogo de Aceite de Convite de Ministério (#joinMinistryDialog)
   // ---------------------------------------------------------------------------
 
   let pendingJoinMinistry = null;
@@ -549,22 +776,22 @@ window.SantaCifra = window.SantaCifra || {};
     const dlg = document.getElementById('joinMinistryDialog');
     if (!dlg) return;
 
-    const min = getMinistries().find(m => m.id === ministryId);
-    const parish = getParishes().find(p => p.id === parishId) || (min ? getParishes().find(p => p.id === min.parishId) : null);
+    const list = getMinistries();
+    const min = list.find(m => m.id === ministryId);
+    const parish = getParishes().find(p => p.id === (parishId || (min ? min.parishId : '')));
+
+    pendingJoinMinistry = {
+      ministryId,
+      ministryName: min ? min.name : 'Ministério de Música',
+      parishId: parish ? parish.id : '',
+      parishName: parish ? parish.name : 'Paróquia'
+    };
 
     const nameDisplay = document.getElementById('joinMinNameDisplay');
     const parishDisplay = document.getElementById('joinMinParishDisplay');
-    const inputName = document.getElementById('joinMusicianName');
+    if (nameDisplay) nameDisplay.textContent = pendingJoinMinistry.ministryName;
+    if (parishDisplay) parishDisplay.textContent = pendingJoinMinistry.parishName;
 
-    const curUser = (window.SantaCifra.auth && window.SantaCifra.auth.getCurrentUser)
-      ? window.SantaCifra.auth.getCurrentUser()
-      : null;
-
-    if (nameDisplay) nameDisplay.textContent = min ? min.name : 'Ministério de Música';
-    if (parishDisplay) parishDisplay.textContent = parish ? parish.name : 'Paróquia';
-    if (inputName && curUser) inputName.value = curUser.name || '';
-
-    pendingJoinMinistry = { ministryId, parishId, minName: min ? min.name : '', parishName: parish ? parish.name : '' };
     dlg.showModal();
   }
 
@@ -580,17 +807,14 @@ window.SantaCifra = window.SantaCifra || {};
       const name = document.getElementById('joinMusicianName').value.trim();
       const inst = document.getElementById('joinMusicianInstrument').value.trim();
 
-      if (!name) return;
-
       addMemberToMinistry(pendingJoinMinistry.ministryId, name, inst);
 
-      // Associar perfil do usuário se estiver logado
       const curUser = (window.SantaCifra.auth && window.SantaCifra.auth.getCurrentUser)
         ? window.SantaCifra.auth.getCurrentUser()
         : null;
 
       if (curUser) {
-        curUser.ministry = pendingJoinMinistry.minName;
+        curUser.ministry = pendingJoinMinistry.ministryName;
         curUser.parish = pendingJoinMinistry.parishName;
         curUser.parishId = pendingJoinMinistry.parishId;
         if (window.SantaCifra.auth && window.SantaCifra.auth.setSession) {
@@ -599,6 +823,7 @@ window.SantaCifra = window.SantaCifra || {};
       }
 
       if (pendingJoinMinistry.parishId) {
+        localStorage.setItem(STORAGE_USER_ORIGIN_PARISH_KEY, pendingJoinMinistry.parishId);
         setActiveParishId(pendingJoinMinistry.parishId);
       }
 
@@ -612,12 +837,12 @@ window.SantaCifra = window.SantaCifra || {};
         renderParishView();
       }
 
-      alert(`🎸 Parabéns, ${name}! Você agora faz parte do ministério de música da paróquia.`);
+      alert('Parabéns, ' + name + '! Você agora integra o ministério de música.');
     });
   }
 
   // ---------------------------------------------------------------------------
-  // 9. Diálogo de Ministérios da Paróquia (#parishMinistriesDialog)
+  // 11. Diálogo de Ministérios da Paróquia (#parishMinistriesDialog)
   // ---------------------------------------------------------------------------
 
   function openParishMinistriesDialog() {
@@ -653,7 +878,7 @@ window.SantaCifra = window.SantaCifra || {};
 
     const parish = getActiveParish();
     if (!parish) {
-      container.innerHTML = `<div class="empty-hint-card">Nenhuma paróquia selecionada.</div>`;
+      container.innerHTML = '<div class="empty-hint-card">Nenhuma paróquia selecionada.</div>';
       return;
     }
 
@@ -663,29 +888,38 @@ window.SantaCifra = window.SantaCifra || {};
       container.innerHTML = `
         <div class="empty-hint-card">
           <p><strong>Nenhum ministério de música cadastrado nesta paróquia ainda.</strong></p>
-          <p class="empty-hint-sub">Cadastre seu grupo na aba acima para se candidatar às missas e convidar outros músicos.</p>
+          <p class="empty-hint-sub">Cadastre seu grupo na aba acima para solicitar filiação ao Pároco.</p>
         </div>
       `;
       return;
     }
 
     container.innerHTML = ministries.map(min => {
+      const isApproved = min.status === 'approved';
+      const isPending = min.status === 'pending';
       const membersText = min.members && min.members.length > 0 ? min.members.join(', ') : (min.leaderName || 'Líder');
       return `
         <div class="min-item-card">
           <div class="min-item-left">
-            <div class="min-item-icon">🎸</div>
+            <div class="min-item-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
             <div>
               <h4 class="min-item-name">${min.name}</h4>
               <p class="min-item-sub"><strong>Líder:</strong> ${min.leaderName || 'Não informado'} ${min.leaderPhone ? '• ' + min.leaderPhone : ''}</p>
               ${min.instruments ? `<p class="min-item-sub"><strong>Instrumentos:</strong> ${min.instruments}</p>` : ''}
               <p class="min-item-sub"><strong>Integrantes:</strong> ${membersText}</p>
+              <span class="min-status-badge ${min.status || 'pending'}">
+                ${isApproved ? 'Filiado à Paróquia' : (isPending ? 'Pendente de autorização pastoral' : 'Não filiado')}
+              </span>
             </div>
           </div>
-          <button type="button" class="btn-invite-min-musicians" data-min-id="${min.id}" data-min-name="${min.name}">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            <span>Convidar Músicos</span>
-          </button>
+          ${isApproved ? `
+            <button type="button" class="btn-invite-min-musicians" data-min-id="${min.id}" data-min-name="${min.name}">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Convidar Músicos</span>
+            </button>
+          ` : ''}
         </div>
       `;
     }).join('');
@@ -712,7 +946,7 @@ window.SantaCifra = window.SantaCifra || {};
         e.preventDefault();
         const parish = getActiveParish();
         if (!parish) {
-          alert('Por favor, selecione ou crie uma paróquia primeiro.');
+          alert('Por favor, selecione sua paróquia primeiro.');
           return;
         }
 
@@ -721,14 +955,14 @@ window.SantaCifra = window.SantaCifra || {};
         const phone = document.getElementById('regMinPhone').value.trim();
         const instruments = document.getElementById('regMinInstruments').value.trim();
 
-        registerMinistry(parish.id, {
+        const newMin = registerMinistry(parish.id, {
           name,
           leaderName: leader,
           leaderPhone: phone,
           instruments
         });
 
-        // Atualizar perfil do usuário se ele for o líder
+        // Atualizar sessão do usuário
         const curUser = (window.SantaCifra.auth && window.SantaCifra.auth.getCurrentUser)
           ? window.SantaCifra.auth.getCurrentUser()
           : null;
@@ -746,12 +980,18 @@ window.SantaCifra = window.SantaCifra || {};
         switchMinistryTab('list');
         renderMinistriesListInModal();
         renderParishView();
+
+        if (newMin.status === 'approved') {
+          alert('Ministério registrado com sucesso!');
+        } else {
+          alert('Solicitação de filiação enviada com sucesso! Aguardando autorização pastoral do ' + parish.priestName + '.');
+        }
       });
     }
   }
 
   // ---------------------------------------------------------------------------
-  // 10. Diálogo de Lançamento de Múltiplos Horários de Missas (#launchMassScheduleDialog)
+  // 12. Diálogo de Lançamento de Múltiplos Horários de Missas (#launchMassScheduleDialog)
   // ---------------------------------------------------------------------------
 
   let selectedMassTimes = ['08:00', '10:00', '19:00'];
@@ -762,7 +1002,6 @@ window.SantaCifra = window.SantaCifra || {};
 
     const dateInput = document.getElementById('launchMassDate');
     if (dateInput && !dateInput.value) {
-      // Próximo domingo por padrão
       const now = new Date();
       const daysUntilSunday = (7 - now.getDay()) % 7 || 7;
       const nextSunday = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysUntilSunday);
@@ -788,7 +1027,7 @@ window.SantaCifra = window.SantaCifra || {};
         summary.innerHTML = '<span style="color:#ef4444;">Nenhum horário selecionado. Clique nos botões acima para marcar os horários.</span>';
       } else {
         const sorted = [...selectedMassTimes].sort();
-        summary.innerHTML = `Horários selecionados: <strong>${sorted.join(', ')}</strong> (${sorted.length} missa(s) serão lançadas no calendário)`;
+        summary.innerHTML = 'Horários selecionados: <strong>' + sorted.join(', ') + '</strong> (' + sorted.length + ' missa(s) serão lançadas no calendário)';
       }
     }
   }
@@ -854,7 +1093,7 @@ window.SantaCifra = window.SantaCifra || {};
         e.preventDefault();
         const parish = getActiveParish();
         if (!parish) {
-          alert('Por favor, selecione ou crie uma paróquia primeiro.');
+          alert('Por favor, selecione ou cadastre uma paróquia primeiro.');
           return;
         }
 
@@ -878,13 +1117,13 @@ window.SantaCifra = window.SantaCifra || {};
         if (dlg) dlg.close();
 
         renderParishView();
-        alert(`📅 ${selectedMassTimes.length} missa(s) lançadas com sucesso no calendário da paróquia!`);
+        alert(selectedMassTimes.length + ' missa(s) lançadas com sucesso no calendário da paróquia!');
       });
     }
   }
 
   // ---------------------------------------------------------------------------
-  // 11. Diálogo de Candidatura para Tocar na Missa (#claimScheduleDialog)
+  // 13. Diálogo de Candidatura para Tocar na Missa (#claimScheduleDialog)
   // ---------------------------------------------------------------------------
 
   let pendingClaimScheduleId = null;
@@ -900,6 +1139,7 @@ window.SantaCifra = window.SantaCifra || {};
     pendingClaimScheduleId = scheduleId;
     const parish = getActiveParish();
     const ministries = getMinistries().filter(m => m.parishId === parish.id);
+    const approvedMinistries = ministries.filter(m => m.status === 'approved');
 
     const preview = document.getElementById('claimSlotPreview');
     const selectMin = document.getElementById('selectClaimMinistry');
@@ -913,16 +1153,16 @@ window.SantaCifra = window.SantaCifra || {};
       preview.innerHTML = `
         <div><strong>Data e Horário:</strong> ${formatDateBR(schedule.date)} às ${schedule.time}</div>
         <div><strong>Celebração:</strong> ${schedule.celebrationTitle}</div>
-        ${schedule.priestNotes ? `<div style="font-size:0.84rem;color:#b38600;margin-top:4px;">✝️ <strong>Orientações do Pároco:</strong> ${schedule.priestNotes}</div>` : ''}
+        ${schedule.priestNotes ? `<div style="font-size:0.84rem;color:#b38600;margin-top:4px;"><strong>Orientações do Pároco:</strong> ${schedule.priestNotes}</div>` : ''}
       `;
     }
 
     if (selectMin) {
-      if (ministries.length === 0) {
-        selectMin.innerHTML = `<option value="">-- Nenhum ministério cadastrado ainda --</option>`;
+      if (approvedMinistries.length === 0) {
+        selectMin.innerHTML = `<option value="">-- Nenhum ministério aprovado nesta paróquia --</option>`;
       } else {
-        selectMin.innerHTML = ministries.map(m => `
-          <option value="${m.id}" ${(curUser && curUser.ministry === m.name) ? 'selected' : ''}>${m.name} (Líder: ${m.leaderName || 'Líder'})\</option>
+        selectMin.innerHTML = approvedMinistries.map(m => `
+          <option value="${m.id}" ${(curUser && curUser.ministry === m.name) ? 'selected' : ''}>${m.name} (Líder: ${m.leaderName || 'Líder'})</option>
         `).join('');
       }
     }
@@ -945,15 +1185,17 @@ window.SantaCifra = window.SantaCifra || {};
 
       const selectMin = document.getElementById('selectClaimMinistry');
       const ministryId = selectMin ? selectMin.value : null;
-      const parish = getActiveParish();
-      const min = getMinistries().find(m => m.id === ministryId);
-
-      if (!min) {
-        alert('Por favor, registre um ministério de música na paróquia antes de se candidatar.');
+      if (!ministryId) {
+        alert('Por favor, selecione um ministério aprovado. Se você cadastrou seu grupo recentemente, aguarde a autorização pastoral do Pároco.');
         return;
       }
-
-      const contact = document.getElementById('claimLeaderContact').value.trim();
+      const parish = getActiveParish();
+      const min = getMinistries().find(m => m.id === ministryId);
+      if (!min || min.status !== 'approved') {
+        alert('Este ministério está aguardando aprovação pastoral do Pároco para assumir escalas.');
+        return;
+      }
+      const contact = document.getElementById('claimLeaderContact')?.value.trim();
 
       claimSchedule(pendingClaimScheduleId, min.id, min.name, contact);
 
@@ -962,136 +1204,42 @@ window.SantaCifra = window.SantaCifra || {};
       pendingClaimScheduleId = null;
 
       renderParishView();
-      alert(`🎸 ${min.name} escalado com sucesso para a missa!`);
+      alert('Ministério "' + min.name + '" confirmado na escala desta celebração com sucesso!');
     });
   }
 
   // ---------------------------------------------------------------------------
-  // 12. Diálogo de Indicação de Cantos do Padre (#addSuggestionDialog)
+  // 14. Diálogo de Indicação de Cantos pelo Pároco
   // ---------------------------------------------------------------------------
 
-  let pendingSuggestionScheduleId = null;
-
   function openAddSuggestionDialog(scheduleId) {
-    let dlg = document.getElementById('addSuggestionDialog');
-    if (!dlg) {
-      dlg = document.createElement('dialog');
-      dlg.id = 'addSuggestionDialog';
-      dlg.className = 'app-dialog';
-      dlg.innerHTML = `
-        <div class="dialog-header">
-          <div>
-            <h2>Indicar Canto Litúrgico</h2>
-            <p class="dialog-subtitle">Sugira músicas do acervo para os músicos tocarem nesta celebração</p>
-          </div>
-          <form method="dialog"><button class="btn-close-dialog" value="close">✕</button></form>
-        </div>
-        <form id="formAddSuggestion" class="dialog-body-form">
-          <div class="form-field">
-            <label for="suggMomentSelect">Momento Litúrgico *</label>
-            <select id="suggMomentSelect" class="dialog-select" required>
-              <option value="Entrada">Entrada</option>
-              <option value="Ato Penitencial">Ato Penitencial</option>
-              <option value="Glória">Glória</option>
-              <option value="Salmo">Salmo Responsorial</option>
-              <option value="Aclamação ao Evangelho">Aclamação ao Evangelho</option>
-              <option value="Ofertório">Ofertório</option>
-              <option value="Santo">Santo</option>
-              <option value="Cordeiro de Deus">Cordeiro de Deus</option>
-              <option value="Comunhão">Comunhão</option>
-              <option value="Ação de Graças">Ação de Graças</option>
-              <option value="Final">Final / Envio</option>
-            </select>
-          </div>
-          <div class="form-field" style="position:relative;">
-            <label for="suggSongSearch">Buscar Música no Acervo do Santa Cifra *</label>
-            <input type="text" id="suggSongSearch" class="dialog-input" placeholder="Digite o nome da música..." autocomplete="off" required>
-            <input type="hidden" id="suggSelectedSongId">
-            <input type="hidden" id="suggSelectedSongTitle">
-            <div id="suggAutocompleteList" class="sugg-autocomplete-results" style="display:none;"></div>
-          </div>
-          <div class="dialog-actions">
-            <button type="submit" class="btn-primary-solid btn-block">Salvar Indicação</button>
-          </div>
-        </form>
-      `;
-      document.body.appendChild(dlg);
+    const moment = prompt('Informe o Momento Litúrgico da indicação (ex: Entrada, Comunhão, Ação de Graças):', 'Comunhão');
+    if (!moment) return;
+
+    const query = prompt('Digite o nome ou trecho da música que você deseja indicar:');
+    if (!query) return;
+
+    const songs = window.SongsCatalog || (window.SantaCifra.state ? window.SantaCifra.state.songs : []);
+    const cleanQ = query.toLowerCase().trim();
+    const found = songs.find(s => (s.title && s.title.toLowerCase().includes(cleanQ)) || (s.composer && s.composer.toLowerCase().includes(cleanQ)));
+
+    if (!found) {
+      alert('Nenhuma música encontrada com o termo "' + query + '". Tente buscar pelo título oficial.');
+      return;
     }
 
-    pendingSuggestionScheduleId = scheduleId;
+    addPriestSuggestion(scheduleId, {
+      moment: moment.trim(),
+      songTitle: found.title,
+      songId: found.id
+    });
 
-    const searchInput = dlg.querySelector('#suggSongSearch');
-    const autoList = dlg.querySelector('#suggAutocompleteList');
-    const hiddenId = dlg.querySelector('#suggSelectedSongId');
-    const hiddenTitle = dlg.querySelector('#suggSelectedSongTitle');
-
-    if (searchInput) searchInput.value = '';
-    if (hiddenId) hiddenId.value = '';
-    if (hiddenTitle) hiddenTitle.value = '';
-    if (autoList) autoList.style.display = 'none';
-
-    if (searchInput && !searchInput.dataset.bound) {
-      searchInput.dataset.bound = 'true';
-      searchInput.addEventListener('input', () => {
-        const q = searchInput.value.trim().toLowerCase();
-        if (q.length < 2) {
-          autoList.style.display = 'none';
-          return;
-        }
-
-        const songs = window.SongsCatalog || (window.SantaCifra.state ? window.SantaCifra.state.songs : []);
-        const matches = songs.filter(s =>
-          (s.title && s.title.toLowerCase().includes(q)) ||
-          (s.composer && s.composer.toLowerCase().includes(q))
-        ).slice(0, 8);
-
-        if (matches.length === 0) {
-          autoList.innerHTML = '<div class="auto-item-empty">Nenhuma música encontrada</div>';
-          autoList.style.display = 'block';
-          return;
-        }
-
-        autoList.innerHTML = matches.map(m => `
-          <div class="auto-item" data-id="${m.id}" data-title="${m.title}">
-            <strong>${m.title}</strong>
-            <span class="auto-item-artist">${m.composer || 'Litúrgico'} • ${m.liturgicalMoment || ''}</span>
-          </div>
-        `).join('');
-        autoList.style.display = 'block';
-
-        autoList.querySelectorAll('.auto-item').forEach(item => {
-          item.addEventListener('click', () => {
-            hiddenId.value = item.getAttribute('data-id');
-            hiddenTitle.value = item.getAttribute('data-title');
-            searchInput.value = item.getAttribute('data-title');
-            autoList.style.display = 'none';
-          });
-        });
-      });
-    }
-
-    const form = dlg.querySelector('#formAddSuggestion');
-    if (form && !form.dataset.bound) {
-      form.dataset.bound = 'true';
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const moment = dlg.querySelector('#suggMomentSelect').value;
-        const songTitle = hiddenTitle.value || searchInput.value.trim();
-        const songId = hiddenId.value || 'custom';
-
-        if (!songTitle) return;
-
-        addPriestSuggestion(pendingSuggestionScheduleId, { moment, songTitle, songId });
-        dlg.close();
-        renderParishView();
-      });
-    }
-
-    dlg.showModal();
+    renderParishView();
+    alert('Canto "' + found.title + '" indicado para o momento de ' + moment + '!');
   }
 
   // ---------------------------------------------------------------------------
-  // 13. Renderização Principal da Aba Paróquia (renderParishView)
+  // 15. Renderização Principal da Aba Paróquia (renderParishView)
   // ---------------------------------------------------------------------------
 
   function renderParishView() {
@@ -1108,38 +1256,32 @@ window.SantaCifra = window.SantaCifra || {};
     const isPriest = user && (user.role === 'padre' || user.role === 'paroco');
 
     // -------------------------------------------------------------------------
-    // CASO 1: BASE ZERADA (NENHUMA PARÓQUIA CADASTRADA AINDA)
+    // CASO 1: BASE NÃO-FILIADA (Silenciosa / Sem Paróquia Forçada)
     // -------------------------------------------------------------------------
-    if (parishes.length === 0) {
+    if (!activeParish) {
       container.innerHTML = `
         <div class="parish-layout">
-          <div class="parish-empty-state">
-            <div class="parish-empty-hero">
-              <div class="empty-icon-shield" aria-hidden="true">⛪</div>
-              <h1 class="parish-empty-title">Gestão da Paróquia & Escalas</h1>
-              <p class="parish-empty-desc">
-                Organize a vida litúrgica da comunidade paroquial: o Padre cadastra as missas e seus horários, e os ministérios de música se candidatam para tocar em cada celebração.
+          <div class="parish-unaffiliated-view">
+            <div class="unaffiliated-card">
+              <div class="unaffiliated-icon-wrap" aria-hidden="true">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M2 12h20M12 2l-7 7v13h14V9z"/>
+                </svg>
+              </div>
+              <h1 class="unaffiliated-title">Comunidade Paroquial</h1>
+              <p class="unaffiliated-subtitle">
+                Vincule sua paróquia de fé para acompanhar o calendário de missas, ministérios de música e escalas litúrgicas.
               </p>
 
-              <div class="parish-empty-cards-grid">
-                <div class="parish-option-card">
-                  <div>
-                    <h3>✝️ Enviar Convite ao Padre</h3>
-                    <p>Envie o link exclusivo para o Padre. Ao abrir, ele poderá preencher os dados pastorais e gerenciar a paróquia no Santa Cifra.</p>
-                  </div>
-                  <button type="button" class="btn-primary-solid" id="btnZeroSendPriestInvite">
-                    Gerar Link para o Padre
-                  </button>
-                </div>
+              <div class="unaffiliated-actions-stack">
+                <button type="button" class="btn-primary-solid btn-lg" id="btnUnaffiliatedSearch">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <span>Localizar Minha Paróquia</span>
+                </button>
 
-                <div class="parish-option-card">
-                  <div>
-                    <h3>✝️ Já sou o Pároco</h3>
-                    <p>Se você é o Padre responsável ou já possui o convite de Pároco, cadastre a sua Paróquia e crie seu acesso de sacerdote.</p>
-                  </div>
-                  <button type="button" class="btn-outline-gold" id="btnZeroOpenPriestRegister">
-                    Cadastrar como Pároco
-                  </button>
+                <div class="unaffiliated-priest-prompt">
+                  <span>É sacerdote ou pároco responsável?</span>
+                  <button type="button" class="btn-text-action" id="btnUnaffiliatedPriestAccess">Acessar pastoral do Pároco</button>
                 </div>
               </div>
             </div>
@@ -1147,120 +1289,122 @@ window.SantaCifra = window.SantaCifra || {};
         </div>
       `;
 
-      const btnInvite = container.querySelector('#btnZeroSendPriestInvite');
-      const btnPriestReg = container.querySelector('#btnZeroOpenPriestRegister');
-      if (btnInvite) btnInvite.onclick = () => openSharePriestInviteDialog();
-      if (btnPriestReg) btnPriestReg.onclick = () => openPriestRegisterDialog();
+      const btnSearch = container.querySelector('#btnUnaffiliatedSearch');
+      const btnPriest = container.querySelector('#btnUnaffiliatedPriestAccess');
+      if (btnSearch) btnSearch.onclick = () => openSearchParishDialog();
+      if (btnPriest) btnPriest.onclick = () => openPriestRegisterDialog();
       return;
     }
 
     // -------------------------------------------------------------------------
-    // CASO 2: HÁ PARÓQUIA(S) CADASTRADA(S)
+    // CASO 2: PARÓQUIA VINCULADA / ATIVA
     // -------------------------------------------------------------------------
     const parish = activeParish;
     const ministries = getMinistries().filter(m => m.parishId === parish.id);
+    const approvedMinistries = ministries.filter(m => m.status === 'approved');
+    const pendingMinistries = ministries.filter(m => m.status === 'pending');
     const schedules = getSchedules().filter(s => s.parishId === parish.id);
 
-    // Ordenar escalas por data e horário
     schedules.sort((a, b) => new Date(`${a.date}T${a.time}`) - new Date(`${b.date}T${b.time}`));
 
     const openCount = schedules.filter(s => s.status === 'open').length;
-    const confirmedCount = schedules.filter(s => s.status === 'confirmed').length;
-
-    // Menu de Paróquias (se houver mais de uma ou seletor de paróquias)
-    const parishSelectorHtml = `
-      <div class="parish-selector-bar" role="region" aria-label="Menu de Paróquias">
-        <span class="parish-selector-label">Paróquias:</span>
-        ${parishes.map(p => `
-          <button type="button" class="parish-select-chip ${p.id === parish.id ? 'active' : ''}" data-parish-id="${p.id}">
-            ⛪ ${p.name}
-          </button>
-        `).join('')}
-      </div>
-    `;
 
     container.innerHTML = `
       <div class="parish-layout">
-        ${parishes.length > 1 ? parishSelectorHtml : ''}
 
-        <!-- Card Principal da Paróquia -->
-        <header class="parish-hero-card">
-          <div class="parish-hero-top">
-            <div class="parish-icon-badge" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v20M2 12h20M12 2l-7 7v13h14V9z"/>
-              </svg>
-            </div>
-            <div class="parish-hero-text">
-              <div class="parish-badges-row">
-                <span class="parish-status-chip">✦ Paróquia Ativa</span>
-                <span class="parish-status-chip">📅 Criada em 31/07/2013</span>
-                <span class="parish-status-chip">📍 Diocese de Mogi das Cruzes</span>
-                <span class="parish-status-chip">🏙️ Ferraz de Vasconcelos - SP</span>
-                ${isPriest
-                  ? `<span class="parish-role-chip priest-chip">✝️ Gestão Pastoral do Pároco</span>`
-                  : `<span class="parish-role-chip musician-chip">🎸 Músico / Ministério Paroquial</span>`
-                }
-              </div>
+        <!-- Card Resumido e Nobre da Paróquia -->
+        <header class="parish-summary-card">
+          <div class="parish-summary-header">
+            <div class="parish-summary-text">
+              <span class="parish-kicker">Comunidade Paroquial</span>
               <h1 class="parish-title">${parish.name}</h1>
               <p class="parish-meta-line">
-                <span><strong>Pároco:</strong> ${parish.priestName || 'Pe. Marlson Assis de Araújo'}</span>
-                ${parish.diocese ? `• <span>${parish.diocese}</span>` : ''}
-                ${parish.city ? `• <span>${parish.city}</span>` : ''}
-                ${parish.address ? `• <span>📍 ${parish.address}</span>` : ''}
-                ${parish.contactPhone ? `• <span>📞 ${parish.contactPhone}</span>` : ''}
+                <span>${parish.diocese}</span>
+                <span class="meta-sep">•</span>
+                <span>${parish.city}</span>
+                <span class="meta-sep">•</span>
+                <span>Pároco: ${parish.priestName || 'Pe. Marlson Assis de Araújo'}</span>
               </p>
+              ${parish.address ? `<p class="parish-address-sub">${parish.address}${parish.contactPhone ? ' — Tel: ' + parish.contactPhone : ''}</p>` : ''}
             </div>
           </div>
 
-          <!-- Cards de Acesso Rápido: Ministérios e Calendário de Missas -->
-          <div class="parish-quick-stats-grid">
-            <div class="parish-stat-card-clickable" id="btnCardOpenMinistries">
-              <div class="stat-card-icon">🎸</div>
-              <div class="stat-card-text">
-                <span class="stat-card-number">${ministries.length}</span>
-                <span class="stat-card-title">Ministérios de Música</span>
-                <span class="stat-card-action">Ver lista & Registrar &rarr;</span>
-              </div>
-            </div>
+          <div class="parish-summary-actions">
+            <button type="button" class="btn-text-action" id="btnChangeParish">Trocar de Paróquia</button>
+            ${isPriest ? `<button type="button" class="btn-text-action" id="btnEditParishData">Editar Dados</button>` : ''}
+            ${parish.facebookUrl ? `<a href="${parish.facebookUrl}" target="_blank" rel="noopener noreferrer" class="btn-text-action">Página no Facebook</a>` : ''}
+          </div>
 
-            <div class="parish-stat-card-clickable" id="btnCardOpenSchedule">
-              <div class="stat-card-icon">📅</div>
-              <div class="stat-card-text">
-                <span class="stat-card-number">${schedules.length}</span>
-                <span class="stat-card-title">Missas na Escala (${openCount} abertas)</span>
-                <span class="stat-card-action">${isPriest ? '+ Lançar novos horários &rarr;' : 'Candidatar meu grupo &rarr;'}</span>
-              </div>
+          <div class="parish-stats-pills">
+            <div class="stat-pill-item" id="btnPillMinistries" role="button" tabindex="0">
+              <span class="stat-pill-num">${approvedMinistries.length}</span>
+              <span class="stat-pill-label">Ministérios de Música</span>
+            </div>
+            <div class="stat-pill-item" id="btnPillSchedules" role="button" tabindex="0">
+              <span class="stat-pill-num">${schedules.length}</span>
+              <span class="stat-pill-label">Missas na Escala (${openCount} vagas abertas)</span>
             </div>
           </div>
         </header>
 
-        <!-- Seção de Ações do Pároco e Ministérios -->
-        <div class="parish-toolbar-actions">
+        <!-- Barra de Ações -->
+        <div class="parish-toolbar">
           <button type="button" class="btn-parish-action btn-parish-primary" id="btnOpenMinistriesModal">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-            <span>Ministérios da Paróquia (${ministries.length})</span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <span>Ministérios (${approvedMinistries.length})</span>
           </button>
 
           ${isPriest ? `
-            <button type="button" class="btn-parish-action btn-outline-gold" id="btnOpenLaunchMassModal">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="16" x2="14" y2="16"/></svg>
-              <span>+ Lançar Missas & Horários</span>
+            <button type="button" class="btn-parish-action btn-gold-solid" id="btnOpenLaunchMassModal">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="16" x2="14" y2="16"/></svg>
+              <span>+ Lançar Missas no Calendário</span>
             </button>
-          ` : ''}
-
-          <button type="button" class="btn-parish-action" id="btnInvitePriestAgain">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            <span>Convidar Pároco</span>
-          </button>
+            <button type="button" class="btn-parish-action" id="btnInviteMusiciansLink">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+              <span>Convidar Músicos</span>
+            </button>
+          ` : `
+            <button type="button" class="btn-parish-action" id="btnInvitePriestAgain">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Convidar Pároco</span>
+            </button>
+          `}
         </div>
 
-        <!-- SEÇÃO: CALENDÁRIO DAS MISSAS & ESCALAS -->
+        <!-- Solicitações de Filiação Pendentes (Exclusivo Pároco) -->
+        ${(isPriest && pendingMinistries.length > 0) ? `
+          <section class="parish-pending-card">
+            <div class="pending-card-header">
+              <h2 class="pending-card-title">Solicitações de Filiação de Ministérios (${pendingMinistries.length})</h2>
+              <p class="pending-card-sub">Grupos musicais que aguardam autorização pastoral para assumir escalas de missas:</p>
+            </div>
+            <div class="pending-list">
+              ${pendingMinistries.map(m => `
+                <div class="pending-min-item">
+                  <div class="pending-min-info">
+                    <h3 class="pending-min-name">${m.name}</h3>
+                    <p class="pending-min-meta">
+                      <span><strong>Responsável:</strong> ${m.leaderName}</span>
+                      ${m.leaderPhone ? ` • <span><strong>WhatsApp:</strong> ${m.leaderPhone}</span>` : ''}
+                      ${m.instruments ? ` • <span><strong>Instrumentos:</strong> ${m.instruments}</span>` : ''}
+                    </p>
+                  </div>
+                  <div class="pending-min-actions">
+                    <button type="button" class="btn-approve-min" data-min-id="${m.id}">Aprovar Filiação</button>
+                    <button type="button" class="btn-reject-min" data-min-id="${m.id}">Recusar</button>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </section>
+        ` : ''}
+
+        <!-- Seção: Calendário das Missas & Escalas -->
         <section class="parish-schedules-section" id="parishScheduleArea">
           <div class="schedules-header">
             <div>
               <h2 class="section-title">Calendário das Missas & Escalas</h2>
-              <p class="section-desc">Horários disponibilizados pelo Padre. Ministérios podem se voluntariar para tocar.</p>
+              <p class="section-desc">Horários disponibilizados pelo Padre para os ministérios filiados</p>
             </div>
             ${isPriest ? `
               <button type="button" class="btn-primary-solid btn-sm" id="btnHeaderLaunchMass">
@@ -1272,7 +1416,7 @@ window.SantaCifra = window.SantaCifra || {};
           ${schedules.length === 0 ? `
             <div class="empty-hint-card" style="padding: 28px; text-align: center;">
               <p style="font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin-bottom: 6px;">Nenhuma missa lançada na escala ainda.</p>
-              <p class="empty-hint-sub">O Padre pode selecionar o dia (ex: Domingo) e lançar múltiplos horários (08:00, 10:00, 19:00) para os ministérios se candidatarem.</p>
+              <p class="empty-hint-sub">O Padre pode selecionar o dia (ex: Domingo) e lançar múltiplos horários (08:00, 10:00, 19:00) para os grupos se candidatarem.</p>
               ${isPriest ? `
                 <button type="button" class="btn-primary-solid" id="btnEmptyLaunchMass" style="margin-top: 14px;">
                   + Lançar Missas no Calendário
@@ -1296,20 +1440,18 @@ window.SantaCifra = window.SantaCifra || {};
                       <div class="sched-title-row">
                         <h3 class="sched-celebration-title">${sched.celebrationTitle}</h3>
                         <span class="sched-status-chip ${isClaimed ? 'chip-confirmed' : 'chip-open'}">
-                          ${isClaimed ? '✓ Confirmado' : '● Vaga Aberta'}
+                          ${isClaimed ? 'Confirmado' : 'Vaga Aberta'}
                         </span>
                       </div>
 
-                      <p class="sched-date-full">📅 ${formatDateBR(sched.date)} às ${sched.time}</p>
+                      <p class="sched-date-full">${formatDateBR(sched.date)} às ${sched.time}</p>
 
                       ${sched.priestNotes ? `
                         <div class="sched-priest-callout">
-                          <span class="priest-callout-icon">✝️</span>
                           <span class="priest-callout-text"><strong>Orientações do Pároco:</strong> ${sched.priestNotes}</span>
                         </div>
                       ` : ''}
 
-                      <!-- Sugestões de Músicas do Padre -->
                       ${suggestions.length > 0 ? `
                         <div class="sched-suggestions-box">
                           <span class="sugg-header">Cantos indicados pelo Pároco para esta Missa:</span>
@@ -1328,7 +1470,7 @@ window.SantaCifra = window.SantaCifra || {};
                       <div class="sched-bottom-row">
                         ${isClaimed ? `
                           <div class="sched-claimed-info">
-                            <span>🎸 <strong>Ministério:</strong> ${sched.ministryName}</span>
+                            <span><strong>Ministério:</strong> ${sched.ministryName}</span>
                             <button type="button" class="btn-release-schedule" data-action="release" data-id="${sched.id}">
                               Liberar Vaga
                             </button>
@@ -1365,29 +1507,29 @@ window.SantaCifra = window.SantaCifra || {};
     // VINCULAÇÃO DE EVENTOS NA VIEW
     // -------------------------------------------------------------------------
 
-    // Seletor de Paróquias
-    container.querySelectorAll('.parish-select-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const pId = btn.getAttribute('data-parish-id');
-        setActiveParishId(pId);
-        renderParishView();
-      });
-    });
+    // Trocar Paróquia
+    const btnChange = container.querySelector('#btnChangeParish');
+    if (btnChange) btnChange.onclick = () => openSearchParishDialog();
 
-    // Abrir modal de ministérios
-    const btnOpenMin = container.querySelector('#btnOpenMinistriesModal');
-    const btnCardMin = container.querySelector('#btnCardOpenMinistries');
-    if (btnOpenMin) btnOpenMin.onclick = () => openParishMinistriesDialog();
-    if (btnCardMin) btnCardMin.onclick = () => openParishMinistriesDialog();
+    // Editar Paróquia (Pároco)
+    const btnEdit = container.querySelector('#btnEditParishData');
+    if (btnEdit) btnEdit.onclick = () => openEditParishDialog();
 
-    // Rolar até calendário
-    const btnCardSched = container.querySelector('#btnCardOpenSchedule');
-    if (btnCardSched) {
-      btnCardSched.onclick = () => {
+    // Pills de Acesso Rápido
+    const pillMin = container.querySelector('#btnPillMinistries');
+    if (pillMin) pillMin.onclick = () => openParishMinistriesDialog();
+
+    const pillSched = container.querySelector('#btnPillSchedules');
+    if (pillSched) {
+      pillSched.onclick = () => {
         const area = document.getElementById('parishScheduleArea');
         if (area) area.scrollIntoView({ behavior: 'smooth' });
       };
     }
+
+    // Modal de ministérios
+    const btnOpenMin = container.querySelector('#btnOpenMinistriesModal');
+    if (btnOpenMin) btnOpenMin.onclick = () => openParishMinistriesDialog();
 
     // Lançar missas
     const btnLaunch = container.querySelector('#btnOpenLaunchMassModal');
@@ -1397,9 +1539,45 @@ window.SantaCifra = window.SantaCifra || {};
     if (btnHdrLaunch) btnHdrLaunch.onclick = () => openLaunchMassDialog();
     if (btnEmptyLaunch) btnEmptyLaunch.onclick = () => openLaunchMassDialog();
 
-    // Convidar Pároco
+    // Convidar Pároco / Músicos
     const btnInvPriest = container.querySelector('#btnInvitePriestAgain');
     if (btnInvPriest) btnInvPriest.onclick = () => openSharePriestInviteDialog();
+
+    const btnInvMusicians = container.querySelector('#btnInviteMusiciansLink');
+    if (btnInvMusicians) {
+      btnInvMusicians.onclick = () => {
+        const origin = window.location.origin && window.location.origin !== 'null'
+          ? window.location.origin + window.location.pathname
+          : 'https://santa-cifra.surge.sh';
+        openShareInviteDialog({
+          title: 'Convidar Músicos para a Paróquia',
+          subtitle: `${parish.name}`,
+          desc: 'Envie o link da paróquia para os músicos cadastrarem seus ministérios e assumirem as escalas:',
+          url: origin + '?paroquia=' + parish.id,
+          whatsappText: 'Olá! Acesse a nossa comunidade ' + parish.name + ' no Santa Cifra para cadastrar o seu ministério de música e assumir escalas de missas: ' + origin + '?paroquia=' + parish.id
+        });
+      };
+    }
+
+    // Aprovações Pastorais (Pároco)
+    container.querySelectorAll('.btn-approve-min').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mId = btn.getAttribute('data-min-id');
+        approveMinistry(mId);
+        renderParishView();
+        alert('Ministério aprovado com sucesso! Agora o grupo está filiado e pode assumir escalas.');
+      });
+    });
+
+    container.querySelectorAll('.btn-reject-min').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mId = btn.getAttribute('data-min-id');
+        if (confirm('Deseja recusar a filiação deste ministério?')) {
+          rejectMinistry(mId);
+          renderParishView();
+        }
+      });
+    });
 
     // Ações de Escala: Candidatar-se
     container.querySelectorAll('[data-action="claim"]').forEach(btn => {
@@ -1463,7 +1641,7 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // ---------------------------------------------------------------------------
-  // 14. Utilitários de Data
+  // 16. Utilitários de Data
   // ---------------------------------------------------------------------------
 
   function formatDateBR(dateStr) {
@@ -1487,29 +1665,20 @@ window.SantaCifra = window.SantaCifra || {};
   }
 
   // ---------------------------------------------------------------------------
-  // 15. Inicialização do Módulo
+  // 17. Inicialização do Módulo
   // ---------------------------------------------------------------------------
 
   function initParishModule() {
-    // Purga de dados fictícios/mockados de versões de desenvolvimento anteriores
-    try {
-      const rawP = localStorage.getItem(STORAGE_PARISHES_KEY);
-      if (rawP && rawP.includes('Pe. Antônio (Pároco)')) {
-        localStorage.removeItem(STORAGE_PARISHES_KEY);
-        localStorage.removeItem(STORAGE_MINISTRIES_KEY);
-        localStorage.removeItem(STORAGE_SCHEDULES_KEY);
-        localStorage.removeItem(STORAGE_ACTIVE_PARISH_KEY);
-      }
-    } catch (_) {}
     bindPriestRegisterEvents();
     bindParishMinistriesEvents();
     bindLaunchMassEvents();
     bindClaimScheduleEvents();
     bindJoinMinistryEvents();
+    bindSearchParishEvents();
+    bindEditParishEvents();
 
     checkUrlForInvites();
 
-    // Se estiver na aba Paróquia, renderiza
     const state = window.SantaCifra.state;
     if (state && state.activeTab === 'parish') {
       renderParishView();
@@ -1525,6 +1694,8 @@ window.SantaCifra = window.SantaCifra || {};
     updateParishData,
     getMinistries,
     registerMinistry,
+    approveMinistry,
+    rejectMinistry,
     addMemberToMinistry,
     getSchedules,
     launchMultipleMasses,
@@ -1544,6 +1715,8 @@ window.SantaCifra = window.SantaCifra || {};
     openClaimScheduleDialog,
     openJoinMinistryDialog,
     openAddSuggestionDialog,
+    openSearchParishDialog,
+    openEditParishDialog,
     renderParishView,
     initParishModule
   };

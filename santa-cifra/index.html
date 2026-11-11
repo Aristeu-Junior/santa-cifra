@@ -21,14 +21,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=27">
-  <link rel="stylesheet" href="css/layout.css?v=27">
-  <link rel="stylesheet" href="css/catalog.css?v=27">
-  <link rel="stylesheet" href="css/playlists.css?v=27">
-  <link rel="stylesheet" href="css/calendar.css?v=27">
-  <link rel="stylesheet" href="css/parish.css?v=27">
-  <link rel="stylesheet" href="css/viewer.css?v=27">
-  <link rel="stylesheet" href="css/dialogs.css?v=27">
+  <link rel="stylesheet" href="css/tokens.css?v=28">
+  <link rel="stylesheet" href="css/layout.css?v=28">
+  <link rel="stylesheet" href="css/catalog.css?v=28">
+  <link rel="stylesheet" href="css/playlists.css?v=28">
+  <link rel="stylesheet" href="css/calendar.css?v=28">
+  <link rel="stylesheet" href="css/parish.css?v=28">
+  <link rel="stylesheet" href="css/viewer.css?v=28">
+  <link rel="stylesheet" href="css/dialogs.css?v=28">
 </head>
 <body data-view="home">
 
@@ -363,9 +363,9 @@
         <div class="calendar-controls-bar">
           <div class="calendar-filter-tabs" role="tablist" aria-label="Filtrar por grau litúrgico">
             <button type="button" class="cal-filter-btn active" data-cal-filter="all">Todos os dias</button>
-            <button type="button" class="cal-filter-btn" data-cal-filter="solenidades">✦ Solenidades</button>
-            <button type="button" class="cal-filter-btn" data-cal-filter="memorias">🕊️ Memórias de Santos</button>
-            <button type="button" class="cal-filter-btn" data-cal-filter="domingos">📅 Domingos</button>
+            <button type="button" class="cal-filter-btn" data-cal-filter="solenidades">Solenidades</button>
+            <button type="button" class="cal-filter-btn" data-cal-filter="memorias">Memórias de Santos</button>
+            <button type="button" class="cal-filter-btn" data-cal-filter="domingos">Domingos</button>
           </div>
         </div>
 
@@ -373,9 +373,9 @@
         <div class="liturgical-legend" aria-label="Legenda do calendário litúrgico">
           <div class="legend-group">
             <span class="legend-group-title">Graus:</span>
-            <span class="legend-chip"><span class="legend-badge-icon badge-solenidade">✦</span> Solenidade (Grau Máximo com Glória e Credo)</span>
-            <span class="legend-chip"><span class="legend-badge-icon badge-festa">★</span> Festa</span>
-            <span class="legend-chip"><span class="legend-badge-icon badge-memoria">🕊️</span> Memória de Santo (Sem Glória nem Credo)</span>
+            <span class="legend-chip"><span class="legend-badge-icon badge-solenidade">&bull;</span> Solenidade (Grau Máximo com Glória e Credo)</span>
+            <span class="legend-chip"><span class="legend-badge-icon badge-festa">&bull;</span> Festa</span>
+            <span class="legend-chip"><span class="legend-badge-icon badge-memoria">&bull;</span> Memória de Santo (Sem Glória nem Credo)</span>
           </div>
           <div class="legend-group">
             <span class="legend-group-title">Cores:</span>
@@ -760,10 +760,10 @@
       </div>
       <div class="priest-login-help-box">
         <button type="button" class="link-btn-priest-invite" id="btnOpenPriestInvitePrompt">
-          <span>✝️ É Pároco e recebeu um convite? Cadastre-se aqui</span>
+          <span>Acesso pastoral do Pároco (cadastro por convite)</span>
         </button>
         <button type="button" class="btn-test-priest-marlisson" id="btnTestMarlsonLogin" title="Acessar instantaneamente como o Pároco Pe. Marlson Assis de Araújo (Paróquia Santo Antônio de Pádua - Ferraz de Vasconcelos / Diocese de Mogi das Cruzes)">
-          <span>✝️ Testar como Pároco (Pe. Marlson Assis de Araújo)</span>
+          <span>Entrar como Pároco (Pe. Marlson Assis de Araújo)</span>
         </button>
       </div>
       <div class="auth-footer-prompt">
@@ -785,10 +785,6 @@
       <div class="form-field">
         <label for="regEmail">E-mail</label>
         <input type="email" id="regEmail" class="dialog-input" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
-      </div>
-      <div class="form-field">
-        <label for="regParish">Paróquia / Ministério (Opcional)</label>
-        <input type="text" id="regParish" class="dialog-input" maxlength="80" placeholder="Ex: Paróquia São José - Coral da Manhã">
       </div>
       <div class="form-row-2">
         <div class="form-field">
@@ -921,7 +917,9 @@
   ========================================================= -->
   <dialog class="app-dialog" id="priestRegisterDialog" closedby="any" aria-labelledby="priestRegTitle">
     <div class="dialog-header">
-      <div class="priest-header-badge" aria-hidden="true">✝️</div>
+      <div class="priest-header-badge" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M7 8h10"/></svg>
+      </div>
       <div class="dialog-header-text">
         <h2 id="priestRegTitle">Acesso Pastoral do Pároco</h2>
         <p class="dialog-subtitle">Cadastro exclusivo para o Padre responsável pela Paróquia</p>
@@ -1006,8 +1004,8 @@
     </div>
 
     <div class="parish-modal-tabs" role="tablist">
-      <button type="button" class="p-tab-btn active" id="tabMinList" role="tab" aria-selected="true">Ministérios Cadastrados</button>
-      <button type="button" class="p-tab-btn" id="tabMinCreate" role="tab" aria-selected="false">+ Registrar Novo Ministério</button>
+      <button type="button" class="p-tab-btn active" id="tabMinList" role="tab" aria-selected="true">Ministérios Filiados</button>
+      <button type="button" class="p-tab-btn" id="tabMinCreate" role="tab" aria-selected="false">+ Solicitar Filiação de Grupo</button>
     </div>
 
     <!-- Lista de Ministérios -->
@@ -1021,7 +1019,7 @@
     <div class="parish-tab-panel" id="panelMinCreate" style="display: none;">
       <form id="formRegisterMinistry" class="dialog-body-form">
         <p class="auth-hint-text">
-          Cadastre seu ministério ou coral para que você possa se candidatar às escalas de missas da paróquia e convidar outros músicos.
+          Cadastre seu ministério ou coral para solicitar filiação à paróquia. O Pároco receberá o pedido para autorizar a participação nas escalas de missas.
         </p>
         <div class="form-field">
           <label for="regMinName">Nome do Ministério de Música *</label>
@@ -1039,10 +1037,10 @@
         </div>
         <div class="form-field">
           <label for="regMinInstruments">Instrumentos e Vozes</label>
-          <input type="text" id="regMinInstruments" class="dialog-input" maxlength="120" placeholder="Ex: Violão, Teclado, Baixo, Vozes (Soprano/Contralto)">
+          <input type="text" id="regMinInstruments" class="dialog-input" maxlength="120" placeholder="Ex: Violão, Teclado, Baixo, Vozes">
         </div>
         <div class="dialog-actions">
-          <button type="submit" class="btn-primary-solid btn-block" id="btnSaveMinistry">Salvar Ministério na Paróquia</button>
+          <button type="submit" class="btn-primary-solid btn-block" id="btnSaveMinistry">Enviar Solicitação de Filiação</button>
         </div>
       </form>
     </div>
@@ -1166,7 +1164,9 @@
     </div>
     <form id="formJoinMinistry" class="dialog-body-form">
       <div class="join-ministry-card">
-        <div class="join-min-icon" aria-hidden="true">🎸</div>
+        <div class="join-min-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
         <div class="join-min-text">
           <h3 id="joinMinNameDisplay">Ministério de Música</h3>
           <p id="joinMinParishDisplay">Paróquia</p>
@@ -1221,28 +1221,149 @@
     </form>
   </dialog>
 
-  <script src="js/transposition.js?v=27"></script>
-  <script src="js/chords-data.js?v=27"></script>
-  <script src="js/metronome.js?v=27"></script>
+  <!-- ========================================================
+       MODAL 13: LOCALIZAR E FILTRAR PARÓQUIAS
+  ========================================================= -->
+  <dialog class="app-dialog modal-lg" id="searchParishDialog" closedby="any" aria-labelledby="searchParishTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="searchParishTitle">Localizar Minha Paróquia</h2>
+        <p class="dialog-subtitle">Filtre por Estado, Município, Diocese ou Nome</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar busca de paróquias">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <div class="dialog-body-padded">
+      <div class="parish-filter-form">
+        <div class="parish-filter-grid">
+          <div class="form-field">
+            <label for="filterParishState">Estado (UF)</label>
+            <select id="filterParishState" class="dialog-select">
+              <option value="">Todos os Estados</option>
+              <option value="SP">São Paulo (SP)</option>
+              <option value="RJ">Rio de Janeiro (RJ)</option>
+              <option value="MG">Minas Gerais (MG)</option>
+              <option value="ES">Espírito Santo (ES)</option>
+              <option value="PR">Paraná (PR)</option>
+              <option value="SC">Santa Catarina (SC)</option>
+              <option value="RS">Rio Grande do Sul (RS)</option>
+              <option value="BA">Bahia (BA)</option>
+              <option value="PE">Pernambuco (PE)</option>
+              <option value="CE">Ceará (CE)</option>
+              <option value="GO">Goiás (GO)</option>
+              <option value="DF">Distrito Federal (DF)</option>
+              <option value="OUTROS">Outros Estados</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="filterParishCity">Município</label>
+            <input type="text" id="filterParishCity" class="dialog-input" placeholder="Ex: Ferraz de Vasconcelos" maxlength="60">
+          </div>
+          <div class="form-field">
+            <label for="filterParishDiocese">Diocese</label>
+            <input type="text" id="filterParishDiocese" class="dialog-input" placeholder="Ex: Mogi das Cruzes" maxlength="60">
+          </div>
+          <div class="form-field">
+            <label for="filterParishName">Nome da Paróquia</label>
+            <input type="text" id="filterParishName" class="dialog-input" placeholder="Ex: Santo Antônio de Pádua" maxlength="80">
+          </div>
+        </div>
+      </div>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=27"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=27"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=27"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=27"></script>
-  <script src="js/songs-catalog.js?v=27"></script>
-  <script src="js/supabase-client.js?v=27"></script>
+      <div class="parish-search-results-area">
+        <div class="search-results-header">
+          <span id="parishResultsCount">Resultados encontrados:</span>
+        </div>
+        <div class="parish-results-container" id="parishResultsContainer">
+          <!-- Renderizado dinamicamente -->
+        </div>
+      </div>
+    </div>
+  </dialog>
 
-  <script src="js/modules/icons.js?v=27"></script>
-  <script src="js/modules/auth.js?v=27"></script>
-  <script src="js/modules/state.js?v=27"></script>
-  <script src="js/modules/artists-view.js?v=27"></script>
-  <script src="js/modules/catalog-view.js?v=27"></script>
-  <script src="js/modules/playlists-view.js?v=27"></script>
-  <script src="js/modules/liturgical-calendar.js?v=27"></script>
-  <script src="js/modules/parish-manager.js?v=27"></script>
-  <script src="js/modules/song-viewer.js?v=27"></script>
-  <script src="js/modules/ota-updater.js?v=27"></script>
-  <script src="js/app.js?v=27"></script>
+  <!-- ========================================================
+       MODAL 14: EDITAR DADOS DA PARÓQUIA (EXCLUSIVO PÁROCO)
+  ========================================================= -->
+  <dialog class="app-dialog modal-lg" id="editParishDialog" closedby="any" aria-labelledby="editParishTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="editParishTitle">Editar Dados da Paróquia</h2>
+        <p class="dialog-subtitle">Atualização das informações canônicas e de contato da comunidade</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar edição">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <form id="formEditParish" class="dialog-body-form">
+      <div class="form-field">
+        <label for="editParishName">Nome Oficial da Paróquia *</label>
+        <input type="text" id="editParishName" class="dialog-input" required maxlength="120">
+      </div>
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="editParishPriest">Nome do Pároco *</label>
+          <input type="text" id="editParishPriest" class="dialog-input" required maxlength="80">
+        </div>
+        <div class="form-field">
+          <label for="editParishDiocese">Diocese / Arquidiocese *</label>
+          <input type="text" id="editParishDiocese" class="dialog-input" required maxlength="80">
+        </div>
+      </div>
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="editParishCity">Município e Estado *</label>
+          <input type="text" id="editParishCity" class="dialog-input" required maxlength="80">
+        </div>
+        <div class="form-field">
+          <label for="editParishPhone">Telefone da Secretaria</label>
+          <input type="text" id="editParishPhone" class="dialog-input" maxlength="30">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="editParishAddress">Endereço Completo</label>
+        <input type="text" id="editParishAddress" class="dialog-input" maxlength="160">
+      </div>
+      <div class="form-field">
+        <label for="editParishFacebook">Página do Facebook / Redes</label>
+        <input type="url" id="editParishFacebook" class="dialog-input" maxlength="150" placeholder="https://web.facebook.com/...">
+      </div>
+      <div class="form-field">
+        <label for="editParishDescription">Breve Histórico ou Descrição</label>
+        <textarea id="editParishDescription" rows="2" class="dialog-textarea" maxlength="250"></textarea>
+      </div>
+      <div class="dialog-actions">
+        <button type="submit" class="btn-primary-solid btn-block" id="btnSaveEditParish">Salvar Alterações</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="js/transposition.js?v=28"></script>
+  <script src="js/chords-data.js?v=28"></script>
+  <script src="js/metronome.js?v=28"></script>
+
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=28"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=28"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=28"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=28"></script>
+  <script src="js/songs-catalog.js?v=28"></script>
+  <script src="js/supabase-client.js?v=28"></script>
+
+  <script src="js/modules/icons.js?v=28"></script>
+  <script src="js/modules/auth.js?v=28"></script>
+  <script src="js/modules/state.js?v=28"></script>
+  <script src="js/modules/artists-view.js?v=28"></script>
+  <script src="js/modules/catalog-view.js?v=28"></script>
+  <script src="js/modules/playlists-view.js?v=28"></script>
+  <script src="js/modules/liturgical-calendar.js?v=28"></script>
+  <script src="js/modules/parish-manager.js?v=28"></script>
+  <script src="js/modules/song-viewer.js?v=28"></script>
+  <script src="js/modules/ota-updater.js?v=28"></script>
+  <script src="js/app.js?v=28"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -1253,7 +1374,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=27').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=28').then((reg) => {
           reg.update();
         }).catch(() => {});
       });
