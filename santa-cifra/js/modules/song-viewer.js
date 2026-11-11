@@ -19,6 +19,10 @@ window.SantaCifra.openSongView = function openSongView(songOrId, opts) {
   const historyMode = (opts && opts.history) || (state.activeTab === 'song' ? 'replace' : 'push');
   window.SantaCifra.switchTab('song', { history: historyMode });
   window.scrollTo({ top: 0 });
+  if (dom.cifraContainer) {
+    dom.cifraContainer.scrollLeft = 0;
+    dom.cifraContainer.scrollTop = 0;
+  }
 
   if (state.activeQueuePlaylistId) {
     const folder = state.playlists.find(p => p.id === state.activeQueuePlaylistId);
@@ -147,6 +151,12 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
 
   dom.cifraPre.innerHTML = htmlLines.join('\n');
   dom.cifraPre.style.fontSize = `${state.fontSize}px`;
+  if (dom.cifraContainer) {
+    dom.cifraContainer.scrollLeft = 0;
+  }
+  requestAnimationFrame(() => {
+    if (dom.cifraContainer) dom.cifraContainer.scrollLeft = 0;
+  });
 
   dom.chordsTopBar.innerHTML = '';
   uniqueChords.forEach(chordName => {

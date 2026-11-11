@@ -453,6 +453,8 @@
   margin-bottom: 16px;
   overflow-x: auto;
   scrollbar-width: thin;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 .cifra-pre {
@@ -672,7 +674,13 @@
     border-radius: 0;
     border-left: none;
     border-right: none;
-    padding: 20px 16px 24px;
+    padding: 16px 14px 24px;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cifra-pre {
+    line-height: 1.6;
   }
 
   .song-bottom-meta {
