@@ -21,14 +21,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=24">
-  <link rel="stylesheet" href="css/layout.css?v=24">
-  <link rel="stylesheet" href="css/catalog.css?v=24">
-  <link rel="stylesheet" href="css/playlists.css?v=24">
-  <link rel="stylesheet" href="css/calendar.css?v=24">
-  <link rel="stylesheet" href="css/parish.css?v=24">
-  <link rel="stylesheet" href="css/viewer.css?v=24">
-  <link rel="stylesheet" href="css/dialogs.css?v=24">
+  <link rel="stylesheet" href="css/tokens.css?v=25">
+  <link rel="stylesheet" href="css/layout.css?v=25">
+  <link rel="stylesheet" href="css/catalog.css?v=25">
+  <link rel="stylesheet" href="css/playlists.css?v=25">
+  <link rel="stylesheet" href="css/calendar.css?v=25">
+  <link rel="stylesheet" href="css/parish.css?v=25">
+  <link rel="stylesheet" href="css/viewer.css?v=25">
+  <link rel="stylesheet" href="css/dialogs.css?v=25">
 </head>
 <body data-view="home">
 
@@ -741,11 +741,9 @@
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitLogin">Entrar no Santa Cifra</button>
       </div>
-      <div class="magic-login-shortcut-box">
-        <div class="magic-login-divider"><span>ou acesse via Link Mágico</span></div>
-        <button type="button" class="btn-magic-priest-quick" id="btnQuickPriestLogin">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          <span>Entrar com Link do Pároco (Pe. Antônio)</span>
+      <div class="priest-login-help-box">
+        <button type="button" class="link-btn-priest-invite" id="btnOpenPriestInvitePrompt">
+          <span>✝️ É Pároco e recebeu um convite? Cadastre-se aqui</span>
         </button>
       </div>
       <div class="auth-footer-prompt">
@@ -871,12 +869,12 @@
 
     <div class="profile-magic-link-box">
       <div class="magic-link-priest-header">
-        <strong>Acesso do Pároco (Link Mágico)</strong>
-        <p>Envie o link para o Padre para que ele acerte as escalas e recomende músicas sem digitar senha.</p>
+        <strong>Convite Pastoral para o Pároco</strong>
+        <p>Envie o link de convite para o Padre criar a conta de Pároco e assumir a paróquia no Santa Cifra.</p>
       </div>
-      <button type="button" class="btn-outline-gold" id="btnGeneratePriestMagicLink">
+      <button type="button" class="btn-outline-gold" id="btnGeneratePriestInviteLink">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-        <span>Gerar / Enviar Link para o Padre</span>
+        <span>Gerar / Enviar Convite para o Padre</span>
       </button>
     </div>
 
@@ -898,28 +896,333 @@
     </div>
   </dialog>
 
-  <script src="js/transposition.js?v=24"></script>
-  <script src="js/chords-data.js?v=24"></script>
-  <script src="js/metronome.js?v=24"></script>
+  <!-- ========================================================
+       MODAL 7: CADASTRO EXCLUSIVO DO PÁROCO (VIA LINK DE CONVITE)
+  ========================================================= -->
+  <dialog class="app-dialog" id="priestRegisterDialog" closedby="any" aria-labelledby="priestRegTitle">
+    <div class="dialog-header">
+      <div class="priest-header-badge" aria-hidden="true">✝️</div>
+      <div class="dialog-header-text">
+        <h2 id="priestRegTitle">Acesso Pastoral do Pároco</h2>
+        <p class="dialog-subtitle">Cadastro exclusivo para o Padre responsável pela Paróquia</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar cadastro pastoral">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <form id="formPriestRegister" class="dialog-body-form">
+      <div class="auth-alert" id="priestRegAlertBox" role="alert" style="display: none;"></div>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=24"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=24"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=24"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=24"></script>
-  <script src="js/songs-catalog.js?v=24"></script>
-  <script src="js/supabase-client.js?v=24"></script>
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="priestRegName">Nome do Padre *</label>
+          <input type="text" id="priestRegName" class="dialog-input" required maxlength="80" placeholder="Ex: Pe. Antônio Silva" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="priestRegEmail">E-mail Pastoral (Seu Login) *</label>
+          <input type="email" id="priestRegEmail" class="dialog-input" required maxlength="100" placeholder="padre@paroquia.org.br" autocomplete="email">
+        </div>
+      </div>
 
-  <script src="js/modules/icons.js?v=24"></script>
-  <script src="js/modules/auth.js?v=24"></script>
-  <script src="js/modules/state.js?v=24"></script>
-  <script src="js/modules/artists-view.js?v=24"></script>
-  <script src="js/modules/catalog-view.js?v=24"></script>
-  <script src="js/modules/playlists-view.js?v=24"></script>
-  <script src="js/modules/liturgical-calendar.js?v=24"></script>
-  <script src="js/modules/parish-manager.js?v=24"></script>
-  <script src="js/modules/song-viewer.js?v=24"></script>
-  <script src="js/modules/ota-updater.js?v=24"></script>
-  <script src="js/app.js?v=24"></script>
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="priestRegPassword">Senha de Acesso *</label>
+          <input type="password" id="priestRegPassword" class="dialog-input" required minlength="6" maxlength="128" placeholder="Mínimo 6 caracteres" autocomplete="new-password">
+        </div>
+        <div class="form-field">
+          <label for="priestRegConfirm">Confirmar Senha *</label>
+          <input type="password" id="priestRegConfirm" class="dialog-input" required minlength="6" maxlength="128" placeholder="Repita sua senha" autocomplete="new-password">
+        </div>
+      </div>
+
+      <div class="form-section-divider"><span>Dados da Igreja / Paróquia</span></div>
+
+      <div class="form-field">
+        <label for="priestRegParish">Nome da Paróquia onde é Pároco *</label>
+        <input type="text" id="priestRegParish" class="dialog-input" required maxlength="120" placeholder="Ex: Paróquia Santo Antônio de Pádua">
+      </div>
+
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="priestRegDiocese">Diocese / Arquidiocese *</label>
+          <input type="text" id="priestRegDiocese" class="dialog-input" required maxlength="80" placeholder="Ex: Diocese de Santo Amaro">
+        </div>
+        <div class="form-field">
+          <label for="priestRegCity">Cidade e Estado *</label>
+          <input type="text" id="priestRegCity" class="dialog-input" required maxlength="80" placeholder="Ex: São Paulo - SP">
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="priestRegPhone">Telefone / WhatsApp da Secretaria Paroquial</label>
+        <input type="tel" id="priestRegPhone" class="dialog-input" maxlength="30" placeholder="Ex: (11) 98765-4321">
+      </div>
+
+      <div class="dialog-actions">
+        <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitPriestRegister">Concluir Cadastro e Acessar Paróquia</button>
+      </div>
+      <p class="priest-reg-footer-note">
+        Nas próximas vezes, basta acessar a tela de login comum digitando apenas o seu <strong>e-mail e senha</strong> cadastrados acima.
+      </p>
+    </form>
+  </dialog>
+
+  <!-- ========================================================
+       MODAL 8: MINISTÉRIOS DE MÚSICA DA PARÓQUIA (VER & REGISTRAR)
+  ========================================================= -->
+  <dialog class="app-dialog modal-lg" id="parishMinistriesDialog" closedby="any" aria-labelledby="parishMinTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="parishMinTitle">Ministérios de Música</h2>
+        <p class="dialog-subtitle" id="parishMinSubtitle">Gestão e registro dos ministérios da paróquia</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar ministérios">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="parish-modal-tabs" role="tablist">
+      <button type="button" class="p-tab-btn active" id="tabMinList" role="tab" aria-selected="true">Ministérios Cadastrados</button>
+      <button type="button" class="p-tab-btn" id="tabMinCreate" role="tab" aria-selected="false">+ Registrar Novo Ministério</button>
+    </div>
+
+    <!-- Lista de Ministérios -->
+    <div class="parish-tab-panel" id="panelMinList">
+      <div class="ministries-list-container" id="ministriesListContainer">
+        <!-- Renderizado dinamicamente (ou estado zerado) -->
+      </div>
+    </div>
+
+    <!-- Formulário para Registrar Ministério -->
+    <div class="parish-tab-panel" id="panelMinCreate" style="display: none;">
+      <form id="formRegisterMinistry" class="dialog-body-form">
+        <p class="auth-hint-text">
+          Cadastre seu ministério ou coral para que você possa se candidatar às escalas de missas da paróquia e convidar outros músicos.
+        </p>
+        <div class="form-field">
+          <label for="regMinName">Nome do Ministério de Música *</label>
+          <input type="text" id="regMinName" class="dialog-input" required maxlength="80" placeholder="Ex: Ministério Amor e Vida">
+        </div>
+        <div class="form-row-2">
+          <div class="form-field">
+            <label for="regMinLeader">Líder / Responsável *</label>
+            <input type="text" id="regMinLeader" class="dialog-input" required maxlength="60" placeholder="Ex: Aristeu Junior">
+          </div>
+          <div class="form-field">
+            <label for="regMinPhone">WhatsApp de Contato</label>
+            <input type="tel" id="regMinPhone" class="dialog-input" maxlength="30" placeholder="(11) 99999-8888">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="regMinInstruments">Instrumentos e Vozes</label>
+          <input type="text" id="regMinInstruments" class="dialog-input" maxlength="120" placeholder="Ex: Violão, Teclado, Baixo, Vozes (Soprano/Contralto)">
+        </div>
+        <div class="dialog-actions">
+          <button type="submit" class="btn-primary-solid btn-block" id="btnSaveMinistry">Salvar Ministério na Paróquia</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- ========================================================
+       MODAL 9: LANÇAR MISSAS NO CALENDÁRIO (MÚLTIPLOS HORÁRIOS PELO PADRE)
+  ========================================================= -->
+  <dialog class="app-dialog" id="launchMassScheduleDialog" closedby="any" aria-labelledby="launchMassTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="launchMassTitle">Lançar Missas no Calendário</h2>
+        <p class="dialog-subtitle">Selecione o dia e marque os horários para os ministérios se candidatarem</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <form id="formLaunchMass" class="dialog-body-form">
+      <div class="form-field">
+        <label for="launchMassDate">Data da Celebração *</label>
+        <div class="date-quick-picker-row">
+          <input type="date" id="launchMassDate" class="dialog-input" required>
+          <button type="button" class="btn-quick-date" id="btnQuickNextSunday">Próximo Domingo</button>
+          <button type="button" class="btn-quick-date" id="btnQuickNextSaturday">Próximo Sábado</button>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Horários das Missas deste Dia *</label>
+        <p class="field-help-text">Clique nos horários desejados (ex: 08:00, 10:00 e 19:00):</p>
+        <div class="mass-time-chips-grid" id="massTimeChipsGrid">
+          <button type="button" class="time-chip" data-time="07:00">07:00</button>
+          <button type="button" class="time-chip selected" data-time="08:00">08:00</button>
+          <button type="button" class="time-chip" data-time="09:00">09:00</button>
+          <button type="button" class="time-chip" data-time="09:30">09:30</button>
+          <button type="button" class="time-chip selected" data-time="10:00">10:00</button>
+          <button type="button" class="time-chip" data-time="11:00">11:00</button>
+          <button type="button" class="time-chip" data-time="17:00">17:00</button>
+          <button type="button" class="time-chip" data-time="18:00">18:00</button>
+          <button type="button" class="time-chip selected" data-time="19:00">19:00</button>
+          <button type="button" class="time-chip" data-time="19:30">19:30</button>
+          <button type="button" class="time-chip" data-time="20:00">20:00</button>
+        </div>
+        <div class="custom-time-add-row">
+          <input type="time" id="inputCustomTime" class="dialog-input-sm" placeholder="Outro horário">
+          <button type="button" class="btn-outline-sm" id="btnAddCustomTime">+ Adicionar</button>
+        </div>
+        <div class="selected-times-summary" id="selectedTimesSummary">
+          Horários selecionados: <strong>08:00, 10:00, 19:00</strong> (3 missas serão lançadas)
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="launchMassCelebrationTitle">Título / Tipo da Celebração</label>
+        <input type="text" id="launchMassCelebrationTitle" class="dialog-input" maxlength="100" placeholder="Ex: Missa Dominical / Missa da Família" value="Missa Dominical">
+      </div>
+
+      <div class="form-field">
+        <label for="launchMassPriestNotes">Orientações do Padre / Liturgia (Opcional)</label>
+        <textarea id="launchMassPriestNotes" rows="2" class="dialog-textarea" maxlength="250" placeholder="Ex: Missa com acolhida das famílias e bênção especial. Cantos alegres."></textarea>
+      </div>
+
+      <div class="dialog-actions">
+        <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitLaunchMass">Lançar Missas no Calendário</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ========================================================
+       MODAL 10: COMPARTILHAR CONVITE (PADRE OU MINISTÉRIO)
+  ========================================================= -->
+  <dialog class="app-dialog" id="shareInviteLinkDialog" closedby="any" aria-labelledby="shareInviteTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="shareInviteTitle">Link de Convite</h2>
+        <p class="dialog-subtitle" id="shareInviteSubtitle">Envie o link para a pessoa acessar</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <div class="dialog-body-padded">
+      <p class="share-invite-desc" id="shareInviteDescText">
+        Copie o link abaixo ou envie diretamente no WhatsApp para a pessoa abrir no celular:
+      </p>
+      <div class="magic-link-box">
+        <input type="text" id="shareInviteUrlInput" class="magic-url-input" readonly>
+        <button type="button" class="btn-copy-magic" id="btnCopyShareInvite">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span id="copyShareInviteLabel">Copiar</span>
+        </button>
+      </div>
+      <div class="magic-buttons-row">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-magic" id="btnWhatsappShareInvite">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span>Compartilhar no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ========================================================
+       MODAL 11: ACEITAR CONVITE DE MINISTÉRIO (MÚSICO)
+  ========================================================= -->
+  <dialog class="app-dialog" id="joinMinistryDialog" closedby="any" aria-labelledby="joinMinTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="joinMinTitle">Convite de Ministério</h2>
+        <p class="dialog-subtitle" id="joinMinSubtitle">Você foi convidado para integrar um ministério de música</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <form id="formJoinMinistry" class="dialog-body-form">
+      <div class="join-ministry-card">
+        <div class="join-min-icon" aria-hidden="true">🎸</div>
+        <div class="join-min-text">
+          <h3 id="joinMinNameDisplay">Ministério de Música</h3>
+          <p id="joinMinParishDisplay">Paróquia</p>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="joinMusicianName">Seu Nome Completo *</label>
+        <input type="text" id="joinMusicianName" class="dialog-input" required maxlength="60" placeholder="Ex: João da Silva">
+      </div>
+      <div class="form-field">
+        <label for="joinMusicianInstrument">Seu Instrumento / Voz</label>
+        <input type="text" id="joinMusicianInstrument" class="dialog-input" maxlength="60" placeholder="Ex: Violão / Voz / Teclado">
+      </div>
+      <div class="dialog-actions">
+        <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitJoinMinistry">Aceitar Convite e Entrar no Ministério</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ========================================================
+       MODAL 12: CANDIDATAR MINISTÉRIO PARA A MISSA
+  ========================================================= -->
+  <dialog class="app-dialog" id="claimScheduleDialog" closedby="any" aria-labelledby="claimMassTitle">
+    <div class="dialog-header">
+      <div>
+        <h2 id="claimMassTitle">Candidatar-se para Tocar na Missa</h2>
+        <p class="dialog-subtitle" id="claimMassSubtitle">Selecione o ministério que tocará nesta celebração</p>
+      </div>
+      <form method="dialog">
+        <button class="btn-close-dialog" value="close" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </form>
+    </div>
+    <form id="formClaimSchedule" class="dialog-body-form">
+      <div class="mass-slot-preview-card" id="claimSlotPreview">
+        <!-- Detalhes da missa selecionada preenchidos dinamicamente -->
+      </div>
+      <div class="form-field">
+        <label for="selectClaimMinistry">Selecione seu Ministério de Música *</label>
+        <select id="selectClaimMinistry" class="dialog-select" required>
+          <!-- Preenchido dinamicamente com os ministérios cadastrados -->
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="claimLeaderContact">Responsável / Telefone para Contato</label>
+        <input type="text" id="claimLeaderContact" class="dialog-input" maxlength="80" placeholder="Ex: Aristeu Junior - (11) 99999-8888">
+      </div>
+      <div class="dialog-actions">
+        <button type="submit" class="btn-primary-solid btn-block" id="btnConfirmClaimSchedule">Confirmar Escala nesta Missa</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="js/transposition.js?v=25"></script>
+  <script src="js/chords-data.js?v=25"></script>
+  <script src="js/metronome.js?v=25"></script>
+
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=25"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=25"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=25"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=25"></script>
+  <script src="js/songs-catalog.js?v=25"></script>
+  <script src="js/supabase-client.js?v=25"></script>
+
+  <script src="js/modules/icons.js?v=25"></script>
+  <script src="js/modules/auth.js?v=25"></script>
+  <script src="js/modules/state.js?v=25"></script>
+  <script src="js/modules/artists-view.js?v=25"></script>
+  <script src="js/modules/catalog-view.js?v=25"></script>
+  <script src="js/modules/playlists-view.js?v=25"></script>
+  <script src="js/modules/liturgical-calendar.js?v=25"></script>
+  <script src="js/modules/parish-manager.js?v=25"></script>
+  <script src="js/modules/song-viewer.js?v=25"></script>
+  <script src="js/modules/ota-updater.js?v=25"></script>
+  <script src="js/app.js?v=25"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -930,7 +1233,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=24').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=25').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

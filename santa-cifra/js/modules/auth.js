@@ -398,7 +398,20 @@ window.SantaCifra = window.SantaCifra || {};
   // 6. Operações de Autenticação (Cadastro, Login, Recuperação, Logout)
   // =========================================================================
 
-  async function registerUser({ name, email, parish, password, confirmPassword, honeypot }) {
+  async function registerUser({
+    name,
+    email,
+    parish = '',
+    password,
+    confirmPassword,
+    honeypot = '',
+    role = 'musico',
+    diocese = '',
+    city = '',
+    phone = '',
+    ministry = '',
+    parishId = ''
+  }) {
     if (isHoneypotTriggered(honeypot)) {
       throw new Error('Operação bloqueada pela verificação de segurança.');
     }
@@ -408,9 +421,14 @@ window.SantaCifra = window.SantaCifra || {};
       throw new Error(rateCheck.message);
     }
 
-    const cleanName = sanitizeText(name, 60);
+    const cleanName = sanitizeText(name, 80);
     const cleanEmail = sanitizeText(email, 100).toLowerCase();
-    const cleanParish = sanitizeText(parish, 80);
+    const cleanParish = sanitizeText(parish, 120);
+    const cleanDiocese = sanitizeText(diocese, 80);
+    const cleanCity = sanitizeText(city, 80);
+    const cleanPhone = sanitizeText(phone, 30);
+    const cleanMinistry = sanitizeText(ministry, 80);
+    const cleanRole = role === 'padre' || role === 'paroco' ? 'padre' : 'musico';
 
     if (cleanName.length < 2) {
       throw new Error('Por favor, informe seu nome completo (mínimo 2 letras).');
@@ -441,7 +459,8 @@ window.SantaCifra = window.SantaCifra || {};
             password,
             data: {
               name: cleanName,
-              parish: cleanParish
+              parish: cleanParish,
+              role: cleanRole
             }
           })
         });
@@ -457,6 +476,12 @@ window.SantaCifra = window.SantaCifra || {};
           email: cleanEmail,
           name: cleanName,
           parish: cleanParish,
+          parishId: parishId || '',
+          diocese: cleanDiocese,
+          city: cleanCity,
+          phone: cleanPhone,
+          ministry: cleanMinistry,
+          role: cleanRole,
           createdAt: new Date().toISOString()
         };
 
@@ -483,6 +508,12 @@ window.SantaCifra = window.SantaCifra || {};
       name: cleanName,
       email: cleanEmail,
       parish: cleanParish,
+      parishId: parishId || '',
+      diocese: cleanDiocese,
+      city: cleanCity,
+      phone: cleanPhone,
+      ministry: cleanMinistry,
+      role: cleanRole,
       salt: saltHex,
       passwordHash,
       createdAt: new Date().toISOString()
@@ -582,7 +613,14 @@ window.SantaCifra = window.SantaCifra || {};
       id: userRecord.id,
       email: userRecord.email,
       name: userRecord.name,
-      parish: userRecord.parish,
+      parish: userRecord.parish || '',
+      parishId: userRecord.parishId || '',
+      diocese: userRecord.diocese || '',
+      city: userRecord.city || '',
+      phone: userRecord.phone || '',
+      ministry: userRecord.ministry || '',
+      role: (userRecord.role === 'padre' || userRecord.role === 'paroco') ? 'padre' : 'musico',
+      avatarDataUrl: userRecord.avatarDataUrl || null,
       createdAt: userRecord.createdAt
     };
     setSession(sessionUser);
@@ -1239,35 +1277,25 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
-    // Atalho de Acesso Rápido para o Pároco
-    const btnQuickPriest = document.getElementById('btnQuickPriestLogin');
-    if (btnQuickPriest) {
-      btnQuickPriest.addEventListener('click', () => {
-        const priestUser = {
-          id: 'usr_padre_antonio',
-          name: 'Pe. Antônio (Pároco)',
-          email: 'padre@santoantonio.org.br',
-          parish: 'Paróquia Santo Antônio de Pádua',
-          ministry: 'Pároco',
-          role: 'padre',
-          avatarDataUrl: null,
-          createdAt: new Date().toISOString()
-        };
-        setSession(priestUser);
+    // Atalho para Acesso Pastoral do Pároco (se recebeu link de convite)
+    const btnOpenPriestPrompt = document.getElementById('btnOpenPriestInvitePrompt');
+    if (btnOpenPriestPrompt) {
+      btnOpenPriestPrompt.addEventListener('click', () => {
         const dlg = document.getElementById('authDialog');
         if (dlg) dlg.close();
-        updateAuthUI();
-        if (window.SantaCifra.switchTab) {
-          window.SantaCifra.switchTab('parish');
+        if (window.SantaCifra.parish && window.SantaCifra.parish.openPriestRegisterDialog) {
+          window.SantaCifra.parish.openPriestRegisterDialog();
         }
       });
     }
 
-    // Gerador de Magic Link do Padre
-    const btnGenPriest = document.getElementById('btnGeneratePriestMagicLink');
+    // Gerador de Convite Pastoral para o Padre
+    const btnGenPriest = document.getElementById('btnGeneratePriestInviteLink') || document.getElementById('btnGeneratePriestMagicLink');
     if (btnGenPriest) {
       btnGenPriest.addEventListener('click', () => {
-        if (window.SantaCifra.parish && window.SantaCifra.parish.openMagicLinkModal) {
+        if (window.SantaCifra.parish && window.SantaCifra.parish.openSharePriestInviteDialog) {
+          window.SantaCifra.parish.openSharePriestInviteDialog();
+        } else if (window.SantaCifra.parish && window.SantaCifra.parish.openMagicLinkModal) {
           window.SantaCifra.parish.openMagicLinkModal();
         }
       });
