@@ -1050,22 +1050,22 @@ window.SantaCifra = window.SantaCifra || {};
     }, true);
   }
 
-  async function loginAsPriestMarlisson() {
-    const email = 'padre.marlisson@santoantonio.org.br';
+  async function loginAsPriestMarlson() {
+    const email = 'padre.marlson@santoantonio.org.br';
     const db = getLocalUsersDB();
     let user = db[email];
     if (!user) {
       const saltHex = generateSaltHex(16);
       const passwordHash = await hashPasswordPBKDF2('padre123', saltHex);
       user = {
-        id: 'usr_padre_marlisson',
-        name: 'Pe. Marlisson Assis de Araújo',
+        id: 'usr_padre_marlson',
+        name: 'Pe. Marlson Assis de Araújo',
         email: email,
         parish: 'Paróquia Santo Antônio de Pádua',
         parishId: 'paroquia-santo-antonio-de-padua-fv13',
-        diocese: 'Diocese de Campos',
-        city: 'Santo Antônio de Pádua - RJ',
-        phone: '(22) 3851-1234',
+        diocese: 'Diocese de Mogi das Cruzes',
+        city: 'Ferraz de Vasconcelos - SP',
+        phone: '(11) 4676-1234',
         role: 'padre',
         salt: saltHex,
         passwordHash,
@@ -1315,16 +1315,16 @@ window.SantaCifra = window.SantaCifra || {};
     }
 
     // Atalho para Acesso Pastoral do Pároco (se recebeu link de convite)
-        const btnTestMarlisson = document.getElementById('btnTestMarlissonLogin');
-    if (btnTestMarlisson) {
-      btnTestMarlisson.addEventListener('click', async () => {
+    const btnTestMarlson = document.getElementById('btnTestMarlsonLogin') || document.getElementById('btnTestMarlissonLogin');
+    if (btnTestMarlson) {
+      btnTestMarlson.addEventListener('click', async () => {
         try {
-          btnTestMarlisson.disabled = true;
-          btnTestMarlisson.textContent = 'Conectando como Pároco...';
-          await loginAsPriestMarlisson();
+          btnTestMarlson.disabled = true;
+          btnTestMarlson.textContent = 'Conectando como Pároco...';
+          await loginAsPriestMarlson();
         } finally {
-          btnTestMarlisson.disabled = false;
-          btnTestMarlisson.textContent = '✝️ Testar como Pároco (Pe. Marlisson Assis de Araújo)';
+          btnTestMarlson.disabled = false;
+          btnTestMarlson.textContent = '✝️ Testar como Pároco (Pe. Marlson Assis de Araújo)';
         }
       });
     }
@@ -1387,7 +1387,8 @@ window.SantaCifra = window.SantaCifra || {};
     hideAlert,
     openAuthDialog,
     openProfileDialog,
-    loginAsPriestMarlisson,
+    loginAsPriestMarlson,
+    loginAsPriestMarlisson: loginAsPriestMarlson,
     bindAuthEvents
   };
 })();

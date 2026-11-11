@@ -21,14 +21,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=26">
-  <link rel="stylesheet" href="css/layout.css?v=26">
-  <link rel="stylesheet" href="css/catalog.css?v=26">
-  <link rel="stylesheet" href="css/playlists.css?v=26">
-  <link rel="stylesheet" href="css/calendar.css?v=26">
-  <link rel="stylesheet" href="css/parish.css?v=26">
-  <link rel="stylesheet" href="css/viewer.css?v=26">
-  <link rel="stylesheet" href="css/dialogs.css?v=26">
+  <link rel="stylesheet" href="css/tokens.css?v=27">
+  <link rel="stylesheet" href="css/layout.css?v=27">
+  <link rel="stylesheet" href="css/catalog.css?v=27">
+  <link rel="stylesheet" href="css/playlists.css?v=27">
+  <link rel="stylesheet" href="css/calendar.css?v=27">
+  <link rel="stylesheet" href="css/parish.css?v=27">
+  <link rel="stylesheet" href="css/viewer.css?v=27">
+  <link rel="stylesheet" href="css/dialogs.css?v=27">
 </head>
 <body data-view="home">
 
@@ -762,8 +762,8 @@
         <button type="button" class="link-btn-priest-invite" id="btnOpenPriestInvitePrompt">
           <span>✝️ É Pároco e recebeu um convite? Cadastre-se aqui</span>
         </button>
-        <button type="button" class="btn-test-priest-marlisson" id="btnTestMarlissonLogin" title="Acessar instantaneamente como o Pároco da Paróquia Santo Antônio de Pádua">
-          <span>✝️ Testar como Pároco (Pe. Marlisson Assis de Araújo)</span>
+        <button type="button" class="btn-test-priest-marlisson" id="btnTestMarlsonLogin" title="Acessar instantaneamente como o Pároco Pe. Marlson Assis de Araújo (Paróquia Santo Antônio de Pádua - Ferraz de Vasconcelos / Diocese de Mogi das Cruzes)">
+          <span>✝️ Testar como Pároco (Pe. Marlson Assis de Araújo)</span>
         </button>
       </div>
       <div class="auth-footer-prompt">
@@ -1221,28 +1221,28 @@
     </form>
   </dialog>
 
-  <script src="js/transposition.js?v=26"></script>
-  <script src="js/chords-data.js?v=26"></script>
-  <script src="js/metronome.js?v=26"></script>
+  <script src="js/transposition.js?v=27"></script>
+  <script src="js/chords-data.js?v=27"></script>
+  <script src="js/metronome.js?v=27"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=26"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=26"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=26"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=26"></script>
-  <script src="js/songs-catalog.js?v=26"></script>
-  <script src="js/supabase-client.js?v=26"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=27"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=27"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=27"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=27"></script>
+  <script src="js/songs-catalog.js?v=27"></script>
+  <script src="js/supabase-client.js?v=27"></script>
 
-  <script src="js/modules/icons.js?v=26"></script>
-  <script src="js/modules/auth.js?v=26"></script>
-  <script src="js/modules/state.js?v=26"></script>
-  <script src="js/modules/artists-view.js?v=26"></script>
-  <script src="js/modules/catalog-view.js?v=26"></script>
-  <script src="js/modules/playlists-view.js?v=26"></script>
-  <script src="js/modules/liturgical-calendar.js?v=26"></script>
-  <script src="js/modules/parish-manager.js?v=26"></script>
-  <script src="js/modules/song-viewer.js?v=26"></script>
-  <script src="js/modules/ota-updater.js?v=26"></script>
-  <script src="js/app.js?v=26"></script>
+  <script src="js/modules/icons.js?v=27"></script>
+  <script src="js/modules/auth.js?v=27"></script>
+  <script src="js/modules/state.js?v=27"></script>
+  <script src="js/modules/artists-view.js?v=27"></script>
+  <script src="js/modules/catalog-view.js?v=27"></script>
+  <script src="js/modules/playlists-view.js?v=27"></script>
+  <script src="js/modules/liturgical-calendar.js?v=27"></script>
+  <script src="js/modules/parish-manager.js?v=27"></script>
+  <script src="js/modules/song-viewer.js?v=27"></script>
+  <script src="js/modules/ota-updater.js?v=27"></script>
+  <script src="js/app.js?v=27"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -1253,7 +1253,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=26').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=27').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

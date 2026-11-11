@@ -34,15 +34,18 @@ window.SantaCifra = window.SantaCifra || {};
 
   const OFFICIAL_PARISH_SANTO_ANTONIO = {
     id: 'paroquia-santo-antonio-de-padua-fv13',
-    name: 'Paróquia Santo Antônio de Pádua',
-    priestName: 'Pe. Marlisson Assis de Araújo',
-    priestEmail: 'padre.marlisson@santoantonio.org.br',
-    city: 'Santo Antônio de Pádua - RJ',
-    diocese: 'Diocese de Campos',
-    contactPhone: '(22) 3851-1234',
-    description: 'Comunidade paroquial de Santo Antônio de Pádua, celebrando com alegria o Santo Evangelho e o louvor litúrgico.',
+    name: 'Paróquia Santo Antônio de Pádua - Ferraz de Vasconcelos',
+    shortName: 'Paróquia Santo Antônio de Pádua',
+    priestName: 'Pe. Marlson Assis de Araújo',
+    priestEmail: 'padre.marlson@santoantonio.org.br',
+    city: 'Ferraz de Vasconcelos - SP',
+    diocese: 'Diocese de Mogi das Cruzes',
+    address: 'Rua Francisco Fernandes Barroso, 30 - Vila Santo Antônio, Ferraz de Vasconcelos - SP',
+    creationDate: 'Criada aos 31 de julho de 2013',
+    contactPhone: '(11) 4676-1234',
+    description: 'Comunidade Paroquial Santo Antônio de Pádua em Ferraz de Vasconcelos - SP, Diocese de Mogi das Cruzes. Criada aos 31 de julho de 2013. Pároco: Pe. Marlson Assis de Araújo.',
     facebookUrl: 'https://web.facebook.com/santoantoniodepaduafv13/',
-    createdAt: '2026-11-11T00:00:00.000Z'
+    createdAt: '2013-07-31T00:00:00.000Z'
   };
 
   // ---------------------------------------------------------------------------
@@ -63,14 +66,17 @@ window.SantaCifra = window.SantaCifra || {};
         saveParishes(list);
       } else {
         let changed = false;
-        if (!found.priestName || found.priestName.includes('Antônio') || found.priestName.trim() === '') {
-          found.priestName = OFFICIAL_PARISH_SANTO_ANTONIO.priestName;
-          changed = true;
-        }
-        if (!found.facebookUrl) {
-          found.facebookUrl = OFFICIAL_PARISH_SANTO_ANTONIO.facebookUrl;
-          changed = true;
-        }
+        // Atualização estrita para os dados autênticos da Paróquia
+        found.name = OFFICIAL_PARISH_SANTO_ANTONIO.name;
+        found.priestName = OFFICIAL_PARISH_SANTO_ANTONIO.priestName;
+        found.priestEmail = OFFICIAL_PARISH_SANTO_ANTONIO.priestEmail;
+        found.city = OFFICIAL_PARISH_SANTO_ANTONIO.city;
+        found.diocese = OFFICIAL_PARISH_SANTO_ANTONIO.diocese;
+        found.address = OFFICIAL_PARISH_SANTO_ANTONIO.address;
+        found.creationDate = OFFICIAL_PARISH_SANTO_ANTONIO.creationDate;
+        found.description = OFFICIAL_PARISH_SANTO_ANTONIO.description;
+        found.facebookUrl = OFFICIAL_PARISH_SANTO_ANTONIO.facebookUrl;
+        changed = true;
         if (changed) saveParishes(list);
       }
     }
@@ -1188,6 +1194,9 @@ window.SantaCifra = window.SantaCifra || {};
             <div class="parish-hero-text">
               <div class="parish-badges-row">
                 <span class="parish-status-chip">✦ Paróquia Ativa</span>
+                <span class="parish-status-chip">📅 Criada em 31/07/2013</span>
+                <span class="parish-status-chip">📍 Diocese de Mogi das Cruzes</span>
+                <span class="parish-status-chip">🏙️ Ferraz de Vasconcelos - SP</span>
                 ${isPriest
                   ? `<span class="parish-role-chip priest-chip">✝️ Gestão Pastoral do Pároco</span>`
                   : `<span class="parish-role-chip musician-chip">🎸 Músico / Ministério Paroquial</span>`
@@ -1195,9 +1204,10 @@ window.SantaCifra = window.SantaCifra || {};
               </div>
               <h1 class="parish-title">${parish.name}</h1>
               <p class="parish-meta-line">
-                <span><strong>Pároco:</strong> ${parish.priestName || 'Padre'}</span>
+                <span><strong>Pároco:</strong> ${parish.priestName || 'Pe. Marlson Assis de Araújo'}</span>
                 ${parish.diocese ? `• <span>${parish.diocese}</span>` : ''}
                 ${parish.city ? `• <span>${parish.city}</span>` : ''}
+                ${parish.address ? `• <span>📍 ${parish.address}</span>` : ''}
                 ${parish.contactPhone ? `• <span>📞 ${parish.contactPhone}</span>` : ''}
               </p>
             </div>
