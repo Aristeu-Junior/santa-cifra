@@ -1400,3 +1400,46 @@
   margin-bottom: 14px;
   font-size: 0.9rem;
 }
+
+/* Badge do Facebook da Paróquia */
+.parish-facebook-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background-color: #1877f2;
+  color: #ffffff !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(24, 119, 242, 0.3);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.parish-facebook-badge:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.btn-test-priest-marlisson {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: 1px dashed var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--accent);
+  border-radius: var(--radius-md);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.btn-test-priest-marlisson:hover {
+  background-color: color-mix(in srgb, var(--accent) 16%, transparent);
+}

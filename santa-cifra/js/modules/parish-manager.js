@@ -32,14 +32,49 @@ window.SantaCifra = window.SantaCifra || {};
   const safeParse = sec.safeJsonParse || ((raw, fb) => { try { return JSON.parse(raw); } catch (_) { return fb; } });
   const sanitize = sec.sanitizeText || ((str, max = 80) => (typeof str === 'string' ? str.slice(0, max).trim() : ''));
 
+  const OFFICIAL_PARISH_SANTO_ANTONIO = {
+    id: 'paroquia-santo-antonio-de-padua-fv13',
+    name: 'Paróquia Santo Antônio de Pádua',
+    priestName: 'Pe. Marlisson Assis de Araújo',
+    priestEmail: 'padre.marlisson@santoantonio.org.br',
+    city: 'Santo Antônio de Pádua - RJ',
+    diocese: 'Diocese de Campos',
+    contactPhone: '(22) 3851-1234',
+    description: 'Comunidade paroquial de Santo Antônio de Pádua, celebrando com alegria o Santo Evangelho e o louvor litúrgico.',
+    facebookUrl: 'https://web.facebook.com/santoantoniodepaduafv13/',
+    createdAt: '2026-11-11T00:00:00.000Z'
+  };
+
   // ---------------------------------------------------------------------------
   // 1. Persistência de Dados (100% Zerada por Padrão)
   // ---------------------------------------------------------------------------
 
   function getParishes() {
     const raw = localStorage.getItem(STORAGE_PARISHES_KEY);
-    const list = safeParse(raw, null);
-    return Array.isArray(list) ? list : [];
+    let list = safeParse(raw, null);
+    if (!Array.isArray(list) || list.length === 0) {
+      list = [OFFICIAL_PARISH_SANTO_ANTONIO];
+      saveParishes(list);
+      setActiveParishId(OFFICIAL_PARISH_SANTO_ANTONIO.id);
+    } else {
+      const found = list.find(p => p.id === OFFICIAL_PARISH_SANTO_ANTONIO.id || p.name.toLowerCase().includes('santo antônio de pádua'));
+      if (!found) {
+        list.unshift(OFFICIAL_PARISH_SANTO_ANTONIO);
+        saveParishes(list);
+      } else {
+        let changed = false;
+        if (!found.priestName || found.priestName.includes('Antônio') || found.priestName.trim() === '') {
+          found.priestName = OFFICIAL_PARISH_SANTO_ANTONIO.priestName;
+          changed = true;
+        }
+        if (!found.facebookUrl) {
+          found.facebookUrl = OFFICIAL_PARISH_SANTO_ANTONIO.facebookUrl;
+          changed = true;
+        }
+        if (changed) saveParishes(list);
+      }
+    }
+    return list;
   }
 
   function saveParishes(list) {
@@ -1449,7 +1484,7 @@ window.SantaCifra = window.SantaCifra || {};
     // Purga de dados fictícios/mockados de versões de desenvolvimento anteriores
     try {
       const rawP = localStorage.getItem(STORAGE_PARISHES_KEY);
-      if (rawP && rawP.includes('paroquia-santo-antonio-de-padua')) {
+      if (rawP && rawP.includes('Pe. Antônio (Pároco)')) {
         localStorage.removeItem(STORAGE_PARISHES_KEY);
         localStorage.removeItem(STORAGE_MINISTRIES_KEY);
         localStorage.removeItem(STORAGE_SCHEDULES_KEY);

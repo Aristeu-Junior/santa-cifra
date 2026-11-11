@@ -525,40 +525,135 @@
 }
 
 /* ---------- Controle flutuante da rolagem ---------- */
+/* ---------- Controle flutuante da rolagem com Ajuste Fino ---------- */
 .scroll-floating-controller {
   position: fixed;
   bottom: 24px;
   right: 24px;
   z-index: 60;
-  background-color: var(--text-main);
-  color: var(--bg-page);
-  padding: 4px;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 4px 6px;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
-  gap: 2px;
-  box-shadow: var(--shadow-raised);
+  gap: 3px;
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.12);
+  user-select: none;
+  -webkit-user-select: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .scroll-floating-controller button {
-  min-width: var(--tap);
-  height: var(--tap);
-  padding: 0 10px;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 6px;
   background: transparent;
   border: none;
   border-radius: var(--radius-pill);
-  color: inherit;
-  font-size: 0.9rem;
+  color: var(--text-main);
+  font-size: 0.95rem;
   font-weight: 700;
-  font-variant-numeric: tabular-nums;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
 .scroll-floating-controller button:hover {
-  background-color: color-mix(in srgb, var(--bg-page) 18%, transparent);
+  background-color: var(--bg-hover);
+}
+
+.scroll-floating-controller button:active {
+  transform: scale(0.92);
+}
+
+.scroll-floating-controller .btn-step-speed {
+  font-size: 1.25rem;
+  font-weight: 800;
+  width: 34px;
+  color: var(--accent);
+}
+
+.scroll-floating-controller .floating-speed-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 32px;
+  padding: 0 8px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.scroll-floating-controller .floating-speed-badge:hover {
+  background-color: var(--bg-hover);
+}
+
+.scroll-floating-controller .btn-floating-play {
+  background-color: var(--accent);
+  color: var(--on-accent);
+  min-width: 40px;
+  height: 40px;
+  margin-left: 2px;
+}
+
+.scroll-floating-controller .btn-floating-play:hover {
+  background-color: var(--accent-strong);
+}
+
+.scroll-floating-controller .btn-floating-close {
+  color: var(--text-muted);
+}
+
+.scroll-floating-controller .btn-floating-close:hover {
+  color: var(--text-main);
+  background-color: var(--bg-hover);
+}
+
+/* Metrônomo Steppers no toolbarMore */
+.tb-metronome-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.tb-metronome-row .tb-btn-metro {
+  flex: 1;
+}
+
+.metro-bpm-steppers {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.metro-bpm-steppers .tb-step {
+  min-width: 32px;
+  height: 36px;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.metro-bpm-steppers .tb-step:hover {
+  background-color: var(--bg-hover);
 }
 
 /* ---------- Celular: ferramentas viram barra inferior ---------- */

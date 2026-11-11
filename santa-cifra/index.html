@@ -21,14 +21,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=25">
-  <link rel="stylesheet" href="css/layout.css?v=25">
-  <link rel="stylesheet" href="css/catalog.css?v=25">
-  <link rel="stylesheet" href="css/playlists.css?v=25">
-  <link rel="stylesheet" href="css/calendar.css?v=25">
-  <link rel="stylesheet" href="css/parish.css?v=25">
-  <link rel="stylesheet" href="css/viewer.css?v=25">
-  <link rel="stylesheet" href="css/dialogs.css?v=25">
+  <link rel="stylesheet" href="css/tokens.css?v=26">
+  <link rel="stylesheet" href="css/layout.css?v=26">
+  <link rel="stylesheet" href="css/catalog.css?v=26">
+  <link rel="stylesheet" href="css/playlists.css?v=26">
+  <link rel="stylesheet" href="css/calendar.css?v=26">
+  <link rel="stylesheet" href="css/parish.css?v=26">
+  <link rel="stylesheet" href="css/viewer.css?v=26">
+  <link rel="stylesheet" href="css/dialogs.css?v=26">
 </head>
 <body data-view="home">
 
@@ -497,20 +497,30 @@
         </button>
 
         <div class="tb-more" id="toolbarMore">
-          <button type="button" class="tb-btn" id="btnMetronome" aria-pressed="false">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 21 4-18h4l4 18Z"/><path d="m12 15 6-8"/></svg>
-            <span>Metrônomo <b id="bpmDisplay" class="bpm-num">80</b></span>
-            <span id="metronomeBeatDots" class="beat-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
-          </button>
+          <div class="tb-metronome-row">
+            <button type="button" class="tb-btn tb-btn-metro" id="btnMetronome" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 21 4-18h4l4 18Z"/><path d="m12 15 6-8"/></svg>
+              <span>Metrônomo <b id="bpmDisplay" class="bpm-num">80</b> BPM</span>
+              <span id="metronomeBeatDots" class="beat-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+            </button>
+            <div class="metro-bpm-steppers" role="group" aria-label="Ajuste de BPM">
+              <button type="button" class="tb-step" id="btnBpmDec" title="Diminuir 2 BPM" aria-label="Diminuir 2 BPM">&minus;</button>
+              <button type="button" class="tb-step" id="btnBpmInc" title="Aumentar 2 BPM" aria-label="Aumentar 2 BPM">+</button>
+            </div>
+          </div>
           <button type="button" class="tb-btn" id="btnTransposeReset">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
             <span>Tom original</span>
           </button>
           <div class="tb-font" role="group" aria-label="Tamanho da letra">
             <button type="button" class="tb-step" id="btnFontDec" aria-label="Diminuir letra">A&minus;</button>
-            <span class="tb-font-label">Letra</span>
+            <span class="tb-font-label" id="fontSizeLabelDisplay">13px</span>
             <button type="button" class="tb-step" id="btnFontInc" aria-label="Aumentar letra">A+</button>
           </div>
+          <button type="button" class="tb-btn" id="btnShareSongWhatsApp" title="Copiar cifra formatada com título e acordes para enviar no WhatsApp do grupo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            <span>Copiar p/ WhatsApp</span>
+          </button>
           <button type="button" class="tb-btn" id="btnPrint">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
             <span>Imprimir</span>
@@ -549,13 +559,20 @@
     </section>
   </main>
 
-  <!-- Controle flutuante da rolagem automática -->
-  <div class="scroll-floating-controller" id="scrollFloatingController" style="display: none;">
-    <button type="button" id="btnFloatingPlay" aria-label="Pausar ou continuar rolagem">
+  <!-- Controle flutuante da rolagem automática com ajuste fino de velocidade -->
+  <div class="scroll-floating-controller" id="scrollFloatingController" style="display: none;" role="toolbar" aria-label="Controle de Rolagem Automática">
+    <button type="button" id="btnFloatingTop" title="Voltar ao início da cifra" aria-label="Voltar ao início">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/><path d="M6 5h12"/></svg>
+    </button>
+    <button type="button" id="btnFloatingSpeedDec" class="btn-step-speed" title="Diminuir velocidade (-0.1x)" aria-label="Diminuir velocidade">&minus;</button>
+    <div class="floating-speed-badge" id="floatingSpeedBadge" role="button" tabindex="0" title="Velocidade atual. Clique para alternar presets rápidos.">
+      <span class="speed-num" id="floatingSpeedValue">1.0x</span>
+    </div>
+    <button type="button" id="btnFloatingSpeedInc" class="btn-step-speed" title="Aumentar velocidade (+0.1x)" aria-label="Aumentar velocidade">+</button>
+    <button type="button" id="btnFloatingPlay" class="btn-floating-play" aria-label="Pausar ou continuar rolagem" title="Pausar / Retomar rolagem">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
     </button>
-    <button type="button" id="btnFloatingSpeed" aria-label="Mudar velocidade da rolagem">1x</button>
-    <button type="button" id="btnFloatingClose" aria-label="Parar rolagem">
+    <button type="button" id="btnFloatingClose" class="btn-floating-close" aria-label="Parar rolagem" title="Fechar rolagem">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
   </div>
@@ -744,6 +761,9 @@
       <div class="priest-login-help-box">
         <button type="button" class="link-btn-priest-invite" id="btnOpenPriestInvitePrompt">
           <span>✝️ É Pároco e recebeu um convite? Cadastre-se aqui</span>
+        </button>
+        <button type="button" class="btn-test-priest-marlisson" id="btnTestMarlissonLogin" title="Acessar instantaneamente como o Pároco da Paróquia Santo Antônio de Pádua">
+          <span>✝️ Testar como Pároco (Pe. Marlisson Assis de Araújo)</span>
         </button>
       </div>
       <div class="auth-footer-prompt">
@@ -1201,28 +1221,28 @@
     </form>
   </dialog>
 
-  <script src="js/transposition.js?v=25"></script>
-  <script src="js/chords-data.js?v=25"></script>
-  <script src="js/metronome.js?v=25"></script>
+  <script src="js/transposition.js?v=26"></script>
+  <script src="js/chords-data.js?v=26"></script>
+  <script src="js/metronome.js?v=26"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=25"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=25"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=25"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=25"></script>
-  <script src="js/songs-catalog.js?v=25"></script>
-  <script src="js/supabase-client.js?v=25"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=26"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=26"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=26"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=26"></script>
+  <script src="js/songs-catalog.js?v=26"></script>
+  <script src="js/supabase-client.js?v=26"></script>
 
-  <script src="js/modules/icons.js?v=25"></script>
-  <script src="js/modules/auth.js?v=25"></script>
-  <script src="js/modules/state.js?v=25"></script>
-  <script src="js/modules/artists-view.js?v=25"></script>
-  <script src="js/modules/catalog-view.js?v=25"></script>
-  <script src="js/modules/playlists-view.js?v=25"></script>
-  <script src="js/modules/liturgical-calendar.js?v=25"></script>
-  <script src="js/modules/parish-manager.js?v=25"></script>
-  <script src="js/modules/song-viewer.js?v=25"></script>
-  <script src="js/modules/ota-updater.js?v=25"></script>
-  <script src="js/app.js?v=25"></script>
+  <script src="js/modules/icons.js?v=26"></script>
+  <script src="js/modules/auth.js?v=26"></script>
+  <script src="js/modules/state.js?v=26"></script>
+  <script src="js/modules/artists-view.js?v=26"></script>
+  <script src="js/modules/catalog-view.js?v=26"></script>
+  <script src="js/modules/playlists-view.js?v=26"></script>
+  <script src="js/modules/liturgical-calendar.js?v=26"></script>
+  <script src="js/modules/parish-manager.js?v=26"></script>
+  <script src="js/modules/song-viewer.js?v=26"></script>
+  <script src="js/modules/ota-updater.js?v=26"></script>
+  <script src="js/app.js?v=26"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -1233,7 +1253,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=25').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=26').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

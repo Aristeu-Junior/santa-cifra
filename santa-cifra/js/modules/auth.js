@@ -1050,6 +1050,43 @@ window.SantaCifra = window.SantaCifra || {};
     }, true);
   }
 
+  async function loginAsPriestMarlisson() {
+    const email = 'padre.marlisson@santoantonio.org.br';
+    const db = getLocalUsersDB();
+    let user = db[email];
+    if (!user) {
+      const saltHex = generateSaltHex(16);
+      const passwordHash = await hashPasswordPBKDF2('padre123', saltHex);
+      user = {
+        id: 'usr_padre_marlisson',
+        name: 'Pe. Marlisson Assis de Araújo',
+        email: email,
+        parish: 'Paróquia Santo Antônio de Pádua',
+        parishId: 'paroquia-santo-antonio-de-padua-fv13',
+        diocese: 'Diocese de Campos',
+        city: 'Santo Antônio de Pádua - RJ',
+        phone: '(22) 3851-1234',
+        role: 'padre',
+        salt: saltHex,
+        passwordHash,
+        createdAt: new Date().toISOString()
+      };
+      db[email] = user;
+      saveLocalUsersDB(db);
+    }
+    setSession(user);
+    if (window.SantaCifra.parish && window.SantaCifra.parish.setActiveParishId) {
+      window.SantaCifra.parish.setActiveParishId('paroquia-santo-antonio-de-padua-fv13');
+    }
+    const dlg = document.getElementById('authDialog');
+    if (dlg) dlg.close();
+    updateAuthUI();
+    if (window.SantaCifra.switchTab) {
+      window.SantaCifra.switchTab('parish');
+    }
+    return user;
+  }
+
   function bindAuthEvents() {
     setupModalScrollLock();
     const btnAuth = document.getElementById('btnUserAuth');
@@ -1278,6 +1315,20 @@ window.SantaCifra = window.SantaCifra || {};
     }
 
     // Atalho para Acesso Pastoral do Pároco (se recebeu link de convite)
+        const btnTestMarlisson = document.getElementById('btnTestMarlissonLogin');
+    if (btnTestMarlisson) {
+      btnTestMarlisson.addEventListener('click', async () => {
+        try {
+          btnTestMarlisson.disabled = true;
+          btnTestMarlisson.textContent = 'Conectando como Pároco...';
+          await loginAsPriestMarlisson();
+        } finally {
+          btnTestMarlisson.disabled = false;
+          btnTestMarlisson.textContent = '✝️ Testar como Pároco (Pe. Marlisson Assis de Araújo)';
+        }
+      });
+    }
+
     const btnOpenPriestPrompt = document.getElementById('btnOpenPriestInvitePrompt');
     if (btnOpenPriestPrompt) {
       btnOpenPriestPrompt.addEventListener('click', () => {
@@ -1336,6 +1387,7 @@ window.SantaCifra = window.SantaCifra || {};
     hideAlert,
     openAuthDialog,
     openProfileDialog,
+    loginAsPriestMarlisson,
     bindAuthEvents
   };
 })();
