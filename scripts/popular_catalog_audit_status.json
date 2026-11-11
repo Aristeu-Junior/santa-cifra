@@ -1,0 +1,2946 @@
+[
+  {
+    "idx": 0,
+    "id": "alma-de-cristo-santificai-me",
+    "title": "Alma de Cristo, Santificai-me (Anima Christi)",
+    "composer": "Santo Inácio de Loyola / Marco Frisina",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G  D  A  D",
+    "linesCount": 27,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 1,
+    "id": "sonda-me-senhor-salmo-138",
+    "title": "Sonda-me, Senhor, e Me Conhece (Salmo 138)",
+    "composer": "Salmo 138 (139) / Meditativo",
+    "originalKey": "C",
+    "intro": "C  Am  Dm  G  C",
+    "linesCount": 16,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 2,
+    "id": "estas-entre-nos-tu-es-minha-vida",
+    "title": "Estás Entre Nós (Tu És Minha Vida, Outro Deus Não Há)",
+    "composer": "Pe. Jonas Abib / Tradicional",
+    "originalKey": "Em",
+    "intro": "Em  C  D  G  B7",
+    "linesCount": 23,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 3,
+    "id": "sacramento-da-comunhao-nelsinho",
+    "title": "Sacramento da Comunhão (Senhor, Quando Te Vejo)",
+    "composer": "Diácono Nelsinho Corrêa / Comunidade Canção Nova",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A  D",
+    "linesCount": 63,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 4,
+    "id": "obrigado-senhor-porque-es-meu-amigo",
+    "title": "Obrigado, Senhor, Porque És Meu Amigo",
+    "composer": "Pe. Zezinho / Tradicional",
+    "originalKey": "G",
+    "intro": "G  C  D  G",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 5,
+    "id": "oracao-pela-familia-pe-zezinho",
+    "title": "Oração pela Família",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "C",
+    "intro": "C  G7  C",
+    "linesCount": 63,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 6,
+    "id": "maria-de-nazare-pe-zezinho",
+    "title": "Maria de Nazaré",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "D",
+    "intro": "D  Em  A7  D",
+    "linesCount": 27,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 7,
+    "id": "utopia-pe-zezinho",
+    "title": "Utopia (Das Muitas Coisas do Meu Tempo de Criança)",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "D",
+    "intro": "D  A7  D  A7  D",
+    "linesCount": 27,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 8,
+    "id": "amar-como-jesus-amou-pe-zezinho",
+    "title": "Amar Como Jesus Amou",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "D",
+    "intro": "D  A7  D",
+    "linesCount": 75,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 9,
+    "id": "um-certo-galileu-pe-zezinho",
+    "title": "Um Certo Galileu",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "C",
+    "intro": "C  G  C",
+    "linesCount": 45,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 10,
+    "id": "paz-inquieta-paz-de-cristo-pe-zezinho",
+    "title": "Paz, Paz de Cristo",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "Em",
+    "intro": "Em  Am  B7  Em",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 11,
+    "id": "aguia-pequena-pe-zezinho",
+    "title": "Águia Pequena",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "D",
+    "intro": "D  G  A7  D",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 12,
+    "id": "noites-traicoeiras-pe-marcelo-rossi",
+    "title": "Noites Traiçoeiras (Deus Está Aqui Neste Momento)",
+    "composer": "Padre Marcelo Rossi / Carlos Papae",
+    "originalKey": "G",
+    "intro": "G  Bm  C  D7  G",
+    "linesCount": 28,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 13,
+    "id": "basta-querer-pe-marcelo-rossi",
+    "title": "Basta Querer (Meu Pensamento Vive em Você)",
+    "composer": "Padre Marcelo Rossi / Jorge Guedes",
+    "originalKey": "G",
+    "intro": "G  D  Em  C  G  D",
+    "linesCount": 25,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 14,
+    "id": "quero-te-dar-a-paz-pe-marcelo-rossi",
+    "title": "Paz (Quero Te Dar a Paz do Meu Senhor)",
+    "composer": "Padre Marcelo Rossi",
+    "originalKey": "G",
+    "intro": "G  Em  C  D7  G",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 15,
+    "id": "forca-e-vitoria-pe-marcelo-rossi",
+    "title": "Força e Vitória (Todo Joelho Se Dobrará)",
+    "composer": "Padre Marcelo Rossi / Eliana Ribeiro",
+    "originalKey": "Bm",
+    "intro": "Bm  G  Em  F#7",
+    "linesCount": 20,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 16,
+    "id": "derrama-o-teu-amor-aqui-pe-marcelo-rossi",
+    "title": "Derrama o Teu Amor Aqui",
+    "composer": "Padre Marcelo Rossi / Celina Borges",
+    "originalKey": "G",
+    "intro": "G  D  Em  C  (2x)",
+    "linesCount": 17,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 17,
+    "id": "cura-senhor-onde-doi-pe-marcelo-rossi",
+    "title": "Cura, Senhor, Onde Dói",
+    "composer": "Padre Marcelo Rossi / Pe. Antônio Maria",
+    "originalKey": "C",
+    "intro": "C  G/B  Am  F  Dm  G7",
+    "linesCount": 23,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 18,
+    "id": "tudo-e-do-pai-pe-marcelo-rossi",
+    "title": "Tudo É do Pai (Eu Pensava Que Podia Viver Por Mim Mesmo)",
+    "composer": "Padre Marcelo Rossi / Frederico Cruz",
+    "originalKey": "G",
+    "intro": "G  D  Em  C  D7  G",
+    "linesCount": 27,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 19,
+    "id": "eu-navegarei-pe-marcelo-rossi",
+    "title": "Eu Navegarei no Oceano do Espírito",
+    "composer": "Padre Marcelo Rossi / Adoração",
+    "originalKey": "Am",
+    "intro": "Am  G  F  E7",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 20,
+    "id": "te-agradeco-pe-marcelo-rossi",
+    "title": "Te Agradeço (Por Tudo o Que Tens Feito)",
+    "composer": "Padre Marcelo Rossi",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 17,
+    "status": "GENERIC_CHORDS",
+    "snippetHits": []
+  },
+  {
+    "idx": 21,
+    "id": "a-ele-a-gloria-eugenio-jorge",
+    "title": "A Ele a Glória (Alfa, Ômega, Princípio e Fim)",
+    "composer": "Eugênio Jorge / Ministério Missão Mensagem Brasil",
+    "originalKey": "Em",
+    "intro": "Em  C  D  Em",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 22,
+    "id": "ninguem-te-ama-como-eu-martin-valverde",
+    "title": "Ninguém Te Ama Como Eu",
+    "composer": "Martín Valverde / Eugênio Jorge",
+    "originalKey": "C",
+    "intro": "C  G/B  Am  F  G  C",
+    "linesCount": 79,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 23,
+    "id": "chuva-de-graca-eliana-ribeiro",
+    "title": "Chuva de Graça",
+    "composer": "Eliana Ribeiro / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  D  Em  C  (2x)",
+    "linesCount": 27,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 24,
+    "id": "sacramento-da-comunhao-diacono-nelsinho-correa",
+    "title": "Sacramento da Comunhão (Senhor, Quando Te Vejo no Sacramento)",
+    "composer": "Diácono Nelsinho Corrêa / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A  D",
+    "linesCount": 63,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 25,
+    "id": "diante-do-rei-vida-reluz",
+    "title": "Diante do Rei (Vem, Senhor Jesus, o Coração Já Bate Forte)",
+    "composer": "Walmir Alencar / Vida Reluz",
+    "originalKey": "A",
+    "intro": "A  E/G#  F#m  D  E",
+    "linesCount": 61,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 26,
+    "id": "tao-sublime-sacramento-tradicional",
+    "title": "Tão Sublime Sacramento (Tantum Ergo)",
+    "composer": "São Tomás de Aquino / Melodia Tradicional",
+    "originalKey": "D",
+    "intro": "C  G  Am  F  G  C",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 27,
+    "id": "bendito-louvado-seja-santissimo-sacramento",
+    "title": "Bendito, Louvado Seja o Santíssimo Sacramento",
+    "composer": "Tradição Litúrgica Luso-Brasileira",
+    "originalKey": "G",
+    "intro": "D  A  D",
+    "linesCount": 45,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 28,
+    "id": "quero-mergulhar-nas-profundezas-cancao-nova",
+    "title": "Quero Mergulhar nas Profundezas",
+    "composer": "Canção Nova / Salette Ferreira",
+    "originalKey": "G",
+    "intro": "G  Em  C  D",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 29,
+    "id": "vem-louvar-hoje-e-tempo-de-louvar-a-deus",
+    "title": "Hoje É Tempo de Louvar a Deus (Vem Louvar)",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  G  A7  D  G  A7",
+    "linesCount": 16,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 30,
+    "id": "o-senhor-e-rei-monsenhor-jonas-abib",
+    "title": "O Senhor É Rei (O Senhor É Meu Pastor e Rei)",
+    "composer": "Monsenhor Jonas Abib / Pe. Marcelo Rossi",
+    "originalKey": "Em",
+    "intro": "Em  G  D  C",
+    "linesCount": 17,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 31,
+    "id": "restaura-nossa-casa-dunga-cancao-nova",
+    "title": "Restaura Nossa Casa, Senhor (Restauração)",
+    "composer": "Dunga / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 19,
+    "status": "GENERIC_CHORDS",
+    "snippetHits": []
+  },
+  {
+    "idx": 32,
+    "id": "amigos-pela-fe-anjos-de-resgate",
+    "title": "Amigos Pela Fé",
+    "composer": "Anjos de Resgate / Dalvimar Gallo",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G  Em  A7",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 33,
+    "id": "manda-teus-anjos-anjos-de-resgate",
+    "title": "Manda Teus Anjos Sobre Nós",
+    "composer": "Anjos de Resgate / Dalvimar Gallo",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 19,
+    "status": "GENERIC_CHORDS",
+    "snippetHits": []
+  },
+  {
+    "idx": 34,
+    "id": "mais-que-amigos-anjos-de-resgate",
+    "title": "Mais Que Amigos",
+    "composer": "Anjos de Resgate",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 35,
+    "id": "tua-familia-anjos-de-resgate",
+    "title": "Tua Família (Percebe e Entende)",
+    "composer": "Anjos de Resgate",
+    "originalKey": "G",
+    "intro": "G  D  Em  C  D  G",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 36,
+    "id": "estou-aqui-anjos-de-resgate",
+    "title": "Estou Aqui (Pra Ser Amado e Te Amar)",
+    "composer": "Anjos de Resgate / Dalvimar Gallo",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 37,
+    "id": "seja-luz-anjos-de-resgate",
+    "title": "Seja Luz",
+    "composer": "Anjos de Resgate / Marcelinho",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 23,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 38,
+    "id": "o-ceu-se-abre-ministerio-adoracao-e-vida",
+    "title": "O Céu Se Abre",
+    "composer": "Walmir Alencar / Ministério Adoração e Vida",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 19,
+    "status": "GENERIC_CHORDS",
+    "snippetHits": []
+  },
+  {
+    "idx": 39,
+    "id": "hoje-livre-sou-adoracao-e-vida",
+    "title": "Hoje Livre Sou",
+    "composer": "Walmir Alencar / Ministério Adoração e Vida",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 23,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 40,
+    "id": "tudo-posso-celina-borges",
+    "title": "Tudo Posso Naquele Que Me Fortalece",
+    "composer": "Celina Borges",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 41,
+    "id": "nas-asas-do-senhor-celina-borges",
+    "title": "Nas Asas do Senhor (Sei Que os Que Confiam no Senhor)",
+    "composer": "Celina Borges",
+    "originalKey": "G",
+    "intro": "G  Em  C  D",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 42,
+    "id": "sem-voce-rosa-de-saron",
+    "title": "Sem Você (Minha Alma Tem Sede de Ti)",
+    "composer": "Rosa de Saron / Guilherme de Sá",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D  (2x)",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 43,
+    "id": "deus-cuida-de-mim-pe-fabio-de-melo",
+    "title": "Deus Cuida de Mim",
+    "composer": "Padre Fábio de Melo / Kleber Lucas",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 19,
+    "status": "GENERIC_CHORDS",
+    "snippetHits": []
+  },
+  {
+    "idx": 44,
+    "id": "humano-demais-pe-fabio-de-melo",
+    "title": "Tudo É do Pai / Humano Amor de Deus",
+    "composer": "Padre Fábio de Melo",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "O Deus que fez o céu e a terra"
+    ]
+  },
+  {
+    "idx": 45,
+    "id": "alma-de-cristo-oracao-santo-inacio",
+    "title": "Alma de Cristo (Anima Christi)",
+    "composer": "Santo Inácio de Loyola / Melodia Tradicional e Shalom",
+    "originalKey": "D",
+    "intro": "D  Bm  G  A7  D",
+    "linesCount": 28,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 46,
+    "id": "nada-te-perturbe-santa-teresa-davila",
+    "title": "Nada Te Perturbe (Só Deus Basta)",
+    "composer": "Santa Teresa d'Ávila / Taizé & Liturgia",
+    "originalKey": "Am",
+    "intro": "Am  Dm  G  C  E7  Am",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 47,
+    "id": "sublime-walmir-alencar-adoracao-e-vida",
+    "title": "Sublime (Sublime É o Teu Amor Por Mim)",
+    "composer": "Walmir Alencar / Ministério Adoração e Vida",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em  C  D7  G",
+    "linesCount": 25,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 48,
+    "id": "deus-imenso-walmir-alencar-vida-reluz",
+    "title": "Deus Imenso (Não Sou Nada, Eu Bem Sei)",
+    "composer": "Walmir Alencar / Vida Reluz",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  Em  A7",
+    "linesCount": 25,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 49,
+    "id": "belissimo-esposo-comunidade-shalom",
+    "title": "Belíssimo Esposo",
+    "composer": "Comunidade Católica Shalom / Suely Façanha",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 50,
+    "id": "yeshua-colo-de-deus-comunidade",
+    "title": "Yeshua (Te Chamam de Deus e de Senhor)",
+    "composer": "Comunidade Colo de Deus / Comunidade Shalom",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 51,
+    "id": "acaso-nao-sabeis-colo-de-deus",
+    "title": "Acaso Não Sabeis (Eu Me Consagro a Ti)",
+    "composer": "Flávio Vitor Jr. / Comunidade Colo de Deus",
+    "originalKey": "D",
+    "intro": "D  G  Bm  A",
+    "linesCount": 25,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 52,
+    "id": "acalma-minha-tempestade-frei-gilson",
+    "title": "Acalma Minha Tempestade",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida",
+      "Em Tuas mãos seguro estou, Senhor!"
+    ]
+  },
+  {
+    "idx": 53,
+    "id": "eu-te-levantarei-frei-gilson",
+    "title": "Eu Te Levantarei",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 54,
+    "id": "deixa-deus-sonhar-em-ti-frei-gilson",
+    "title": "Deixa Deus Sonhar em Ti",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Ao redor da Santa Mesa"
+    ]
+  },
+  {
+    "idx": 55,
+    "id": "minha-essencia-thiago-brado",
+    "title": "Minha Essência (Vim Até Aqui Derramar o Meu Passado em Ti)",
+    "composer": "Thiago Brado",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 19,
+    "status": "GENERIC_CHORDS",
+    "snippetHits": []
+  },
+  {
+    "idx": 56,
+    "id": "verdades-do-tempo-thiago-brado",
+    "title": "Verdades do Tempo",
+    "composer": "Thiago Brado",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 57,
+    "id": "regaco-acolhedor-suely-facanha",
+    "title": "Regaço Acolhedor (Salmo 130)",
+    "composer": "Suely Façanha / Comunidade Shalom",
+    "originalKey": "D",
+    "intro": "D  G  Em  A7  D",
+    "linesCount": 23,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 58,
+    "id": "teu-sol-vai-brilhar-pe-zezinho",
+    "title": "Teu Sol Vai Brilhar",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "C",
+    "intro": "C  Am  Dm  G7  C",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 59,
+    "id": "se-eu-fosse-um-cristal-pe-zezinho",
+    "title": "Se Eu Fosse um Cristal",
+    "composer": "Padre Zezinho, scj",
+    "originalKey": "D",
+    "intro": "D  G  A7  D",
+    "linesCount": 16,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 60,
+    "id": "a-tempestade-vai-passar-pe-reginaldo-manzotti",
+    "title": "A Tempestade Vai Passar",
+    "composer": "Padre Reginaldo Manzotti",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 61,
+    "id": "milagres-pe-reginaldo-manzotti",
+    "title": "Milagres (Podes Realizar Milagres)",
+    "composer": "Padre Reginaldo Manzotti",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 62,
+    "id": "sonda-me-usa-me-aline-pe-antonio-maria",
+    "title": "Nossa Senhora (O Que É Que Eu Sou Sem Jesus)",
+    "composer": "Padre Antônio Maria",
+    "originalKey": "D",
+    "intro": "D  G  A7  D",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 63,
+    "id": "humano-amor-de-deus-adriana-arydes",
+    "title": "Humano Amor de Deus",
+    "composer": "Adriana Arydes / Pe. Fábio de Melo",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 21,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 64,
+    "id": "abraço-eterno-chave-do-coracao-adriana-arydes",
+    "title": "Chave do Coração",
+    "composer": "Adriana Arydes",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 65,
+    "id": "regina-caeli-via-sacra-irma-kelly-patricia",
+    "title": "Sob o Olhar de Maria (Via Sacra / Prisioneiro do Amor)",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 21,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 66,
+    "id": "faz-um-milagre-em-mim-pe-marcelo-rossi",
+    "title": "Faz um Milagre em Mim (Como Zaqueu)",
+    "composer": "Padre Marcelo Rossi / Régis Danese",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 23,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 67,
+    "id": "soberano-eliana-ribeiro",
+    "title": "Soberano, Maravilhoso",
+    "composer": "Eliana Ribeiro / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 68,
+    "id": "gratidao-eu-encontrei-um-amor-perfeito",
+    "title": "Gratidão (Eu Encontrei um Amor Perfeito - Lucas 17, 15)",
+    "composer": "Canção Nova / Raquel Carpenter",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 17,
+    "status": "GENERIC_CHORDS",
+    "snippetHits": []
+  },
+  {
+    "idx": 69,
+    "id": "tu-es-o-centro-frei-gilson",
+    "title": "Tu És o Centro da Minha Vida",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 70,
+    "id": "sopra-em-nos-fraternidade-sao-joao-paulo-ii",
+    "title": "Sopra em Nós (Vento Impetuoso)",
+    "composer": "Fraternidade São João Paulo II",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 71,
+    "id": "leao-de-juda-fraternidade-sao-joao-paulo-ii",
+    "title": "Leão de Judá / Filho de Davi",
+    "composer": "Fraternidade São João Paulo II",
+    "originalKey": "Dm",
+    "intro": "Dm  Bb  F  C",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 72,
+    "id": "tudo-passa-so-deus-nao-passa-fsjpii",
+    "title": "Tudo Passa (Só Deus Basta)",
+    "composer": "Fraternidade São João Paulo II",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 73,
+    "id": "sacramento-de-amor-toca-de-assis",
+    "title": "Sacramento de Amor (Deus Escondido no Pão)",
+    "composer": "Fraternidade Toca de Assis",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G  Em  A7",
+    "linesCount": 19,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 74,
+    "id": "adorador-por-excelencia-toca-de-assis",
+    "title": "Adorador por Excelência (Pra Sempre Teu)",
+    "composer": "Fraternidade Toca de Assis",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 25,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 75,
+    "id": "nos-pobres-te-encontrei-fraternidade-o-caminho",
+    "title": "Nos Pobres Te Encontrei (Tive Fome e Me Deste de Comer)",
+    "composer": "Fraternidade O Caminho",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 21,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 76,
+    "id": "totus-tuus-maria-fraternidade-arca-de-maria",
+    "title": "Totus Tuus Maria (Todo Teu, ó Mãe)",
+    "composer": "Fraternidade Arca de Maria",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 77,
+    "id": "ruah-sopro-de-deus-alianca-de-misericordia",
+    "title": "Ruah (Espírito Santo Repousa)",
+    "composer": "Comunidade Aliança de Misericórdia",
+    "originalKey": "Am",
+    "intro": "Am  F  C  G",
+    "linesCount": 21,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 78,
+    "id": "mao-no-arado-comunidade-recado",
+    "title": "Mão no Arado (Ninguém Olha Para Trás)",
+    "composer": "Comunidade Recado",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 79,
+    "id": "fidelidade-comunidade-pantokrator",
+    "title": "Fidelidade (Ser Teu Tudo, Senhor)",
+    "composer": "Comunidade Católica Pantokrator",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 30,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 80,
+    "id": "alegra-te-cheia-de-graca-obra-de-maria",
+    "title": "Alegra-te, Cheia de Graça (Servir Com Alegria)",
+    "composer": "Comunidade Obra de Maria",
+    "originalKey": "G",
+    "intro": "G  C  D7  G",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 81,
+    "id": "soberano-poderoso-deus-tony-allysson",
+    "title": "Poderoso Deus / Soberano",
+    "composer": "Tony Allysson",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 82,
+    "id": "amar-te-mais-davidson-silva",
+    "title": "Amar-Te Mais",
+    "composer": "Davidson Silva / Comunidade Shalom",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 83,
+    "id": "eu-sou-teu-ana-gabriela",
+    "title": "Eu Sou Teu (Mais Que Tudo)",
+    "composer": "Ana Gabriela",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 84,
+    "id": "teu-amor-me-sustentara-juninho-cassimiro",
+    "title": "Teu Amor Me Sustentará",
+    "composer": "Juninho Cassimiro",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 85,
+    "id": "a-vitoria-e-nossa-pitter-di-laura",
+    "title": "A Vitória É Nossa Pelo Sangue de Jesus",
+    "composer": "Pitter Di Laura / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 86,
+    "id": "tu-es-meu-tudo-thiago-tome",
+    "title": "Senhor, Tu És Meu Tudo",
+    "composer": "Thiago Tomé / Canção Nova",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 87,
+    "id": "coracao-adorador-rogerinha-moreira",
+    "title": "Coração Adorador",
+    "composer": "Rogerinha Moreira / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 88,
+    "id": "confiarei-pe-adriano-zandona",
+    "title": "Confiarei no Teu Amor",
+    "composer": "Padre Adriano Zandoná",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 89,
+    "id": "o-que-e-que-eu-sou-sem-jesus-pe-alessandro-campos",
+    "title": "O Que É Que Eu Sou Sem Jesus",
+    "composer": "Padre Alessandro Campos",
+    "originalKey": "G",
+    "intro": "G  D7  G  C  G  D7  G",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 90,
+    "id": "restaura-minha-fe-pe-juarez-de-castro",
+    "title": "Restaura Minha Fé, Senhor",
+    "composer": "Padre Juarez de Castro",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 91,
+    "id": "cuidar-da-familia-pe-ezequiel-dal-pozzo",
+    "title": "Cuidar da Família e da Vida",
+    "composer": "Padre Ezequiel Dal Pozzo",
+    "originalKey": "G",
+    "intro": "G  C  D7  G",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 92,
+    "id": "pertinho-de-ti-irma-ana-paula",
+    "title": "Pertinho de Ti (Aos Pés do Sacrário)",
+    "composer": "Irmã Ana Paula, cmc",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 93,
+    "id": "tudo-e-possivel-ao-que-cre-banda-dom",
+    "title": "Tudo É Possível ao Que Crê (Marcos 9, 23)",
+    "composer": "Banda Dom",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 94,
+    "id": "nao-ha-limites-banda-dominus",
+    "title": "Não Há Limites Para o Amor de Deus",
+    "composer": "Banda Dominus / Léo Rabello",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 95,
+    "id": "tua-graca-me-basta-ceremonya",
+    "title": "Tua Graça Me Basta, Senhor",
+    "composer": "Banda Ceremonya",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 96,
+    "id": "mundo-novo-eros-biondini",
+    "title": "Mundo Novo (Novo Céu e Nova Terra)",
+    "composer": "Eros Biondini / Missão Mundo Novo",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 97,
+    "id": "aleluia-alvaro-e-daniel",
+    "title": "Aleluia (Pai, Eu Quero Te Amar)",
+    "composer": "Álvaro e Daniel",
+    "originalKey": "C",
+    "intro": "C  Am  C  Am  F  G  C",
+    "linesCount": 21,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 98,
+    "id": "tua-graca-me-alcancou-italo-villar",
+    "title": "Tua Graça Me Alcançou",
+    "composer": "Italo Villar",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 99,
+    "id": "rendido-estou-aos-teus-pes-yuri-costa",
+    "title": "Rendido Estou aos Teus Pés",
+    "composer": "Yuri Costa",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 100,
+    "id": "paz-e-bem-irmao-fraternidade-sao-francisco",
+    "title": "Paz e Bem, Irmão (Saudação Franciscana)",
+    "composer": "Fraternidade São Francisco de Assis",
+    "originalKey": "G",
+    "intro": "G  C  D7  G",
+    "linesCount": 30,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 101,
+    "id": "sob-o-manto-da-virgem-fraternidade-casa-de-maria",
+    "title": "Sob o Manto da Virgem Maria",
+    "composer": "Fraternidade Casa de Maria",
+    "originalKey": "D",
+    "intro": "D  G  A7  D",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 102,
+    "id": "avanca-para-aguas-mais-profundas-mar-a-dentro",
+    "title": "Avança Para Águas Mais Profundas (Duc in Altum - Lucas 5, 4)",
+    "composer": "Comunidade Católica Mar a Dentro",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 38,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 103,
+    "id": "orar-pela-familia-pe-chrystian-shankar",
+    "title": "Restaura a Nossa Família, Senhor",
+    "composer": "Padre Chrystian Shankar",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 104,
+    "id": "cura-me-senhor-pe-hewaldo-trevisan",
+    "title": "Cura-me, Senhor Jesus (Salmo 6, 3)",
+    "composer": "Padre Hewaldo Trevisan",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 105,
+    "id": "manso-e-humilde-de-coracao-irma-zelia",
+    "title": "Jesus, Manso e Humilde de Coração (Mateus 11, 29)",
+    "composer": "Irmã Zélia Garcia",
+    "originalKey": "C",
+    "intro": "C  F  G7  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 106,
+    "id": "exercito-de-sao-miguel-instituto-hesed",
+    "title": "Quem Como Deus? (Consagração a São Miguel Arcanjo)",
+    "composer": "Irmã Maria Raquel / Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "Am",
+    "intro": "Am  F  C  E7",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 107,
+    "id": "adorar-te-em-verdade-laercio-oliveira",
+    "title": "Adorar-Te em Espírito e em Verdade",
+    "composer": "Laércio Oliveira",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 108,
+    "id": "teu-amor-nao-falha-rafael-morel-msh",
+    "title": "Teu Amor Jamais Falhará (Salmo 135)",
+    "composer": "Rafael Morel / Missionário Shalom",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 109,
+    "id": "fogo-alto-santo-espirito-flavio-vitor-jr",
+    "title": "Fogo Alto (Vem Queimar Meu Coração)",
+    "composer": "Flávio Vitor Jr.",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "No silêncio agradecido",
+      "Minh'alma engrandece o Nome",
+      "Recebe a minha entrega",
+      "Permanece para sempre em minha vida"
+    ]
+  },
+  {
+    "idx": 110,
+    "id": "casa-de-maria-mayara-marques-colo-de-deus",
+    "title": "Casa de Maria (Cheia de Graça)",
+    "composer": "Mayara Marques / Comunidade Colo de Deus",
+    "originalKey": "D",
+    "intro": "D  G  Bm  A",
+    "linesCount": 30,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Alimentados na Mesa"
+    ]
+  },
+  {
+    "idx": 111,
+    "id": "rosa-de-saron-te-louvo-em-verdade",
+    "title": "Te Louvo em Verdade",
+    "composer": "Rosa de Saron",
+    "originalKey": "E",
+    "intro": "E  F#m  G#m  A  B  E",
+    "linesCount": 47,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 112,
+    "id": "rosa-de-saron-as-dores-do-silencio",
+    "title": "As Dores do Silêncio",
+    "composer": "Rosa de Saron",
+    "originalKey": "B",
+    "intro": "B  F#/A#  G#m7  E9  B/D#  C#m7  F#4  F#",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 113,
+    "id": "rosa-de-saron-do-alto-da-pedra",
+    "title": "Do Alto da Pedra",
+    "composer": "Rosa de Saron",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em7  C9  G/B  Am7  D4  D",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 114,
+    "id": "rosa-de-saron-o-sol-da-meia-noite",
+    "title": "O Sol da Meia-Noite",
+    "composer": "Rosa de Saron",
+    "originalKey": "Em",
+    "intro": "Em  C9  G  D/F#  Em  C9  D4  D",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 115,
+    "id": "rosa-de-saron-marcas",
+    "title": "Marcas",
+    "composer": "Rosa de Saron",
+    "originalKey": "C",
+    "intro": "C  G/B  Am7  F9  C/E  Dm7  G4  G",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 116,
+    "id": "rosa-de-saron-rara-calma",
+    "title": "Rara Calma",
+    "composer": "Rosa de Saron",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm7  G9  D/F#  Em7  A4  A",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 117,
+    "id": "rosa-de-saron-monte-inverno",
+    "title": "Monte Inverno",
+    "composer": "Rosa de Saron",
+    "originalKey": "Am",
+    "intro": "Am  F9  C  G/B  Am  F9  E4  E",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 118,
+    "id": "rosa-de-saron-menos-de-um-segundo",
+    "title": "Menos de Um Segundo",
+    "composer": "Rosa de Saron",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em7  C9  G/B  Am7  D4  D",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 119,
+    "id": "rosa-de-saron-mais-que-um-mero-poema",
+    "title": "Mais Que um Mero Poema",
+    "composer": "Rosa de Saron",
+    "originalKey": "C",
+    "intro": "C  G/B  Am7  F9  C/E  Dm7  G4  G",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 120,
+    "id": "rosa-de-saron-chuva-fria",
+    "title": "Chuva Fria",
+    "composer": "Rosa de Saron",
+    "originalKey": "Dm",
+    "intro": "Dm  Bb9  F  C/E  Dm  Bb9  A4  A",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 121,
+    "id": "rosa-de-saron-folhas-do-chao",
+    "title": "Folhas do Chão",
+    "composer": "Rosa de Saron",
+    "originalKey": "A",
+    "intro": "A  E/G#  F#m7  D9  A/C#  Bm7  E4  E",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 122,
+    "id": "rosa-de-saron-invernia",
+    "title": "Invernia",
+    "composer": "Rosa de Saron",
+    "originalKey": "Em",
+    "intro": "Em  C9  G  D/F#  Em  C9  B4  B",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 123,
+    "id": "thiago-brado-foi-por-voce",
+    "title": "Foi Por Você",
+    "composer": "Thiago Brado",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em7  C9  G/B  Am7  D4  D",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 124,
+    "id": "thiago-brado-meu-alvo",
+    "title": "Meu Alvo",
+    "composer": "Thiago Brado",
+    "originalKey": "C",
+    "intro": "C  G/B  Am7  F9",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 125,
+    "id": "thiago-brado-o-bom-pastor",
+    "title": "O Bom Pastor",
+    "composer": "Thiago Brado",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm7  G9  D/F#  Em7  A4  A",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 126,
+    "id": "thiago-brado-terra-seca",
+    "title": "Terra Seca",
+    "composer": "Thiago Brado",
+    "originalKey": "Am",
+    "intro": "Am  F9  C  G/B  Am  F9  E4  E",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 127,
+    "id": "thiago-brado-meu-mundo",
+    "title": "Meu Mundo",
+    "composer": "Thiago Brado",
+    "originalKey": "E",
+    "intro": "E  B/D#  C#m7  A9  E/G#  F#m7  B4  B",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 128,
+    "id": "thiago-brado-nao-estou-so",
+    "title": "Não Estou Só",
+    "composer": "Thiago Brado",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em7  C9",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 129,
+    "id": "thiago-brado-nova-manha",
+    "title": "Nova Manhã",
+    "composer": "Thiago Brado",
+    "originalKey": "A",
+    "intro": "A  E/G#  F#m7  D9  A/C#  Bm7  E4  E",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 130,
+    "id": "thiago-brado-sopro-suave",
+    "title": "Sopro Suave",
+    "composer": "Thiago Brado",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm7  G9  D/F#  Em7  A4  A",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 131,
+    "id": "thiago-brado-teu-santo-nome",
+    "title": "Teu Santo Nome",
+    "composer": "Thiago Brado",
+    "originalKey": "C",
+    "intro": "C  G/B  Am7  F9  C/E  Dm7  G4  G",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 132,
+    "id": "mons-jonas-abib-que-santidade-de-vida",
+    "title": "Que Santidade de Vida",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm7  G  Em7  A4  A7",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 133,
+    "id": "mons-jonas-abib-cancao-do-espirito",
+    "title": "Canção do Espírito (Deixa Jesus Encher Tua Vida)",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  G  A7  D  G  A7",
+    "linesCount": 41,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 134,
+    "id": "mons-jonas-abib-cantai-ao-senhor-cantico-novo",
+    "title": "Cantai ao Senhor um Cântico Novo",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "Em",
+    "intro": "Em  D  C  B7  Em",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 135,
+    "id": "mons-jonas-abib-eu-e-minha-casa",
+    "title": "Eu e Minha Casa Serviremos ao Senhor",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em7  C9  D7  G",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 136,
+    "id": "mons-jonas-abib-vigia-esperando-a-aurora",
+    "title": "Vigia Esperando a Aurora",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "C",
+    "intro": "C  G/B  Am7  F9  Dm7  G4  G",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 137,
+    "id": "mons-jonas-abib-inunda-meu-ser",
+    "title": "Inunda Meu Ser",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "A",
+    "intro": "A  E/G#  F#m7  D9  Bm7  E4  E7",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 138,
+    "id": "mons-jonas-abib-juras-de-amor",
+    "title": "Juras de Amor",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em7  C9  Am7  D4  D7",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 139,
+    "id": "mons-jonas-abib-nao-da-mais-pra-voltar",
+    "title": "Não Dá Mais Pra Voltar (O Barco Está Virando)",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  Bm7  G  A7  D  A7",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 140,
+    "id": "mons-jonas-abib-cristo-quero-ser-instrumento",
+    "title": "Cristo, Quero Ser Instrumento de Tua Paz",
+    "composer": "Monsenhor Jonas Abib / Canção Nova",
+    "originalKey": "C",
+    "intro": "C  Am7  Dm7  G7  C  G7",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 141,
+    "id": "banda-dom-seu-amor-e-demais",
+    "title": "Seu Amor É Demais",
+    "composer": "Banda Dom",
+    "originalKey": "G",
+    "intro": "G  D  Em7  C9  G  D  C9",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 142,
+    "id": "banda-dom-coracao-adorador",
+    "title": "Coração Adorador",
+    "composer": "Banda Dom",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm7  G9  Em7  A4  A",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 143,
+    "id": "banda-dom-cancao-de-pedro",
+    "title": "Canção de Pedro",
+    "composer": "Banda Dom",
+    "originalKey": "A",
+    "intro": "A  E/G#  F#m7  D9  Bm7  E4  E",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 144,
+    "id": "banda-dom-eu-sou-o-que-sou",
+    "title": "Eu Sou o Que Sou",
+    "composer": "Banda Dom",
+    "originalKey": "E",
+    "intro": "E  B/D#  C#m7  A9  F#m7  B4  B",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 145,
+    "id": "banda-dom-aos-pes-da-tua-cruz",
+    "title": "Aos Pés da Tua Cruz",
+    "composer": "Banda Dom",
+    "originalKey": "C",
+    "intro": "C  G/B  Am7  F9  Dm7  G4  G",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 146,
+    "id": "banda-dom-fiat-faca-se",
+    "title": "Fiat (Faça-se em Mim)",
+    "composer": "Banda Dom",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em7  C9  Am7  D4  D",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 147,
+    "id": "banda-dom-permanecer-no-amor",
+    "title": "Permanecer no Amor",
+    "composer": "Banda Dom",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm7  G9  Em7  A4  A",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 148,
+    "id": "banda-dom-pescador-de-cristo",
+    "title": "Pescador de Cristo",
+    "composer": "Banda Dom",
+    "originalKey": "A",
+    "intro": "A  E  F#m7  D9  A  E  D9",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 149,
+    "id": "banda-dom-eu-vou-pelo-mundo",
+    "title": "Eu Vou Pelo Mundo",
+    "composer": "Banda Dom",
+    "originalKey": "E",
+    "intro": "E  B  C#m7  A9  E  B  A9",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 150,
+    "id": "banda-dom-deus-e-dez",
+    "title": "Deus É Dez",
+    "composer": "Banda Dom",
+    "originalKey": "G",
+    "intro": "G  C9  D  G  C9  D",
+    "linesCount": 33,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 151,
+    "id": "frei-gilson-eu-seguirei",
+    "title": "Eu Seguirei",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "E",
+    "intro": "E  B  C#m  A",
+    "linesCount": 29,
+    "status": "BOILERPLATE_LYRICS",
+    "snippetHits": [
+      "Respondendo ao Teu chamado",
+      "1. Eu vou, deixando tudo para trás"
+    ]
+  },
+  {
+    "idx": 152,
+    "id": "frei-gilson-colo-de-mae",
+    "title": "Colo de Mãe",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 27,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 153,
+    "id": "frei-gilson-de-ti-preciso",
+    "title": "De Ti Preciso",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 154,
+    "id": "frei-gilson-deixa-deus-sonhar-em-ti",
+    "title": "Deixa Deus Sonhar em Ti",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 155,
+    "id": "frei-gilson-o-sangue-de-jesus",
+    "title": "O Sangue de Jesus Tem Poder",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "Am",
+    "intro": "Am  F  C  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 156,
+    "id": "frei-gilson-eu-te-levantarei",
+    "title": "Eu Te Levantarei",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 157,
+    "id": "frei-gilson-santo-espirito-de-deus",
+    "title": "Santo Espírito de Deus",
+    "composer": "Frei Gilson / Som do Monte",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 158,
+    "id": "colo-de-deus-queima-de-novo",
+    "title": "Queima de Novo",
+    "composer": "Comunidade Colo de Deus",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 29,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 159,
+    "id": "colo-de-deus-mistica-sublime",
+    "title": "Mística Sublime",
+    "composer": "Comunidade Colo de Deus",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 160,
+    "id": "colo-de-deus-casa",
+    "title": "Casa (Fica à Vontade)",
+    "composer": "Comunidade Colo de Deus",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 161,
+    "id": "colo-de-deus-eis-me-aqui",
+    "title": "Eis-Me Aqui (Colo de Deus)",
+    "composer": "Comunidade Colo de Deus",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 162,
+    "id": "colo-de-deus-abba-pai",
+    "title": "Abba Pai",
+    "composer": "Comunidade Colo de Deus",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 163,
+    "id": "colo-de-deus-a-paz-que-o-mundo-nao-me-da",
+    "title": "A Paz Que o Mundo Não Me Dá",
+    "composer": "Comunidade Colo de Deus",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 164,
+    "id": "colo-de-deus-desperta",
+    "title": "Desperta (Levanta-te)",
+    "composer": "Comunidade Colo de Deus",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 165,
+    "id": "irma-kelly-patricia-passarinho",
+    "title": "Passarinho",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 166,
+    "id": "irma-kelly-patricia-via-sacra",
+    "title": "Via Sacra (Pela Via Dolorosa)",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "Em",
+    "intro": "Em  C  G  B7",
+    "linesCount": 22,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 167,
+    "id": "irma-kelly-patricia-prisioneiro-do-amor",
+    "title": "Prisioneiro do Amor",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 168,
+    "id": "irma-kelly-patricia-morada",
+    "title": "Morada (Faz em Mim Tua Morada)",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 169,
+    "id": "irma-kelly-patricia-viver-de-amor",
+    "title": "Viver de Amor (Santa Teresinha)",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 170,
+    "id": "irma-kelly-patricia-buscai-as-coisas-do-alto",
+    "title": "Buscai as Coisas do Alto (Colossenses 3, 1)",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 22,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 171,
+    "id": "irma-kelly-patricia-soberano-rei",
+    "title": "Soberano Rei (São Miguel Arcanjo)",
+    "composer": "Irmã Kelly Patrícia / Instituto Hesed",
+    "originalKey": "Am",
+    "intro": "Am  F  C  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 172,
+    "id": "pe-fabio-de-melo-tudo-e-do-pai",
+    "title": "Tudo É do Pai",
+    "composer": "Padre Fábio de Melo / Frederico Cruz",
+    "originalKey": "C",
+    "intro": "C  G/B  Am  F  G7",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 173,
+    "id": "pe-fabio-de-melo-incendeia-minha-alma",
+    "title": "Incendeia Minha Alma",
+    "composer": "Padre Fábio de Melo / Rogério / Júlio",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 26,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 174,
+    "id": "pe-fabio-de-melo-Deus-cuida-de-mim",
+    "title": "Deus Cuida de Mim",
+    "composer": "Padre Fábio de Melo / Kleber Lucas",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 175,
+    "id": "pe-fabio-de-melo-vida",
+    "title": "Vida (Já Não Sei Viver Sem Teu Amor)",
+    "composer": "Padre Fábio de Melo",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 176,
+    "id": "pe-fabio-de-melo-direcao",
+    "title": "Direção",
+    "composer": "Padre Fábio de Melo",
+    "originalKey": "E",
+    "intro": "E  B  C#m  A",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 177,
+    "id": "pe-fabio-de-melo-seja-bem-vindo",
+    "title": "Seja Bem-Vindo",
+    "composer": "Padre Fábio de Melo",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 178,
+    "id": "pe-fabio-de-melo-solo-sagrado",
+    "title": "Solo Sagrado",
+    "composer": "Padre Fábio de Melo",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 179,
+    "id": "celina-borges-tudo-posso",
+    "title": "Tudo Posso (Naquele Que Me Fortalece)",
+    "composer": "Celina Borges",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 22,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 180,
+    "id": "celina-borges-nas-asas-do-senhor",
+    "title": "Nas Asas do Senhor",
+    "composer": "Celina Borges",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 181,
+    "id": "celina-borges-diamante",
+    "title": "Diamante (Lapidado por Deus)",
+    "composer": "Celina Borges",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 182,
+    "id": "celina-borges-back-to-faith",
+    "title": "De Volta à Fé (Renascer no Amor)",
+    "composer": "Celina Borges",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 183,
+    "id": "adriana-arydes-abraco-de-pai",
+    "title": "Abraço de Pai",
+    "composer": "Adriana Arydes / Walmir Alencar",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em  C  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 184,
+    "id": "adriana-arydes-humano-amor-de-deus",
+    "title": "Humano Amor de Deus",
+    "composer": "Adriana Arydes",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 185,
+    "id": "adriana-arydes-coracao-sagrado",
+    "title": "Coração Sagrado",
+    "composer": "Adriana Arydes",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 186,
+    "id": "adriana-arydes-nova-manha",
+    "title": "Nova Manhã (Adriana Arydes)",
+    "composer": "Adriana Arydes",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 187,
+    "id": "adriana-arydes-guardioes",
+    "title": "Guardiões (Anjos de Deus)",
+    "composer": "Adriana Arydes",
+    "originalKey": "E",
+    "intro": "E  B  C#m  A",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 188,
+    "id": "adriana-arydes-chave-do-coracao",
+    "title": "A Chave do Coração",
+    "composer": "Adriana Arydes",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 189,
+    "id": "tony-allysson-poderoso-deus",
+    "title": "Poderoso Deus",
+    "composer": "Tony Allysson",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 190,
+    "id": "tony-allysson-marca-da-vitoria",
+    "title": "Marca da Vitória",
+    "composer": "Tony Allysson",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 191,
+    "id": "tony-allysson-aguas-profundas",
+    "title": "Águas Profundas",
+    "composer": "Tony Allysson",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 192,
+    "id": "tony-allysson-sustenta-o-fogo",
+    "title": "Sustenta o Fogo",
+    "composer": "Tony Allysson",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 193,
+    "id": "diego-fernandes-templo-vivo",
+    "title": "Templo Vivo",
+    "composer": "Diego Fernandes",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 194,
+    "id": "diego-fernandes-danca-de-avivamento",
+    "title": "Dança de Avivamento",
+    "composer": "Diego Fernandes",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 195,
+    "id": "diego-fernandes-eu-nao-esqueco",
+    "title": "Eu Não Esqueço (As Promessas de Deus)",
+    "composer": "Diego Fernandes",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 196,
+    "id": "diego-fernandes-no-colo-de-maria",
+    "title": "No Colo de Maria",
+    "composer": "Diego Fernandes",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 197,
+    "id": "diego-fernandes-marcado-pelo-fogo",
+    "title": "Marcado Pelo Fogo",
+    "composer": "Diego Fernandes",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 198,
+    "id": "diego-fernandes-ser-diferente",
+    "title": "Ser Diferente (Sal da Terra e Luz do Mundo)",
+    "composer": "Diego Fernandes",
+    "originalKey": "E",
+    "intro": "E  B  C#m  A",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 199,
+    "id": "davidson-silva-cada-dia",
+    "title": "Cada Dia",
+    "composer": "Davidson Silva / Comunidade Católica Shalom",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 200,
+    "id": "davidson-silva-sinal-do-meu-amor",
+    "title": "Sinal do Meu Amor",
+    "composer": "Davidson Silva / Comunidade Católica Shalom",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 201,
+    "id": "davidson-silva-nada-nos-separara",
+    "title": "Nada Nos Separará (Romanos 8, 35)",
+    "composer": "Davidson Silva / Comunidade Católica Shalom",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 202,
+    "id": "davidson-silva-tome",
+    "title": "Tomé (Manda-me Vir até Ti / Meu Senhor e Meu Deus)",
+    "composer": "Davidson Silva / Comunidade Católica Shalom",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 203,
+    "id": "davidson-silva-insuperavel-amor",
+    "title": "Insuperável Amor",
+    "composer": "Davidson Silva / Comunidade Católica Shalom",
+    "originalKey": "E",
+    "intro": "E  B  C#m  A",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 204,
+    "id": "davidson-silva-tu-es-minha-vida",
+    "title": "Tu És Minha Vida (Outro Deus Não Há)",
+    "composer": "Davidson Silva / Comunidade Católica Shalom",
+    "originalKey": "Am",
+    "intro": "Am  Dm  G  C  F  Dm  E7  Am",
+    "linesCount": 27,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 205,
+    "id": "dunga-consagrado",
+    "title": "Consagrado (Consagrado para Amar)",
+    "composer": "Dunga / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 206,
+    "id": "dunga-restauracao",
+    "title": "Restauração (Deus Quer Restaurar)",
+    "composer": "Dunga / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  A  Bm  G",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 207,
+    "id": "dunga-vida-nova",
+    "title": "Vida Nova (2 Coríntios 5, 17)",
+    "composer": "Dunga / Canção Nova",
+    "originalKey": "C",
+    "intro": "C  G  Am  F",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 208,
+    "id": "dunga-como-nao-falar-do-seu-amor",
+    "title": "Como Não Falar do Seu Amor",
+    "composer": "Dunga / Canção Nova",
+    "originalKey": "A",
+    "intro": "A  E  F#m  D",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 209,
+    "id": "dunga-quero-e-preciso",
+    "title": "Quero e Preciso",
+    "composer": "Dunga / Canção Nova",
+    "originalKey": "E",
+    "intro": "E  B  C#m  A",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 210,
+    "id": "dunga-phn-por-hoje-nao",
+    "title": "PHN (Por Hoje Não Vou Mais Pecar)",
+    "composer": "Dunga / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  D  Em  C",
+    "linesCount": 24,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 211,
+    "id": "pe-reginaldo-manzotti-pelo-nome",
+    "title": "Pelo Nome (As Muralhas Vão Cair)",
+    "composer": "Padre Reginaldo Manzotti",
+    "originalKey": "G",
+    "intro": "G  D  Em  C  G  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 212,
+    "id": "pe-reginaldo-manzotti-a-tempestade-vai-passar",
+    "title": "A Tempestade Vai Passar",
+    "composer": "Padre Reginaldo Manzotti",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A7  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 213,
+    "id": "pe-reginaldo-manzotti-o-amigo-mais-certo",
+    "title": "O Amigo Mais Certo",
+    "composer": "Padre Reginaldo Manzotti",
+    "originalKey": "C",
+    "intro": "C  G/B  Am  F  G7  C",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 214,
+    "id": "pe-reginaldo-manzotti-oracao-pela-paz",
+    "title": "Oração pela Paz",
+    "composer": "Padre Reginaldo Manzotti",
+    "originalKey": "E",
+    "intro": "E  B7  C#m  A  B7  E",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 215,
+    "id": "pe-antonio-maria-hino-do-terco-dos-homens",
+    "title": "Hino do Terço dos Homens",
+    "composer": "Padre Antônio Maria",
+    "originalKey": "G",
+    "intro": "G  D7  C  G  D7  G",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 216,
+    "id": "pe-antonio-maria-e-bom-ter-familia",
+    "title": "É Bom Ter Família",
+    "composer": "Padre Antônio Maria",
+    "originalKey": "D",
+    "intro": "D  Bm  Em  A7  D  A7",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 217,
+    "id": "pe-antonio-maria-mae-peregrina",
+    "title": "Mãe Peregrina",
+    "composer": "Padre Antônio Maria",
+    "originalKey": "C",
+    "intro": "C  G7  C  F  G7  C",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 218,
+    "id": "pe-antonio-maria-pegadas-na-areia",
+    "title": "Pegadas na Areia",
+    "composer": "Padre Antônio Maria",
+    "originalKey": "A",
+    "intro": "A  E/G#  F#m  D  E7  A",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 219,
+    "id": "pe-antonio-maria-cura-senhor-onde-doi",
+    "title": "Cura, Senhor, Onde Dói",
+    "composer": "Padre Antônio Maria",
+    "originalKey": "E",
+    "intro": "E  B/D#  C#m  A  B7  E",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 220,
+    "id": "pe-joaozinho-salve-rainha",
+    "title": "Salve Rainha, Mãe de Deus",
+    "composer": "Padre Joãozinho, scj",
+    "originalKey": "F",
+    "intro": "F  Bb  C7  F",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 221,
+    "id": "ziza-fernandes-o-que-agrada-a-deus",
+    "title": "O Que Agrada a Deus",
+    "composer": "Ziza Fernandes",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  Em  A7  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 222,
+    "id": "ziza-fernandes-fogo-suave",
+    "title": "Fogo Suave",
+    "composer": "Ziza Fernandes",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em  C  D7  G",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 223,
+    "id": "banda-dominus-imenso-amor",
+    "title": "Imenso Amor",
+    "composer": "Banda Dominus",
+    "originalKey": "G",
+    "intro": "G  D  Em  C  G  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 224,
+    "id": "banda-dominus-o-amor",
+    "title": "O Amor (Ainda que Eu Falasse a Língua dos Anjos)",
+    "composer": "Banda Dominus",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A7  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 225,
+    "id": "banda-dominus-com-jesus-e-festa",
+    "title": "Com Jesus É Festa",
+    "composer": "Banda Dominus",
+    "originalKey": "A",
+    "intro": "A  D  E7  A  D  E7",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 226,
+    "id": "banda-dominus-discipulo",
+    "title": "Discípulo",
+    "composer": "Banda Dominus",
+    "originalKey": "E",
+    "intro": "E  A  B7  E  B7",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 227,
+    "id": "banda-dominus-autor-da-vida",
+    "title": "Autor da Vida",
+    "composer": "Banda Dominus",
+    "originalKey": "C",
+    "intro": "C  G  Am  F  G7  C",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 228,
+    "id": "banda-dominus-joga-pra-la",
+    "title": "Joga pra Lá",
+    "composer": "Banda Dominus",
+    "originalKey": "G",
+    "intro": "G  C  D7  G  C  D7",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 229,
+    "id": "eugenio-jorge-ao-teu-encontro",
+    "title": "Ao Teu Encontro",
+    "composer": "Eugênio Jorge",
+    "originalKey": "C",
+    "intro": "C  G/B  Am  F  G7  C",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 230,
+    "id": "nelsinho-correa-quem-perde-sua-vida",
+    "title": "Quem Perde Sua Vida a Encontrará",
+    "composer": "Diácono Nelsinho Corrêa / Canção Nova",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A7  D",
+    "linesCount": 48,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 231,
+    "id": "nelsinho-correa-caminhando-com-maria",
+    "title": "Caminhando com Maria",
+    "composer": "Diácono Nelsinho Corrêa / Canção Nova",
+    "originalKey": "G",
+    "intro": "G  C  D7  G  D7",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 232,
+    "id": "nelsinho-correa-foi-assim",
+    "title": "Foi Assim",
+    "composer": "Diácono Nelsinho Corrêa / Canção Nova",
+    "originalKey": "C",
+    "intro": "C  G/B  Am  F  G7  C",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 233,
+    "id": "toca-de-assis-pra-sempre-teu",
+    "title": "Pra Sempre Teu",
+    "composer": "Fraternidade Toca de Assis",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em  C  D7  G",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 234,
+    "id": "toca-de-assis-todo-teu-o-mae",
+    "title": "Todo Teu, ó Mãe",
+    "composer": "Fraternidade Toca de Assis",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A7  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 235,
+    "id": "toca-de-assis-cantico-das-criaturas",
+    "title": "Cântico das Criaturas (Altíssimo, Onipotente, Bom Senhor)",
+    "composer": "Fraternidade Toca de Assis",
+    "originalKey": "C",
+    "intro": "C  F  G7  C  Am  Dm  G7  C",
+    "linesCount": 50,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 236,
+    "id": "fsjpii-exercito-de-deus",
+    "title": "Exército de Deus",
+    "composer": "Fraternidade São João Paulo II",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D  Em  C  G  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 237,
+    "id": "fsjpii-maria-porta-do-ceu",
+    "title": "Maria, Porta do Céu",
+    "composer": "Fraternidade São João Paulo II",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em  C  D7  G",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 238,
+    "id": "alianca-misericordia-o-espirito-do-senhor",
+    "title": "O Espírito do Senhor Está Sobre Mim",
+    "composer": "Comunidade Aliança de Misericórdia",
+    "originalKey": "Am",
+    "intro": "Am  Dm  E7  Am  E7",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 239,
+    "id": "alianca-misericordia-pai-das-misericordias",
+    "title": "Pai das Misericórdias",
+    "composer": "Comunidade Aliança de Misericórdia",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A7  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 240,
+    "id": "comunidade-recado-seja-luz",
+    "title": "Seja Luz",
+    "composer": "Comunidade Recado",
+    "originalKey": "G",
+    "intro": "G  D/F#  Em  C  D7  G",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 241,
+    "id": "comunidade-recado-renascer",
+    "title": "Renascer no Espírito",
+    "composer": "Comunidade Recado",
+    "originalKey": "C",
+    "intro": "C  G/B  Am  F  G7  C",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 242,
+    "id": "ir-ana-paula-fogo-abrasador",
+    "title": "Fogo Abrasador (Vem, Espírito)",
+    "composer": "Irmã Ana Paula",
+    "originalKey": "Em",
+    "intro": "Em  C  G  D  Em  C  G  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 243,
+    "id": "ir-ana-paula-meu-hospede",
+    "title": "Meu Hóspede",
+    "composer": "Irmã Ana Paula",
+    "originalKey": "D",
+    "intro": "D  A/C#  Bm  G  A7  D",
+    "linesCount": 42,
+    "status": "CLEAN",
+    "snippetHits": []
+  },
+  {
+    "idx": 244,
+    "id": "segura-na-mao-de-deus",
+    "title": "Segura na Mão de Deus",
+    "composer": "Nelson Monteiro da Mota",
+    "originalKey": "G",
+    "intro": "G  Dm7  G7  C  C#º  G  Em  A7  D7  G",
+    "linesCount": 73,
+    "status": "CLEAN",
+    "snippetHits": []
+  }
+]

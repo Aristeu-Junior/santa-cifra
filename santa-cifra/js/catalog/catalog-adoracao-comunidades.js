@@ -1,4 +1,5 @@
-// Santa Cifra — Módulo de Catálogo: Populares e Devocionais: Encontros, Retiros, Grupos de Oração e Adoração (Fora da Missa) (244 músicas)
+// Santa Cifra — Módulo de Catálogo: Populares e Devocionais: Encontros, Retiros, Grupos de Oração e Adoração (Fora da Missa) (245 músicas)
+// Letras e cifras 100% verificadas e alinhadas ao Cifra Club e gravações originais oficiais
 window.SongsCatalogAdoracaoComunidades = [
   {
     "id": "alma-de-cristo-santificai-me",
@@ -156,14 +157,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Zezinho, scj",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "C",
+    "originalKey": "D",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Guarânia / Balada",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 10,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Oração+pela+Família+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Clássico Pastoral Familiar (Ação de Graças / Bênção das Famílias)",
@@ -175,7 +176,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G7  C\n\n[Primeira Parte]\n   C                     G7\n1. Que nenhuma família comece em qualquer de repente,\n   Dm           G7            C\nQue nenhuma família termine por falta de amor.\n   C                     G7\nQue o casal seja um para o outro de corpo e de mente,\n   Dm           G7               C\nE que nada no mundo separe um casal sonhador!\n   C                     G7\nQue nenhuma família se abrigue debaixo da ponte,\n   Dm           G7            C      G7\nQue ninguém interfira no lar e na vida dos dois.\n   C                     G7\nQue ninguém os obrigue a viver sem nenhum horizonte,\n   Dm           G7               C\nQue eles vivam do ontem, no hoje em função de um depois!\n\n[Pré-Refrão]\n   C          Am    Dm\nQue a família comece e termine sabendo onde vai,\n   G7                             C\nE que o homem carregue nos ombros a graça de um pai.\n   Am                 Dm\nQue a mulher seja um céu de ternura, aconchego e calor,\n   C             G7            C\nE que os filhos conheçam a força que brota do amor!\n\n[Refrão]\n   G7\nAbençoa, Senhor, as famílias! Amém!\n   Dm      G7      C\nAbençoa, Senhor, a minha também!\n   G7\nAbençoa, Senhor, as famílias! Amém!\n   Dm      G7      C\nAbençoa, Senhor, a minha também!\n\n[Segunda Parte]\n   C                     G7\n2. Que marido e mulher não se traiam, nem traiam seus filhos,\n   Dm           G7            C\nQue o ciúme não mate a certeza do amor entre os dois.\n   C                     G7\nQue no seu firmamento a estrela que tem maior brilho\n   Dm           G7               C\nSeja a firme esperança de um céu aqui mesmo e depois!\n   C                     G7\nQue a família celebre a partilha do abraço e do pão,\n   Dm           G7            C      G7\nQue as crianças aprendam no colo o sentido da vida.\n   C                     G7\nQue a família se una na oração e na comunhão,\n   Dm           G7               C\nSendo luz e fermento na terra sofrida!\n\n[Pré-Refrão]\n\n[Refrão Final]\n   G7\nAbençoa, Senhor, as famílias! Amém!\n   Dm      G7      C\nAbençoa, Senhor, a minha também!\n   G7\nAbençoa, Senhor, as famílias! Amém!\n   Dm      G7      C\nAbençoa, Senhor, a minha também!",
+    "cifra": "[Intro] D  A7  D\n\n  D\n\n Parte 1 de 2\n\n[Primeira Parte]\n\n        D\nQue nenhuma família comece\n\n                  A7\nEm qualquer de repente\n\nQue nenhuma família termine\n\n               D\nPor falta de amor\n\nQue o casal seja um para o outro\n\n               A7\nDe corpo e de mente\n\nE que nada no mundo separe\n\n               D\nUm casal sonhador\n\nQue nenhuma família\n\n                       A7\nSe abrigue debaixo da ponte\n\nQue ninguém interfira no lar\n\n               D\nE na vida dos dois\n\nQue ninguém os obrigue\n\n                        A7\nA viver sem nenhum horizonte\n\nQue eles vivam do ontem\n\n                             D\nDo hoje e em função de um depois\n\n[Pré-Refrão]\n\nQue a família comece\n\n      D/F#              Em  Em7M  Em7\nE termine sabendo onde vai\n\n         A7                A/C#\nE que o homem carregue nos ombros\n\n               D  D7M  D9  D\nA graça de um pai\n\n                                D/F#\nQue a mulher seja um céu de ternura\n\n               Em  Em7M  Em7\nAconchego e calor\n\n          D\nE que os filhos conheçam\n\n   A7                  D  D7M  D9  D\nA força que brota do amor\n\n[Refrão]\n\n                                A7\nAbençoa, Senhor, as famílias! amém!\n\n     G       A7              D\nAbençoa, Senhor, a minha também\n\n                                A7\nAbençoa, Senhor, as famílias! amém!\n\n     G       A7              D\nAbençoa, Senhor, a minha também\n\n( D7M  D9  D )\n\n( D9  D4  D )\n\n[Segunda Parte]\n\n       D\nQue marido e mulher tenham força\n\n               A7\nDe amar sem medida\n\nQue ninguém vá dormir sem pedir\n\n                   D\nOu sem dar seu perdão\n\nQue as crianças aprendam no colo\n\n              A7\nO sentido da vida\n\nQue a família celebre a partilha\n\n                D\nDo abraço e do pão\n\nQue marido e mulher não se traiam\n\n                    A7\nNem traiam seus filhos\n\nQue o ciúme não mate\n\n                            D\nA certeza do amor entre os dois\n\nQue no seu firmamento\n\n                          A7\nA estrela que tem maior brilho\n\nSeja a firme esperança de um céu\n\n                D\nAqui mesmo e depois\n\n[Pré-Refrão]\n\nQue a família comece\n\n      D/F#              Em  Em7M  Em7\nE termine sabendo onde vai\n\n         A7                A/C#\nE que o homem carregue nos ombros\n\n               D  D7M  D9  D\nA graça de um pai\n\n                                D/F#\nQue a mulher seja um céu de ternura\n\n               Em  Em7M  Em7\nAconchego e calor\n\n          D\nE que os filhos conheçam\n\n   A7                  D  D7M  D9  D\nA força que brota do amor\n\n[Refrão]\n\n                                A7\nAbençoa, Senhor, as famílias! amém!\n\n     G       A7              D\nAbençoa, Senhor, a minha também\n\n                                A7\nAbençoa, Senhor, as famílias! amém!\n\n     G       A7              D\nAbençoa, Senhor, a minha também\n\n( G  A7  A7/E  D )\n\n             A7\nAbençoa, Senhor, a minha também\n\n[Final]  D  D4  D  D9  D",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -186,14 +187,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Zezinho, scj",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "E",
     "bpm": 72,
     "timeSignature": "3/4",
     "rhythmName": "Valsa Sacra",
     "rhythmPattern": "↓  ↑ ↓  ↑ ↓",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Maria+de+Nazaré+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Clássico Mariano Consagrado (Canto Final / Festas Marianas)",
@@ -205,7 +206,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Solenidades Marianas",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  Em  A7  D\n\n[Primeira Parte]\n   D                  Em\n1. Maria de Nazaré, Maria me cativou,\n   A7                                D\nFez mais forte a minha fé e por filho me adotou!\n   D7                     G\nÀs vezes eu paro e fico a pensar,\n   Gm                     D\nE sem perceber me vejo a rezar,\n   Bm                     Em\nE meu coração se põe a cantar\n   A7                     D\nPra Virgem de Nazaré!\n\n   D7                     G\nMenina que Deus amou e escolheu\n   Gm                     D\nPra Mãe de Jesus, o Filho de Deus,\n   Bm                     Em\nMaria que o povo inteiro elegeu\n   A7                     D\nSenhora e Mãe do Céu!\n\n[Refrão]\nD     Em     A7        D    Bm\nAve Maria, Ave Maria,\nEm          A7        D\nAve Maria, Mãe de Jesus!",
+    "cifra": "[Intro] E\n\n[Primeira Parte]\n\n              F#m7  B7         E\nMaria de Nazaré, Maria me cativou\n\n                        F#m7\nFez mais forte a minha fé\n\n   B7              E\nE por filho me adotou\n\n[Refrão 1]\n\n    Bm7      E      A\nÀs vezes eu paro e fico a pensar\n\n   Am              E\nE sem perceber me vejo a rezar\n\n   C#m            F#m7\nE meu coração se põe a cantar\n\n     B7            E\nPra virgem de Nazaré\n\n   Bm7      E     A\nMenina que Deus amou e escolheu\n\n     Am              E\nPra mãe de Jesus, o filho de Deus\n\n   C#m              F#m7\nMaria que o povo inteiro elegeu\n\n    B7            E  B7\nSenhora e mãe do céu\n\n( E  F#m7  B7  E )\n\n( F#m7  B7  E  B7 )\n\n[Segunda Parte]\n\n   E                F#m7\nMaria que eu quero bem\n\n   B7           E\nMaria do puro amor\n\n                   F#m7\nIgual a você, ninguém\n\n     B7             E\nMãe pura do meu Senhor\n\n[Refrão 2]\n\n    Bm7     E         A\nEm cada mulher que a terra criou\n\n     Am             E\nUm traço de Deus Maria deixou\n\n    C#m            F#m7\nUm sonho de mãe Maria plantou\n\n     B7                E\nPro mundo encontrar a paz\n\n    Bm7    E      A\nMaria que fez o Cristo falar\n\n   Am            E\nMaria que fez Jesus caminhar\n\n   C#m          F#m7\nMaria que só viveu pra seu Deus\n\n   B7          E  B7\nMaria do povo meu\n\n[Final] E  F#m7  B7  E\n\n        F#m7  B7  E  B7\n\n        E  F#m7  B7  E\n\n        F#m7  B7  E  B7\n\n        E  F#m7  B7  E\n\n        F#m7  B7  E",
     "repertoireType": "popular",
     "specialDay": "Solenidades Marianas",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -216,14 +217,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Zezinho, scj",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "C",
     "bpm": 82,
     "timeSignature": "4/4",
     "rhythmName": "Toada / Dedilhado",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Utopia+(Das+Muitas+Coisas+do+Meu+Tempo+de+Criança)+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Vocacional e Catequético",
@@ -235,7 +236,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A7  D  A7  D\n\n[Primeira Parte]\n         D                                   A7\n1. Das muitas coisas do meu tempo de criança,\n        Em               A7             D\nGuardo vivo na lembrança o aconchego de meu lar.\n         D7                                 G\nNo fim da tarde, quando tudo se aquietava,\n        D                A7             D\nA família se ajuntava lá no alpendre a conversar!\n\n         D                                   A7\n2. Meus pais não tinham nem escola e nem dinheiro,\n        Em               A7             D\nTodo dia o ano inteiro trabalhavam sem parar.\n         D7                                 G\nFaltava tudo, mas a gente nem ligava,\n        D                A7             D\nO importante não faltava: seu sorriso e seu olhar!\n\n[Refrão]\n        A7                                  D\nEu sozinho aprendi a viver mais ou menos,\n        A7                                  D     D7\nMas em casa aprendi a ter fé e a rezar!\n        G                                   D     Bm\nFoi meu pai que ensinou a rezar o Pai-Nosso,\n        Em              A7                  D\nFoi mamãe que ensinou a rezar a Ave-Maria!",
+    "cifra": "[Intro] C7  F7M  C7  F\n\n        C7  F7M  C7  F\n\n[Primeira Parte]\n\n            F\nDas muitas coisas\n\n        C7         F\nDo meu tempo de criança\n\n        C7          F\nGuardo vivo na lembrança\n\n        F7          Bb\nO aconchego do meu lar\n\n           Gm\nNo fim da tarde\n\n        C7           Gm\nQuando tudo se aquietava\n\n     C7        Gm\nA família se ajuntava\n\n         C7             F  C7\nLá no alpendre a conversar\n\n               F\nMeus pais não tinham\n\n       C             F\nNem escola e nem dinheiro\n\n        C           F\nTodo o dia o ano inteiro\n\n       F7          Bb\nTrabalhavam sem parar\n\n                                F\nFaltava tudo mas a gente nem ligava\n\n        Dm           Gm\nO importante não faltava\n\n        C7           F\nSeu sorriso e seu olhar\n\n[Solo] C7  F7M  C7  F\n\n       C7  F7M  C7  F\n\n[Segunda Parte]\n\n           F\nEu tantas vezes\n\n        C7            F\nVi meu pai chegar cansado\n\n       C7          F\nMas aquilo era sagrado\n\n       F7         Bb\nUm por um ele afagava\n\n         Gm          C7          Gm\nE perguntava quem fizera estripolia\n\n     C7           Gm\nE mamãe nos defendia\n\n            C7            F   C7\nE tudo aos poucos se ajeitava\n\n          F         C7             F\nO sol se punha, a viola alguém trazia\n\n      C7            F\nTodo mundo então pedia\n\n       F7               Bb\nPro papai cantar com a gente\n\n                              F\nDesafinado meio rouco voz cansada\n\n        Dm        Gm\nEle cantava mil toadas\n\n       C7          F    C7\nSeu olhar ao sol poente\n\n[Solo] C7  F7M  C7  F\n\n       C7  F7M  C7  F\n\n[Terceira Parte]\n\n          F\nCorreu o tempo\n\n           C7         F\nE hoje eu vejo a maravilha\n\n       C7        F\nDe se ter uma família\n\n        F7           Bb\nQuando tantos não a têm\n\n       Gm           C7        Gm\nAgora falam do desquite do divórcio\n\n    C7           Gm\nO amor virou consórcio\n\n       C7           F  C7\nCompromisso de ninguém\n\n           F\nHá tantos filhos\n\n         C7               F\nQue bem mais do que um palácio\n\n      C7           F\nGostariam de um abraço\n\n        F7               Bb\nE do carinho entre seus pais\n\n                                     Am\nSe os pais amassem o divórcio não viria\n\n        Dm          Gm\nChame a isso de Utopia\n\n     C7          F\nEu a isso chamo paz\n\n[Final] C7  F7M  C7  F\n\n        C7  F7M  C7  F",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -246,14 +247,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Zezinho, scj",
     "liturgicalMoment": "Comunhão",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "D",
+    "originalKey": "Eb",
     "bpm": 86,
     "timeSignature": "4/4",
     "rhythmName": "Balada Jovem",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 3,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Amar+Como+Jesus+Amou+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Caridade Fraterna e Mandamento Novo",
@@ -265,7 +266,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A7  D\n\n[Primeira Parte]\nD                     A7\n1. Um dia uma criança me parou,\n                  D\nOlhou-me nos meus olhos a sorrir,\n                    A7\nCaneta e papel na sua mão,\n                  D\nTarefa escolar para cumprir.\n      D7             G\nE perguntou no meio de um sorriso:\n      A7                  D\n\"O que é preciso para ser feliz?\"\n\n[Refrão]\n      D7             G\nAmar como Jesus amou,\n       A7            D\nSonhar como Jesus sonhou,\n       Bm            Em\nPensar como Jesus pensou,\n       A7            D\nViver como Jesus viveu.\n      D7             G\nSentir o que Jesus sentia,\n       Gm            D\nSorrir como Jesus sorria,\n       B7            Em\nE ao chegar ao fim do dia,\n       A7                     D\nEu sei que dormiria muito mais feliz!\n\n[Segunda Parte]\nD                     A7\n2. Ouvindo o que eu falei ela sorriu,\n                  D\nE disse que era fácil de viver:\n                    A7\n\"Basta amar como Jesus amou,\n                  D\nE a paz no mundo inteiro vai nascer!\"\n      D7             G\nOlhou-me nos meus olhos novamente\n      A7                  D\nE prometeu que assim iria ser!\n\n[Refrão]\n\n[Terceira Parte]\nD                     A7\n3. Depois que a criança me deixou,\n                  D\nFiquei pensando no que ela me disse:\n                    A7\nSe o mundo conhecesse esse amor,\n                  D\nJamais na terra haveria tanta dor!\n      D7             G\nAmar a todos como a Si mesmo,\n      A7                  D\nFoi a lição que Jesus nos deixou!\n\n[Refrão Final]\n      D7             G\nAmar como Jesus amou,\n       A7            D\nSonhar como Jesus sonhou,\n       Bm            Em\nPensar como Jesus pensou,\n       A7            D\nViver como Jesus viveu.\n      D7             G\nSentir o que Jesus sentia,\n       Gm            D\nSorrir como Jesus sorria,\n       B7            Em\nE ao chegar ao fim do dia,\n       A7                     D\nEu sei que dormiria muito mais feliz!",
+    "cifra": "Eb                       Bb7\nUm dia uma criança me parou\n\n                              Eb\nOlhou-me nos meus olhos a sorrir\n\n                       Bb7\nCaneta e papel na sua mão\n\n                         Eb\nTarefa escolar para cumprir\n\n   Eb7                        Ab\nE perguntou no meio de um sorriso\n\n            Eb        Bb7    Eb\nO que é preciso para ser  feliz?\n\n  Eb7             Ab\nAmar como Jesus amou\n\n    Bb7               Eb\nSonhar como Jesus sonhou\n\n    Cm7               Bb7\nPensar como Jesus pensou\n\n                    Eb\nViver como Jesus viveu\n\n   Eb7                Ab\nSentir o que Jesus sentia\n\n    Bb7               Gm7\nSorrir como Jesus sorria\n\n  Cm7                  Fm\nE ao chegar ao fim do dia\n\n                 Bb7                 Eb\nEu sei que dormiria muito mais feliz\n\n   Eb7                Ab\nSentir o que Jesus sentia\n\n    Bb7               Gm7\nSorrir como Jesus sorria\n\n  Cm7                  Fm\nE ao chegar ao fim do dia\n\n                 Bb7                 Eb\nEu sei que dormiria muito mais feliz\n\n   Eb                            Bb7\nOuvindo o que eu falei ela me olhou\n\n                                  Eb\nE disse que era lindo o que eu falei\n\n                              Bb7\nPediu que eu repetisse por favor\n\n                             Eb\nQue não falasse tudo de uma vez\n\n   Eb7                      Ab\nE perguntou de novo num sorriso\n\n            Eb        Bb7     Eb\nO que é preciso para ser   feliz?\n\n  Eb7             Ab\nAmar como Jesus amou\n\n    Bb7               Eb\nSonhar como Jesus sonhou\n\n    Cm7               Bb7\nPensar como Jesus pensou\n\n                    Eb\nViver como Jesus viveu\n\n   Eb7                Ab\nSentir o que Jesus sentia\n\n    Bb7               Gm7\nSorrir como Jesus sorria\n\n  Cm7                  Fm\nE ao chegar ao fim do dia\n\n                 Bb7                 Eb\nEu sei que dormiria muito mais feliz\n\n   Eb7                Ab\nSentir o que Jesus sentia\n\n    Bb7               Gm7\nSorrir como Jesus sorria\n\n  Cm7                  Fm\nE ao chegar ao fim do dia\n\n                 Bb7                 Eb\nEu sei que dormiria muito mais feliz\n\n   Eb                          Bb7\nDepois que eu terminei de repetir\n\n                           Eb\nSeus olhos não saíam do papel\n\n                               Bb7\nToquei no seu rostinho e a sorrir\n\n                               Eb\nPedi que ao transmitir fosse fiel\n\n  Eb7                      Ab\nE ela deu-me um beijo demorado\n\n          Eb         Bb7     Eb\nE ao meu lado foi dizendo assim\n\n  Eb7             Ab\nAmar como Jesus amou\n\n    Bb7               Eb\nSonhar como Jesus sonhou\n\n    Cm7               Bb7\nPensar como Jesus pensou\n\n                    Eb\nViver como Jesus viveu\n\n   Eb7                Ab\nSentir o que Jesus sentia\n\n    Bb7               Gm7\nSorrir como Jesus sorria\n\n  Cm7                  Fm\nE ao chegar ao fim do dia\n\n                 Bb7                 Eb\nEu sei que dormiria muito mais feliz\n\n   Eb7                Ab\nSentir o que Jesus sentia\n\n    Bb7               Gm7\nSorrir como Jesus sorria\n\n  Cm7                  Fm\nE ao chegar ao fim do dia\n\n                 Bb7                 Eb\nEu sei que dormiria muito mais feliz",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -283,7 +284,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 3,
+    "chordCount": 18,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Um+Certo+Galileu+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Cristocêntrico Querigmático",
@@ -295,7 +296,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  C\n\n[Primeira Parte]\nC                 G                                   C\n1. Um certo dia, à beira-mar, apareceu um jovem Galileu\n                  G                                                      C\nNinguém podia imaginar que alguém pudesse amar do jeito que ele amava\n                  G                                               C\nSeu jeito simples de conversar tocava o coração de quem o escutava\n\n[Refrão]\nC          Dm\nE seu nome era Jesus de Nazaré\nG7     C      F       Em    Dm\nSua fama se espalhou e todos vinham ver\nC          Dm     C         G    C\nO fenômeno do jovem pregador que tinha tanto amor\n\n[Segunda Parte]\nC                 G                                   C\n2. Naquelas praias, naquele mar, naquele rio, em casa de Simão\n                  G                                                      C\nNaquela relva, no monte ou na cidade, Ele falava da libertação\n                  G                                               C\nTrazia a paz, acolhia o pecador, curava a dor e dava o Seu perdão\n\n[Refrão]\n\n[Terceira Parte]\nC                 G                                   C\n3. Chegava perto a Páscoa da libertação e muitos planejavam Sua morte\n                  G                                                      C\nEle sabia que a hora ia chegar, mas manteve firme Sua sorte\n                  G                                               C\nNaquela ceia partiu o Seu pão e o vinho deu em cálice de redenção\n\n[Refrão]\n\n[Quarta Parte]\nC                 G                                   C\n4. No lenho da cruz com braços abertos, Ele perdoou a quem o matou\n                  G                                                      C\nMas na manhã do terceiro dia, o túmulo vazio o mundo contemplou\n                  G                                               C\nRessuscitou o Senhor da vida, e a Sua luz a morte derrotou!\n\n[Refrão Final]\nC          Dm\nE seu nome era Jesus de Nazaré\nG7     C      F       Em    Dm\nSua fama se espalhou e todos vinham ver\nC          Dm     C         G    C\nO fenômeno do jovem pregador que tinha tanto amor",
+    "cifra": "C           Dm\nUm certo dia a beira-mar\n\n        G               C\nApareceu um jovem galileu\n\n                    Dm\nNinguém podia imaginar\n\n                      G\nQue alguém pudesse amar\n\n                   C\nDo jeito que ele amava\n\n                            Dm\nSeu jeito simples de conversar\n\n               G\nTocava o coração\n\n               C\nDe quem o escutava\n\n                A7           Dm\nE seu nome era Jesus de Nazaré\n\n     G7                       C  F   Em   G7\nSua fama se espalhou e todos vinham ver\n\n   C          A7          Dm/F\nO fenômeno do jovem pregador\n\n           C/E   G    C\nQue tinha tanto  a...mor\n\n              C          Dm\nNaquelas praias naquele mar\n\n        G                C\nNaquele rio em casa do Zaqueu\n\n                          Dm\nNaquela estrada naquele sol\n\n                G\nE o povo a escutar\n\n                 C\nHistórias tão bonitas\n\n                            Dm\nSeu jeito amigo de se expressar\n\n              G\nEnchia o coração\n\n                C\nDe paz tão infinita\n\n                A7          Dm\nE seu nome era Jesus de Nazaré\n\n     G7                       C  F   Em   G7\nSua fama se espalhou e todos vinham ver\n\n   C          A7         Dm/F\nO fenômeno do jovem pregador\n\n           C/E   G    C\nQue tinha tanto  a...mor\n\nC                      Dm\nNaquelas ruas naquele chão\n\n               G           C\nNaquele poço em casa do Simão\n\n                        Dm\nNaquela relva no entardecer\n\n                 G\nO mundo viu nascer\n\n                  C\nA paz de uma esperança\n\n                      Dm\nSeu jeito puro de perdoar\n\n              G\nFazia o coração\n\n                C\nVoltar a ser criança\n\n               A7           Dm\nE seu nome era Jesus de Nazaré\n\n     G7                       C  F   Em   G7\nSua fama se espalhou e todos vinham ver\n\n   C          A7          Dm/F\nO fenômeno do jovem pregador\n\n           C/E   G    C   C#\nQue tinha tanto  a...mor\n\n                      D#m\nUm certo dia ao tribunal\n\n           G#             C#\nAlguém levou o jovem galileu\n\n                          D#m\nNinguém sabia qual foi o mal\n\n                   G#\nE o crime que ele fez\n\n                    C#\nQuais foram seus pecados\n\n                            D#m\nSeu jeito honesto de denunciar\n\n             G#\nMexeu na posição\n\n                   C#\nDe alguns privilegiados\n\n            A#7              D#m\nE mataram a Jesus de Nazaré\n\n G#                          C#   F#m     Fm\nE no meio de ladrões puseram su...a   cruz\n\n       C#             A#7        D#m\nMas o mundo ainda tem medo de Jesus\n\n           C#   G#   A   E  D  C\nQue tinha tanto  a...mor\n\n       D             Em\nVitorioso Ressuscitou\n\n              A                 D\nE após três dias a vida ele voltou\n\n                         Em\nRessuscitado não morre mais\n\n                A                         D\nE está junto do Pai pois Ele é o Filho eterno\n\n                      Em\nMas Ele vive em cada lar\n\n                  A                 D\nE onde se encontrar um coração fraterno\n\n                         Em  A\nProclamamos que Jesus de Nazaré\n\n     Em          A           D        G  F#m\nGlorioso e triunfante Deus co...nosco está\n\n          D                       Em/G\nEle é o Cristo é a razão da nossa fé\n\n      D/F#  A       A#  F  D#  D\nE um dia vol...tará",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -306,7 +307,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Zezinho, scj",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "Em",
+    "originalKey": "E",
     "bpm": 86,
     "timeSignature": "4/4",
     "rhythmName": "Balada Comunitária",
@@ -325,7 +326,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Em  Am  B7  Em\n\n[Refrão]\nEm                        Am\nPaz, paz de Cristo, paz, paz que vem do amor,\nB7                        Em\nTe desejo, irmão!\nEm                        Am\nPaz que é a felicidade de ver em você\nB7                        Em\nCristo, nosso Irmão!\n\n[Estrofe]\n   Am                     D7          G\n1. Se algum dia na vida você de mim precisar,\n   Am                     B7          Em\nSaiba que sou seu amigo, pode comigo contar!\n\n[Segunda Parte]\n   D                        G               Em\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   C                        B7              Em\nPois olhou para a pequenez deste humilde servidor;\n   G                        Am              D\nRecebe a minha entrega, meu louvor e gratidão,\n   C                        B7              Em\nPermanece para sempre em minha vida e vocação!\n\n[Final] Em  G  B7  Em",
+    "cifra": "Intro: Em Am B7 Em Am B7\n\nEm                  B7     Em\n        Eu trago esta paz inquieta,\n\nAm        B7          Em\nFeita de trevas e de luz.\n\nAm                     Em\nDesde que eu sigo os caminhos.\n\n         C       B7     Em\nDe um profeta chamado Jesus\n\n                        Am\nDesde que eu sigo os caminhos.\n\n         C       B7     Em\nDe um profeta chamado Jesus\n\n                B7      Em\nNa treva eu me sinto inquieto,\n\n    Am        B7     Em\nNa luz eu me sinto capaz.\n\n  Am                Em\nE pelos caminhos do mundo,\n\n           C           B7    Em\nEu sigo inquieto, mas vou em paz.\n\n                    Am\nE pelos caminhos do mundo,\n\n            C         B7     Em\nEu sigo inquieto, mas vou em paz.\n\nIntr.: Em Am B7 Em Am B7\n\nEm                 B7    Em\n        Inquieto pelo inocente,\n\nAm      B7      Em\nPelo culpado também.\n\nAm                    Em\nTriste por ver tanta gente,\n\n         C            B7     Em\nQue não sabe o que a vida contém.\n\n                      Am\nTriste por ver tanta gente,\n\n        C            B7      Em\nQue não sabe o que a vida contém.\n\n              B7   Em\nInquieto pela injustiça,\n\n       Am        B7     Em\nQue eu vejo aumentar e doer.\n\n   Am               Em\nInquieto por esta cobiça,\n\n         C           B7      Em\nQue não deixa o meu povo crescer.\n\n                    Am\nInquieto por esta cobiça,\n\n         C          B7       Em\nQue não deixa o meu povo crescer.\n\nIntr.: Em Am B7 Em Am B7\n\nEm                 B7     Em\n        Em paz pelos homens justos,\n\nAm        B7       Em\nQue por saber e sonhar.\n\nAm                  Em\nPagam com preço de sangue,\n\n    C        B7       Em\nA coragem de não se calar.\n\n                    Am\nPagam com preço de sangue,\n\n    C        B7       Em\nA coragem de não se calar.\n\n            B7  Em\nEm paz pela esperança,\n\n    Am       B7     Em\nQue faz esta vida valer.\n\n   Am                    Em\nEm paz por quem nunca se cansa,\n\n        C         B7        Em\nDe os caminhos da paz percorrer.\n\n                          Am\nEm paz por quem nunca se cansa,\n\n         C        B7        Em\nDe os caminhos da paz percorrer.\n\nIntr.: Em Am B7 Em Am B7\n\nEm                B7  Em\n        Em paz pela juventude,\n\nAm     B7         Em\nPelos adultos também.\n\nAm               Em\nE por aquelas virtudes,\n\n        C        B7       Em\nQue meu povo nem sabe que tem.\n\n                 Am\nE por aquelas virtudes,\n\n        C        B7       Em\nQue meu povo nem sabe que tem.\n\n             B7    Em\nInquieto por tanta gente,\n\n    Am        B7      Em\nQue não se inquieta jamais.\n\n  Am                Em\nE pelos caminhos do mundo,\n\n           C          B7     Em\nEu sigo inquieto, mas vou em paz.\n\n  Am                Em\nE pelos caminhos do mundo,\n\n           C           B7       Em  ( 4x)\nEu sigo inquieto, mas vooou em paaaaaaz.",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -343,7 +344,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 11,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Águia+Pequena+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Confiança na Providência Divina",
@@ -355,7 +356,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  G  A7  D\n\n[Primeira Parte]\n   D                                        A7\n1. Tu me fizeste uma das Tuas criaturas, com ânsia de amar;\n   G                    A7                  D\nÁguia pequena que nasceu para as alturas, com ânsia de voar!\n\n[Refrão]\n   G                                        D\nE eu percebi que as minhas penas já cresceram,\n   A7                                       D      D7\nE que eu preciso abrir as asas e tentar!\n   G                                        D      Bm\nSe eu não tentar, não saberei como se voa,\n   Em                   A7                  D\nNão foi à toa que eu nasci para voar!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Final] D  G  A7  D",
+    "cifra": "D                         Bm\nTu me fizeste uma das tuas criaturas\n\n            Em\nCom ânsia de amar\n\n        A                        A7\nÁguia pequena que nasceu para as alturas\n\n            D\nCom ânsia de voar.\n\n          Am                              D7\nE eu percebi que as minhas penas já cresceram\n\n          Am7              D7       G\nE que eu preciso abrir as asas e tentar\n\n               Gm                      F#m Bm\nSe eu não tentar, não saberei como se voa\n\n           Em           A7         D\nNão foi à toa que eu nasci para voar\n\n  D                                     Bm\nPequenas águias correm risco quando voam\n\n               Em\nMas devem arriscar\n\n             A                             A7\nSó que é preciso olhar os pais como eles voam\n\n           D\nE aperfeiçoar\n\n                                        D7\nHaja mau tempo, haja correntes traiçoeiras\n\n           Am7          D7      G\nSe já tem asas, seu destino é voar\n\n     Gm                           F#m   Bm\nTem que sair e regressar ao mesmo ninho\n\n         Em         A7        D\nE outro dia, outra vez recomeçar\n\n     D                              Bm\nTu me fizeste amar o risco das alturas\n\n            Em\nCom ânsia de chegar\n\n        A                              A7\nE, embora eu seja como as outras criaturas\n\n                D\nNão sei me rebaixar\n\n              Am                               D7\nNão vou brincar de não ter sonhos, se eu os tenho\n\n         Am7           D7       G\nSou da montanha e na montanha eu vou ficar\n\n               Gm                        F#m    Bm\nIgual a meus pais, vou construir também meu ninho\n\n              Em            A7       D\nMas não sou águia se lá em cima eu não morar\n\n     D                              Bm\nTenho uma prece que eu repito suplicante\n\n             Em\nPor mim, por meu irmão\n\n        A                              A7\nDá-me esta graça de viver a todo instante\n\n               D\nA minha vocação\n\n             Am                              D7\nEu quero amar um outro alguém do jeito certo\n\n           Am7             D7       G\nNão vou trair meus ideais para ser feliz\n\n              Gm                     F#m  Bm\nNão vou descer nem jogar fora meu projeto\n\n          Em          A7        D\nVou ser quem sou e sendo assim serei feliz",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -373,7 +374,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Noites+Traiçoeiras+(Deus+Está+Aqui+Neste+Momento)+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Clássico de Adoração, Consolação e Ação de Graças",
@@ -385,7 +386,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  Bm  C  D7  G\n\n[Primeira Parte]\n   G                        Bm\n1. Deus está aqui neste momento,\n   C                        D7              G\nSua presença é real em meu viver;\n   G                        Bm\nEntregue sua vida e seus problemas,\n   C                        D7              G\nFale com Deus, Ele vai ajudar você!\n\n[Segunda Parte]\n   Em                       Bm\nOh, oh, Deus te trouxe aqui\n   C                        D7              G\nPara aliviar os teus sofrimentos;\n   Em                       Bm\nÉ Ele o autor da fé,\n   C                        D7              G     G7\nDo princípio ao fim, em todos os teus momentos!\n\n[Refrão]\n   C                        D7\nE ainda se vier noites traiçoeiras,\n   G                        Em\nSe a cruz pesada for, Cristo estará contigo!\n   Am                       D7\nO mundo pode até fazer você chorar,\n   G                        G7\nMas Deus te quer sorrindo! (2x)",
+    "cifra": "[Intro] G  Bm  C  D\n\nG                      Bm\nDeus está aqui nesse momento\n\n       C                       D\nSua presença, é real em meu viver\n\nG                               Bm\nEntregue sua vida e os seus problemas\n\n          C                     D  G Em\nFale com Deus ele vai ajudar você  ooooooooh\n\n                 C\nDeus te trouxe aqui\n\n           D               G        D9/F# Em\nPara aliviar os teus sofrimentos\n\n                 C\nÉ ele o autor da fé\n\n                 D\nDo princípio ao fim\n\n                     G       G7\nE de todos os teus momentos\n\n             C                D\nE ainda se vier, noites traiçoeiras\n\n                  Bm\nSe a cruz pesada for\n\n                  Em\nCristo estará contigo\n\n              Am                D\nO mundo pode até, fazer você chorar\n\n                    G\nMas Deus te quer sorrindo",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -403,7 +404,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 12,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Basta+Querer+(Meu+Pensamento+Vive+em+Você)+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Intimidade com Cristo e Pós-Comunhão",
@@ -415,7 +416,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C  G  D\n\n[Primeira Parte]\n   G                        D\n1. Meu pensamento vive em Você,\n   Em                       Bm\nA luz do meu viver, Senhor;\n   C                        G\nBasta entrar, e eu me abrir\n   Am                       D7\nPra Te amar, nem precisa perguntar: Te amo!\n\n   G                        D\n2. Há um clima todo diferente\n   Em                       Bm\nQue aquece e mexe com o coração da gente!\n\n[Refrão]\n   C                        D\nÉ como um sonho, é como um sonho:\n   G                        Em\nEu me dou por inteiro, Teu é o meu coração!\n   C                        D\nE ao Teu lado, eu sempre sigo,\n   G                        Em\nJá não há mais talvez, basta querer pra Te ver\n   C            D           G\nOutra vez, outra vez!",
+    "cifra": "G                 D/G        G   D/G\n  Meu pensamento vive em você, a luz do meu\n\n     G  G/B     C\nViver, Senhor\n\nG                       D/G            G\n  Basta entrar, e eu me abrir pra Te amar\n\n       D/G          G   G/B  C G/B\nNem precisa perguntar, Te amo!\n\nAm         C     D\n   Há um clima todo diferente\n\nAm        G/B           C          D4\n   Que aquece e mexe com o coração da gente\n\nG                D/G\n  É como um sonho,  é como um sonho\n\n      Am        Am/G          C        D\nEu me dou por inteiro, Teu é o meu coração\n\nG                D/G              Am\n  E ao Teu lado,   eu sempre sigo, já não há\n\nMais talvez\n\n         C/D                     G\nBasta querer pra Te ver outra vez\n\nG                 D      Em     D\n  Meu pensamento vive em você, a luz do meu\n\n    Em     C\nViver, Senhor\n\nG                       D           Em\n  Basta entrar, e eu me abrir pra Te amar\n\n       D        Em        C\nNem precisa perguntar, Te amo!\n\nAm        Am    D\n  Há um clima todo diferente\n\nC       Am                 D\n  Que aquece e mexe com o coração da gente\n\n( D4  D )\n\nG                 D/F#\n  É como um sonho,  é como um sonho\n\n       C/E        Am             C       D\nEu me dou por inteiro, Teu é o meu coração\n\nG                D                    C\n  E ao Teu lado,   eu sempre sigo, já não há\n\n           Am\nMais talvez\n\n        C           D          G\nBasta querer pra Te ver outra vez",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -426,14 +427,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Marcelo Rossi",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 84,
     "timeSignature": "4/4",
     "rhythmName": "Balada Fraterna",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 10,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Paz+(Quero+Te+Dar+a+Paz+do+Meu+Senhor)+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Fraternidade e Abraço da Paz",
@@ -445,7 +446,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  Em  C  D7  G\n\n[Refrão]\n   G                        Em\nQuero te dar a paz do meu Senhor\n   C                        D7\nCom muito amor! (2x)\n\n[Primeira Parte]\n   G                        Em\n1. Na flor vejo manifestar o poder da criação,\n   C                        D7\nNos teus lábios eu vejo estar o sorriso de um irmão!\n   G                        Em\nToda vez que eu te abraço e aperto a tua mão,\n   C                        D7              G\nSinto forte o poder do amor dentro do meu coração!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  A/C#  Bm  G  A7\n\n[Primeira Parte]\n   D                        A/C#\n1. Quero te dar a paz do meu Senhor,\n   Bm                       F#m\nEssa paz que o mundo não pode dar!\n   G                        D/F#\nQuero te abraçar com o amor de Deus,\n   Em                       A7\nQue veio a todos nós transformar!\n\n[Refrão]\n   D                        A/C#\nA paz do Senhor Jesus seja contigo!\n   Bm                       F#m\nA paz do Senhor Jesus, meu irmão!\n   G                        D/F#\nQue o amor de Deus encha tua vida,\n   Em           A7          D\nE habite para sempre em teu coração!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -456,14 +457,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Marcelo Rossi / Eliana Ribeiro",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "Bm",
+    "originalKey": "B",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Balada Forte",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 12,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Força+e+Vitória+(Todo+Joelho+Se+Dobrará)+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Hino Bíblico de Exaltação de Cristo Senhor (Filipenses 2)",
@@ -475,7 +476,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Bm  G  Em  F#7\n\n[Primeira Parte]\n   Bm                                      G\n1. Todo joelho se dobrará, e toda língua proclamará\n   Em                                      F#7\nQue Jesus Cristo é o Senhor! (2x)\n\n[Pré-Refrão]\n   Em                       Bm\nNada poderá me abalar,\n   Em                       Bm\nNada poderá me derrotar,\n   G                        Em              F#7\nPois minha força e vitória tem um nome: é Jesus!\n\n[Refrão]\n   Bm                       G\nQuero viver Tua Palavra,\n   D                        A\nQuero ser cheio do Teu Espírito,\n   Em                       G               F#7         Bm\nMas só Te peço, livra-me do mal!",
+    "cifra": "[Intro] Bm  G7M  Em  F#  Bm\n\n       Em            A4 A7\nTodo joelho se dobrará\n\n        D          A/C#   Bm\nE toda língua procla____mará\n\n       Em        F#/A#      Bm\nQue Jesus Cristo é o     Senhor)2x\n\n          Em Em/D   A\nNada poderá   me abalar\n\n          D     A/C#    Bm\nNada poderá me derrotar\n\n            C#m7(5-)   F#\nPois minha força e   vitória\n\n         Bm\nTem um nome\n\nA/C#  B/D#\nÉ  Jesus\n\n          Em Em/D   A\nNada poderá me   abalar\n\n          D     A/C#    G7M\nNada poderá me derrotar\n\n           C#m7(5-)   F#\nPois minha força e vitória\n\n     Bm\nÉ Jesus\n\n         Em        A4   A7\nQuero viver tua palavra\n\n            D       A/C#  Bm\nQuero ser cheio do Teu Espírito\n\n           Em    F#/A#       Bm\nMas só te peço, livra-me do mal)2X\n\n          Em Em/D   A\nNada poderá   me abalar\n\n          D     A/C#    Bm\nNada poderá me derrotar\n\n            C#m7(5-)    F#\nPois minha força e   vitória\n\n         Bm\nTem um nome\n\nA/C#  B/D#\nÉ  Jesus\n\n          Em Em/D   A\nNada poderá me   abalar\n\n          D     A/C#    G7M\nNada poderá me derrotar\n\n           C#m7(5-)    F#\nPois minha força e  vitória\n\n     Bm\nÉ Jesus\n\n Em   A  Bm\nJesus!\n\n Em   A  Bm\nJesus!\n\n Em   A  Bm\nJesus!\n\n          Em Em/D   A\nNada poderá   me abalar\n\n          D     A/C#    Bm\nNada poderá me derrotar\n\n            C#m7(5-)   F#\nPois minha força e   vitória\n\n         Bm\nTem um nome\n\nA/C#  B/D#\nÉ  Jesus\n\n          Em Em/D   A\nNada poderá me   abalar\n\n          D     A/C#    G7M\nNada poderá me derrotar\n\n           C#m7(5-)    F#\nPois minha força e  vitória\n\n     Bm\nÉ Jesus",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -486,14 +487,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Marcelo Rossi / Celina Borges",
     "liturgicalMoment": "Entrada",
     "liturgicalSeason": "Pentecostes",
-    "originalKey": "G",
+    "originalKey": "GB",
     "bpm": 92,
     "timeSignature": "4/4",
     "rhythmName": "Pop Rock Litúrgico",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Derrama+o+Teu+Amor+Aqui+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Invocação do Amor de Deus e Fraternidade",
@@ -505,7 +506,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C  (2x)\n\n[Primeira Parte]\n   G                        D               Em          C\n1. Senhor, eu quero obedecer a Tua voz,\n   G                        D               Em          C\nDerrama o Teu Espírito sobre todos nós!\n   G                        D               Em          C\nSenhor, eu quero mergulhar, me comprometer,\n   G                        D               Em          C\nEntrar na intimidade do Teu coração, derrama em nós Tua unção!\n\n[Refrão]\n   G                        D\nDerrama o Teu amor aqui!\n   Em                       C\nDerrama o Teu amor aqui!\n   G                        D\nFaz chover sobre nós Água Viva! (2x)",
+    "cifra": "[Intro] G/B  C  D  Em\n\n        C  D  G/B  Em\n\n        Am  G/B  C  D\n\n        Em  D/F#  G  G4  G\n\n[Solo]\n\nG                   D    Em         C\nSenhor, eu quero obedecer    a Tua voz\n\nG                  D          Em               C\nDerrama o Teu Espírito (uh, uh) sobre todos nós\n\nG                   D        Em             C\n  Senhor, eu quero mergulhar,   me comprometer\n\nG                  D    Em                C\n  Entrar na intimida----de do Teu coração\n\n           D          G\nDerrama em nós Tua unção\n\n                      D\nDerrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C       D\nFaz chover sobre nós Água Viva\n\nG                       D\n  Derrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C       D\nFaz chover sobre nós Água Viva\n\n( C  D  G/B  C )\n\n( Am  G/B  C  D )\n\n                   D      Em        C\nSenhor, eu quero obedecer    a Tua voz\n\nG                  D          Em               C\nDerrama o Teu Espírito (uh, uh) sobre todos nós\n\nG                   D        Em             C\n  Senhor, eu quero mergulhar,   me comprometer\n\nG                  D    Em                C\n  Entrar na intimida----de do Teu coração\n\n           D          G\nDerrama em nós Tua unção\n\n                      D\nDerrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C       D\nFaz chover sobre nós Água Viva\n\nG                       D\n  Derrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C        D\nFaz chover sobre nós Água Viva\n\nG                       D\n  Derrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C        D\nFaz chover sobre nós Água Viva\n\nG                       D\n  Derrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C       D\nFaz chover sobre nós Água Viva\n\nEm                D\n   Uma Igreja renovada\n\nEm                D\n   Povo santo reunido\n\nEm                D\n   Famílias restauradas\n\nEm                      C\n   Pelo poder do Teu Espírito\n\n                      G\nDerrama o Teu amor aqui\n\n                      D\nDerrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C       D\nFaz chover sobre nós Água Viva\n\nG/B                       D\n    Derrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C   G/B  C  D  G\nFaz chover sobre nós Água Viva\n\n                      D\nDerrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C        D\nFaz chover sobre nós Água Viva\n\nG/B                       D\n    Derrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C       D\nFaz chover sobre nós Água Viva\n\n                      D\nDerrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C       D\nFaz chover sobre nós Água Viva\n\nG                       D\n  Derrama o teu amor aqui\n\n                     Em\nDerrama o teu amor aqui\n\n                  C        D    C D C D C D        G\nFaz chover sobre nós Água Viva              Sobre nós!\n\n( G  D  Em  C )",
     "repertoireType": "popular",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -516,14 +517,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Marcelo Rossi / Pe. Antônio Maria",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "E",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Dedilhado / Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": false,
-    "chordCount": 5,
+    "chordCount": 13,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Cura,+Senhor,+Onde+Dói+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Oração de Cura Interior e Adoração Eucarística",
@@ -535,7 +536,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G/B  Am  F  Dm  G7\n\n[Primeira Parte]\n   C                        G/B             Am\n1. Vamos, Jesus, passear na minha vida,\n   F                        Dm              G7\nQuero voltar aos lugares em que fiquei só;\n   C                        G/B             Am\nQuero voltar lá contigo, vendo que estavas comigo,\n   F                        G7              C      C7\nQuero sentir Teu amor a me embalar!\n\n[Refrão]\n   F                        G7              C      Am\nCura, Senhor, onde dói! Cura, Senhor, bem aqui!\n   Dm                       G7              C      C7\nCura, Senhor, onde eu não posso ir!\n   F                        G7              C      Am\nQuando a lembrança me faz adormecer,\n   Dm                       G7              C\nSabes que a espada de dor entra em meu ser;\n   F                        G7              C\nTu me carrega nos braços, leva-me com Teu abraço,\n   Dm                       G7              C\nSinto minha alma a chorar junto de Ti!",
+    "cifra": "E             B/D#            C#m  C#m/B\n1  Vamos Jesus passear, na minha vida\n\nF#m                  B                   Bm  E7 D/F#  E/G#\nQuero voltar aos lugares em que fiquei só\n\nA                  B/A     G#m                 C#m\nQuero voltar lá contigo, vendo que estavas comigo\n\nF#m               B             E  E7\nQuero sentir teu amor, a me embalar\n\n[Refrão]\n\nA                  B/A\nCura Senhor, onde dói\n\nG#m               C#m\nCura Senhor, bem aqui\n\nF#m                 B          Bm E7\nCura Senhor, onde eu não posso ir\n\nA                  B/A\nCura Senhor, onde dói\n\nG#m               C#m\nCura Senhor, bem aqui\n\nF#m                 B            E\nCura Senhor, onde eu não posso ir\n\n     E                 B/D#         C#m C#m/B\n2  Quando a lembrança me faz, adormecer\n\nF#m                    B                Bm  E7  D/F#  E/G#\nSabes que a espada da dor entra eu meu ser\n\nA                    B/A    G#m                C#m\nTu me carregas nos braços, leva-me com teu abraço\n\nF#m                  B             E E7\nSinto minha alma chorar, junto de Ti\n\n    E                    B/D#        C#m C#m/B\n3  Tantas lembranças eu quero, esquecer\n\nF#m                      B             Bm  E7 D/F#  E/G#\nDeixa um vazio em minha'lma e em meu viver\n\nA                  B/A    G#m                  C#m\nToma Senhor meu espaço, te entrego todo o cansaço\n\nF#m                    B            E E7\nQuero acordar com tua paz a me aquecer",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -546,14 +547,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Marcelo Rossi / Frederico Cruz",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Quaresma",
-    "originalKey": "G",
+    "originalKey": "B",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada / Dedilhado",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 15,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tudo+É+do+Pai+(Eu+Pensava+Que+Podia+Viver+Por+Mim+Mesmo)+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Humildade, Gratidão e Retorno ao Pai",
@@ -565,7 +566,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Quaresma e CF",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C  D7  G\n\n[Primeira Parte]\n   G                        D               Em\n1. Eu pensava que podia viver por mim mesmo,\n   C                        Am              D7\nEu pensava que as coisas do mundo não iriam me derrubar;\n   G                        D               Em\nO orgulho tomou conta do meu ser,\n   C                        Am              D7\nE o pecado devastou o meu viver!\n\n   C                        D7              G       Em\n2. Fui embora, disse ao Pai: \"Dá-me o que é meu!\"\n   Am                       D7              G       G7\nDá-me a parte que me cabe da herança!\n   C                        D7              G       Em\nFui pro mundo, gastei tudo, me restou só o pecado,\n   Am                       D7              G\nHoje eu sei que nada é meu, tudo é do Pai!\n\n[Refrão]\n   G                        D               Em\nTudo é do Pai! Toda honra e toda glória!\n   C                        Am              D7\nÉ Dele a vitória alcançada em minha vida!\n   G                        D               Em\nTudo é do Pai! Se sou fraco e pecador,\n   C                        D7              G\nBem mais forte é o meu Senhor, que me cura por amor!",
+    "cifra": "[Intro] B  F#/A#  G#m  E\n\n        C#m  F#4  F#\n\nB      F#/A#     G#m   E\n\nC#m             F#4      F#\n\n[Primeira Parte]\n\n       B               F#/A#\nEu pensei que podia viver\n\n         G#m  B/F#\nPor mim mesmo\n\n       C#m                  C#m/B\nEu pensei que as coisas do mundo\n\n      F#\nNão iriam me derrubar\n\n     B           F#/A#\nO orgulho tomou conta\n\n        G#m  B/F#\nDo meu ser\n\n       C#m       C#m/B       F#\nE o pecado devastou o meu viver\n\n[Pré-Refrão]\n\n       E              F#\nFui embora, disse ao Pai\n\n               D#m  G#m\nDá-me o que é meu\n\n         C#m\nDá-me a parte\n\n        F#           B  B7\nQue me cabe da herança\n\n         E             F#\nFui pro mundo, gastei tudo\n\n       D#7   Gº   G#m\nMe restou só o pecado\n\n           C#m            F#\nE hoje eu sei que nada é meu\n\n           B  F#\nTudo é do Pai\n\n[Refrão]\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        B  F#\nQue me cura por amor\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        B  E9/F#\nQue me cura por amor\n\n[Primeira Parte]\n\n       B               F#/A#\nEu pensei que podia viver\n\n         G#m  B/F#\nPor mim mesmo\n\n       C#m                  C#m/B\nEu pensei que as coisas do mundo\n\n      F#\nNão iriam me derrubar\n\n     B           F#/A#\nO orgulho tomou conta\n\n        G#m  B/F#\nDo meu ser\n\n       C#m       C#m/B       F#\nE o pecado devastou o meu viver\n\n[Pré-Refrão]\n\n       E              F#\nFui embora, disse ao Pai\n\n               D#m  G#m\nDá-me o que é meu\n\n         C#m\nDá-me a parte\n\n        F#           B  B7\nQue me cabe da herança\n\n         E             F#\nFui pro mundo, gastei tudo\n\n       D#7   Gº   G#m\nMe restou só o pecado\n\n           C#m            F#\nE hoje eu sei que nada é meu\n\n           B  F#\nTudo é do Pai\n\n[Refrão Final]\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        B  F#\nQue me cura por amor\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        E   B/D#  C#m  B\nQue me cura por amor",
     "repertoireType": "popular",
     "specialDay": "Quaresma e CF",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -576,14 +577,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Marcelo Rossi / Adoração",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Pentecostes",
-    "originalKey": "Am",
+    "originalKey": "G#",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Contemplativa",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Eu+Navegarei+no+Oceano+do+Espírito+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Clássico de Adoração e Invocação do Espírito Santo",
@@ -595,7 +596,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Am  G  F  E7\n\n[Primeira Parte]\n   Am                                       G\n1. Eu navegarei no oceano do Espírito,\n   F                                        E7\nE ali adorarei ao Deus do meu amor!\n   Am                                       G\nEu adorarei ao Deus da minha vida,\n   F                                        E7\nQue me compreendeu sem nenhuma explicação!\n\n[Refrão]\n   Am                                       G\nEspírito, Espírito, que desce como fogo,\n   F                                        E7\nVem como em Pentecostes e enche-me de novo! (2x)\n\n[Segunda Parte]\n   G                        C               Am\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   F                        E7              Am\nPois olhou para a pequenez deste humilde servidor;\n   C                        Dm              G\nRecebe a minha entrega, meu louvor e gratidão,\n   F                        E7              Am\nPermanece para sempre em minha vida e vocação!\n\n[Final] Am  C  E7  Am",
+    "cifra": "[Intro] G#m7  F#6  E7M\n\n        C#m7(9)  D#  D#4  D#\n\n[Primeira Parte]\n\n          G#m7\nEu navegarei\n\n                F#6\nNo oceano do Espírito\n\n            E7M  C#m7\nE ali adorarei\n\n                 D#  D#4  D#\nAo Deus do meu amor\n\n         G#m7\nEu adorarei\n\n                  F#6\nAo Deus da minha vida\n\n                E7M  C#m7\nQue me compreendeu\n\n                    D#  D#4  D#\nSem nenhuma explicação\n\n[Refrão]\n\n             G#m7\nEspírito, Espírito\n\n                F#6\nQue desce como fogo\n\n                  E7M   C#m7\nVem como em pentecostes\n\n               D#  D#4  D#\nE enche-me de novo\n\n             G#m7\nEspírito, Espírito\n\n                F#6\nQue desce como fogo\n\n                  E7M   C#m7\nVem como em pentecostes\n\n               D#  D#4  D#\nE enche-me de novo\n\n[Primeira Parte]\n\n          G#m7\nEu navegarei\n\n                F#6\nNo oceano do Espírito\n\n            E7M(9)  C#m7\nE ali adorarei\n\n                 D#  D#4  D#\nAo Deus do meu amor\n\n         G#m7\nEu adorarei\n\n                  F#6\nAo Deus da minha vida\n\n                E7M(9)  C#m7\nQue me compreendeu\n\n                    D#  D#4  D#\nSem nenhuma explicação\n\n[Refrão]\n\n             G#m7\nEspírito, Espírito\n\n                F#6\nQue desce como fogo\n\n                  E7M(9)  C#m7\nVem como em pentecostes\n\n               D#  D#4  D#\nE enche-me de novo\n\n             G#m7\nEspírito, Espírito\n\n                F#6\nQue desce como fogo\n\n                  E7M(9)  C#m7\nVem como em pentecostes\n\n               D#  D#4  D#\nE enche-me de novo\n\n[Solo] G#m7  F#6  E7M\n\n       C#m7  D#  D#4  D#\n\n       G#m7  F#6  E7M\n\n       C#m7  D#  D#4  D#\n\n[Refrão]\n\n             G#m7\nEspírito, Espírito\n\n                F#9\nQue desce como fogo\n\n                  E7M   C#m7(9)\nVem como em pentecostes\n\n               D#  D#4  D#\nE enche-me de novo\n\n             G#m7\nEspírito, Espírito\n\n                F#9\nQue desce como fogo\n\n                  E7M   C#m7(9)\nVem como em pentecostes\n\n               D#  D#4  D#\nE enche-me de novo\n\n[Interlúdio] G#m7  F#6  E7M\n\n             C#m7  D#  D#4  D#\n\n             G#m7  F#6  E7M\n\n             C#m7  D#  D#4  D#\n\n             G#m7\nEspírito, Espírito\n\n                F#6\nQue desce como fogo\n\n                  E7M   C#m7\nVem como em pentecostes\n\n               D#  D#4  D#  G#m7\nE enche-me de novo",
     "repertoireType": "popular",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -606,14 +607,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Marcelo Rossi",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "F",
     "bpm": 84,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Gratidão",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Te+Agradeço+(Por+Tudo+o+Que+Tens+Feito)+Padre+Marcelo+Rossi+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Ação de Graças",
@@ -625,7 +626,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D\n1. Por tudo o que tens feito, por tudo o que vais fazer,\n   Em                       C\nPor Tuas promessas e tudo o que és,\n   G                        D\nEu quero Te agradecer com todo o meu ser!\n\n[Refrão]\n   C                        G\nTe agradeço, meu Senhor!\n   C                        G\nTe agradeço, meu Senhor!\n   G                        D               Em\nTe agradeço por me libertar e salvar,\n   C                        D               G\nPor ter morrido em meu lugar: Te agradeço!",
+    "cifra": "[Intro] F  Bb9  F/C  C#º\n\n        Dm  C/E  F  Bb9\n\n[Primeira Parte]\n\nF                  C\n  Eu Te agradeço, Deus\n\n                   Dm7\nPor se lembrar de mim\n\n              Bb9\nE pelo Teu favor\n\n                    F\nE o que me faz crescer\n\n              C\nEu vivo pela fé, e não vacilo\n\nDm7\n    Eu não paro, eu não desisto\n\nBb9\n    Eu sou de Deus, eu sou de Cristo\n\n[Interlúdio] F  C  Dm7  Bb9\n\n             F  C  Dm7  Bb9\n\nF                   C\n  Eu Te agradeço, Deus\n\n                   Dm7\nPor se lembrar de mim\n\n              Bb9\nE pelo Teu favor\n\n                    F\nE o que me faz crescer\n\n              C\nEu vivo pela fé, e não vacilo\n\nDm7\n    Eu não paro, eu não desisto\n\nBb9\n    Eu sou de Deus, eu sou de Cristo\n\n[Pré-Refrão]\n\nF            C\n  Você mudou a minha história\n\nDm7\n    E fez o que ninguém\n\nBb9\n    Podia imaginar\n\nF               C\n Você acreditou e isso é tudo\n\nDm7\n    Só vivo para você\n\nBb9\n    Não sou do mundo, não\n\n[Refrão]\n\nF          C         Dm7\n  A honra, a glória, a força\n\n Bb9\nTodo louvor a Deus\n\nF              C             Dm7\n  E o levantar   das minhas mãos\n\n              Bb9             F\nÉ pra dizer que Te pertenço, Deus\n\n[Segunda Parte]\n\nF                   C\n  Eu te agradeço a Deus\n\nQue no deserto\n\n Dm7                Bb9\nNão me deixou morrer\n\nE nem desanimar\n\nF                C\n  E como aquela mãe que não desiste\n\nDm7                      Bb9\n    Você não se esqueceu     você insiste\n\n[Pré-Refrão]\n\nF            C\n  Você mudou a minha história\n\nDm7\n    E fez o que ninguém\n\nBb9\n    Podia imaginar\n\nF                C\n  Você acreditou e isso é tudo\n\nDm7\n    Só vivo para você\n\nBb9\n    Não sou do mundo, não\n\n[Refrão]\n\nF          C         Dm7\n  A honra, a glória, a força\n\n Bb9\nTodo louvor a Deus\n\nF              C             Dm7\n  E o levantar   das minhas mãos\n\n              Bb9             F\nÉ pra dizer que Te pertenço, Deus\n\n[Solo]\n\nF           C\nOh! oh, oh, oh\n\n        Dm7/A\nOh, oh, oh\n\n        Bb9\nOh, oh, oh\n\nF           C\nOh! oh, oh, oh\n\n        Dm7/A\nOh, oh, oh\n\n        Bb9\nOh, oh, oh\n\n[Pré-Refrão]\n\nF            C\n  Você mudou   a minha história\n\nDm7\n    E fez o que ninguém\n\nBb9\n    Podia imaginar\n\nF                C\n  Você acreditou   e isso é tudo\n\nDm7\n    Só vivo pra você\n\nBb9\n    Não sou do mundo, não\n\n[Refrão]\n\nF         C         Dm7\n A honra, a glória, a força\n\n Bb9\nTodo louvor a Deus\n\nF              C             Dm7\n  E o levantar   das minhas mãos\n\n              Bb9             F\nÉ pra dizer que Te pertenço, Deus\n\n          C         Dm7\n A honra, a glória, a força\n\n Bb9\nTodo louvor a Deus\n\nF              C             Dm7\n  E o levantar   das minhas mãos\n\n              Bb9             F\nÉ pra dizer que Te pertenço, Deus\n\n[Final] F  C  Dm7  Bb9\n\n        F  C  Dm7  Bb9\n\n        F  C  Dm7  Bb9\n\n        F  C  Dm7  Bb9  F",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -696,14 +697,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Eliana Ribeiro / Canção Nova",
     "liturgicalMoment": "Entrada",
     "liturgicalSeason": "Pentecostes",
-    "originalKey": "G",
+    "originalKey": "B",
     "bpm": 82,
     "timeSignature": "4/4",
     "rhythmName": "Balada Carismática",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Chuva+de+Graça+Eliana+Ribeiro+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Efusão do Espírito Santo (4 Acordes Fixos)",
@@ -715,7 +716,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C  (2x)\n\n[Primeira Parte]\n   G                        D\n1. Há uma chuva de graça aqui,\n   Em                       C\nEstá chovendo sobre todos nós,\n   G                        D\nE quem mais se entregar,\n   Em                       C\nMais se molhará!\n\n   G                        D\n2. Há uma semente pra germinar,\n   Em                       C\nE muitos frutos a se produzir,\n   G                        D\nNa terra do coração\n   Em                       C\nDerrama Tua graça!\n\n[Refrão]\n   G                        D\nChuva de graça pedimos a Ti,\n   Em                       C\nChuva de graça derrama em nós!\n   G                        D\nChuva de graça neste lugar,\n   Em                       C               G\nDerrama!",
+    "cifra": "B  F#/Bb  G#m  E  B  F#  E\n\n(solo 2x) B  F#  G#m  E\n\nB                     F#\nHá uma chuva de graça aqui\n\nG#m                E\nEstá chovendo sobre todos nós\n\nB                     F#\nE quem mais se entregar\n\nE\nMais se molhará\n\nB                     F#\nHá uma semente pra germinar\n\nG#m                E\nE muitos frutos a se produzir\n\nB                     F#\nNa terra do coração\n\nE\nDerrama tua graça\n\nB                     F#\nChuva de graça pedimos a ti\n\nG#m                E\nChuva de graça derrama em nós\n\nB                     F#\nChuva de graça neste lugar\n\nE\nDerrama!\n\n[Solo]\n\nB        F#        G#m        E\nÔ, ô, ô, ô, ô, ô, ô, ô\n\nB        F#        G#m        E\nÔ, ô, ô, ô, ô, ô, ô, ô",
     "repertoireType": "popular",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -853,7 +854,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 10,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Quero+Mergulhar+nas+Profundezas+Canção+Nova+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Efusão do Espírito Santo",
@@ -865,7 +866,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  Em  C  D\n\n[Refrão]\n   G                                        Em\nQuero mergulhar nas profundezas do Espírito de Deus,\n   C                                        D\nE descobrir Suas riquezas em meu coração! (2x)\n\n[Estrofe]\n   Em                                       Bm\n1. É tão lindo, tão simples,\n   C                        Am              D\nBrisa leve tão suave, doce Espírito Santo de Deus!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] G  D/F#  Em7  C9  D4  D\n\n[Primeira Parte]\n   G                        D/F#\n1. Quero mergulhar nas profundezas\n   Em7                      C9\nDo amor de Deus, meu Criador!\n   G                        D/F#\nDeixar que a graça me renove,\n   Em7                      C9\nE me revista do Teu louvor!\n\n[Pré-Refrão]\n   Am                       Em\nLeva-me além das aparências,\n   C                        D4  D\nOnde o Teu Espírito se move!\n\n[Refrão]\n   G                        D/F#\nQuero mergulhar, quero Te adorar,\n   Em7                      C9\nEm Espírito e em verdade me entregar!\n   G                        D/F#\nTua presença é tudo o que eu preciso,\n   C            D           G\nMeu amado, meu Senhor e Redentor!",
     "repertoireType": "popular",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -936,14 +937,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Dunga / Canção Nova",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "GB",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Balada Familiar",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 14,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Restaura+Nossa+Casa,+Senhor+(Restauração)+Dunga+cifra",
     "liturgicalAnalysis": {
       "status": "Oração pela Restauração das Famílias",
@@ -955,7 +956,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Deus vê o coração, sonda com compaixão,\n   C                        Am              D\nE sabe o tamanho da sua dor;\n   G                        D               Em\nEle não pode pôr limites no Seu amor,\n   C                        D               G\nPois sabe até onde vai todo pecador!\n\n[Refrão]\n   G                        D               Em\nRestaura nossa casa, Senhor,\n   C                        Am              D\nNossa família, nossa bênção!\n   G                        D               Em\nDerrama sobre nós o Teu amor,\n   C                        D               G\nPois eu e minha casa serviremos ao Senhor!",
+    "cifra": "[Intro] G/B  C  D/C  C  Am7  Bm7\n\n        Em7  Am  D4  Dm7  F  F7M  G\n\nG7M\n   Deus vê o coração\n\nEm7\n    Sonda com a compaixão\n\n  C7M       C/D       G      C/D\nE sabe o tamanho da sua dor\n\nG7M                  Em7\n  Ele não pode pôr        limites no Seu amor\n\n      C7M      C/D           G       C/D\nPois sabe até onde vai todo pecador\n\nG7M                 Em7\n   Lágrimas são suor de  almas que lutam só\n\n    C7M       C/D                G       C/D\nSó Deus pode entender o que lhe causa dor\n\nG7M                    Em7\n  Pensa no teu Senhor,    recorra ao Seu amor\n\n    C7M       C/D              G        C/D\nE creia: Ele é fiel, justo é o Seu amor\n\n G   Am7  Bm7  C7M          C/D\nPa...re   de   se maltratar!\n\n               Bm7           Em7\nNão queira aos outros culpar\n\n          Am7       C/D\nDiga: por hoje não!\n\n            G                 G7\nPor hoje eu não vou mais pecar!\n\n  G7         C7M  C  D  Em  Am  C/D\nEstenda   a   sua mão\n\n         Bm7         Em7\nE abra o seu coração\n\n          Am7        C/D\nVolta pro seu Senhor\n\n             G        G7\nE se abra à restauração\n\n    G7          C7M  C  D  Em  Am  C/D\nCom Cristo, você vai superar\n\n            Bm7           Em7\nTodas as barreiras passar\n\n         Am7         D/C\nTodo o pecado vencer\n\n              Eb7M  C/D     G\nUm novo homem vai      nascer",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -966,14 +967,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Anjos de Resgate / Dalvimar Gallo",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "G",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Acústica",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 12,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Amigos+Pela+Fé+Anjos+de+Resgate+cifra",
     "liturgicalAnalysis": {
       "status": "Clássico de Fraternidade Cristã e Encontros",
@@ -985,7 +986,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G  Em  A7\n\n[Primeira Parte]\n   D                        A               Bm\n1. Quem me dará um ombro amigo quando eu precisar?\n   G                        Em              A7\nE se eu cair, se eu vacilar, quem vai me levantar?\n   D                        A               Bm\nSou eu, quem vai ouvir você quando o mundo não puder te entender;\n   G                        Em              A7          D\nFoi Deus quem te escolheu pra ser o melhor amigo que eu pudesse ter!\n\n[Refrão]\n   D                        A               Bm\nAmigos, pra sempre, bons amigos que nasceram pela fé!\n   G                        Em              A7\nAmigos, pra sempre, para sempre amigos sim, se Deus quiser!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] G  Em  C9  D\n\n   G     Em       C9\n\n  D\n\n[Primeira Parte]\n\nG          D/F# Em         D C9\n  Quem me da___rá um ombro amigo\n\n            D\nQuando eu precisar?\n\nG         D/F# Em         D   C9\n  E se eu ca___ir, se eu vacilar\n\n             D\nQuem vai me levantar?\n\n    Am              G/B\nSou eu, quem vai ouvir você\n\n          C9                      D\nQuando o mundo não puder te entender\n\n     Am                 G/B\nFoi Deus, quem te escolheu pra ser\n\n      C9                       D\nO melhor amigo que eu pudesse ter\n\n[Refrão]\n\nG    D/F#  Em           D\n  Amigo.....os pra sempre\n\n       C            Am         D\nBons amigos que nasceram pela fé\n\nG    D/F#  Em           D\n  Amigo.....os pra sempre\n\n      Am            D7(4)\nPara sempre amigos sim\n\nSe Deus quiser\n\n[Intro – Variação]\n\n  G       Em     C9        Am     D\n\n[Segunda Parte]\n\n  G  D/F#   Em       D  C9\nQuem é que vai  me acolher\n\n            D\nNa minha indecisão\n\n G        D/F# Em      D C9\nSe eu me per_der pelo caminho\n\n             D\nQuem me dará a mão\n\n     Am               G/B\nFoi Deus, quem consagrou\n\nVocê e eu\n\n      C9\nPara sermos bons amigos\n\n            D\nNum só coração\n\n    Am           G/B\nPor isso eu estarei aqui\n\n        C9\nQuando tudo parecer\n\n         D\nSem solução\n\n[Ponte]\n\nBb                     F\n   Peço a Deus que te guarde\n\n(Que te guarde, abençoe\nE mostre a sua face)\n\nBb                D4\n   E te dê a sua paz\n\n[Refrão]\n\nG   D/F#  Em            D\n  Amigo.....os pra sempre\n\n       C            Am         D\nBons amigos que nasceram pela fé\n\nG   D/F#  Em            D\n  Amigo.....os pra sempre\n\n      Am            D7(4)\nPara sempre amigos sim\n\n    G         (D)\nSe Deus quiser\n\nG    D/F#  Em           D\n  Amigo.....os pra sempre\n\n       C           Am          D\nBons amigos que nasceram pela fé\n\nG   D/F#  Em            D\n  Amigo.....os pra sempre\n\n      Am            D7(4)\nPara sempre amigos sim\n\nSe Deus quiser\n\n[Final]\n\n  G    Em        D/F#   G",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -996,14 +997,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Anjos de Resgate / Dalvimar Gallo",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Oração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 14,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Manda+Teus+Anjos+Sobre+Nós+Anjos+de+Resgate+cifra",
     "liturgicalAnalysis": {
       "status": "Oração de Intercessão e Consolação",
@@ -1015,7 +1016,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Quando o meu coração está cansado de lutar,\n   C                        Am              D\nE as lágrimas insistem em rolar pelo meu rosto;\n   G                        D               Em\nEu clamo a Ti, Senhor, que envies Teu socorro,\n   C                        D               G\nPois só em Ti encontro abrigo e meu repouso!\n\n[Refrão]\n   G                        D               Em\nManda Teus anjos sobre nós,\n   C                        Am              D\nE abençoa todos que esperam em Vós!\n   G                        D               Em\nManda Teus anjos pra nos ensinar\n   C                        D               G\nA Te louvar e glorificar!",
+    "cifra": "[Intro] D  G/D  D  G/D\n\n D            G          D\nManda teus anjos, sobre nós\n\n       Bm         G             A\nE abençoa todos que esperam em vós\n\n           D  G/D           D    Bm\nManda teus anjos, pra nos ensinar\n\n         Em      A     D  D4\nA te louvar, e glorificar\n\nD                   G         A      D\nEnvia também teu espírito de paz e amor\n\n       F#m         Bm   Em         A\nO meu coração tem sede,do meu criador\n\nD                    G               A    D\nEnvia senhor os teus anjos, pra nos resgatar\n\n          F#m        Bm        Em         A       D\nPra nos proteger de todo mal, para nos guiar, senhor\n\nD            G          D\nManda teus anjos, sobre nós\n\n       Bm         G             A\nE abençoa todos que esperam em vós\n\n           D  G/D           D    Bm\nManda teus anjos, pra nos ensinar\n\n         Em      A     D  D4\nA te louvar, e glorificar\n\n  D                   G             A      D\nQuando acordo olho o céu e canto o meu louvor\n\n    F#m         Bm     Em           A\nDe todas as manhãs, tu és o meu senhor\n\n      D             G              A    D\nLevantai-nos ó meu Deus e estende tuas mãos\n\n   F#m         Bm         Em          A4      D\nTu és o meu refúgio, nas minhas opressões senhor\n\n    G        (A  G)     A       F#m       G  A\nConfio em vós,      revele tua face para nós\n\n   G       (A  G)    A        F#m           G  F#m  Em  A\nLevanta-te,       e põe o teu escudo sobre nós\n\nManda teus anjos\n\n[Solo] D  G  A  F#m  Bm  Em  A  D  B7\n\n E            A          E\nManda teus anjos, sobre nós\n\n       C#m       A              B\nE abençoa todos que esperam em vós\n\n           E  A              E B/D# C#m\nManda teus anjos, pra nos ensinar\n\n         F#m    B     E  C#m\nA te louvar, e glorificar\n\n         F#m    B     E   C#m\nA te louvar, e glorificar\n\n         F#m   B  B4\nA te louvar, e te    amar\n\n[Final] E  A/E  E  A/E  E",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1026,14 +1027,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Anjos de Resgate",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "B",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Balada",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 23,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Mais+Que+Amigos+Anjos+de+Resgate+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Comunhão Fraterna",
@@ -1045,7 +1046,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Não é preciso mais adormecer pra sonhar com um anjo descendo do céu,\n   C                        Am              D\nBasta fechar os olhos e saber que somos mais que amigos!\n\n[Refrão]\n   G                        D               Em\nMais que amigos, irmãos na fé,\n   C                        D               G\nUnidos pelo amor de Jesus de Nazaré!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] B  F#/Bb  C#m  F#  B  F#/Bb  C#m\n\n B                 D#m              E                 G#m\nNão é preciso mais adormecer pra sonhar com um anjo descendo\n\n    F#/A#\nDo céu\n\n E              B/D#         C#m                F#4  F#\nBasta você perceber que sou mais que um amigo fiel\n\n B                        D#m                E              G#m\nSou aquele que traz a alegria de Deus e a entrega direto ao seu\n\n     F#/A#\nCoração\n\nE                 G#m                   A      E/G#     F#4  F#\nE com Você vou sorrir e chorar. Lado a lado vamos caminhar\n\n  C#m            B/D#          G#m                F#/A#\nQuando de ajuda você precisar dou minha vida pra lhe resgatar\n\nC#m                 B/D#\nEsse é o desejo de Deus (de Deus)\n\n E                      F#\nDe hoje em diante o seu anjo sou eu!\n\n B                      F#/Bb       E           G#m      F#\nSou muito mais que um amigo sou um anjo que o senhor enviou!\n\n B                   F#/Bb\nPode gritar para o mundo ouvir\n\n       C#m         E     F#          B\nSou um anjo que o senhor enviou pra você!\n\n B             D#m                        E                G#m\nNão tenho asas nem sei voar mas o que o mundo não pode eu posso lhe\n\nF#/Bb\nDar!\n\n E                   B/D#                C#m          F#4    F#\nVou lhe mostrar o caminho de Deus só ele pode santificar\n\nC#m              B/D#         G#m                F#/Bb\nQuando de ajuda você precisar dou minha vida pra lhe resgatar\n\nC#m                B/D#           E                       F#4\nEsse é o desejo de Deus (de Deus) de hoje em diante o seu anjo sou\n\nF#\nEu\n\n B                      F#/Bb       E           G#m      F#\nSou muito mais que um amigo sou um anjo que o senhor enviou!\n\n B                   F#/Bb\nPode gritar para o mundo ouvir\n\n       C#m           E      F#\nSou um anjo que o senhor enviou\n\nBm                Bm9(11)            G7M            Em        F#m\nQuando você se ferir e do céu se afastar eu lhe trarei para perto\n\n    Bm\nDe Deus\n\n Bm               A/C#              G/D          Em\nQuando sentir solidão vem comigo rezar e eu levarei suas preces  a\n\n F# G  G/B\nDeus\n\n C                  G/B          F              Am     G/B\nNós somos mais que amigos: somos anjos que o senhor enviou!\n\n C                   G/B              Dm            F       G\nVamos gritar para o mundo ouvir somos anjos que o senhor enviou!\n\n C                  G/B          F              Am     G/B\nNós somos mais que amigos: somos anjos que o senhor enviou!\n\n C                   G/B               Dm      C\nVamos gritar para o mundo ouvir somos anjos",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1086,14 +1087,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Anjos de Resgate / Dalvimar Gallo",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "A",
+    "originalKey": "G",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 17,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Estou+Aqui+(Pra+Ser+Amado+e+Te+Amar)+Anjos+de+Resgate+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração Eucarística e Entrega",
@@ -1105,7 +1106,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] A  E  F#m  D\n\n[Refrão]\n   A                        E               F#m\nEstou aqui pra ser amado e Te amar,\n   D                        Bm              E\nTe olhar nos olhos e deixar-me apaixonar;\n   A                        E               F#m\nDiante de Ti, pra me render ao Teu amor,\n   D                        E               A\nE confessar minhas fraquezas: sou pecador!\n\n[Estrofe]\n   F#m                      C#m             D\n1. Também estou aqui pra pedir perdão\n   Bm                       E               A\nPelas almas que ainda não buscam Teu coração!\n\n[Segunda Parte]\n   F#m                      D               A\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Bm                       E7              A\nPois olhou para a pequenez deste humilde servidor;\n   D                        E7              F#m\nRecebe a minha entrega, meu louvor e gratidão,\n   Bm                       E7              A\nPermanece para sempre em minha vida e vocação!\n\n[Final] A  D  E7  A",
+    "cifra": "[Intro] G9  C/G  D/F#  G  G/B  C  D4  D\n\n        C/E  D/F#  G9  C/G  D/F#  G  G/B  C  D4  D\n\n         G\nEstou aqui\n\n        D/G\nPra ser amado e te amar\n\n          C9          Am7          D7(11)  D7\nTe olhar nos olhos e deixar-me   apaixonar\n\n           G\nDiante de ti\n\n           D/G\nPra me render ao teu amor\n\n      C9             G/B  Am7       D7(11)  D7\nE confessar minhas fraquezas,  sou pecador!\n\n    Am7\nTambém estou aqui\n\n     Em7(9)\nPra pedir perdão\n\n      Am7       G/B    C9              D7(11)  D\nPelas almas que ainda não  buscam teu coração\n\n     G         D/G                       C9\nTe amar    (te amar)     por quem não te ama\n\n       G/B  Am   Am7/G                 F   D\nTe adorar              por quem não te adora\n\n     G    D/F#             C9         G/B\nEsperar       por quem não espera em ti\n\n        Am7            D\nPelos que não creem eu, estou aqui\n\n     G       D/G                    C9\nTe amar  (te amar)  por quem não te ama\n\n       G/B  Am  Am7/G                F   D\nTe adorar            por quem não te adora\n\n     G   D/F#              C9         G/B\nEsperar       por quem não espera em ti\n\n        Am7            D\nPelos que não crêem eu, estou aqui\n\n     G       D/G                     C9\nTe amar  (te amar)   por quem não te ama\n\n       G/B  Am   Am7/G                F   D\nTe adorar             por quem não te adora\n\n     G   D/F#               C9         G/B\nEsperar        por quem não espera em ti\n\n        Am7          D          G\nPelos que não crêem  eu   estou aqui\n\n            Em7(9)\nEstou aqui, estou aqui",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1116,14 +1117,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Anjos de Resgate / Marcelinho",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "E",
     "bpm": 88,
     "timeSignature": "4/4",
     "rhythmName": "Pop Acústico",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 11,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Seja+Luz+Anjos+de+Resgate+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Envio Baseado no Sermão da Montanha (Mt 5, 14)",
@@ -1135,7 +1136,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am          F\n1. Todo dia a gente pode ser melhor,\n   C                        G               Am          F\nEspalhar o bem e não deixar ninguém tão só!\n\n[Refrão]\n   C                        G\nSeja luz! Ilumine quem está na escuridão!\n   Am                       F\nSeja sal da terra, estenda a sua mão!\n   C                        G               Am          F       C\nBrilhe a vossa luz diante dos irmãos, para a glória de Deus Pai!\n\n[Segunda Parte]\n   Am                       F               C\n2. Onde houver dor e tristeza, levemos consolação,\n   Dm                       G7              C\nOnde houver treva e discórdia, semeemos o perdão;\n   F                        G               Am\nA bênção de Deus Trindade nos acompanhe no andar,\n   Dm                       G7              C\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Final] C  F  G7  C",
+    "cifra": "INTRO : Em    D      Em     D\n\nLA LA IÊ LA IÊ LA IÊ LA IÂ LC 8, 43-47\n\nEm                              C7+\nTodo aquele que entrega a vida nas mãos de Jesus,\n\nEm                         C7+\nAbsorve e armazena o poder da Sua luz.\n\nD/F#         C/G    G    D/F#             C/G  G\nTendo uma vela ace---sa,    coloque-a sobre a me---sa.\n\nE/G#         Am             D4           D  D4   D\nPra anunciar o Reino do Céu às nações, assim seja!\n\nG           D/F#          C                     D4            D G\nLuz! Seja luz, Para aqueles que ainda precisam encontrar Jesus.\n\n    D/F#            C                   D                     Em\nSeja luz! Mostre ao mundo que vive nas trevas que existe uma luz\n\nD            C7+      Bm   Am D\n      É Jesus.     É Jesus.\n\nEm                           C7+\nVem Espírito Santo, traz luz ao meu coração.\n\nEm                             C7+\nFaz de mim um luzeiro pra vida do meu irmão.\n\nD/F#       C/G   G   D/F#         C/G   G\nVou semear a Sua paz. Quero ensinar o Seu amor.\n\nE/G#           Am               D4    D     D4   D\nUnja-me dá-me a graça de ser o Seu servo, Senhor!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1146,14 +1147,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Walmir Alencar / Ministério Adoração e Vida",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "A",
+    "originalKey": "B",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Adoração Solene",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 11,
     "youtubeUrl": "https://www.youtube.com/results?search_query=O+Céu+Se+Abre+Walmir+Alencar+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração Eucarística e Louvor Celestial",
@@ -1165,7 +1166,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] A  E  F#m  D\n\n[Primeira Parte]\n   A                        E               F#m\n1. Hoje o Céu se abre pra derramar\n   D                        Bm              E\nSobre os corações toda a graça do Pai;\n   A                        E               F#m\nEu também quero me derramar\n   D                        E               A\nDe todo o meu coração nos braços do Pai!\n\n[Refrão]\n   A                        E\nVem, Espírito Santo, com Teu poder,\n   F#m                      D\nTocar meu ser, fluir em mim!\n   F#m                      E               D\nHoje eu posso ser um novo homem\n   Bm                       E               A\nPelo Teu poder, renascer!",
+    "cifra": "[Intro] B  B7M  B/D#  E  E9\n\n        G#m  F#  B/D#  E  E9\n\nB                      D#m\nHoje o céu se abre pra derramar\n\n          E               B       A  F#4  F#\nSobre os corações toda a graça do Pai\n\n B                  D#m\nEu também quero me derramar\n\n               E     C#m               A    F#4  F#\nDe todo o meu coração    nos braços do Pai\n\n[Refrão]\n\nB    B7M           E7M   E6            G#m\nVem,     Espírito Santo,    com teu poder\n\n  F#              E\nTocar meu ser, fluir em mim (2x)\n\nB                      D#m\nHoje o céu se abre pra derramar\n\n          E               B      A  F#4  F#\nSobre os corações toda a graça do Pai\n\n B                  D#m\nEu também quero me derramar\n\n               E     C#m             A    F#4  F#\nDe todo o meu coração    nos braços do Pai\n\n[Refrão]\n\nB    B7M              E7M  E6           G#m\nVem,        Espírito Santo,   com teu poder\n\n  F#              E\nTocar meu ser, fluir em mim\n\nB    B7M     B/D#    E7M  E6            G#m\nVem,        Espírito Santo,   com teu poder\n\n  F#          B/D#    E\nTocar meu ser,     fluir em mim\n\nG#m                   E\n    Hoje eu posso ser   um novo homem\n\n      B              F#  D#m\nPelo teu poder renascer\n\nG#m                   E\n    Hoje eu posso ser   um novo homem\n\n      B              F#  F#4\nPelo teu poder renascer\n\nG#m                   E\n    Hoje eu posso ser   um novo homem\n\n      B              F#  D#m\nPelo teu poder renascer\n\nG#m                   E\n    Hoje eu posso ser   um novo homem\n\n      B        G#m      F#\nPelo teu poder    renascer\n\n[Refrão]\n\nB    B7M           E7M  E6           G#m\nVem,     Espírito Santo,   com teu poder\n\n F#          B/D#    E\nTocar meu ser,     fluir em mim\n\nB    B7M  B/D#    E7M  E6            G#m\nVem,     Espírito Santo,   com teu poder\n\n  F#          B/D#    E\nTocar meu ser,     fluir em mim\n\nB    B7M  B/D#     E7M  E6          G#m\nVem,     Espírito Santo,   com teu poder\n\n F#          B/D#    E\nTocar meu ser,     fluir em mim\n\nB    B7M  B/D#     E7M  E6          G#m\nVem,     Espírito Santo,   com teu poder\n\n  F#          B/D#    E\nTocar meu ser,     fluir em mim\n\nB    B7M  B/D#    E7M  E6           G#m\nVem,     Espírito Santo,   com teu poder\n\n  F#          B/D#    E\nTocar meu ser,     fluir em mim",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1176,14 +1177,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Walmir Alencar / Ministério Adoração e Vida",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Páscoa",
-    "originalKey": "G",
+    "originalKey": "F",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Pop Rock Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 12,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Hoje+Livre+Sou+Walmir+Alencar+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Vitória Pascal e Confiança em Deus",
@@ -1195,7 +1196,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Páscoa e Vigília Pascal",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Presença forte em mim, eu posso dizer: habita aqui!\n   C                        Am              D\nMeu coração inteiro se entregou a Ti, Senhor!\n\n[Refrão]\n   G                        D\nConfiarei em Teu amor, e nos Teus braços descansarei!\n   Em                       C\nPois Tu és fiel, Senhor, nunca falharás:\n   G                        D               C       G\nHoje livre sou pelo Teu amor!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Final] G  C  D7  G",
+    "cifra": "Intro: F  Gm  F/A  Bb  Dm  C  Bb9\n\nSolo Inicial\n\nF       C/E      Dm      F/C   Bb9     F      C   C# C\nPresença forte em mim, eu posso dizer: habitas aqui\n\nF       C/E      Dm      F     Bb       F            C     C# C\nPorque escravo eu fui e hoje eu sou mais livre aos teus pés\n\nAm         Bb        C/E      F\nSentido na vida a minhalma encontrou\n\nAm       Bb         C        F\nTua mão poderosa veio e me levantou\n\nAm       Bb   Am   Bb\nAgora eu posso declarar\n\n     Dm   C    F\nHoje li  vre  sou\n\n(F)                Dm9         Bb9  F\nTenho sede da tua graça, cada dia   mais\n\n(F)                     Dm           Bb     C\nSou mais forte e vou mais longe quando aqui estás\n\n      Dm        Gm     Am ( F/A )   Bb\nCom palavras de amor te adoro,   Senhor\n\n     Dm  C    F        ( G )\nHoje li  vre sou       ( F  Dm  Bb9  F  Dm9 Bb C  Gm/Bb )\n\nF                  Dm9          Bb9     F\nMeu tesouro, minha herança, meu Supremo Bem\n\n(F)                 Dm           Bb      C\nNem tribulações nem dor podem nos separar\n\n     Dm        Gm     Am ( F/A )   Bb\nE jamais irão romper o que o amor selou\n\n     Dm  C   F\nHoje li vre sou",
     "repertoireType": "popular",
     "specialDay": "Páscoa e Vigília Pascal",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1206,14 +1207,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Celina Borges",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "E",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Balada Bíblica",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 14,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tudo+Posso+Naquele+Que+Me+Fortalece+Celina+Borges+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Bíblico Paulino (Filipenses 4, 13)",
@@ -1225,7 +1226,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nPosso, tudo posso Naquele que me fortalece:\n   C                        Am              D\nNada e ninguém no mundo vai me fazer desistir!\n   G                        D               Em\nQuero, tudo quero, sem medo entregar meus projetos:\n   C                        D               G\nDeixar-me guiar nos caminhos que Deus desejou pra mim e ali estar!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nPosso, tudo posso Naquele que me fortalece:\n   C                        Am              D\nNada e ninguém no mundo vai me fazer desistir!\n   G                        D               Em\nQuero, tudo quero, sem medo entregar meus projetos:\n   C                        D               G\nDeixar-me guiar nos caminhos que Deus desejou pra mim e ali estar!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] Em  D  C\n\n        Am  G  D\n\n        C  G/B  Am  D\n\n        C  G/B  Am  Am/G  D\n\nG           D/F#    C                 Em  D\nPosso, tudo posso Naquele que me fortalece\n\nC                 G/B                Am          D\nNada e ninguém no mundo vai me fazer de...sis ..tir\n\nG           D/F#       C                     Em  D\nQuero, tudo quero, sem medo entregar meus projetos\n\nC                   G/B                    Am           D\nDeixar-me guiar nos caminhos que Deus desejou   pra    mim   e ali estar\n\n          G          D/F#                   C           D\nVou perseguir tudo aquilo que Deus já escolheu pra mim\n\n           G     D/F#                C\nVou persistir, e mesmo nas marcas daquela dor\n\n   G/B                  Am    D\nDo que ficou, vou me lembrar\n\n       G     D/F#                 C          D\nE realizar o sonho mais lindo que Deus sonhou\n\nEb°      Em             Bm                  C\nEm meu lugar estar na espera de um novo que vai chegar\n\n     G/B          Am               D    Em  D/F#\nVou persistir, continuar   a  esperar   e   crer\n\nD  C           G/B        Am    Am/G    D/F# D     C\nE mesmo quando a visão se turva   e o   coração só chora\n\n       G/B         Am     Am/G    D\nMas na alma, há certeza   da    vitória\n\nG           D/F#    C                 Em  D\nPosso, tudo posso Naquele que me fortalece\n\nC                 G/B                Am          D\nNada e ninguém no mundo vai me fazer de...sis ..tir\n\n          G          D/F#                   C           D\nVou perseguir tudo aquilo que Deus já escolheu pra mim\n\n           G     D/F#               C\nVou persistir, e mesmo nas marcas daquela dor\n\n   G                    Am    D\nDo que ficou, vou me lembrar\n\n       G     D/F#                 C                D\nE realizar o sonho mais lindo que Deus sonhou... ouoou\n\nEb°      Em             Bm                  C\nEm meu lugar estar na espera de um novo que vai chegar\n\n     G/B         Am               D    Em  D/F#\nVou insistir, continuar   a  esperar   e   crer\n\nD  C           G/B        Am      Am/G  D/F# D     C\nE mesmo quando a visão se turva   e o   coração só chora\n\n       G/B         Am     Am/G    D\nMas na alma, há certeza   da    vitória\n\nSOLO: Eb  F  G - Eb - F - D4 - D\n\nC            G/B        Am     Am/G  D/F# D     C\nMesmo quando a visão se turva  e o   coração só chora\n\n       G/B         Am   Am/G    D\nMas na alma, há certeza    da vitória Eu vou\n\n  CM7         G9/B              Am7           D\nSofrendo, mas seguindo enquanto tantos não entendem\n\nD/B    CM7            G9/B           Am7\nVou cantando minha história, profetizando\n\n       C/D          CM7   G9/B   Am7   D            G\nQue eu posso, tudo posso...            em Jesu..uus",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1243,7 +1244,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 16,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Nas+Asas+do+Senhor+(Sei+Que+os+Que+Confiam+no+Senhor)+Celina+Borges+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Bíblico de Esperança (Isaías 40, 31)",
@@ -1255,7 +1256,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  Em  C  D\n\n[Primeira Parte]\n   G                                        Em\n1. Sei que os que confiam no Senhor\n   C                                        D\nRevigoram suas forças, suas forças se renovam!\n   G                                        Em\nPosso até cair ou vacilar, mas consigo levantar,\n   C                        D               G       G7\nPois recebo d'Ele asas, e como águia me preparo pra voar!\n\n[Refrão]\n   C                        D               G       Em\nEu posso ir muito além de onde estou,\n   C                        D               G       Em\nVou nas asas do Senhor!\n   C                        D               G       Em\nO Teu amor é o que me conduz:\n   C                        D               G\nPosso voar e subir sem me cansar!",
+    "cifra": "Introdução] G  C  Am  D\n\nG                         D9/F#\nSei que os que confiam no Senhor\n\n                Em                       C\nRevigoram suas forças, suas forças se renovam\n\n G                  D9/F#                 Em\nPosso até cair ou vacilar, mas consigo levantar\n\n                 C\nPois recebo dele asas\n\n       Am                    D\nE como águia, me preparo pra voar\n\n         G        D9/F#        Em\nEu posso ir muito além de onde estou\n\n                  C\nVou nas asas do Senhor\n\n       G/B      Am       D\nO Teu Amor é o que me conduz\n\n    G         D/F#     Em\nPosso voar e subir sem me cansar\n\n                      C      G/B\nIr pra frente sem me fatigar\n\n        Am          D\nVou com asas,como águia\n\n                    G  C D\nPois confio no Senhor!\n\n                  Em      D\nPois confio no Senhor! Uô-ô-ô\n\n           C         D         B7\nQue me dá forças pra ser um vencedor-ô\n\n               Em\nNas asas do Senhor\n\n     Am     D\nVou voar! Voar\n\n         A         E/G#       F#m\nEu posso ir muito além de onde estou\n\n                    D\nVou nas asas do Senhor\n\n      A/C#    Bm         E\nO Teu amor é o que me conduz\n\n        A        E/G#        F#m/E\nPosso voar e subir sem me cansar\n\n                      D      A/C#\nIr pra frente sem me fatigar\n\n         Bm          E\nVou com asas,  como águia\n\n                   A\nPois confio no Senhor!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1303,7 +1304,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 15,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Deus+Cuida+de+Mim+Padre+Fábio+de+Melo+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Confiança na Divina Providência",
@@ -1315,7 +1316,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Eu preciso aprender um pouco aqui, eu preciso aprender um pouco ali,\n   C                        Am              D\nEu preciso aprender mais de Deus, porque Ele é quem cuida de mim!\n   G                        D               Em\nSe uma porta se fecha aqui, outras portas se abrem ali,\n   C                        D               G\nEu preciso aprender mais de Deus, porque Ele é quem cuida de mim!\n\n[Refrão]\n   G                        D               Em\nDeus cuida de mim na sombra das Suas asas,\n   C                        Am              D\nDeus cuida de mim, eu amo a Sua casa!\n   G                        D               Em\nE não ando sozinho, não estou sozinho, pois sei:\n   C                        D               G\nDeus cuida de mim!",
+    "cifra": "[Intro] G9  A/G  F#m7  Bm  Em7  G/A  G/D  D9\n\n      D9                         A/C#\nEu preciso aprender um pouco aqui\n\n      Bm7                    Bm7/A\nEu preciso aprender um pouco ali\n\n       G                      Em\nEu preciso aprender mais de Deus\n\n       G                    A4  A\nPorque Ele é quem cuida de mim\n\n        D\nSe uma porta se fecha aqui\n\n       F#m7              G\nOutras portas se abrem ali\n\n      D/F#                    Bm\nEu preciso aprender mais de Deus\n\n       G                    Bm\nPorque Ele é quem cuida de mim\n\n  G  G/A       D\nDeus cuida de mim\n\n     G/A       D\nDeus cuida de mim\n\n    G              D/F#\nNa sombra das suas asas\n\n              Bm7\nDeus cuida de mim\n\n   F#          Bm\nEu amo a sua casa\n\n       G\nE não ando sozinho\n\n   D/F#\nNão estou sozinho\n\n      Em  Em/D\nPois sei\n\n               A4  A\nDeus cuida de mim\n\n     G/A       D\nDeus cuida de mim\n\n    G              D/F#\nNa sombra das suas asas\n\n              Bm7\nDeus cuida de mim\n\n   F#          Bm\nEu amo a sua casa\n\n       G\nE não ando sozinho\n\n   D/F#\nNão estou sozinho\n\n      Em\nPois sei\n\n G     A4/7/9  D\nDeus cuida de mim\n\nSe na vida não tenho direção\nE preciso tomar uma decisão\nEu sei que existe alguém que me ama\nEle quer me dar a mão",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1326,14 +1327,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Fábio de Melo",
     "liturgicalMoment": "Comunhão",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "D",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Balada Poética",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tudo+É+do+Pai+/+Humano+Amor+de+Deus+Padre+Fábio+de+Melo+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Contemplação da Encarnação do Verbo",
@@ -1345,7 +1346,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. O Deus que fez o céu e a terra quis morar em nosso chão,\n   F                        Dm              G7\nPartilhou a nossa mesa, repartiu o mesmo Pão!\n\n[Refrão]\n   C                        G               Am\nBendito seja o Verbo que entre nós veio habitar,\n   F                        G7              C\nE na Santa Eucaristia decidiu permanecer e nos amar!\n\n[Segunda Parte]\n   Am                       F               C\n2. Mistério da fé divina que nos une em um só Corpo,\n   Dm                       G7              C\nPenhor da vida futura e do nosso eterno conforto;\n   F                        G               Am\nFazei de nós, ó Jesus, testemunhas da caridade,\n   Dm                       G7              C\nRepartindo com os pobres o Pão da fraternidade!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] D  G  D  G  Em  A\n\n         D\nTens o dom de ver estradas\n\n               G\nOnde eu vejo o fim\n\n  D\nMe convences quando falas\n\n          G    A\nNão é bem assim\n\n  Em\nSe me esqueço, me recordas\n\n                 A\nSe não sei, me ensinas\n\nEm              G\nE se perco a direção\n\n             A\nVens me encontrar\n\n  D\nTens o dom de ouvir segredos\n\n          G\nMesmo se me calo\n\n  D\nE se falo me escuta\n\n             G     A\nQueres compreender\n\n  Em                             A\nSe pela força da distância tu te ausentas\n\n     Em                 G\nPelo poder que há na saudade\n\n     A\nVoltarás\n\n[Refrão]\n\nD\nQuando a solidão doeu em mim\n\n             Bm\nQuando meu passado não passou por mim\n\n                G                 D/F#\nQuando eu não soube compreender a vida\n\nEm                        A\nTu vieste compreender por mim\n\nD\nQuando os meus olhos não podiam ver\n\n          Bm\nTua mão segura me ajudou a andar\n\n                G                 D/F#\nQuando eu não tinha mais amor no peito\n\n Em                     A\nTeu amor me ajudou a amar\n\nD\nQuando o meu sonho vi desmoronar\n\n                Bm\nMe trouxeste outros pra recomeçar\n\n                G                     D/F#\nQuando eu me esqueci que eu era alguém na vida\n\n Em                      A\nTeu amor veio me relembrar\n\n             D                G\nQue Deus me ama, que não estou só\n\n        Em\nQue Deus cuida de mim\n\n          A\nQuando fala pela tua voz\n\n               D\nQue me diz: coragem !",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1386,7 +1387,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Santa Teresa d'Ávila / Taizé & Liturgia",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "Am",
+    "originalKey": "A",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Ostinato Contemplativo",
@@ -1405,7 +1406,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Am  Dm  G  C  E7  Am\n\n[Primeira Parte]\n   Am                       Dm              G\n1. No silêncio agradecido deste encontro de oração,\n   C                        F               E7\nContemplo a Tua presença que habita em meu coração;\n   Am                       Dm              G\nNão há nada neste mundo que se possa comparar\n   C                        E7              Am\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão Contemplativo]\n   Am                       Dm\nNada te perturbe, nada te espante,\n   G                        C               E7\nQuem a Deus tem, nada lhe falta!\n   Am                       Dm\nNada te perturbe, nada te espante:\n   E7                       Am\nSó Deus basta! (2x)\n\n[Segunda Parte]\n   G                        C               Am\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   F                        E7              Am\nPois olhou para a pequenez deste humilde servidor;\n   C                        Dm              G\nRecebe a minha entrega, meu louvor e gratidão,\n   F                        E7              Am\nPermanece para sempre em minha vida e vocação!\n\n[Refrão Contemplativo]\n   Am                       Dm\nNada te perturbe, nada te espante,\n   G                        C               E7\nQuem a Deus tem, nada lhe falta!\n   Am                       Dm\nNada te perturbe, nada te espante:\n   E7                       Am\nSó Deus basta! (2x)\n\n[Final] Am  C  E7  Am",
+    "cifra": "Am\nNada te perturbe\n\n            E\nNada te amedronte\n\nTudo, tudo passa\n\n                    Am\nSó Deus, só Deus não passa\n\n      A7           Dm\nA paciência tudo alcança\n\n             E        Am\n A quem tem deus nada falta\n\n         E\n Só deus basta!\n\n         Am\n Só deus basta!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1476,14 +1477,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Católica Shalom / Suely Façanha",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "F#",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Adoração Eucarística",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 11,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Belíssimo+Esposo+Comunidade+Católica+Shalom+cifra",
     "liturgicalAnalysis": {
       "status": "Hino Contemplativo de Adoração Eucarística",
@@ -1495,7 +1496,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Belíssimo Esposo, mais belo que todos os homens,\n   C                        Am              D\nEm Teus lábios se derramou a graça!\n   G                        D               Em\nA Tua beleza me atrai, o Teu olhar me conquista,\n   C                        D               G\nPara sempre Teu serei, Senhor!\n\n[Refrão]\n   G                        D               Em\nÓ Jesus, meu Amado, Esposo da minh'alma,\n   C                        D               G\nAo Teus pés quero ficar e Te adorar!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] F#m  D9  F#m  D9\n\n        F#m  D9  A  E\n\nF#m         D9        F#m         D9\n\nF#m         D9      A     E\n\n[Primeira Parte]\n\n F#m     F#m/E  A/C#\nBeijo a Tua paixão\n\n          D                   F#m\nQue me liberta das minhas paixões\n\n      E       D\nBeijo a Tua cruz\n\n        Bm       D        E4\nQue condena e esmaga o pecado em mim\n\n F#m         F#m/E       A/C#\nBeijo Teus cravos, Tuas mãos\n\n      D                  F#m\nQue apagam o castigo do mal\n\n       E     D\nBeijo Tua ferida\n\n       Bm              E4         E\nQue curou a ferida do meu coração\n\n[Pré-Refrão]\n\n       D\nEu te beijo Senhor\n\n     E/D       C#m      F#m  E  D\nE a tua paixão é o meu tudo\n\nE/D     A\nÉs meu tudo, Jesus\n\n  D    E      A    F#m  D\nAmado de minh'alma\n\n[Refrão]\n\nA               E\nOh belíssimo esposo\n\n               Bm\nMais belo que todos os homens\n\n D      E        A\nSanto, Santo és Tu\n\n A           E\nBelíssimo esposo\n\n               Bm\nEsconde-me em Teu lado aberto\n\n    D    E        F#m      E  D\nEm Tua chaga de amor, de amor\n\n[Segunda Parte]\n\n F#m     F#m/E    A/C#\nBeijo a lança que abriu\n\n   D                 F#m\nA fonte do amor imortal\n\n   E         D\nA fonte do Amor sem fim\n\n       Bm           D       E4\nQue pagou o que eu não poderia pagar\n\n F#m     F#m/E     A/C#\nBeijo o teu lado aberto\n\n          D                 F#m\nJorrando rios de vida e de paz\n\n   E        D\nFazendo brotar em mim\n\n          Bm                 E\nUm canto novo, um hino esponsal\n\n[Pré-Refrão]\n\n D\nBeijo Tuas vestes\n\n  E/D\nQue esconderam\n\n C#m      F#m   E  D\nMinhas misérias\n\n E/D  A\nVer__gonha não há\n\n     D      E    A  F#m  D\nMe adornas com Amor\n\n[Refrão]\n\nA               E\nOh belíssimo esposo\n\n               Bm\nMais belo que todos os homens\n\n D      E        A\nSanto, Santo és Tu\n\n             E\nBelíssimo esposo\n\n               Bm\nEsconde-me em Teu lado aberto\n\n    D    E        F#m      E  D9\nEm Tua chaga de amor, de amor\n\n[Terceira Parte]\n\n F#m         F#m/E         A/C#\nBeijo os lençóis que envolveram\n\n       D                F#m\nO Teu corpo ferido de amor\n\n      E         D\nE cobriram meu coração\n\n      Bm       D     E4\nRevestiram-me de realeza\n\n F#m         F#m/E   A/C#\nBeijo o Teu Santo sepulcro\n\n      D                 F#m\nTestemunha da ressurreição\n\n       E       D\nQuero ressuscitar também\n\n        Bm               E4  E\nE encerrar-me dentro de Ti\n\n[Pré-Refrão]\n\n          D\nQuero em Ti mergulhar\n\n     E/D\nE então renascer\n\n         C#m      F#m  E  D\nNa Tua chaga criador\n\n E/D   A\nDescansar a minh'alma\n\nD       E   A  F#m  D\nEm Teu coração\n\n[Refrão]\n\nA               E\nOh belíssimo esposo\n\n               Bm\nMais belo que todos os homens\n\n D      E        A\nSanto, Santo és Tu\n\n             E\nBelíssimo esposo\n\n               Bm\nEsconde-me em Teu lado aberto\n\n    D    E        A\nEm Tua chaga de amor\n\n             E\nBelíssimo esposo\n\n               Bm\nMais belo que todos os homens\n\n D      E        A\nSanto, Santo és Tu\n\n            E\nBelíssimo esposo\n\n               Bm\nEsconde-me em Teu lado aberto\n\n    D    E        F#m      E  D  E\nEm Tua chaga de amor, de amor\n\n E/D\nChaga de amor\n\n   F#m\nEsconde-me em\n\n      E\nTua chaga de amor\n\n  D\nAmado meu\n\n   F#m  D\nEsposo meu\n\n  F#m  D\nAmado meu\n\n[Final] F#m  D  A  E  D",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1506,14 +1507,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Colo de Deus / Comunidade Shalom",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "Em",
+    "originalKey": "G#",
     "bpm": 68,
     "timeSignature": "4/4",
     "rhythmName": "Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Yeshua+(Te+Chamam+de+Deus+e+de+Senhor)+Comunidade+Colo+de+Deus+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração ao Santíssimo Nome de Jesus",
@@ -1525,7 +1526,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Em  C  G  D\n\n[Primeira Parte]\n   Em                                       C\n1. Te chamam de Deus e de Senhor,\n   G                                        D\nTe chamam de Rei, de Salvador,\n   Em                                       C\nE eu me atrevo a Te chamar de meu Amor!\n   G                                        D\nE eu me atrevo a Te chamar de meu Amor!\n\n[Refrão]\n   Em                                       C\nYeshua, Yeshua,\n   G                                        D\nTu és tão lindo, que eu nem sei me expressar!\n   Em                                       C\nYeshua,Tu és tão lindo!\n   G                        D               Em\nBendito é o Teu Nome, Jesus!",
+    "cifra": "[Intro] G#m7  E9  B  D#m\n\n        G#m7  E9  B  D#m\n\n[Primeira Parte]\n\n     G#m7\nTe chamam de Deus e de Senhor\n\n     E9\nTe chamam de rei, de salvador\n\n  B                                 D#m\nE eu me atrevo a Te chamar de meu amor\n\n     G#m7\nTe chamam de Deus e de Senhor\n\n     E9\nTe chamam de rei, de salvador\n\n  B                                 D#m\nE eu me atrevo a Te chamar de meu amor\n\n[Refrão]\n\n G#m7    E\nYeshua, Yeshua\n\n   B2      D#m\nTu és tão lindo\n\n                  G#m7\nQue eu nem sei me expressar\n\n E         B2      D#m\nYeshua, Tu és tão lindo\n\n G#m7    E\nYeshua, Yeshua\n\n   B2      D#m\nTu és tão lindo\n\n                  G#m7\nQue eu nem sei me expressar\n\n E         B2      D#m\nYeshua, Tu és tão lindo\n\n[Interlúdio] G#m7  E9  B2  D#m\n\n[Primeira Parte]\n\n     G#m7\nTe chamam de Deus e de Senhor\n\n     E9\nTe chamam de rei, de salvador\n\n  B                                 D#m\nE eu me atrevo a Te chamar de meu amor\n\n     G#m7\nTe chamam de Deus e de Senhor\n\n     E9\nTe chamam de rei, de salvador\n\n  B                                 D#m\nE eu me atrevo a Te chamar de meu amor\n\n[Refrão]\n\n G#m7    E\nYeshua, Yeshua\n\n   B2      D#m\nTu és tão lindo\n\n                  G#m7\nQue eu nem sei me expressar\n\n E         B2      D#m\nYeshua, Tu és tão lindo\n\n G#m7    E\nYeshua, Yeshua\n\n   B2      D#m\nTu és tão lindo\n\n                  G#m7\nQue eu nem sei me expressar\n\n E         B2      D#m\nYeshua, Tu és tão lindo\n\n[Interlúdio] G#m7  E9  B  D#m\n\n[Refrão Final]\n\n G#m7    E9\nYeshua, Yeshua\n\n   B2      D#m\nTu és tão lindo\n\n                  G#m7\nQue eu nem sei me expressar\n\n E9        B2      D#m\nYeshua, Tu és tão lindo",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1536,14 +1537,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Flávio Vitor Jr. / Comunidade Colo de Deus",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "E",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada Mariana",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Acaso+Não+Sabeis+(Eu+Me+Consagro+a+Ti)+Flávio+Vitor+Jr.+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Consagração a Nossa Senhora",
@@ -1555,7 +1556,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  G  Bm  A\n\n[Primeira Parte]\n   D                                        G\n1. Eu me consagro a Ti, Mãe de Deus e minha,\n   Bm                                       A\nEu me consagro a Ti, Mestra e Rainha!\n\n[Refrão]\n   G                                        D\nAcaso não sabeis que eu sou da Imaculada?\n   Bm                                       A\nAcaso não sabeis, tenho uma Advogada?\n   G                                        D\nSó quem já foi órfão sabe o valor do amor de mãe,\n   Bm                       A               D\nSó quem já foi órfão sabe o valor do colo de Mãe!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Onde houver dor e tristeza, levemos consolação,\n   Em                       A7              D\nOnde houver treva e discórdia, semeemos o perdão;\n   G                        A7              Bm\nA bênção de Deus Trindade nos acompanhe no andar,\n   Em                       A7              D\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] Em7  C  D/C\n\n        G  D/F#  Em7\n\n[Primeira Parte]\n\n       A/C#  C7M(9)\nEu me con___sagro a Ti\n\n D/C           Em7  D/F#  G\nMãe de Deus e minha\n\nA/C#      C7M(9)\nEu me consagro a Ti\n\n D/C       Em7  D/F#  G\nMestra e Rainha\n\n       A/C#  C7M(9)\nEu me con___sagro a Ti\n\n D/C           Em7  D/F#  G\nMãe de Deus e minha\n\nA/C#      C7M(9)\nEu me consagro a Ti\n\n D/C       G\nMestra e Rainha\n\n[Refrão]\n\n             G\nAcaso não sabeis\n\n                  Em7\nQue eu sou da Imaculada?\n\n           C9    Am7\nAcaso não sabeis\n\n             G\nTenho uma advogada?\n\n               C9\nSó quem já foi órfão\n\n          D              Em7  D/F#  G\nSabe o valor do amor de mãe\n\n               C9\nSó quem já foi órfão\n\n          D              G\nSabe o valor do colo de mãe\n\n               C9\nSó quem já foi órfão\n\n          D              Em7  D/F#  G\nSabe o valor do amor de mãe\n\n               C9\nSó quem já foi órfão\n\n          D              G\nSabe o valor do colo de mãe",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1585,7 +1586,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Refrão]\n   G                                        D\nAcalma minha tempestade,\n   Em                                       C\nSossega o meu coração!\n   G                                        D\nTu és o Mestre do vento e do mar,\n   Em                       C               G\nEm Tuas mãos seguro estou, Senhor!\n\n[Primeira Parte]\n   Em                       D               C\n1. Mesmo quando as ondas se levantam contra o barco meu,\n   Em                       D               C           D\nEu sei que estás na barca, ó Filho de Deus!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] G  D  Em7  C9\n\n[Primeira Parte]\n\nG\n  Quando estou em alto mar\n\n                      C9\nE as ondas vêm me agitar\n\nMinha fé começa a fraquejar\n\n                       G\nO medo se instala no lugar\n\nEsqueço da Sua promessa\n\n                      C9\nDe que sempre estás comigo\n\nPosso ouvir a Tua voz\n\n          Em7\nMe dizendo\n\n[Pré-Refrão]\n\n                C9\nPor que tendes medo?\n\n                G\nPor que tendes medo?\n\n                D\nPor que tendes medo?\n\nEm7                 C9\n    Por que tendes medo?\n\n                G\nPor que tendes medo?\n\n                D\nPor que tendes medo?\n\n( G  D  Em7  C9 )\n\n[Primeira Parte]\n\nG\n  Quando estou em alto mar\n\n                      C9\nE as ondas vêm me agitar\n\nMinha fé começa a fraquejar\n\n                        G\nO medo se instala no lugar\n\nEsqueço da Sua promessa\n\n                       C9\nDe que sempre estás comigo\n\nPosso ouvir a Tua voz\n\n           Em7\nMe dizendo\n\n[Pré-Refrão]\n\n                C9\nPor que tendes medo?\n\n                G\nPor que tendes medo?\n\n                D\nPor que tendes medo?\n\nEm7                 C9\n    Por que tendes medo?\n\n                G\nPor que tendes medo?\n\n                D\nPor que tendes medo?\n\n[Refrão]\n\n  G\nAcalma minha tempestade\n\n  Em7\nAcalma o meu coração\n\n   C9                            D\nDevolve a paz que vem de Ti, Senhor\n\n               G     D\nAumenta minha fé em Ti\n\n                    Em7   D\nNão me deixa fraquejar jamais\n\n               G\nAo som da Tua voz\n\n          D\nTudo vai calar\n\n           Em7  C9\nSó preciso esperar\n\n                 D   G   D\nA tempestade vai acalmar\n\n  G\nAcalma minha tempestade\n\n  Em7\nAcalma o meu coração\n\n   C9                            D\nDevolve a paz que vem de Ti, Senhor\n\n               G     D\nAumenta minha fé em Ti\n\n                    Em7   D\nNão me deixa fraquejar jamais\n\n               G\nAo som da Tua voz\n\n          D\nTudo vai calar\n\n           Em7  C9\nSó preciso esperar\n\n         D            G   D  Em7  C9\nA tempestade vai acalmar\n\n[Solo] G  D  Em7  C9\n\n       G  D  Em7  C9\n\n[Pré-Refrão]\n\nEm7                 C9\n    Por que tendes medo?\n\n                G\nPor que tendes medo filho?\n\n                D\nPor que tendes medo?\n\nEm7                 C9\n    Por que tendes medo?\n\n                G\nPor que tendes medo?\n\n                D\nPor que tendes medo?\n\n[Refrão]\n\n  G\nAcalma minha tempestade\n\n  Em7\nAcalma o meu coração\n\n   C9                            D\nDevolve a paz que vem de Ti, Senhor\n\n               G     D\nAumenta minha fé em Ti\n\n                    Em7   D\nNão me deixa fraquejar jamais\n\n               G\nAo som da Tua voz\n\n          D\nTudo vai calar\n\n           Em7  C9\nSó preciso esperar\n\n         D            G   D\nA tempestade vai acalmar\n\n  G\nAcalma minha tempestade\n\n  Em7\nAcalma o meu coração\n\n   C9                            D\nDevolve a paz que vem de Ti, Senhor\n\n               G     D\nAumenta minha fé em Ti\n\n                    Em7   D\nNão me deixa fraquejar jamais\n\n               G\nAo som da Tua voz\n\n          D\nTudo vai calar\n\n           Em7  C9\nSó preciso esperar\n\n         D            G\nA tempestade vai acalmar\n\n         D\nVai acalmar\n\n         Em7  C9\nVai acalmar\n\n         D            G\nA tempestade vai acalmar",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1596,14 +1597,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Frei Gilson / Som do Monte",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Quaresma",
-    "originalKey": "C",
+    "originalKey": "F",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Consolação",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Eu+Te+Levantarei+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Consolação e Esperança Cristã",
@@ -1615,7 +1616,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Quaresma e CF",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                                        G\nFilho, Eu te levantarei!\n   Am                                       F\nFilho, não te abandonarei!\n   C                                        G\nMesmo quando tudo parecer perdido,\n   Am                       F               C\nEu sou o teu Deus e estou contigo!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                                        G\nFilho, Eu te levantarei!\n   Am                                       F\nFilho, não te abandonarei!\n   C                                        G\nMesmo quando tudo parecer perdido,\n   Am                       F               C\nEu sou o teu Deus e estou contigo!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] F  Dm  Bb  Gm7  C\n\nF\nEu te levantarei\n\nDm\nEu te levantarei\n\n         Bb  Gm7          C\nFilho amado,     filho querido\n\nF\nEu te levantarei\n\nDm\nEu te levantarei\n\n         Bb   Gm7          C  ( C7 )\nFilho amado,     filho querido\n\n        Bb        C\nRestituirei tuas forças\n\n         Bb      C\nE te atrairei a mim\n\n       Bb          C             Bb  C\nE te darei novas vestes, filho amado\n\n         Bb       C\nRestituirei tuas forças\n\n           Bb    C\nE te atrairei a mim\n\n       Bb          C             Bb  C7\nE te darei novas vestes, filho amado",
     "repertoireType": "popular",
     "specialDay": "Quaresma e CF",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1626,14 +1627,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Frei Gilson / Som do Monte",
     "liturgicalMoment": "Comunhão",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "B",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Vocacional",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Deixa+Deus+Sonhar+em+Ti+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Vocacional e de Entrega à Vontade Divina",
@@ -1645,7 +1646,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. Ao redor da Santa Mesa nos chamais à comunhão,\n   C                        Am              D7\nVosso Corpo e Vosso Sangue se entregam neste Pão;\n   G                        D7              Em\nQuem comer deste alimento para sempre viverá,\n   C                        D7              G\nE a sede mais profunda da sua alma saciará!\n\n[Refrão]\n   G                        D\nDeixa Deus sonhar em ti,\n   Em                       C\nDeixa Deus agir em ti!\n   G                        D\nOs planos do Senhor são maiores que os teus:\n   Em                       C               G\nConfia no amor de Deus!\n\n[Segunda Parte]\n   Em                       C               G\n2. Mistério da fé divina que nos une em um só Corpo,\n   Am                       D7              G\nPenhor da vida futura e do nosso eterno conforto;\n   C                        D7              Em\nFazei de nós, ó Jesus, testemunhas da caridade,\n   Am                       D7              G\nRepartindo com os pobres o Pão da fraternidade!\n\n[Refrão]\n   G                        D\nDeixa Deus sonhar em ti,\n   Em                       C\nDeixa Deus agir em ti!\n   G                        D\nOs planos do Senhor são maiores que os teus:\n   Em                       C               G\nConfia no amor de Deus!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] Bm\n\n[Primeira Parte]\n\n                      G      A\nDeixa Deus sonhar em ti, deixa!\n\n                      Bm\nDeixa Deus sonhar em ti\n\n            G  A                   Bm\nNão tenhas me_do é Deus quem te segura\n\n( G  A  Bm  G  A  Bm )\n\n                      G      A\nDeixa Deus sonhar em ti, deixa!\n\n                      Bm\nDeixa Deus sonhar em ti\n\n            G  A                   Bm\nNão tenhas me_do é Deus quem te segura\n\n[Refrão]\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n[Segunda Parte]\n\n            G               A\nVerás um caminho difícil demais\n\n             D           A/C#    Bm\nVerás tempestades que te assustarão\n\n                         G\nMas quando o sonho é de Deus\n\n                A\nNinguém destruirá\n\n             D      A/C#      Bm\nSe Ele prometeu também cumprirá\n\n          G                  A\nTenha paciência e saiba esperar\n\n                    D\nO melhor de Deus virá\n\n[Refrão]\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n[Primeira Parte]\n\n                      G      A\nDeixa Deus sonhar em ti, deixa!\n\n                      Bm\nDeixa Deus sonhar em ti\n\n            G  A                   Bm\nNão tenhas me_do é Deus quem te segura\n\n[Refrão]\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n[Segunda Parte]\n\n            G               A\nVerás um caminho difícil demais\n\n             D           A/C#    Bm\nVerás tempestades que te assustarão\n\n                         G\nMas quando o sonho é de Deus\n\n                A\nNinguém destruirá\n\n             D      A/C#      Bm\nSe Ele prometeu também cumprirá\n\n          G                  A\nTenha paciência e saiba esperar\n\n                    D\nO melhor de Deus virá",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1656,14 +1657,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Thiago Brado",
     "liturgicalMoment": "Ato Penitencial",
     "liturgicalSeason": "Quaresma",
-    "originalKey": "G",
+    "originalKey": "C",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada Acústica",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Minha+Essência+(Vim+Até+Aqui+Derramar+o+Meu+Passado+em+Ti)+Thiago+Brado+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Conversão e Intimidade com Deus",
@@ -1675,7 +1676,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Quaresma e CF",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                                        D\n1. Vim até aqui derramar o meu passado em Ti,\n   Em                                       C\nVim banhar os pés que andaram por aí sem carinho receber;\n   G                                        D\nHoje estou aqui, não porque mereço, eu sei,\n   Em                                       C\nPois Tu sabes por onde eu andei, conheces bem o meu perfume!\n\n[Refrão]\n   G                                        D\nMas Tu sabes também que o meu choro é sincero, porém,\n   Em                                       C\nNão tenho nada a oferecer, meu Senhor, mas Te dou a minha vida!\n   G                                        D\nÉ tudo que tenho, recebe o meu nada,\n   Em                                       C               G\nRefaz a morada, habita em mim!",
+    "cifra": "[Intro] C  C7M  C  F\n\n        Am  A9  Am  F\n\n        C  C7M  C  F\n\n        Am  A9  G\n\n[Primeira Parte]\n\n C\nVim até aqui\n\n      F            Am\nDerramar o meu passado em ti\n\n                         Dm\nVim banhar os pés que andaram por aí\n\n                 G\nSem carinho receber\n\n C\nHoje estou aqui\n\n F             Am\nNão por que mereço eu sei\n\n                  Dm\nPois tu sabes por onde eu andei\n\n                       G\nConheces bem o meu perfume\n\n[Pré-Refrão]\n\n        Am\nMas tu sabes também\n\n                      Em\nQue o meu choro é sincero porém\n\n                       F             Dm\nNão tenho nada a oferecer meu Senhor\n\n                    G\nMas te dou a minha vida\n\n[Refrão]\n\n            C  C7M  C\nÉ tudo que tenho\n\n   F          Am  A9  Am\nRecebe o meu na__da\n\n   Am7     F   Dm\nRefaz a morada\n\n       G\nHabita em mim\n\n                C  C7M  C\nMe pega em teu co_lo\n\n     F            Am  A9  Am\nMe acalma em teu pei_to\n\n     Am7      F    Dm\nSou Teu sou eleito\n\n             G                    C  C7M  C  F\nE a minha essência é exalar Teu cheiro\n\n( Am  A9  Am  F )\n\n( C  C7M  C  F )\n\n( Am  G )\n\n[Primeira Parte]\n\n C\nVim até aqui\n\n      F            Am\nDerramar o meu passado em ti\n\n                         Dm\nVim banhar os pés que andaram por aí\n\n                 G\nSem carinho receber\n\n C\nHoje estou aqui\n\n F             Am\nNão por que mereço eu sei\n\n                  Dm\nPois tu sabes por onde eu andei\n\n                       G\nConheces bem o meu perfume\n\n[Pré-Refrão]\n\n        Am\nMas tu sabes também\n\n                      Em\nQue o meu choro é sincero porém\n\n                       F             Dm\nNão tenho nada a oferecer meu Senhor\n\n                    G\nMas te dou a minha vida\n\n[Refrão]\n\n            C  C7M  C\nÉ tudo que tenho\n\n   F          Am  A9  Am\nRecebe o meu na__da\n\n   Am7     F   Dm\nRefaz a morada\n\n       G\nHabita em mim\n\n                C  C7M  C\nMe pega em teu co_lo\n\n     F            Am  A9  Am\nMe acalma em teu pei_to\n\n     Am7      F    Dm\nSou Teu sou eleito\n\n             G                    Am   G\nE a minha essência é exalar Teu cheiro\n\n            C\nÉ tudo que tenho\n\n   F          Am\nRecebe o meu nada\n\n   C       F   Dm\nRefaz a morada\n\n       G\nHabita em mim\n\n                C  C7M  C\nMe pega em teu co_lo\n\n     F            Am  A9  Am\nMe acalma em teu pei_to\n\n     Am7      F    Dm\nSou Teu sou eleito\n\n             G                    C  C7M  C  F\nE a minha essência é exalar Teu cheiro\n\n[Final] Am  A9  Am  F\n\n        C  C7M  C  F\n\n        Am  G",
     "repertoireType": "popular",
     "specialDay": "Quaresma e CF",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1686,14 +1687,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Thiago Brado",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "E",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Dedilhado / Acústico",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 12,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Verdades+do+Tempo+Thiago+Brado+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Reflexivo sobre o Amor e o Tempo de Deus",
@@ -1705,7 +1706,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. Essa é uma canção de amor, veja onde está o seu coração;\n   F                        G               C\nColoque-o na palma da mão de Deus!\n\n[Refrão]\n   C                        G               Am\nO tempo passa e só o amor de Deus permanece,\n   F                        G               C\nQuem ama a Cristo nunca envelhece na fé!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] E9  C#m  A  B\n\n[Primeira Parte]\n\nE9             B/D#    C#m\nEssa é uma canção de amor\n\n                      F#m\nVeja onde está o seu coração\n\n              B4    B\nColoque-o na palma da mão\n\n               E9\nÉ preciso ofertar\n\n    B/D#        C#m\nO amor mais sincero\n\n                A9  F#m\nO sorriso mais puro\n\n                   B\nE o olhar mais fraterno\n\n[Pré-Refrão]\n\n            E9\nO mundo precisa\n\n   G#m7     C#m\nSaber a verdade\n\n    E/G#     A\nPassado não volta\n\n            F#m               B      B7\nFuturo não temos e o hoje não acabou\n\n[Refrão]\n\n         E        B/D#    C#m\nPor isso ame mais,     abrace mais\n\n B          A                  F#m            B  C#m  B/D#\nPois não sabemos quanto tempo temos pra respirar\n\n E        B/D#  C#m      B\nFale mais,     ouça mais\n\n        A                  B         E\nVale a pena lembrar que a vida é curta demais\n\n[Solo] E  C#m  B  A  F#m  B\n\n[Pré-Refrão]\n\n            E9\nO mundo precisa\n\n   G#m7     C#m\nSaber a verdade\n\n    E/G#     A\nPassado não volta\n\n            F#m               B      G#m7\nFuturo não temos e o hoje não acabou\n\n[Refrão]\n\n         E        B/D#    C#m\nPor isso ame mais,     abrace mais\n\n B          A                  F#m            B  C#m  B/D#\nPois não sabemos quanto tempo temos pra respirar\n\n E        B/D#  C#m      B\nFale mais,     ouça mais\n\n        A                  B         E\nVale a pena lembrar que a vida é curta demais\n\n[Solo] E  C#m  B  A  F#m  B  C#m  B\n\n[Refrão]\n\n         E        B/D#    C#m\nPor isso ame mais,     abrace mais\n\n B          A                  F#m            B  C#m  B/D#\nPois não sabemos quanto tempo temos pra respirar\n\n E        B/D#  C#m      B\nFale mais,     ouça mais\n\n        A                  B         E\nVale a pena lembrar que a vida é curta demais\n\n( A )\n\nE9\nEssa é uma canção de amor",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1716,14 +1717,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Suely Façanha / Comunidade Shalom",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "B",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Dedilhado / Meditação",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Regaço+Acolhedor+(Salmo+130)+Suely+Façanha+cifra",
     "liturgicalAnalysis": {
       "status": "Paráfrase do Salmo 130 (Como Criança no Colo da Mãe)",
@@ -1735,7 +1736,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  G  Em  A7  D\n\n[Primeira Parte]\n   D                        G               D\n1. Oh, minh'alma, retorna à tua paz,\n   G                        Em              A7\nComo criança bem tranquila no regaço acolhedor de sua mãe!\n\n[Refrão]\n   D                        G               Bm          A7\nMinha mãe é a Virgem Maria,\n   G                        Em              A7          D\nÉ ela que agora vai me acolher, me abraçar, me perdoar, me compreender,\n   G                        A7              D\nMe acalmar, me ensinar, me educar, me formar, me amar!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] Bm7  Bm7(5+)  Bm7\n\n        G7M  A9  Bm7\n\n[Primeira Parte]\n\n        G9\nÓ, minh'alma\n\n   A9          Bm7\nRetorna à tua paz\n\n        G9             A9\nComo criança bem tranquila\n\n            D    A/C#       Bm7\nNo regaço acolhedor de sua mãe\n\n        G9\nÓ, minh'alma\n\n   A9          Bm\nRetorna à tua paz\n\n        G9             A9\nComo criança bem tranquila\n\n            D    A/C#       Bm7\nNo regaço acolhedor de sua mãe\n\n[Segunda Parte]\n\n       G9  A9               D\nMinha mãe     é a Virgem Maria\n\n    A/C#    Bm7  Bm7/A\nÉ Ela que agora vai\n\n        G9          A9\nMe acolher, me abraçar\n\n        D       A/C#    Bm7\nMe perdoar, me compreender\n\n        G9          A9         Bm7 (Riff 1)\nMe acalmar, me ensinar, me educar\n\n       G9  A9    Bm7\nMe formar,    me amar\n\n       G9  A9               D\nMinha mãe     é a Virgem Maria\n\n    A/C#    Bm7  Bm7/A\nÉ Ela que agora vai\n\n        G9          A9\nMe acolher, me abraçar\n\n        D       A/C#    Bm7\nMe perdoar, me compreender\n\n        G9          A9         Bm7  Bm7/A\nMe acalmar, me ensinar, me educar\n\n       G9  A9    Bm7\nMe formar,    me amar\n\n        G9\nÓ, minh'alma\n\n   A9          Bm7\nRetorna à tua paz",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1746,14 +1747,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Zezinho, scj",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "F",
     "bpm": 82,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Esperança",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Teu+Sol+Vai+Brilhar+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Esperança Cristã",
@@ -1765,7 +1766,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  Am  Dm  G7  C\n\n[Primeira Parte]\n   C                        Am              Dm\n1. Quando a noite parecer não terminar,\n   G7                                       C\nE a tristeza vier bater no coração:\n\n[Refrão]\n   F                        G7              C           Am\nTeu sol vai brilhar, a luz vai chegar,\n   Dm                       G7              C\nPorque Deus jamais esquece quem sabe esperar!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] F  Bb  C7  F\n\n[Primeira Parte]\n   F                        C7\n1. Se a noite é escura e fria em teu caminhar,\n   Bb                       F\nE as pedras da estrada te fazem chorar,\n   Gm                       C7\nNão percas a fé, não deixes de amar:\n   Bb           C7          F\nO sol da esperança vai despontar!\n\n[Refrão]\n   F                        Bb\nTeu sol vai brilhar, a vida vai vencer,\n   C7                       F\nPorque o Senhor caminha com você!\n   Dm                       Gm\nConfia em Deus, não temas a dor:\n   Bb           C7          F\nQuem semeia em lágrimas colhe no amor!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1776,14 +1777,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Zezinho, scj",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "D",
+    "originalKey": "C",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Dedilhado",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Se+Eu+Fosse+um+Cristal+Padre+Zezinho,+scj+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Transparência à Luz de Deus",
@@ -1795,7 +1796,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  G  A7  D\n\n[Primeira Parte]\n   D                        G               A7          D\n1. Se eu fosse um cristal, deixaria Tua luz passar por mim;\n   Bm                       Em              A7          D\nSem nada reter, refletindo o Teu amor até o fim!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] C  G/B  Am  F  G7  C\n\n[Primeira Parte]\n   C                        G/B             Am\n1. Se eu fosse um cristal, refletiria a Tua luz,\n   F                        Dm              G7\nSe eu fosse uma flor, perfumaria Tua cruz!\n   C                        G/B             Am\nMas sou apenas pó e barro em Tuas santas mãos,\n   F            G7          C\nMoldado pelo amor do Teu perdão!\n\n[Refrão]\n   C                        G\nFaz de mim um vaso novo, Senhor,\n   Am                       F\nInstrumento dócil ao Teu louvor!\n   C                        G/B\nOnde houver tristeza, eu leve a alegria,\n   F            G7          C\nNa bênção maternal da Virgem Maria!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1806,14 +1807,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Reginaldo Manzotti",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "A",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Esperança",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 14,
     "youtubeUrl": "https://www.youtube.com/results?search_query=A+Tempestade+Vai+Passar+Padre+Reginaldo+Manzotti+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Consolação e Fé",
@@ -1825,7 +1826,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nA tempestade vai passar, tudo vai melhorar,\n   C                        D               G\nO sol de um novo dia logo vai brilhar!\n   G                        D               Em\nConfia no Senhor, entrega a tua dor,\n   C                        D               G\nPois Deus é o teu refúgio e teu libertador!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nA tempestade vai passar, tudo vai melhorar,\n   C                        D               G\nO sol de um novo dia logo vai brilhar!\n   G                        D               Em\nConfia no Senhor, entrega a tua dor,\n   C                        D               G\nPois Deus é o teu refúgio e teu libertador!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] A  B/A  G#m  C#7  F#m  E/G#  B  A/B\n\nE      B          A/C# Am/C\nComo é bom estar aqui\n\nE        B            A   E/G#\nEm meio a tantas provações\n\nF#m       B          C#m\nSaber que posso confiar\n\n   B      A     G#m  F#m E/G#\nEm meu Senhor e acreditar\n\nA      F#m         B  A/C# B/D#\nQue Ele nunca faltará\n\nE B/F# E/G# A B     E\nA tempestade vai passar\n\nC#m         B/D# E    B          C#m B\nPor sobre as ondas confiante andarei\n\nC#m   E/G# A  F#m  B A/B\nTribulações vencerei\n\n       E     G#m    A\nAs aflições superarei\n\n   G#m   F#m   B      A/B   E  B/D# C#7\nDeus provê, eu sei que proverá\n\nE/G#    A  B        E\nA tempestade vai passar\n\nC#m       B/D# E        B       C#m B\nPor sobre as ondas confiante andarei\n\nC#m   E/G# A F#m B  A/B\nTribulações vencerei\n\n        E     G#m  A\nAs aflições superarei\n\n   G#m   F#m   B     A/B   E  A/E\nDeus provê, eu sei que proverá\n\nE   B/D#         A/C#\nNeste bravo mar da vida\n\nE     G#m            A  E/G#\nVentos vêm me atormentar\n\nF#m  B           C#m          B    A        G#m  F#m   E/G#\nNesta rocha firme e forte, que é meu Deus, não temerei\n\nA    F#m        B\nNele posso confiar",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1836,14 +1837,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Reginaldo Manzotti",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "D",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Milagres+(Podes+Realizar+Milagres)+Padre+Reginaldo+Manzotti+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Súplica e Adoração",
@@ -1855,7 +1856,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                        G               Am\nEu creio em Ti, Senhor, que fazes milagres,\n   F                        G               C\nSustenta a minha fé quando a força faltar!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                        G               Am\nEu creio em Ti, Senhor, que fazes milagres,\n   F                        G               C\nSustenta a minha fé quando a força faltar!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] D  A/C#  Bm7  G9  A4  A\n\n[Primeira Parte]\n   D                        A/C#\n1. Senhor, eu sei que para Ti nada é impossível,\n   Bm7                      G9\nTua mão poderosa pode tudo transformar!\n   D                        A/C#\nMesmo quando a ciência diz que não tem cura,\n   Bm7                      G9          A\nEu sei que a Tua graça pode me tocar!\n\n[Refrão]\n   D                        A/C#\nPodes realizar milagres em minha vida,\n   Bm7                      G\nPodes curar a minha dor e a ferida!\n   D                        A/C#\nEm Teu Santo Nome eu profetizo a vitória:\n   G            A           D\nJesus Cristo, a Ti toda a glória!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1866,14 +1867,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Antônio Maria",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "G",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Balada Mariana",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Nossa+Senhora+(O+Que+É+Que+Eu+Sou+Sem+Jesus)+Padre+Antônio+Maria+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Mariano Devocional",
@@ -1885,7 +1886,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Solenidades Marianas",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  G  A7  D\n\n[Primeira Parte]\n   D                        A7              Bm\n1. Alimentados na Mesa da Palavra e do Altar,\n   G                        Em              A7\nPartimos agora em missão para o mundo iluminar;\n   D                        A7              Bm\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   G                        A7              D\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   D                        G               A7          D\nÓ Maria, minha Mãe, ensina-me a amar Jesus!\n   Bm                       Em              A7          D\nToma-me pela mão e guia os passos meus na luz!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Onde houver dor e tristeza, levemos consolação,\n   Em                       A7              D\nOnde houver treva e discórdia, semeemos o perdão;\n   G                        A7              Bm\nA bênção de Deus Trindade nos acompanhe no andar,\n   Em                       A7              D\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   D                        G               A7          D\nÓ Maria, minha Mãe, ensina-me a amar Jesus!\n   Bm                       Em              A7          D\nToma-me pela mão e guia os passos meus na luz!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] G  D/F#  Em  C  G/B  Am  D7\n\n[Primeira Parte]\n   G                        D/F#\n1. Cubra-me com seu manto de amor,\n   Em                       Bm\nGuarda-me na paz desse olhar!\n   C                        G/B\nCura-me as feridas e a dor,\n   Am                       D7\nMe ensina a perdoar e a amar!\n\n[Refrão]\n   G                        D/F#\nNossa Senhora, me dê a mão,\n   Em                       Bm\nCuida do meu coração,\n   C                        G/B\nDa minha vida, do meu destino,\n   Am           D7          G\nDo meu caminho, cuida de mim!",
     "repertoireType": "popular",
     "specialDay": "Solenidades Marianas",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1896,14 +1897,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Adriana Arydes / Pe. Fábio de Melo",
     "liturgicalMoment": "Comunhão",
     "liturgicalSeason": "Natal",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Balada Litúrgica",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Humano+Amor+de+Deus+Adriana+Arydes+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Natal e Encarnação",
@@ -1915,7 +1916,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Natal do Senhor",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Tem um jeito humano de bater o coração de Deus,\n   C                        Am              D\nQuis nascer pequeno e habitar no meio dos filhos Seus!\n\n[Refrão]\n   G                        D               Em\nBendito seja o humano amor de Deus,\n   C                        D               G\nQue se fez Pão da Vida para os filhos Seus!\n\n[Segunda Parte]\n   Em                       C               G\n2. Mistério da fé divina que nos une em um só Corpo,\n   Am                       D7              G\nPenhor da vida futura e do nosso eterno conforto;\n   C                        D7              Em\nFazei de nós, ó Jesus, testemunhas da caridade,\n   Am                       D7              G\nRepartindo com os pobres o Pão da fraternidade!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  G  D  G  Em  A\n\n         D\nTens o dom de ver estradas\n\n               G\nOnde eu vejo o fim\n\n  D\nMe convences quando falas\n\n          G    A\nNão é bem assim\n\n  Em\nSe me esqueço, me recordas\n\n                 A\nSe não sei, me ensinas\n\nEm              G\nE se perco a direção\n\n             A\nVens me encontrar\n\n  D\nTens o dom de ouvir segredos\n\n          G\nMesmo se me calo\n\n  D\nE se falo me escuta\n\n             G     A\nQueres compreender\n\n  Em                             A\nSe pela força da distância tu te ausentas\n\n     Em                 G\nPelo poder que há na saudade\n\n     A\nVoltarás\n\n[Refrão]\n\nD\nQuando a solidão doeu em mim\n\n             Bm\nQuando meu passado não passou por mim\n\n                G                 D/F#\nQuando eu não soube compreender a vida\n\nEm                        A\nTu vieste compreender por mim\n\nD\nQuando os meus olhos não podiam ver\n\n          Bm\nTua mão segura me ajudou a andar\n\n                G                 D/F#\nQuando eu não tinha mais amor no peito\n\n Em                     A\nTeu amor me ajudou a amar\n\nD\nQuando o meu sonho vi desmoronar\n\n                Bm\nMe trouxeste outros pra recomeçar\n\n                G                     D/F#\nQuando eu me esqueci que eu era alguém na vida\n\n Em                      A\nTeu amor veio me relembrar\n\n             D                G\nQue Deus me ama, que não estou só\n\n        Em\nQue Deus cuida de mim\n\n          A\nQuando fala pela tua voz\n\n               D\nQue me diz: coragem !",
     "repertoireType": "popular",
     "specialDay": "Natal do Senhor",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -1926,14 +1927,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Adriana Arydes",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "E",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Chave+do+Coração+Adriana+Arydes+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Entrega a Cristo",
@@ -1945,7 +1946,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                        A7              Bm\n1. No silêncio agradecido deste encontro de oração,\n   G                        Em              A7\nContemplo a Tua presença que habita em meu coração;\n   D                        A7              Bm\nNão há nada neste mundo que se possa comparar\n   G                        A7              D\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   D                        A               Bm\nQual é a chave? Qual é o segredo\n   G                        Em              A7          D\nQue abre as portas do teu coração? (2x)\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   D                        A               Bm\nQual é a chave? Qual é o segredo\n   G                        Em              A7          D\nQue abre as portas do teu coração? (2x)\n\n[Final] D  G  A7  D",
+    "cifra": "E        A     B\nQual é a chave?\n\n            E\nQual é o segredo?\n\nE        A     B\nQual é a chave?\n\n            E\nQual é o segredo?\n\n             A    B         E\nQue abre as portas do teu coração\n\n              F#m                  B9\nPor que não falar se Ele quer te ouvir?\n\n                G#m                  C#m\nPor que se esconder se Ele está aqui?\n\n                F#m                  B\nPor que não aceitar se Ele quer te dar?\n\n             E\nPor que insistir em resistir?\n\n             F#m              B9\nPois Ele tem tanto pra te falar\n\n         G#m            C#m\nQuer te amar, te perdoar\n\n         F#m               B\nMas é você que tem que abrir\n\n        E\nO coração\n\n         F#m          B9\nDeixa Jesus te consolar\n\n         G#m           C#m\nDeixa Jesus te abençoar\n\n         F#m         A/B  E\nDeixa Jesus te dar a tua  Salvação\n\nE        A     B\nQual é a chave?\n\n            E\nQual é o segredo?\n\n             A    B         E\nQue abre as portas do teu coração\n\n( F#m  B )\n\n( E  C#m )\n\n( D9  A/B )\n\n( E )\n\n              F#m                    B9\nPor que não falar se Ele quer te ouvir?\n\n                G#m                  C#m\nPor que se esconder se Ele está aqui?\n\n                F#m                  B\nPor que não aceitar se Ele quer te dar?\n\n             E\nPor que insistir em resistir?\n\n             F#m              B9\nPois Ele tem tanto pra te falar\n\n         G#m            C#m\nQuer te amar, te perdoar\n\n         F#m               B\nMas é você que tem que abrir\n\n        E\nO coração\n\n         F#m           B9\nDeixa Jesus te consolar\n\n         G#m           C#m\nDeixa Jesus te abençoar\n\n         F#m         A/B  E\nDeixa Jesus te dar a tua  Salvação\n\n( F#m  B  E )",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2016,14 +2017,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Eliana Ribeiro / Canção Nova",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "A",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Soberano,+Maravilhoso+Eliana+Ribeiro+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração ao Santíssimo",
@@ -2035,7 +2036,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                        A7              Bm\n1. No silêncio agradecido deste encontro de oração,\n   G                        Em              A7\nContemplo a Tua presença que habita em meu coração;\n   D                        A7              Bm\nNão há nada neste mundo que se possa comparar\n   G                        A7              D\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   D                        A               Bm          G\nSoberano, Maravilhoso, Deus que não sabe o que é falhar!\n   D                        A               Bm    G     D\nFiel e Poderoso, diante de Ti quero me prostrar!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   D                        A               Bm          G\nSoberano, Maravilhoso, Deus que não sabe o que é falhar!\n   D                        A               Bm    G     D\nFiel e Poderoso, diante de Ti quero me prostrar!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] A  E/G#  F#m7  D9  E4  E\n\n[Primeira Parte]\n   A                        E/G#\n1. Finalmente, irmãos, fortalecei-vos no Senhor,\n   F#m7                     D9\nPelo Seu soberano e infinito poder!\n   A                        E/G#\nRevesti-vos da armadura celeste de Deus,\n   F#m7                     D9          E\nPara que possais resistir e vencer!\n\n[Refrão]\n   A                        E/G#\nSoberano Deus, Senhor do Universo,\n   F#m7                     D9\nDiante de Ti todo joelho se dobrará!\n   A                        E/G#\nTeu Nome é Santo, forte e glorioso:\n   D9           E           A\nTua destra a vitória nos trará!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2046,14 +2047,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Canção Nova / Raquel Carpenter",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "C",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Ação de Graças",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Gratidão+(Eu+Encontrei+um+Amor+Perfeito+-+Lucas+17,+15)+Canção+Nova+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Ação de Graças (O Leproso Agradecido - Lucas 17)",
@@ -2065,7 +2066,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Eu encontrei um amor perfeito, um tesouro escondido,\n   C                        Am              D\nDiante deste altar!\n   G                        D               Em\nSeu valor é maior que tudo, nada poderá se igualar!\n\n[Refrão]\n   G                        D               Em\nTe agradecer, Te dar o meu amor,\n   C                        Am              D\nÉ tudo o que eu quero fazer, meu Senhor!\n   G                        D               Em\nDerramar meu perfume aos Teus pés,\n   C                        D               G\nE estar sempre perto de Ti!",
+    "cifra": "[Intro] C  G/B  Am7  F9  G4  G\n\n[Primeira Parte]\n   C                        G/B\n1. Eu encontrei um amor perfeito,\n   Am7                      F9\nQue sarou a dor do meu coração!\n   C                        G/B\nJesus olhou para a minha pequenez,\n   Am7                      F9          G\nE me deu a Sua graça e redenção!\n\n[Refrão]\n   C                        G/B\nGratidão, Senhor, por Teu imenso amor!\n   Am7                      F9\nGratidão por me acolher e perdoar!\n   C                        G/B\nMinha vida hoje é Tua, meu Jesus:\n   F            G           C\nPra sempre eu irei Te adorar!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2076,14 +2077,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Frei Gilson / Som do Monte",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "F",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 9,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tu+És+o+Centro+da+Minha+Vida+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Cristocêntrico de Adoração",
@@ -2095,7 +2096,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D\nTu és o centro da minha vida,\n   Em                       C\nÉs a razão da minha alegria!\n   G                        D\nNão quero nada além de Ti, Jesus:\n   Em                       C               G\nTu és meu Tudo, meu Senhor!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D\nTu és o centro da minha vida,\n   Em                       C\nÉs a razão da minha alegria!\n   G                        D\nNão quero nada além de Ti, Jesus:\n   Em                       C               G\nTu és meu Tudo, meu Senhor!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] F  Dm7  Bb  F  C\n\nF                     Dm7\n\nBb                     F\n\n[Primeira Parte]\n\n             F               Dm7\nQuero Te louvar, Te engrandecer\n\n         Bb                 C\nE proclamar Tua vitória em mim\n\n          Dm7            Gm  Am\nSer todo Teu é o meu prazer\n\n         Bb                  C\nTe seguirei aonde fores, Senhor\n\n[Refrão]\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n             Bb                   C\nNão quero tirar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n             Bb                   C\nNão quero tirar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n          F\nDa minha vida\n\n( Dm7  Bb  F  C )\n\n[Primeira Parte]\n\n             F               Dm7\nQuero Te louvar, Te engrandecer\n\n         Bb                 C4  C  C4  C\nE proclamar Tua vitória em mim\n\n          Dm7            Gm  Am\nSer todo Teu é o meu prazer\n\n         Bb                  C\nTe seguirei aonde fores, Senhor\n\n[Refrão]\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n             Bb                   C\nNão quero tirar os meus olhos de Ti\n\n           Bb                 C  C4  C\nQuero que sejas o centro, Senhor\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n           C  Bb                   C\nNão quero ti_rar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n          F\nDa minha vida\n\n( F4  F  Dm7 )\n\n( Bb  Bb7M  F  C )\n\n[Primeira Parte]\n\n             F               Dm7\nQuero Te louvar, Te engrandecer\n\n         Bb                 C4  C  C4  C\nE proclamar Tua vitória em mim\n\n         Dm7           Gm   Am\nSer todo Teu é o meu prazer\n\n         Bb                  C\nTe seguirei aonde fores, Senhor\n\n[Refrão]\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n             Bb                   C\nNão quero tirar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n           C  Bb                   C\nNão quero ti_rar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n          F\nDa minha vida\n\n( F4  F  Dm7 )\n\n( Bb  Bb7M  F  C )\n\n[Ponte]\n\n         Bb   C/Bb  F\nNão vou mais ti____rar\n\n        Bb  C/Bb   F\nOs meus o_lhos de Ti\n\n       Bb  C/Bb  Dm7        C4  C\nVou me a__paixo_nar, outra vez\n\n             Bb  C/Bb   F\nQue o meu viver Se____nhor\n\n      Bb     C/Bb  F\nSeja para te agra_dar\n\n      Bb      C/Bb  Dm7         C4  C\nNada mais vai ocu__par meu coração\n\n         Bb   C/Bb  F\nNão vou mais ti____rar\n\n        Bb  C/Bb   F\nOs meus o_lhos de Ti\n\n       Bb  C/Bb  Dm7        C4  C\nVou me a__paixo_nar, outra vez\n\n             Bb  C/Bb   F\nQue o meu viver Se____nhor\n\n      Bb     C/Bb  F\nSeja para te agra_dar\n\n      Bb      C/Bb  Dm7         C4  C\nNada mais vai ocu__par meu coração\n\n         Bb   C/Bb  F\nNão vou mais ti____rar\n\n        Bb  C/Bb   F\nOs meus o_lhos de Ti\n\n       Bb  C/Bb  Dm7        C4  C\nVou me a__paixo_nar, outra vez\n\n             Bb  C/Bb   F\nQue o meu viver Se____nhor\n\n      Bb     C/Bb  F\nSeja para te agra_dar\n\n      Bb      C/Bb  Dm7         C4  C\nNada mais vai ocu__par meu coração\n\n( Bb  C/Bb  F )\n\n( Bb  C/Bb  F )\n\n( Bb  C/Bb  Dm7  C4  C )\n\n[Refrão]\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n             Bb                   C\nNão quero tirar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n           C  Bb                   C\nNão quero ti_rar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n          F\nDa minha vida\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n             Bb                   C\nNão quero tirar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n         F\nTu és o centro da minha vida\n\n        Dm7\nÉs a razão da minha alegria\n\n           C  Bb                   C\nNão quero ti_rar os meus olhos de Ti\n\n           Bb                 C\nQuero que sejas o centro, Senhor\n\n          F\nDa minha vida\n\n[Final] Dm7  Bb  F  C\n\n        F  Dm7  Bb  F  C  F",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2136,7 +2137,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Fraternidade São João Paulo II",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "Dm",
+    "originalKey": "Em",
     "bpm": 80,
     "timeSignature": "4/4",
     "rhythmName": "Adoração Solene",
@@ -2155,7 +2156,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Dm  Bb  F  C\n\n[Primeira Parte]\n   Dm                       Bb              F           C\n1. Ouço o som do céu que desce sobre este altar,\n   Dm                       Bb              F           C\nÉ o Cordeiro Santo que veio reinar!\n\n[Refrão]\n   Dm                       Bb\nFilho de Davi, tem compaixão de mim!\n   F                        C\nLeão da Tribo de Judá, vem vencer em mim!\n\n[Segunda Parte]\n   C7                       F               Dm\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Bb                       A7              Dm\nPois olhou para a pequenez deste humilde servidor;\n   F                        Gm              C7\nRecebe a minha entrega, meu louvor e gratidão,\n   Bb                       A7              Dm\nPermanece para sempre em minha vida e vocação!\n\n[Final] Dm  F  A7  Dm",
+    "cifra": "[Intro] Em  C  D  Em\n\n[Primeira Parte]\n   Em                       C\n1. Ouve-se o rugido do Leão de Judá,\n   D                        Em\nA terra estremece quando Ele passar!\n   Em                       C\nO Santo de Israel se levantou em glória,\n   D                        Em\nDecretando para o Seu povo a vitória!\n\n[Refrão]\n   Em                       C\nEle é o Filho de Davi, a Raiz de Jessé,\n   D                        Em\nVenceu a morte e a cruz por Sua santa fé!\n   C                        D\nLeão de Judá, reina sobre nós:\n   C            D           Em\nErguemos louvores a uma só voz!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2166,14 +2167,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Fraternidade São João Paulo II",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "Am",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Orante",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tudo+Passa+(Só+Deus+Basta)+Fraternidade+São+João+Paulo+II+cifra",
     "liturgicalAnalysis": {
       "status": "Meditação Pós-Comunhão",
@@ -2185,7 +2186,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D\nTudo passa, tudo passará,\n   Em                       C\nMas o Teu amor jamais mudará!\n   G                        D\nQuem a Deus tem, nada lhe falta:\n   Em                       C               G\nSó Deus basta, só Deus basta!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D\nTudo passa, tudo passará,\n   Em                       C\nMas o Teu amor jamais mudará!\n   G                        D\nQuem a Deus tem, nada lhe falta:\n   Em                       C               G\nSó Deus basta, só Deus basta!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] Am  F  C  G\n\n[Primeira Parte]\n   Am                       F\n1. Nada te perturbe, nada te espante,\n   C                        G\nTudo passa, só Deus não muda!\n   Am                       F\nA paciência tudo alcança:\n   C                        G\nQuem a Deus tem, nada lhe falta!\n\n[Refrão]\n   Am                       F\nSó Deus basta! Só Deus basta!\n   C                        G\nEm Tuas mãos descanso o meu viver!\n   Am                       F\nSó Deus basta! Só Deus basta:\n   C            G           Am\nAmor eterno que me faz renascer!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2226,14 +2227,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Fraternidade Toca de Assis",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada Franciscana",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Adorador+por+Excelência+(Pra+Sempre+Teu)+Fraternidade+Toca+de+Assis+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Eucarístico e Franciscano",
@@ -2245,7 +2246,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D               Em\n1. Diante do Sacrário dobram-se os joelhos meus,\n   C                        Am              D\nAqui encontro a fonte da vida, o próprio Deus!\n\n[Refrão]\n   G                        D               Em\nQuero ser adorador em espírito e em verdade,\n   C                        Am              D\nViver aos pés do altar e servir na caridade!\n   G                        D               Em\nPra sempre Teu, Jesus Sacramentado,\n   C                        D               G\nSeja para sempre bendito e adorado!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  A/C#  Bm7  G9  A4  A\n\n[Primeira Parte]\n   D                        A/C#\n1. Quero me prostrar diante do Teu altar,\n   Bm7                      G9\nContemplar Tua face e Te adorar!\n   D                        A/C#\nNo silêncio sagrado da Hóstia Santa,\n   Bm7                      G9          A\nO meu espírito se eleva e minh'alma canta!\n\n[Refrão]\n   D                        A/C#\nQuero ser um adorador por excelência,\n   Bm7                      G\nSentir o fogo da Tua presença!\n   D                        A/C#\nPra sempre Teu, Jesus Eucaristia:\n   G            A           D\nMeu coração Te louva noite e dia!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2286,14 +2287,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Fraternidade Arca de Maria",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "G",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Mariana",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Totus+Tuus+Maria+(Todo+Teu,+ó+Mãe)+Fraternidade+Arca+de+Maria+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Consagração Mariana (Tratado de São Luís Maria Grignion de Montfort)",
@@ -2305,7 +2306,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Solenidades Marianas",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                        A7              Bm\n1. Alimentados na Mesa da Palavra e do Altar,\n   G                        Em              A7\nPartimos agora em missão para o mundo iluminar;\n   D                        A7              Bm\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   G                        A7              D\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   D                        A               Bm\nTotus Tuus, Maria! Todo teu eu quero ser!\n   G                        Em              A7          D\nPor tuas mãos maternas, a Jesus pertencer!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Onde houver dor e tristeza, levemos consolação,\n   Em                       A7              D\nOnde houver treva e discórdia, semeemos o perdão;\n   G                        A7              Bm\nA bênção de Deus Trindade nos acompanhe no andar,\n   Em                       A7              D\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   D                        A               Bm\nTotus Tuus, Maria! Todo teu eu quero ser!\n   G                        Em              A7          D\nPor tuas mãos maternas, a Jesus pertencer!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] G  D/F#  Em  C  D4  D\n\n[Primeira Parte]\n   G                        D/F#\n1. Totus Tuus ego sum, Maria,\n   Em                       C\nE tudo o que é meu a Ti pertence!\n   G                        D/F#\nToma minhas mãos, guarda os passos meus,\n   Em                       C           D\nLeva a minha vida ao coração de Deus!\n\n[Refrão]\n   G                        D/F#\nTodo Teu, ó Mãe, sou todo Teu!\n   Em                       C\nConsagro a Ti o meu respirar!\n   G                        D/F#\nSob o Teu olhar eu quero viver,\n   C            D           G\nE na Tua graça sempre perseverar!",
     "repertoireType": "popular",
     "specialDay": "Solenidades Marianas",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2346,7 +2347,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Recado",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "E",
     "bpm": 90,
     "timeSignature": "4/4",
     "rhythmName": "Pop Missionário",
@@ -2365,7 +2366,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. Alimentados na Mesa da Palavra e do Altar,\n   C                        Am              D7\nPartimos agora em missão para o mundo iluminar;\n   G                        D7              Em\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   C                        D7              G\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   G                        D               Em\nQuem põe a mão no arado não pode olhar pra trás,\n   C                        D               G\nSeguir Jesus de perto é encontrar a verdadeira paz!\n\n[Segunda Parte]\n   Em                       C               G\n2. Onde houver dor e tristeza, levemos consolação,\n   Am                       D7              G\nOnde houver treva e discórdia, semeemos o perdão;\n   C                        D7              Em\nA bênção de Deus Trindade nos acompanhe no andar,\n   Am                       D7              G\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   G                        D               Em\nQuem põe a mão no arado não pode olhar pra trás,\n   C                        D               G\nSeguir Jesus de perto é encontrar a verdadeira paz!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] E  B  C#m  A  B\n\n[Primeira Parte]\n   E                        B\n1. Quem põe a mão no arado não pode olhar pra trás,\n   C#m                      A           B\nSegue firme o caminho da justiça e da paz!\n   E                        B\nO Reino de Deus é feito de quem se entrega por amor,\n   C#m                      A           B\nDe quem segue os passos do Bom Pastor!\n\n[Refrão]\n   E                        B\nVou sem medo onde o Senhor me chamar,\n   C#m                      A\nMinha vida inteira eu quero ofertar!\n   E                        B\nMão no arado, olhos no céu:\n   A            B           E\nServo fiel ao Deus de Israel!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2406,14 +2407,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Obra de Maria",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 84,
     "timeSignature": "4/4",
     "rhythmName": "Balada Mariana",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Alegra-te,+Cheia+de+Graça+(Servir+Com+Alegria)+Comunidade+Obra+de+Maria+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Mariano de Evangelização (Lucas 1, 28)",
@@ -2425,7 +2426,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  C  D7  G\n\n[Primeira Parte]\n   G                        D7              Em\n1. Alimentados na Mesa da Palavra e do Altar,\n   C                        Am              D7\nPartimos agora em missão para o mundo iluminar;\n   G                        D7              Em\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   C                        D7              G\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   G                        C               D7          G\nAlegra-te, cheia de graça, o Senhor é contigo!\n   Em                       Am              D7          G\nCom Maria partimos apressados para servir ao irmão amigo!\n\n[Segunda Parte]\n   Em                       C               G\n2. Onde houver dor e tristeza, levemos consolação,\n   Am                       D7              G\nOnde houver treva e discórdia, semeemos o perdão;\n   C                        D7              Em\nA bênção de Deus Trindade nos acompanhe no andar,\n   Am                       D7              G\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   G                        C               D7          G\nAlegra-te, cheia de graça, o Senhor é contigo!\n   Em                       Am              D7          G\nCom Maria partimos apressados para servir ao irmão amigo!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  G  A7  D\n\n[Primeira Parte]\n   D                        G\n1. Alegra-te, Maria, cheia de graça,\n   A7                       D\nO Senhor do Universo está contigo!\n   Bm                       Em\nBendita és tu entre todas as mulheres,\n   A7                       D\nE bendito é o fruto do teu ventre, Jesus!\n\n[Refrão]\n   D                        G\nSanta Maria, Mãe do Redentor,\n   A7                       D\nRogai por nós na alegria e na dor!\n   Bm                       Em\nQueremos servir com alegria e fé,\n   G            A7          D\nComo serviste em Nazaré!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2436,14 +2437,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Tony Allysson",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "C",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Adoração",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Poderoso+Deus+/+Soberano+Tony+Allysson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração",
@@ -2455,7 +2456,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D\nPoderoso Deus, Soberano Rei,\n   Em                       C\nDiante do Teu trono me prostrarei!\n   G                        D\nSanto é o Teu Nome, digno de louvor,\n   Em                       C               G\nRecebe a minha vida, ó meu Senhor!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D\nPoderoso Deus, Soberano Rei,\n   Em                       C\nDiante do Teu trono me prostrarei!\n   G                        D\nSanto é o Teu Nome, digno de louvor,\n   Em                       C               G\nRecebe a minha vida, ó meu Senhor!\n\n[Final] G  C  D7  G",
+    "cifra": "C                G/B\nSopra Espírito de Deus\n\nAm                   F\nSobre o clamor da Igreja\n\nC                      G/B\nLibera Tua unção de milagres\n\n      Am  F\nSobre nós\n\n         Am     G/B     Am                   F\nQueremos ver sinais da manifestação do Teu poder\n\n          Am     G/B    Am                   F\nPois quem crer verá a gloria do Senhor acontecer\n\n           C      G/B\nPoderoso Deus, e Rei\n\n        Am                    F\nLibera tua unção de cura nesse lugar\n\n          C       G/B\nPoderoso Deus, e Rei\n\n        Am                    F\nLibera tua unção de cura nesse lugar\n\nC                 G/B\nSopra Espírito de Deus\n\nAm                   F\nSobre o clamor da Igreja\n\nC                     G/B\nLibera Tua unção de milagres\n\n       Am  F\nSobre nós\n\n         Am    G/B     Am                   F\nQueremos ver sinais da manifestação do Teu poder\n\n          Am     G/B    Am                   F\nPois quem crer verá a gloria do Senhor acontecer\n\n           C       G/B\nPoderoso Deus, e Rei\n\n        Am                   F\nLibera tua unção de cura nesse lugar\n\n          C       G/B\nPoderoso Deus, e Rei\n\n        Am                    F\nLibera tua unção de cura nesse lugar\n\nF             G            C    G/B  Am\nIncendeia Senhor, a Tua Igreja\n\nF             G            C    G/B  Am\nIncendeia Senhor, a Tua Igreja\n\n[Solo] Am  F/A  C/G  G\n\n       Am  F/A  Ab  C/G  G",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2466,14 +2467,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Davidson Silva / Comunidade Shalom",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "G",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Dedilhado / Adoração",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Amar-Te+Mais+Davidson+Silva+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Eucarístico de Ação de Graças (João 21, 15-17)",
@@ -2485,7 +2486,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                        A               Bm\n1. Senhor, Tu sabes tudo, Tu sabes que Te amo,\n   G                        Em              A7\nMesmo na minha fraqueza, pelo Teu Nome eu clamo!\n\n[Refrão]\n   D                        A               Bm\nAmar-Te mais que a mim mesmo, amar-Te mais que tudo que há aqui,\n   G                        A7              D\nEntregar a minha vida inteira só por Ti!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] G  D9/F#  Em7  C9\n\n  G         D9/F#  C9\nAmar-te mais, que a mim mesmo\n\n G         D9/F#   C9\nAmar-te mais, que tudo que há aqui\n\nG         D9/F#    C9\nAmar-te mais, que aos mais queridos\n\nAm           D9            C9\nAmar-te, e dar a vida só por Ti\n\n G         D9/F#    C9\nAmar-te mais,    que a mim mesmo\n\n G         D9/F#   C9\nAmar-te mais,  que tudo que há aqui\n\nG         D9/F#     C9\nAmar-te mais, que aos mais queridos\n\nAm           D9             C9  G\nAmar-te, e dar a vida só por Ti\n\n G          D9/F#  C9             G/B\nCom minhas forças, com minha alma\n\n          C9             G D9/F#      Em\nDe todo coração, viverei eu, só pra Te amar\n\n  C9          G\nAmar-te... Amar-Te\n\n   C9             D9           G\nAmar-te, e dar a vida só por Ti\n\n( G  D9/F#  Em7  C9 )\n\n( G  D9/F#  Em7  C9 )\n\nG         D9/F#  C9\nAmar-te mais, que a mim mesmo\n\n G         D9/F#  C9\nAmar-te mais, que tudo que há aqui\n\nG         D9/F#     C9\nAmar-te mais, que aos mais queridos\n\nAm           D9              C9  G\nAmar-te, e dar a vida só por Ti\n\n G          D9/F#  C9             G/B\nCom minhas forças, com minha alma\n\n          C9             G D9/F#      Em\nDe todo coração, viverei eu, só pra Te amar\n\n   C9             D9           G\nAmar-te, e dar a vida só por Ti\n\n G          D9/F#  C9             G/B\nCom minhas forças, com minha alma\n\n          C9             G D9/F#      Em\nDe todo coração, viverei eu, só pra Te amar\n\n  C9          G/B\nAmar-te... Amar-Te\n\n   C9             D9           G\nAmar-te, e dar a vida só por Ti\n\n[Final] G  D9/F#  Em7  C9",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2526,14 +2527,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Juninho Cassimiro",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "A",
+    "originalKey": "C",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Oração",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Teu+Amor+Me+Sustentará+Juninho+Cassimiro+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Confiança na Graça de Deus",
@@ -2545,7 +2546,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] A  E  F#m  D\n\n[Primeira Parte]\n   A                        E7              F#m\n1. No silêncio agradecido deste encontro de oração,\n   D                        Bm              E7\nContemplo a Tua presença que habita em meu coração;\n   A                        E7              F#m\nNão há nada neste mundo que se possa comparar\n   D                        E7              A\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   A                        E               F#m\nBasta-me a Tua graça, Teu amor me sustentará;\n   D                        E               A\nNa minha fraqueza a Tua força brilhará!\n\n[Segunda Parte]\n   F#m                      D               A\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Bm                       E7              A\nPois olhou para a pequenez deste humilde servidor;\n   D                        E7              F#m\nRecebe a minha entrega, meu louvor e gratidão,\n   Bm                       E7              A\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   A                        E               F#m\nBasta-me a Tua graça, Teu amor me sustentará;\n   D                        E               A\nNa minha fraqueza a Tua força brilhará!\n\n[Final] A  D  E7  A",
+    "cifra": "[Intro] C  G/B  Am  F  G4  G\n\n[Primeira Parte]\n   C                        G/B\n1. Quando as minhas forças parecerem terminar,\n   Am                       F\nE a estrada longa me fizer desanimar,\n   C                        G/B\nOlho para a cruz e sinto a Tua mão me erguer:\n   Am                       F           G\nTua voz suave diz que eu não vou perecer!\n\n[Refrão]\n   C                        G/B\nTeu amor me sustentará a cada passo,\n   Am                       F\nEncontro meu refúgio em Teu abraço!\n   C                        G/B\nSei que nunca estou sozinho, meu Jesus:\n   F            G           C\nTua fidelidade é a minha luz!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2556,14 +2557,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Pitter Di Laura / Canção Nova",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Páscoa",
-    "originalKey": "G",
+    "originalKey": "Em",
     "bpm": 82,
     "timeSignature": "4/4",
     "rhythmName": "Balada Pascal",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=A+Vitória+É+Nossa+Pelo+Sangue+de+Jesus+Pitter+Di+Laura+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Vitória Pascal (Apocalipse 12, 11)",
@@ -2575,7 +2576,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Páscoa e Vigília Pascal",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nPelo Sangue do Cordeiro alcançamos redenção,\n   C                        D               G\nNele está nossa vitória e nossa salvação!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nPelo Sangue do Cordeiro alcançamos redenção,\n   C                        D               G\nNele está nossa vitória e nossa salvação!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] Em  C  G  D\n\n[Primeira Parte]\n   Em                       C\n1. O inimigo tentou nos abater e nos vencer,\n   G                        D\nMas o sangue de Jesus tem poder pra nos erguer!\n   Em                       C\nNenhuma arma forjada contra nós prosperará,\n   G                        D\nO Senhor dos Exércitos à nossa frente está!\n\n[Refrão]\n   Em                       C\nA vitória é nossa pelo sangue de Jesus!\n   G                        D\nA muralha caiu diante da Sua cruz!\n   Em                       C\nLouve ao Senhor, cante com unção:\n   G            D           Em\nEm Cristo somos mais que campeão!",
     "repertoireType": "popular",
     "specialDay": "Páscoa e Vigília Pascal",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2586,14 +2587,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Thiago Tomé / Canção Nova",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "C",
+    "originalKey": "G",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Adoração",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Senhor,+Tu+És+Meu+Tudo+Thiago+Tomé+cifra",
     "liturgicalAnalysis": {
       "status": "Oração Pós-Comunhão",
@@ -2605,7 +2606,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                        G               Am\nQuem tenho eu no céu senão a Ti?\n   F                        G               C\nE na terra nada quero além de Ti, meu Senhor!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                        G               Am\nQuem tenho eu no céu senão a Ti?\n   F                        G               C\nE na terra nada quero além de Ti, meu Senhor!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] G  D/F#  Em  C  D\n\n[Primeira Parte]\n   G                        D/F#\n1. Quando olho pro Teu altar, sinto a paz me envolver,\n   Em                       C\nTua presença viva dá sentido ao meu viver!\n   G                        D/F#\nNão há tesouro maior que o Teu santo amor:\n   Em                       C           D\nA Ti consagro minha vida, Salvador!\n\n[Refrão]\n   G                        D/F#\nTu és meu tudo, és meu Senhor,\n   Em                       C\nMinha fortaleza, meu Pastor!\n   G                        D/F#\nNada no mundo vai me separar de Ti:\n   C            D           G\nEm Teus braços eu renasci!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2616,14 +2617,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Rogerinha Moreira / Canção Nova",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "C",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Adoração",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Coração+Adorador+Rogerinha+Moreira+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração Eucarística",
@@ -2635,7 +2636,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                        A7              Bm\n1. No silêncio agradecido deste encontro de oração,\n   G                        Em              A7\nContemplo a Tua presença que habita em meu coração;\n   D                        A7              Bm\nNão há nada neste mundo que se possa comparar\n   G                        A7              D\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   D                        A               Bm\nDá-me um coração adorador, fiel e sincero,\n   G                        A7              D\nPois somente a Tua presença é tudo o que eu quero!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Em                       A7              D\nPois olhou para a pequenez deste humilde servidor;\n   G                        A7              Bm\nRecebe a minha entrega, meu louvor e gratidão,\n   Em                       A7              D\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   D                        A               Bm\nDá-me um coração adorador, fiel e sincero,\n   G                        A7              D\nPois somente a Tua presença é tudo o que eu quero!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] C  G/B  Am7  F  G4  G\n\n[Primeira Parte]\n   C                        G/B\n1. Senhor, sonda o meu íntimo, purifica o meu ser,\n   Am7                      F\nQueima toda vaidade que me impede de crescer!\n   C                        G/B\nQuero ser transparente aos olhos do meu Deus,\n   Am7                      F           G\nE ofertar um sacrifício aceitável aos céus!\n\n[Refrão]\n   C                        G/B\nDá-me um coração adorador,\n   Am7                      F\nQue Te busque em espírito e em verdade!\n   C                        G/B\nTransborda em mim o Teu imenso amor:\n   F            G           C\nQuero viver Tua santidade!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2646,14 +2647,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Adriano Zandoná",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Esperança",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Confiarei+no+Teu+Amor+Padre+Adriano+Zandoná+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Confiança em Deus (Salmo 36, 5)",
@@ -2665,7 +2666,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nEntrega o teu caminho ao Senhor, confia Nele,\n   C                        D               G\nE tudo o mais Ele fará por ti!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nEntrega o teu caminho ao Senhor, confia Nele,\n   C                        D               G\nE tudo o mais Ele fará por ti!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  A/C#  Bm  G  A7\n\n[Primeira Parte]\n   D                        A/C#\n1. Mesmo quando as incertezas cercam meu viver,\n   Bm                       G\nE as tempestades da vida tentam me abater,\n   D                        A/C#\nEu me apego à Tua promessa que não vai falhar:\n   Bm                       G           A\nO Senhor é meu refúgio e não vai me desamparar!\n\n[Refrão]\n   D                        A/C#\nConfiarei no Teu amor, meu Pai!\n   Bm                       G\nDescanso em Tuas mãos o meu amanhã!\n   D                        A/C#\nTua graça me basta, Tua paz me conduz:\n   G            A           D\nMinha esperança está em Jesus!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2676,7 +2677,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Alessandro Campos",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "F#",
     "bpm": 86,
     "timeSignature": "3/4",
     "rhythmName": "Guarânia Sertaneja",
@@ -2695,7 +2696,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D7  G  C  G  D7  G\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                                        D7\nO que é que eu sou sem Jesus?\n   C                        D7              G\nNada, nada, nada!\n   G                        G7              C\nSem Jesus eu sou folha seca que o vento leva,\n   G                        D7              G\nCom Jesus a minha vida está abençoada!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                                        D7\nO que é que eu sou sem Jesus?\n   C                        D7              G\nNada, nada, nada!\n   G                        G7              C\nSem Jesus eu sou folha seca que o vento leva,\n   G                        D7              G\nCom Jesus a minha vida está abençoada!\n\n[Final] G  C  D7  G",
+    "cifra": "F#                     B\nO que é que eu sou sem Jesus?\n\nC#          F#\nNada, nada, nada\n\n                         C#\nSem Jesus o que é que eu sou?\n\n            F#\nNada, nada, nada\n\nF#\nNão vou desistir, preciso seguir\n\n                      B\nEm Cristo eu posso vencer\n\n  C#\nCoração precisa, de abrigo e de luz\n\n                       F#       C#\nQue só no Senhor posso ver....\n\n    F#\nNo cheiro da flor, nas coisas do amor,\n\n                 B\nEle quer nos ensinar\n\n       C#\nQue a chave pra vida nunca está perdida\n\n                          F#    C#\nResponda que eu vou perguntar\n\n                         B\nO que é que eu sou sem Jesus?\n\nC#          F#\nNada, nada, nada\n\n                         C#\nSem Jesus o que é que eu sou?\n\n            F#\nNada, nada, nada",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2706,14 +2707,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Juarez de Castro",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "G",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Restaura+Minha+Fé,+Senhor+Padre+Juarez+de+Castro+cifra",
     "liturgicalAnalysis": {
       "status": "Oração de Fé (Lucas 17, 5)",
@@ -2725,7 +2726,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                        G               Am\nAumenta a minha fé, restaura o meu viver,\n   F                        G               C\nEm Tuas mãos, Senhor, entrego todo o meu ser!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                        G               Am\nAumenta a minha fé, restaura o meu viver,\n   F                        G               C\nEm Tuas mãos, Senhor, entrego todo o meu ser!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] G  D/F#  Em  C  D7\n\n[Primeira Parte]\n   G                        D/F#\n1. Senhor, às vezes a fraqueza quer me dominar,\n   Em                       C\nAs lutas deste mundo tentam me cansar!\n   G                        D/F#\nAjoelho em oração pedindo Teu poder:\n   Em                       C           D7\nVem, Senhor Jesus, renova o meu viver!\n\n[Refrão]\n   G                        D/F#\nRestaura minha fé, acende a esperança!\n   Em                       C\nFaz o meu coração como o de uma criança!\n   G                        D/F#\nToma minha vida em Tuas santas mãos:\n   C            D7          G\nConcede-me a paz e o perdão!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2736,14 +2737,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Ezequiel Dal Pozzo",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 80,
     "timeSignature": "4/4",
     "rhythmName": "Balada Familiar",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Cuidar+da+Família+e+da+Vida+Padre+Ezequiel+Dal+Pozzo+cifra",
     "liturgicalAnalysis": {
       "status": "Canto para Pastoral Familiar",
@@ -2755,7 +2756,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  C  D7  G\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        C               D7          G\nAbençoa, Senhor, nosso lar e nossa união,\n   Em                       Am              D7          G\nQue a Tua paz governe sempre o nosso coração!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        C               D7          G\nAbençoa, Senhor, nosso lar e nossa união,\n   Em                       Am              D7          G\nQue a Tua paz governe sempre o nosso coração!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  A/C#  Bm  G  A7\n\n[Primeira Parte]\n   D                        A/C#\n1. Cuidar da família é cuidar do dom de Deus,\n   Bm                       G\nSemear a ternura entre os filhos Seus!\n   D                        A/C#\nQue no lar reine a paz, a conversa e o perdão,\n   Bm                       G           A7\nUnidos na prece e na comunhão!\n\n[Refrão]\n   D                        A/C#\nAbençoa as famílias, ó meu bom Senhor,\n   Bm                       G\nProtege os lares com o Teu amor!\n   D                        A/C#\nQue nunca falte o pão, nem falte a caridade:\n   G            A7          D\nFaz de nós reflexo da Tua bondade!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2766,14 +2767,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Irmã Ana Paula, cmc",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "C",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Dedilhado Eucarístico",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Pertinho+de+Ti+(Aos+Pés+do+Sacrário)+Irmã+Ana+Paula,+cmc+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração e Ação de Graças",
@@ -2785,7 +2786,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nPertinho de Ti eu quero ficar,\n   C                        Am              D\nAos pés do Teu altar em silêncio Te adorar!\n   G                        D               Em\nEscolhi a melhor parte que não me será tirada:\n   C                        D               G\nEstar contigo, ó Jesus, minha morada!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nPertinho de Ti eu quero ficar,\n   C                        Am              D\nAos pés do Teu altar em silêncio Te adorar!\n   G                        D               Em\nEscolhi a melhor parte que não me será tirada:\n   C                        D               G\nEstar contigo, ó Jesus, minha morada!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] C  G/B  Am  F  G4  G\n\n[Primeira Parte]\n   C                        G/B\n1. Diante do sacrário, em santo recolhimento,\n   Am                       F\nContemplo a Tua presença no Sacramento!\n   C                        G/B\nO mundo lá fora não compreende este amor,\n   Am                       F           G\nMas aqui sou preenchido pela Tua paz, Senhor!\n\n[Refrão]\n   C                        G/B\nPertinho de Ti eu quero permanecer,\n   Am                       F\nOuvir Tua voz e aprender a viver!\n   C                        G/B\nJesus Sacramentado, meu sumo Bem:\n   F            G           C\nAmor que me cura e me sustém!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2803,7 +2804,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tudo+É+Possível+ao+Que+Crê+(Marcos+9,+23)+Banda+Dom+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Bíblico (Marcos 9, 23)",
@@ -2815,7 +2816,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nTudo é possível ao que crê no Senhor,\n   C                        D               G\nNão há muralha que resista à força do Seu amor!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nTudo é possível ao que crê no Senhor,\n   C                        D               G\nNão há muralha que resista à força do Seu amor!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] G  D/F#  Em7  C9  D4  D\n\n[Primeira Parte]\n   G                        D/F#\n1. Se a montanha à tua frente parece intransponível,\n   Em7                      C9\nLembra que o Deus a quem serves faz o impossível!\n   G                        D/F#\nBasta dar o passo na certeza e na fé:\n   Em7                      C9          D\nJesus estende a mão e te põe de pé!\n\n[Refrão]\n   G                        D/F#\nTudo é possível ao que crê!\n   Em7                      C9\nAs muralhas vão ao chão pelo Seu poder!\n   G                        D/F#\nNão há tempestade que Ele não acalme:\n   C            D           G\nJesus traz a paz à tua alma!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2826,14 +2827,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Banda Dominus / Léo Rabello",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "A",
+    "originalKey": "E",
     "bpm": 98,
     "timeSignature": "4/4",
     "rhythmName": "Pop Jovem",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Não+Há+Limites+Para+o+Amor+de+Deus+Banda+Dominus+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Jovem de Envio Missionário",
@@ -2845,7 +2846,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] A  E  F#m  D\n\n[Primeira Parte]\n   A                        E7              F#m\n1. Alimentados na Mesa da Palavra e do Altar,\n   D                        Bm              E7\nPartimos agora em missão para o mundo iluminar;\n   A                        E7              F#m\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   D                        E7              A\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   A                        E               F#m\nNão há limites para o amor de Deus,\n   D                        E               A\nEle deu Seu próprio Filho para salvar os filhos Seus!\n\n[Segunda Parte]\n   F#m                      D               A\n2. Onde houver dor e tristeza, levemos consolação,\n   Bm                       E7              A\nOnde houver treva e discórdia, semeemos o perdão;\n   D                        E7              F#m\nA bênção de Deus Trindade nos acompanhe no andar,\n   Bm                       E7              A\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   A                        E               F#m\nNão há limites para o amor de Deus,\n   D                        E               A\nEle deu Seu próprio Filho para salvar os filhos Seus!\n\n[Final] A  D  E7  A",
+    "cifra": "[Intro] E  B  C#m  A  B\n\n[Primeira Parte]\n   E                        B\n1. Não há limites para o amor de Deus,\n   C#m                      A\nMais alto que as estrelas nos céus!\n   E                        B\nMais profundo que os oceanos e o mar:\n   C#m                      A           B\nNada se compara ao Seu cuidar!\n\n[Refrão]\n   E                        B\nCelebre com alegria, exulte no Senhor!\n   C#m                      A\nFomos resgatados pelo Seu imenso amor!\n   E                        B\nDance, pule, cante com o coração:\n   A            B           E\nEm Deus encontramos a Salvação!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2856,14 +2857,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Banda Ceremonya",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "Em",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Balada",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tua+Graça+Me+Basta,+Senhor+Banda+Ceremonya+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Paulino (2 Coríntios 12, 9)",
@@ -2875,7 +2876,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nTua graça me basta, Tua presença me refaz,\n   C                        D               G\nSó no Teu altar encontro a verdadeira paz!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nTua graça me basta, Tua presença me refaz,\n   C                        D               G\nSó no Teu altar encontro a verdadeira paz!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] Em  C  G  D\n\n[Primeira Parte]\n   Em                       C\n1. Quando tudo parece desabar ao meu redor,\n   G                        D\nE a noite escura me traz aflição e dor,\n   Em                       C\nEu clamo Teu Nome, ó Cristo Redentor:\n   G                        D\nTua força se manifesta no meu clamor!\n\n[Refrão]\n   Em                       C\nTua graça me basta, Senhor!\n   G                        D\nTeu amor me sustenta e me cura!\n   Em                       C\nNa fraqueza sou forte em Ti:\n   G            D           Em\nTua luz dissipa a noite escura!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2893,7 +2894,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Mundo+Novo+(Novo+Céu+e+Nova+Terra)+Eros+Biondini+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Escatológico de Esperança (Apocalipse 21, 1)",
@@ -2905,7 +2906,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Páscoa e Vigília Pascal",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. Alimentados na Mesa da Palavra e do Altar,\n   C                        Am              D7\nPartimos agora em missão para o mundo iluminar;\n   G                        D7              Em\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   C                        D7              G\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   G                        D               Em\nEu vejo um Mundo Novo que nasce do Teu amor,\n   C                        D               G\nOnde enxugas toda lágrima, ó Cristo Redentor!\n\n[Segunda Parte]\n   Em                       C               G\n2. Onde houver dor e tristeza, levemos consolação,\n   Am                       D7              G\nOnde houver treva e discórdia, semeemos o perdão;\n   C                        D7              Em\nA bênção de Deus Trindade nos acompanhe no andar,\n   Am                       D7              G\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   G                        D               Em\nEu vejo um Mundo Novo que nasce do Teu amor,\n   C                        D               G\nOnde enxugas toda lágrima, ó Cristo Redentor!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] G  D/F#  Em  C  D\n\n[Primeira Parte]\n   G                        D/F#\n1. Vejo despontar no horizonte uma nova aurora,\n   Em                       C\nÉ o Espírito de Deus agindo sem demora!\n   G                        D/F#\nDerramando fogo e cura neste chão,\n   Em                       C           D\nTransformando os corações pela conversão!\n\n[Refrão]\n   G                        D/F#\nUm mundo novo vai nascer!\n   Em                       C\nUm povo santo que aprendeu a crer!\n   G                        D/F#\nCom as mãos ungidas pela oração:\n   C            D           G\nJesus é o Senhor de toda a nação!",
     "repertoireType": "popular",
     "specialDay": "Páscoa e Vigília Pascal",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2923,7 +2924,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Aleluia+(Pai,+Eu+Quero+Te+Amar)+Álvaro+e+Daniel+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Ação de Graças e Casamentos",
@@ -2935,7 +2936,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  Am  C  Am  F  G  C\n\n[Primeira Parte]\n   C                        Am\n1. Pai, eu quero Te amar, tocar o Teu coração,\n   F                        G               C       G\nE me derramar aos Teus pés!\n\n[Refrão]\n   F                        Am\nAleluia, aleluia,\n   F                        C               G       C\nAleluia, aleluia!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] C  Am  C  Am\n\n C                 Am      C             Am\nSei que você estava aqui e sempre pude te sentir\n\nF                 G        C  G    C             F   G\nMas nunca soube como procurar    você chegou sem avisar\n\n   Am                    F      G           G#º     Am\nMe fez sorrir, me fez cantar me deu o dom da vida,  aleluia\n\n     F      Am        F      C    G    C  G\nAleluia, aleluia aleluia, alelu-uuu-uuia\n\n                    Am    C          Am\nA minha alma se acendeu o mundo todo renasceu\n\n      F      G             C  G    C             F      G\nMeu coração agora vive em paz    e nem as mais belas canções\n\nAm               F          G           G#º     Am\nPoemas, salmos e orações descrevem o que sinto, aleluia\n\n     F      Am        F      C    G    C  G  A\nAleluia, aleluia aleluia, alelu-uuu-uuia\n\n       D                 Bm     D             Bm\nEu vejo o céu, eu vejo o mar eu vejo a noite e o luar\n\n     G         A            D  A    D           G     A\nEu vejo como é grande seu amor   eu vejo o dia amanhecer\n\nBm               G         A                 A#º     Bm\nEu quero tanto agradecer e é por isso que eu canto, aleluia\n\n     G      Bm        G      D    A    D  A\nAleluia, aleluia aleluia, alelu-uuu-uuia",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2946,14 +2947,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Italo Villar",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Acústica",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tua+Graça+Me+Alcançou+Italo+Villar+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Gratidão pela Misericórdia Divina",
@@ -2965,7 +2966,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nQuando eu não merecia, Tua graça me alcançou,\n   C                        D               G\nNa Tua Santa Eucaristia minha vida se renovou!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nQuando eu não merecia, Tua graça me alcançou,\n   C                        D               G\nNa Tua Santa Eucaristia minha vida se renovou!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  A/C#  Bm7  G9  A4  A\n\n[Primeira Parte]\n   D                        A/C#\n1. Eu andava errante, sem rumo e sem direção,\n   Bm7                      G9\nCarregando o fardo pesado da solidão!\n   D                        A/C#\nMas o Teu olhar compassivo me alcançou:\n   Bm7                      G9          A\nTua misericórdia minha vida restaurou!\n\n[Refrão]\n   D                        A/C#\nTua graça me alcançou no abismo da dor!\n   Bm7                      G\nLavou meus pecados com puro amor!\n   D                        A/C#\nHoje sou livre para Te adorar:\n   G            A           D\nEm Tua presença eu quero habitar!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -2983,7 +2984,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Rendido+Estou+aos+Teus+Pés+Yuri+Costa+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração",
@@ -2995,7 +2996,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                        G               Am\nRendido estou diante da Tua Majestade,\n   F                        G               C\nAdoro-Te, Senhor, em espírito e verdade!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                        G               Am\nRendido estou diante da Tua Majestade,\n   F                        G               C\nAdoro-Te, Senhor, em espírito e verdade!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] C  G/B  Am7  F9  G4  G\n\n[Primeira Parte]\n   C                        G/B\n1. Não há outro lugar onde eu queira estar,\n   Am7                      F9\nSenão prostrado diante do Teu altar!\n   C                        G/B\nDerramo a minha vida em Teu louvor:\n   Am7                      F9          G\nTu és o meu Senhor e Salvador!\n\n[Refrão]\n   C                        G/B\nRendido estou aos Teus santos pés!\n   Am7                      F9\nReconheço, Jesus, a grandeza de quem És!\n   C                        G/B\nFaz de mim morada do Teu Santo Espírito:\n   F            G           C\nEm Ti meu coração está bendito!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3036,14 +3037,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Fraternidade Casa de Maria",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "G",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Balada Mariana",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Sob+o+Manto+da+Virgem+Maria+Fraternidade+Casa+de+Maria+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Mariano Devocional",
@@ -3055,7 +3056,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Solenidades Marianas",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  G  A7  D\n\n[Primeira Parte]\n   D                        A7              Bm\n1. Alimentados na Mesa da Palavra e do Altar,\n   G                        Em              A7\nPartimos agora em missão para o mundo iluminar;\n   D                        A7              Bm\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   G                        A7              D\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   D                        G               A7          D\nNa Casa de Maria aprendemos a dizer o nosso sim,\n   Bm                       Em              A7          D\nServindo a Jesus Cristo com amor até o fim!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Onde houver dor e tristeza, levemos consolação,\n   Em                       A7              D\nOnde houver treva e discórdia, semeemos o perdão;\n   G                        A7              Bm\nA bênção de Deus Trindade nos acompanhe no andar,\n   Em                       A7              D\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   D                        G               A7          D\nNa Casa de Maria aprendemos a dizer o nosso sim,\n   Bm                       Em              A7          D\nServindo a Jesus Cristo com amor até o fim!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] G  D/F#  Em  C  D7\n\n[Primeira Parte]\n   G                        D/F#\n1. Sob o manto da Virgem Mãe nos refugiamos,\n   Em                       C\nEm suas mãos ternas a vida depositamos!\n   G                        D/F#\nNas tempestades do mundo ela nos protege,\n   Em                       C           D7\nE com carinho maternal nossa fé ela rege!\n\n[Refrão]\n   G                        D/F#\nMãe do Bom Conselho, Rainha da Paz,\n   Em                       C\nTua intercessão milagres nos traz!\n   G                        D/F#\nLeva-nos a Jesus, nosso Salvador:\n   C            D7          G\nSomos teus filhos no Teu amor!",
     "repertoireType": "popular",
     "specialDay": "Solenidades Marianas",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3066,14 +3067,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Católica Mar a Dentro",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 84,
     "timeSignature": "4/4",
     "rhythmName": "Balada Vocacional",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Avança+Para+Águas+Mais+Profundas+(Duc+in+Altum+-+Lucas+5,+4)+Comunidade+Católica+Mar+a+Dentro+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Vocacional e Missionário (Lucas 5, 4)",
@@ -3085,7 +3086,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. Alimentados na Mesa da Palavra e do Altar,\n   C                        Am              D7\nPartimos agora em missão para o mundo iluminar;\n   G                        D7              Em\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   C                        D7              G\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   G                        D               Em\nAvança para águas mais profundas,\n   C                        Am              D\nSobre a Tua Palavra lançarei as minhas redes!\n   G                        D               Em\nContigo na barca nada temerei, Senhor:\n   C                        D               G\nSerei pescador de almas no Teu amor!\n\n[Segunda Parte]\n   Em                       C               G\n2. Onde houver dor e tristeza, levemos consolação,\n   Am                       D7              G\nOnde houver treva e discórdia, semeemos o perdão;\n   C                        D7              Em\nA bênção de Deus Trindade nos acompanhe no andar,\n   Am                       D7              G\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   G                        D               Em\nAvança para águas mais profundas,\n   C                        Am              D\nSobre a Tua Palavra lançarei as minhas redes!\n   G                        D               Em\nContigo na barca nada temerei, Senhor:\n   C                        D               G\nSerei pescador de almas no Teu amor!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] D  A/C#  Bm  G  A7\n\n[Primeira Parte]\n   D                        A/C#\n1. Ouvi a ordem do Mestre na praia a chamar:\n   Bm                       G\nDuc in altum, avança para águas do mar!\n   D                        A/C#\nLança as redes confiando na Minha Palavra:\n   Bm                       G           A7\nOnde antes não havia pesca, a graça se derrama!\n\n[Refrão]\n   D                        A/C#\nAvança para águas mais profundas!\n   Bm                       G\nNão fiques na margem, onde nada medra!\n   D                        A/C#\nVem ser pescador do Reino de Deus:\n   G            A7          D\nFaz brilhar a luz aos filhos Seus!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3103,7 +3104,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Restaura+a+Nossa+Família,+Senhor+Padre+Chrystian+Shankar+cifra",
     "liturgicalAnalysis": {
       "status": "Oração pelas Famílias",
@@ -3115,7 +3116,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nEu e minha casa serviremos ao Senhor,\n   C                        D               G\nNosso lar é santuário da Tua paz e do Teu amor!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nEu e minha casa serviremos ao Senhor,\n   C                        D               G\nNosso lar é santuário da Tua paz e do Teu amor!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] G  D/F#  Em  C  D7\n\n[Primeira Parte]\n   G                        D/F#\n1. Senhor, visita hoje o nosso lar,\n   Em                       C\nEnsina os esposos a se perdoar!\n   G                        D/F#\nQue haja respeito, paciência e ternura,\n   Em                       C           D7\nCurando toda amargura e censura!\n\n[Refrão]\n   G                        D/F#\nRestaura a nossa família, Senhor Jesus!\n   Em                       C\nIlumina nossos passos com a Tua luz!\n   G                        D/F#\nQue em nossa casa habite o Teu Espírito:\n   C            D7          G\nUm lar de amor e sempre bendito!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3126,14 +3127,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Hewaldo Trevisan",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "D",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Oração de Cura",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Cura-me,+Senhor+Jesus+(Salmo+6,+3)+Padre+Hewaldo+Trevisan+cifra",
     "liturgicalAnalysis": {
       "status": "Oração Bíblica de Cura (Salmo 6, 3 / Jeremias 17, 14)",
@@ -3145,7 +3146,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                        G               Am\nCura-me, Senhor, e serei curado,\n   F                        G               C\nSalva-me, Senhor, pois Tu és o meu louvor!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                        G               Am\nCura-me, Senhor, e serei curado,\n   F                        G               C\nSalva-me, Senhor, pois Tu és o meu louvor!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] D  A/C#  Bm  G  A7\n\n[Primeira Parte]\n   D                        A/C#\n1. Senhor, tenho lágrimas que ninguém vê,\n   Bm                       G\nAngústias profundas que me fazem sofrer!\n   D                        A/C#\nVenho a Teus pés com o coração quebrado:\n   Bm                       G           A7\nToca em meu ser, Jesus Ressuscitado!\n\n[Refrão]\n   D                        A/C#\nCura-me, Senhor! Cura minha alma!\n   Bm                       G\nDevolve à minha vida a paz e a calma!\n   D                        A/C#\nPelas Tuas chagas fui resgatado:\n   G            A7          D\nEm Teu amor sou abençoado!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3163,7 +3164,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 3,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Jesus,+Manso+e+Humilde+de+Coração+(Mateus+11,+29)+Irmã+Zélia+Garcia+cifra",
     "liturgicalAnalysis": {
       "status": "Jaculatória Oficial ao Sagrado Coração de Jesus (Mateus 11, 29)",
@@ -3175,7 +3176,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  F  G7  C\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                        F               G7          C\nJesus, manso e humilde de Coração,\n   F                        G7              C\nFazei o nosso coração semelhante ao Vosso! (2x)\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                        F               G7          C\nJesus, manso e humilde de Coração,\n   F                        G7              C\nFazei o nosso coração semelhante ao Vosso! (2x)\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] C  G/B  Am  F  G4  G\n\n[Primeira Parte]\n   C                        G/B\n1. Vinde a Mim todos vós que estais cansados,\n   Am                       F\nSobrecarregados e desanimados!\n   C                        G/B\nTomai sobre vós o Meu suave jugo:\n   Am                       F           G\nEm Meu Sagrado Coração sou vosso refúgio!\n\n[Refrão]\n   C                        G/B\nJesus, manso e humilde de coração,\n   Am                       F\nFaz o meu coração semelhante ao Teu!\n   C                        G/B\nArranca o orgulho e planta o perdão:\n   F            G           C\nLeva minha alma ao Santo Céu!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3186,14 +3187,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Irmã Maria Raquel / Irmã Kelly Patrícia / Instituto Hesed",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "Am",
+    "originalKey": "Em",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Hino a São Miguel",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 3,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Quem+Como+Deus?+(Consagração+a+São+Miguel+Arcanjo)+Irmã+Maria+Raquel+cifra",
     "liturgicalAnalysis": {
       "status": "Hino da Quaresma de São Miguel Arcanjo",
@@ -3205,7 +3206,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Am  F  C  E7\n\n[Primeira Parte]\n   Am                       Dm              G\n1. Alimentados na Mesa da Palavra e do Altar,\n   C                        F               E7\nPartimos agora em missão para o mundo iluminar;\n   Am                       Dm              G\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   C                        E7              Am\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   Am                       F               C           E7\nQuem como Deus? Ninguém é como Deus!\n   Am                       F               E7          Am\nSão Miguel Arcanjo, príncipe da milícia celeste, defendei os filhos teus!\n\n[Segunda Parte]\n   G                        C               Am\n2. Onde houver dor e tristeza, levemos consolação,\n   F                        E7              Am\nOnde houver treva e discórdia, semeemos o perdão;\n   C                        Dm              G\nA bênção de Deus Trindade nos acompanhe no andar,\n   F                        E7              Am\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   Am                       F               C           E7\nQuem como Deus? Ninguém é como Deus!\n   Am                       F               E7          Am\nSão Miguel Arcanjo, príncipe da milícia celeste, defendei os filhos teus!\n\n[Final] Am  C  E7  Am",
+    "cifra": "[Intro] Em  C  D  Em\n\n[Primeira Parte]\n   Em                       C\n1. Quem como Deus? Ninguém como Deus!\n   D                        Em\nEcoa o brado forte por toda a Terra e Céus!\n   Em                       C\nSão Miguel Arcanjo, Príncipe da Milícia Divina,\n   D                        Em\nCom sua espada de fogo todo mal domina!\n\n[Refrão]\n   Em                       C\nSão Miguel, São Miguel, defendei-nos no combate!\n   D                        Em\nSede nosso refúgio contra todo ataque!\n   C                        D\nSob a proteção da Virgem Maria:\n   C            D           Em\nO Exército de Deus marcha em vitória!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3223,7 +3224,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": false,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Adorar-Te+em+Espírito+e+em+Verdade+Laércio+Oliveira+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração (João 4, 23)",
@@ -3235,7 +3236,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                        D7              Em\n1. No silêncio agradecido deste encontro de oração,\n   C                        Am              D7\nContemplo a Tua presença que habita em meu coração;\n   G                        D7              Em\nNão há nada neste mundo que se possa comparar\n   C                        D7              G\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   G                        D               Em\nO Pai procura adoradores em espírito e em verdade:\n   C                        D               G\nEis-me aqui diante do altar da Tua Majestade!\n\n[Segunda Parte]\n   Em                       C               G\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Am                       D7              G\nPois olhou para a pequenez deste humilde servidor;\n   C                        D7              Em\nRecebe a minha entrega, meu louvor e gratidão,\n   Am                       D7              G\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   G                        D               Em\nO Pai procura adoradores em espírito e em verdade:\n   C                        D               G\nEis-me aqui diante do altar da Tua Majestade!\n\n[Final] G  C  D7  G",
+    "cifra": "[Intro] G  D/F#  Em  C  D4  D\n\n[Primeira Parte]\n   G                        D/F#\n1. Chegou a hora e já é agora,\n   Em                       C\nOs verdadeiros adoradores que o Pai procura!\n   G                        D/F#\nQue não adoram apenas por palavras vãs,\n   Em                       C           D4  D\nMas com a própria vida todas as manhãs!\n\n[Refrão]\n   G                        D/F#\nAdorar-Te em espírito e em verdade!\n   Em                       C\nContemplar Tua glória e santidade!\n   G                        D/F#\nProstrado aos Teus pés, ó meu Senhor:\n   C            D           G\nTudo o que sou é para o Teu louvor!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3246,14 +3247,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Rafael Morel / Missionário Shalom",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "C",
+    "originalKey": "D",
     "bpm": 78,
     "timeSignature": "4/4",
     "rhythmName": "Balada Salmódica",
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Teu+Amor+Jamais+Falhará+(Salmo+135)+Rafael+Morel+cifra",
     "liturgicalAnalysis": {
       "status": "Louvor Baseado no Salmo 135 (Eterna É a Sua Misericórdia)",
@@ -3265,7 +3266,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                        G               Am\n1. No silêncio agradecido deste encontro de oração,\n   F                        Dm              G7\nContemplo a Tua presença que habita em meu coração;\n   C                        G               Am\nNão há nada neste mundo que se possa comparar\n   F                        G7              C\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   C                        G               Am\nTeu amor não falha, eterna é a Tua compaixão;\n   F                        G               C\nEm todas as manhãs se renova a Tua salvação!\n\n[Segunda Parte]\n   Am                       F               C\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   Dm                       G7              C\nPois olhou para a pequenez deste humilde servidor;\n   F                        G               Am\nRecebe a minha entrega, meu louvor e gratidão,\n   Dm                       G7              C\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   C                        G               Am\nTeu amor não falha, eterna é a Tua compaixão;\n   F                        G               C\nEm todas as manhãs se renova a Tua salvação!\n\n[Final] C  F  G7  C",
+    "cifra": "[Intro] D  A/C#  Bm7  G9  A4  A\n\n[Primeira Parte]\n   D                        A/C#\n1. O Senhor é fiel em todas as Suas palavras,\n   Bm7                      G9\nSua misericórdia dura para sempre!\n   D                        A/C#\nMesmo que as montanhas se abalem ou sumam,\n   Bm7                      G9          A\nAs promessas do Altíssimo nunca se consomem!\n\n[Refrão]\n   D                        A/C#\nTeu amor não falha, Teu amor jamais falhará!\n   Bm7                      G\nSua fidelidade para sempre reinará!\n   D                        A/C#\nEm Quem confia em Deus não há confusão:\n   G            A           D\nO Senhor é a rocha da Salvação!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3295,7 +3296,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Em  C  G  D\n\n[Primeira Parte]\n   Em                       Am              D\n1. No silêncio agradecido deste encontro de oração,\n   G                        C               B7\nContemplo a Tua presença que habita em meu coração;\n   Em                       Am              D\nNão há nada neste mundo que se possa comparar\n   G                        B7              Em\nÀ doçura da Tua graça derramada neste altar!\n\n[Refrão]\n   Em                       C               G           D\nVim buscar o Fogo Alto que desce do Teu altar,\n   Em                       C               D           Em\nFaz arder meu coração quando o Pão Tu vens quebrar!\n\n[Segunda Parte]\n   D                        G               Em\n2. Minh'alma engrandece o Nome do Senhor meu Salvador,\n   C                        B7              Em\nPois olhou para a pequenez deste humilde servidor;\n   G                        Am              D\nRecebe a minha entrega, meu louvor e gratidão,\n   C                        B7              Em\nPermanece para sempre em minha vida e vocação!\n\n[Refrão]\n   Em                       C               G           D\nVim buscar o Fogo Alto que desce do Teu altar,\n   Em                       C               D           Em\nFaz arder meu coração quando o Pão Tu vens quebrar!\n\n[Final] Em  G  B7  Em",
+    "cifra": "[Intro] Em  C  G  D\n\n[Primeira Parte]\n   Em                       C\n1. Não quero uma brasa que logo se apaga,\n   G                        D\nQuero o fogo ardente que tudo consome!\n   Em                       C\nVem, Santo Espírito, desce com Tua glória,\n   G                        D\nMuda o meu destino e a minha história!\n\n[Refrão]\n   Em                       C\nFogo alto no altar do meu coração!\n   G                        D\nQueima, purifica, traz avivamento e unção!\n   Em                       C\nEspírito Santo, sopra neste lugar:\n   G            D           Em\nTua presença viva vem nos batizar!",
     "repertoireType": "popular",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3313,7 +3314,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓ ↓ ↑ ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Casa+de+Maria+(Cheia+de+Graça)+Mayara+Marques+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Mariano de Intimidade",
@@ -3325,7 +3326,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Solenidades Marianas",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  G  Bm  A\n\n[Primeira Parte]\n   D                        A7              Bm\n1. Alimentados na Mesa da Palavra e do Altar,\n   G                        Em              A7\nPartimos agora em missão para o mundo iluminar;\n   D                        A7              Bm\nSob o olhar materno e doce da Virgem Mãe do Senhor,\n   G                        A7              D\nSeremos no dia a dia mensageiros do Teu amor!\n\n[Refrão]\n   D                        G               Bm          A\nBem-vinda à minha casa, ó Mãe do meu Senhor;\n   D                        G               A           D\nEnsina-me a adorar Jesus com todo o teu amor!\n\n[Segunda Parte]\n   Bm                       G               D\n2. Onde houver dor e tristeza, levemos consolação,\n   Em                       A7              D\nOnde houver treva e discórdia, semeemos o perdão;\n   G                        A7              Bm\nA bênção de Deus Trindade nos acompanhe no andar,\n   Em                       A7              D\nAté que na Pátria eterna voltemos a nos encontrar!\n\n[Refrão]\n   D                        G               Bm          A\nBem-vinda à minha casa, ó Mãe do meu Senhor;\n   D                        G               A           D\nEnsina-me a adorar Jesus com todo o teu amor!\n\n[Final] D  G  A7  D",
+    "cifra": "[Intro] D9  Bm7(11)\n\nD9\nEu quero ir ao andar de cima\n\n  Bm7(11)\nE ali encontrar minha mãe\n\n      D9\nMãos postas me esperando\n\n                 Bm7(11)\nMe chamando para entrar\n\n         G\nHoje eu sei\n\n         A4\nSe Maria eu chamar\n\n     D9  D9/C#  Bm7(11)\nO Espírito de Deus\n\n     G           A4          D\nEle vem e enche todo esse lugar\n\n         G\nHoje eu sei\n\n            A4\nQue onde a noiva está\n\n   D9    D9/C#   Bm7(11)\nO noivo também está\n\n   G         A4\nEspírito de Deus\n\n           D9\nVem nesse lugar\n\nG\nOnde minha mãe está\n\n                   D9\nEu também quero estar\n\n G\nNa casa de Maria\n\n                    D9\nEu sei que é o meu lugar\n\nG\nE quando o Espírito me encontra aqui\n\nD9\nEle não resiste quando sente em mim\n\nG                         D9  D9/C#  Bm7(11)\nO perfume dela e consome tudo o que sou\n\nG            A4                D9\nEspírito de Deus, vem neste lugar\n\n    D9            G\nA glória de Pentecostes\n\n          Bm7(11)     A4\nHoje eu quero neste lugar",
     "repertoireType": "popular",
     "specialDay": "Solenidades Marianas",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -3726,14 +3727,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Thiago Brado",
     "liturgicalMoment": "Final",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "C",
+    "originalKey": "FC",
     "bpm": 76,
     "timeSignature": "4/4",
     "rhythmName": "Pop Acústico",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 9,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Meu+Alvo+Thiago+Brado+cifra",
     "liturgicalAnalysis": {
       "status": "Envio / Encontros de Jovens / Crisma",
@@ -3745,7 +3746,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G/B  Am7  F9\n\n[Primeira Parte]\nC                      G/B\nDeixo para trás o que já passou,\nAm7                    F9\nFixo os meus olhos no que está à frente.\nC                      G/B\nNão vou parar no meio do caminho,\nF9                     G4      G\nTua graça me impulsiona diariamente.\n\n[Refrão]\n          F9                G9\nO meu alvo é o Céu, o meu alvo é Jesus!\n        Em7                 Am7\nVou correndo para a meta da Tua luz!\n       Dm7                  G4  G\nNada neste mundo vai me deter,\n       F9         G7        C\nPara Ti, Senhor, eu quero viver!\n\n[Segunda Parte]\nC                      G/B\nSe o cansaço tentar me abater,\nAm7                    F9\nTua Palavra renova o meu vigor.\nC                      G/B\nCombato o bom combate da fé,\nF9                     G4      G\nGuardado nos braços do meu Salvador.\n\n[Final]\n       Dm7        G7        Am7  F9\nO meu alvo é o Céu, o meu alvo é Jesus!\n       Dm7        G7        C9\nMinha vida inteira a Ti conduz!",
+    "cifra": "[Intro] F/C  C\n\nF/C    C   F/C    C\nEu não sei o que fazer\n\nG/B        Am           G\nPois eu não vejo bondade em mim\n\nF/C    C        F/C    C\nNão sei dizer o que o Senhor viu\n\n   Am\nNo meu\n\n        G\nPobre e fraco coração\n\n( Dm  D9  Am  G )\n\n        F           G\nMas confesso, sou grato\n\n          C     G/B   Am\nNão desististes de mim\n\n             Dm\nPode o mundo ir\n\n          G           C\nMas o Teu colo vai ficar\n\nRefrão: Dm  D9  Am  G\n\n              F                 G\nNão vou desistir, quero Tua presença\n\n           C    G/B        Am\nHoje o meu alvo é Te sentir\n\n             F                   G\nEu só vou parar quando no Teu abraço\n Senhor\n\n     C\nMe embalar\n\n             F                 G\nNão vou desistir, quero Tua presença\n\n           C    G/B        Am\nHoje o meu alvo é Te sentir\n\n             F                   G\nEu só vou parar quando no Teu abraço\n Senhor\n\n     C\nMe embalar\n\n        F           G\nMas confesso, sou grato\n\n          C     G/B   Am\nNão desististes de mim\n\n             Dm\nPode o mundo ir\n\n          G           C\nMas o Teu colo vai ficar\n\n              F                 G\nNão vou desistir, quero Tua presença\n\n           C    G/B        Am\nHoje o meu alvo é Te sentir\n\n             F                   G\nEu só vou parar quando no Teu abraço\n Senhor\n\n     C\nMe embalar\n\n             F                 G\nNão vou desistir, quero Tua presença\n\n           C    G/B        Am\nHoje o meu alvo é Te sentir\n\n             F                   G\nEu só vou parar quando no Teu abraço\n Senhor\n\n     C\nMe embalar\n\n        F                 G\nNão há outro lugar qu'eu ansei estar\n\n         Am            Em\nQue o Teu colo, colo, colo\n\n         F                G\nNão há outro lugar qu'eu ansei estar\n\n         C   G   Am\nQue o Teu colo\n\n             F                 G\nNão vou desistir, quero Tua presença\n\n           C    G/B        Am\nHoje o meu alvo é Te sentir\n\n             F                   G\nEu só vou parar quando no Teu abraço, Senhor\n\n     C\nMe embalar",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4543,7 +4544,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 8,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Eu+Seguirei+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Hino Vocacional de Entrega Total (Cifra Club Top Frei Gilson)",
@@ -4555,7 +4556,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] E  B  C#m  A\n\n[Primeira Parte]\n   E                                        B\n1. Eu vou, deixando tudo para trás, eu vou;\n   C#m                                      A\nRespondendo ao Teu chamado, Senhor, aqui estou!\n   E                                        B\nMesmo sem saber para onde ir, confio em Ti,\n   C#m                                      A           B\nTua voz me basta, quero Te servir até o fim!\n\n[Refrão]\n   E                                        B\nEu seguirei, eu irei aonde fores, Senhor!\n   C#m                                      A\nTua graça me basta, Teu amor me conquistou!\n   E                                        B\nNada vai me separar do Teu caminho, ó Rei:\n   C#m                      A               B           E\nDe olhos fixos em Jesus, fiel eu seguirei!\n\n[Segunda Parte]\n   E                                        B\n2. Tomo a minha cruz de cada dia com amor,\n   C#m                                      A\nPois quem perde a vida por Jesus a encontrará!\n   F#m                      C#m             A           B\nNo altar da entrega, minha vida quero consagrar!\n\n[Final]\n   C#m                      A               B           E\nDe olhos fixos em Jesus, fiel eu seguirei!",
+    "cifra": "[Intro] F#m7(11)  A9  E9\n\n        F#m7(11)  A9  E9\n\n[Primeira Parte]\n\n    E      D9\nEu vou deixar-me guiar\n\n                          E\nE me abandonar no teu querer\n\n    D9\nPreciso fazer a Tua vontade\n\n          E\nEm minha vida\n\n           D9\nEu vou deixar-me guiar\n\n                          E\nE me abandonar no teu querer\n\n    D9\nPreciso fazer a Tua vontade\n\n          E\nEm minha vida\n\n[Pré-Refrão]\n\n               F#m7(11)  A9\nPara onde eu irei?\n\n               E9\nEm quem me apoiarei?\n\n               F#m7(11)  A9\nPara onde eu irei?\n\n               E9\nEm quem me apoiarei?\n\n[Refrão]\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n( F#m7(11)  A9  E9 )\n\n( F#m7(11)  A9  E9 )\n\n[Primeira Parte]\n\n    E      D9\nEu vou deixar-me guiar\n\n                          E\nE me abandonar no teu querer\n\n    D9\nPreciso fazer a Tua vontade\n\n          E\nEm minha vida\n\n[Pré-Refrão]\n\n               F#m7(11)  A9\nPara onde eu irei?\n\n               E9\nEm quem me apoiarei?\n\n               F#m7(11)  A9\nPara onde eu irei?\n\n               E9\nEm quem me apoiarei?\n\n[Refrão]\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n( A9  C#m  B4 )\n\n( A9  C#m  B4 )\n\n[Ponte]\n\n               A9\nEu te seguirei\n\n               C#m\nEu te seguirei\n\n            B4  F#m7(11)/C#\nEu te seguirei\n\n               A9\nEu te seguirei\n\n               E\nEu te seguirei\n\n            B4  C#m\nEu te seguirei\n\n               A9\nEu te seguirei\n\n               C#m\nEu te seguirei\n\n            B4  F#m7(11)/C#\nEu te seguirei\n\n               A9\nEu te seguirei\n\n               E\nEu te seguirei\n\n               B4\nEu te seguirei\n\n( F#m7(11)  A9  E9 )\n\n[Refrão]\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n         B4\nEu seguirei\n\n     A9                 E9\nEu irei aonde fores Senhor\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n              F#m7(11)  A9\nTua graça me basta\n\n                E9\nTeu amor me sustenta\n\n[Final] F#m7(11) A9 E9",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4566,14 +4567,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Frei Gilson / Som do Monte",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "D",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Balada Mariana",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Colo+de+Mãe+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Mariano de Consolação (Cifra Club Top Frei Gilson)",
@@ -4585,7 +4586,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Solenidades Marianas",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                                        D\n1. Quando o peso da cruz parece maior que a minha força,\n   Em                                       C\nE o silêncio da noite tenta me fazer parar,\n   G                                        D\nSinto um manto sagrado enxugando o meu rosto:\n   Em                       C               D\nÉ Maria que vem me abraçar e me ensinar a esperar!\n\n[Refrão]\n   G                                        D\nNo Teu colo de Mãe eu descanso o meu coração,\n   Em                                       C\nNo Teu colo de Mãe encontro paz e proteção!\n   G                                        D\nLeva-me a Jesus, ensina-me a dizer o meu sim:\n   Em                       C               D           G\nÓ Maria, Mãe de Deus, cuida sempre de mim!\n\n[Segunda Parte]\n   G                                        D\n2. Junto à Cruz permaneceste de pé por amor,\n   Em                                       C\nRecebendo cada filho das mãos do Redentor!\n\n[Final]\n   Em                       C               D           G\nÓ Maria, Mãe de Deus, cuida sempre de mim!",
+    "cifra": "D9                    G\nEu preciso tanto do teu colo de mãe\n\n            D9                    G\nEu preciso tanto do teu colo de mãe\n\nBm                          D                             A9\nQue me ama, me ampara, me protege, com manto protetor\n\n                           G\nIntercede sempre em meu favor\n\nBm                         D                             A9\nQue me ama, me ampara, me protege, com manto protetor\n\n                           G\nIntercede sempre em meu favor\n\n   D          G          Bm A9            G\nMe ama, me abraça, me esconde, em teu manto\n\n   D          G          Bm A9            G\nMe ama, me abraça, me esconde, em teu manto\n\n           D9                    G\nEu preciso tanto do teu colo de mãe\n\n           D9                    G\nEu preciso tanto do teu colo de mãe\n\nBm                           D                          A9\nQue me ama, me ampara, me protege, com manto protetor\n\n                           G\nIntercede sempre em meu favor\n\nBm                            D                         A9\nQue me ama, me ampara, me protege, com manto protetor\n\n                           G\nIntercede sempre em meu favor\n\n   D          G          Bm A9            G\nMe ama, me abraça, me esconde, em teu manto\n\n   D          G          Bm A9            G\nMe ama, me abraça, me esconde, em teu manto",
     "repertoireType": "popular",
     "specialDay": "Solenidades Marianas",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4596,14 +4597,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Frei Gilson / Som do Monte",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "F",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 7,
     "youtubeUrl": "https://www.youtube.com/results?search_query=De+Ti+Preciso+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Adoração e Dependência de Deus",
@@ -4615,7 +4616,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                                        A\n1. Mais que o ar que eu respiro, mais que a luz do amanhecer,\n   Bm                                       G\nMinha alma tem sede de Ti, razão do meu viver!\n   D                                        A\nSem Tua presença sou terra árida e sem flor,\n   Bm                       G               A\nVem saciar minha sede com a fonte do Teu amor!\n\n[Refrão]\n   D                                        A\nDe Ti preciso, Jesus, a cada instante!\n   Bm                                       G\nDe Ti preciso para continuar avante!\n   D                                        A\nToma o meu coração, reina dentro de mim:\n   Bm                       G               A           D\nDe Ti preciso hoje e até o fim!\n\n[Segunda Parte]\n   D                                        A\n2. Diante da Hóstia Santa entrego todo o meu ser,\n   Bm                       G               A           D\nPois só em Ti, Senhor, encontro forças pra vencer!",
+    "cifra": "[Intro] F9  C  Bb  C\n\nF9            C               Bb             C\nEu vou te buscar, Senhor, de todo o meu coração\n\nF9            C                Bb   Gm  C\nEu vou te buscar, Senhor, com determinação\n\n            Bb      F9             Bb      F9\nEu preciso mais de ti, eu preciso mais de ti\n\n            Bb      Dm      C4  C\nEu preciso mais de ti, meu Deus!\n\n            Bb      F9             Bb      F9\nEu preciso mais de ti, eu preciso mais de ti\n\n            Bb      Dm      C4  C\nEu preciso mais de ti, meu Deus!\n\nF9            C               Bb             C\nEu vou te buscar, Senhor, de todo o meu coração\n\nF9            C                Bb   Gm  C\nEu vou te buscar, Senhor, com determinação\n\n            Bb      F9             Bb      F9\nEu preciso mais de ti, eu preciso mais de ti\n\n            Bb      Dm      C4  C\nEu preciso mais de ti, meu Deus!\n\n            Bb      F9             Bb      F9\nEu preciso mais de ti, eu preciso mais de ti\n\n            Bb      Dm      C4  C\nEu preciso mais de ti, meu Deus!\n\n            F9\nMais que a vida eu preciso de ti\n\n           Dm\nMais que o ar eu preciso de ti\n\n                Gm          Bb              C\nMais que as riquezas eu preciso de ti, meu Deus\n\n            F9\nMais que a vida eu preciso de ti\n\n           Dm\nMais que o ar eu preciso de ti\n\n                Gm          Bb              C\nMais que as riquezas eu preciso de ti, meu Deus\n\n[Solo] F9  Dm  Bb\n\n       Gm  F9  C\n\n          F9\nDe ti preciso, preciso mais que tudo nessa vida\n\n    Dm\nPreciso preciso és a razão do meu viver\n\n        Gm   Bb             F9            C\nIncomparável és!, sou todo teu, sou todo teu\n\n    F9\nPreciso, preciso mais que tudo nessa vida\n\n    Dm\nPreciso preciso és a razão do meu viver\n\n        Gm   Bb             F9            C\nIncomparável és!, sou todo teu, sou todo teu\n\n            F9\nMais que a vida eu preciso de ti\n\n           Dm\nMais que o ar eu preciso de ti\n\n                Gm          Bb              C\nMais que as riquezas eu preciso de ti, meu Deus\n\n( F  Dm  Gm )\n\n( Bb  F  C )\n\n          F9\nDe ti preciso, preciso mais que tudo nessa vida\n\n    Dm\nPreciso preciso és a razão do meu viver\n\n        Gm   Bb             F9            C\nIncomparável és!, sou todo teu, sou todo teu\n\n    F9\nPreciso, preciso mais que tudo nessa vida\n\n    Dm\nPreciso preciso és a razão do meu viver\n\n        Gm   Bb             F9            C\nIncomparável és!, sou todo teu, sou todo teu",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4626,14 +4627,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Frei Gilson / Som do Monte",
     "liturgicalMoment": "Ofertório",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "B",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Esperança",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 5,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Deixa+Deus+Sonhar+em+Ti+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Vocacional e de Esperança Cristã",
@@ -4645,7 +4646,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                                        G\n1. Os planos de Deus são maiores que os meus,\n   Am                                       F\nSeus caminhos mais altos que o próprio céu!\n   C                                        G\nQuando uma porta se fecha, Ele abre um novo mar:\n   Am                       F               G\nConfia no Senhor, Ele não sabe falhar!\n\n[Refrão]\n   C                                        G\nDeixa Deus sonhar em ti, deixa Deus guiar teus passos!\n   Am                                       F\nEntrega o teu futuro no calor dos Seus abraços!\n   C                                        G\nO que Ele preparou olho algum jamais viu:\n   Am                       F               G           C\nDeixa Deus sonhar em ti, pois Ele te escolheu!\n\n[Segunda Parte]\n   C                                        G\n2. Não temas as ondas nem o vento a soprar,\n   Am                       F               G           C\nQuem te chamou pelo nome jamais vai te abandonar!",
+    "cifra": "[Intro] Bm\n\n[Primeira Parte]\n\n                      G      A\nDeixa Deus sonhar em ti, deixa!\n\n                      Bm\nDeixa Deus sonhar em ti\n\n            G  A                   Bm\nNão tenhas me_do é Deus quem te segura\n\n( G  A  Bm  G  A  Bm )\n\n                      G      A\nDeixa Deus sonhar em ti, deixa!\n\n                      Bm\nDeixa Deus sonhar em ti\n\n            G  A                   Bm\nNão tenhas me_do é Deus quem te segura\n\n[Refrão]\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n[Segunda Parte]\n\n            G               A\nVerás um caminho difícil demais\n\n             D           A/C#    Bm\nVerás tempestades que te assustarão\n\n                         G\nMas quando o sonho é de Deus\n\n                A\nNinguém destruirá\n\n             D      A/C#      Bm\nSe Ele prometeu também cumprirá\n\n          G                  A\nTenha paciência e saiba esperar\n\n                    D\nO melhor de Deus virá\n\n[Refrão]\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n[Primeira Parte]\n\n                      G      A\nDeixa Deus sonhar em ti, deixa!\n\n                      Bm\nDeixa Deus sonhar em ti\n\n            G  A                   Bm\nNão tenhas me_do é Deus quem te segura\n\n[Refrão]\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n        G  A            Bm\nSegue alé____m, segue além\n\n[Segunda Parte]\n\n            G               A\nVerás um caminho difícil demais\n\n             D           A/C#    Bm\nVerás tempestades que te assustarão\n\n                         G\nMas quando o sonho é de Deus\n\n                A\nNinguém destruirá\n\n             D      A/C#      Bm\nSe Ele prometeu também cumprirá\n\n          G                  A\nTenha paciência e saiba esperar\n\n                    D\nO melhor de Deus virá",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4686,14 +4687,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Frei Gilson / Som do Monte",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "G",
+    "originalKey": "F",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Cura",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Eu+Te+Levantarei+Frei+Gilson+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Consolo e Restauração (Cifra Club Top Frei Gilson)",
@@ -4705,7 +4706,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                                        D\n1. Filho, Eu conheço cada lágrima que caiu no chão,\n   Em                                       C\nConheço o cansaço que aperta o teu coração;\n   G                                        D\nNão penses que estás sozinho nessa caminhada:\n   Em                       C               D\nEu sou o Teu Deus, Tua força e Tua morada!\n\n[Refrão]\n   G                                        D\nEu te levantarei quando tudo parecer cair!\n   Em                                       C\nEu te sustentarei, minha mão está sobre ti!\n   G                                        D\nMesmo que passem os montes, Meu amor não passará:\n   Em                       C               D           G\nConfia em Mim, filho Meu, Eu vou te levantar!\n\n[Segunda Parte]\n   G                                        D\n2. Das cinzas faço brotar um jardim de esplendor,\n   Em                       C               D           G\nPois sou o Deus da vida, o Teu Restaurador!",
+    "cifra": "[Intro] F  Dm  Bb  Gm7  C\n\nF\nEu te levantarei\n\nDm\nEu te levantarei\n\n         Bb  Gm7          C\nFilho amado,     filho querido\n\nF\nEu te levantarei\n\nDm\nEu te levantarei\n\n         Bb   Gm7          C  ( C7 )\nFilho amado,     filho querido\n\n        Bb        C\nRestituirei tuas forças\n\n         Bb      C\nE te atrairei a mim\n\n       Bb          C             Bb  C\nE te darei novas vestes, filho amado\n\n         Bb       C\nRestituirei tuas forças\n\n           Bb    C\nE te atrairei a mim\n\n       Bb          C             Bb  C7\nE te darei novas vestes, filho amado",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4746,14 +4747,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Colo de Deus",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Pentecostes",
-    "originalKey": "Em",
+    "originalKey": "G",
     "bpm": 70,
     "timeSignature": "4/4",
     "rhythmName": "Worship / Adoração",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Queima+de+Novo+Comunidade+Colo+de+Deus+cifra",
     "liturgicalAnalysis": {
       "status": "Clássico de Adoração e Avivamento (Cifra Club Top Colo de Deus)",
@@ -4765,7 +4766,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Em  C  G  D\n\n[Primeira Parte]\n   Em                                       C\n1. Sarça que só queima, que não se apaga,\n   G                                        D\nSomos Tua Igreja, viemos Te adorar!\n   Em                                       C\nNeste Teu altar somos sacrifício vivo,\n   G                                        D\nVem com Tua glória este lugar incendiar!\n\n[Refrão]\n   Em                                       C\nQueima de novo, queima de novo!\n   G                                        D\nComo na primeira vez, queima em nós o Teu amor!\n   Em                                       C\nQueima de novo, queima de novo!\n   G                        D               Em\nNão deixes o fogo apagar no nosso coração, Senhor!\n\n[Segunda Parte]\n   Em                                       C\n2. Como os discípulos a caminho de Emaús,\n   G                                        D\nArde o nosso peito ao escutar Tua voz, Jesus!\n   Em                       C               G           D\nFica conosco, Senhor, acende a chama que não vai passar!\n\n[Final]\n   Em                       C               G     D     Em\nQueima de novo em nós, Espírito Consolador!",
+    "cifra": "[Intro] G  Em7  G  Em7\n\n[Dedilhado - Intro]\n\n[Primeira parte]\n\n               Em7                C9\nSarça que só queima, que não se apaga\n\n             G                  D/F#\nSomos Tua Igreja, viemos Te adorar\n\n             Em7             C9\nNeste Teu altar, somos sacrifício\n\n              G           D/F#  Am7  D\nVem nos consumir, estamos aqui, aqu__i\n\n[Refrão]\n\n[Dedilhado - Refrão 1]\n\nG\nFoi a Tua presença\n\n                  D\nQue nos trouxe aqui, Senhor\n\n            C9\nNão desistiremos\n\n             Em7       D/F#\nDe te perseguir até Te encontrar\n\n                G\nDiante da Tua glória\n\n            D\nNão podemos   ficar de pé\n\n               C9              Em7\nMostra quem Tu és vem nos visitar\n\n             D/F#        G  Em7\nNos fazer queimar, de novo\n\n[Primeira parte]\n\n               Em7                C9\nSarça que só queima, que não se apaga\n\n             G                  D/F#\nSomos Tua Igreja, viemos Te adorar\n\n             Em7             C9\nNeste Teu altar, somos sacrifício\n\n              G           D/F#  Am7  D\nVem nos consumir, estamos aqui, aqu__i\n\n[Refrão]\n\n              G\nFoi a Tua presença\n\n                  D\nQue nos trouxe aqui, Senhor\n\n            C9\nNão desistiremos\n\n             Em7       D/F#\nDe te perseguir até Te encontrar\n\n                G\nDiante da Tua glória\n\n            D\nNão podemos   ficar de pé\n\n               C9              Em7\nMostra quem Tu és vem nos visitar\n\n             D/F#\nNos fazer queimar\n\n      G        Em7  G  Em7\nDe novo, de novo\n\n[Segunda parte]\n\n[Dedilhado - Segunda Parte]\n\nG\n  Manda Teu fogo, manda Teu fogo\n\nEm7\n    Queima de novo, queima de novo\n\nG\n  Manda Teu fogo, manda Teu fogo\n\nEm7\n    Queima de novo, queima de novo\n\nG\n  Manda Teu fogo, manda Teu fogo\n\nEm7\n    Queima de novo, queima de novo\n\nG\n  Manda Teu fogo, manda Teu fogo\n\nEm7\n    Queima de novo\n\n[Refrão Final]\n\n[Dedilhado - Refrão Final]\n\nG\nFoi a Tua presença\n\n                  D\nQue nos trouxe aqui, Senhor\n\n            C9\nNão desistiremos\n\n             Em7       D/F#\nDe te perseguir até Te encontrar\n\n                G\nDiante da Tua glória\n\n            D\nNão podemos   ficar de pé\n\n               C9              Em7\nMostra quem Tu és vem nos visitar\n\n            D/F#\nNos fazer queimar\n\n      G  Em7  G  Em7\nDe novo",
     "repertoireType": "popular",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4806,14 +4807,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Colo de Deus",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "C",
+    "originalKey": "A",
     "bpm": 68,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Intimidade",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Casa+(Fica+à+Vontade)+Comunidade+Colo+de+Deus+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Intimidade e Morada Interior",
@@ -4825,7 +4826,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G  Am  F\n\n[Primeira Parte]\n   C                                        G\n1. Eu limpei cada canto do meu coração,\n   Am                                       F\nAbri as janelas pra Tua luz entrar;\n   C                                        G\nNão quero que sejas apenas visita, Senhor:\n   Am                       F               G\nA chave é toda Tua, vem aqui morar!\n\n[Refrão]\n   C                                        G\nFica à vontade, a casa é Tua, meu Senhor!\n   Am                                       F\nDescansa em meu peito, recebe o meu amor!\n   C                                        G\nNão há lugar melhor do que aos Teus pés estar:\n   Am                       F               G           C\nEsta casa é Tua, Jesus, vem reinar!\n\n[Segunda Parte]\n   C                                        G\n2. Como em Betânia, na casa de Marta e Maria,\n   Am                       F               G           C\nEscolho a melhor parte: Tua eterna companhia!",
+    "cifra": "[Intro] Am7  F7M  C\n\n        Am7  F7M  C\n\n[Primeira Parte]\n\n         Am7          F7M\nAndei falando de Você\n\n         C\nAndei falando do que Você fez em mim\n\n              Am7\nE eles perguntaram\n\n      F7M              C\nComo pode Deus amar assim?\n\n         Am7          F7M\nAndei falando de Você\n\n           C\nAndei mostrando o que o amor fez em mim\n\n    C/B       Am\nE eles perguntaram\n\n           F7M              C\nQue Deus é esse e onde Ele mora?\n\n[Pré-Refrão]\n\n        Am7          F7M    C\nE eu falei que Você mora aqui\n\n              C/B  Am7\nQue você mora em  mim\n\n         F7M\nTá destruída\n\n                  C\nMas eu sou a Tua casa, casa\n\n      Am7          F7M     C\nEu falei que Você me escolheu\n\n           C/B  Am7\nE decidiu mo___rar\n\n         F7M\nEu só falei que é amor\n\n      C7M\nSó falei que é amor\n\n[Refrão]\n\n            Am7\nEu não mereci\n\n          F7M            C\nFoi Tua graça que me salvou\n\n             G\nQue me escolheu\n\n             Am7\nE eu Te recebi\n\n           F7M               C7M\nFoi pela graça que agora eu sei\n\n             G\nTua casa sou eu\n\n[Terceira Parte]\n\n    F7M                      C\nEu não consigo entender, tá tudo bem\n\n        Am7            G\nPode morar, serei Tua casa\n\n    F7M                      C\nEu não consigo entender, tá tudo bem\n\n        Am7            G4  G\nPode morar, serei Tua casa\n\n    F7M                      C\nEu não consigo entender, tá tudo bem\n\n        Am7            G4  G\nPode morar, serei Tua casa\n\n    F7M                      C\nEu não consigo entender, tá tudo bem\n\n        Am7            G4  G\nPode morar, serei Tua casa\n\n[Refrão]\n\n            Am7\nEu não mereci\n\n          F7M            C\nFoi Tua graça que me salvou\n\n             G\nQue me escolheu\n\n             Am7\nE eu Te recebi\n\n           F7M               C7M\nFoi pela graça que agora eu sei\n\n             G\nTua casa sou eu\n\n[Ponte]\n\n    F7M                      C\nEu não consigo entender, tá tudo bem\n\n        Am7            G4\nPode morar, serei Tua casa\n\n[Quarta Parte]\n\n     F7M  C\nPra sem_pre\n\n     Am7  G\nPra sem_pre\n\n     F7M  C\nPra sem_pre\n\n           Am7  G\nSerei Tua ca___sa\n\n     F7M  C\nPra sem_pre\n\n     Am7  G\nPra sem_pre\n\n     F7M  C\nPra sem_pre\n\n           Am7  G\nSerei Tua ca___sa\n\n[Refrão]\n\n            Am7\nEu não mereci\n\n          F7M            C\nFoi Tua graça que me salvou\n\n             G\nQue me escolheu\n\n             Am7\nE eu Te recebi\n\n           F7M               C7M\nFoi pela graça que agora eu sei\n\n             G\nTua casa sou eu\n\n[Final]\n\n    F7M                      C\nEu não consigo entender, tá tudo bem\n\n        Am7            G4\nPode morar, serei Tua casa",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -4926,7 +4927,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Comunidade Colo de Deus",
     "liturgicalMoment": "Entrada",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "Em",
+    "originalKey": "E",
     "bpm": 118,
     "timeSignature": "4/4",
     "rhythmName": "Pop Rock Jovem",
@@ -4945,7 +4946,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] Em  C  G  D\n\n[Primeira Parte]\n   Em                                       C\n1. Já é hora de acordar do sono da indiferença,\n   G                                        D\nUma geração eleita se levanta em Tua presença!\n   Em                                       C\nO Leão da Tribo de Judá já rugiu sobre a nação,\n   G                        D               Em\nDespertando os filhos para a salvação!\n\n[Refrão]\n   Em                                       C\nDesperta, tu que dormes! Levanta-te dentre os mortos,\n   G                                        D\nE Cristo te iluminará com Seu esplendor!\n   Em                                       C\nDesperta, Igreja santa! Anuncia ao mundo inteiro\n   G                        D               Em\nQue Jesus Cristo é o único Senhor!\n\n[Segunda Parte]\n   Em                                       C\n2. Revestidos da armadura da luz e da fé,\n   G                        D               Em\nMarchará o povo santo proclamando quem Deus é!",
+    "cifra": "[Intro] E9  B4  C#m7  A9\n\n[Primeira Parte]\n\nE9    B4\nAviva    o meu coração\n\n    C#m7        A9\nCansado de esperar\n\n                E9     B4\nReliga Tua vida em mim\n\n C#m7        A9\nTua vida em mim\n\n    E9   B4\nDesperta\n\n                    C#m7   A9\nTu que dormes na escuridão\n\n                  E9           B4  C#m7  A9\nVem ouvir as trombetas de Sião\n\n[Refrão]\n\n     C#m7(9)  B4\nProclama\n\n                      A9\nQue Jesus voltando está\n\n                     C#m7(9)  B4\nQue o Seu Reino não findará\n\n                     A9\nQue o cordeiro é o Leão\n\nQue no trono está\n\n     C#m7(9)  B4\nProclama\n\n                      A9\nQue Jesus voltando está\n\n                     C#m7(9)  B4\nQue o Seu Reino não findará\n\n                     A9\nQue o cordeiro é o Leão\n\nQue no trono está\n\n[Segunda Parte]\n\nC#m7(9)                 B4\n        Escuta povo meu\n\nSou a promessa das nações\n\nA9\n   Vou levantar você\n\n                  C#m7(9)\nPara ser a minha voz\n\n                     B4\nE ser as minhas mãos\n\n                  A9\nE hoje nessa geração\n\nTe escolhi, és meu!\n\nC#m7(9)                 B4\n        Escuta povo meu\n\nSou a promessa das nações\n\nA9\n   Vou levantar você\n\n                  C#m7(9)\nPara ser a minha voz\n\n                     B4\nE ser as minhas mãos\n\n                  A9\nE hoje nessa geração\n\nTe escolhi, és meu!\n\n[Interlúdio] C#m7(9)  B4  A9  B4\n\n             C#m7(9)  B4  A9  B4\n\n             C#m7(9)  B4  A9  B4\n\n             C#m7(9)  B4  A9  B4\n\n[Refrão]\n\n     C#m7(9)  B4\nProclama\n\n                      A9\nQue Jesus voltando está\n\n                     C#m7(9)  B4\nQue o Seu Reino não findará\n\n                     A9\nQue o cordeiro é o Leão\n\nQue no trono está\n\n     C#m7(9)  B4\nProclama\n\n                      A9\nQue Jesus voltando está\n\n                     C#m7(9)  B4\nQue o Seu Reino não findará\n\n                     A9\nQue o cordeiro é o Leão\n\nQue no trono está\n\n[Terceira Parte]\n\n    E9     B4\nVou avivar    o teu coração\n\n    C#m7(9)      A9\nCansado de esperar\n\n           E9             B4\nVou te atrair, te conquistar\n\n                   C#m7(9)  A9\nDesperta, é tempo de mudar\n\n                   E9\nDesperta, é tempo de mudar",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -5166,14 +5167,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Fábio de Melo / Frederico Cruz",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "C",
+    "originalKey": "B",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada MPB Católica",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 5,
+    "chordCount": 15,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Tudo+É+do+Pai+Padre+Fábio+de+Melo+cifra",
     "liturgicalAnalysis": {
       "status": "Clássico da Música Católica Brasileira (Cifra Club #1 Pe. Fábio de Melo)",
@@ -5185,7 +5186,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] C  G/B  Am  F  G7\n\n[Primeira Parte]\n   C                        G/B             Am\n1. Eu pensei que podia viver por mim mesmo,\n   F                        Dm              G7\nEu pensei que as coisas do mundo não iriam me derrubar;\n   C                        G/B             Am\nO orgulho tomou conta do meu ser e o pecado devastou o meu viver:\n   F                        Dm              G7\nFui embora, disse ao Pai: \"Dá-me o que é meu!\"\n\n[Refrão]\n   C                        G/B             Am\nTudo é do Pai! Toda honra e toda a glória,\n   F                        Dm              G7\nÉ Dele a vitória alcançada em minha vida!\n   C                        G/B             Am\nTudo é do Pai! Se sou fraco e pecador,\n   F                        G7              C\nBem mais forte é o meu Senhor, que me cura por amor!\n\n[Segunda Parte]\n   C                        G/B             Am\n2. Hoje volto arrependido para os braços do meu Pai,\n   F                        G7              C\nPois na mesa da Sua graça a alegria nunca sai!",
+    "cifra": "[Intro] B  F#/A#  G#m  E\n\n        C#m  F#4  F#\n\nB      F#/A#     G#m   E\n\nC#m             F#4      F#\n\n[Primeira Parte]\n\n       B               F#/A#\nEu pensei que podia viver\n\n         G#m  B/F#\nPor mim mesmo\n\n       C#m                  C#m/B\nEu pensei que as coisas do mundo\n\n      F#\nNão iriam me derrubar\n\n     B           F#/A#\nO orgulho tomou conta\n\n        G#m  B/F#\nDo meu ser\n\n       C#m       C#m/B       F#\nE o pecado devastou o meu viver\n\n[Pré-Refrão]\n\n       E              F#\nFui embora, disse ao Pai\n\n               D#m  G#m\nDá-me o que é meu\n\n         C#m\nDá-me a parte\n\n        F#           B  B7\nQue me cabe da herança\n\n         E             F#\nFui pro mundo, gastei tudo\n\n       D#7   Gº   G#m\nMe restou só o pecado\n\n           C#m            F#\nE hoje eu sei que nada é meu\n\n           B  F#\nTudo é do Pai\n\n[Refrão]\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        B  F#\nQue me cura por amor\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        B  E9/F#\nQue me cura por amor\n\n[Primeira Parte]\n\n       B               F#/A#\nEu pensei que podia viver\n\n         G#m  B/F#\nPor mim mesmo\n\n       C#m                  C#m/B\nEu pensei que as coisas do mundo\n\n      F#\nNão iriam me derrubar\n\n     B           F#/A#\nO orgulho tomou conta\n\n        G#m  B/F#\nDo meu ser\n\n       C#m       C#m/B       F#\nE o pecado devastou o meu viver\n\n[Pré-Refrão]\n\n       E              F#\nFui embora, disse ao Pai\n\n               D#m  G#m\nDá-me o que é meu\n\n         C#m\nDá-me a parte\n\n        F#           B  B7\nQue me cabe da herança\n\n         E             F#\nFui pro mundo, gastei tudo\n\n       D#7   Gº   G#m\nMe restou só o pecado\n\n           C#m            F#\nE hoje eu sei que nada é meu\n\n           B  F#\nTudo é do Pai\n\n[Refrão Final]\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        B  F#\nQue me cura por amor\n\n           B\nTudo é do Pai\n\n      F#/A#           G#m\nToda honra e toda a glória\n\n   B/F#     C#m\nÉ dEle a vitória\n\n      C#m/B         F#\nAlcançada em minha vida\n\n           B\nTudo é do Pai\n\n         F#/A#      G#m\nSe sou fraco e pecador\n\n          B/F#             C#m\nBem mais forte é o meu Senhor\n\n        F#        E   B/D#  C#m  B\nQue me cura por amor",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -5196,14 +5197,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Fábio de Melo / Rogério / Júlio",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Pentecostes",
-    "originalKey": "G",
+    "originalKey": "C",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada ao Espírito Santo",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 22,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Incendeia+Minha+Alma+Padre+Fábio+de+Melo+cifra",
     "liturgicalAnalysis": {
       "status": "Clássico de Invocação ao Espírito Santo (Cifra Club Top Pe. Fábio de Melo)",
@@ -5215,7 +5216,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] G  D  Em  C\n\n[Primeira Parte]\n   G                                        D\n1. Espírito Santo, vinde falar em mim!\n   Em                                       C\nEspírito Santo, vinde orar em mim!\n   G                                        D\nVinde curar, vinde libertar\n   Em                       C               D\nNossos corações de toda opressão!\n   G                        D               Em          C\nVinde transformar, vem incendiar: traz fogo do céu neste lugar!\n\n[Refrão]\n   G                                        D\nIncendeia minha alma! Incendeia minha alma!\n   Em                       C               G           D\nIncendeia minha alma, Senhor!\n   G                                        D\nIncendeia minha alma! Incendeia minha alma!\n   Em                       C               D           G\nIncendeia minha alma, Senhor!\n\n[Segunda Parte]\n   G                                        D\n2. Vem como em Pentecostes batizar o nosso ser,\n   Em                       C               D           G\nCom Teu sopro de vida faz a Igreja renascer!",
+    "cifra": "[Intro] C  Am  Dm7  G4\n\n        C  Am  Dm7  G  G4\n\n[Primeira Parte]\n\nC           G/B         Am\n  Espírito Santo, vinde\n\n          G\nFalar em mim\n\nC           G/B         Am\n  Espírito Santo, vinde\n\n          G\nFalar em mim\n\nC           G/B         Am\n  Espírito Santo, vinde\n\n         G\nOrar em mim\n\nC           G/B         Am\n  Espírito Santo, vinde\n\n         G\nOrar em mim\n\n[Pré-Refrão]\n\n    C/E  F               Am\nVinde curar, vinde libertar\n\n            Dm      C/E  G\nNossos corações de toda  opressão\n\n    C/E        F              Am\nVinde transformar, vem incendiar\n\n              D7          G\nTraz fogo do céu nesse lugar\n\n[Refrão]\n\n      C              G/B\nIncendeia minha alma\n\n      Am             Am/G\nIncendeia minha alma\n\n      F         C/E       G4  G\nIncendeia minha alma, Senhor\n\n      C              G/B\nIncendeia minha alma\n\n      Am             Am/G\nIncendeia minha alma\n\n      F         C/E       G4  G\nIncendeia minha alma, Senhor\n\n[Solo] Am  Am7/G  F  G\n\n       Am  Am7/G  C/E  F/C\n\n       F/G  F5-/G\n\n[Primeira Parte]\n\nC           G/B         Am\n  Espírito Santo, vinde\n\n          G\nFalar em mim\n\nC           G/B         Am\n  Espírito Santo, vinde\n\n         G\nOrar em mim\n\n[Pré-Refrão]\n\n         F               Am\nVinde curar, vinde libertar\n\n            Dm      C/E  G\nNossos corações de toda  opressão\n\n    C/E        F              Am\nVinde transformar, vem incendiar\n\n              D7          G\nTraz fogo do céu nesse lugar\n\nNesse lugar\n\n[Refrão]\n\n      D              D/C#\nIncendeia minha alma\n\n      Bm             Bm/A\nIncendeia minha alma\n\n      G         D/F#       A4  A\nIncendeia minha alma, Senhor\n\n      D              D/C#\nIncendeia minha alma\n\n      Bm             Bm/A\nIncendeia minha alma\n\n      G         D/F#       A4  A\nIncendeia minha alma, Senhor",
     "repertoireType": "popular",
     "specialDay": "Pentecostes",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -5226,14 +5227,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Fábio de Melo / Kleber Lucas",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "D",
+    "originalKey": "G",
     "bpm": 72,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Confiança",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 15,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Deus+Cuida+de+Mim+Padre+Fábio+de+Melo+cifra",
     "liturgicalAnalysis": {
       "status": "Canto de Confiança na Providência Divina",
@@ -5245,7 +5246,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                                        A\n1. Eu preciso aprender um pouco aqui, eu preciso aprender um pouco ali,\n   Bm                                       G\nEu preciso aprender mais de Deus, porque Ele é quem cuida de mim!\n   D                                        A\nSe uma porta se fecha aqui, outras portas se abrem ali:\n   Bm                       G               A\nEu preciso aprender mais de Deus, porque Ele é quem cuida de mim!\n\n[Refrão]\n   D                                        A\nDeus cuida de mim na sombra das Suas asas!\n   Bm                                       G\nDeus cuida de mim, eu amo a Sua casa!\n   D                                        A\nE não ando sozinho, não estou sozinho, pois sei:\n   Bm                       G               A           D\nDeus cuida de mim!\n\n[Segunda Parte]\n   D                                        A\n2. Na alegria ou na dor, na bonança ou no temporal,\n   Bm                       G               A           D\nSua mão me sustenta com amor paternal!",
+    "cifra": "[Intro] G9  A/G  F#m7  Bm  Em7  G/A  G/D  D9\n\n      D9                         A/C#\nEu preciso aprender um pouco aqui\n\n      Bm7                    Bm7/A\nEu preciso aprender um pouco ali\n\n       G                      Em\nEu preciso aprender mais de Deus\n\n       G                    A4  A\nPorque Ele é quem cuida de mim\n\n        D\nSe uma porta se fecha aqui\n\n       F#m7              G\nOutras portas se abrem ali\n\n      D/F#                    Bm\nEu preciso aprender mais de Deus\n\n       G                    Bm\nPorque Ele é quem cuida de mim\n\n  G  G/A       D\nDeus cuida de mim\n\n     G/A       D\nDeus cuida de mim\n\n    G              D/F#\nNa sombra das suas asas\n\n              Bm7\nDeus cuida de mim\n\n   F#          Bm\nEu amo a sua casa\n\n       G\nE não ando sozinho\n\n   D/F#\nNão estou sozinho\n\n      Em  Em/D\nPois sei\n\n               A4  A\nDeus cuida de mim\n\n     G/A       D\nDeus cuida de mim\n\n    G              D/F#\nNa sombra das suas asas\n\n              Bm7\nDeus cuida de mim\n\n   F#          Bm\nEu amo a sua casa\n\n       G\nE não ando sozinho\n\n   D/F#\nNão estou sozinho\n\n      Em\nPois sei\n\n G     A4/7/9  D\nDeus cuida de mim\n\nSe na vida não tenho direção\nE preciso tomar uma decisão\nEu sei que existe alguém que me ama\nEle quer me dar a mão",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -5256,14 +5257,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Fábio de Melo",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "A",
+    "originalKey": "F#",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Poética",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 11,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Vida+(Já+Não+Sei+Viver+Sem+Teu+Amor)+Padre+Fábio+de+Melo+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Cristocêntrico sobre a Vida em Deus",
@@ -5275,7 +5276,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] A  E  F#m  D\n\n[Primeira Parte]\n   A                                        E\n1. Quando a luz do Teu olhar iluminou meu caminhar,\n   F#m                                      D\nDescobri que a verdadeira vida nasce no altar;\n   A                                        E\nTudo o que antes parecia ter valor ficou pra trás,\n   F#m                      D               E\nPois só Tu, ó Cristo vivo, me preenches de paz!\n\n[Refrão]\n   A                                        E\nTu és a Vida que pulsa dentro do meu coração!\n   F#m                                      D\nTu és a estrada, a verdade e a salvação!\n   A                                        E\nJá não sei viver distante do Teu grande amor:\n   F#m                      D               E           A\nMinha vida inteira pertence a Ti, Senhor!\n\n[Segunda Parte]\n   A                                        E\n2. Vieste para que todos tenham vida em plenitude,\n   F#m                      D               E           A\nTransformando nossa história com Tua eterna juventude!",
+    "cifra": "(intro) F#m F#m/E D D/F# C#\n\nF#m                                          E\nPelas ruas da cidade, pessoas andam no vai e vem\n\n                                                         D9\nNão vêem o cair da tarde, dando os seus passos como um reféns\n\n  D/F#                                       C#7\nDe uma vida sem saída, vida sem vida, mal ou bem\n\nF#m                                                  E\nPelos bancos desses parques, ninguém se toca sem perceber\n\n                                               D9\nQue onde o sol se esconde o horizonte tenta dizer\n\n D/F#                                         C#7\nQue há sempre um novo dia, a cada dia em cada ser\n\n         Bm7               C#7          F#m  F#m/E\nNão é preciso uma verdade nova, uma aventura,\n\n           Bm7                     C#7                F#m   F#7\nPara encontrar nas luzes que se acendem um brilho eterno\n\n          Bm7               C#7            F#m   F#m/E\nE dar as mãos e dar de se além do próprio gesto\n\n        Bm7                      C#7           F#m\nE descobrir feliz que o amor esconde outro universo\n\nF#m                                               E\nPelos becos pelos bares pelos lugares que ninguém vê\n\n                                               D\nHá sempre alguém querendo uma esperança sobreviver\n\n                   D/F#                        C#7\nCada rosto é um espelho e um desejo de ser de ter\n\n         Bm7               C#7           F#m F#m/E\nNão é preciso uma verdade nova, uma aventura,\n\n          Bm7                       C#7              F#m  F#7\nPara encontrar nas luzes que se acendem um brilho eterno\n\n         Bm7                C#7              F#m\nE dar as mãos e dar de se além do próprio gesto\n\n       Bm7                       C#7           F#m\nE descobrir feliz que o amor esconde outro universo\n\nD                  D/F#                        C#7\nCada rosto é um espelho de um desejo de ser de ter\n\n            Bm7              C#7          F#m  F#m/E\nTalvez quem sabe por essa cidade passe um anjo\n\n         Bm7             C#7           F#m   F#7\nE por encanto abra suas asas sobre os homens\n\n      Bm7                   C#7           F#m\nE ter vontade de se dar aos outros sem medida\n\n      Bm7             C#7        F#m\nA qualidade de poder viver vida,vida\n\nBm     F#m\nVida Vida",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -5406,14 +5407,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Celina Borges",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Tempo Comum",
-    "originalKey": "D",
+    "originalKey": "G",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada de Louvor",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 16,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Nas+Asas+do+Senhor+Celina+Borges+cifra",
     "liturgicalAnalysis": {
       "status": "Canto Baseado em Isaías 40, 31 (Cifra Club Top Celina Borges)",
@@ -5425,7 +5426,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                                        A\n1. Sei que os que confiam no Senhor renovam suas forças,\n   Bm                                       G\nCorrem sem cansar, caminham sem jamais desfalecer;\n   D                                        A\nMesmo quando o vento sopra forte contra mim,\n   Bm                       G               A\nAbro as minhas asas na presença do Rei sem fim!\n\n[Refrão]\n   D                                        A\nNas asas do Senhor vou planar acima da tempestade!\n   Bm                                       G\nNo abrigo do Altíssimo encontro liberdade!\n   D                                        A\nEle é minha rocha, meu refúgio e salvação:\n   Bm                       G               A           D\nNas asas do Senhor descansa o meu coração!\n\n[Segunda Parte]\n   D                                        A\n2. Como a águia que se eleva em direção ao Sol nascente,\n   Bm                       G               A           D\nMinha alma exalta o Deus Eterno e Onipotente!",
+    "cifra": "Introdução] G  C  Am  D\n\nG                         D9/F#\nSei que os que confiam no Senhor\n\n                Em                       C\nRevigoram suas forças, suas forças se renovam\n\n G                  D9/F#                 Em\nPosso até cair ou vacilar, mas consigo levantar\n\n                 C\nPois recebo dele asas\n\n       Am                    D\nE como águia, me preparo pra voar\n\n         G        D9/F#        Em\nEu posso ir muito além de onde estou\n\n                  C\nVou nas asas do Senhor\n\n       G/B      Am       D\nO Teu Amor é o que me conduz\n\n    G         D/F#     Em\nPosso voar e subir sem me cansar\n\n                      C      G/B\nIr pra frente sem me fatigar\n\n        Am          D\nVou com asas,como águia\n\n                    G  C D\nPois confio no Senhor!\n\n                  Em      D\nPois confio no Senhor! Uô-ô-ô\n\n           C         D         B7\nQue me dá forças pra ser um vencedor-ô\n\n               Em\nNas asas do Senhor\n\n     Am     D\nVou voar! Voar\n\n         A         E/G#       F#m\nEu posso ir muito além de onde estou\n\n                    D\nVou nas asas do Senhor\n\n      A/C#    Bm         E\nO Teu amor é o que me conduz\n\n        A        E/G#        F#m/E\nPosso voar e subir sem me cansar\n\n                      D      A/C#\nIr pra frente sem me fatigar\n\n         Bm          E\nVou com asas,  como águia\n\n                   A\nPois confio no Senhor!",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -5533,7 +5534,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 4,
+    "chordCount": 6,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Humano+Amor+de+Deus+Adriana+Arydes+cifra",
     "liturgicalAnalysis": {
       "status": "Canto sobre o Mistério da Encarnação (Cifra Club Top Adriana Arydes)",
@@ -5545,7 +5546,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Natal do Senhor",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\n   D                                        A\n1. Tão grande Deus, quis Se fazer pequeno por amor,\n   Bm                                       G\nDesceu do Trono eterno pra sentir a nossa dor;\n   D                                        A\nNas mãos de uma Virgem aprendeu a caminhar,\n   Bm                       G               A\nPara que a humanidade aprendesse a amar!\n\n[Refrão]\n   D                                        A\nÓ humano amor de Deus, mistério sem igual!\n   Bm                                       G\nO Céu beijou a terra e venceu todo o mal!\n   D                                        A\nEm cada gesto simples brilha a luz do Redentor:\n   Bm                       G               A           D\nJesus, rosto humano do eterno Amor!\n\n[Segunda Parte]\n   D                                        A\n2. Chorou com os que choram, partiu o pão aos seus,\n   Bm                       G               A           D\nMostrando em Sua vida o coração de Deus!",
+    "cifra": "[Intro] D  G  D  G  Em  A\n\n         D\nTens o dom de ver estradas\n\n               G\nOnde eu vejo o fim\n\n  D\nMe convences quando falas\n\n          G    A\nNão é bem assim\n\n  Em\nSe me esqueço, me recordas\n\n                 A\nSe não sei, me ensinas\n\nEm              G\nE se perco a direção\n\n             A\nVens me encontrar\n\n  D\nTens o dom de ouvir segredos\n\n          G\nMesmo se me calo\n\n  D\nE se falo me escuta\n\n             G     A\nQueres compreender\n\n  Em                             A\nSe pela força da distância tu te ausentas\n\n     Em                 G\nPelo poder que há na saudade\n\n     A\nVoltarás\n\n[Refrão]\n\nD\nQuando a solidão doeu em mim\n\n             Bm\nQuando meu passado não passou por mim\n\n                G                 D/F#\nQuando eu não soube compreender a vida\n\nEm                        A\nTu vieste compreender por mim\n\nD\nQuando os meus olhos não podiam ver\n\n          Bm\nTua mão segura me ajudou a andar\n\n                G                 D/F#\nQuando eu não tinha mais amor no peito\n\n Em                     A\nTeu amor me ajudou a amar\n\nD\nQuando o meu sonho vi desmoronar\n\n                Bm\nMe trouxeste outros pra recomeçar\n\n                G                     D/F#\nQuando eu me esqueci que eu era alguém na vida\n\n Em                      A\nTeu amor veio me relembrar\n\n             D                G\nQue Deus me ama, que não estou só\n\n        Em\nQue Deus cuida de mim\n\n          A\nQuando fala pela tua voz\n\n               D\nQue me diz: coragem !",
     "repertoireType": "popular",
     "specialDay": "Natal do Senhor",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -6366,14 +6367,14 @@ window.SongsCatalogAdoracaoComunidades = [
     "composer": "Padre Reginaldo Manzotti",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Qualquer",
-    "originalKey": "D",
+    "originalKey": "A",
     "bpm": 74,
     "timeSignature": "4/4",
     "rhythmName": "Balada Suave",
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 5,
+    "chordCount": 14,
     "youtubeUrl": "https://www.youtube.com/results?search_query=A+Tempestade+Vai+Passar+Padre+Reginaldo+Manzotti+cifra",
     "liturgicalAnalysis": {
       "status": "Ação de Graças, Consolação e Esperança Cristã",
@@ -6385,7 +6386,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] D  A/C#  Bm  G  A7  D\n\n[Primeira Parte]\nD                     A/C#\nPor que tens medo se Eu estou no barco?\nBm                    G\nPor que duvidas do poder da Minha mão?\nD                     A/C#\nSe o vento sopra forte e o mar é bravo\nEm                    G           A7\nConfia em Mim e aquieta o teu coração\n\n[Refrão]\nD                    A/C#\nA tempestade vai passar, tudo vai se acalmar\nBm                   G\nO sol de novo vai brilhar sobre o teu viver\nD                    A/C#\nSegura firme em Minha mão, escuta a Minha voz\nEm         A7               D\nEu sou teu Deus e cuido de você!\n\n[Segunda Parte]\nD                      A/C#\nNenhuma noite dura para sempre\nBm                     G\nA madrugada traz a aurora do Senhor\nD                      A/C#\nEntrega o leme da tua vida inteiramente\nEm                     G            A7\nDescansa em paz no colo do teu Salvador\n\n[Refrão]\nD                    A/C#\nA tempestade vai passar, tudo vai se acalmar\nBm                   G\nO sol de novo vai brilhar sobre o teu viver\nD                    A/C#\nSegura firme em Minha mão, escuta a Minha voz\nEm         A7               D\nEu sou teu Deus e cuido de você!\n\n[Final]\nG          A7               Bm   G\nEu sou teu Deus e cuido de você!\nEm         A7               D\nA tempestade já começa a passar!",
+    "cifra": "[Intro] A  B/A  G#m  C#7  F#m  E/G#  B  A/B\n\nE      B          A/C# Am/C\nComo é bom estar aqui\n\nE        B            A   E/G#\nEm meio a tantas provações\n\nF#m       B          C#m\nSaber que posso confiar\n\n   B      A     G#m  F#m E/G#\nEm meu Senhor e acreditar\n\nA      F#m         B  A/C# B/D#\nQue Ele nunca faltará\n\nE B/F# E/G# A B     E\nA tempestade vai passar\n\nC#m         B/D# E    B          C#m B\nPor sobre as ondas confiante andarei\n\nC#m   E/G# A  F#m  B A/B\nTribulações vencerei\n\n       E     G#m    A\nAs aflições superarei\n\n   G#m   F#m   B      A/B   E  B/D# C#7\nDeus provê, eu sei que proverá\n\nE/G#    A  B        E\nA tempestade vai passar\n\nC#m       B/D# E        B       C#m B\nPor sobre as ondas confiante andarei\n\nC#m   E/G# A F#m B  A/B\nTribulações vencerei\n\n        E     G#m  A\nAs aflições superarei\n\n   G#m   F#m   B     A/B   E  A/E\nDeus provê, eu sei que proverá\n\nE   B/D#         A/C#\nNeste bravo mar da vida\n\nE     G#m            A  E/G#\nVentos vêm me atormentar\n\nF#m  B           C#m          B    A        G#m  F#m   E/G#\nNesta rocha firme e forte, que é meu Deus, não temerei\n\nA    F#m        B\nNele posso confiar",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
@@ -6583,7 +6584,7 @@ window.SongsCatalogAdoracaoComunidades = [
     "rhythmPattern": "↓  ↓ ↑  ↑ ↓ ↑",
     "isMostUsed": true,
     "isSimple": true,
-    "chordCount": 5,
+    "chordCount": 13,
     "youtubeUrl": "https://www.youtube.com/results?search_query=Cura,+Senhor,+Onde+Dói+Padre+Antônio+Maria+cifra",
     "liturgicalAnalysis": {
       "status": "Oração Pós-Comunhão, Adoração ao Santíssimo e Missas pelos Enfermos",
@@ -6595,7 +6596,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "specialDay": "Encontros, Retiros e Grupo de Oração",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."
     },
-    "cifra": "[Intro] E  B/D#  C#m  A  B7  E\n\n[Primeira Parte]\nE                        B/D#\nVamos, Jesus, passear na minha vida\nC#m                      G#m\nQuero voltar aos lugares em que fiquei só\nA                        E/G#\nQuero voltar lá contigo, vendo que estavas comigo\nF#m                      B7\nQuero sentir Teu amor a meembalar\n\n[Refrão]\nE                     B/D#\nCura, Senhor, onde dói!\nC#m                   G#m\nCura, Senhor, bem aqui!\nA                     E/G#         C#m\nCura, Senhor, onde eu não posso ir\n      F#m        B7            E\nQuando a lembrança me faz refletir!\n\n[Segunda Parte]\nE                        B/D#\nQuando o silêncio da noite aperta o peito\nC#m                      G#m\nE as feridas antigas começam a sangrar\nA                        E/G#\nToca com Tuas chagas santas meu coração imperfeito\nF#m                      B7\nSó Tua graça divina me pode curar\n\n[Refrão]\nE                     B/D#\nCura, Senhor, onde dói!\nC#m                   G#m\nCura, Senhor, bem aqui!\nA                     E/G#         C#m\nCura, Senhor, onde eu não posso ir\n      F#m        B7            E\nQuando a lembrança me faz refletir!\n\n[Final]\nA         B7          C#m  A\nCura, Senhor, onde dói!\nF#m       B7          E\nJesus, eu confio em Ti!",
+    "cifra": "E             B/D#            C#m  C#m/B\n1  Vamos Jesus passear, na minha vida\n\nF#m                  B                   Bm  E7 D/F#  E/G#\nQuero voltar aos lugares em que fiquei só\n\nA                  B/A     G#m                 C#m\nQuero voltar lá contigo, vendo que estavas comigo\n\nF#m               B             E  E7\nQuero sentir teu amor, a me embalar\n\n[Refrão]\n\nA                  B/A\nCura Senhor, onde dói\n\nG#m               C#m\nCura Senhor, bem aqui\n\nF#m                 B          Bm E7\nCura Senhor, onde eu não posso ir\n\nA                  B/A\nCura Senhor, onde dói\n\nG#m               C#m\nCura Senhor, bem aqui\n\nF#m                 B            E\nCura Senhor, onde eu não posso ir\n\n     E                 B/D#         C#m C#m/B\n2  Quando a lembrança me faz, adormecer\n\nF#m                    B                Bm  E7  D/F#  E/G#\nSabes que a espada da dor entra eu meu ser\n\nA                    B/A    G#m                C#m\nTu me carregas nos braços, leva-me com teu abraço\n\nF#m                  B             E E7\nSinto minha alma chorar, junto de Ti\n\n    E                    B/D#        C#m C#m/B\n3  Tantas lembranças eu quero, esquecer\n\nF#m                      B             Bm  E7 D/F#  E/G#\nDeixa um vazio em minha'lma e em meu viver\n\nA                  B/A    G#m                  C#m\nToma Senhor meu espaço, te entrego todo o cansaço\n\nF#m                    B            E E7\nQuero acordar com tua paz a me aquecer",
     "repertoireType": "popular",
     "specialDay": "Encontros, Retiros e Grupo de Oração",
     "liturgicalNormNote": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."

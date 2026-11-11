@@ -1,10 +1,10 @@
 {
-  "version": "3.8.1",
-  "apkVersionCode": 14,
-  "buildId": "sc-v3.8.1-solenidades-vs-memorias",
+  "version": "3.8.2",
+  "apkVersionCode": 15,
+  "buildId": "sc-v3.8.2-popular-songs-cifraclub-verified",
   "totalSongs": 541,
-  "liturgicalSongs": 297,
-  "popularSongs": 244,
+  "liturgicalSongs": 296,
+  "popularSongs": 245,
   "apkDownloadUrl": "https://santa-cifra.surge.sh/santa-cifra.apk",
   "liveUrl": "https://santa-cifra.surge.sh"
 }
