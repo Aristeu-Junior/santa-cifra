@@ -98,6 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.SantaCifra.switchTab('playlists');
   });
 
+  if (dom.tabParishBtn) {
+    dom.tabParishBtn.addEventListener('click', () => {
+      state.activeQueuePlaylistId = null;
+      window.SantaCifra.switchTab('parish');
+      window.scrollTo({ top: 0 });
+    });
+  }
+
   dom.logoArea.addEventListener('click', () => {
     state.activeQueuePlaylistId = null;
     window.SantaCifra.switchTab('home');
@@ -112,6 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.SantaCifra.bindPlaylistsEvents();
   if (window.SantaCifra.bindCalendarEvents) {
     window.SantaCifra.bindCalendarEvents();
+  }
+  if (window.SantaCifra.parish && window.SantaCifra.parish.initParishModule) {
+    window.SantaCifra.parish.initParishModule();
   }
   window.SantaCifra.bindSongViewerEvents();
 

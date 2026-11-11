@@ -374,7 +374,10 @@ window.SantaCifra = window.SantaCifra || {};
       id: sanitizeText(user.id, 64),
       email: sanitizeText(user.email, 100).toLowerCase(),
       name: sanitizeText(user.name, 60),
-      parish: sanitizeText(user.parish || '', 80),
+      parish: sanitizeText(user.parish || '', 100),
+      ministry: sanitizeText(user.ministry || '', 80),
+      role: user.role === 'padre' ? 'padre' : 'musico',
+      avatarDataUrl: typeof user.avatarDataUrl === 'string' && user.avatarDataUrl.startsWith('data:image/') ? user.avatarDataUrl : null,
       createdAt: user.createdAt || new Date().toISOString()
     };
     const sessionToken = token || 'local_session_' + generateSaltHex(12);
@@ -736,6 +739,20 @@ window.SantaCifra = window.SantaCifra || {};
   // 8. Atualização Visual da Interface & Eventos dos Diálogos
   // =========================================================================
 
+  function persistUpdatedUser(updatedUser) {
+    setSession(updatedUser);
+    const db = getLocalUsersDB();
+    const cleanEmail = sanitizeText(updatedUser.email, 100).toLowerCase();
+    if (db[cleanEmail]) {
+      db[cleanEmail].name = updatedUser.name;
+      db[cleanEmail].parish = updatedUser.parish;
+      db[cleanEmail].ministry = updatedUser.ministry;
+      db[cleanEmail].role = updatedUser.role;
+      db[cleanEmail].avatarDataUrl = updatedUser.avatarDataUrl;
+      saveLocalUsersDB(db);
+    }
+  }
+
   function updateAuthUI() {
     const user = getCurrentUser();
     const btnAuth = document.getElementById('btnUserAuth');
@@ -755,14 +772,21 @@ window.SantaCifra = window.SantaCifra || {};
 
       if (labelAuth) labelAuth.textContent = firstName;
       if (avatarBadge) {
-        avatarBadge.textContent = initials;
+        if (user.avatarDataUrl) {
+          avatarBadge.innerHTML = `<img src="${user.avatarDataUrl}" alt="${user.name}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`;
+        } else {
+          avatarBadge.textContent = initials;
+        }
         avatarBadge.style.display = 'inline-flex';
       }
       btnAuth.setAttribute('title', `Conectado como ${user.name} (${user.email})`);
       btnAuth.classList.add('is-logged-in');
     } else {
       if (labelAuth) labelAuth.textContent = 'Entrar';
-      if (avatarBadge) avatarBadge.style.display = 'none';
+      if (avatarBadge) {
+        avatarBadge.innerHTML = '';
+        avatarBadge.style.display = 'none';
+      }
       btnAuth.setAttribute('title', 'Entrar ou criar conta no Santa Cifra');
       btnAuth.classList.remove('is-logged-in');
     }
@@ -840,21 +864,43 @@ window.SantaCifra = window.SantaCifra || {};
     const emailEl = document.getElementById('profileEmail');
     const parishEl = document.getElementById('profileParish');
     const avatarEl = document.getElementById('profileAvatarLarge');
+    const roleBadgeEl = document.getElementById('profileRoleBadge');
+    const minDisplayEl = document.getElementById('profileMinistryDisplay');
     const foldersCountEl = document.getElementById('profileFoldersCount');
     const favsCountEl = document.getElementById('profileFavsCount');
 
     if (nameEl) nameEl.textContent = user.name;
     if (emailEl) emailEl.textContent = user.email;
-    if (parishEl) parishEl.textContent = user.parish ? `Paróquia: ${user.parish}` : 'Comunidade não informada';
-    if (avatarEl) {
-      const initials = user.name
-        .split(' ')
-        .filter(Boolean)
-        .slice(0, 2)
-        .map((p) => p[0].toUpperCase())
-        .join('');
-      avatarEl.textContent = initials || 'SC';
+    if (parishEl) parishEl.textContent = user.parish ? `Paróquia: ${user.parish}` : 'Paróquia Santo Antônio de Pádua';
+    if (minDisplayEl) minDisplayEl.textContent = user.ministry ? `Ministério: ${user.ministry}` : 'Ministério Amor e Vida';
+
+    if (roleBadgeEl) {
+      const isPadre = user.role === 'padre';
+      roleBadgeEl.textContent = isPadre ? 'Padre / Pároco' : 'Músico Litúrgico';
+      roleBadgeEl.classList.toggle('is-padre', isPadre);
     }
+
+    if (avatarEl) {
+      if (user.avatarDataUrl) {
+        avatarEl.innerHTML = `<img src="${user.avatarDataUrl}" alt="${user.name}">`;
+      } else {
+        const initials = user.name
+          .split(' ')
+          .filter(Boolean)
+          .slice(0, 2)
+          .map((p) => p[0].toUpperCase())
+          .join('');
+        avatarEl.textContent = initials || 'SC';
+      }
+    }
+
+    // Preencher campos de edição
+    const inpMin = document.getElementById('inputProfileMinistry');
+    const inpParish = document.getElementById('inputProfileParish');
+    const selRole = document.getElementById('selectProfileRole');
+    if (inpMin) inpMin.value = user.ministry || 'Ministério Amor e Vida';
+    if (inpParish) inpParish.value = user.parish || 'Paróquia Santo Antônio de Pádua';
+    if (selRole) selRole.value = user.role || 'musico';
 
     const state = window.SantaCifra.state;
     const folders = state && state.playlists ? state.playlists : [];
@@ -1115,6 +1161,115 @@ window.SantaCifra = window.SantaCifra || {};
         const dlg = document.getElementById('userProfileDialog');
         if (dlg) dlg.close();
         if (window.SantaCifra.renderCatalog) window.SantaCifra.renderCatalog();
+      });
+    }
+
+    // Upload de Foto de Perfil
+    const photoInput = document.getElementById('profilePhotoInput');
+    if (photoInput) {
+      photoInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        if (!file.type.startsWith('image/')) {
+          alert('Por favor, selecione uma imagem válida (JPG ou PNG).');
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = (re) => {
+          const img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const size = 120;
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+            const minSide = Math.min(img.width, img.height);
+            const sx = (img.width - minSide) / 2;
+            const sy = (img.height - minSide) / 2;
+            ctx.drawImage(img, sx, sy, minSide, minSide, 0, 0, size, size);
+            const dataUrl = canvas.toDataURL('image/jpeg', 0.82);
+
+            const curUser = getCurrentUser();
+            if (curUser) {
+              curUser.avatarDataUrl = dataUrl;
+              persistUpdatedUser(curUser);
+              openProfileDialog();
+              updateAuthUI();
+            }
+          };
+          img.src = re.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    // Edição de Ministério, Paróquia e Papel (Padre / Músico)
+    const formEditProfile = document.getElementById('formEditUserProfile');
+    if (formEditProfile) {
+      formEditProfile.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const curUser = getCurrentUser();
+        if (!curUser) return;
+        const ministry = (document.getElementById('inputProfileMinistry').value || '').trim();
+        const parish = (document.getElementById('inputProfileParish').value || '').trim();
+        const role = document.getElementById('selectProfileRole').value || 'musico';
+
+        curUser.ministry = ministry;
+        curUser.parish = parish || 'Paróquia Santo Antônio de Pádua';
+        curUser.role = role;
+
+        persistUpdatedUser(curUser);
+        openProfileDialog();
+        updateAuthUI();
+
+        if (window.SantaCifra.parish && window.SantaCifra.parish.renderParishView) {
+          window.SantaCifra.parish.renderParishView();
+        }
+
+        const btnSave = document.getElementById('btnSaveProfileData');
+        if (btnSave) {
+          const oldTxt = btnSave.textContent;
+          btnSave.textContent = 'Salvo com Sucesso!';
+          btnSave.style.background = '#2e7d32';
+          setTimeout(() => {
+            btnSave.textContent = oldTxt;
+            btnSave.style.background = '';
+          }, 2000);
+        }
+      });
+    }
+
+    // Atalho de Acesso Rápido para o Pároco
+    const btnQuickPriest = document.getElementById('btnQuickPriestLogin');
+    if (btnQuickPriest) {
+      btnQuickPriest.addEventListener('click', () => {
+        const priestUser = {
+          id: 'usr_padre_antonio',
+          name: 'Pe. Antônio (Pároco)',
+          email: 'padre@santoantonio.org.br',
+          parish: 'Paróquia Santo Antônio de Pádua',
+          ministry: 'Pároco',
+          role: 'padre',
+          avatarDataUrl: null,
+          createdAt: new Date().toISOString()
+        };
+        setSession(priestUser);
+        const dlg = document.getElementById('authDialog');
+        if (dlg) dlg.close();
+        updateAuthUI();
+        if (window.SantaCifra.switchTab) {
+          window.SantaCifra.switchTab('parish');
+        }
+      });
+    }
+
+    // Gerador de Magic Link do Padre
+    const btnGenPriest = document.getElementById('btnGeneratePriestMagicLink');
+    if (btnGenPriest) {
+      btnGenPriest.addEventListener('click', () => {
+        if (window.SantaCifra.parish && window.SantaCifra.parish.openMagicLinkModal) {
+          window.SantaCifra.parish.openMagicLinkModal();
+        }
       });
     }
 

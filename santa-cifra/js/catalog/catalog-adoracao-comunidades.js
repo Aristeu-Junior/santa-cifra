@@ -5089,7 +5089,7 @@ window.SongsCatalogAdoracaoComunidades = [
       "score": 96,
       "documentRef": "Pentecostes e Grupos de Oração",
       "biblicalRef": "Lc 12, 49; At 2, 1-4",
-      "justification": "Quatro acordes (G, D, Em, C) consagrados em todo o Brasil para invocação ao Espírito Santo.",
+      "justification": "Harmonia autêntica (C, G/B, Am, G, C/E, F, Dm, G4) clássica do Cifra Club para louvor e invocação ao Espírito Santo.",
       "repertoireType": "popular",
       "specialDay": "Pentecostes",
       "normExplanation": "Música Religiosa Popular / Devocional: Recomendada para Grupos de Oração, Encontros, Retiros, Shows e Adoração fora da Missa. Segundo a IGMR e a CNBB, não deve substituir os cantos rituais próprios da Santa Missa."

@@ -21,13 +21,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=23">
-  <link rel="stylesheet" href="css/layout.css?v=23">
-  <link rel="stylesheet" href="css/catalog.css?v=23">
-  <link rel="stylesheet" href="css/playlists.css?v=23">
-  <link rel="stylesheet" href="css/calendar.css?v=23">
-  <link rel="stylesheet" href="css/viewer.css?v=23">
-  <link rel="stylesheet" href="css/dialogs.css?v=23">
+  <link rel="stylesheet" href="css/tokens.css?v=24">
+  <link rel="stylesheet" href="css/layout.css?v=24">
+  <link rel="stylesheet" href="css/catalog.css?v=24">
+  <link rel="stylesheet" href="css/playlists.css?v=24">
+  <link rel="stylesheet" href="css/calendar.css?v=24">
+  <link rel="stylesheet" href="css/parish.css?v=24">
+  <link rel="stylesheet" href="css/viewer.css?v=24">
+  <link rel="stylesheet" href="css/dialogs.css?v=24">
 </head>
 <body data-view="home">
 
@@ -106,6 +107,12 @@
             <circle cx="12" cy="15" r="1.5" fill="currentColor"/>
           </svg>
           <span>Calendário</span>
+        </button>
+        <button type="button" class="nav-btn" id="tabParishBtn" data-tab="parish" aria-label="Paróquia e Escalas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18M5 21V7l7-4 7 4v14M10 9h4M10 13h4M10 17h4"/>
+          </svg>
+          <span>Paróquia</span>
         </button>
       </nav>
 
@@ -398,6 +405,9 @@
         </div>
       </div>
     </section>
+
+    <!-- ============ SEÇÃO PARÓQUIA & ESCALAS (PÁROCO & MINISTÉRIOS) ============ -->
+    <section class="parish-section" id="parishSection" style="display: none;" aria-label="Gestão da Paróquia e Escalas"></section>
 
     <!-- ============ LEITOR DE CIFRA ============ -->
     <section class="song-view-section" id="songViewSection" style="display: none;">
@@ -731,6 +741,13 @@
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitLogin">Entrar no Santa Cifra</button>
       </div>
+      <div class="magic-login-shortcut-box">
+        <div class="magic-login-divider"><span>ou acesse via Link Mágico</span></div>
+        <button type="button" class="btn-magic-priest-quick" id="btnQuickPriestLogin">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span>Entrar com Link do Pároco (Pe. Antônio)</span>
+        </button>
+      </div>
       <div class="auth-footer-prompt">
         <span>Não tem uma conta?</span>
         <button type="button" class="link-btn" id="btnGoToRegister">Criar conta grátis</button>
@@ -810,13 +827,59 @@
       </form>
     </div>
     <div class="profile-card">
-      <div class="profile-avatar-large" id="profileAvatarLarge">SC</div>
+      <div class="profile-avatar-wrap">
+        <div class="profile-avatar-large" id="profileAvatarLarge">SC</div>
+        <label for="profilePhotoInput" class="btn-change-photo" title="Alterar foto de perfil" aria-label="Alterar foto de perfil">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </label>
+        <input type="file" id="profilePhotoInput" accept="image/*" class="sr-only">
+      </div>
       <div class="profile-details">
+        <div class="profile-role-badge" id="profileRoleBadge">Músico Litúrgico</div>
         <h3 class="profile-name" id="profileName">Músico</h3>
         <p class="profile-email" id="profileEmail">email@exemplo.com</p>
-        <p class="profile-parish" id="profileParish">Paróquia não informada</p>
+        <p class="profile-ministry" id="profileMinistryDisplay">Ministério: Não informado</p>
+        <p class="profile-parish" id="profileParish">Paróquia: Não informada</p>
       </div>
     </div>
+
+    <!-- Edição de Ministério, Paróquia e Vínculo Comunitário -->
+    <form id="formEditUserProfile" class="profile-edit-form">
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="inputProfileMinistry">Meu Ministério de Música</label>
+          <input type="text" id="inputProfileMinistry" class="dialog-input" placeholder="Ex: Ministério Amor e Vida" maxlength="80">
+        </div>
+        <div class="form-field">
+          <label for="inputProfileParish">Minha Paróquia</label>
+          <input type="text" id="inputProfileParish" class="dialog-input" placeholder="Ex: Paróquia Santo Antônio de Pádua" maxlength="100">
+        </div>
+      </div>
+      <div class="form-row-2">
+        <div class="form-field">
+          <label for="selectProfileRole">Papel na Comunidade</label>
+          <select id="selectProfileRole" class="dialog-select">
+            <option value="musico">Músico / Líder de Ministério</option>
+            <option value="padre">Padre / Pároco</option>
+          </select>
+        </div>
+        <div class="form-field form-field-btn-align">
+          <button type="submit" class="btn-primary-solid btn-block" id="btnSaveProfileData">Salvar Perfil</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="profile-magic-link-box">
+      <div class="magic-link-priest-header">
+        <strong>Acesso do Pároco (Link Mágico)</strong>
+        <p>Envie o link para o Padre para que ele acerte as escalas e recomende músicas sem digitar senha.</p>
+      </div>
+      <button type="button" class="btn-outline-gold" id="btnGeneratePriestMagicLink">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <span>Gerar / Enviar Link para o Padre</span>
+      </button>
+    </div>
+
     <div class="profile-stats-grid">
       <div class="profile-stat-box">
         <span class="stat-number" id="profileFoldersCount">0</span>
@@ -835,27 +898,28 @@
     </div>
   </dialog>
 
-  <script src="js/transposition.js?v=23"></script>
-  <script src="js/chords-data.js?v=23"></script>
-  <script src="js/metronome.js?v=23"></script>
+  <script src="js/transposition.js?v=24"></script>
+  <script src="js/chords-data.js?v=24"></script>
+  <script src="js/metronome.js?v=24"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=23"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=23"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=23"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=23"></script>
-  <script src="js/songs-catalog.js?v=23"></script>
-  <script src="js/supabase-client.js?v=23"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=24"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=24"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=24"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=24"></script>
+  <script src="js/songs-catalog.js?v=24"></script>
+  <script src="js/supabase-client.js?v=24"></script>
 
-  <script src="js/modules/icons.js?v=23"></script>
-  <script src="js/modules/auth.js?v=23"></script>
-  <script src="js/modules/state.js?v=23"></script>
-  <script src="js/modules/artists-view.js?v=23"></script>
-  <script src="js/modules/catalog-view.js?v=23"></script>
-  <script src="js/modules/playlists-view.js?v=23"></script>
-  <script src="js/modules/liturgical-calendar.js?v=23"></script>
-  <script src="js/modules/song-viewer.js?v=23"></script>
-  <script src="js/modules/ota-updater.js?v=23"></script>
-  <script src="js/app.js?v=23"></script>
+  <script src="js/modules/icons.js?v=24"></script>
+  <script src="js/modules/auth.js?v=24"></script>
+  <script src="js/modules/state.js?v=24"></script>
+  <script src="js/modules/artists-view.js?v=24"></script>
+  <script src="js/modules/catalog-view.js?v=24"></script>
+  <script src="js/modules/playlists-view.js?v=24"></script>
+  <script src="js/modules/liturgical-calendar.js?v=24"></script>
+  <script src="js/modules/parish-manager.js?v=24"></script>
+  <script src="js/modules/song-viewer.js?v=24"></script>
+  <script src="js/modules/ota-updater.js?v=24"></script>
+  <script src="js/app.js?v=24"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -866,7 +930,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=23').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=24').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

@@ -15,7 +15,7 @@ window.SantaCifra.state = {
   currentSemitones: 0,
   simplifyChords: false,
   selectedInstrument: 'guitar',
-  fontSize: window.matchMedia('(max-width: 480px)').matches ? 13 : 15,
+  fontSize: window.matchMedia('(max-width: 400px)').matches ? 12 : (window.matchMedia('(max-width: 640px)').matches ? 13 : 15),
 
   activeTab: 'home',
   historyDepth: 0,
@@ -59,11 +59,13 @@ window.SantaCifra.initDOM = function initDOM() {
     tabArtistsBtn: byId('tabArtistsBtn'),
     tabPlaylistsBtn: byId('tabPlaylistsBtn'),
     tabCalendarBtn: byId('tabCalendarBtn'),
+    tabParishBtn: byId('tabParishBtn'),
 
     catalogSection: byId('catalogSection'),
     artistsSection: byId('artistsSection'),
     playlistsSection: byId('playlistsSection'),
     calendarSection: byId('calendarSection'),
+    parishSection: byId('parishSection'),
     songViewSection: byId('songViewSection'),
 
     calTodayBtn: byId('calTodayBtn'),
@@ -252,11 +254,13 @@ window.SantaCifra.switchTab = function switchTab(tabName, opts) {
   dom.tabArtistsBtn.classList.toggle('active', tabName === 'artists');
   dom.tabPlaylistsBtn.classList.toggle('active', tabName === 'playlists');
   if (dom.tabCalendarBtn) dom.tabCalendarBtn.classList.toggle('active', tabName === 'calendar');
+  if (dom.tabParishBtn) dom.tabParishBtn.classList.toggle('active', tabName === 'parish');
 
   dom.catalogSection.style.display = tabName === 'home' ? 'block' : 'none';
   dom.artistsSection.style.display = tabName === 'artists' ? 'block' : 'none';
   dom.playlistsSection.style.display = tabName === 'playlists' ? 'block' : 'none';
   if (dom.calendarSection) dom.calendarSection.style.display = tabName === 'calendar' ? 'block' : 'none';
+  if (dom.parishSection) dom.parishSection.style.display = tabName === 'parish' ? 'block' : 'none';
   dom.songViewSection.style.display = tabName === 'song' ? 'block' : 'none';
 
   if (tabName === 'playlists' && window.SantaCifra.renderPlaylistsView) {
@@ -265,6 +269,8 @@ window.SantaCifra.switchTab = function switchTab(tabName, opts) {
     window.SantaCifra.renderArtistsView();
   } else if (tabName === 'calendar' && window.SantaCifra.renderCalendarView) {
     window.SantaCifra.renderCalendarView();
+  } else if (tabName === 'parish' && window.SantaCifra.parish && window.SantaCifra.parish.renderParishView) {
+    window.SantaCifra.parish.renderParishView();
   } else if (tabName === 'home') {
     if (window.SantaCifra.renderHeroShowcase) window.SantaCifra.renderHeroShowcase();
     if (window.SantaCifra.renderCatalog) window.SantaCifra.renderCatalog();
