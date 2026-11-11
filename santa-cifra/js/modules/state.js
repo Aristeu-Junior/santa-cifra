@@ -15,7 +15,13 @@ window.SantaCifra.state = {
   currentSemitones: 0,
   simplifyChords: false,
   selectedInstrument: 'guitar',
-  fontSize: window.matchMedia('(max-width: 400px)').matches ? 12 : (window.matchMedia('(max-width: 640px)').matches ? 13 : 15),
+  fontSize: (function() {
+    try {
+      const saved = parseInt(localStorage.getItem('santa_cifra_font_size'), 10);
+      if (!isNaN(saved) && saved >= 10 && saved <= 26) return saved;
+    } catch (_) {}
+    return window.matchMedia('(max-width: 480px)').matches ? 12 : (window.matchMedia('(max-width: 768px)').matches ? 13.5 : 15);
+  })(),
 
   activeTab: 'home',
   historyDepth: 0,
@@ -215,13 +221,15 @@ window.SantaCifra.initCatalog = function initCatalog() {
 
   // Expurgar caches legados desatualizados
   try {
+    localStorage.removeItem('santa_cifra_ota_catalog_v3');
+    localStorage.removeItem('santa_cifra_ota_version_v3');
     localStorage.removeItem('santa_cifra_ota_catalog_v2');
     localStorage.removeItem('santa_cifra_ota_version_v2');
     localStorage.removeItem('santa_cifra_ota_catalog');
     localStorage.removeItem('santa_cifra_ota_version');
   } catch (_) {}
 
-  const otaCached = localStorage.getItem('santa_cifra_ota_catalog_v3');
+  const otaCached = localStorage.getItem('santa_cifra_ota_catalog_v4');
   let baseCatalog = window.SongsCatalog || [];
   if (otaCached) {
     const parsedOta = safeParse(otaCached, null);

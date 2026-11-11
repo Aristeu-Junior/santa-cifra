@@ -351,10 +351,16 @@ window.SantaCifra = window.SantaCifra || {};
       if (!session || !session.user || !session.user.id || !session.user.email) {
         return null;
       }
-      // 1. Validar expiração de sessão (7 dias)
+      // 1. Validar expiração de sessão
       if (!session.expiresAt || Date.now() > session.expiresAt) {
         logout();
         return null;
+      }
+      // 2. Renovar suavemente se 'remember' estiver ativo (ou não for explicitamente falso)
+      if (session.remember !== false && (session.expiresAt - Date.now() < 180 * 24 * 60 * 60 * 1000)) {
+        session.expiresAt = Date.now() + (365 * 24 * 60 * 60 * 1000);
+        session.sig = computeSessionMacSync(session.user, session.token, session.expiresAt);
+        try { localStorage.setItem(STORAGE_SESSION_KEY, JSON.stringify(session)); } catch (_) {}
       }
       // 2. Verificar assinatura de integridade contra adulteração de user.id / IDOR local
       const expectedSig = computeSessionMacSync(session.user, session.token, session.expiresAt);
@@ -369,7 +375,7 @@ window.SantaCifra = window.SantaCifra || {};
     }
   }
 
-  function setSession(user, token = null) {
+  function setSession(user, token = null, remember = true) {
     const cleanUser = {
       id: sanitizeText(user.id, 64),
       email: sanitizeText(user.email, 100).toLowerCase(),
@@ -381,13 +387,16 @@ window.SantaCifra = window.SantaCifra || {};
       createdAt: user.createdAt || new Date().toISOString()
     };
     const sessionToken = token || 'local_session_' + generateSaltHex(12);
-    const expiresAt = Date.now() + 7 * 24 * 60 * 60 * 1000;
+    // 365 dias se remember = true, senão 7 dias
+    const durationMs = remember !== false ? (365 * 24 * 60 * 60 * 1000) : (7 * 24 * 60 * 60 * 1000);
+    const expiresAt = Date.now() + durationMs;
     const sig = computeSessionMacSync(cleanUser, sessionToken, expiresAt);
 
     const session = {
       user: cleanUser,
       token: sessionToken,
       expiresAt,
+      remember: remember !== false,
       sig
     };
     localStorage.setItem(STORAGE_SESSION_KEY, JSON.stringify(session));
@@ -528,7 +537,7 @@ window.SantaCifra = window.SantaCifra || {};
     return newUser;
   }
 
-  async function loginUser({ email, password, honeypot }) {
+  async function loginUser({ email, password, honeypot, remember = true }) {
     if (isHoneypotTriggered(honeypot)) {
       throw new Error('Operação bloqueada pela verificação de segurança.');
     }
@@ -574,7 +583,7 @@ window.SantaCifra = window.SantaCifra || {};
             parish: meta.parish || '',
             createdAt: data.user.created_at || new Date().toISOString()
           };
-          setSession(userObj, data.access_token);
+          setSession(userObj, data.access_token, remember);
           resetRateLimit();
           return userObj;
         }
@@ -623,7 +632,7 @@ window.SantaCifra = window.SantaCifra || {};
       avatarDataUrl: userRecord.avatarDataUrl || null,
       createdAt: userRecord.createdAt
     };
-    setSession(sessionUser);
+    setSession(sessionUser, null, remember);
     return sessionUser;
   }
 
@@ -1130,6 +1139,8 @@ window.SantaCifra = window.SantaCifra || {};
         const password = document.getElementById('loginPassword').value;
         const hpEl = document.getElementById('hpAuthLogin');
         const honeypot = hpEl ? hpEl.value : '';
+        const chkRemember = document.getElementById('chkRememberMe');
+        const remember = chkRemember ? chkRemember.checked : true;
         const submitBtn = document.getElementById('btnSubmitLogin');
 
         try {
@@ -1137,7 +1148,7 @@ window.SantaCifra = window.SantaCifra || {};
             submitBtn.disabled = true;
             submitBtn.textContent = 'Verificando...';
           }
-          await loginUser({ email, password, honeypot });
+          await loginUser({ email, password, honeypot, remember });
           const dlg = document.getElementById('authDialog');
           if (dlg) dlg.close();
           formLogin.reset();

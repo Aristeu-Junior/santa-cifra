@@ -5072,7 +5072,8 @@ window.SongsCatalogAdoracaoComunidades = [
   {
     "id": "pe-fabio-de-melo-incendeia-minha-alma",
     "title": "Incendeia Minha Alma",
-    "composer": "Padre Fábio de Melo / Rogério / Júlio",
+    "composer": "Padre Fábio de Melo / Rogério / Júlio / Intérprete: Frei Gilson",
+    "artist": "Padre Fábio de Melo / Frei Gilson",
     "liturgicalMoment": "Ação de Graças",
     "liturgicalSeason": "Pentecostes",
     "originalKey": "C",

@@ -7,11 +7,13 @@
 window.SantaCifra = window.SantaCifra || {};
 
 const OTA_BASE_URL = 'https://santa-cifra.surge.sh';
-const OTA_VERSION_KEY = 'santa_cifra_ota_version_v3';
-const OTA_CATALOG_KEY = 'santa_cifra_ota_catalog_v3';
+const OTA_VERSION_KEY = 'santa_cifra_ota_version_v4';
+const OTA_CATALOG_KEY = 'santa_cifra_ota_catalog_v4';
 
 // Expurgar caches legados que continham cifras desatualizadas ou placeholders
 try {
+  localStorage.removeItem('santa_cifra_ota_catalog_v3');
+  localStorage.removeItem('santa_cifra_ota_version_v3');
   localStorage.removeItem('santa_cifra_ota_catalog_v2');
   localStorage.removeItem('santa_cifra_ota_version_v2');
   localStorage.removeItem('santa_cifra_ota_catalog');

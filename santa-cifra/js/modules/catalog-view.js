@@ -298,9 +298,68 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
     return;
   }
 
-  const frag = document.createDocumentFragment();
-  filtered.forEach(song => frag.appendChild(window.SantaCifra.createSongRow(song)));
-  dom.songsGrid.appendChild(frag);
+  // Ordenação inteligente: Mostra as mais famosas e mais usadas primeiro
+  filtered.sort((a, b) => {
+    if (q) {
+      const aTitle = (a.title || '').toLowerCase();
+      const bTitle = (b.title || '').toLowerCase();
+      const aStarts = aTitle.startsWith(q);
+      const bStarts = bTitle.startsWith(q);
+      if (aStarts && !bStarts) return -1;
+      if (!aStarts && bStarts) return 1;
+      if (a.isMostUsed && !b.isMostUsed) return -1;
+      if (!a.isMostUsed && b.isMostUsed) return 1;
+      return aTitle.localeCompare(bTitle, 'pt-BR');
+    }
+
+    // Página inicial sem busca:
+    // 1º: Músicas mais usadas / mais famosas primeiro (isMostUsed === true)
+    if (a.isMostUsed && !b.isMostUsed) return -1;
+    if (!a.isMostUsed && b.isMostUsed) return 1;
+
+    // 2º: Relevância litúrgica
+    const scoreA = (a.liturgicalAnalysis && a.liturgicalAnalysis.score) || 80;
+    const scoreB = (b.liturgicalAnalysis && b.liturgicalAnalysis.score) || 80;
+    if (scoreA !== scoreB) return scoreB - scoreA;
+
+    // 3º: Ordem alfabética
+    return (a.title || '').localeCompare(b.title || '', 'pt-BR');
+  });
+
+  // Renderização em lotes de 24 músicas para performance instantânea e clareza visual
+  const BATCH_SIZE = 24;
+  let renderedCount = 0;
+
+  function renderNextBatch() {
+    const slice = filtered.slice(renderedCount, renderedCount + BATCH_SIZE);
+    if (slice.length === 0) return;
+
+    const prevWrap = dom.songsGrid.querySelector('.catalog-load-more-wrap');
+    if (prevWrap) prevWrap.remove();
+
+    const frag = document.createDocumentFragment();
+    slice.forEach(song => frag.appendChild(window.SantaCifra.createSongRow(song)));
+    dom.songsGrid.appendChild(frag);
+    renderedCount += slice.length;
+
+    if (renderedCount < filtered.length) {
+      const moreWrap = document.createElement('div');
+      moreWrap.className = 'catalog-load-more-wrap';
+
+      const btnMore = document.createElement('button');
+      btnMore.type = 'button';
+      btnMore.className = 'btn-load-more-catalog';
+      btnMore.innerHTML = `Carregar mais músicas <span style="opacity: 0.7; font-size: 0.82rem; margin-left: 6px;">(${renderedCount} de ${filtered.length})</span>`;
+      btnMore.addEventListener('click', () => {
+        renderNextBatch();
+      });
+
+      moreWrap.appendChild(btnMore);
+      dom.songsGrid.appendChild(moreWrap);
+    }
+  }
+
+  renderNextBatch();
 };
 
 /** Mantido por compatibilidade com o atualizador OTA: recalcula o índice de artistas. */

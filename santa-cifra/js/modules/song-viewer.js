@@ -150,7 +150,20 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
   });
 
   dom.cifraPre.innerHTML = htmlLines.join('\n');
+  
+  // Auto-ajuste fino de fonte para celular caso haja linhas compridas
+  const maxLineLen = Math.max(...lines.map(l => l.length), 0);
+  let savedFont = null;
+  try { savedFont = localStorage.getItem('santa_cifra_font_size'); } catch (_) {}
+  if (!savedFont && window.innerWidth <= 420 && maxLineLen > 44) {
+    const targetSize = Math.max(11, Math.min(13, Math.floor((window.innerWidth - 24) / (maxLineLen * 0.62))));
+    state.fontSize = targetSize;
+  }
   dom.cifraPre.style.fontSize = `${state.fontSize}px`;
+  if (dom.fontSizeLabelDisplay) {
+    dom.fontSizeLabelDisplay.textContent = `${state.fontSize}px`;
+  }
+
   if (dom.cifraContainer) {
     dom.cifraContainer.scrollLeft = 0;
   }
@@ -164,7 +177,7 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
     box.className = 'chord-mini-box';
     box.setAttribute('role', 'button');
     box.tabIndex = 0;
-    box.setAttribute('aria-label', `Ver acorde ${chordName} em todos os instrumentos`);
+    box.setAttribute('aria-label', `Ver acorde ${chordName}`);
     box.innerHTML = `
       <div class="chord-mini-title">${esc(chordName)}</div>
       <div>${renderDiag(chordName, state.selectedInstrument)}</div>
@@ -180,15 +193,71 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
   });
 };
 
-window.SantaCifra.openChordModal = function openChordModal(chordName) {
+let currentModalChord = 'C';
+let currentModalInstrument = 'guitar';
+let currentModalVarIndex = 0;
+
+function updateModalChordView() {
   const { dom } = window.SantaCifra;
-  const renderDiag = (chord, inst) => (window.ChordsData.renderInstrumentSVG || window.ChordsData.getChordSVG)(chord, inst);
-  dom.modalChordName.textContent = chordName;
-  dom.modalGuitarSvg.innerHTML = renderDiag(chordName, 'guitar');
-  dom.modalKeyboardSvg.innerHTML = renderDiag(chordName, 'keyboard');
-  dom.modalUkuleleSvg.innerHTML = renderDiag(chordName, 'ukulele');
-  dom.modalCavacoSvg.innerHTML = renderDiag(chordName, 'cavaquinho');
-  dom.chordDialog.showModal();
+  const variations = window.ChordsData.getChordVariations(currentModalChord, currentModalInstrument);
+  const totalVars = Math.max(1, variations.length);
+  currentModalVarIndex = Math.max(0, Math.min(currentModalVarIndex, totalVars - 1));
+  const currentVar = variations[currentModalVarIndex] || variations[0];
+
+  if (dom.modalChordName) dom.modalChordName.textContent = currentModalChord;
+  
+  const instNames = {
+    guitar: 'Violão',
+    keyboard: 'Teclado',
+    ukulele: 'Ukulele',
+    cavaquinho: 'Cavaquinho'
+  };
+  const badgeEl = document.getElementById('modalInstrumentBadge');
+  if (badgeEl) badgeEl.textContent = instNames[currentModalInstrument] || 'Violão';
+
+  // Abas de instrumento no modal
+  document.querySelectorAll('.chord-inst-tab-btn').forEach(tab => {
+    const isAct = tab.getAttribute('data-inst') === currentModalInstrument;
+    tab.classList.toggle('active', isAct);
+    tab.setAttribute('aria-selected', String(isAct));
+  });
+
+  // Renderizar apenas o SVG do instrumento e variação selecionados
+  const container = document.getElementById('modalActiveChordSvg');
+  if (container) {
+    container.innerHTML = window.ChordsData.getChordSVG(currentModalChord, currentModalInstrument, currentModalVarIndex);
+  }
+
+  // Atualizar contador e legenda da variação
+  const titleEl = document.getElementById('modalChordVarTitle');
+  const descEl = document.getElementById('modalChordVarDesc');
+  const btnPrev = document.getElementById('btnPrevChordVar');
+  const btnNext = document.getElementById('btnNextChordVar');
+
+  if (titleEl) {
+    titleEl.textContent = totalVars > 1 ? `Posição ${currentModalVarIndex + 1} de ${totalVars}` : 'Posição Canônica';
+  }
+  if (descEl) {
+    descEl.textContent = currentVar.name || currentVar.desc || '';
+  }
+  if (btnPrev) {
+    btnPrev.disabled = currentModalVarIndex === 0;
+  }
+  if (btnNext) {
+    btnNext.disabled = currentModalVarIndex >= totalVars - 1;
+  }
+}
+
+window.SantaCifra.openChordModal = function openChordModal(chordName) {
+  const { state, dom } = window.SantaCifra;
+  currentModalChord = (chordName || 'C').replace(/[(),]/g, '').trim();
+  currentModalInstrument = state.selectedInstrument || 'guitar';
+  currentModalVarIndex = 0;
+
+  updateModalChordView();
+  if (dom.chordDialog && typeof dom.chordDialog.showModal === 'function') {
+    dom.chordDialog.showModal();
+  }
 };
 
 window.SantaCifra.startAutoScroll = function startAutoScroll() {
@@ -319,19 +388,71 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
     window.SantaCifra.renderCifraAndChords();
   });
 
-  dom.btnFontDec.addEventListener('click', () => {
-    if (state.fontSize > 11) {
-      state.fontSize -= 1;
-      dom.cifraPre.style.fontSize = `${state.fontSize}px`;
-    }
+  function updateFontSize(delta) {
+    const newSize = Math.max(10, Math.min(26, state.fontSize + delta));
+    state.fontSize = newSize;
+    if (dom.cifraPre) dom.cifraPre.style.fontSize = `${newSize}px`;
+    if (dom.fontSizeLabelDisplay) dom.fontSizeLabelDisplay.textContent = `${newSize}px`;
+    try {
+      localStorage.setItem('santa_cifra_font_size', String(newSize));
+    } catch (_) {}
+  }
+
+  dom.btnFontDec.addEventListener('click', () => updateFontSize(-1));
+  dom.btnFontInc.addEventListener('click', () => updateFontSize(1));
+
+  // Navegação de variações de acordes com setas (< e >)
+  const btnPrevVar = document.getElementById('btnPrevChordVar');
+  if (btnPrevVar) {
+    btnPrevVar.addEventListener('click', () => {
+      if (currentModalVarIndex > 0) {
+        currentModalVarIndex--;
+        updateModalChordView();
+      }
+    });
+  }
+
+  const btnNextVar = document.getElementById('btnNextChordVar');
+  if (btnNextVar) {
+    btnNextVar.addEventListener('click', () => {
+      const vars = window.ChordsData.getChordVariations(currentModalChord, currentModalInstrument);
+      if (currentModalVarIndex < vars.length - 1) {
+        currentModalVarIndex++;
+        updateModalChordView();
+      }
+    });
+  }
+
+  // Abas de instrumento no modal de acordes
+  document.querySelectorAll('.chord-inst-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const inst = btn.getAttribute('data-inst');
+      if (inst) {
+        currentModalInstrument = inst;
+        currentModalVarIndex = 0;
+        updateModalChordView();
+      }
+    });
   });
 
-  dom.btnFontInc.addEventListener('click', () => {
-    if (state.fontSize < 26) {
-      state.fontSize += 1;
-      dom.cifraPre.style.fontSize = `${state.fontSize}px`;
-    }
-  });
+  if (dom.chordDialog) {
+    dom.chordDialog.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        if (currentModalVarIndex > 0) {
+          currentModalVarIndex--;
+          updateModalChordView();
+        }
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        const vars = window.ChordsData.getChordVariations(currentModalChord, currentModalInstrument);
+        if (currentModalVarIndex < vars.length - 1) {
+          currentModalVarIndex++;
+          updateModalChordView();
+        }
+      }
+    });
+  }
 
   dom.btnPrint.addEventListener('click', () => window.print());
 

@@ -4,6 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
   <meta name="theme-color" content="#8f1d24">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('santa_cifra_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark-mode');
+          document.documentElement.style.backgroundColor = '#0e1013';
+        } else {
+          document.documentElement.classList.remove('dark-mode');
+          document.documentElement.style.backgroundColor = '#f3f4f6';
+        }
+      } catch (e) {}
+    })();
+  </script>
   <meta name="description" content="Santa Cifra: cifras litúrgicas católicas para a Missa, grupos de oração e encontros.">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,7 +28,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>Santa Cifra</title>
-  <link rel="manifest" href="manifest.webmanifest?v=23">
+  <link rel="manifest" href="manifest.webmanifest?v=24">
   <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -21,14 +36,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=28">
-  <link rel="stylesheet" href="css/layout.css?v=28">
-  <link rel="stylesheet" href="css/catalog.css?v=28">
-  <link rel="stylesheet" href="css/playlists.css?v=28">
-  <link rel="stylesheet" href="css/calendar.css?v=28">
-  <link rel="stylesheet" href="css/parish.css?v=28">
-  <link rel="stylesheet" href="css/viewer.css?v=28">
-  <link rel="stylesheet" href="css/dialogs.css?v=28">
+  <link rel="stylesheet" href="css/tokens.css?v=29">
+  <link rel="stylesheet" href="css/layout.css?v=29">
+  <link rel="stylesheet" href="css/catalog.css?v=29">
+  <link rel="stylesheet" href="css/playlists.css?v=29">
+  <link rel="stylesheet" href="css/calendar.css?v=29">
+  <link rel="stylesheet" href="css/parish.css?v=29">
+  <link rel="stylesheet" href="css/viewer.css?v=29">
+  <link rel="stylesheet" href="css/dialogs.css?v=29">
 </head>
 <body data-view="home">
 
@@ -579,31 +594,41 @@
 
   <!-- ============ DIÁLOGOS ============ -->
 
-  <dialog class="app-dialog" id="chordDialog" closedby="any" aria-labelledby="modalChordName">
+  <dialog class="app-dialog chord-dialog-single" id="chordDialog" closedby="any" aria-labelledby="modalChordName">
     <div class="dialog-header">
-      <h2 id="modalChordName">Acorde</h2>
+      <div class="chord-dialog-header-info">
+        <h2 id="modalChordName" class="modal-chord-title">C</h2>
+        <span id="modalInstrumentBadge" class="modal-inst-badge">Violão</span>
+      </div>
       <form method="dialog">
         <button class="btn-close-dialog" value="close" aria-label="Fechar">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
         </button>
       </form>
     </div>
-    <div class="chord-modal-grid" tabindex="-1" autofocus>
-      <div>
-        <div class="chord-inst-label">Violão</div>
-        <div id="modalGuitarSvg"></div>
-      </div>
-      <div>
-        <div class="chord-inst-label">Teclado</div>
-        <div id="modalKeyboardSvg"></div>
-      </div>
-      <div>
-        <div class="chord-inst-label">Ukulele</div>
-        <div id="modalUkuleleSvg"></div>
-      </div>
-      <div>
-        <div class="chord-inst-label">Cavaquinho</div>
-        <div id="modalCavacoSvg"></div>
+
+    <div class="chord-modal-inst-tabs" role="tablist" aria-label="Instrumento do acorde">
+      <button type="button" class="chord-inst-tab-btn active" data-inst="guitar" role="tab" aria-selected="true">Violão</button>
+      <button type="button" class="chord-inst-tab-btn" data-inst="keyboard" role="tab" aria-selected="false">Teclado</button>
+      <button type="button" class="chord-inst-tab-btn" data-inst="ukulele" role="tab" aria-selected="false">Ukulele</button>
+      <button type="button" class="chord-inst-tab-btn" data-inst="cavaquinho" role="tab" aria-selected="false">Cavaquinho</button>
+    </div>
+
+    <div class="chord-modal-single-content" tabindex="-1" autofocus>
+      <div id="modalActiveChordSvg" class="modal-active-chord-svg"></div>
+
+      <!-- Navegação de Variações de Acorde (setinhas < e >) -->
+      <div class="chord-var-nav-bar" role="toolbar" aria-label="Variações do acorde">
+        <button type="button" class="btn-chord-var-step" id="btnPrevChordVar" aria-label="Variação anterior" title="Variação anterior (<)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="chord-var-status-wrap">
+          <strong id="modalChordVarTitle" class="chord-var-title">Posição 1 de 3</strong>
+          <span id="modalChordVarDesc" class="chord-var-desc">Forma aberta</span>
+        </div>
+        <button type="button" class="btn-chord-var-step" id="btnNextChordVar" aria-label="Próxima variação" title="Próxima variação (>)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
       </div>
     </div>
   </dialog>
@@ -754,6 +779,10 @@
           <button type="button" class="link-btn-sm" id="btnGoToForgot">Esqueceu a senha?</button>
         </div>
         <input type="password" id="loginPassword" class="dialog-input" required maxlength="128" placeholder="Sua senha secreta" autocomplete="current-password">
+      </div>
+            <div class="form-checkbox-field" style="display:flex;align-items:center;gap:8px;margin:4px 0 14px;font-size:0.88rem;color:var(--text-secondary);">
+        <input type="checkbox" id="chkRememberMe" name="remember" checked style="accent-color:var(--accent);width:16px;height:16px;cursor:pointer;">
+        <label for="chkRememberMe" style="cursor:pointer;user-select:none;">Permanecer conectado neste aparelho</label>
       </div>
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitLogin">Entrar no Santa Cifra</button>
@@ -1342,28 +1371,28 @@
     </form>
   </dialog>
 
-  <script src="js/transposition.js?v=28"></script>
-  <script src="js/chords-data.js?v=28"></script>
-  <script src="js/metronome.js?v=28"></script>
+  <script src="js/transposition.js?v=29"></script>
+  <script src="js/chords-data.js?v=29"></script>
+  <script src="js/metronome.js?v=29"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=28"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=28"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=28"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=28"></script>
-  <script src="js/songs-catalog.js?v=28"></script>
-  <script src="js/supabase-client.js?v=28"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=29"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=29"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=29"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=29"></script>
+  <script src="js/songs-catalog.js?v=29"></script>
+  <script src="js/supabase-client.js?v=29"></script>
 
-  <script src="js/modules/icons.js?v=28"></script>
-  <script src="js/modules/auth.js?v=28"></script>
-  <script src="js/modules/state.js?v=28"></script>
-  <script src="js/modules/artists-view.js?v=28"></script>
-  <script src="js/modules/catalog-view.js?v=28"></script>
-  <script src="js/modules/playlists-view.js?v=28"></script>
-  <script src="js/modules/liturgical-calendar.js?v=28"></script>
-  <script src="js/modules/parish-manager.js?v=28"></script>
-  <script src="js/modules/song-viewer.js?v=28"></script>
-  <script src="js/modules/ota-updater.js?v=28"></script>
-  <script src="js/app.js?v=28"></script>
+  <script src="js/modules/icons.js?v=29"></script>
+  <script src="js/modules/auth.js?v=29"></script>
+  <script src="js/modules/state.js?v=29"></script>
+  <script src="js/modules/artists-view.js?v=29"></script>
+  <script src="js/modules/catalog-view.js?v=29"></script>
+  <script src="js/modules/playlists-view.js?v=29"></script>
+  <script src="js/modules/liturgical-calendar.js?v=29"></script>
+  <script src="js/modules/parish-manager.js?v=29"></script>
+  <script src="js/modules/song-viewer.js?v=29"></script>
+  <script src="js/modules/ota-updater.js?v=29"></script>
+  <script src="js/app.js?v=29"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -1374,7 +1403,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=28').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=29').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

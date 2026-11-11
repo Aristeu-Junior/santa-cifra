@@ -48,6 +48,8 @@
   color-scheme: light;
 }
 
+:root.dark-mode,
+html.dark-mode,
 body.dark-mode {
   --bg-page: #0e1013;
   --bg-surface: #16191e;
