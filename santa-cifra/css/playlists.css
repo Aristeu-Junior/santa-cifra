@@ -279,7 +279,7 @@
 }
 
 .account-card.logged-in {
-  border-left: 3px solid var(--accent);
+  border-color: var(--accent);
 }
 
 .account-info {
@@ -346,12 +346,12 @@
   background: rgba(220, 38, 38, 0.08);
   color: #dc2626;
   border: 1px solid rgba(220, 38, 38, 0.3);
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: 0.86rem;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
-  transition: all var(--transition-fast);
+  transition: all 0.18s var(--ease-out);
   flex-shrink: 0;
 }
 
@@ -370,12 +370,12 @@
   background: var(--accent);
   color: #ffffff;
   border: 1px solid var(--accent);
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: 0.88rem;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
-  transition: all var(--transition-fast);
+  transition: all 0.18s var(--ease-out);
   flex-shrink: 0;
 }
 
@@ -395,3 +395,13 @@
     justify-content: center;
   }
 }
+
+.account-card { max-width: 100%; min-width: 0; flex-wrap: wrap; }
+.account-card .account-info { flex: 1 1 200px; }
+
+.account-name,
+.account-email { display: block; max-width: 100%; }
+.account-texts { flex: 1 1 auto; }
+
+.account-card .account-info { max-width: 100%; overflow: hidden; }
+.account-texts { overflow: hidden; }

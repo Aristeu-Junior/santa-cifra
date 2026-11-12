@@ -107,19 +107,17 @@ dialog.app-dialog[open] {
 
 .modal-chord-title {
   font-family: var(--font-mono);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
+  line-height: 1;
   color: var(--chord-color);
   margin: 0;
-  letter-spacing: -0.02em;
 }
 
 .modal-inst-badge {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .chord-modal-inst-tabs {
@@ -133,12 +131,13 @@ dialog.app-dialog[open] {
 
 .chord-inst-tab-btn {
   flex: 1;
-  padding: 6px 4px;
+  min-height: 40px;
+  padding: 0 4px;
   border: none;
   background: transparent;
   color: var(--text-muted);
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 0.84rem;
+  font-weight: 700;
   border-radius: calc(var(--radius-sm) - 2px);
   cursor: pointer;
   transition: all 0.15s ease;
@@ -152,7 +151,7 @@ dialog.app-dialog[open] {
 .chord-inst-tab-btn.active {
   background: var(--bg-surface);
   color: var(--text-main);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-soft);
   font-weight: 700;
 }
 
@@ -189,9 +188,9 @@ dialog.app-dialog[open] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-sm);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   color: var(--text-main);
@@ -221,10 +220,11 @@ dialog.app-dialog[open] {
 }
 
 .chord-var-title {
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   font-weight: 700;
   color: var(--text-main);
   line-height: 1.2;
+  font-variant-numeric: tabular-nums;
 }
 
 .chord-var-desc {
@@ -256,6 +256,14 @@ dialog.app-dialog[open] {
   font-size: 0.98rem;
   color: var(--text-muted);
   margin: -8px 0 14px;
+}
+
+.dialog-header .dialog-subtitle {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+  max-width: 46ch;
 }
 
 .folder-checkbox-list {
@@ -401,107 +409,172 @@ dialog.app-dialog[open] {
    ESTILOS DE AUTENTICAÇÃO E PERFIL DO USUÁRIO
    ========================================================================== */
 .auth-dialog {
-  width: min(calc(100vw - 32px), 440px);
+  width: min(calc(100vw - 32px), 420px);
+  padding: 0 24px 24px;
+  border-radius: var(--radius-lg);
+  overflow-x: hidden;
+}
+
+/* Fio dourado no topo: camada de fundo, para não criar overflow */
+.auth-dialog {
+  background-image: linear-gradient(90deg, transparent, var(--gold-line) 20%, var(--gold) 50%, var(--gold-line) 80%, transparent);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.auth-close-form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.auth-close-form .btn-close-dialog { margin: 0; }
+
+.auth-masthead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 0 18px;
+}
+
+.auth-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.auth-masthead h2 {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.auth-lede {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  max-width: 30ch;
+  text-wrap: balance;
 }
 
 .auth-tabs {
   display: flex;
-  background-color: var(--bg-subtle);
-  padding: 3px;
-  border-radius: var(--radius-sm);
-  margin-bottom: 16px;
-  gap: 2px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
 }
 
 .auth-tab-btn {
   flex: 1;
-  padding: 7px 12px;
+  min-height: var(--tap);
+  padding: 0 8px;
   border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
   background: transparent;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-family: var(--font-sans);
-  font-size: 0.82rem;
-  font-weight: 600;
-  border-radius: calc(var(--radius-sm) - 2px);
+  font-size: 0.92rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: color 0.15s var(--ease-out), border-color 0.15s var(--ease-out);
   text-align: center;
 }
 
-.auth-tab-btn:hover {
-  color: var(--text-main);
-}
+.auth-tab-btn:hover { color: var(--text-main); }
 
 .auth-tab-btn.active {
-  background-color: var(--bg-surface);
   color: var(--text-main);
-  box-shadow: var(--shadow-soft, 0 1px 3px rgba(0,0,0,0.1));
+  border-bottom-color: var(--accent);
 }
 
 .auth-alert {
   padding: 10px 14px;
-  border-radius: var(--radius-sm);
-  font-size: 0.82rem;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
   line-height: 1.4;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .auth-alert.alert-error {
-  background-color: rgba(220, 38, 38, 0.12);
-  color: #b91c1c;
-  border: 1px solid rgba(220, 38, 38, 0.25);
-}
-
-[data-theme="dark"] .auth-alert.alert-error {
-  background-color: rgba(239, 68, 68, 0.15);
-  color: #fca5a5;
-  border-color: rgba(239, 68, 68, 0.3);
+  background-color: var(--accent-tint);
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .auth-alert.alert-success {
-  background-color: rgba(22, 163, 74, 0.12);
-  color: #15803d;
-  border: 1px solid rgba(22, 163, 74, 0.25);
-}
-
-[data-theme="dark"] .auth-alert.alert-success {
-  background-color: rgba(34, 197, 94, 0.15);
-  color: #86efac;
-  border-color: rgba(34, 197, 94, 0.3);
+  background-color: var(--lit-tint);
+  color: var(--lit);
+  border: 1px solid var(--lit);
 }
 
 .auth-hint-text {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
-  line-height: 1.45;
-  margin: -4px 0 14px;
+  line-height: 1.5;
+  margin: 0 0 16px;
 }
 
 .field-label-row {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
 }
+
+.field-label-row label { margin-bottom: 0 !important; }
+
+/* Campo com ícone à esquerda e botão de mostrar senha à direita */
+.input-shell {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.dialog-input.has-icon { padding-left: 44px; }
+.dialog-input.has-toggle { padding-right: 48px; }
+
+.input-shell:focus-within .input-icon { color: var(--accent); }
+
+.pw-toggle {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--tap);
+  height: var(--tap);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.pw-toggle:hover { color: var(--text-main); }
+.pw-toggle[aria-pressed="true"] { color: var(--accent); }
 
 .link-btn-sm {
-  background: transparent;
-  border: none;
-  color: var(--accent);
-  font-family: var(--font-sans);
-  font-size: 0.76rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0;
-}
-
-.link-btn-sm:hover {
-  text-decoration: underline;
-}
-
-.link-btn {
   background: transparent;
   border: none;
   color: var(--accent);
@@ -509,45 +582,81 @@ dialog.app-dialog[open] {
   font-size: 0.82rem;
   font-weight: 700;
   cursor: pointer;
-  padding: 0;
+  padding: 4px 0;
 }
 
-.link-btn:hover {
-  text-decoration: underline;
+.link-btn-sm:hover { text-decoration: underline; }
+
+.link-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 4px;
 }
 
-.btn-block {
-  width: 100%;
+.link-btn:hover { text-decoration: underline; }
+
+.auth-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
 }
+
+.auth-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.auth-dialog .dialog-actions { margin-top: 8px; }
+
+.btn-block { width: 100%; }
 
 .auth-footer-prompt {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  font-size: 0.82rem;
+  flex-wrap: wrap;
+  gap: 2px 6px;
+  font-size: 0.9rem;
   color: var(--text-muted);
-  margin-top: 14px;
-  padding-top: 12px;
-  border-top: 1px solid var(--border-color);
+  margin-top: 18px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .auth-security-badge {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  margin-bottom: 14px;
-  background-color: var(--bg-subtle);
-  border-radius: var(--radius-sm);
-  font-size: 0.74rem;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 2px 0 8px;
+  font-size: 0.84rem;
   color: var(--text-secondary);
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 .auth-security-badge svg {
   flex-shrink: 0;
-  color: var(--accent);
+  margin-top: 1px;
+  color: var(--gold);
+}
+
+/* Celular: a folha ancorada na base vem da regra geral dos diálogos (600px). Aqui só o espaçamento do login. */
+@media (max-width: 600px) {
+  dialog.app-dialog.auth-dialog[open] {
+    padding: 3px 20px calc(20px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .auth-masthead { padding-top: 24px; }
 }
 
 /* Modal de Perfil */
@@ -654,14 +763,14 @@ dialog.app-dialog[open] {
   gap: 10px;
   padding: 13px 18px;
   border-radius: var(--radius-md);
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: 0.98rem;
   font-weight: 700;
   color: #ffffff !important;
   background-color: #dc2626 !important;
   border: 1px solid #b91c1c !important;
   cursor: pointer;
-  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  transition: background-color 0.18s var(--ease-out), transform 0.18s var(--ease-out);
   box-shadow: 0 2px 8px rgba(220, 38, 38, 0.28);
 }
 
@@ -763,4 +872,68 @@ dialog.app-dialog[open] {
 .chord-modal-grid:focus,
 .folder-checkbox-list:focus {
   outline: none;
+}
+
+/* ==========================================================================
+   DIÁLOGOS DA PARÓQUIA: cabeçalho, corpo, select e largura
+   ========================================================================== */
+.app-dialog.modal-lg {
+  width: min(calc(100vw - 32px), 620px);
+}
+
+.dialog-header {
+  align-items: flex-start;
+}
+
+.dialog-header > div:first-child { min-width: 0; }
+
+.dialog-body-padded,
+.dialog-body-form {
+  display: block;
+}
+
+.dialog-select {
+  width: 100%;
+  min-height: var(--tap);
+  padding: 10px 40px 10px 14px;
+  font-size: 1rem;
+  color: var(--text-main);
+  background-color: var(--bg-surface);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%238a92a1' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.dialog-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-tint);
+}
+
+.dialog-select option { background: var(--bg-surface); color: var(--text-main); }
+
+/* Botão secundário padrão dos diálogos */
+.btn-secondary-outline {
+  min-height: var(--tap);
+  padding: 0 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-main);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-secondary-outline:hover { background: var(--bg-subtle); }
+
+/* O h2 do cabeçalho dos diálogos usa a serifa; o nome do acorde segue a monoespaçada, como no diagrama */
+.dialog-header .modal-chord-title {
+  font-family: var(--font-mono);
+  font-size: 1.7rem;
+  letter-spacing: 0;
 }

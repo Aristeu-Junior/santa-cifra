@@ -410,11 +410,11 @@ window.SantaCifra = window.SantaCifra || {};
     let rankRuleHtml = '';
 
     if (isSolenidade) {
-      rankLabel = '✦ Solenidade (Grau Máximo)';
+      rankLabel = 'Solenidade';
       rankPillClass = 'pill-solenidade';
       rankRuleHtml = `
         <div class="cal-liturgical-rule-box rule-solenidade">
-          <div class="rule-icon">✦</div>
+          <div class="rule-icon">${SC.ICONS.sparkle}</div>
           <div class="rule-text">
             <strong>Norma Litúrgica de Solenidade:</strong>
             Grau supremo do Ano Litúrgico. Missa solene com Hino de Louvor (Glória), três leituras bíblicas completas (1ª Leitura, 2ª Leitura e Evangelho) e Profissão de Fé (Credo). O repertório musical deve expressar júbilo e solenidade festiva.
@@ -422,11 +422,11 @@ window.SantaCifra = window.SantaCifra || {};
         </div>
       `;
     } else if (isFesta) {
-      rankLabel = '★ Festa';
+      rankLabel = 'Festa';
       rankPillClass = 'pill-festa';
       rankRuleHtml = `
         <div class="cal-liturgical-rule-box rule-festa">
-          <div class="rule-icon">★</div>
+          <div class="rule-icon">${SC.ICONS.star}</div>
           <div class="rule-text">
             <strong>Norma Litúrgica de Festa:</strong>
             Celebração festiva com Hino de Louvor (Glória), duas leituras bíblicas (1ª Leitura e Evangelho) e <u>sem Credo</u>.
@@ -435,11 +435,11 @@ window.SantaCifra = window.SantaCifra || {};
       `;
     } else if (isMemoria) {
       const isFac = rank === 'Memória Facultativa';
-      rankLabel = isFac ? '🕊️ Memória Facultativa' : '🕊️ Memória de Santo';
+      rankLabel = isFac ? 'Memória Facultativa' : 'Memória de Santo';
       rankPillClass = isFac ? 'pill-memoria-fac' : 'pill-memoria';
       rankRuleHtml = `
         <div class="cal-liturgical-rule-box rule-memoria">
-          <div class="rule-icon">🕊️</div>
+          <div class="rule-icon">${SC.ICONS.cross}</div>
           <div class="rule-text">
             <strong>Distinção Litúrgica — Memória de Santo:</strong>
             Nem toda memória é Solenidade! Conforme a Instrução Geral do Missal Romano (IGMR 53 e 68), na Memória de Santo a liturgia preserva a sobriedade ferial: <u>NÃO se canta o Glória nem se reza o Credo</u> (salvo se for padroeiro principal local), havendo apenas uma leitura antes do Evangelho. Os cantos devem sintonizar com as virtudes, o serviço fraterno ou o martírio do santo.
@@ -447,11 +447,11 @@ window.SantaCifra = window.SantaCifra || {};
         </div>
       `;
     } else if (isDomingo) {
-      rankLabel = '📅 Domingo do Senhor';
+      rankLabel = 'Domingo do Senhor';
       rankPillClass = 'pill-domingo';
       rankRuleHtml = `
         <div class="cal-liturgical-rule-box rule-feria">
-          <div class="rule-icon">📅</div>
+          <div class="rule-icon">${SC.ICONS.sun}</div>
           <div class="rule-text">
             <strong>Domingo do Senhor:</strong>
             Dia do Senhor e Páscoa semanal dos cristãos. Missa com Glória (exceto no Advento e Quaresma), três leituras completas e Credo.
@@ -459,11 +459,11 @@ window.SantaCifra = window.SantaCifra || {};
         </div>
       `;
     } else {
-      rankLabel = '🌿 Dia Ferial';
+      rankLabel = 'Dia Ferial';
       rankPillClass = 'pill-feria';
       rankRuleHtml = `
         <div class="cal-liturgical-rule-box rule-feria">
-          <div class="rule-icon">🌿</div>
+          <div class="rule-icon">${SC.ICONS.leaf}</div>
           <div class="rule-text">
             <strong>Dia Ferial do Tempo Litúrgico:</strong>
             Missa cotidiana da assembleia sem Glória e sem Credo, focada na meditação contínua da Palavra de Deus.
@@ -986,11 +986,11 @@ window.SantaCifra = window.SantaCifra || {};
 
     let rankIcon = '';
     if (info.isSolenidade) {
-      rankIcon = '<span class="cal-rank-icon icon-solenidade" title="Solenidade">✦</span>';
+      rankIcon = '<span class="cal-rank-icon icon-solenidade" title="Solenidade">' + SC.ICONS.sparkle + '</span>';
     } else if (info.isFesta) {
-      rankIcon = '<span class="cal-rank-icon icon-festa" title="Festa">★</span>';
+      rankIcon = '<span class="cal-rank-icon icon-festa" title="Festa">' + SC.ICONS.star + '</span>';
     } else if (info.isMemoria) {
-      rankIcon = '<span class="cal-rank-icon icon-memoria" title="Memória de Santo">🕊️</span>';
+      rankIcon = '<span class="cal-rank-icon icon-memoria" title="Memória de Santo">' + SC.ICONS.cross + '</span>';
     }
 
     btn.innerHTML = `
@@ -1033,12 +1033,12 @@ window.SantaCifra = window.SantaCifra || {};
 
     // Moment icons
     const momentIcons = {
-      'Entrada': '🚪',
-      'Salmo': '📖',
-      'Aclamação': '✨',
-      'Ofertório': '🍷',
-      'Comunhão': '🍞',
-      'Final': '🕊️'
+      'Entrada': SC.ICONS.door,
+      'Salmo': SC.ICONS.book,
+      'Aclamação': SC.ICONS.voice,
+      'Ofertório': SC.ICONS.chalice,
+      'Comunhão': SC.ICONS.host,
+      'Final': SC.ICONS.send
     };
 
     let readingsHtml = '';
@@ -1100,7 +1100,7 @@ window.SantaCifra = window.SantaCifra || {};
           </p>
           <div class="cal-songs-container">
             ${info.suggestions.map(s => {
-              const icon = momentIcons[s.moment] || '🎵';
+              const icon = momentIcons[s.moment] || SC.ICONS.note;
               return `
                 <div class="cal-song-item" data-song-id="${SC.esc(s.songId)}" role="button" tabindex="0" title="Abrir cifra de ${SC.esc(s.title)}">
                   <div class="cal-song-top">

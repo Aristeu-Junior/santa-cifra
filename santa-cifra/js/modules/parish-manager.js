@@ -651,10 +651,10 @@ window.SantaCifra = window.SantaCifra || {};
     container.innerHTML = matches.map(p => `
       <article class="parish-search-result-card">
         <div class="search-res-info">
-          <h3 class="search-res-name">${p.name}</h3>
-          <p class="search-res-sub"><span>${p.diocese}</span> • <span>${p.city}</span></p>
-          <p class="search-res-priest"><strong>Pároco:</strong> ${p.priestName}</p>
-          ${p.address ? `<p class="search-res-addr">${p.address}</p>` : ''}
+          <h3 class="search-res-name">${window.SantaCifra.esc(p.name)}</h3>
+          <p class="search-res-sub"><span>${window.SantaCifra.esc(p.diocese)}</span> • <span>${window.SantaCifra.esc(p.city)}</span></p>
+          <p class="search-res-priest"><strong>Pároco:</strong> ${window.SantaCifra.esc(p.priestName)}</p>
+          ${p.address ? `<p class="search-res-addr">${window.SantaCifra.esc(p.address)}</p>` : ''}
         </div>
         <div class="search-res-action">
           <button type="button" class="btn-primary-solid btn-select-parish" data-parish-id="${p.id}">
@@ -905,9 +905,9 @@ window.SantaCifra = window.SantaCifra || {};
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
             </div>
             <div>
-              <h4 class="min-item-name">${min.name}</h4>
+              <h4 class="min-item-name">${window.SantaCifra.esc(min.name)}</h4>
               <p class="min-item-sub"><strong>Líder:</strong> ${min.leaderName || 'Não informado'} ${min.leaderPhone ? '• ' + min.leaderPhone : ''}</p>
-              ${min.instruments ? `<p class="min-item-sub"><strong>Instrumentos:</strong> ${min.instruments}</p>` : ''}
+              ${min.instruments ? `<p class="min-item-sub"><strong>Instrumentos:</strong> ${window.SantaCifra.esc(min.instruments)}</p>` : ''}
               <p class="min-item-sub"><strong>Integrantes:</strong> ${membersText}</p>
               <span class="min-status-badge ${min.status || 'pending'}">
                 ${isApproved ? 'Filiado à Paróquia' : (isPending ? 'Pendente de autorização pastoral' : 'Não filiado')}
@@ -915,7 +915,7 @@ window.SantaCifra = window.SantaCifra || {};
             </div>
           </div>
           ${isApproved ? `
-            <button type="button" class="btn-invite-min-musicians" data-min-id="${min.id}" data-min-name="${min.name}">
+            <button type="button" class="btn-invite-min-musicians" data-min-id="${window.SantaCifra.esc(min.id)}" data-min-name="${window.SantaCifra.esc(min.name)}">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
               <span>Convidar Músicos</span>
             </button>
@@ -1024,7 +1024,7 @@ window.SantaCifra = window.SantaCifra || {};
 
     if (summary) {
       if (selectedMassTimes.length === 0) {
-        summary.innerHTML = '<span style="color:#ef4444;">Nenhum horário selecionado. Clique nos botões acima para marcar os horários.</span>';
+        summary.innerHTML = '<span style="color:var(--accent);">Nenhum horário selecionado. Clique nos botões acima para marcar os horários.</span>';
       } else {
         const sorted = [...selectedMassTimes].sort();
         summary.innerHTML = 'Horários selecionados: <strong>' + sorted.join(', ') + '</strong> (' + sorted.length + ' missa(s) serão lançadas no calendário)';
@@ -1152,8 +1152,8 @@ window.SantaCifra = window.SantaCifra || {};
     if (preview) {
       preview.innerHTML = `
         <div><strong>Data e Horário:</strong> ${formatDateBR(schedule.date)} às ${schedule.time}</div>
-        <div><strong>Celebração:</strong> ${schedule.celebrationTitle}</div>
-        ${schedule.priestNotes ? `<div style="font-size:0.84rem;color:#b38600;margin-top:4px;"><strong>Orientações do Pároco:</strong> ${schedule.priestNotes}</div>` : ''}
+        <div><strong>Celebração:</strong> ${window.SantaCifra.esc(schedule.celebrationTitle)}</div>
+        ${schedule.priestNotes ? `<div style="font-size:0.84rem;color:var(--gold);margin-top:4px;"><strong>Orientações do Pároco:</strong> ${window.SantaCifra.esc(schedule.priestNotes)}</div>` : ''}
       `;
     }
 
@@ -1162,7 +1162,7 @@ window.SantaCifra = window.SantaCifra || {};
         selectMin.innerHTML = `<option value="">-- Nenhum ministério aprovado nesta paróquia --</option>`;
       } else {
         selectMin.innerHTML = approvedMinistries.map(m => `
-          <option value="${m.id}" ${(curUser && curUser.ministry === m.name) ? 'selected' : ''}>${m.name} (Líder: ${m.leaderName || 'Líder'})</option>
+          <option value="${window.SantaCifra.esc(m.id)}" ${(curUser && curUser.ministry === m.name) ? 'selected' : ''}>${window.SantaCifra.esc(m.name)} (Líder: ${window.SantaCifra.esc(m.leaderName || 'Líder')})</option>
         `).join('');
       }
     }
@@ -1316,16 +1316,15 @@ window.SantaCifra = window.SantaCifra || {};
         <header class="parish-summary-card">
           <div class="parish-summary-header">
             <div class="parish-summary-text">
-              <span class="parish-kicker">Comunidade Paroquial</span>
-              <h1 class="parish-title">${parish.name}</h1>
+              <h1 class="parish-title">${window.SantaCifra.esc(parish.name)}</h1>
               <p class="parish-meta-line">
-                <span>${parish.diocese}</span>
-                <span class="meta-sep">•</span>
-                <span>${parish.city}</span>
-                <span class="meta-sep">•</span>
-                <span>Pároco: ${parish.priestName || 'Pe. Marlson Assis de Araújo'}</span>
+                <span>${window.SantaCifra.esc(parish.diocese)}</span>
+                <span class="meta-sep" aria-hidden="true"></span>
+                <span>${window.SantaCifra.esc(parish.city)}</span>
+                <span class="meta-sep" aria-hidden="true"></span>
+                <span>Pároco: ${window.SantaCifra.esc(parish.priestName || 'Pe. Marlson Assis de Araújo')}</span>
               </p>
-              ${parish.address ? `<p class="parish-address-sub">${parish.address}${parish.contactPhone ? ' — Tel: ' + parish.contactPhone : ''}</p>` : ''}
+              ${parish.address ? `<p class="parish-address-sub">${window.SantaCifra.esc(parish.address)}${parish.contactPhone ? ' — Tel: ' + window.SantaCifra.esc(parish.contactPhone) : ''}</p>` : ''}
             </div>
           </div>
 
@@ -1342,7 +1341,7 @@ window.SantaCifra = window.SantaCifra || {};
             </div>
             <div class="stat-pill-item" id="btnPillSchedules" role="button" tabindex="0">
               <span class="stat-pill-num">${schedules.length}</span>
-              <span class="stat-pill-label">Missas na Escala (${openCount} vagas abertas)</span>
+              <span class="stat-pill-label">Missas na Escala (${openCount} ${openCount === 1 ? "vaga aberta" : "vagas abertas"})</span>
             </div>
           </div>
         </header>
@@ -1382,11 +1381,11 @@ window.SantaCifra = window.SantaCifra || {};
               ${pendingMinistries.map(m => `
                 <div class="pending-min-item">
                   <div class="pending-min-info">
-                    <h3 class="pending-min-name">${m.name}</h3>
+                    <h3 class="pending-min-name">${window.SantaCifra.esc(m.name)}</h3>
                     <p class="pending-min-meta">
-                      <span><strong>Responsável:</strong> ${m.leaderName}</span>
-                      ${m.leaderPhone ? ` • <span><strong>WhatsApp:</strong> ${m.leaderPhone}</span>` : ''}
-                      ${m.instruments ? ` • <span><strong>Instrumentos:</strong> ${m.instruments}</span>` : ''}
+                      <span><strong>Responsável:</strong> ${window.SantaCifra.esc(m.leaderName)}</span>
+                      ${m.leaderPhone ? ` • <span><strong>WhatsApp:</strong> ${window.SantaCifra.esc(m.leaderPhone)}</span>` : ''}
+                      ${m.instruments ? ` • <span><strong>Instrumentos:</strong> ${window.SantaCifra.esc(m.instruments)}</span>` : ''}
                     </p>
                   </div>
                   <div class="pending-min-actions">
@@ -1438,7 +1437,7 @@ window.SantaCifra = window.SantaCifra || {};
 
                     <div class="sched-main-info">
                       <div class="sched-title-row">
-                        <h3 class="sched-celebration-title">${sched.celebrationTitle}</h3>
+                        <h3 class="sched-celebration-title">${window.SantaCifra.esc(sched.celebrationTitle)}</h3>
                         <span class="sched-status-chip ${isClaimed ? 'chip-confirmed' : 'chip-open'}">
                           ${isClaimed ? 'Confirmado' : 'Vaga Aberta'}
                         </span>
@@ -1448,7 +1447,7 @@ window.SantaCifra = window.SantaCifra || {};
 
                       ${sched.priestNotes ? `
                         <div class="sched-priest-callout">
-                          <span class="priest-callout-text"><strong>Orientações do Pároco:</strong> ${sched.priestNotes}</span>
+                          <span class="priest-callout-text"><strong>Orientações do Pároco:</strong> ${window.SantaCifra.esc(sched.priestNotes)}</span>
                         </div>
                       ` : ''}
 
@@ -1458,9 +1457,9 @@ window.SantaCifra = window.SantaCifra || {};
                           <div class="sugg-chips-row">
                             ${suggestions.map((sugg, sIdx) => `
                               <span class="sugg-pill">
-                                <strong>${sugg.moment}:</strong>
-                                <button type="button" class="sugg-song-link" data-song-id="${sugg.songId}">${sugg.songTitle}</button>
-                                ${isPriest ? `<button type="button" class="btn-del-sugg" data-sched-id="${sched.id}" data-sugg-idx="${sIdx}" title="Remover sugestão">✕</button>` : ''}
+                                <strong>${window.SantaCifra.esc(sugg.moment)}:</strong>
+                                <button type="button" class="sugg-song-link" data-song-id="${window.SantaCifra.esc(sugg.songId)}">${window.SantaCifra.esc(sugg.songTitle)}</button>
+                                ${isPriest ? `<button type="button" class="btn-del-sugg" data-sched-id="${sched.id}" data-sugg-idx="${sIdx}" title="Remover sugestão" aria-label="Remover sugestão">${window.SantaCifra.ICONS.close}</button>` : ''}
                               </span>
                             `).join('')}
                           </div>
@@ -1470,7 +1469,7 @@ window.SantaCifra = window.SantaCifra || {};
                       <div class="sched-bottom-row">
                         ${isClaimed ? `
                           <div class="sched-claimed-info">
-                            <span><strong>Ministério:</strong> ${sched.ministryName}</span>
+                            <span><strong>Ministério:</strong> ${window.SantaCifra.esc(sched.ministryName)}</span>
                             <button type="button" class="btn-release-schedule" data-action="release" data-id="${sched.id}">
                               Liberar Vaga
                             </button>

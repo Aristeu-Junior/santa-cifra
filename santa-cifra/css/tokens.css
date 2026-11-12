@@ -24,6 +24,18 @@
   --pop: #a8500a;
   --pop-tint: #fbf0e0;
 
+  /* Ouro sacro: solenidades e destaques litúrgicos */
+  --gold: #8a6416;
+  --gold-tint: #f6edd5;
+  --gold-line: #d9bf7f;
+
+  /* Cores litúrgicas (calendário) */
+  --lc-verde: #2f7d4b;
+  --lc-branco: #fbf8ef;
+  --lc-vermelho: #b3262d;
+  --lc-roxo: #6b3fa0;
+  --lc-rosa: #cf5a8a;
+
   --border-color: #d5d9e0;
   --border-subtle: #e5e8ee;
 
@@ -70,6 +82,16 @@ body.dark-mode {
   --lit-tint: #14261b;
   --pop: #f2b84b;
   --pop-tint: #2a2112;
+
+  --gold: #e3bd5c;
+  --gold-tint: #262012;
+  --gold-line: #5a4a22;
+
+  --lc-verde: #4fbf7a;
+  --lc-branco: #f1ead6;
+  --lc-vermelho: #ef5a5f;
+  --lc-roxo: #a98be0;
+  --lc-rosa: #ee82ae;
 
   --border-color: #2a2f39;
   --border-subtle: #1f232b;

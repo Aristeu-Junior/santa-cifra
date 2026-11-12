@@ -36,14 +36,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=30">
-  <link rel="stylesheet" href="css/layout.css?v=30">
-  <link rel="stylesheet" href="css/catalog.css?v=30">
-  <link rel="stylesheet" href="css/playlists.css?v=30">
-  <link rel="stylesheet" href="css/calendar.css?v=30">
-  <link rel="stylesheet" href="css/parish.css?v=30">
-  <link rel="stylesheet" href="css/viewer.css?v=30">
-  <link rel="stylesheet" href="css/dialogs.css?v=30">
+  <link rel="stylesheet" href="css/tokens.css?v=31">
+  <link rel="stylesheet" href="css/layout.css?v=31">
+  <link rel="stylesheet" href="css/catalog.css?v=31">
+  <link rel="stylesheet" href="css/playlists.css?v=31">
+  <link rel="stylesheet" href="css/calendar.css?v=31">
+  <link rel="stylesheet" href="css/parish.css?v=31">
+  <link rel="stylesheet" href="css/viewer.css?v=31">
+  <link rel="stylesheet" href="css/dialogs.css?v=31">
 </head>
 <body data-view="home">
 
@@ -373,23 +373,29 @@
           </div>
         </div>
 
-        <!-- Legenda Estruturada: Graus Litúrgicos vs Cores -->
-        <div class="liturgical-legend" aria-label="Legenda do calendário litúrgico">
-          <div class="legend-group">
-            <span class="legend-group-title">Graus:</span>
-            <span class="legend-chip"><span class="legend-badge-icon badge-solenidade">&bull;</span> Solenidade (Grau Máximo com Glória e Credo)</span>
-            <span class="legend-chip"><span class="legend-badge-icon badge-festa">&bull;</span> Festa</span>
-            <span class="legend-chip"><span class="legend-badge-icon badge-memoria">&bull;</span> Memória de Santo (Sem Glória nem Credo)</span>
+        <!-- Legenda recolhível: graus litúrgicos e cores -->
+        <details class="liturgical-legend">
+          <summary>
+            <span>Legenda de graus e cores</span>
+            <span class="legend-chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </summary>
+          <div class="legend-body">
+            <div class="legend-group">
+              <span class="legend-group-title">Graus</span>
+              <span class="legend-chip"><span class="legend-badge-icon badge-solenidade"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.6 4.8 2.7 6.9 7.5 7.5-4.8.6-6.9 2.7-7.5 7.5-.6-4.8-2.7-6.9-7.5-7.5C9.3 9.9 11.4 7.8 12 3z"/></svg></span> Solenidade: grau máximo, com Glória e Credo</span>
+              <span class="legend-chip"><span class="legend-badge-icon badge-festa"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2.8 14.9 8.7 21.3 9.6 16.6 14.1 17.8 20.5 12 17.4 6.2 20.5 7.4 14.1 2.7 9.6 9.1 8.7 12 2.8"/></svg></span> Festa: com Glória, sem Credo</span>
+              <span class="legend-chip"><span class="legend-badge-icon badge-memoria"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 8h10"/></svg></span> Memória de Santo: sem Glória nem Credo</span>
+            </div>
+            <div class="legend-group">
+              <span class="legend-group-title">Cores</span>
+              <span class="legend-chip"><span class="lit-dot dot-verde"></span> Verde: Tempo Comum</span>
+              <span class="legend-chip"><span class="lit-dot dot-branco"></span> Branco: luz, Senhor, Maria e santos</span>
+              <span class="legend-chip"><span class="lit-dot dot-vermelho"></span> Vermelho: Espírito Santo, mártires e apóstolos</span>
+              <span class="legend-chip"><span class="lit-dot dot-roxo"></span> Roxo: penitência, Advento, Quaresma e Finados</span>
+              <span class="legend-chip"><span class="lit-dot dot-rosa"></span> Rosa: alegria (Gaudete e Laetare)</span>
+            </div>
           </div>
-          <div class="legend-group">
-            <span class="legend-group-title">Cores:</span>
-            <span class="legend-chip"><span class="lit-dot dot-verde"></span> Verde (Tempo Comum)</span>
-            <span class="legend-chip"><span class="lit-dot dot-branco"></span> Branco (Luz, Senhor, Maria e Santos)</span>
-            <span class="legend-chip"><span class="lit-dot dot-vermelho"></span> Vermelho (Espírito Santo, Mártires e Apóstolos)</span>
-            <span class="legend-chip"><span class="lit-dot dot-roxo"></span> Roxo (Penitência, Advento, Quaresma e Finados)</span>
-            <span class="legend-chip"><span class="lit-dot dot-rosa"></span> Rosa (Alegria: Gaudete e Laetare)</span>
-          </div>
-        </div>
+        </details>
 
         <div class="calendar-body-grid">
           <div class="calendar-grid-card">
@@ -736,19 +742,22 @@
        MODAL 5: AUTENTICAÇÃO SEGURA (LOGIN / CADASTRO / RECUPERAÇÃO)
   ========================================================= -->
   <dialog class="app-dialog auth-dialog" id="authDialog" closedby="any" aria-labelledby="authDialogTitle">
-    <div class="dialog-header">
-      <h2 id="authDialogTitle">Acesso Santa Cifra</h2>
-      <form method="dialog">
-        <button class="btn-close-dialog" value="close" aria-label="Fechar diálogo de acesso">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
-        </button>
-      </form>
+    <form method="dialog" class="auth-close-form">
+      <button class="btn-close-dialog" value="close" aria-label="Fechar diálogo de acesso">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </form>
+
+    <div class="auth-masthead">
+      <img class="auth-mark" src="assets/icon.svg" alt="" width="52" height="52">
+      <h2 id="authDialogTitle">Entrar</h2>
+      <p class="auth-lede" id="authDialogLede">Seus repertórios e pastas, guardados e sempre à mão.</p>
     </div>
 
     <!-- Navegação por Abas do Diálogo de Autenticação -->
     <div class="auth-tabs" role="tablist" aria-label="Opções de autenticação">
       <button type="button" class="auth-tab-btn active" id="tabAuthLogin" role="tab" aria-selected="true" data-auth-view="login">Entrar</button>
-      <button type="button" class="auth-tab-btn" id="tabAuthRegister" role="tab" aria-selected="false" data-auth-view="register">Criar Conta</button>
+      <button type="button" class="auth-tab-btn" id="tabAuthRegister" role="tab" aria-selected="false" data-auth-view="register">Criar conta</button>
       <button type="button" class="auth-tab-btn" id="tabAuthForgot" role="tab" aria-selected="false" data-auth-view="forgot">Recuperar</button>
     </div>
 
@@ -759,25 +768,32 @@
     <form id="formAuthLogin" class="auth-form-panel">
       <input type="text" id="hpAuthLogin" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="form-field">
-        <label for="loginEmail">E-mail</label>
-        <input type="email" id="loginEmail" class="dialog-input" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
+        <div class="field-label-row">
+          <label for="loginEmail">E-mail</label>
+        </div>
+        <div class="input-shell">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></span>
+          <input type="email" id="loginEmail" class="dialog-input has-icon" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
+        </div>
       </div>
       <div class="form-field">
         <div class="field-label-row">
-          <label for="loginPassword">Senha</label>
-          <button type="button" class="link-btn-sm" id="btnGoToForgot">Esqueceu a senha?</button>
+          <label for="loginPassword">Senha</label> <button type="button" class="link-btn-sm" id="btnGoToForgot">Esqueceu a senha?</button>
         </div>
-        <input type="password" id="loginPassword" class="dialog-input" required maxlength="128" placeholder="Sua senha secreta" autocomplete="current-password">
+        <div class="input-shell">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <input type="password" id="loginPassword" class="dialog-input has-icon has-toggle" required maxlength="128" placeholder="Sua senha" autocomplete="current-password"><button type="button" class="pw-toggle" data-pw-target="loginPassword" aria-label="Mostrar senha" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        </div>
       </div>
-            <div class="form-checkbox-field" style="display:flex;align-items:center;gap:8px;margin:4px 0 14px;font-size:0.88rem;color:var(--text-secondary);">
-        <input type="checkbox" id="chkRememberMe" name="remember" checked style="accent-color:var(--accent);width:16px;height:16px;cursor:pointer;">
-        <label for="chkRememberMe" style="cursor:pointer;user-select:none;">Permanecer conectado neste aparelho</label>
-      </div>
+      <label class="auth-check" for="chkRememberMe">
+        <input type="checkbox" id="chkRememberMe" name="remember" checked>
+        <span>Permanecer conectado neste aparelho</span>
+      </label>
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitLogin">Entrar no Santa Cifra</button>
       </div>
       <div class="auth-footer-prompt">
-        <span>Não tem uma conta?</span>
+        <span>Ainda não tem conta?</span>
         <button type="button" class="link-btn" id="btnGoToRegister">Criar conta grátis</button>
       </div>
     </form>
@@ -785,33 +801,48 @@
     <!-- 2. Formulário de Cadastro (Pastas Zeradas no Primeiro Acesso) -->
     <form id="formAuthRegister" class="auth-form-panel" style="display: none;">
       <input type="text" id="hpAuthRegister" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <p class="auth-hint-text">
-        Crie sua conta para salvar seus repertórios pessoais. Suas pastas iniciam <strong>zeradas</strong> para você organizar como quiser.
-      </p>
       <div class="form-field">
-        <label for="regName">Nome completo</label>
-        <input type="text" id="regName" class="dialog-input" required maxlength="60" placeholder="Ex: Maria da Silva" autocomplete="name">
+        <div class="field-label-row">
+          <label for="regName">Nome completo</label>
+        </div>
+        <div class="input-shell">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+          <input type="text" id="regName" class="dialog-input has-icon" required maxlength="60" placeholder="Ex: Maria da Silva" autocomplete="name">
+        </div>
       </div>
       <div class="form-field">
-        <label for="regEmail">E-mail</label>
-        <input type="email" id="regEmail" class="dialog-input" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
+        <div class="field-label-row">
+          <label for="regEmail">E-mail</label>
+        </div>
+        <div class="input-shell">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></span>
+          <input type="email" id="regEmail" class="dialog-input has-icon" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
+        </div>
       </div>
-      <div class="form-row-2">
-        <div class="form-field">
+      <div class="form-field">
+        <div class="field-label-row">
           <label for="regPassword">Senha</label>
-          <input type="password" id="regPassword" class="dialog-input" required minlength="8" maxlength="128" placeholder="Mínimo 8 dígitos" autocomplete="new-password">
         </div>
-        <div class="form-field">
+        <div class="input-shell">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <input type="password" id="regPassword" class="dialog-input has-icon has-toggle" required minlength="8" maxlength="128" placeholder="Mínimo 8 caracteres" autocomplete="new-password"><button type="button" class="pw-toggle" data-pw-target="regPassword" aria-label="Mostrar senha" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="field-label-row">
           <label for="regConfirmPassword">Confirmar senha</label>
-          <input type="password" id="regConfirmPassword" class="dialog-input" required minlength="8" maxlength="128" placeholder="Repita a senha" autocomplete="new-password">
+        </div>
+        <div class="input-shell">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <input type="password" id="regConfirmPassword" class="dialog-input has-icon has-toggle" required minlength="8" maxlength="128" placeholder="Repita a senha" autocomplete="new-password"><button type="button" class="pw-toggle" data-pw-target="regConfirmPassword" aria-label="Mostrar senha" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
         </div>
       </div>
-      <div class="auth-security-badge">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        <span>Dados protegidos com criptografia PBKDF2. Acesso exclusivo às suas pastas.</span>
-      </div>
+      <p class="auth-security-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        <span>Senha protegida com criptografia PBKDF2. Suas pastas começam vazias, para você organizar do seu jeito.</span>
+      </p>
       <div class="dialog-actions">
-        <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitRegister">Criar Minha Conta</button>
+        <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitRegister">Criar minha conta</button>
       </div>
       <div class="auth-footer-prompt">
         <span>Já possui uma conta?</span>
@@ -822,18 +853,20 @@
     <!-- 3. Formulário de Recuperação de Senha -->
     <form id="formAuthForgot" class="auth-form-panel" style="display: none;">
       <input type="text" id="hpAuthForgot" name="website_hp" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <p class="auth-hint-text">
-        Digite seu e-mail cadastrado. Enviaremos as instruções de recuperação de forma segura.
-      </p>
       <div class="form-field">
-        <label for="forgotEmail">E-mail cadastrado</label>
-        <input type="email" id="forgotEmail" class="dialog-input" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
+        <div class="field-label-row">
+          <label for="forgotEmail">E-mail cadastrado</label>
+        </div>
+        <div class="input-shell">
+          <span class="input-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></span>
+          <input type="email" id="forgotEmail" class="dialog-input has-icon" required maxlength="100" placeholder="seu@email.com" autocomplete="email">
+        </div>
       </div>
       <div class="dialog-actions">
-        <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitForgot">Enviar Instruções</button>
+        <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitForgot">Enviar instruções</button>
       </div>
       <div class="auth-footer-prompt">
-        <button type="button" class="link-btn" id="btnBackToLoginFromForgot">Voltar para o Login</button>
+        <button type="button" class="link-btn" id="btnBackToLoginFromForgot">Voltar para o login</button>
       </div>
     </form>
   </dialog>
@@ -1014,8 +1047,8 @@
     </div>
 
     <div class="parish-modal-tabs" role="tablist">
-      <button type="button" class="p-tab-btn active" id="tabMinList" role="tab" aria-selected="true">Ministérios Filiados</button>
-      <button type="button" class="p-tab-btn" id="tabMinCreate" role="tab" aria-selected="false">+ Solicitar Filiação de Grupo</button>
+      <button type="button" class="p-tab-btn active" id="tabMinList" role="tab" aria-selected="true">Filiados</button>
+      <button type="button" class="p-tab-btn" id="tabMinCreate" role="tab" aria-selected="false">Solicitar filiação</button>
     </div>
 
     <!-- Lista de Ministérios -->
@@ -1352,28 +1385,28 @@
     </form>
   </dialog>
 
-  <script src="js/transposition.js?v=30"></script>
-  <script src="js/chords-data.js?v=30"></script>
-  <script src="js/metronome.js?v=30"></script>
+  <script src="js/transposition.js?v=31"></script>
+  <script src="js/chords-data.js?v=31"></script>
+  <script src="js/metronome.js?v=31"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=30"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=30"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=30"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=30"></script>
-  <script src="js/songs-catalog.js?v=30"></script>
-  <script src="js/supabase-client.js?v=30"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=31"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=31"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=31"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=31"></script>
+  <script src="js/songs-catalog.js?v=31"></script>
+  <script src="js/supabase-client.js?v=31"></script>
 
-  <script src="js/modules/icons.js?v=30"></script>
-  <script src="js/modules/auth.js?v=30"></script>
-  <script src="js/modules/state.js?v=30"></script>
-  <script src="js/modules/artists-view.js?v=30"></script>
-  <script src="js/modules/catalog-view.js?v=30"></script>
-  <script src="js/modules/playlists-view.js?v=30"></script>
-  <script src="js/modules/liturgical-calendar.js?v=30"></script>
-  <script src="js/modules/parish-manager.js?v=30"></script>
-  <script src="js/modules/song-viewer.js?v=30"></script>
-  <script src="js/modules/ota-updater.js?v=30"></script>
-  <script src="js/app.js?v=30"></script>
+  <script src="js/modules/icons.js?v=31"></script>
+  <script src="js/modules/auth.js?v=31"></script>
+  <script src="js/modules/state.js?v=31"></script>
+  <script src="js/modules/artists-view.js?v=31"></script>
+  <script src="js/modules/catalog-view.js?v=31"></script>
+  <script src="js/modules/playlists-view.js?v=31"></script>
+  <script src="js/modules/liturgical-calendar.js?v=31"></script>
+  <script src="js/modules/parish-manager.js?v=31"></script>
+  <script src="js/modules/song-viewer.js?v=31"></script>
+  <script src="js/modules/ota-updater.js?v=31"></script>
+  <script src="js/app.js?v=31"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -1384,7 +1417,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=30').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=31').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

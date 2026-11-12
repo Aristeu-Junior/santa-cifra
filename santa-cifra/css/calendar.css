@@ -4,7 +4,7 @@
    ======================================================== */
 
 .calendar-section {
-  padding-bottom: calc(var(--bottom-bar-height) + 24px);
+  padding-bottom: calc(var(--bottom-nav-h) + 24px);
   animation: fadeIn 0.2s ease-out;
 }
 
@@ -27,17 +27,20 @@
 }
 
 .calendar-title-wrap h1 {
-  font-family: var(--font-title);
-  font-size: 1.85rem;
-  margin: 0 0 4px 0;
-  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 6px 0;
+  color: var(--text-main);
+  text-wrap: balance;
 }
 
 .calendar-subtitle {
   margin: 0;
-  font-size: 0.92rem;
-  color: var(--accent);
-  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 400;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -50,22 +53,21 @@
 }
 
 .btn-cal-today {
-  height: 38px;
-  padding: 0 16px;
+  height: 40px;
+  padding: 0 18px;
   border-radius: var(--radius-pill);
   border: 1px solid var(--border-color);
   background: var(--bg-surface);
-  color: var(--text-primary);
+  color: var(--text-main);
   font-weight: 700;
   font-size: 0.88rem;
   cursor: pointer;
-  transition: all 0.18s ease;
+  transition: border-color 0.18s var(--ease-out), color 0.18s var(--ease-out);
 }
 
 .btn-cal-today:hover {
-  background: var(--accent);
-  color: #ffffff;
   border-color: var(--accent);
+  color: var(--accent);
 }
 
 .calendar-month-arrows {
@@ -79,8 +81,8 @@
 }
 
 .btn-cal-nav {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -89,21 +91,22 @@
   color: var(--text-secondary);
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: background-color 0.15s var(--ease-out), color 0.15s var(--ease-out);
 }
 
 .btn-cal-nav:hover {
-  background: var(--bg-card);
-  color: var(--text-primary);
+  background: var(--bg-subtle);
+  color: var(--text-main);
 }
 
 .calendar-current-month {
   margin: 0;
-  font-size: 1.05rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
   font-weight: 700;
   min-width: 150px;
   text-align: center;
-  color: var(--text-primary);
+  color: var(--text-main);
 }
 
 /* ========================================================
@@ -138,7 +141,8 @@
   color: var(--text-secondary);
   font-size: 0.84rem;
   font-weight: 700;
-  padding: 6px 14px;
+  min-height: 36px;
+  padding: 6px 16px;
   border-radius: var(--radius-pill);
   cursor: pointer;
   white-space: nowrap;
@@ -146,123 +150,116 @@
 }
 
 .cal-filter-btn:hover {
-  color: var(--text-primary);
-  background: var(--bg-card);
+  color: var(--text-main);
+  background: var(--bg-subtle);
 }
 
 .cal-filter-btn.active {
   background: var(--accent);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(163, 29, 29, 0.25);
+  color: var(--on-accent);
 }
 
 /* ========================================================
-   Legenda Estruturada (Graus Litúrgicos vs Cores)
+   Legenda (recolhível)
    ======================================================== */
 .liturgical-legend {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 12px 16px;
-  background: var(--bg-surface);
+  background: transparent;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   color: var(--text-secondary);
+}
+
+.liturgical-legend > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: var(--tap);
+  padding: 0 16px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.liturgical-legend > summary::-webkit-details-marker { display: none; }
+
+.liturgical-legend > summary .legend-chevron {
+  display: inline-flex;
+  transition: transform 0.2s var(--ease-out);
+}
+
+.liturgical-legend[open] > summary .legend-chevron { transform: rotate(180deg); }
+
+.legend-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 4px 16px 16px;
 }
 
 .legend-group {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px 14px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .legend-group-title {
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  font-size: 0.74rem;
+  font-weight: 700;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  min-width: 52px;
 }
 
 .legend-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.4;
 }
+
+.legend-chip > :first-child { margin-top: 3px; flex-shrink: 0; }
 
 .legend-badge-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
-  line-height: 1;
+  width: 14px;
+  height: 14px;
 }
 
-.legend-badge-icon.badge-solenidade {
-  color: #eab308;
-  font-weight: 900;
-  filter: drop-shadow(0 0 2px rgba(234, 179, 8, 0.5));
-}
-
-.legend-badge-icon.badge-festa {
-  color: #3b82f6;
-}
-
-.legend-badge-icon.badge-memoria {
-  font-size: 0.95rem;
-}
+.legend-badge-icon svg { width: 14px; height: 14px; }
+.legend-badge-icon.badge-solenidade,
+.legend-badge-icon.badge-festa { color: var(--gold); }
+.legend-badge-icon.badge-memoria { color: var(--text-muted); }
 
 /* Bolinhas de cores litúrgicas */
 .lit-dot {
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   display: inline-block;
   flex-shrink: 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
-.dot-verde {
-  background-color: #16a34a;
-}
-
-.dot-branco {
-  background-color: #f8fafc;
-  border: 2px solid #eab308;
-}
-
-.dot-vermelho {
-  background-color: #dc2626;
-}
-
-.dot-roxo {
-  background-color: #9333ea;
-}
-
-.dot-rosa {
-  background-color: #ec4899;
-}
-
-.dot-solenidade {
-  box-shadow: 0 0 0 2px #eab308, 0 0 6px rgba(234, 179, 8, 0.6);
-}
+.dot-verde { background-color: var(--lc-verde); }
+.dot-branco { background-color: var(--lc-branco); box-shadow: inset 0 0 0 1.5px var(--gold); }
+.dot-vermelho { background-color: var(--lc-vermelho); }
+.dot-roxo { background-color: var(--lc-roxo); }
+.dot-rosa { background-color: var(--lc-rosa); }
 
 /* ========================================================
    Grid do Mês e Layout
    ======================================================== */
 .calendar-body-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
 }
 
 @media (min-width: 920px) {
   .calendar-body-grid {
-    grid-template-columns: 460px 1fr;
+    grid-template-columns: 460px minmax(0, 1fr);
     align-items: start;
   }
 }
@@ -271,30 +268,28 @@
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 16px 12px;
+  box-shadow: var(--shadow-soft);
 }
 
 .calendar-weekdays {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   text-align: center;
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .calendar-weekdays span:first-child {
-  color: var(--accent); /* Domingo */
+  color: var(--text-muted);
 }
 
 .calendar-days-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
 }
 
 /* Células de Dia */
@@ -306,112 +301,92 @@
   justify-content: space-between;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
-  background: var(--bg-card);
+  background: transparent;
+  color: var(--text-main);
   cursor: pointer;
-  padding: 5px 3px 4px 3px;
+  padding: 6px 2px 5px;
   position: relative;
-  transition: all 0.15s ease;
+  transition: background-color 0.15s var(--ease-out), border-color 0.15s var(--ease-out);
   user-select: none;
 }
 
 .cal-day-cell:hover:not(.empty-day) {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  border-color: var(--accent-light);
+  background: var(--bg-subtle);
 }
 
 .cal-day-cell.empty-day {
-  background: transparent;
   cursor: default;
-  opacity: 0.25;
+  opacity: 0.3;
 }
 
 .cal-day-cell.cell-filtered-out {
-  opacity: 0.2;
-  filter: grayscale(0.8);
+  opacity: 0.25;
 }
 
-/* Destaque Solene: Solenidades ganham borda e aura especial */
+/* Solenidade: moldura e fundo dourados */
 .cal-day-cell.rank-solenidade {
-  border-color: rgba(234, 179, 8, 0.45);
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(234, 179, 8, 0.08) 100%);
-  box-shadow: 0 1px 4px rgba(234, 179, 8, 0.15);
+  border-color: var(--gold-line);
+  background: var(--gold-tint);
 }
 
 .cal-day-cell.rank-solenidade .cal-day-num {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .cal-day-cell.is-selected {
-  background: var(--accent-tint, rgba(163, 29, 29, 0.12));
-  border-color: var(--accent) !important;
-  box-shadow: 0 0 0 2px var(--accent) !important;
+  background: var(--accent-tint);
+  border-color: var(--accent);
 }
 
 .cal-day-cell.is-today .cal-day-num {
-  font-weight: 900;
-  color: var(--accent);
-}
-
-.cal-day-cell.is-today::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
+  color: var(--on-accent);
   background: var(--accent);
+  border-radius: var(--radius-pill);
+  min-width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  font-weight: 700;
 }
 
 .cal-day-top-bar {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 2px;
   width: 100%;
-  padding: 0 2px;
   line-height: 1;
 }
 
 .cal-day-num {
   font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 500;
+  color: var(--text-main);
   line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .cal-day-cell.is-sunday .cal-day-num {
-  color: var(--accent);
   font-weight: 700;
 }
 
-/* Distinção clara de Solenidade, Festa e Memória no topo do dia */
+/* Marca de grau no topo do dia, sempre em traço fino */
 .cal-rank-icon {
-  font-size: 0.65rem;
-  line-height: 1;
+  display: inline-flex;
+  line-height: 0;
+  color: var(--text-muted);
 }
 
-.cal-rank-icon.icon-solenidade {
-  color: #eab308;
-  font-weight: 900;
-  font-size: 0.72rem;
-  text-shadow: 0 0 4px rgba(234, 179, 8, 0.5);
-}
-
-.cal-rank-icon.icon-festa {
-  color: #3b82f6;
-  font-size: 0.65rem;
-}
-
-.cal-rank-icon.icon-memoria {
-  font-size: 0.7rem;
-}
+.cal-rank-icon svg { width: 10px; height: 10px; stroke-width: 2.2; }
+.cal-rank-icon.icon-solenidade,
+.cal-rank-icon.icon-festa { color: var(--gold); }
 
 .cal-day-dots {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3px;
   min-height: 10px;
 }
 
@@ -429,7 +404,7 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-soft);
 }
 
 .cal-day-card-header {
@@ -449,96 +424,57 @@
 .cal-color-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 4px 10px;
+  gap: 8px;
+  padding: 4px 12px;
   border-radius: var(--radius-pill);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  background: var(--bg-card);
+  background: transparent;
   border: 1px solid var(--border-color);
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
-/* Badges de Grau Litúrgico com distinção rigorosa */
+/* Grau litúrgico: ouro para o que é solene, neutro para o resto */
 .cal-rank-pill {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   padding: 4px 12px;
   border-radius: var(--radius-pill);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  background: transparent;
 }
 
 .cal-rank-pill.pill-solenidade {
-  background: #fef08a;
-  color: #854d0e;
-  border: 1px solid #eab308;
-  box-shadow: 0 2px 6px rgba(234, 179, 8, 0.2);
-}
-
-[data-theme="dark"] .cal-rank-pill.pill-solenidade {
-  background: rgba(234, 179, 8, 0.18);
-  color: #fef08a;
-  border-color: rgba(234, 179, 8, 0.6);
+  background: var(--gold-tint);
+  color: var(--gold);
+  border-color: var(--gold-line);
 }
 
 .cal-rank-pill.pill-festa {
-  background: #dbeafe;
-  color: #1e40af;
-  border: 1px solid #93c5fd;
+  color: var(--gold);
+  border-color: var(--gold-line);
 }
 
-[data-theme="dark"] .cal-rank-pill.pill-festa {
-  background: rgba(59, 130, 246, 0.2);
-  color: #bfdbfe;
-  border-color: rgba(59, 130, 246, 0.5);
-}
-
-.cal-rank-pill.pill-memoria {
-  background: #f3e8ff;
-  color: #6b21a8;
-  border: 1px solid #d8b4fe;
-}
-
-[data-theme="dark"] .cal-rank-pill.pill-memoria {
-  background: rgba(147, 51, 234, 0.2);
-  color: #e9d5ff;
-  border-color: rgba(147, 51, 234, 0.5);
-}
-
-.cal-rank-pill.pill-memoria-fac {
-  background: var(--bg-card);
-  color: var(--text-secondary);
-  border: 1px dashed var(--border-color);
-}
+.cal-rank-pill.pill-memoria-fac { border-style: dashed; }
 
 .cal-rank-pill.pill-domingo {
-  background: var(--accent-tint, rgba(163, 29, 29, 0.1));
+  background: var(--accent-tint);
   color: var(--accent);
-  border: 1px solid var(--accent-light);
-}
-
-.cal-rank-pill.pill-feria {
-  background: var(--bg-card);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-color);
+  border-color: transparent;
 }
 
 .cal-cycle-pill {
   display: inline-flex;
   align-items: center;
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: var(--radius-pill);
-  font-size: 0.78rem;
-  font-weight: 600;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-muted);
 }
 
 .cal-date-title {
@@ -546,15 +482,18 @@
   color: var(--text-muted);
   font-weight: 500;
   margin: 0 0 4px 0;
-  text-transform: capitalize;
 }
 
+.cal-date-title::first-letter { text-transform: uppercase; }
+
 .cal-celebration-title {
-  font-family: var(--font-title);
-  font-size: 1.55rem;
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 700;
   margin: 0 0 10px 0;
-  color: var(--text-primary);
-  line-height: 1.25;
+  color: var(--text-main);
+  line-height: 1.15;
+  text-wrap: balance;
 }
 
 .cal-color-explanation {
@@ -573,120 +512,99 @@
   align-items: flex-start;
   gap: 12px;
   border-radius: var(--radius-md);
-  padding: 12px 14px;
-  font-size: 0.84rem;
-  line-height: 1.45;
-  margin-top: 6px;
-}
-
-.cal-liturgical-rule-box .rule-icon {
-  font-size: 1.25rem;
-  line-height: 1;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.cal-liturgical-rule-box.rule-solenidade {
-  background: rgba(234, 179, 8, 0.12);
-  border: 1px solid rgba(234, 179, 8, 0.4);
-  color: var(--text-primary);
-}
-
-.cal-liturgical-rule-box.rule-solenidade .rule-icon {
-  color: #eab308;
-}
-
-.cal-liturgical-rule-box.rule-memoria {
-  background: rgba(147, 51, 234, 0.08);
-  border: 1px solid rgba(147, 51, 234, 0.3);
-  color: var(--text-primary);
-}
-
-.cal-liturgical-rule-box.rule-festa {
-  background: rgba(59, 130, 246, 0.08);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-  color: var(--text-primary);
-}
-
-.cal-liturgical-rule-box.rule-feria {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  padding: 14px 16px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin-top: 8px;
+  background: var(--bg-subtle);
   color: var(--text-secondary);
 }
+
+.cal-liturgical-rule-box strong { color: var(--text-main); }
+.cal-liturgical-rule-box .rule-text { max-width: 68ch; }
+
+.cal-liturgical-rule-box .rule-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--text-muted);
+}
+
+.cal-liturgical-rule-box.rule-solenidade,
+.cal-liturgical-rule-box.rule-festa {
+  background: var(--gold-tint);
+}
+
+.cal-liturgical-rule-box.rule-solenidade .rule-icon,
+.cal-liturgical-rule-box.rule-festa .rule-icon { color: var(--gold); }
 
 /* Leituras do Dia */
 .cal-section-subtitle {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1.05rem;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--text-primary);
-  margin: 0 0 14px 0;
+  color: var(--text-main);
+  margin: 0 0 6px 0;
 }
+
+.cal-section-subtitle svg { color: var(--accent); flex-shrink: 0; }
 
 .cal-readings-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .cal-reading-item {
-  background: var(--bg-card);
-  border-radius: var(--radius-md);
-  padding: 12px 14px;
-  border-left: 3px solid var(--accent);
+  padding: 14px 0;
+  border-top: 1px solid var(--border-subtle);
 }
 
+.cal-reading-item:first-child { border-top: 0; }
+
 .cal-reading-label {
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--accent);
-  margin-bottom: 2px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
 }
 
 .cal-reading-ref {
-  font-size: 0.92rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--text-main);
   margin-bottom: 4px;
 }
 
 .cal-reading-theme {
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
+  max-width: 68ch;
 }
 
-/* Músicas Sugeridas */
+/* Músicas sugeridas: lista simples, sem cartões aninhados */
 .cal-songs-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .cal-song-item {
   display: flex;
   flex-direction: column;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 14px 16px;
-  gap: 10px;
-  transition: all 0.18s ease;
+  padding: 16px 0;
+  gap: 8px;
+  border-top: 1px solid var(--border-subtle);
   cursor: pointer;
-  text-decoration: none;
   color: inherit;
 }
 
-.cal-song-item:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-}
+.cal-song-item:first-child { border-top: 0; }
+.cal-song-item:hover .cal-song-title { color: var(--accent); }
 
 .cal-song-top {
   display: flex;
@@ -698,26 +616,25 @@
 .cal-song-moment-tag {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 0.76rem;
+  gap: 6px;
+  font-size: 0.82rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--accent);
-  background: var(--accent-tint, rgba(163, 29, 29, 0.08));
-  padding: 2px 8px;
-  border-radius: var(--radius-pill);
+  color: var(--text-muted);
+  margin-bottom: 4px;
 }
 
+.cal-song-moment-tag svg { width: 15px; height: 15px; }
+
 .cal-song-title {
-  font-size: 1rem;
+  font-size: 1.02rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--text-main);
   margin: 0;
+  transition: color 0.18s var(--ease-out);
 }
 
 .cal-song-composer {
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   color: var(--text-secondary);
   margin: 2px 0 0 0;
 }
@@ -725,28 +642,28 @@
 .cal-song-action-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
+  gap: 4px;
+  min-height: var(--tap);
+  font-size: 0.84rem;
   font-weight: 700;
   color: var(--accent);
   white-space: nowrap;
 }
 
 .cal-song-why {
-  font-size: 0.84rem;
-  line-height: 1.45;
+  font-size: 0.88rem;
+  line-height: 1.5;
   color: var(--text-secondary);
-  background: var(--bg-surface);
-  border-left: 2px solid var(--accent);
-  padding: 8px 12px;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   margin: 0;
+  max-width: 68ch;
 }
+
+.cal-song-why strong { color: var(--text-main); font-weight: 700; }
 
 /* Responsividade Mobile */
 @media (max-width: 600px) {
   .calendar-title-wrap h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .calendar-header {
     flex-direction: column;
@@ -770,9 +687,19 @@
     padding: 16px 14px;
   }
   .cal-celebration-title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .legend-group {
     gap: 6px 10px;
   }
 }
+
+/* Cormorant usa numerais antigos por padrão; referências bíblicas pedem numerais alinhados */
+.cal-reading-ref,
+.cal-celebration-title,
+.calendar-current-month,
+.cal-section-subtitle,
+.calendar-title-wrap h1 { font-variant-numeric: lining-nums; }
+
+.calendar-body-grid > *,
+.calendar-layout > * { min-width: 0; }

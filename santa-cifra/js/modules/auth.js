@@ -854,8 +854,25 @@ window.SantaCifra = window.SantaCifra || {};
     box.textContent = '';
   }
 
+  const AUTH_COPY = {
+    login: ['Entrar', 'Seus repertórios e pastas, guardados e sempre à mão.'],
+    register: ['Criar conta', 'Salve repertórios, pastas e favoritos em qualquer aparelho.'],
+    forgot: ['Recuperar acesso', 'Informe seu e-mail e enviaremos as instruções com segurança.']
+  };
+
   function switchAuthTab(view) {
     hideAlert();
+    const copy = AUTH_COPY[view] || AUTH_COPY.login;
+    const titleEl = document.getElementById('authDialogTitle');
+    const ledeEl = document.getElementById('authDialogLede');
+    if (titleEl) titleEl.textContent = copy[0];
+    if (ledeEl) ledeEl.textContent = copy[1];
+    document.querySelectorAll('.pw-toggle').forEach((btn) => {
+      const input = document.getElementById(btn.getAttribute('data-pw-target'));
+      if (input) input.type = 'password';
+      btn.setAttribute('aria-pressed', 'false');
+      btn.setAttribute('aria-label', 'Mostrar senha');
+    });
     const tabs = document.querySelectorAll('.auth-tab-btn');
     tabs.forEach((t) => {
       const active = t.getAttribute('data-auth-view') === view;
@@ -1110,6 +1127,17 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
+    document.querySelectorAll('.pw-toggle').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const input = document.getElementById(btn.getAttribute('data-pw-target'));
+        if (!input) return;
+        const show = input.type === 'password';
+        input.type = show ? 'text' : 'password';
+        btn.setAttribute('aria-pressed', String(show));
+        btn.setAttribute('aria-label', show ? 'Ocultar senha' : 'Mostrar senha');
+      });
+    });
+
     const tabButtons = document.querySelectorAll('.auth-tab-btn');
     tabButtons.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -1206,7 +1234,7 @@ window.SantaCifra = window.SantaCifra || {};
         } finally {
           if (submitBtn) {
             submitBtn.disabled = false;
-            submitBtn.textContent = 'Criar Minha Conta';
+            submitBtn.textContent = 'Criar minha conta';
           }
         }
       });
@@ -1235,7 +1263,7 @@ window.SantaCifra = window.SantaCifra || {};
         } finally {
           if (submitBtn) {
             submitBtn.disabled = false;
-            submitBtn.textContent = 'Enviar Instruções';
+            submitBtn.textContent = 'Enviar instruções';
           }
         }
       });
