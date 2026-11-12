@@ -1,10 +1,10 @@
 {
-  "version": "3.9.9",
-  "apkVersionCode": 28,
-  "buildId": "sc-v3.9.9-banda-arkanjos-complete-discography-13-hits-v35",
-  "totalSongs": 560,
-  "liturgicalSongs": 297,
-  "popularSongs": 263,
+  "version": "4.0.0",
+  "apkVersionCode": 29,
+  "buildId": "sc-v4.0.0-complete-artists-catalog-876-v36",
+  "totalSongs": 876,
+  "liturgicalSongs": 368,
+  "popularSongs": 508,
   "apkDownloadUrl": "https://santa-cifra.surge.sh/santa-cifra.apk",
   "liveUrl": "https://santa-cifra.surge.sh"
 }

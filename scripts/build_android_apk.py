@@ -26,8 +26,8 @@ APKSIGNER = os.path.join(BUILD_TOOLS, "apksigner.bat")
 MANIFEST_XML = """<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.santacifra.liturgia"
-    android:versionCode="23"
-    android:versionName="3.9.4">
+    android:versionCode="29"
+    android:versionName="4.0.0">
 
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="35" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -105,7 +105,7 @@ public class MainActivity extends Activity {
     public class NativeBridge {
         @JavascriptInterface
         public String getVersion() {
-            return "3.9.3";
+            return "4.0.0";
         }
 
         @JavascriptInterface

@@ -1,6 +1,6 @@
 -- SANTA CIFRA — Seed de Músicas Litúrgicas e Populares Católicas
 -- Gerado automaticamente a partir de data/songs.json (Versão 3.8.5)
--- Total de músicas: 560
+-- Total de músicas: 876
 
 INSERT INTO public.songs (
   id, title, artist, composer, original_key, bpm, time_signature,
@@ -40060,6 +40060,29855 @@ Face a face com meu Deus,
 Dm7        G       C
 Descanso eterno eu terei!',
   to_tsvector('portuguese', 'Face a Face ' || '')
+),
+(
+  'na-lingua-dos-anjos-banda-ceremonya',
+  'Na Língua Dos Anjos',
+  'Banda Ceremonya',
+  'Banda Ceremonya',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  D/F#  C  D9
+
+G                        D/F#
+ Diante do Teu Altar, eu quero Te
+adorar
+
+              C    Am    D9
+Na língua dos Anjos!! Ou ôu!
+
+G                     D/F#
+Diante da criação, eu quero adentrar
+
+            C     Am    D9
+O Santo dos Santos!! Ou ôu!
+
+Em          Em7
+Quero te adorar
+
+           D9   C#m7(5-)
+De corpo inteiro
+
+  Am        G/B
+Viver o Teu amor
+
+   C         D
+Em Verdade e Vida!
+
+Em            Em7
+Fitando o meu olhar
+
+        D9    C#m7(5-)
+No amor primeiro
+
+  Am           G/B
+Encontro Teu favor
+
+ C          D
+Tal alma querida!
+
+G
+Diante
+
+Em             Em7
+Me ensina a perdoar
+
+            D9 C#m7(5-)
+Na Graça do Reino
+
+      Am          G/B
+Com a força do louvor
+
+  C          D
+Renovo minha vida!
+
+Em        Em7
+Quero te amar
+
+           D  C#m7(5-)
+No amor primeiro
+
+    Am            G/B
+Tua graça e Teu calor
+
+  C             D
+Completam minha vida!
+
+G                    D/F#
+Diante do Teu Altar,eu  quero Te
+adorar
+
+              C    Am   D
+Na língua dos Anjos!!Ou ôu!
+
+G                  D/F#
+Diante da criação, quero adentrar
+
+            C     Am   D
+O Santo dos Santos!!Ou ôu!
+
+G                 D/F#
+E na Consagração, quero admirar
+
+            C    Am   D9
+O Teu Corpo Santo!!Ou ôu!
+
+G                    D/F#
+Diante do Teu Altar, quero Te adorar
+
+            C     Am  D
+Com os Teus Anjos!!Ou ôu!
+
+G                    D/F#
+Diante do Teu Altar, quero me prostrar
+
+            C    Am   D
+Com os Teus Anjos!!Ou ôu!',
+  to_tsvector('portuguese', 'Na Língua Dos Anjos ' || '')
+),
+(
+  'diante-do-altar-banda-romanos',
+  'Diante do Altar',
+  'Banda Romanos',
+  'Banda Romanos',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: C Em F Dm G (2x)
+
+C               Em
+Senhor, venho oferecer
+
+F                       G
+A minha vida como sacrifício    (2x)
+
+C                                 Em
+Venho Te entregar aos pés da cruz
+
+F                               G
+Todo meu amor em teu altar
+
+        F          G               C
+Venho Te adorar diante dos Teus pés
+G/B Am Am/G
+
+     F
+E Te peço, ó Pai, que faça em mim
+G
+
+                C    C7
+O Teu querer
+
+            F           G           C
+Pois é grande e maravilhoso o Teu amor
+G/B Am Am/G
+
+         F         G       C
+ E em Ti eu sempre vou confiar
+C7
+
+            F           G           C
+Pois é grande e maravilhoso o Teu amor
+G/B Am Am/G
+
+         F         G       C
+ E em Ti eu sempre vou confiar
+G/B
+
+Solo Sax: Am Bb F C G/B
+
+         (Am Bb F G)',
+  to_tsvector('portuguese', 'Diante do Altar ' || '')
+),
+(
+  'eu-tomo-posse-banda-ceremonya',
+  'Eu Tomo Posse',
+  'Banda Ceremonya',
+  'Banda Ceremonya',
+  'G#m',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro.: G#m G#m7  E/G#  F#
+
+G#m       F#/G#        E/G#
+ Calço meus pés em prontidão
+
+    F#           G#m
+Pra anunciar o Amor
+
+    F#/G#         G#m    D#sus4
+A Espada está em minhas mãos
+
+G#m       F#/G#         E/G#
+Miguel está em meu favor
+
+    F#           G#m
+Levanta-te, ó Senhor
+
+    F#/G#     G#m    D#sus4
+E os inimigos correrão
+
+Refrão:
+
+G#m
+Eu tomo posse, ó Pai
+Eu tomo posse, ó Pai
+Eu tomo posse, ó Pai
+
+   E      F#  D#sus4
+Do Teu poder!! (2x)
+
+G#m       F#/G#         E/G#
+Os ímpios tremem de temor
+
+    F#           G#m
+Aos passos do Senhor
+
+  F#/G#        G#m   D#sus4
+Milhares caem pelo chão
+
+G#m     F#/G#         E/G#
+ Em meio à perseguição
+
+        F#          G#m
+Quem me livra é o Senhor
+
+  F#/G#       G#m   D#sus4
+Do Alto vem a Salvação
+
+(Refrão)
+
+C#m       B        F#/A#   F#
+ Blindado pelo Seu Amor
+
+C#m       B        F#/A#   F#
+ Sou guerreiro do meu Deus
+
+C#m       B        F#/A#   F#
+ Fortalecei-vos no Senhor
+
+C#m       B        F#/A#   F#
+ Pois soberano é o Seu poder
+
+(Refrão)',
+  to_tsvector('portuguese', 'Eu Tomo Posse ' || '')
+),
+(
+  'sacramento-da-cura-banda-ceremonya',
+  'Sacramento da Cura',
+  'Banda Ceremonya',
+  'Banda Ceremonya',
+  'Cm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Cm             Bb/C
+Me ensinou a amar, me chamou de amigo
+
+   Ab/C              Fm       Gm
+Minha fé nasceu, então fiquei aqui
+
+   Cm              Bb/C
+Andou sobre o mar, me livrou do perigo
+
+   Ab/C             Fm         Gm
+Curou Bartimeu, muitos milagres vi
+
+    Cm        Bb/C
+É mistério de Amor
+
+      Ab
+O Pai Eterno enviou
+
+     Bb      Gm         F   G
+O sacramento que cura o coração
+
+          :Cm          Ab
+          :No altar está meu Senhor
+
+          :Fm          Bb     Bb/Ab
+          :Vou comungar o seu amor
+
+          :        Eb/G
+:Refrão   :Seu mistério em mim
+
+          :     Ab
+          :No vinho e no pão
+
+          :       Fm              G4
+          :É o que faz mover a sua mão
+G',
+  to_tsvector('portuguese', 'Sacramento da Cura ' || '')
+),
+(
+  'abraco-amigo-banda-ceremonya',
+  'Abraço Amigo',
+  'Banda Ceremonya',
+  'Banda Ceremonya',
+  'Bm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  11,
+  'Entrada / Acolhida',
+  'Qualquer',
+  '',
+  'popular',
+  'Intro: Bm G
+
+      Bm
+Mesmo longe,
+
+           A
+Toca o coração...
+
+        G
+Deus unindo o pensamento,
+
+     A
+A palavra e a emoção!!
+
+ D                      A
+Onde eu estiver, tu também estarás...
+
+      G
+Meu ombro, meu colo...
+
+       A
+Tua lágrima também
+
+C           F
+É meu sofrimento!!
+
+Bm
+E quando eu quiser te abraçar,
+
+              G              A
+Amigo, vou deixar de te esquecer...
+
+   Bm
+E quando a solidão chegar, eu vou
+lembrar
+
+     D                          C
+Que mesmo detrás das nuvens, o sol
+A
+brilha todo dia!!
+
+Solo: || Dm Bb C ||
+
+G7 A7
+
+Últimos refrões:
+
+Dm Bb C Dm F Eb C',
+  to_tsvector('portuguese', 'Abraço Amigo ' || '')
+),
+(
+  'faco-nova-todas-as-coisas-banda-ceremonya',
+  'Faço Nova Todas As Coisas',
+  'Banda Ceremonya',
+  'Banda Ceremonya',
+  'C',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: C  Dm  C  Dm  G  F# (2x) Dm
+
+Dm
+É vida que brota da vida
+
+C
+É fruto que cresce do amor
+
+G/B
+É vida que vence a morte
+
+Bb
+É vida que vem do Senhor
+
+Dm
+É vida que brota da vida
+
+C
+É fruto que cresce do amor
+
+G/B
+É vida que vence a morte
+
+Bb
+É vida que vem do Senhor
+
+(Faz o riff da introdução)
+
+C    Dm                   C        Dm
+Eis/ que faço nova todas as coisas
+yeah
+
+C    Dm                  G      F#
+Que faço nova todas as coisas yeah
+
+C    Dm                   C        Dm
+Que faço nova todas as coisas faço
+tudo de novo porque sou Teu REi
+
+C    Dm                   C        Dm
+Eis que faço nova todas as coisas yeah
+
+C    Dm                   G      F#
+Que faço nova todas as coisas yeah
+
+C    Dm                   C
+Que faço nova todas as coisas faço
+Dm                         Dm
+tudo de novo porque sou Teu REi
+
+Deixei o sepulcro vazio
+A morte não me segurou
+A pedra que então me prendia
+No terceiro dia rolou
+Deixei o sepulcro vazio
+A morte não me segurou
+A pedra que então me prendia
+No terceiro dia rolou
+
+RefrãO
+Eu hoje lhe dou vida nova
+Renovo em ti o amor
+Lhe dou uma nova esperança
+Tudo que era velho passou
+Eu hoje lhe dou vida nova
+Renovo em ti o amor
+Lhe dou uma nova esperança
+Tudo que era velho passou
+
+Refrão',
+  to_tsvector('portuguese', 'Faço Nova Todas As Coisas ' || '')
+),
+(
+  'amor-verdadeiro-banda-romanos',
+  'Amor Verdadeiro',
+  'Banda Romanos',
+  'Banda Romanos',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A         E/G#
+O Senhor, nos resgatou
+
+A          E/G#
+Nos uniu e nos restaurou
+
+Bm              E/G#
+Para livre estarmos, na Sua presença
+
+Bm         D         E4  E
+Para livres vivermos o Seu amor
+
+A        E/G#
+Quanto amor Ele nos ensinou
+
+A         E/G#
+Quanta paz Ele nos deixou
+
+Bm        E/G#
+Para vivermos na unidade
+
+Bm    D  E4   E
+Celebrando o amor
+
+A
+Ele nos amou primeiro
+
+D            E
+Pra que pudéssemos amar
+
+A
+No amor verdadeiro
+
+D              E
+Vamos viver pra Te entregar
+
+Bm       E/G#
+A vontade dO Senhor
+
+    Bm     D  E4  E
+É que sejamos um no amor
+
+D   E
+De Jesus
+
+D    E  D  E  A
+De Jesus',
+  to_tsvector('portuguese', 'Amor Verdadeiro ' || '')
+),
+(
+  'grande-es-tu-banda-romanos',
+  'Grande És Tu',
+  'Banda Romanos',
+  'Banda Romanos',
+  'A',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  15,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A               D/A
+Senhor Jesus eu quero expressar
+
+                                  A
+A minha gratidão por tão grande amor
+
+                               D7+
+Quero entoar o mais belo louvor
+
+                 Bm7                E4
+Então a minha alma glorifica ao Senhor
+E
+
+  E4   E  A             A   C#m
+Grande és tu Senhor, Grande  és
+D
+tu Senhor
+
+   D   C#m  Bm7        C#m7   D
+O meu pra__zer é agradar     teu
+E   (G E)   2x
+coração
+
+       E      A/C#   D7+
+E quando eu levan______tar as
+A/C#   Bm7
+minhas mãos
+
+       C#m7         F#m7     E
+O meu louvor irá tocar o céu irá tocar
+D     G7+
+
+           D/E    E
+O teu coração
+
+       E       A/C#   D7+
+E quando eu levan______tar as minhas
+E/D
+mãos
+
+       C#m7        F#m7     E        D
+O meu louvor irá tocar o céu irá tocar
+G7+
+
+           D/E   E
+O teu coração',
+  to_tsvector('portuguese', 'Grande És Tu ' || '')
+),
+(
+  'e-certo-tua-presenca-comunidade-doce-mae-de-deus',
+  'É Certo Tua Presença',
+  'Comunidade Doce Mãe de Deus',
+  'Comunidade Doce Mãe de Deus',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: G  D/F#  C  D/F#  G  D/F#  C9
+G/B  Am  Bm  C9  Am  C/D
+
+  G            D/F#    C
+É certo Tua presença está aqui. É
+G           D/F#       C     G/B
+certo Teu Espírito nos unge.
+
+  Am                      Bm
+É certo outra vez o véu vai se rasgar
+C          G/B        Am     D/F#
+e como no calvário, Tua vida doar.
+
+  G            D/F#    C
+É certo Tua presença está aqui. É
+G           D/F#       C     G/B
+certo Teu Espírito nos unge.
+
+  Am                      Bm
+É certo outra vez o véu vai se rasgar
+C          G/B        Am     D/F#
+e como no calvário, Tua vida doar.
+
+   G          D/F#    Em
+Adorado, bendito em todo viver,
+G/B         C9            Am     C/D
+exaltado em Teu corpo, em Teu sangue.
+C/E D/F#
+
+     G       D/F#     Em
+Majestade, supremo e bom Senhor, para
+Am       G/B   C
+Ti o meu can - to,
+
+     G/B Am            C/D      C  Bm
+para Ti  todo o meu louvor.
+Am  Bm  C  Am  C/D
+
+É certo Tua presença...
+
+       G           D/F#
+Adorado, bendito em todo viver,
+Em        G/B C             Am
+exaltado em Teu corpo, em Teu sangue.
+C/D C/E D/F#
+
+        G             D/F#      Em
+Majestade, supremo e bom Senhor, para
+Em/D      Am G/B C
+Ti o meu canto,
+
+G/B Am  C/D               G
+para Ti todo o meu louvor.
+
+Am               B
+Tu és o princípio e o fim de tudo, só
+Em C          Bm
+Tu és a fortaleza,
+
+C9     G/B Am7          C/D
+Rocha inabalável, confio em Ti.
+
+Am               B
+Tu és o princípio e o fim de tudo, só
+Em C          Bm
+Tu és a fortaleza,
+
+C      G/B Am           C/D
+Rocha inabalável, confio em Ti.',
+  to_tsvector('portuguese', 'É Certo Tua Presença ' || '')
+),
+(
+  'minha-oferta-comunidade-doce-mae-de-deus',
+  'Minha Oferta',
+  'Comunidade Doce Mãe de Deus',
+  'Comunidade Doce Mãe de Deus',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'F            Am/F                Bb/F
+Um coração doado, ó Senhor, e entregue
+Bb/C
+é minha oferta
+
+F               Am7/F
+Deponho minhas mãos e meu trabalho
+
+        Bb/F              Bb/C
+Pra viver unicamente para Ti
+
+Bb      Am       Gm         C
+Tu és a causa da minha decisão
+
+   Bb     Am        Bb        Am
+E sei que isto custará minha vida, sou
+Bb     Gm     C C7
+devedor do amor
+
+ F            Bb
+Minha oferta, é mais que as renúncias,
+Am
+é real
+
+        Gm             C
+Me derramo aos teus pés
+
+F                    Bb
+Minha oferta é aceitar que tudo está
+Am
+em tuas mãos
+
+   Gm            C   F
+A verdade do meu coração',
+  to_tsvector('portuguese', 'Minha Oferta ' || '')
+),
+(
+  'cheia-de-graca-banda-romanos',
+  'Cheia de Graça',
+  'Banda Romanos',
+  'Banda Romanos',
+  'Bm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro]  Bm Em A D D4 D D9 D F#  (Bm
+Em A D D4 D9 D)
+
+Bm              Em     A
+Ouvi falar de uma mulher
+
+          D     D4 D9 D D7
+mãe de tal homem
+
+          G  D/F#    Em
+cheia de graça,          de infinita
+D
+coragem
+
+Bm                Em           A
+manifestou-se presente ao chamado do
+D D7
+Pai
+
+      G   D/F#     Em
+Ave-Maria                   cheia de
+D
+graça
+
+Bm      Em    A         D
+Santa Maria    Mãe de Jesus
+
+       G  D/F#  Em             D
+ Sua coragem,       te fez grandiosa
+
+Bm            Em A
+Aos olhos do Pai
+
+          D    D7
+E de toda terra
+
+         G  D/F#    Em    A      D
+bendita Maria              que se doou
+
+Bm      Em      A        D
+humildemente ao Pai com amor',
+  to_tsvector('portuguese', 'Cheia de Graça ' || '')
+),
+(
+  'amigo-banda-romanos',
+  'Amigo',
+  'Banda Romanos',
+  'Banda Romanos',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  7,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'popular',
+  'A
+Não pense estar sozinho
+
+Não pense estar vazio
+
+           F#m                 C#m
+Pois nessa vida desencontros terás
+
+    Bm            D        E
+Mas mesmo assim Jesus é contigo
+
+  A
+E mesmo que haja angustias no seu
+coração
+
+E mesmo que os problemas abalem teu
+ser
+
+      F#m            C#m
+Jesus não te desamparará
+
+     Bm         D        E  E7
+E também jamais te deixará
+
+          A          C#m
+Jesus é o mesmo de ontem
+
+   Bm       D       E    E7
+De hoje, e eternamente será
+
+       A                 C#m
+
+Não importa qual a sua situação
+
+  Bm       D
+Jesus cuidará de você
+
+            E
+Ele cuidará de você
+
+               A
+Ele cuidará de você',
+  to_tsvector('portuguese', 'Amigo ' || '')
+),
+(
+  'chuva-de-rosas-comunidade-catolica-mar-a-dentro',
+  'Chuva de Rosas',
+  'Comunidade Católica Mar a Dentro',
+  'Comunidade Católica Mar a Dentro',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração / Devoção',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D                              A7
+“No coração da Igreja, serei o amor”
+
+            Em  A7           D
+Disseste um dia, a nosso Senhor
+
+            D7                G    Gm6
+Vem nos ensinar, ó Santa Terezinha
+
+                  D   Bm7     Em
+A fazer da nossa vi___da um sinal
+
+A7    D  ( Am  D7 )
+Do amor
+
+[Refrão]
+
+        G  A/G          F#m7   Bm7
+Derramarei, uma chuva de rosas
+
+             Em      A7
+Uma chuva de bênçãos
+
+                 D     ( Am7  D7 )
+Sobre a terra inteira
+
+  G  A/G          F#m7   Bm7
+Derramarei, uma chuva de rosas
+
+             Em      A7
+Uma chuva de bênçãos
+
+                 D     ( A7 )
+Sobre a terra inteira
+
+              D                  A7
+Nas pequenas coisas, deste uma lição
+
+           Em    A7             D
+Servindo a Cristo, sempre no irmão
+
+    D7              G  Gm6
+Eis ai, a nossa missão
+
+               D   Bm7  Em    A7   D
+Intercede por nós, pela nossa vocação
+( Am D7 )
+
+[Refrão]
+
+        G  A/G          F#m7   Bm7
+Derramarei, uma chuva de rosas
+
+             Em      A7
+Uma chuva de bênçãos
+
+                 D     ( Am7  D7 )
+Sobre a terra inteira
+
+  G  A/G          F#m7   Bm7
+Derramarei, uma chuva de rosas
+
+             Em      A7
+Uma chuva de bênçãos
+
+                 D
+Sobre a terra inteira',
+  to_tsvector('portuguese', 'Chuva de Rosas ' || '')
+),
+(
+  'vontade-de-deus-comunidade-doce-mae-de-deus',
+  'Vontade de Deus',
+  'Comunidade Doce Mãe de Deus',
+  'Comunidade Doce Mãe de Deus',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  20,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D             D9+          Bm7
+Estás aqui Senhor, e me chamas a
+G9
+entrar, em teus aposentos
+
+        G/A
+Em minh´alma habitar
+
+          D9         D7M(9)       Bm7
+No mais íntimo de mim, em ti mesmo vou
+ficar
+
+         G9
+No meu mais profundo, em minh´alma
+G/A
+Teu lugar
+
+G9      G/A             D4  B D/F#
+Como entender meus caminhos?
+
+G9               A9             D
+Quem pode perscrutar Teus caminhos?
+D/F#
+
+G9             A/G   F#m7          Bm7
+Se queres eu quero, se chamas eu vou
+
+Em7       D/F#       G9-
+És a vida da minha vida, é em Ti que
+G/A
+eu sou
+
+              D9   D/F#       G9
+Vontade de Deus, és meu paraíso,
+A9      D9    F#m       G9 D/F#
+Vontade de Deus, és meu paraíso
+
+      Em7                         Asus
+Todo dia é um novo dia pra te amar
+A9
+
+           G9                 Bm7
+Mais que ontem, no sim de hoje, o
+C9       G/A
+novo se fará
+
+      D9   D/F#       G9
+Vontade de Deus, és meu paraíso,
+A9      D9   F#m         G9     D/F#
+Vontade de Deus, és meu paraíso
+
+      Em7                         Asus
+Todo dia é um novo dia pra te amar
+A9
+
+           G9                 Bm7
+Mais que ontem, no sim de hoje, o
+C9       G/A
+novo se fará
+
+(solo) D9  D/F#  G9  A9  D9  D/F#   G9
+A#°
+
+Bm7          F#m      G9 A/C# Bm7
+Quem pode lutar contigo?
+
+              F#m7    G9 D/F# G9
+Quem pode vencer a Ti?
+
+G9             A/G   F#m7          Bm7
+Se queres eu quero, se chamas eu vou
+
+Em7       D/F#       G9-
+És a vida da minha vida, é em Ti que
+G/A
+eu sou
+
+(final) D9  Bm9  G9  A9  Gm/D  D9',
+  to_tsvector('portuguese', 'Vontade de Deus ' || '')
+),
+(
+  'mar-a-dentro-eu-vou-comunidade-catolica-mar-a-dentro',
+  'Mar a Dentro Eu Vou',
+  'Comunidade Católica Mar a Dentro',
+  'Comunidade Católica Mar a Dentro',
+  'Bm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  3,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Bm7  C#m7  Bm7  C#m7  A
+
+[Refrão]
+
+A       Bm7
+Mar a Dentro eu vou
+
+                  C#m7
+Mar a Dentro eu estou
+
+  Bm7       A
+Para servir a Ti, Senhor
+
+[Primeira Parte]
+
+C#m7
+De manhã um abraço
+
+                 Bm7
+Um sorriso no irmão
+
+   C#m7                   A
+O amor está reinando no ar
+
+C#m7
+Somos uma família
+
+             Bm7
+Em um só coração
+
+ C#m7              A
+A nossa missão é amar
+
+C#m7  Bm7
+A Ti Senhor!
+
+                  C#m7
+Mar a Dentro eu estou!
+
+A   C#m7   Bm7
+Amar a Ti Senhor
+
+                  C#m7
+Mar a Dentro eu estou!
+
+[Refrão]
+
+A       Bm7
+Mar a Dentro eu vou
+
+                  C#m7
+Mar a Dentro eu estou
+
+  Bm7       A
+Para servir a Ti, Senhor
+
+[Segunda Parte]
+
+C#m7
+Se ofendo o irmão
+
+                Bm7
+Logo peço perdão
+
+   C#m7                   A
+O amor está reinando no ar
+
+C#m7
+Somos todos chamados
+
+            Bm7
+A viver a união
+
+  C#m7              A
+A nossa missão é amar
+
+C#m7  Bm7
+A Ti Senhor!
+
+                  C#m7
+Mar a Dentro eu estou!
+
+A   C#m7   Bm7
+Amar a Ti Senhor
+
+                  C#m7
+Mar a Dentro eu estou!
+
+[Refrão]
+
+A       Bm7
+Mar a Dentro eu vou
+
+                  C#m7
+Mar a Dentro eu estou
+
+  Bm7       A
+Para servir a Ti, Senhor',
+  to_tsvector('portuguese', 'Mar a Dentro Eu Vou ' || '')
+),
+(
+  'cordeiro-imolado-comunidade-doce-mae-de-deus',
+  'Cordeiro Imolado',
+  'Comunidade Doce Mãe de Deus',
+  'Comunidade Doce Mãe de Deus',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Cordeiro / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intr:     Em7 Am7 D9 Em C9 D9 D#dim
+Em7 C9 D9 Em C9 D9
+
+G     D/F#  C9         D  D4
+Na região tenebrosa da morte
+G    D/F#  C9 D9
+levantou-se uma luz.
+
+G      D/F#    C9       D D4   G
+Essa luz           para mim       é
+D/F#  C9 D9 Em
+Jesus, é Jesus.
+
+             C9         D9
+Cordeiro Imolado, Vitorioso, meus
+G        D/F#  Em
+lábios querem cantar a Tua glória,
+
+              C9                    D9
+Viver a Teu lado, cantar Teus louvores
+G          D/F# Em
+e proclamar bem alto: és Senhor.
+
+             C9         D9
+Cordeiro Imolado, Vitorioso, meus
+G        D/F#  Em
+lábios querem cantar a Tua glória,
+
+              C9                    D9
+Viver a Teu lado, cantar Teus louvores
+G   D/F# C9 G/B Am D9
+e proclamar bem alto: és Senhor.
+
+   G          D/F#  C9       D9
+Viver pra te amar é o meu desejo, na
+G        D/F#   C9       D9
+cruz me amou, na cruz do amor.
+
+    G           D/F# C9         D9
+Seu sangue derramado em nossas
+cabeças,
+
+ G          D/F#      C9        D9  Em
+nas chagas abertas, feridas de amor.
+
+             C9         D9
+Cordeiro Imolado, Vitorioso, meus
+G        D/F#  Em
+lábios querem cantar a Tua glória,
+
+              C9                    D9
+Viver a Teu lado, cantar Teus louvores
+G          D/F# Em
+e proclamar bem alto: és Senhor.
+
+             C9         D9
+Cordeiro Imolado, Vitorioso, meus
+G        D/F#  Em
+lábios querem cantar a Tua glória,
+
+              C9                    D9
+Viver a Teu lado, cantar Teus louvores
+G   D/F# C9 G/B Am D9
+e proclamar bem alto: és Senhor.
+
+Viver pra te amar...',
+  to_tsvector('portuguese', 'Cordeiro Imolado ' || '')
+),
+(
+  'mais-bela-flor-de-deus-comunidade-doce-mae-de-deus',
+  'Mais Bela Flor de Deus',
+  'Comunidade Doce Mãe de Deus',
+  'Comunidade Doce Mãe de Deus',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  32,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro:  G/A G/B A/C# (D9 A/C# Bm7 Bm/A
+D/F# G6/7+ D/F# Em7 E/D A/C# G/B G/A )
+(2x)
+
+D9                A/C#
+Tantas vezes consolados por teu amor,
+Bm       Bm/A
+
+ G                  Em7
+tantas vezes nos mostraste o teu
+G/A
+Senhor.
+
+  D9               D/C
+Tantas vezes foste tu que abriste o
+G/B          Gm/Bb     D/A
+caminho nos dando mais sentido
+Bm7    Em7 G/A D9 G/D
+de dizer sim.
+
+D9            F#m   Bm7  F#m  G
+Mãe peregrina, Mãe Rainha, de tantos
+D/F#           Em7           G/A
+nomes, mais bela flor de Deus.
+
+D9              A/C#  Bm       F#m7
+Mãe da ternura, Virgem Maria,
+D/F# G      D/F#    Em7 G/A   Bm7  A/B
+para nós és Doce Mãe de Deus.
+B/D#
+
+E9                B/D#
+Tantas vezes consolados por teu amor,
+C#m       C#m/B
+
+ A                  F#m7
+tantas vezes nos mostraste o teu
+A/B
+Senhor.
+
+  E9               E/D
+Tantas vezes foste tu que abriste o
+A/C#         Am/C     E/B
+caminho nos dando mais sentido
+C#m7    F#m7 A/B E9 A/E
+de dizer sim.
+
+E9            G#m   C#m7  G#m  A
+Mãe peregrina, Mãe Rainha, de tantos
+E/G#           F#m7         A/B
+nomes, mais bela flor de Deus.
+
+E9              B/D#  C#m       G#m7
+Mãe da ternura, Virgem Maria,
+E/G# A E/G#        F#m7 A/B   E9  A/B
+para nós és Doce Mãe de Deus.
+B/D#
+
+E9            G#m   C#m7  G#m  A
+Mãe peregrina, Mãe Rainha, de tantos
+E/G#           F#m7         A/B
+nomes, mais bela flor de Deus.
+
+E9              B/D#  C#m       G#m7
+Mãe da ternura, Virgem Maria,
+E/G# A E/G#        F#m7 A/B   C#m7
+para nós és Doce Mãe de Deus.
+B/C# B/D# E9',
+  to_tsvector('portuguese', 'Mais Bela Flor de Deus ' || '')
+),
+(
+  'tenho-sede-comunidade-catolica-mar-a-dentro',
+  'Tenho Sede',
+  'Comunidade Católica Mar a Dentro',
+  'Comunidade Católica Mar a Dentro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  Am  F#°  G  Em  Am  D7  G
+
+[Refrão]
+
+G      Am   D7         G   Em
+Tenho sede!   Tu és a Fonte
+
+       Am6  D7          B7   E7
+Tenho fome...  Tu és o Amor!
+
+      Am     F#°            G   Em
+Pão e Vinho, Santa Eucaristia
+
+           Am      D7     G
+Dá-me a comer,  beber, Senhor!
+
+[Primeira Parte]
+
+         Em          C        B7
+Sede ardente tens, Divino Coração
+
+        C9              B7
+Fogo em chamas, Tu nos queres
+Em    E7
+inflamar!
+
+          Am   D7              G
+Me dá tua sede,      Me dá tua fome
+Em
+
+          C          D7            G
+Quero ajudar-Te a salvar os meus
+irmãos!
+
+[Refrão]
+
+G      Am   D7         G   Em
+Tenho sede!   Tu és a Fonte
+
+       Am6  D7          B7   E7
+Tenho fome...  Tu és o Amor!
+
+      Am     F#°            G   Em
+Pão e Vinho, Santa Eucaristia
+
+           Am      D7     G
+Dá-me a comer,  beber, Senhor!
+
+[Segunda Parte]
+
+        Em           C           B7
+Fome e sede tens do nosso puro amor
+
+            C9             B7
+Mais que de obras, grandes coisas e
+Em  E7
+saber
+
+        Am   D7             G    Em
+Total entrega     à tua  vontade
+
+       C              D7           G
+O meu viver e o meu morrer és Tu,
+Senhor!
+
+[Refrão]
+
+G      Am   D7         G   Em
+Tenho sede!   Tu és a Fonte
+
+       Am6  D7          B7   E7
+Tenho fome...  Tu és o Amor!
+
+      Am     F#°            G   Em
+Pão e Vinho, Santa Eucaristia
+
+           Am      D7     G
+Dá-me a comer,  beber, Senhor!
+
+[Terceira Parte]
+
+       Em            C            B7
+Se, Jesus, Te dás a mim, na comunhão
+
+        C9          B7           Em
+Eu me darei também a Ti, meu Salvador!
+E7
+
+        Am     D7          G       Em
+Nada no mundo      vai separar-nos
+
+          C            D7           G
+Tu és meu Tudo, é teu inteiro o
+coração!
+
+[Refrão]
+
+G      Am   D7         G   Em
+Tenho sede!   Tu és a Fonte
+
+       Am6  D7          B7   E7
+Tenho fome...  Tu és o Amor!
+
+      Am     F#°            G   Em
+Pão e Vinho, Santa Eucaristia
+
+           Am      D7     G
+Dá-me a comer,  beber, Senhor!
+
+[Quarta Parte]
+
+     Em          C          B7
+Se Tu deixas lá do alto o teu céu
+
+          C9         B7          Em
+Um outro queres encontrar no coração
+E7
+
+            Am     D7
+Vem, já não tardes!     Meu ser Te
+G   Em
+espera
+
+        C             D7             G
+Pequeno céu - imenso amor - Hoje sou
+eu!
+
+[Refrão]
+
+G      Am   D7         G   Em
+Tenho sede!   Tu és a Fonte
+
+       Am6  D7          B7   E7
+Tenho fome...  Tu és o Amor!
+
+      Am     F#°            G   Em
+Pão e Vinho, Santa Eucaristia
+
+           Am      D7     G
+Dá-me a comer,  beber, Senhor!
+
+[Quinta Parte]
+
+      Em              C         B7
+Por amor nos dás Tua vida numa Cruz
+
+          C9          B7
+Na Eucaristia, de presente, o Dom
+Em   E7
+Maior!
+
+          Am  D7         G      Em
+Presença amada    e   desejada
+
+         C              D7
+Meu coração, tua hóstia viva, eu sou
+G
+Jesus!
+
+[Refrão]
+
+G      Am   D7         G   Em
+Tenho sede!   Tu és a Fonte
+
+       Am6  D7          B7   E7
+Tenho fome...  Tu és o Amor!
+
+      Am     F#°            G   Em
+Pão e Vinho, Santa Eucaristia
+
+           Am      D7     G
+Dá-me a comer,  beber, Senhor!
+
+[Sexta Parte]
+
+        Em          C           B7
+Gota d’água no oceano a se perder
+
+          C9         B7       Em E7
+É a minha vida com a tua numa só
+
+         Am   D7           G       Em
+Eu já não vivo....   em mim tu vives!
+
+          C            D7
+Que outro céu senão o Amor quisera eu
+G
+ter!',
+  to_tsvector('portuguese', 'Tenho Sede ' || '')
+),
+(
+  'te-adorarei-comunidade-catolica-mar-a-dentro',
+  'Te Adorarei',
+  'Comunidade Católica Mar a Dentro',
+  'Comunidade Católica Mar a Dentro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G                          Bm
+Vive em meu coração, desde quando te
+encontrei
+
+   C       Am      G
+Estás comigo, Ó Jesus
+
+G                       Bm
+Aumenta minha fé, para que eu possa
+amar
+
+C       Am      G
+Como Tu.... Ó Jesus
+
+[Pré-Refrão]
+
+     C      D    Em    C         G/B
+Pra sempre Te darei a minha gratidão
+
+      C           D
+Eternamente cantarei
+
+[Refrão]
+
+D/F#     Em           C
+Te Louvarei, Te adorarei, a ti
+G              D
+cantarei que és meu Rei
+
+D/F#     Em           C            G
+Te Louvarei, Te adorarei, e bendirei
+D
+somente a Ti
+
+   C    D    Em    C    D/F#    G
+Incomparável és, eterno amor Tu és
+
+     D   Em
+Meu Salvador
+
+   C      D      G
+Ressuscitou por mim
+
+D/F#     Em           C
+Te Louvarei, Te adorarei, a Ti
+G              D
+cantarei que és meu Rei
+
+D/F#     Em           C            G
+Te Louvarei, Te adorarei, e bendirei
+D
+somente a Ti
+
+G                        Bm
+Nasce em mim Senhor, um canto de
+alegria
+
+C         Am       G
+Grande és.... Ó Jesus
+
+G                   Bm
+Conduza-me no mundo, se profunda é a
+escuridão
+
+       C          Am      G
+Resplandece em mim   tua luz, Jesus
+
+[Pré-Refrão]
+
+     C      D    Em    C         G/B
+Pra sempre Te darei a minha gratidão
+
+      C           D
+Eternamente cantarei
+
+[Refrão]
+
+D/F#     Em           C
+Te Louvarei, Te adorarei, a ti
+G              D
+cantarei que és meu Rei
+
+D/F#     Em           C            G
+Te Louvarei, Te adorarei, e bendirei
+D
+somente a Ti
+
+   C    D    Em    C    D/F#    G
+Incomparável és, eterno amor Tu és
+
+     D   Em
+Meu Salvador
+
+   C      D      G
+Ressuscitou por mim
+
+D/F#     Em           C
+Te Louvarei, Te adorarei, a Ti
+G              D
+cantarei que és meu Rei
+
+D/F#     Em           C            G
+Te Louvarei, Te adorarei, e bendirei
+D
+somente a Ti',
+  to_tsvector('portuguese', 'Te Adorarei ' || '')
+),
+(
+  'doa-a-tua-vida-comunidade-catolica-palavra-viva',
+  'Doa a tua vida',
+  'Comunidade Católica Palavra Viva',
+  'Comunidade Católica Palavra Viva',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  D9   A  A9   C    Bm  A9  D
+
+       Bm        Bm9        D
+Numa noite de suor,   sobre o barco em
+D9
+alto mar
+
+      A           A9         Bm
+O céu começa a clarear, a tua rede
+Bm9
+está vazia
+
+    D             D9         A
+Mas a voz que te chama, te mostrará um
+A9
+outro mar
+
+       G          D/F#       Em
+E sobre muitos corações a tua rede
+Bm    Bm9
+lançará.
+
+ Bm Bm9  D   D9        A        A#º
+Doa a tua vida , como Maria, aos pés
+G             Bm
+da cruz        (e serás)
+
+  D  D9         A  A9         G
+Servo de cada homem, servo por amor,
+D/F#     Em         A
+sacerdote da humanidade.
+
+     Bm        Bm9            D
+Caminhavas no silêncio,      esperando
+D9
+além da dor
+
+     A           A9         Bm
+Que a semente que tu lançavas, num bom
+Bm9
+terreno germinasse
+
+    D             D9         A
+Mas o coração exulta porque o campo já
+A9
+está dourado
+
+     G          D/F#       Em
+O grão maduro pelo sol no celeiro
+Bm    Bm9
+pode entrar',
+  to_tsvector('portuguese', 'Doa a tua vida ' || '')
+),
+(
+  'corpus-christi-comunidade-catolica-palavra-viva',
+  'Corpus Christi',
+  'Comunidade Católica Palavra Viva',
+  'Comunidade Católica Palavra Viva',
+  'B',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Comunhão / Adoração',
+  'Corpus Christi',
+  '',
+  'adoracao',
+  'B             G#/A#          E
+Senhor, eu não sou digno de que
+F#
+entreis em minha morada,
+
+   B          B7+/9   E
+dizei uma só palavra e tudo será
+F#
+transformado.
+
+         E        G#m/D#       E
+Ref.: Então poderei vos  adorar em
+F#
+Espírito e em Verdade.
+
+             E      G#m/D#        E
+          Então poderei vos  adorar em
+F#
+Espírito e em Verdade.
+
+             B              E
+Sois tão pequeno e, ao mesmo tempo,
+B            D#7/G
+tão grande, santo mistério em
+
+               G#m   G#m/F#    C#7
+vosso Corpo e  Sangue, meu coração
+E  F#
+pode em Vós repousar.',
+  to_tsvector('portuguese', 'Corpus Christi ' || '')
+),
+(
+  'em-tuas-maos-comunidade-catolica-palavra-viva',
+  'Em Tuas Maõs',
+  'Comunidade Católica Palavra Viva',
+  'Comunidade Católica Palavra Viva',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração / Oferta',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C               G/B          F7+
+Venho oferecer ao meu Senhor, junto
+G
+com o vinho e o pão,
+
+      Am          Em      Dm
+O desejo de cada dia, servi-lo de todo
+G         Am
+coração, e pra sempre ao
+
+       Em          Dm
+teu lado estar, e só a Ele então
+G
+adorar.
+
+C                G/B   Am7
+Toma ó Pai minha vida, está segura em
+F7+
+tuas mãos
+
+ C                      G/B   Am7
+Cumpra a tua vontade e faça o que está
+F7+
+em teu coração.
+
+C               G/B             F7+
+Todos os meus sonhos e planos coloco
+G
+hoje, aqui, a teus pés,
+
+        Am        Em      Dm
+E minha alma eu derramo, como prova do
+G
+meu amor por Ti.
+
+     Am                Em         Dm
+E assim pra sempre hei de cantar, tua
+G
+glória diante do teu altar.
+
+C                G/B   Am7
+Toma ó Pai minha vida, está segura em
+F7+
+tuas mãos
+
+C                      G/B   Am7
+Cumpra a tua vontade e faça o que está
+F7+
+em teu coração.',
+  to_tsvector('portuguese', 'Em Tuas Maõs ' || '')
+),
+(
+  'eu-pertenco-a-ti-comunidade-catolica-mar-a-dentro',
+  'Eu Pertenço A Ti',
+  'Comunidade Católica Mar a Dentro',
+  'Comunidade Católica Mar a Dentro',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A  Bm7  A
+
+        Bm7  Bm/A  G  A
+
+[Primeira Parte]
+
+D                   F#m7
+Eu Te ofereço o que sou Senhor
+
+G                     D         A
+A minha vida sempre a Ti pertenceu
+
+D                     F#m7
+A minha alma, minha vontade e amor
+
+G                     D         A
+Me abandono em Teus braços, Senhor
+D/F#
+
+[Refrão]
+
+G      A           D  A/C# Bm7
+Eu pertenço todo a Ti,   Senhor
+
+G        A        Bm7
+E me entrego como sou
+
+G           A         D  F#m7 Bm7
+Eu faço em mim morada do Teu amor
+
+G        A            G   D/F#  Em  D
+E Te entrego vinho e pão
+
+[Segunda Parte]
+
+D                   F#m7
+Eu Te ofereço o meu coração
+
+G                     D         A
+Sobre o altar sagrado junto ao pão
+
+D                       F#m7
+E deixo aqui as minhas rosas, Senhor
+
+G                      D         A
+Que se transformem em graças de amor
+D/F#
+
+[Refrão]
+
+G      A           D  A/C# Bm7
+Eu pertenço todo a Ti,   Senhor
+
+G        A        Bm7
+E me entrego como sou
+
+G           A         D  F#m7 Bm7
+Eu faço em mim morada do Teu amor
+
+G        A            G   D/F#  Em  D
+E Te entrego vinho e pão',
+  to_tsvector('portuguese', 'Eu Pertenço A Ti ' || '')
+),
+(
+  'vem-e-segue-me-comunidade-catolica-palavra-viva',
+  'Vem e Segue-me',
+  'Comunidade Católica Palavra Viva',
+  'Comunidade Católica Palavra Viva',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Entrada / Vocacional',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G           Am7               G
+Deixa que o mundo siga pela sua
+Am7     Bm7
+estrada, deixa que o homem
+
+  Em            D          C
+Retorne a sua casa. Deixa que os
+G
+outros conservem a sua riqueza
+
+     D       C      G        D  C
+Mas tu, vem, vem e segue-me. Tu vem e
+G
+segue-me
+
+       G           Am7
+Deixa que o barco abra velas ao
+G Am7     Bm7            Em
+vento. Deixa que encontre afeto
+
+              D            C
+Quem segue o coração. Deixa que da
+G
+árvore caiam os frutos maduros
+
+    D        C     G        D  C
+Mas tu vem, vem e segue-me. Tu vem e
+E      E4
+segue-me
+
+    E                A         E
+E serás luz para os homens, e serás
+B9  A9
+como sal da terra, no mundo
+
+   E                 A
+Deserto abrirás uma nova estrada
+
+       E               A        E
+E por esta estrada    vai,      vai,
+A                   E
+e não te voltes para trás
+
+  A                   E       A
+E não te voltes para trás, e não te
+E
+voltes  para trás',
+  to_tsvector('portuguese', 'Vem e Segue-me ' || '')
+),
+(
+  'somos-igreja-comunidade-catolica-palavra-viva',
+  'Somos Igreja',
+  'Comunidade Católica Palavra Viva',
+  'Comunidade Católica Palavra Viva',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Entrada',
+  'Qualquer',
+  '',
+  'adoracao',
+  'F#               C#          G#m
+Sob o impulso do Espírito de Deus .
+D#m      F#            C#    G#m
+Formamos comunidade
+D#m
+
+F#                C#
+Com nossa Mãe a nos conduzir.
+G#m   D#m  F#   C#         G#m     D#m
+Igreja Santa nos tornaremos.
+
+G#m                         A#m G#m
+Não olheis nossas falhas, não olheis
+A#m    G#m
+as misérias, não olheis
+
+            A#m B                C#
+nosso erros, mas tende piedade.
+
+                            F#
+Ref.: Porque somos Igreja Santa e
+B      F#            B  D#m  B
+pecadora
+
+              C#
+Por isso vem Senhor
+
+             F#            B
+Em socorro à nossa fraqueza
+F#
+
+    B               F#          B
+E daí-nos o Dom da Fortaleza. ( 2x )
+D#m   B
+
+F#            C#        G#m
+Com ousadia avançamos no amor,
+D#m  F#          C#           G#m
+firmados na Eucaristia,
+D#m
+
+F#        C#        G#m   D#m
+em unidade na diversidade,
+F#            C#           G#m    D#m
+adiante nós seguiremos.
+
+G#m                          A#m G#m
+Não olheis nossas falhas , não olheis
+A#m   G#m
+as misérias, não olheis
+
+           A#m  B                C#
+nosso erros, mas tende piedade.',
+  to_tsvector('portuguese', 'Somos Igreja ' || '')
+),
+(
+  'anjo-da-guarda-comunidade-catolica-pantokrator',
+  'Anjo da Guarda',
+  'Comunidade Católica Pantokrator',
+  'Comunidade Católica Pantokrator',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  18,
+  'Devoção / Anjos',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D           A/C#
+Santo Anjo do Senhor
+
+Bm       Bm/A
+Meu bom guardador
+
+G7M        D/F#        Em7           C
+Deus te confiou a missão de me cuidar.
+A7/4 A
+
+D              A/C#
+Vela os passos meus,
+
+Bm    Bm/A     Em7           D/F#
+Ilumina meu pensar, meu falar,
+
+       G    A       D Am7 D7(9)
+Nesta caminhada ao Pai
+
+G      A/G   F#m7        Bm7
+És meu amigo, fiel companheiro.
+
+Em D/F# G A  Am  D7(9) D7(b9)
+Nunca me deixa só
+
+G       A/G
+Vais a minha frente,
+
+F#m7          Bm7
+Aplaina os caminhos
+
+Em7   D/F# G A4 A  D
+Protege-me contra o mal',
+  to_tsvector('portuguese', 'Anjo da Guarda ' || '')
+),
+(
+  'se-tu-soubesses-como-te-amo-comunidade-catolica-pantokra',
+  'Se Tu Soubesses Como Te Amo',
+  'Comunidade Católica Pantokrator',
+  'Comunidade Católica Pantokrator',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração / Comunhão',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D                          A/C#
+Se tu soubesses como te amo. Se tu
+soubesses como te amo
+
+    G/B                A
+deixarias de viver sem amor.
+
+         D
+Se tu soubesses como te amo. Se tu
+A/C#
+soubesses como te amo
+
+     G/B                        A
+deixarias de mendigar qualquer amor.
+
+         Bm7          F#m7
+Se tu soubesses como te amo, como te
+G
+amo,
+
+     A         D   (D A/C# G/B A/C#)
+viverias mais feliz.
+
+         D
+Se tu soubesses como te busco. Se tu
+A/C#
+soubesses como te busco
+
+     G/B                       A
+deixarias que Minha voz chegasse a ti.
+
+         D
+Se tu soubesses como te busco. Se tu
+A/C#
+soubesses como te busco
+
+    G/B                       A
+deixarias que te falasse ao coração.
+
+         Bm7           F#m7
+Se tu soubesses como te busco, como te
+G
+busco,
+
+    A         D        (D A/C# G/B
+escutarias mais Minha voz.
+A/C#)
+
+         D
+Se tu soubesses como te sonho. Se tu
+A/C#
+soubesses como te sonho
+
+        G/B                 A
+perguntarias o que espero de ti.
+
+         D
+Se tu soubesses como te sonho. Se tu
+A/C#
+soubesses como te sonho
+
+      G/B                A
+buscarias meus desejos para ti.
+
+         Bm7          F#m7
+Se tu soubesses como te sonho, como te
+G
+sonho,
+
+    A        D       (D A/C# G/B A/C#)
+pensarias mais em Mim.',
+  to_tsvector('portuguese', 'Se Tu Soubesses Como Te Amo ' || '')
+),
+(
+  'exultai-comunidade-catolica-pantokrator',
+  'Exultai',
+  'Comunidade Católica Pantokrator',
+  'Comunidade Católica Pantokrator',
+  'G',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  33,
+  'Entrada / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro:  G  G/F   C  Bb/C   G  F/G    C
+Bb/C
+
+G                    F    C/E F  G
+Exultai, cantando alegres ao Senhor
+
+           C G/B  C G/B
+Louvai ao Nosso Deus
+
+Am7                    Bm7
+   Minha força, meu refúgio e salvação
+
+C              D  C  Bm Am
+  Eu confio e nada temo.
+
+G                    F C/E F    G
+Exultai, cantando alegres ao Senhor
+
+           C G/B  C G/B
+Louvai ao Nosso Deus
+
+Am7                    Bm7
+   Minha força, meu refúgio e salvação
+
+C             Em D   Am   G/B
+  Eu confio e nada   te....mo.
+
+C             D        D#º    Em
+   Quero  cantar, louvar de todo o
+Em7+  Em7 Em6
+coração
+
+C           D/C          Bm7      Bb7+
+  Pois grandioso é seu amor por nós
+Am7     Bm7    C7+     C#oº      D (D
+   Para sempre Ele         é fiel.
+C G/B C D)
+
+Solo:  Em7(9)    Em7(6)    Em7(9)
+Em 6(9)    Em7(9)    Em7(6)    Em7(9)
+Em 6(9)
+
+F#m7(9)    F#m6(9)    F#m7(9)
+F#m6(9)     F#m7(9)    F#m6(9)
+F#m7(9) F#m6(9)
+
+F#m7                E/G#          A
+Exultai, cantando alegres ao Senhor
+
+           D A/C#   D  A/C#
+Louvai ao Nosso De....eus
+
+Bm7                    C#m7
+   Minha força, meu refúgio e salvação
+
+D              E D   C#m    Bm
+  Eu confio e nada     te......mo.
+
+A                    G D/F# G    A
+Exultai, cantando alegres ao Senhor
+
+           D  A/C#   D   A/C#
+Louvai ao Nosso De......eus
+
+Bm7                     C#m7
+   Minha força, meu refúgio e salvação
+
+D            F#m E     Bm        A/C#
+  Eu confio e nada      te.......mo.
+
+D             E       Fº  F#m
+   Quero  cantar, louvar de todo
+F#m7+   F#m7 F#m6
+o coração
+
+D           E/D       C#m7     C7+
+  Pois grandioso é seu amor por nós
+
+Bm7     C#m7  D7+     D#º       D/E %
+   Para sempre Ele             é fiel.
+
+A                   G    D/F# G  A
+Exultai, cantando alegres ao Senhor
+
+           D  A/C#   D  A/C#
+Louvai ao Nosso De....eus
+
+Bm7                    C#m7
+   Minha força, meu refúgio e salvação
+
+D              E D   C#m    Bm
+  Eu confio e nada     te......mo.
+
+A
+  Exultai',
+  to_tsvector('portuguese', 'Exultai ' || '')
+),
+(
+  'amor-ciumento-comunidade-catolica-pantokrator',
+  'Amor ciumento',
+  'Comunidade Católica Pantokrator',
+  'Comunidade Católica Pantokrator',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  17,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro]   A  A9  A  A9  F#m  E
+
+         A        A9
+Te descobrir no simples   te
+F#m9       E        D7M
+encontrar em cada passo que eu dou
+
+           F#m9           E9  G#
+Te reconhecer a cada instante
+
+          D7M              F#m
+E me abandonar   Pra Te encontrar
+
+         D         Bm7            E D
+em Teus braços desejar   tudo o que
+tens pra mim
+
+ ( A9 C# ) D9              F#m9
+E me abandonar   Pra Te encontrar
+
+         D         Bm7            G
+em Teus braços desejar   tudo o que
+( E4 E  E4 ) (D9 F# E G# )
+tens pra mim
+
+          A       A9      F#m9
+Amor Ciumento   Amor abrasador   Amor
+D7M                       E9
+que me constrange   Amor que é tão
+grande
+
+          F#m     E G#            D A
+Amor devorador   Amor que nunca tive
+Bm      A C#   D9     E  A
+transforma minha vida     com     Teu
+amor
+
+ ( A9 C# ) D9              F#m9
+E me abandonar   Pra Te encontrar
+
+         D         Bm7            E
+em Teus braços desejar   tudo o que
+E4   ( A C# )
+tens pra mim
+
+[Solo]  D7M   E  C#m7  F#m9  D  E9
+
+    F#m9    E       D7M
+Seduzido por Ti vou até o fim   para
+A9        E       D7M
+tudo o Senhor conquistar
+
+    F#m9    E       D7M
+Seduzido por Ti vou até o fim   para
+A9        E       D7M
+tudo o Senhor conquistar
+
+    F#m9    E       D7M
+Seduzido por Ti vou até o fim   para
+F#m9      E G#     D9  A
+tudo o Senhor conquistar
+
+          A       A9      F#m9
+Amor Ciumento   Amor abrasador   Amor
+D7M                       E9
+que me constrange   Amor que é tão
+grande
+
+          F#m     E G#            D A
+Amor devorador   Amor que nunca tive
+Bm      A C#   D9     E  A A4
+transforma minha vida     com     Teu
+amor
+
+          A  A9 A A9 F#m E
+Amor Ciumento',
+  to_tsvector('portuguese', 'Amor ciumento ' || '')
+),
+(
+  'por-maria-comunidade-catolica-pantokrator',
+  'Por Maria',
+  'Comunidade Católica Pantokrator',
+  'Comunidade Católica Pantokrator',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Am  G  Dm  F
+
+        Am  G  Dm  F
+
+     C                      Am
+Teu sim me ensina a tocar o céu
+
+(G/B)  C                         Am7
+Tua beleza me inspira a querer Deus
+
+          F                    A/G
+Todos os dias quero aprender contigo
+Am7
+
+     Dm7    F             G
+Me ensina a amar com o amor de Deus
+
+      Am          (G)  F
+ Por Maria quero aprender do céu
+
+     Am          (G/B)   C9
+Por Maria quero aprender a      ser
+fiel
+
+       Dm7             Am
+E por ela descobrir a realeza do
+G  Dm7         F            G
+Senhor e por sua intercessão chegar a
+glória
+
+     Am           (G)     F
+Por Maria quero aprender do céu
+
+     Am         (G/B)    C9
+Por Maria quero aprender a      ser
+fiel
+
+Dm7                    Am
+E por ela descobrir a realeza do
+G   Dm7        F              G
+Senhor e por sua intercessão chegar a
+glória
+
+    Am G Dm F
+Do céu
+
+           C              Am
+Que tua pureza me leve a viver
+
+(G/B)  C
+A vida eterna a qual Cristo nos
+Am7
+chamou
+
+      F                         A/G
+Me ensina a parecer-me com teu rosto
+Am7
+de amor
+
+          Dm7     F               G
+E dar ao Rei o louvor que lhe é devido
+
+[Solo] Am  G  F  G
+
+       Am  G  Dm  F  G
+
+     Am           (G)     F
+Por Maria quero aprender do céu
+
+     Am          (G/B)   C9
+Por Maria quero aprender a      ser
+fiel
+
+Dm7                     Am
+E por ela descobrir a realeza do
+G          Dm7    F               G
+Senhor e por sua intercessão chegar a
+glória
+
+     Am           (G)  F
+Por Maria quero aprender do céu
+
+     Am          (G/B)   C9
+Por Maria quero aprender a      ser
+fiel (crescente na dinâmica)
+
+       Dm7             Am
+E por ela descobrir a realeza do
+G          Dm7     F              G
+Senhor e por sua intercessão chegar a
+glória
+
+ C  C
+Do céu',
+  to_tsvector('portuguese', 'Por Maria ' || '')
+),
+(
+  'recebereis-uma-forca-do-alto-comunidade-catolica-semente',
+  'Recebereis Uma Força do Alto',
+  'Comunidade Católica Sementes do Verbo',
+  'Comunidade Católica Sementes do Verbo',
+  'A7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Pentecostes / Espírito Santo',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'A7M            G#m      C#m  A7M
+Recebereis uma força do alto que
+B
+descerá sobre vós
+
+A7M  G#m7    C#m      F#        A
+Vem Espírito Santo de Deus, e seremos
+E/G#  F#m   E     B
+testemunhas do amor
+
+A7M          E/G#    F#m
+Todos juntos reunidos entregando-nos á
+B
+oração
+
+ A7M       G#m7       C#m F# D7M
+Abertos ao sopro do Espírito, numa
+B
+mesma comunhão
+
+A7M           E/G#   F#m
+Disponíveis à tua voz para partir em
+B
+missão
+
+   A7M        G#m7      C#m F# D7M
+Lançando as sementes do verbo  em cada
+B
+coração
+
+A7M                E/G#        F#m
+Ser sal da terra e luz do mundo diante
+B
+das nações
+
+A7M     G#m7      C#m  F#
+Para que vejam as boas obras
+D7M                     B
+e glorifiquem o Pai do céu',
+  to_tsvector('portuguese', 'Recebereis Uma Força do Alto ' || '')
+),
+(
+  'abramos-as-janelas-comunidade-catolica-sementes-do-verbo',
+  'Abramos As Janelas',
+  'Comunidade Católica Sementes do Verbo',
+  'Comunidade Católica Sementes do Verbo',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Entrada / Acolhida',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A            E           D
+Abramos as janelas da nossa&#x27;alma
+
+         F#m                   E
+Para uma nova primavera que em nós
+D
+iniciará o Senhor
+
+A            E           D
+Abramos as janelas da nossa&#x27;alma
+
+         F#m                   E
+Para uma nova primavera que em nós
+D
+iniciará o Senhor
+
+    Bm      C#m       D        E
+E viver o batismo no Espírito Santo
+
+[Refrão]
+
+        F#m           D
+Vamos cantar, vamos dizer
+
+       A               E        F#m
+As maravilhas que o Senhor realizou
+
+       D     A         E
+Incendiar o mundo de amor
+
+     F#m           D
+Vamos cantar, vamos dizer
+
+       A               E        F#m
+As maravilhas que o Senhor realizou
+
+       D     A         E
+Incendiar o mundo de amor
+
+A        E           D
+Ressuscitar em nós a fé
+
+          F#m
+E ver que hoje é o bastante
+
+       E                      D
+Pra voltar pulsar a vida em nossos
+corações
+
+A        E            D
+Ressuscitar em nós a fé
+
+          F#m                     E
+E ver que hoje é o bastante pra voltar
+
+                   D
+Pulsar a vida em nossos corações
+
+    Bm      C#m      D         E
+E viver o batismo no Espírito Santo',
+  to_tsvector('portuguese', 'Abramos As Janelas ' || '')
+),
+(
+  'perfeita-alegria-comunidade-catolica-sementes-do-verbo',
+  'Perfeita Alegria',
+  'Comunidade Católica Sementes do Verbo',
+  'Comunidade Católica Sementes do Verbo',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Primeira Parte]
+
+G    C9          G       D
+A alegria perfeita é alegrar-se no
+Em
+Senhor
+
+         C9                G
+Quando o coração não se corrompe
+
+          D/F#
+Quando nenhum murmúrio sai dos lábios
+
+    C9         G         D        Em
+Mas tudo é recebido como graça de Deus
+
+C        G9
+Graça de Deus
+
+D        Em
+Graça de Deus
+
+[Refrão]
+
+       C9 G
+Tudo é graça
+
+     D  Em
+Tudo é amor
+
+            C9         G
+Essa é a alegria perfeita
+
+   D4        Em
+Alegria do Senhor
+
+[Segunda Parte]
+
+G    C9          G
+A perfeita alegria
+
+         D            Em
+É não deixar o coração se corromper
+
+C9              G       D/F#     Em
+Nem deixar a tristeza calar a canção
+
+C           G9
+É sorrir na chuva
+
+  D        Em
+Abençoar a dor
+
+C           G9
+Enxergar o amor
+
+    D        Em
+Até mesmo na cruz
+
+[Refrão]
+
+       C9 G
+Tudo é graça
+
+     D  Em
+Tudo é amor
+
+             C9        G
+Essa é a alegria perfeita
+
+   D4        Em
+Alegria do Senhor',
+  to_tsvector('portuguese', 'Perfeita Alegria ' || '')
+),
+(
+  'o-amor-nao-e-amado-comunidade-catolica-sementes-do-verbo',
+  'O Amor Não É Amado',
+  'Comunidade Católica Sementes do Verbo',
+  'Comunidade Católica Sementes do Verbo',
+  'Dm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Dm                     Am  C
+Amor e dor são a mesma coisa
+
+  Bb           C         Bb
+Ó meu Jesus sofreste por mim pois me
+C
+amaste
+
+ Bb          C       Dm
+Amaste-me sofrendo por mim
+
+Bb Am      Bb  Am11 Dm
+O Amor não é amado
+
+Bb Am      Bb  C Dm
+O Amor não é amado
+
+Dm                    Am C
+Ó meu Jesus tu não sofreste
+
+    Bb          C        Bb
+Pra redimir mas para me amar e por me
+C
+amar
+
+    Bb           C            Dm
+Não tens outra razão senão o amor
+
+Bb Am      Bb  C Dm
+O Amor não é amado
+
+Bb Am      Bb  C Dm
+O Amor não é amado
+
+[Refrão]
+
+         Bb           C
+Onde há amor não há temor
+
+      Dm       Am7  G
+Quero ser como Tu Jesus
+
+D°     Dm       Am7
+Meu Jesus crucificado
+
+       Bb     C  Am7    Dm
+Põe em mim as marcas do amor',
+  to_tsvector('portuguese', 'O Amor Não É Amado ' || '')
+),
+(
+  'em-deus-sou-feliz-comunidade-catolica-sementes-do-verbo',
+  'Em Deus Sou Feliz',
+  'Comunidade Católica Sementes do Verbo',
+  'Comunidade Católica Sementes do Verbo',
+  'Fm',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  6,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Primeira Parte]
+
+Fm                  Cm
+Me lançava ás criaturas
+
+      Eb        Bb               Fm
+Dispersava o meu coração nas paixões
+
+    Cm                    Eb
+Mas Deus tinha um sonho maior do que
+Bb
+eu
+
+  Fm       Cm     Eb       Bb
+Renunciei a carne larguei o mundo
+
+Fm             Cm
+Meu Senhor meu Rei
+
+   Eb          Bb
+Por Ti eu deixo tudo
+
+[Refrão]
+
+   G#         Bb
+Em Deus sou feliz
+
+          Cm    Gm     Bb        G#
+Nele encontrei   tu  -  do o que quis
+
+         Bb          Cm
+Á Deus a glória a vitória
+
+         Gm  Bb       G#
+É uma alegria   te servir
+
+[Solo] G#  Eb  Cm  Bb
+
+[Segunda Parte]
+
+Fm         Cm             Eb
+Entrei na batalha e fui vencido
+
+       Bb             Fm
+Pela espada do amor de Cristo
+
+   Cm           Eb              Bb
+E agora  só anseio pela vida eterna
+
+Fm       Cm        Eb           Bb
+Desejo somente dar glória ao Senhor
+
+Fm       Cm     Eb          Bb
+Nele sou livre para ser quem sou',
+  to_tsvector('portuguese', 'Em Deus Sou Feliz ' || '')
+),
+(
+  'mae-do-meu-senhor-comunidade-missao-maria-de-nazare',
+  'Mãe do Meu Senhor',
+  'Comunidade Missão Maria de Nazaré',
+  'Comunidade Missão Maria de Nazaré',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  30,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] C9  G/B  Am7  Am/G
+
+        F7  C/E  Dm7  G4
+
+  C9   G/B          Am7
+Maria mãe do meu Senhor
+
+   Am/G       F  C/E    Dm  G4
+A mãe do Salvador,  Maria
+
+   C9     G/B        Am
+Ensina a amar o Redentor
+
+  Am/G             F
+Amar com o mesmo amor
+
+          Dm    G4  G
+Com que você amou
+
+ C9    G/B               Am
+Amar, amar com o mesmo olhar
+
+   Am/G        F      Dm  G4
+Olhar e contemplar o Salvador
+
+      C9        G/B     Am
+Pois já que foste escolhida
+
+    Am/G          F  C/E
+Por Deus és tu bendita
+
+     Dm     G4   A7
+Te peço ó mãe
+
+   D9  A/C#          Bm
+Maria mãe do meu Senhor
+
+               G  D/F#   Em  A4
+A mãe do Salvador,    Maria
+
+   D9      A/C#      Bm
+Ensina a amar o Redentor
+
+                   G
+Amar com o mesmo amor
+
+          Em    A4  A   B7
+Com que você amou
+
+  E    B/D#               C#m
+Amar, amar com o mesmo olhar
+
+               A      F#m  B4
+Olhar e contemplar o Salvador
+
+      E7M       B/D#    C#m
+Pois já que foste escolhida
+
+                  A   E/G#
+Por Deus és tu bendita
+
+     F#m11  B4
+Te peço ó mãe
+
+[Final] E7M  F#m11  G#m11  A  E7M
+
+        E7M  F#m11  G#m11  A  E7M',
+  to_tsvector('portuguese', 'Mãe do Meu Senhor ' || '')
+),
+(
+  'casinha-azul-comunidade-missao-maria-de-nazare',
+  'Casinha Azul',
+  'Comunidade Missão Maria de Nazaré',
+  'Comunidade Missão Maria de Nazaré',
+  'E5',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] E5  A9  E7M  B  A
+
+E7M    B7
+Ouvi dizer que existe um lugar
+
+C#m           A9
+Cercado de flores e canções de paz
+
+E7M          B/D#             C#m
+Lá onde os montes erguem o Jardim
+
+        A
+Uma casinha azul
+
+E7M      B
+O rio envolve todo lugar
+
+C#m         A9
+Levando as folhas que caem por lá
+
+E7M           B/D#
+Jardim do autor que tudo pintou
+
+C#m       A     A/B
+Criando a arte e perfeição
+
+E7M          B4
+Lugar singular sereno lugar
+
+C#m       A    B       E7M   B    C#m
+Não é um mundo a imaginar  ooooh
+
+        A   B/A  C#m  B4 E/G# A9   F#m
+Doce recanto do amor oooh
+B
+
+E7M  B/D#  C#m  A
+ooooh ooh oooh
+
+E7M           B
+Jardim do autor que tudo pintou
+
+C#m       A     B4
+Criando a arte e perfeição
+
+E7M          B7
+Lugar singular sereno lugar
+
+C#m       A    B       C#m   B E/G# A
+Não é um mundo a imaginar  ooooh
+
+        F#m  B   E7M  B  E/G#  A
+Doce recanto do amor  oooh
+
+[Final] E7M  B/D#  C#m  A',
+  to_tsvector('portuguese', 'Casinha Azul ' || '')
+),
+(
+  'digno-es-tu-comunidade-missao-maria-de-nazare',
+  'Digno és Tu',
+  'Comunidade Missão Maria de Nazaré',
+  'Comunidade Missão Maria de Nazaré',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Em             D
+Oh Jesus, digno és Tu de receber
+
+     Em        B7
+Toda honra e louvor
+
+     Em             D
+Oh Jesus, digno és Tu de receber
+
+     Em         G  D
+Toda honra e louvor
+
+      Em      D
+Tu és Deus, e eu sou todo teu
+
+      Em          G  D
+Tu és Deus, Tu és Deus
+
+      Em         D
+Tu és Rei, e eu dobro meus joelhos
+
+          C         G  D
+Diante de Ti Oh meu Rei
+
+      Em           D
+Tu és Santo, revestido em majestade
+
+          Em     B7
+Da minha vida és Senhor
+
+      Em           D
+Tu és Santo, revestido em majestade
+
+          Em        G  D
+Da minha vida és Senhor
+
+      Em      D
+Tu és Deus, e eu sou todo teu
+
+      Em          G  D
+Tu és Deus, Tu és Deus
+
+      Em         D
+Tu és Rei, e eu dobro meus joelhos
+
+          C         G  D
+Diante de Ti Oh meu Rei
+
+  Em          D
+Amém (Amém) amém (Amém)
+
+  Em          G  D
+Amém (Amém) amém
+
+      Em      D
+Tu és Deus, e eu sou todo teu
+
+      Em          G  D
+Tu és Deus, Tu és Deus
+
+      Em         D
+Tu és Rei, e eu dobro meus joelhos
+
+          C         G  D
+Diante de Ti Oh meu Rei',
+  to_tsvector('portuguese', 'Digno és Tu ' || '')
+),
+(
+  'isto-e-o-meu-corpo-comunidade-obra-de-maria',
+  'Isto É o Meu Corpo',
+  'Comunidade Obra de Maria',
+  'Comunidade Obra de Maria',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D           G            D
+Eu preciso tanto de você, Jesus
+
+      D         G              A
+E eu sei que você está presente aqui
+
+      Em        Em/D         A/C#
+Neste sacramento que você deixou
+
+   Em      Em/D          A/C#   G/A A
+Naquela ceia, última que você fez
+
+       D                  G
+E eu creio porque da igreja aprendi
+D
+
+G             D         G
+   Quando um dia ouvi o padre
+A
+proclamar
+
+     Em        Em/D     A/C#
+Que está escrito na sua palavra
+
+      Em           Em/D     A
+Foi sua própria boca que pronunciou
+
+D         G  D
+Isto É O MEU CORPO
+
+      G    D/F#       Em G/A Bb°
+Que SERÁ ENTREGUE POR VÓS
+
+Bm        G   D
+Isto É O MEU SANGUE
+
+      G         D/F#     A  Bb°
+Que POR TODOS EU DERRAMAREI
+
+  Bm           F#m        G       D/F#
+Tomai COMEI, TOMAI BEBEI, TODOS VÓS
+Em
+
+   G    A    Bb9 C9   D9  G/A A
+Fazei ISTO EM MINHA MEMÓRIA
+
+       D           G          D   G
+Sem fé ninguém pode agradar a Deus
+
+        D        G         A
+E é preciso fé para acreditar
+
+        Em        Em/D           A/C#
+Que este pão e este  vinho se tornaram
+
+ Em       Em/D                   A/C#
+O corpo e o sangue do sangue do Senhor
+G/A   A
+Jesus',
+  to_tsvector('portuguese', 'Isto É o Meu Corpo ' || '')
+),
+(
+  'lava-me-senhor-comunidade-missao-maria-de-nazare',
+  'Lava-me Senhor',
+  'Comunidade Missão Maria de Nazaré',
+  'Comunidade Missão Maria de Nazaré',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Ato Penitencial / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G9  D/F#  F7M  C7M  D7
+
+     G9
+Lava-me senhor
+
+Em
+Lava meu coração
+
+C7M         Am7
+Lava meu pecado
+
+   Em  D/F#
+Me purifica
+
+     G9
+Sara-me senhor
+
+     Em
+Vem curar minhas feridas
+
+        C7M         D D7
+Que me causaram tanta dor
+
+      G9        D/F#
+Vem lavar, vem curar
+
+      F7M    C7M  D7
+Purificar e renovar
+
+         G9            D/F#
+Minha história, minha vida
+
+    F7M              C7M D  D7
+As raízes, vem transformar
+
+     G9
+Oh senhor Jesus
+
+        Em
+Com teu sangue precioso
+
+C7M        Am7
+Lava meu pecado
+
+   Em   D/F#
+Me purifica
+
+       G9
+Tantas vezes eu
+
+     Em                         C7M
+Me feri por não saber que a verdade
+
+      Em     D7
+Só encontro em ti
+
+G9                D/F#
+Vem lavar, vem curar
+
+      F7M     C7M   D7
+Purificar e renovar
+
+         G9            D/F#
+Minha história, minha vida
+
+    F7M              C7M D7
+As raízes, vem transformar
+
+G9               D/F#
+Vem lavar, vem curar
+
+      F7M    C7M  D7
+Purificar e renovar
+
+         G9            D/F#
+Minha história, minha vida
+
+    F7M              D D7
+As raízes, vem transformar
+
+        G9 D/F#  F7M  C7M  D7  G9
+Por teu sangue',
+  to_tsvector('portuguese', 'Lava-me Senhor ' || '')
+),
+(
+  'recebe-me-senhor-comunidade-obra-de-maria',
+  'Recebe-me Senhor',
+  'Comunidade Obra de Maria',
+  'Comunidade Obra de Maria',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D             A/C#  Bm         F#m
+Quero me entregar, quero colocar
+
+G              D/F#
+Minha vida em tuas mãos
+
+Em                    A7
+Toma senhor, cuida de tudo
+
+    D         A/C#  Bm         F#m
+Te dou meu coração, como sacrifício
+
+G                D/F#
+Como o vinho e o pão
+
+Em                      C  A7  G
+Que se desfaz em teu altar
+
+              A/G
+Recebe minha vida
+
+   D       A/C#       Bm           A
+Recebe Senhor minha oferta tão pequena
+
+  G            D/F#    Em
+Diante da grandeza do teu amor
+
+                 A7   G
+Que se dá por inteiro
+
+              A/G
+Recebe minha vida
+
+   D       A/C#       Bm           A
+Recebe Senhor minha oferta tão pequena
+
+  G            D/F#    Em
+Diante da grandeza do teu amor
+
+                 A7   G
+Que se dá por inteiro
+
+             D
+Recebe-me Senhor',
+  to_tsvector('portuguese', 'Recebe-me Senhor ' || '')
+),
+(
+  'em-teu-santuario-comunidade-missao-maria-de-nazare',
+  'Em teu Santuário',
+  'Comunidade Missão Maria de Nazaré',
+  'Comunidade Missão Maria de Nazaré',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G                      D
+Me adentro em teu santuário
+
+Em           C
+Venho me render
+
+G            D
+Tenho tanta sede
+
+Em           C
+Dai-me de beber
+
+      G  D     Em   C
+Só tu és  meu amado
+
+      G  D      Em               C
+Só tu és  minha fonte Rei dos Reis
+
+      G  D      Em  C
+Só tu és  meu amado
+
+      G  D      Em  C   (E7)
+Só tu és  meu senhor
+
+      A  E     F#m   D
+Só tu és  meu amado
+
+      A  E      F#m              D
+Só tu és  minha fonte Rei dos Reis
+
+      A  E      F#m  D
+Só tu és  meu amado
+
+      A  E      F#m  D
+Só tu és  meu senhor',
+  to_tsvector('portuguese', 'Em teu Santuário ' || '')
+),
+(
+  'senhor-que-vieste-para-perdoar-comunidade-recado',
+  'Senhor Que Vieste Para Perdoar',
+  'Comunidade Recado',
+  'Comunidade Recado',
+  'F#m',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Ato Penitencial',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] F#m7  D  F#m7  D
+
+F#m7        C#m7   D      C#m7  Bm7
+Senhor que vieste para perdoar  não
+F#m7
+para condenar
+
+Bm7      Fº      F#m7 Bm7 E
+Tende piedade de nós
+
+A               D       C#m7
+Senhor tende piedade de nós, tende
+D       C#m7    Bm7     F#m7 E
+piedade de nós, piedade de nós
+
+A               D       C#m7
+Senhor tende piedade de nós, tende
+D       C#m7    Bm7     F#m7 G#º C#7
+piedade de nós, piedade de nós
+
+F#m7           C#m7     D       C#m7
+Cristo que Vos alegrais pelo pecador
+D         C#m7   Bm7      Fº      F#m7
+que se arrepende, tende piedade de nós
+Bm7 E
+
+A               D       C#m7
+Cristo tende piedade de nós, tende
+D       C#m7    Bm7     F#m7 E
+piedade de nós, piedade de nós
+
+A               D       C#m7
+Cristo tende piedade de nós, tende
+D       C#m7    Bm7     F#m7 G#º C#7
+piedade de nós, piedade de nós
+
+F#m7             C#m7     D
+Senhor que muito perdoais a quem muito
+C#m7 Bm7        F#m7    Bm7      Fº
+ama, sois misericórdia, tende piedade
+F#m7  Bm7 E
+de nós
+
+A               D       C#m7
+Senhor tende piedade de nós, tende
+D       C#m7    Bm7     F#m7 E
+piedade de nós, piedade de nós
+
+A               D       C#m7
+Senhor tende piedade de nós, tende
+D       C#m7    Bm7     F#m7 G#º C#7
+piedade de nós, piedade de nós',
+  to_tsvector('portuguese', 'Senhor Que Vieste Para Perdoar ' || '')
+),
+(
+  'confesso-a-deus-comunidade-recado',
+  'Confesso à Deus',
+  'Comunidade Recado',
+  'Comunidade Recado',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Ato Penitencial',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] G  G/B  Am7  D
+
+    G          G/B       C9         D
+Confesso à Deus         Todo Poderoso
+G            G/B    C9
+e a vós irmãos e irmãs que
+
+D     D#°
+Pequei
+
+Em7                  Bm7
+ Muitas vezes por pensamentos,
+C9             G
+palavras, atos e omissões
+
+   C9        G        Am7      D  F/G
+Por minha culpa, tão grande culpa
+
+   C9         D             G  G/B
+     Piedade,    piedade, piedade
+C9
+de nós Senhor
+
+    C9          D       D#°     Em7
+     Piedade, piedade de nós
+
+   C9         D             G  G/B
+     Piedade,     piedade, piedade
+C9
+de nós Senhor
+
+    C         D           G  D
+     Piedade, piedade de nós
+
+  G              G/B       C9
+E peço a Virgem Maria, aos Anjos e
+D
+Santos
+
+       G         G/B         C9
+E a vós irmão e irmãs que rogueis por
+Am7        D
+mim a Deus nosso Senhor',
+  to_tsvector('portuguese', 'Confesso à Deus ' || '')
+),
+(
+  'alegria-do-senhor-comunidade-obra-de-maria',
+  'Alegria do Senhor',
+  'Comunidade Obra de Maria',
+  'Comunidade Obra de Maria',
+  'C',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  4,
+  'Entrada / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  'C      Am        Dm          G
+A alegria do Senhor é nossa força
+
+C      Am       Dm           G
+A alegria do Senhor é nossa força
+
+C      Am       Dm           G
+A alegria do Senhor é nossa força
+
+C      Am       Dm           G
+A alegria do Senhor é nossa força
+
+C     Am   Dm      G   C     Am
+Pá parara pá paparara, pá parara
+Dm   G
+pá aiaiai
+
+C       Am     Dm       G     C    Am
+Alegrei-me quando me disseram,vamos a
+Dm     G
+casa do Senhor
+
+C       Am     Dm       G     C    Am
+Alegrei-me quando me disseram,vamos a
+Dm     G
+casa do Senhor
+
+C     Am
+Pá parara',
+  to_tsvector('portuguese', 'Alegria do Senhor ' || '')
+),
+(
+  'senhor-dos-exercitos-comunidade-obra-de-maria',
+  'Senhor Dos Exércitos',
+  'Comunidade Obra de Maria',
+  'Comunidade Obra de Maria',
+  'G',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  '(intro) G D/F# Am7 C D (2X)
+
+G       D/F#         Am7   C  D
+Deus é nosso refúgio e nossa força,
+
+  G        D/F#    Am7      C   D
+Mostrou-se nosso amparo nas
+tribulações
+
+  G           D/F#    Am7
+Por isso a terra pode tremer,não
+C D
+tememos nada
+
+G        D/F#     Am7     C  D
+Está conosco o Senhor dos exércitos.
+
+G         D/F#     Am7     Em7    D C
+Está conosco o Senhor dos exércitos.
+G/B Am7 D/F#
+
+G            D/F# Am7         C  D
+Muitos problemas virão, sofrimentos
+terei,
+
+G       D/F#      Am7    C    D     G
+Até por angústias passarei, mas nunca
+D/F# Am7 C D
+temerei.
+
+G       D/F#     Am7     C  D
+Está conosco Senhor dos Exércitos.
+
+G        D/F#      Am7     C    D
+Está conosco o Senhor dos exércitos,
+G  D/F# Am7   C D
+nunca temerei.',
+  to_tsvector('portuguese', 'Senhor Dos Exércitos ' || '')
+),
+(
+  'o-profeta-comunidade-recado',
+  'O Profeta',
+  'Comunidade Recado',
+  'Comunidade Recado',
+  'Dm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Entrada / Vocacional',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] Dm  C  Bb  C
+
+Dm               F
+Antes que te formasses dentro do
+Am           Dm
+ventre de tua mãe
+
+Gm              Dm               C
+Antes que tu nascesses, te conhecia e
+Am     Dm  C
+te consagrei
+
+Dm              F                Am
+Para ser meu profeta entre as nações
+Dm
+eu te escolhi
+
+Gm             Dm             C
+Onde te envio irás, o que te mando
+Am    Dm
+proclamarás!
+
+Bb                F
+Tenho que gritar, tenho que arriscar
+
+      Am            Dm
+Ai de mim se não o faço!
+
+ Am      Dm         Am     Dm
+Como escapar de ti, como calar
+
+        C       Am        Dm
+Se tua voz arde em meu peito?
+
+Bb                F
+Tenho que andar, tenho que lutar
+
+      Am            Dm
+Ai de mim se não o faço!
+
+Am       Dm         Am     Dm
+Como escapar de ti, como calar
+
+        C     Am        Dm
+Se tua voz arde em meu peito?
+
+( Dm  C  Bb  C )
+
+( Dm  C  Bb  C )
+
+Dm              F                Am
+Não temas arriscar-te, porque contigo
+Dm
+eu estarei
+
+Gm            Dm               C
+Não temas anunciar-me, por tua boca eu
+Am  Dm  C
+falarei
+
+Dm               F              Am
+Hoje te dou meu povo para arrancar e
+Dm
+demolir
+
+Gm        Dm           C     Am   Dm
+Para edificar construirás e plantarás!
+
+Bb                F
+Tenho que gritar, tenho que arriscar
+
+      Am             Dm
+Ai de mim se não o faço!
+
+ Am      Dm         Am     Dm
+Como escapar de ti, como calar
+
+        C       Am        Dm
+Se tua voz arde em meu peito?
+
+Bb                F
+Tenho que andar, tenho que lutar
+
+      Am           Dm
+Ai de mim se não o faço!
+
+Am       Dm         Am     Dm
+Como escapar de ti, como calar
+
+        C     Am        Dm
+Se tua voz arde em meu peito?
+
+Dm               F              Am
+Deixa os teus irmãos, deixa teu pai e
+Dm
+tua mãe
+
+Gm                Dm             C
+Deixa, enfim, teu lar, porque a terra
+Am      Dm  C
+gritando está
+
+Dm              F                 Am
+Nada tragas contigo, porque a teu lado
+Dm
+eu estarei
+
+Gm          Dm              C
+É hora de lutar, porque meu povo
+Am      Dm
+sofrendo está
+
+[Final] Dm  C  Bb  C',
+  to_tsvector('portuguese', 'O Profeta ' || '')
+),
+(
+  'amor-de-mae-comunidade-obra-de-maria',
+  'Amor de Mãe',
+  'Comunidade Obra de Maria',
+  'Comunidade Obra de Maria',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G   C/G        G D/G
+És minha mãe, Rainha do céu
+
+          G        C        D   D#°
+És minha dona,  querida de Deus
+
+          Em       Bm7           C
+Tu me trouxeste d volta e entregaste a
+G
+Jesus
+
+      Am         C   D    G     (G6 G
+Com carinho, meiguice e amor
+D/G)
+
+         G         C/G      G      D/G
+Cheia de graça aos olhos de Deus
+
+     G          C        D D#°
+Em Serviço à vontade do Pai
+
+         Em      Bm7          C
+Me conduziste de volta e entregaste a
+G
+Jesus
+
+      Am            C   D          G
+O teu filho que morreu por mim na cruz
+D
+
+      G     C/G        G  D
+Oh!  MÃE DO CÉU ABEMÇOAI
+
+     Em             C         D  D#°
+Cada UM DE NÓS QUE ROGAMOS A VÓS
+
+         Em     Bm7
+Daí-me carinho amor de mãe
+
+            C          G
+Pra que eu possa me sentir melhor
+
+     Am           C          D
+E juntinhos caminharmos pra Jesus
+
+      G     C/G        G  D
+Oh!  MÃE DO CÉU ABEMÇOAI
+
+     Em             C         D  D#°
+Cada UM DE NÓS QUE ROGAMOS A VÓS
+
+         Em     Bm7
+Daí-me carinho amor de mãe
+
+            C          G
+Pra que eu possa me sentir melhor
+
+      Am         C D         G
+E juntinhos caminharmos pra Jesus
+
+( C/G  G  C/G  G  D/G )
+
+        G         C/G      G  D/G
+Nossa igreja se inspira em ti
+
+      G          C       D   D#°
+Como servos à vontade de Deus
+
+       Em          Bm7        C
+Te veneramos como filhos que amam sua
+G
+linda mãe
+
+    Am              C            D
+Orgulhosos de serem filhos de Maria
+D7       G    D C/E D/F#
+Mãe de Jesus',
+  to_tsvector('portuguese', 'Amor de Mãe ' || '')
+),
+(
+  'entre-nos-ministerio-amor-e-adoracao',
+  'Entre Nós',
+  'Ministério Amor e Adoração / Canção Nova',
+  'Ministério Amor e Adoração / Canção Nova',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] C  C#º  Bb/D  C/E  F  Bb/F  F
+
+[Intro] C  C#º  Bb/D  C/E  F  Bb/F  F
+
+  F      C/E   Dm7    A/C#    Bb9
+O Pão do céu, está aqui entre nós
+
+      F/A  Bb9   C9
+É o Cordeiro de Deus
+
+  F    C/E      Dm7   A/C#     Bb
+Amor maior, não há em nenhum lugar
+
+        F/A       Bb9    C9
+Que o sacrifício deste altar
+
+F                    Bb/F
+Anjos cantando entre nós
+
+   F                   C/E Am7  Dm7
+O céu e a terra são um só  coração
+
+      Bb        C C7
+Nesta santa Comunhão
+
+   F                      Bb/F
+Jesus visitando a imperfeição
+
+  F                       C/E  Am7
+O homem que encontra redenção, tudo
+Dm7
+aqui
+
+      Bb         C  C#º  Bb/D  C/E
+Nesta santa Comunhão
+Bb/F  F
+
+   F     C/E   Dm7   A/C#     Bb
+O dom do Pai, está aqui entre nós
+
+     F/A      Bb9    C9
+Neste vinho e neste pão
+
+   F     C/E      Dm     A/C#       Bb
+Oh luz maior, se acende em nós,
+comunhão
+
+      F/A    Bb9  C7(4) C7
+É pra nós a salvação
+
+F                    Bb/F
+Anjos cantando entre nós
+
+   F                   C/E  Am7  Dm7
+O céu e a terra são um só  coração
+
+      Bb      C(4) C7
+Nesta santa Comunhão
+
+   F                       Bb/F
+Jesus visitando a imperfeição
+
+  F                       C/E   Am7
+O homem que encontra redenção, tudo
+Dm7
+aqui
+
+      Bb         C  C#º  Bb/D  C/E
+Nesta santa Comunhão
+Bb/F
+
+F                    Bb/F
+Anjos cantando entre nós
+
+   F                   C/E  Am7  Dm7
+O céu e a terra são um só  coração
+
+      Bb        C7(4) C7
+Nesta santa Comunhão
+
+   F                       Bb/F
+Jesus visitando a imperfeição
+
+  F                       C/E   Am7
+O homem que encontra redenção, tudo
+Dm7
+aqui
+
+      Bb         C
+Nesta santa Comunhão
+
+[Final] C#º  Bb/D  C/E  Bb/F',
+  to_tsvector('portuguese', 'Entre Nós ' || '')
+),
+(
+  'danca-da-amizade-comunidade-recado',
+  'Dança da Amizade',
+  'Comunidade Recado',
+  'Comunidade Recado',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  3,
+  'Entrada / Acolhida',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] G  D  C  G  D
+
+ G
+A nossa dança
+
+               D
+É a dança da amizade
+
+     C          D         G
+É alegria para lá e para cá
+
+   G         D    C    G
+Laiá laiá laiá laiá laiá laiá
+
+   G         D    C    D
+Laiá laiá laiá laiá laiá laiá
+
+    G
+Jesus!',
+  to_tsvector('portuguese', 'Dança da Amizade ' || '')
+),
+(
+  'gloria-a-deus-nas-alturas-ministerio-amor-e-adoracao',
+  'Glória a Deus Nas Alturas',
+  'Ministério Amor e Adoração / Canção Nova',
+  'Ministério Amor e Adoração / Canção Nova',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Glória',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Refrão]
+
+  E                  B9
+Glória a Deus nas alturas
+
+  A9                 B9
+Glória a Deus nas alturas
+
+   C#m              B9              A9
+E paz na terra aos homens por Ele
+amados
+
+  E                  B9
+Glória a Deus nas alturas
+
+  A9                 B9
+Glória a Deus nas alturas
+
+   C#m              B9              A9
+E paz na terra aos homens por Ele
+amados
+
+[Primeira Parte]
+
+        F#m          G#m        A
+Senhor Deus rei dos céus, Deus pai
+todo poderoso
+
+            C#m7            B9
+Nós vos louvamos, vos bendizemos
+
+            A
+Nós vos adoramos e glorificamos
+
+ F#m            G#m        A
+Nós vos damos graças, por vossa imensa
+B9
+glória
+
+[Refrão]
+
+  E                  B9
+Glória a Deus nas alturas
+
+  A9                 B9
+Glória a Deus nas alturas
+
+   C#m              B9              A9
+E paz na terra aos homens por Ele
+amados
+
+[Segunda Parte]
+
+    F#m        G#m    A
+Senhor Jesus Cristo, filho unigênito
+
+        C#m7              B9    A
+Senhor Deus, cordeiro de Deus, filho
+B9
+de Deus pai
+
+ C#m                B9            A
+Vós que tirais o pecado do mundo tende
+B9  G#
+piedade de nós
+
+ F#m7              G#m7
+Vós que tirais o pecado do mundo,
+A                B9
+acolhei a nossa súplica
+
+ C#m7               B9           A
+Vós que estais a direita do Pai tende
+B9   G#
+piedade de nós
+
+    F#m        G#m       A        B9
+Só vós sois o santo, só vós o Senhor
+
+    C#m7    B9              A
+Só vós o altíssimo, Jesus Cristo
+
+       F#m              A
+Com Espírito Santo na glória de Deus
+B9   E  B9
+pai amém
+
+[Refrão]
+
+  E                  B9
+Glória a Deus nas alturas
+
+  A9                 B9
+Glória a Deus nas alturas
+
+   C#m              B9              A9
+E paz na terra aos homens por Ele
+amados
+
+  E                  B9
+Glória a Deus nas alturas
+
+  A9                 B9
+Glória a Deus nas alturas
+
+   C#m              B9
+E paz na terra aos homens por Ele
+A9    E
+amados',
+  to_tsvector('portuguese', 'Glória a Deus Nas Alturas ' || '')
+),
+(
+  'meu-prazer-em-espirito-e-em-verdade-ministerio-koinonya',
+  'Meu Prazer (Em Espírito e Em Verdade)',
+  'Ministério Koinonya',
+  'Ministério Koinonya',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  15,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A  E/A  D2/A  E/A
+
+        A  E/A  D2/A  E/A
+
+[Primeira Parte]
+
+      A             E/A
+Em Espírito, em verdade
+
+       D2/A  D/E        A    D  E
+Te adoramos,     Te adoramos
+
+      A             E/A
+Em Espírito, em verdade
+
+       D2/A  D/E        A    E/G#
+Te adoramos,     Te adoramos
+
+[Pré-Refrão]
+
+        F#m  F#m7M       F#m7  F#m6
+Rei do reis        e Senhor
+
+         D     E       A  E/G#
+Te entregamos nosso viver
+
+        F#m  F#m7M       F#m7  F#m6
+Rei do reis        e Senhor
+
+         D     Bm7     E
+Te entregamos nosso viver
+
+[Refrão]
+
+           D               E
+Pra Te adorar, oh rei dos reis
+
+               D9/F#       E/G#
+Foi que eu nasci, ó rei Jesus
+
+        C#7         F#m
+Meu prazer é te louvar
+
+        E       D
+Meu prazer é estar
+
+    D/E           A
+Nos átrios do Senhor
+
+        E/G#    F#m    E       D
+Meu prazer é viver na casa de Deus
+
+       D/E    A
+Onde flui o amor
+
+[Solo] A  E/A  D2/A
+
+       A  E/A  D2/A
+
+[Segunda Parte]
+
+      A             E/A
+Em Espírito, em verdade
+
+       D2/A  D/E        A    D  E
+Te adoramos,     Te adoramos
+
+      A             E/A
+Em Espírito, em verdade
+
+       D2/A  D/E        A    E/G#
+Te adoramos,     Te adoramos
+
+[Pré-Refrão]
+
+        F#m  F#m7M       F#m7  F#m6
+Rei do reis        e Senhor
+
+         D     E       A  E/G#
+Te entregamos nosso viver
+
+        F#m  F#m7M       F#m7  F#m6
+Rei do reis        e Senhor
+
+         D     Bm7     E
+Te entregamos nosso viver
+
+[Refrão]
+
+           D           F#m E
+Pra Te adorar, oh rei dos reis
+
+               D9/F#        E/G#
+Foi que eu nasci, ó rei Jesus
+
+        C#7         F#m
+Meu prazer é te louvar
+
+        E       D
+Meu prazer é estar
+
+    D/E           A
+Nos átrios do Senhor
+
+        E/G#    F#m    E       D
+Meu prazer é viver na casa de Deus
+
+       D/E    A
+Onde flui o amor
+
+[Refrão Final]
+
+  E  A E/A  D           F#m E
+Pra Te ado_rar, oh rei dos reis
+
+               D9/F#        E/G#
+Foi que eu nasci, ó rei Jesus
+
+        C#7         F#m
+Meu prazer é te louvar
+
+        E       D
+Meu prazer é estar
+
+    D/E           A
+Nos átrios do Senhor
+
+        E/G#    F#m    E       D
+Meu prazer é viver na casa de Deus
+
+       D/E        A  C#m7  Bm7
+Ministrando o louvor
+
+       E          A  C#m7  Bm7
+Ministrando o louvor
+
+       E          A  C#m7  Bm7
+Ministrando o louvor
+
+[Final] E  A',
+  to_tsvector('portuguese', 'Meu Prazer (Em Espírito e Em Verdade) ' || '')
+),
+(
+  'cordeiro-de-deus-ministerio-amor-e-adoracao',
+  'Cordeiro de Deus',
+  'Ministério Amor e Adoração / Canção Nova',
+  'Ministério Amor e Adoração / Canção Nova',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Cordeiro',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] C/E  D/F#  G
+
+             G         Bm7
+Cordeiro de Deus que tirais o pecado
+C9
+do mundo
+
+         Am7       D       G  C/G  D/G
+Tende piedade, piedade de nós
+
+             G         Bm7
+Cordeiro de Deus que tirais o pecado
+C9
+do mundo
+
+         Am7       D       G  C/G  D/G
+Tende piedade, piedade de nós
+
+             G         Bm7
+Cordeiro de Deus que tirais o pecado
+C9
+do mundo
+
+          Am7     D D7 C G
+Dai-nos a paz, a vossa paz',
+  to_tsvector('portuguese', 'Cordeiro de Deus ' || '')
+),
+(
+  'oferta-de-louvor-ministerio-amor-e-adoracao',
+  'Oferta de Louvor',
+  'Ministério Amor e Adoração / Canção Nova',
+  'Ministério Amor e Adoração / Canção Nova',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  17,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] D  A/C#  Bm7  A/C#
+
+        D  A/C#  Bm7  A/C#
+
+ A9          E/A
+Oferta no silêncio do altar
+
+   A6         E/A   C#7
+Bendito fruto do viver
+
+   F#m7     C#m7          E4
+Perfeito alimento de minh&#x27;alma
+
+  A9           E/A
+O vinho que da uva brotou
+
+   A6         E/A
+Bendito fruto do labor
+
+    F#m7      C#m          D9
+Por tua casa quero me consumir
+
+ E           A9   E/G#         F#m7
+Oferta de louvor,  como   retribuir
+
+    C#m7          D9          F#m
+Por todo bem que fez em meu favor
+
+        Bm7        E7         A
+Elevo o cálice da minha salvação
+
+( D  A/C#  Bm7 )
+
+  A9              E/A
+Levanto as minhas mãos pra ofertar
+
+  A9           E/A  C#7
+E deixo o meu cansaço
+
+   F#m7          C#m7          E4
+Transformo em oração o que eu fiz
+
+  A9         E/A
+Assim como o incenso no altar
+
+ A6         E/A  C#7
+Elevo minha oração
+
+     F#m7      C#m        D9
+Que chegue até vós o meu clamor',
+  to_tsvector('portuguese', 'Oferta de Louvor ' || '')
+),
+(
+  'verbum-panis-ministerio-amor-e-adoracao',
+  'Verbum Panis',
+  'Ministério Amor e Adoração / Canção Nova',
+  'Ministério Amor e Adoração / Canção Nova',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'Em          D
+Desde o princípio
+
+       Em          D        Em
+Antes mesmo que a terra começasse a
+D
+existir
+
+Em        D            Em   D      Em
+O Verbo estava junto a Deus
+D
+
+Em      D
+Veio ao mundo
+
+      Em        D              Em
+E pra não abandonar-nos nesta viagem
+D
+nos deixou
+
+ Em         D9        Em    D   Em
+Todo a Si mesmo como pão
+
+Em             D9  Em
+Verbum caro factum est
+
+Em             D9  Em
+Panis corpus factum est
+
+Em             D9  Em
+Verbum caro factum est
+
+                     C D
+Panis corpus factum est
+
+    G     D         C             D
+E aqui partes o teu pão em meio a nós
+
+       G          D    C             D
+Todo aquele que comer não terá mais
+fome
+
+   G    D           C              D
+E aqui vive tua Igreja em torno a Ti
+
+     G        D/F#     C        D4  D
+Onde se encontrará a morada eterna
+Em
+
+Em             D9  Em
+Verbum caro factum est
+
+Em             D9  Em
+Panis corpus factum est
+
+Em             D9  Em
+Verbum caro factum est
+
+       C  D
+ Panis corpus
+
+Em             D
+Desde o princípio
+
+         Em        D         Em
+Quando o universo foi criado da
+D
+escuridão
+
+ Em        D            Em    D    Em
+O Verbo estava junto a Deus
+D
+
+Em         D
+Veio ao mundo
+
+     Em       D               Em
+Rico em misericórdia Deus mandou o
+D
+Filho seu
+
+ Em         D        Em   D   Em
+Todo a Si mesmo como pão
+
+Em             D9  Em
+Verbum caro factum est
+
+Em             D9  Em
+Panis corpus factum est
+
+Em             D9  Em
+Verbum caro factum est
+
+                      C  D
+ Panis corpus factum est
+
+    G     D         C             D
+E aqui partes o teu pão em meio a nós
+
+       G          D    C             D
+Todo aquele que comer não terá mais
+fome
+
+   G    D           C              D
+E aqui vive tua Igreja em torno a Ti
+
+     G        D/F#     C        D4  D
+Onde se encontrará a morada eterna
+Em
+
+    G     D         C             D
+E aqui partes o teu pão em meio a nós
+
+       G          D    C             D
+Todo aquele que comer não terá mais
+fome
+
+   G    D           C              D
+E aqui vive tua Igreja em torno a Ti
+
+     G        D/F#     C        D4  D
+Onde se encontrará a morada eterna
+Em
+
+Em             D9  Em
+Verbum caro factum est
+
+Em             D9  E
+Panis corpus factum est
+
+Em             G9  Em
+Verbum caro factum est
+
+                      C  D
+Panis corpus factum est',
+  to_tsvector('portuguese', 'Verbum Panis ' || '')
+),
+(
+  'tu-es-soberano-ministerio-koinonya',
+  'Tu És Soberano',
+  'Ministério Koinonya',
+  'Ministério Koinonya',
+  'E7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] E7M  G#m7  A  A/B
+
+        E7M  G#m7  A  A/B
+
+E7M      G#m7           C#m7
+Tu és soberano sobre a terra
+
+        G#m/B         A    A/B  E7M
+Sobre os céus Tu és Senhor absoluto
+A/B
+
+ E7M      G#m7       C#m7
+Tudo que existe e acontece
+
+    G#m/B         A    F#m7
+Tu o sabes muito bem   Tu és
+A/B  E7M
+tremendo
+
+ F#m7     A9    E7M
+E apesar dessa glória que tens
+
+ F#m7     A9    E7M
+Tu te importas, comigo também
+
+  C#m7          G#m7
+E esse amor tão grande
+
+ C#m7      F4  F#  A/B
+Eleva-me, amarra-me a Ti
+
+E7M      G#m7           C#m7
+Tu és soberano sobre a terra
+
+        G#m/B         A    A/B  E7M
+Sobre os céus Tu és Senhor absoluto
+A/B
+
+ E7M      G#m7       C#m7
+Tudo que existe e acontece
+
+    G#m/B         A    F#m7
+Tu o sabes muito bem   Tu és
+A/B  E7M
+tremendo
+
+ F#m7     A9    E7M
+E apesar dessa glória que tens
+
+ F#m7     A9    E7M
+Tu te importas, comigo também
+
+  C#m7          G#m7
+E esse amor tão grande
+
+ C#m7      F4  F#   B4
+Eleva-me, amarra-me a Ti
+
+B7       E7M
+Tu És tremendo',
+  to_tsvector('portuguese', 'Tu És Soberano ' || '')
+),
+(
+  'quao-formoso-es-ministerio-koinonya',
+  'Quão Formoso És',
+  'Ministério Koinonya',
+  'Ministério Koinonya',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G
+Quão formoso és
+
+D/F#          G
+Rei do universo
+
+         C     G/B   Am
+Tua glória enche a Terra
+
+G        D
+E enche os céus
+
+     C            D/C
+Tua glória enche a Terra
+
+     Bm     B/Eb       Em
+Tua glória enche os céus
+
+    Am                D
+Tua glória enche minha vida
+
+    G    C
+Senhor
+
+[Refrão]
+
+      G        Bm            C    E
+Maravilhoso é estar em Tua presença
+
+       Am       G       D
+Maravilhoso é poder Te adorar
+
+      Bm        B7             Em   D
+Maravilhoso é tocar em Tuas vestes
+
+      Am        D             G   Am
+Maravilhoso é Te contemplar Senhor
+D
+
+      Am            D          G  Em
+Maravilhoso é Te contemplar Senhor',
+  to_tsvector('portuguese', 'Quão Formoso És ' || '')
+),
+(
+  'alianca-ministerio-koinonya',
+  'Aliança',
+  'Ministério Koinonya',
+  'Ministério Koinonya',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  16,
+  'Acolhida / Comunhão',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C           Am
+Como é precioso, irmão
+
+  Dm               G
+Estar bem junto a Ti
+
+  C              Am
+E juntos, lado a lado
+
+   Dm            G
+Andarmos com Jesus
+
+  Am       Em7    Em
+E expressarmos o amor
+
+        F  G         C
+Que um dia Ele nos deu
+
+G/B    Am           D/F#
+ Pelo sangue no Calvário
+
+     Dm    G      C
+Sua vida trouxe a nós
+
+G/B   Am          Em
+A---liança no Senhor
+
+    F    G    C
+Eu tenho com você
+
+G/B   Am             D/F#      G
+Não existem mais barreiras em meu ser
+E/G#
+
+        Am           Em
+Eu sou livre pra te amar
+
+       F       D7/F#
+Pra te aceitar
+
+       C/G
+E para te pedir
+
+   Dm        Gm    C7
+Perdoa-me, irmão
+
+       F        E
+Eu sou um com você
+
+    Am     Am/G   D7/F#
+No amor do nosso Pai
+
+      C/G     G        C
+Somos um no amor de Jesus',
+  to_tsvector('portuguese', 'Aliança ' || '')
+),
+(
+  'para-que-venha-vosso-reino-jesus-venha-o-reino-de-maria',
+  'Para Que Venha Vosso Reino Jesus, Venha o Reino de Maria Fratermidade',
+  'Fraternidade Arca de Maria',
+  'Fraternidade Arca de Maria',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Mariano / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A        E/G#       F#m
+A onde abundou o pecado
+
+D   E              A    E7
+supera abundou a graça
+
+   A       E/G#     F#m
+a onde o inimigo um dia reinar
+
+D          E          A
+a virgem Maria para sempre triunfou
+
+D         E C#m          Bm7
+somos escravo aniquilado no amor de
+E
+mãe
+
+D           A          D    Bm7   E
+somos um exercito em ordem de batalha
+
+D               Bm7           E     A
+confiamos no comandante que nunca
+falha
+
+D        E          D   A  E
+viemos aqui para a vida doar
+
+A     E            D        E
+e Maria ao mundo inteiro levar
+
+ A        E             D
+quando chegara o feliz tempo
+
+     A                 D
+em que as almas expiraram Maria
+
+         Bm7              E
+como os corpos respiram o ar (bis)
+
+A         E                      D  E
+para que venha ao nosso reino Jesus
+
+ A                   D  E
+venha ao reino de Maria
+
+quando.........
+
+       D    E       A
+somos escravos por amor',
+  to_tsvector('portuguese', 'Para Que Venha Vosso Reino Jesus, Venha o Reino de Maria Fratermidade ' || '')
+),
+(
+  'salmo-32-sobre-nos-venha-senhor-a-vossa-graca-pois-em-vo',
+  'Salmo 32 - Sobre Nós Venha, Senhor, a Vossa Graça, Pois, Em Vós, Nós Esperamos',
+  'Fraternidade Arca de Maria',
+  'Fraternidade Arca de Maria',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Salmo',
+  'Qualquer',
+  '',
+  'liturgica',
+  'Em D/F# G           D#º           Em
+ Sobre nós venha, Senhor, a vossa
+graça
+
+        Am            C D
+Pois, em vós, nós esperamos!
+
+Bm7                          Em
+— Pois reta é a palavra do Senhor
+
+  Bm7                       Em
+E tudo o que ele faz merece fé
+
+    Am7                   D
+Deus ama o direito e a justiça
+
+     Am7                         C  D
+Transborda em toda a terra a sua graça
+
+Bm7
+— Mas o Senhor pousa o olhar sobre os
+Em
+que o temem
+
+         Bm7                    Em
+E que confiam esperando em seu amor
+
+       Am7                     D
+Para da morte libertar as suas vidas
+
+        Am7                        C D
+E alimentá-los quando é tempo de
+penúria
+
+Bm7                            Em
+— No Senhor nós esperamos confiantes
+
+       Bm7                        Em
+Porque Ele é nosso auxílio e proteção!
+
+      Am7                        D
+Sobre nós venha, Senhor, a vossa graça
+
+         Am7                      C D
+Da mesma forma que em vós nós
+esperamos!',
+  to_tsvector('portuguese', 'Salmo 32 - Sobre Nós Venha, Senhor, a Vossa Graça, Pois, Em Vós, Nós Esperamos ' || '')
+),
+(
+  'eu-creio-nas-promessas-de-deus-eugenio-jorge',
+  'Eu Creio Nas Promessas de Deus',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  28,
+  'Entrada / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  'Intr: D9  A/C#  Bm  A  G  G/A  D7+
+G/B  A/C#
+
+    D9           A/C#
+Eu creio nas promessas de Deus, eu
+Bm7          A
+creio nas promessas de Deus,
+
+     G           G/A             D9
+Eu creio nas promessas do meu Senhor.
+
+ A/C#  Bm      F#m         G
+Se sou fiel no pouco, Ele me confiará
+D9
+mais,
+
+   A/C#  Bm    Em          G
+Se sou fiel no pouco, meus passos
+A   D9
+guiará.
+
+    D9              A/C#
+Eu creio nas misericórdia de Deus, eu
+Bm7            A
+creio nas misericórdia de Deus,
+
+D/F# G            G/A
+Eu creio nas misericórdia do meu
+D9 (2x)
+Senhor.
+
+ A/C#  Bm      F#m         G
+Se sou fiel no pouco, Ele me confiará
+D9
+mais,
+
+   A/C#  Bm    Em          G
+Se sou fiel no pouco, meus passos
+A   D9 (2x)
+guiará.
+
+    D9         A/C#            Bm7
+Eu creio no amor de Deus, eu creio no
+A
+amor de Deus,
+
+D/F# G        G/A          D9 (2x)
+Eu creio no amor do meu Senhor.
+
+ A/C#  Bm      F#m         G
+Se sou fiel no pouco, Ele me confiará
+D9
+mais,
+
+     A/C# Bm    Em
+Se sou fiel no pouco, meus passos
+G        A     D9      (2x)
+guiará.                G/D D G/D B7
+
+    E9            B/D#
+Eu creio nas promessas de Deus, eu
+C#m7        B             E/G#
+creio nas promessas de Deus,
+
+    A9            A/B             E9
+Eu creio nas promessas do meu Senhor.
+(2x)
+
+ B/D#  C#m      G#m        A
+Se sou fiel no pouco, Ele me confiará
+E B/D#   C#m F#m A B7 E
+mais ....
+Bendize, ó minh&#x27;alma, ao Senhor
+Autoria: Eugênio Jorge
+
+Intor:  E E/D A/C# 2x F#m A/B
+
+   E        E/D      A/C#
+Bendize, bendize, bendize ó
+F#m       A/B
+minh&#x27;alma ao Senhor.
+
+   E        E/D     A/C#
+Bendize, bendize, bendize ó
+F#m        A/B
+minh&#x27;alma ao Senhor.
+
+   E        E/D     A/C#
+Bendize, bendize, bendize ó
+F#m        A/B REFRÃO
+minh&#x27;alma ao Senhor.
+
+   E        E/D     A/C#
+Bendize, bendize, bendize ó
+F#m        A/B
+minh&#x27;alma ao Senhor.
+
+   A7+                         G#m
+Bendize, ó minh&#x27;alma ao Senhor
+F#m                      B7
+e jamais te esqueças de seus
+benefícios,
+
+        A7+                     G#m
+Pois é Ele quem perdoa as tuas faltas,
+F#m                      B7
+e sara toda a tua enfermidade.
+
+        A7+       B/A      F#m  B7
+Porque Sua misericórdia é eterna, e o
+A7+         B/A   F#m   B7
+Seu amor por nós é sem fim.
+
+        A7+      B/A      F#m  B7
+Porque Sua misericórdia é eterna, e o
+A7+        B/A   F#m   B7
+Seu amor por nós é sem fim. REFRÃO',
+  to_tsvector('portuguese', 'Eu Creio Nas Promessas de Deus ' || '')
+),
+(
+  'jesus-eucaristia-fraternidade-arca-de-maria',
+  'Jesus Eucaristia',
+  'Fraternidade Arca de Maria',
+  'Fraternidade Arca de Maria',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração / Eucaristia',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D       A/C#       Bm    Bm/A
+Jesus, Jesus eucaristia fruto do
+G
+ventre sagrado
+
+     Em             A
+da sempre virgem Maria
+
+              D    A/C#            Bm
+inunda-me de amor, amor que não se
+mede
+
+  Bm/A        G       A
+e que de si esquece para cuidar do
+D   A7
+outro
+
+        D  A/C#    Bm   Bm/A    G
+faz me fiel ao sacrifícil e me pedes
+
+       A             D   A7
+me entregando dia a dia
+
+        D     A/C#        Bm  Bm/A   G
+faz me fiel completamente fiel me
+imolando
+
+     A             D   A7
+no altar do vosso amor
+
+        D       A/C#       Bm
+Jesus hostia sacramento de amor
+
+Bm/A           G                   A
+alimento das almas antecipação do céu
+
+                 D
+faz me pobre e humilde a vossa
+Bm
+semelhança
+
+         Bm/A           G
+que eu despreze honras e pompas
+
+    A                D
+renunciando minha vontade
+
+FAZ ME FIEL .......',
+  to_tsvector('portuguese', 'Jesus Eucaristia ' || '')
+),
+(
+  'te-adorare-fraternidade-arca-de-maria',
+  'Te Adorare',
+  'Fraternidade Arca de Maria',
+  'Fraternidade Arca de Maria',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C                            G/B
+Eres el principio y el fin
+
+ Am7                             F
+eres el inicio de mi verdadeiro vivi
+Dm
+
+      G         C
+eres todos ... aquellos mares
+
+             G/B     Am7
+puedo cruzar         tribulaciiones
+
+                 F  Dm
+puedo pasar por ti  porque tu
+
+           G
+amor me sostiene
+
+       C    Am7      F            G
+te adorare     te alabare oh mi senor
+
+       C    Am7     F              G
+te adorare     te alabare a ti mi Dios
+
+        C    G/B    Am7         F
+en la noche o en el dia en la salud o
+
+        G        C       G/B      Am7
+ Enfermedad en la muerte o en la vida
+
+  G           Dm G
+Aqui estoy senor
+
+G            F      Fm  C
+aqui estoy senor.',
+  to_tsvector('portuguese', 'Te Adorare ' || '')
+),
+(
+  'meu-senhor-e-meu-deus-eugenio-jorge',
+  'Meu Senhor e meu Deus',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  G  D  G
+
+D      D9          G
+  Meu Senhor e meu Deus
+
+       Em         A   A9
+Meu Senhor e meu Deus
+
+F#m                Bm      Em
+Meu Senhor e meu Deus, eu creio
+
+       A          A9
+Mas aumenta minha fé
+
+G              D/F#
+  Dá-me uma fé viva
+
+G              Bm
+  Dá-me uma fé nova
+
+G              D/F#         Em
+  Traduzida na vida, testemunhada
+
+    A
+No amor pelos irmãos',
+  to_tsvector('portuguese', 'Meu Senhor e meu Deus ' || '')
+),
+(
+  'mae-do-novo-homem-eugenio-jorge',
+  'Mãe do Novo Homem',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A7+                E/G#   F#m
+   Singela doce e pura,      Maria de
+Esus4 E
+José
+
+A7+                E/G#  F#m
+   Mãe terna escolhida,     és mãe
+Esus4 E
+leal da fé
+
+Bm             C#m  D   E    A9   E7
+ Seu nome é Maria,       de Deus
+(2x)
+
+(refrão)
+
+A7+              E/G#    D/F#
+ Maria santa e fiel, ensina-nos a
+Esus4 E
+viver como escolhidos
+
+A7+                     E/G#
+ Olhos voltados para o céu     e por
+D/F#                  Esus4 E
+ele construir a nova vida
+
+A7+          E/G#   F#m
+ Mãe da obediência,      da graça e do
+Esus4 E
+amor
+
+A7+                  E/G#    F#m
+ Que os homens se encontrem,      no
+Esus4 E
+Filho dessa Flor
+
+Bm             C#m  D  E    A9   E7
+ Seu nome é Maria,      de Deus
+
+A7+               E/G#    D/F#
+ Maria santa e fiel, ensina-nos a
+Esus4 E
+viver como escolhidos
+
+A7+                      E/G#
+ Olhos voltados para o céu     e por
+D/F#                  Esus4 E
+ele construir a nova vida     (2x)
+
+      A7+   E/G#     F#m  Esus4  E
+nova vida,      a nova vida   (2x)
+
+(solo)',
+  to_tsvector('portuguese', 'Mãe do Novo Homem ' || '')
+),
+(
+  'amor-eterno-eugenio-jorge',
+  'Amor Eterno',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D                      Bm7
+Com Amor Eterno vou te amar,
+Em7                   A7
+infinitamente sempre vou te amar.
+
+  D                    Bm7
+Quando tu andares pelo fogo não te
+queimarás,
+
+              Em7              A4/7 A7
+A4/7 A7
+nas águas dos rios não te afogarás.
+
+D
+Sempre vou te amar, sempre vou te
+Bm7  Em7     G       A7
+amar, sempre vou te amar. (2x)
+
+  D                    Bm7
+Quando caminhares no deserto não
+Em7                  A7
+sentirás fome, frio ou calor.
+
+  D                         Bm7
+Em7               A4/7 A7 A4/7 A7
+Saiba, sempre vou estar por perto. Sou
+teu Deus, Senhor e Pastor.
+
+B7   E                            C#m7
+    Sempre te conheci, sempre te amei,
+F#m7            B7
+no ventre materno te consagrei.
+
+    E                      C#m7
+F#m7              B4/7 B7 B4/7 B7
+Te dei todo carinho, todo amor. sou
+teu Deus, Senhor e Pastor.
+
+E
+Sempre vou te amar, sempre vou te
+C#m7 F#m7            B7
+amar, sempre vou te amar. (2x)
+
+F#
+   Sempre vou te amar, sempre vou te
+D#m7 G#m7    B      C#7
+amar, sempre vou te amar.',
+  to_tsvector('portuguese', 'Amor Eterno ' || '')
+),
+(
+  'nascer-de-novo-eugenio-jorge',
+  'Nascer de Novo',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'Eugênio Jorge / Ministério Missão Mensagem Brasil',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Am                        G
+Em verdade, em verdade te digo
+
+ Am                  G
+Quem não nascer de novo
+
+ Am         G               F
+Não poderá ver o reino de Deus
+
+ Am                       G
+Em verdade em verdade te digo
+
+ Am                           G
+Quem não renascer da água e do
+Espírito
+
+  F           Dm             Em
+Não entrará no reino de Deus
+
+ Am          G          F
+Então vem,  vem, vem, vem , vem
+
+   Em              Am
+Vem Espírito Santo.
+
+ Am                 G
+O vento sopra aonde quer você ouve o
+F
+ruído
+
+ Am                   G
+Mas não sabe de onde vem nem para onde
+F
+vai
+
+ Am                G
+Assim acontece com aquele que nasceu
+F
+do Espírito',
+  to_tsvector('portuguese', 'Nascer de Novo ' || '')
+),
+(
+  'santo-santo-senhor-deus-do-universo-coral-palestrina',
+  'Santo, Santo Senhor Deus do Universo',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Santo',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D               Bm    G
+Santo,  Santo,  Santo  Senhor Deus do
+A
+universo
+
+   D                 Bm      G
+O Céu e a terra proclamam a vossa
+A
+glória
+
+  D         G    D/F#  Em  A
+Hosana nas alturas!  Hosana!
+
+  D         G    D/F#  Em  A
+Hosana nas alturas!  Hosana!
+
+    D               Bm     G
+Bendito aquele que vem em nome do
+A
+Senhor
+
+    D               Bm     G
+Bendito aquele que vem em nome do
+A
+Senhor
+
+  D         G    D/F#  Em  A
+Hosana nas alturas!  Hosana!
+
+  D         G    D/F#  Em  A
+Hosana nas alturas!  Hosana!
+
+[Final] G  D/F#  Em  A  D',
+  to_tsvector('portuguese', 'Santo, Santo Senhor Deus do Universo ' || '')
+),
+(
+  'o-pai-somos-nos-esta-vinha-coral-palestrina',
+  'Ó Pai, Somos Nós Esta Vinha',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C                   F
+Ó Pai, somos nós esta vinha
+
+    Dm                  C
+Que tu com carinho plantaste
+
+   Am                    G
+A fim de colher os seus frutos
+
+                      C
+A nós o teu Filho enviaste.
+
+                      F        C
+Eu me sinto feliz, perto de Deus
+
+     G7                   C
+Em achar um abrigo no Senhor
+
+                      F          C
+Eu, agora, estarei, sempre, com ele
+
+          G7                 C
+Pois, me veio trazendo pela mão
+
+                     F         C
+Vosso plano de amor me vai guiando
+
+        G7                         C
+Para chegar, finalmente, em vossa
+glória
+
+                        F       C
+Quem se afasta de vós, nada consegue
+
+         G7                      C
+Quem se alegra sem vós, não é feliz
+
+                      F     C
+Vou cantar a bondade do Senhor
+
+       G7                 C
+Pelas ruas e praças da cidade',
+  to_tsvector('portuguese', 'Ó Pai, Somos Nós Esta Vinha ' || '')
+),
+(
+  'as-sementes-que-me-deste-coral-palestrina',
+  'As Sementes Que Me Deste',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] D  Em  A7  D
+
+        D  Em  A7  D
+
+     D             Bm
+As sementes que me deste e que não
+Em   A7      D
+eram pra guardar
+
+       D             Bm           Em
+Pus no chão da minha vida, quis fazer
+A7      D D7
+frutificar
+
+         G            G/B       D/F#
+Dos meus dons que recebi pelo Espírito
+Bm
+do amor
+
+         Em           G
+Trago os frutos que colhi e em Tua
+D          D7
+mesa quero pôr
+
+         G            G/B       D/F#
+Dos meus dons que recebi pelo Espírito
+Bm
+do amor
+
+         Em           G
+Trago os frutos que colhi e em Tua
+D    A     D
+mesa quero pôr
+
+( D  Em  A7  D )
+
+      D            Bm          Em
+Pelos campos deste mundo quero sempre
+A7     D
+semear
+
+     D             Bm            Em
+Os talentos que me deste para eu mesmo
+A7      D D7
+cultivar
+
+         G            G/B       D/F#
+Dos meus dons que recebi pelo Espírito
+Bm
+do amor
+
+         Em           G
+Trago os frutos que colhi e em Tua
+D          D7
+mesa quero pôr
+
+         G            G/B       D/F#
+Dos meus dons que recebi pelo Espírito
+Bm
+do amor
+
+         Em           G
+Trago os frutos que colhi e em Tua
+D    A     D
+mesa quero pôr
+
+( D  Em  A7  D )
+
+       D               Bm
+Quanto mais eu for plantando, mais
+Em    A7       D
+terei para colher
+
+       D             Bm
+Quanto mais eu for colhendo, mais
+Em     A      D D7
+terei a oferecer
+
+         G            G/B       D/F#
+Dos meus dons que recebi pelo Espírito
+Bm
+do amor
+
+         Em           G
+Trago os frutos que colhi e em Tua
+D          D7
+mesa quero pôr
+
+         G            G/B       D/F#
+Dos meus dons que recebi pelo Espírito
+Bm
+do amor
+
+         Em           G
+Trago os frutos que colhi e em Tua
+D    A     D   D2
+mesa quero pôr',
+  to_tsvector('portuguese', 'As Sementes Que Me Deste ' || '')
+),
+(
+  'jesus-em-tua-presenca-quatro-por-um',
+  'Jesus Em Tua Presença',
+  'Quatro Por Um',
+  'Quatro Por Um',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Primeira Parte]
+
+   G             C9       D          G
+Jesus em tua presença reunimo-nos aqui
+
+        G         C9      D          G
+Contemplamos tua face rendemo-nos a ti
+D/F#
+
+         Em7       Bm7          C9
+Pois um dia a tua morte trouxe vida a
+G
+todos nós
+
+       G             C9       D
+E nos deu completo acesso ao coração
+do pai
+
+( G  C9  G  C9 )
+
+[Primeira Parte]
+
+   G             C9       D          G
+Jesus em tua presença reunimo-nos aqui
+
+        G         C9      D          G
+Contemplamos tua face rendemo-nos a ti
+D/F#
+
+         Em7       Bm7          C9
+Pois um dia a tua morte trouxe vida a
+G
+todos nós
+
+       G             C9       D
+E nos deu completo acesso ao coração
+G  D/F#
+do pai
+
+[Pré-Refrão]
+
+   Em7         Bm7     C9    D    Em7
+O véu que separava já não separa mais
+
+   Em7            Bm7       C9
+A luz que outrora apagada agora brilha
+
+   D               E4  E
+E cada dia brilha mais
+
+[Refrão]
+
+ C9     D     G  D/F#  Em7  D9
+Só pra te adorar
+
+     C9      D9  ( Em7  D/F#  G ) D
+E fazer Teu nome grande
+
+C9    D        G      D/F# A
+E te dar o louvor que é devido
+
+   C9    D   G
+Estamos nós aqui
+
+( G  C9  G  C9 )
+
+[Primeira Parte]
+
+   G             C9       D          G
+Jesus em tua presença reunimo-nos aqui
+
+        G         C9      D          G
+Contemplamos tua face rendemo-nos a ti
+D/F#
+
+         Em7       Bm7          C9
+Pois um dia a tua morte trouxe vida a
+G
+todos nós
+
+       G             C9       D
+E nos deu completo acesso ao coração
+G  D/F#
+do pai
+
+[Pré-Refrão]
+
+   Em7         Bm7     C9    D    Em7
+O véu que separava já não separa mais
+
+   Em7            Bm7       C9
+A luz que outrora apagada agora brilha
+
+   D               E4  E
+E cada dia brilha mais
+
+[Refrão]
+
+ C9     D     G  D/F#  Em7  D9
+Só pra te adorar
+
+     C9      D9  ( Em7  D/F#  G ) D
+E fazer Teu nome grande
+
+C9    D        G      D/F# A
+E te dar o louvor que é devido
+
+   C9    D     G  D/F#
+Estamos nós aqui
+
+[Pré-Refrão]
+
+   Em7         Bm7     C9    D    Em7
+O véu que separava já não separa mais
+
+   Em7            Bm7       C9
+A luz que outrora apagada agora brilha
+
+   D               E4  E
+E cada dia brilha mais
+
+[Refrão]
+
+ C9     D     G  D/F#  Em7  D9
+Só pra te adorar
+
+     C9      D9  ( Em7  D/F#  G ) D
+E fazer Teu nome grande
+
+C9    D        G      D/F# A
+E te dar o louvor que é devido
+
+   C9          G
+Estamos nós aqui
+
+Estamos nós aqui
+
+               C9
+Estamos nós aqui
+
+               G
+Estamos nós aqui
+
+Estamos nós aqui
+
+               C9
+Estamos nós aqui
+
+               G
+Estamos nós aqui',
+  to_tsvector('portuguese', 'Jesus Em Tua Presença ' || '')
+),
+(
+  'vim-para-adorar-te-quatro-por-um',
+  'Vim Para Adorar-te',
+  'Quatro Por Um',
+  'Quatro Por Um',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F  C  Gm  Bb9
+
+        F  C  Bb9
+
+ F         C           Gm       Bb9
+Luz das Nações que dissipa as trevas
+
+F            C          Bb9
+Abre os meus olhos pra ver
+
+ F       C           Gm      Bb9
+Lindo tu és, eu só quero adorar-Te
+
+ F           C        Bb9
+Dar os meus dias pra Ti
+
+             F                     C/E
+Vim para adorar-Te, vim para
+prostrar-me
+
+            Dm            Bb9
+Vim para dizer-Te: És meu Deus
+
+             F                 C/E
+Totalmente amável, totalmente digno
+
+           Dm     Bb9
+És maravilhoso para mim
+
+ F         C       Gm      Bb9
+Rei sobre todos Tu és Exaltado
+
+F       C        Bb9
+Entronizado nos Céus
+
+ F      C     Gm        Bb9
+Humildemente viestes a Terra
+
+ F     C        Bb9
+Se entregou por amor
+
+             F                     C
+Vim para adorar-Te, vim para
+prostrar-me
+
+            Dm            Bb9
+Vim para dizer-Te: És meu Deus
+
+             F                 C
+Totalmente amável, totalmente digno
+
+           Dm      Bb9
+És maravilhoso para mim
+
+             F                     C
+Vim para adorar-Te, vim para
+prostrar-me
+
+            Dm        Bb9
+Vim para dizer-Te: És meu Deus
+
+             F                 C
+Totalmente amável, totalmente digno
+
+        Dm          Bb9
+És maravilhoso para mim
+
+     C   Dm        Bb9
+Não saberei o quanto custou
+
+     C    Dm      Bb9
+Ver meus pecados lá na Cruz
+
+     C   Dm         Bb9
+Não saberei quanto custou
+
+     C      Dm    Bb9
+Ver meus pecados lá na Cruz
+
+     C/E   Dm/F     Bb9
+Não saberei quanto custou
+
+     C/E    Dm/F     Bb9
+Ver meus pecados lá na Cruz
+
+     C/E   Dm/F     Bb9
+Não saberei quanto custou
+
+     C/E    Dm/F     Bb9
+Ver meus pecados lá na Cruz
+
+             F
+Vim para adorar-Te
+
+               C/E
+Vim para prostrar-me
+
+            Dm            Bb9
+Vim para dizer-Te: És meu Deus
+
+             F
+Totalmente amável
+
+ C         Gm
+Totalmente Digno
+
+Bb      F     C    Bb9
+És maravilhoso para mim
+
+             F
+Vim para adorar-Te
+
+               C
+Vim para prostrar-me
+
+          Dm          Bb9
+Vim para dizer-Te: És meu Deus
+
+            F
+Totalmente amável
+
+ C         Gm
+Totalmente Digno
+
+Bb      F     C    Bb9
+És maravilhoso para mim',
+  to_tsvector('portuguese', 'Vim Para Adorar-te ' || '')
+),
+(
+  'eis-que-sou-o-pao-da-vida-coral-palestrina',
+  'Eis que Sou o Pão da Vida',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] C  F  C  G  C
+
+[Primeira Parte]
+
+      G7          C  C7/Bb
+Todo aquele que comer
+
+                    F  G
+Do meu corpo que é doado
+
+                  C  Am D7
+Todo aquele que bebe-er
+
+                   G   G7
+Do meu sangue derramado
+
+                   C     C7/Bb
+E crê nas minhas palavras
+
+                  F   G
+Que são plenas de vida
+
+                   C  Am Dm
+Nunca mais sentirá fo-me
+
+      G7          C   C7
+E nem sede em sua lida
+
+[Refrão]
+
+                     F   G
+Eis que sou o pão da vida
+
+                     C   A7
+Eis que sou o pão do céu
+
+                Dm
+Faço-me vossa comida
+
+       C        G       C
+Eu sou mais que leite e mel
+
+[Segunda Parte]
+
+      G7          C     C7/Bb
+O meu Corpo e meu Sangue
+
+                F     G
+São sublimes alimentos
+
+                   C   Am D7
+Do fraco indigente é vigor
+
+                  G    G7
+Do faminto é o sustento
+
+               C   C7/Bb
+Do aflito é consolo
+
+                 F  G
+Do enfermo é a unção
+
+                  C Am Dm
+Do pequeno e excluí-do
+
+      G7          C  C7
+Rocha viva e proteção
+
+[Refrão]
+
+                     F   G
+Eis que sou o pão da vida
+
+                     C   A7
+Eis que sou o pão do céu
+
+                Dm
+Faço-me vossa comida
+
+       C        G       C
+Eu sou mais que leite e mel
+
+Passagem: C  F  C  G  C
+
+[Terceira Parte]
+
+       G7           C   C7/Bb
+Eu sou o Caminho, a Vida
+
+                 F   G
+Água Viva e a Verdade
+
+                     C  Am D7
+Sou a paz e a luz do mundo
+
+                   G   G7
+Sou a própria liberdade
+
+                 C  C7/Bb
+Sou a palavra do Pai
+
+                  F  G
+Que entre vós habitou
+
+                 C Am Dm
+Para que vós habiteis
+
+       G7          C  C7
+Na trindade onde estou
+
+[Refrão]
+
+                     F   G
+Eis que sou o pão da vida
+
+                     C   A7
+Eis que sou o pão do céu
+
+                Dm
+Faço-me vossa comida
+
+       C        G       C
+Eu sou mais que leite e mel
+
+[Quarta Parte]
+
+      G7        C   C7/Bb
+Eu sou a Palavra Viva
+
+                   F   G
+Que sai da boca de Deus
+
+                C     Am D7
+Sou a lâmpada para guiar
+
+                      G   G7
+Vossos passos, irmãos meus
+
+                    C     C7/Bb
+Sou o rio, eu sou a ponte
+
+                 F   G
+Sou a brisa que afaga
+
+                  C  Am Dm
+Sou a água, sou a fonte
+
+     G7          C   C7
+Fogo que não se apaga
+
+[Refrão]
+
+                     F   G
+Eis que sou o pão da vida
+
+                     C   A7
+Eis que sou o pão do céu
+
+                Dm
+Faço-me vossa comida
+
+       C        G       C
+Eu sou mais que leite e mel',
+  to_tsvector('portuguese', 'Eis que Sou o Pão da Vida ' || '')
+),
+(
+  'cinco-paes-e-dois-peixinhos-quatro-por-um',
+  'Cinco Pães e Dois Peixinhos',
+  'Quatro Por Um',
+  'Quatro Por Um',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  18,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] C7  D9  Am7  Bm7  E
+
+E9               C#m
+  Nem sempre se sabe
+
+A9                     B9
+  Detalhes de um milagre
+
+E9               C#m
+  Mas eu vou contar
+
+A9                    B9
+  A história de um menino
+
+F#m7                   E/G#
+  Que um dia levantou bem cedo
+
+A9                             E/G#
+  E sua mãe lhe perguntou com medo
+
+F#m7    E6          B9
+  Aonde é que você vai?
+
+F#m7                E/G#
+  E o menino,então,respondeu
+
+A9                       E/G#
+  O mestre está a me chamar
+
+F#m7            E9               B9
+  Uma multidão vou ajudar alimentar
+
+G#7(4)         G#7                 C#m
+  Sua mãe lhe disse: isso é impossivel
+
+       B            A9    E/G#
+O que tem ai nesse cestinho?
+
+F#m            E/G#        A9
+  E com muita fé o menino disse
+
+ B         B       E9
+Cinco pães e dois peixinhos
+
+E9                   B9
+  Quem poderia imaginar
+
+       B9     E/G#   F#m
+Que o menino ia ajudar
+
+    A           B9
+Alimentar a multidão
+
+E9                    B
+  E é assim que Deus faz
+
+B
+  Usa quem ele quer
+
+  A9     B  E9
+    Menino,homem ou mulher
+
+ C7  D9  Am7  Bm7  E
+
+[Solo] E  B  F#m  A  B
+
+       E  B  E/G#  F#m  G#m  A  B
+
+       C7  D9  Am7  Bm7  E
+
+E9               C#m
+  Eu posso imaginar
+
+A9                          B
+  Os olhos do menino a brilhar
+
+E9           C#m    A      B
+  Muita alegria em poder ajudar
+
+F#m                     E/G#
+  Então Jesus Levantou seus olhos
+
+A9                  E/G#   F#m
+  E viu que era preciso manifestar
+E6       B
+o seu poder
+
+F#m                         E/G#
+  E alimentou todos os que tinha fome
+
+A9                     E/G#     F#m
+  Grande foi o milagre e todos puderam
+E6  B
+crer
+
+G#                        C#m
+  Que com Jesus o pouco é muito
+
+               B          A9   E/G#
+Assim Também creu aquele menino
+
+F#m                  E/G#
+  Que com muita fé trouxe em seu
+A9
+cestinho
+
+           B                E
+Cinco pães e dois peixinhos
+
+E9                   B9
+  Quem poderia imaginar
+
+       B9     E/G#   F#m
+Que o menino ia ajudar
+
+    A           B9
+Alimentar a multidão
+
+E9                    B
+  E é assim que Deus faz
+
+B
+  Usa quem ele quer
+
+  A9     B  E9
+    Menino,homem ou mulher',
+  to_tsvector('portuguese', 'Cinco Pães e Dois Peixinhos ' || '')
+),
+(
+  'mestre-onde-moras-coral-palestrina',
+  'Mestre, Onde Moras?',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'Coral Palestrina / Hinário Litúrgico CNBB',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  3,
+  'Entrada / Vocacional',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G                         D
+No meu coração sinto o chamado
+
+       C          D          G
+Fico inquieto: preciso responder
+
+                              D
+Então pergunto: "mestre,onde moras?"
+
+        C                      D
+E me respondes que preciso caminhar
+
+  C           G         C          G
+Seguindo teus passos,fazendo a
+história
+
+    C         G               D
+Construindo o novo no meio do povo
+
+  C           G         C          G
+Seguindo teus passos,fazendo a
+história
+
+    C         G              D
+Construindo o novo no meio do povo
+
+C.             G
+ Mestre,onde moras?
+
+D             G
+Mestre,onde estás?
+
+   C         G
+No meio do po-vo
+
+ D    G
+Vem e verás
+
+   C         G
+No meio do po-vo
+
+D    G
+Vem e verás
+
+G                           D
+Te vejo em cada rosto das pessoas
+
+     C         D            G
+Tua imagem me anima e faz viver
+
+                        D
+No coração amigo que se doa
+
+     C                      D
+No sonho do teu reino acontecer
+
+    C          G       C        G
+Teu reino é justiça,é paz,é missão
+
+  C     G              D
+É a boa nova da libertação!
+
+    C          G       C        G
+Teu reino é justiça,é paz,é missão
+
+   C    G       D      G
+É a boa nova da libertação!
+
+G                          D
+Tua palavra abre novos horizontes
+
+     C          D          G
+É convite de serviço aos irmãos
+
+                            D
+Me consagra,me envia a assumir
+
+       C                      D
+Teu projeto nesta vida,neste chão
+
+     C         G            C
+Meu "sim" é resposta,é meu jeito de
+G
+amar
+
+  C           G               D
+Estar com teu povo,contigo morar
+
+     C         G            C
+Meu "sim" é resposta,é meu jeito de
+G
+amar
+
+  C           G        D      G
+Estar com teu povo,contigo morar',
+  to_tsvector('portuguese', 'Mestre, Onde Moras? ' || '')
+),
+(
+  'a-felicidade-juninho-cassimiro',
+  'A Felicidade',
+  'Juninho Cassimiro / Banda Arkanjos',
+  'Juninho Cassimiro / Banda Arkanjos',
+  'F',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F  Bb  F
+
+         F
+Além de vós, o
+
+    F7M
+Que há pra mim no céu
+
+         Bb9
+Se vos possuo e nada mais me
+
+        Dm7   C
+Atrai aqui
+
+         F       C
+Meu coração pode já desfalecer
+
+           Bb9
+A minha herança eterna é o
+
+     Dm7
+Meu Deus
+
+    Gm              C/Bb
+O meu Deus é a minha riqueza
+
+     Bb9                C4  C
+Tudo mais perde o seu valor
+
+   Gm
+Desprezei as paixões dessa
+
+ Am7
+Terra
+
+Gm7                  Dm7
+Afim de ganhar teu olhar
+
+  Bb9                C4  C
+E ficar contigo meu Rei
+
+      F           Bb9
+Para mim a felicidade é me
+
+              Dm7
+Aproximar de Deus
+
+ C9              Am7
+Ahh! Os vossos altares, os
+
+         Bb9   F/A
+Vossos altares
+
+   Gm7                   Dm7
+Senhor dos exércitos meu Rei e
+
+     C4   C
+Meu Deus',
+  to_tsvector('portuguese', 'A Felicidade ' || '')
+),
+(
+  'brilha-banda-arkanjos',
+  'Brilha',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'E',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Louvor / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E           F#m
+ Mundo inssencivel,
+
+G#m       A B
+ Acende a luz.
+
+E        F#m
+ Povo carente,
+G#m       A B  B7 (paradinha)
+ Canta ao amor.
+
+E                  F#m
+ E quem precisa de luz durante o dia,
+
+G#m                         A      B
+ Se ela foi feita pra brilhar no breu,
+
+E                        F#m
+ Na noite escura a gente vê um
+vagalume,
+
+G#m                         A      B
+ Que só é visto quando passa a
+brilhar.
+
+Então:
+
+E            F#m
+ Brilha...a...aaa;
+
+G#m       A  B
+ Brilha...a.',
+  to_tsvector('portuguese', 'Brilha ' || '')
+),
+(
+  'acima-das-nuvens-escuras-banda-arkanjos',
+  'Acima das Nuvens Escuras',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'A7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A7M                 E5/C#
+Escureceu e o frio bateu
+
+               A7M
+Sei que é um motivo pra me sentir só,
+
+                 F#m11
+mas sei que esta aqui
+
+         A7M                  C#m7
+Prefiro viver, nesse silencio seu
+
+          Bm11
+Mesmo não vendo não ouvindo Senhor,
+
+            C#m7
+mesmo não sentindo o seu calor
+
+                Bm11 A4 E4 E
+Eu sei que esta aqui
+
+A6
+Acima das nuvens escuras,
+
+C#m7
+existe um sol que brilha mais forte,
+
+Bm11                          A4
+acima de minha lagrima minha dor esta
+E4  E
+meu Senhor
+
+A6                  C5+/G#
+Não, não tenho que temer,
+
+Bm11                   C#m7
+venha a tempestade que for,
+
+Bm11               C#m7
+se o Senhor comigo esta,
+
+               E4  E
+mais longe eu vou
+
+A6                           C5+/G#
+Eu sei que o meu Senhor é por mim,
+
+Bm11                 C#m7
+nada vai tirar minha paz,
+Bm11                          C#m7
+Bm11/ C#m7/ Bm11/     Terminar com Mi
+maior(    E
+  )
+uma palavra que o senhor proclamar,
+salvo eu sou',
+  to_tsvector('portuguese', 'Acima das Nuvens Escuras ' || '')
+),
+(
+  'um-chamado-quatro-por-um',
+  'Um Chamado',
+  'Quatro Por Um',
+  'Quatro Por Um',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  6,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] E  A  E  A
+
+[Primeira Parte]
+
+            F#m
+Eu não vou parar
+
+      E           A
+A estrada é muito longa
+
+        F#m  E
+Vou continuar
+
+ A
+Mesmo em meio às lutas
+
+       F#m   E                B
+Eu não estou só, Te sinto aqui
+
+[Segunda Parte]
+
+          F#m      E
+A vida é mesmo assim
+
+ A
+Tantas aflições
+
+           F#m      E
+Eu tenho que enfrentar
+
+    A                         F#m
+Mas o Senhor está sempre a me proteger
+E
+
+            B
+Te sinto aqui
+
+[Pré-Refrão]
+
+          A
+Quando o vento sopra contra mim
+
+        E
+Os problemas tentam me abater
+       A                 F#n         B
+Eu me lembro, o Grande Eu Sou me
+enviou
+
+[Refrão]
+
+                C#m  A
+Eu tenho um chamado
+
+   E             B
+Jamais vou me calar
+
+                C#m  A
+Eu tenho um chamado
+
+       E         B
+O evangelho anunciar
+
+             C#m  A
+Eu fui escolhido
+
+    E               B
+No ventre da minha mãe
+
+            F#m                   A  B
+Eu sei que Deus não abre mão de mim,
+não
+
+( E  A  )
+
+[Segunda Parte]
+
+          F#m      E
+A vida é mesmo assim
+
+ A
+Tantas aflições
+
+           F#m      E
+Eu tenho que enfrentar
+
+    A                         F#m
+Mas o Senhor está sempre a me proteger
+E
+
+            B
+Te sinto aqui
+
+[Pré-Refrão]
+
+          A
+Quando o vento sopra contra mim
+
+        E
+Os problemas tentam me abater
+
+       A                 F#m         B
+Eu me lembro, o Grande Eu Sou me
+enviou
+
+[Refrão]
+
+                C#m  A
+Eu tenho um chamado
+
+   E             B
+Jamais vou me calar
+
+                C#m  A
+Eu tenho um chamado
+
+       E         B
+O evangelho anunciar
+
+             C#m  A
+Eu fui escolhido
+
+    E               B
+No ventre da minha mãe
+
+            F#m                  A   B
+Eu sei que Deus não abre mão de mim,
+não
+
+[Ponte]
+
+G#m
+   Há muito pra fazer
+
+A
+   Não há mais tempo pra
+
+B          C#m  A
+Olhar pra trás
+
+[Refrão]
+
+                C#m  A
+Eu tenho um chamado
+
+   E             B
+Jamais vou me calar
+
+                C#m  A
+Eu tenho um chamado
+
+       E         B
+O evangelho anunciar
+
+             C#m  A
+Eu fui escolhido
+
+    E               B
+No ventre da minha mãe
+
+            F#m                  A   B
+Eu sei que Deus não abre mão de mim,
+não
+
+            F#m                  A   B
+Eu sei que Deus não abre mão de mim,
+não
+
+            F#m                  A   B
+Eu sei que Deus não abre mão de mim,
+não
+
+                E
+Eu tenho um chamado',
+  to_tsvector('portuguese', 'Um Chamado ' || '')
+),
+(
+  'intimidade-divina-banda-arkanjos',
+  'Intimidade Divina',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'A7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A7M  B6/G#
+
+ A7M
+ Quando eu me posto diante do meu
+B6/G#
+senhor
+
+ A7M
+ Meu peito estremece o meu amado está
+B6/G#
+aqui
+
+ A7M
+ É união de quem não é com aquele
+B6/G#
+que é
+
+ A7M
+ Eu fico enamorado com esse olhar
+B6/G#    F#m11  F#m/B
+de amor
+
+[Refrão]
+
+      A7M    B6/G#       F#m11
+ Intimidade divina é ser amigo daquele
+F#m/B
+que é
+
+              A7M       B6/G#
+ É estar por perto , do peito e
+
+        F#m11                F#m/B
+ Querer ouvir somente a sua voz
+
+ A7M                           B6/G#
+ Quando eu adentro a tenda da oração
+
+ A7M                     B6/G#
+ As suas sedes se saciam enfim
+
+ A7M
+ É união de quem não é com aquele
+B6/G#
+que é
+
+  A7M
+ Assim eu te contemplo face a face
+B6/G#    F#m11  F#m/B
+senhor
+
+[Refrão]
+
+       A7M    B6/G#       F#m11
+ Intimidade divina é ser amigo daquele
+F#m/B
+que é
+
+              A7M       B6/G#
+ É estar por perto , do peito e
+
+        F#m11              F#m/B  E
+ Querer ouvir somente a sua voz',
+  to_tsvector('portuguese', 'Intimidade Divina ' || '')
+),
+(
+  'virgem-das-dores-banda-arkanjos',
+  'Virgem das Dores',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Bm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Mariano / Semana Santa',
+  'Quaresma',
+  '',
+  'adoracao',
+  'Intro: Bm  F#m  G  A7
+
+D  D4          D  D4
+Mãe, como entender
+
+             Bm              F#m
+A espada d&#x27;e dor que transpassou
+Em9  A7
+o teu coração
+
+     D  D4          D D4         Bm
+Oh! Mãe, como suportar ter que sair
+
+               F#m               G
+E deixar pra trás tua casa, teu lar...
+A7
+
+          D               F#m
+Abraça Jesus e com teu José
+
+           G                    A7
+Segue o caminho, Deus vai te levar
+
+            D    D4
+Virgem das dores!
+
+ D  D4          D   D4
+Mãe, onde procurar?
+
+            Bm            F#m
+O Menino Jesus já foi cuidar das
+Em9  A7
+coisas do Pai
+
+     D  D4       D D4               Bm
+Oh! Mãe, estavas lá no caminho da cruz
+
+        F#m                G     A7
+A derramar um lamento de amor...
+
+             D              F#m
+Olhar pra Jesus e abraçar João
+
+            G                 A7
+A morte do Filho fez nascer irmãos,
+
+            D     Bm  F#m G A7 B7
+Virgem das dores!
+
+ E  E4            E  E4
+Mãe, como não chorar
+
+        C#m            G#m
+Ao abraçar teu Menino Deus que se
+F#m B7
+aniquilou
+
+     E E4              E E4
+Oh! Mãe, o sepulcro será
+
+            C#m           G#m
+Sacrário divino que acolherá o Santo
+A   B7
+de Deus!
+
+ E  E4           E   E4
+Mãe, Virgem das dores
+
+        C#m                  G#m
+O Teu amor me sustenta e me faz ser
+C#m
+fiel a Jesus
+
+                 G#m              F#m
+E me ensina o caminho sagrado da cruz
+
+                        B7
+Onde a dor e a alegria são caminhos de
+C#m  G#m
+amor!',
+  to_tsvector('portuguese', 'Virgem das Dores ' || '')
+),
+(
+  'quando-eu-te-encontrar-juninho-cassimiro',
+  'Quando Eu Te Encontrar',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'B7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] B7M  G#m11  E9  F#4
+
+B7M
+Quando eu irei contemplar a face do
+G#m11
+meu Deus?
+
+E9
+Tenho sede de ti
+
+F#4
+Minh&#x27;alma suspira por ti
+
+B7M
+Meu Deus e meu Senhor
+
+                 G#m11
+Com ardor eu vos procuro
+
+E9
+Tenho sede de ti
+
+F#4
+Minh&#x27;alma suspira por ti
+
+    E9  D#m7
+Por ti
+
+           C#m7  D#m7            C#m7
+Pois o que há    em mim, é o meu nada
+F#4
+e o pó
+
+           E9
+Quando eu te encontrar
+
+                           D#m7
+A minha alma logo te contemplará
+
+              C#m7
+Saciará minha sede
+
+                 D#m7
+Meu louvor será eterno
+
+            C#m7
+A alma enamorada
+
+       F#4
+Oh oh oh
+
+            E9
+Quando eu te encontrar
+
+                              D#m7
+A minha lágrima o Senhor enxugará
+
+                  C#m7
+Terá fim toda tristeza
+
+               D#m7
+Vou ver a tua gloria
+
+             C#m7
+Ver como és belo
+
+       F#4
+Oh oh oh
+
+            E9
+Quando eu te encontrar
+
+                            D#m7
+O imperfeito enfim desaparecerá
+
+                  C#m7  D#m7
+Quando eu te encontrar
+
+                  C#m7  E  F#4
+Quando eu te encontrar
+
+[Solo] B7M  G#m7  E9  F#4
+
+B7M
+Meu Deus e meu Senhor
+
+                 G#m11
+Com ardor eu vos procuro
+
+E9
+Tenho sede de ti
+
+F#4
+Minh&#x27;alma suspira por ti
+
+    E9
+Por ti
+
+           C#m7  D#m7  E        C#m7
+Pois o que há    em mim, é o meu nada
+D#m7     F#4
+e o pó
+
+           E7M
+Quando eu te encontrar
+
+                           D#m7
+A minha alma logo te contemplará
+
+              C#m7
+Saciará minha sede
+
+                 D#m7
+Meu louvor será eterno
+
+            C#m7
+A alma enamorada
+
+       F#4
+Oh oh oh
+
+            E9
+Quando eu te encontrar
+
+                              D#m7
+A minha lágrima o senhor enxugará
+
+                  C#m7
+Terá fim toda tristeza
+
+               D#m7
+Vou ver a tua gloria
+
+             C#m7
+Ver como és belo
+
+       F#4
+Oh oh oh
+
+            E7M
+Quando eu te encontrar
+
+                            D#m7
+O imperfeito enfim desaparecerá
+
+                  C#m7  D#m7
+Quando eu te encontrar
+
+                  C#m7  F#sus4
+Quando eu te encontrar
+
+                      E7M  Badd9/D#
+Minh&#x27;alma se alegrará
+C#m7  F#4
+
+[Riff 1]
+
+          B7M
+
+        G#m11                  E9
+F#9/11
+
+[Riff 2]
+
+          E9
+D#m7
+
+[Riff 3]
+
+                 B7M(9)
+
+                 G#m11               E
+F#4',
+  to_tsvector('portuguese', 'Quando Eu Te Encontrar ' || '')
+),
+(
+  'o-que-me-rouba-de-ti-juninho-cassimiro',
+  'O Que Me Rouba de Ti',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Introd.: G Am7 G Am7 G
+
+G
+Quero Te agradar
+
+        C9
+Quero fazer mais por Ti
+
+      G
+Meu desejo é Te amar
+
+        C9
+E só olhar para Ti
+
+Am7                             Bm7
+Sei que estou distante mais não vou
+desistir
+
+    Am7                    Bm7
+Só tenho o meu nada mas eu quero olhar
+Am7  (Am7 D9)
+para Ti
+
+               Am7
+Tens me amado tanto
+
+            Bm7
+Tens me visitado sempre
+
+         Am7
+Me sustentando todo dia
+
+           Bm7
+E me procurando à todo instante
+
+        C9           Bm7
+Me esperando, me esperando
+
+             Am7
+Mas quem sou eu pra deixar o meu
+D9
+Senhor
+
+        C7+          Bm7
+Me esperando, me esperando ?
+
+         Am7  D9
+Quem sou eu ?
+
+  C9                 Bm7
+Jesus, o que me rouba de Ti?
+
+  C9                 Bm7
+Jesus, quem me rouba de Ti?
+
+  C9                 Bm7
+Jesus, o que me rouba de Ti?
+
+  C7+                 Bm7   G Am7 G
+Jesus, quem me rouba de Ti?
+Am7 G',
+  to_tsvector('portuguese', 'O Que Me Rouba de Ti ' || '')
+),
+(
+  'a-nossa-fe-juninho-cassimiro',
+  'A Nossa Fé',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'B',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  'B9    B/D# E7M     B9   B/D#
+Creio em    Jesus,        eu nasci
+E7M
+de   Deus
+
+               G#m7(9)            F#
+E saibam todos que eu amo meu Senhor
+E7M
+
+B9     B/D#     E7M   B9    B/D#
+Guardo sua      lei         eu vou até
+E7M
+o fim
+
+              G#m7(9)            F#
+E saibam todos que eu amo meu Senhor,
+E7M
+na na na na na
+
+D#m7     E7M        D#m7         E7M
+Eu venço o mundo,        eu sou de
+Deus
+
+D#m7     E7M              F#sus4
+A minha    vida só tem sentido   se
+E7M B/D#   F#sus4  F#
+está   em    Jesus
+
+  C#m7       B9  F#
+E esta é     a vitória, que
+E7M    B/D#    F#
+ven....ce    o mundo
+
+         B9 D#m7   E7M     B/D#
+A nossa fé,      a  nos.... sa
+F#            B9   D#m7
+fé,  a nossa fé,          a
+E7M     B/D#       F#
+nos..... sa    fé
+
+( B9  Bsus4  B9  Bsus4 )
+
+B9     B/D#     E7M    B9    B/D#
+Não     nega.....rei,         até o
+E7M
+martírio eu vou
+
+              G#m7(9)           F#
+E saibam todos que eu amo meu Senhor
+E7M
+
+B9     B/D#   E7M    B9
+Tomo minha  cruz          sim
+B/D#          E7M
+eu serei    fiel
+
+              G#m7(9)           F#
+E saibam todos que eu amo meu Senhor,
+E7M
+na na na na na
+
+D#m7     E7M        D#m7         E7M
+Eu venço o mundo,        eu sou de
+Deus
+
+D#m7     E7M              F#sus4
+A minha    vida só tem sentido   se
+E7M B/D#   F#sus4  F#
+está   em    Jesus
+
+  C#m7       B9  F#
+E esta é     a vitória, que
+E7M    B/D#    F#
+ven....ce    o mundo:
+
+         B9 D#m7   E7M     B/D#
+A nossa fé,      a  nos.... sa
+F#            B9   D#m7
+fé,  a nossa fé,          a
+E7M     B/D#       F#
+nos..... sa    fé',
+  to_tsvector('portuguese', 'A Nossa Fé ' || '')
+),
+(
+  'determinada-decisao-juninho-cassimiro',
+  'Determinada Decisao',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'Bb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Bb              Bb4
+Há um horizonte pra alcançar
+
+Bb           Bb4
+Há um oceano pra navegar
+
+    Gm7     Eb7M
+Com lutas e perdas
+
+    Dm7   Eb7M   F
+Com dores e cruz
+
+Bb              Bb4
+Este horizonte parece longe
+
+Bb               Bb4
+Mas pra alcançar preciso entrar
+
+    Gm7     Eb7M         Dm7
+No mar e avançar a cada dia
+
+  Cm7           F4  F
+Determinada decisão
+
+      Bb        Eb7M
+Só o amor faz mover a minha vida
+Am7(5-)
+
+   D7             Gm
+Em direção a santidade
+
+           Cm7            F4  F
+O reino do Céus é dos violentos
+
+       Dm7           Eb7M
+Só por amor ao meu Senhor tomo minha
+Am7(5-)
+cruz
+
+         D7          Gm7
+E crucificado amar Jesus
+
+           Cm7              F4  F
+Há um horizonte pra conquistar
+
+Bb              Bb4
+Tenho pra mim que os sofrimentos
+
+   Bb               Bb4
+Da presente vida não tem proporção
+
+       Gm7      Eb7M        Dm7
+Com a glória futura que os santos já
+Cm7
+vivem
+
+   Eb7M            F
+Determinada decisão',
+  to_tsvector('portuguese', 'Determinada Decisao ' || '')
+),
+(
+  'cristo-tem-poder-banda-dominus',
+  'Cristo tem Poder',
+  'Banda Dominus / Léo Rabello',
+  'Banda Dominus / Léo Rabello',
+  'Am',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  3,
+  'Entrada / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  'Am                F
+Cristo tem poder, Cristo tem poder,
+G                          Am
+Cristo tem poder aleluia tem poder.
+
+Am             F
+Cristo tem poder, Cristo tem poder,
+G
+Jesus Cristo é poderoso
+
+      Am
+Jesus Cristo tem poder.
+
+  Am                          F
+Na Bíblia está escrito, no Novo
+G
+Testamento, que em Caná na Galiléia
+Jesus
+
+Am
+foi a um casamento, transformando água
+F
+em vinho e dando o povo pra beber
+
+       G                        Am
+mostrando sua glória sua força e seu
+poder.
+
+      Am
+Na cidade de naim tinha uma mulher
+chorando
+Seu filho ia pro túmulo e o povo
+carregando
+Jesus parou o enterro e o povo
+reprovou
+Jesus chamou o morto e o morto
+levantou.
+
+Jesus curou o cego entrando em Jericó
+Salvou a Samaritana lá no poço de Jacó
+No monte das Oliveiras seu poder Ele
+mostrou
+Cinco pães e dois peixinhos, cinco mil
+alimentou
+
+Jesus fez maravilhas no deserto da
+Judéia
+Curou em Samaria e também na Galilélia
+E em Cafarnaum milagre também fez
+Curou lá no caminho dez leprosos de
+uma vez
+
+Jesus fez maravilhas, está fazendo e
+vai fazer
+Só não faz na sua vida porque você não
+crê
+Ele salva o pecador dá alegria gozo e
+paz
+Cura as enfermidades e expulsa Satanás',
+  to_tsvector('portuguese', 'Cristo tem Poder ' || '')
+),
+(
+  'porque-deus-me-ama-banda-dominus',
+  'Porque Deus me ama',
+  'Banda Dominus / Léo Rabello',
+  'Banda Dominus / Léo Rabello',
+  'A',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  4,
+  'Louvor / Adoração',
+  'Qualquer',
+  '',
+  'popular',
+  'Introdução: F#m  E (4X) F#m G G#...
+
+A F#m D E A F#m D E (2X)
+
+A            F#m          D        E
+Na...na... na...na... na...na... na...
+
+A        F#m         D         E
+Alegria do Senhor é força e proteção.
+
+A        F#m          D       E
+Ele dá a paz, transforma o coração.
+
+A               F#m        D
+Não existe amor sem Deus, nem
+E
+plenitude e paz.
+
+A           F#m     D             E
+Deus me dá a vida, Deus me satisfaz.
+
+F#m                      D          E
+E por isso ergo as minhas mãos para
+cima
+
+F#m          D          E
+E tiro meus pés lá do chão.
+
+         F#m            D      E
+Balanço meu corpo, nele Deus habita.
+
+        F#m         D      E
+Deus é Dominus e dá salvação!
+
+   A        F#m  D             E
+Cantar..........porque Deus me
+ama!(bis)
+Louvar......... porque Deus me
+ama!(bis)
+Amar........... porque Deus me
+ama!(bis)
+Perdoar........ porque Deus me
+ama!(bis)',
+  to_tsvector('portuguese', 'Porque Deus me ama ' || '')
+),
+(
+  'fa-de-sao-jose-dalvimar-gallo',
+  'Fã de São José',
+  'Dalvimar Gallo',
+  'Dalvimar Gallo',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'São José / Devoção',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D            Bm
+Eu sou fã de São José, Pai adotivo de
+Jesus
+
+         A  G     A     D           D7
+Que educou o Salvador, Sou devoto de
+José!  (2X)
+
+    G/D
+Um homem forte, silencioso, tão
+sensível, homem santo
+
+  D
+Em sonho, um dia, Deus lhe revelou
+
+  A/C#         G/D
+Seu plano de amor e salvação, de um
+Deus
+
+       D                 D7
+Que se encarnou no nosso meio, meu
+irmão!
+
+    G/D
+E a partir daquele dia, recebeu sua
+Maria
+
+      D
+A Virgem Mãe, do Filho amado de Deus
+Pai
+
+  A/C#           G/D
+E defendeu a salvação do mundo
+
+           D        A        D
+No silêncio, castidade, e firmeza de
+sua fé!
+
+           D            Bm
+Eu sou fã de São José, Pai adotivo de
+Jesus
+
+         A  G     A     D           D7
+Que educou o Salvador, Sou devoto de
+José!
+
+    G/D
+E na defesa da Família, sua fé era
+provada
+
+  D
+Na luta do combate espiritual!
+
+ A/C#               G/D
+Rogava ao céu o protetor, e os anjos
+respondiam
+
+     D               D7
+O seu escudo era o Deus de sua fé!
+
+G/D
+Pai da castidade, que viveu na
+santidade
+
+ D
+Lutou pra defender o Salvador
+
+ A/C#           G/D
+Valei-me São José, me defenda aí no
+céu
+
+      D       A        D
+Que vou lutando pra seguir ao meu
+Senhor!',
+  to_tsvector('portuguese', 'Fã de São José ' || '')
+),
+(
+  'do-jeito-que-eu-sou-banda-dominus',
+  'Do Jeito que Eu Sou',
+  'Banda Dominus / Léo Rabello',
+  'Banda Dominus / Léo Rabello',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  3,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: C F C Bb C F C Bb F C
+
+F                C
+Deus me ama como sou
+
+Bb                 F
+Do jeito que eu sou
+
+C
+E se eu for um forrozeiro,
+
+                   F
+Deus me ama como sou
+
+                   C
+E se eu for um forrozeiro,
+
+                  F
+Deus me ama como sou
+
+               C                  F
+Oh, oh, oh, oh, que alegria é esse
+amor!
+
+                C                F
+Oh, oh, oh, oh, que me ama como sou  (
+Bis )',
+  to_tsvector('portuguese', 'Do Jeito que Eu Sou ' || '')
+),
+(
+  'misericordia-dalvimar-gallo',
+  'Misericórdia',
+  'Dalvimar Gallo',
+  'Dalvimar Gallo',
+  'Bm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Adoração / Misericórdia',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: Bm Em7 F#m G A
+
+       Bm Em7 F#m G A F#
+
+    Bm7                 Em7
+Pesadelos entram em meu sono
+
+        A7                G D/F# F#m7
+Um desespero cai em minha al----ma
+
+     Bm7                         Em7
+Pensamentos maus me trazem o abandono
+
+       A7              F#         Bm7
+E uma enorme escuridão tira minha
+calma
+
+Bm7                            Em7
+Deus quero te fazer apenas um pedido
+
+      A7
+Meu viver parece não ter mais nenhum
+G D/F# F#m7
+sentido
+
+       Bm                         Em7
+O meu jeito de ser tem sido muito
+pobre
+
+      A7                  F#
+Por favor venha sobre mim com Tua vida
+G F# Bm7 B7
+nobre
+
+              G D/F# A       F#m A/C#
+       Misericó-or-dia, misericó -or-
+Bm7         Em7
+dia, misericórdia
+
+              F#          Bm7  B7
+       Eu te peço meu Senhor!
+
+              G D/F# A       F#m A/C#
+       Misericó-or-dia, misericó -or-
+Bm7         Em7
+dia, misericórdia
+
+       F#     Bm7
+       Meu Senhor!
+
+Bm7                            Em7
+Deus quero te fazer apenas um pedido
+
+      A7
+Meu viver parece não ter mais nenhum
+G D/F# F#m7
+sentido
+
+       Bm                         Em7
+O meu jeito de ser tem sido muito
+pobre
+
+      A7                  F#
+Por favor venha sobre mim com Tua vida
+G F# Bm7 B7
+nobre
+
+              G D/F# A       F#m A/C#
+       Misericó-or-dia, misericó -or-
+Bm7         Em7
+dia, misericórdia
+
+              F#          Bm7  B7
+       Eu te peço meu Senhor!
+
+              G D/F# A       F#m A/C#
+       Misericó-or-dia, misericó -or-
+Bm7         Em7
+dia, misericórdia
+
+       F#     Bm7
+       Meu Senhor!  (2X)',
+  to_tsvector('portuguese', 'Misericórdia ' || '')
+),
+(
+  'sacramento-da-comunhao-dalvimar-gallo',
+  'Sacramento da Comunhão',
+  'Dalvimar Gallo',
+  'Dalvimar Gallo',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  18,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: D  A/C#  Bm  Bm/A  G  A (2x)
+
+D                  A/C#           Bm
+Senhor, quando te vejo no sacramento
+Bm/A  G                 A
+da comunhão   sinto o céu se abrir e
+
+     D           G        Em7/9
+uma luz e me atingir esfriando minha
+G             A4  A
+cabeça e esquentando meu coração.
+
+D                   A/C#         Bm
+Senhor, graças e louvores sejam dados
+Bm/A  G
+a todo momento   quero te louvar na
+
+ A        D               G
+dor, na alegria e no sofrimento e se
+Em7           A          D    D/F#
+em meio à tribulação, eu me esquecer
+
+    G     Em7
+de ti  ilumina minhas trevas com tua
+A4  A
+luz.
+
+Refrão 2x:
+
+  D   A/C#                Bm
+Jesus...  fonte de misericórdia que
+Bm/A    Em7     D/F#
+jorra do templo. Jesus, o filho da
+
+  A4   A    F#m7 Bb°  Bm7
+Rainha.   Jesus...,  Rosto divino do
+G   C7   D     Em7     A       D
+Homem.  Jesus, rosto humano de Deus.
+
+ G                        A/G
+Chego muitas vezes em tua casa, meu
+F#m7                  Bm7
+Senhor, triste abatido, precisando de
+
+  Bm/A    Em7/D                   C
+amor  mas depois da comunhão tua casa
+Em7
+é meu coração então sinto o céu
+
+G          A4  A  D/F#     G
+dentro de mim...      não comungo
+A/G
+porque mereço, isso eu sei, Óh meu
+Senhor
+
+F#m7                    B4  B
+comungo pois preciso de ti
+Em7/D                     C
+quando faltei à missa, eu fugia de mim
+e de
+
+        Em7            G
+ti mas agora eu voltei, por favor,
+A4    A
+aceita-me.',
+  to_tsvector('portuguese', 'Sacramento da Comunhão ' || '')
+),
+(
+  'meu-pequeno-milagre-dalvimar-gallo',
+  'Meu Pequeno Milagre',
+  'Dalvimar Gallo',
+  'Dalvimar Gallo',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Comunhão / Ação de Graças',
+  'Qualquer',
+  '',
+  'adoracao',
+  '(intro) E A B C#m E A B7
+
+ E                 B/D#       C#m
+Perdão se ainda não sei como te amar,
+A             E/G#          F#  B7
+perdão se ainda não sei me expressar,
+
+ G#m7
+talvez seja a forma como eu fui
+C#m         A
+criado, mas acredite sou um pai
+B7
+apaixonado.
+
+ E                     B/D#
+Quem sabe o meu amor não seja o
+C#m       A             E/G#
+bastante, pra fazer com que você se
+F#  B7
+sinta amado,
+
+ G#m7
+eu prometo me esforçar de hoje em
+C#m      A
+diante, contratempo existe pra ser
+B7
+superado.
+
+     E                   A
+Meu pequeno milagre que estar sempre
+B     A                 E
+ao seu lado, sou um pai apaixonado do
+meu
+
+ A          B  B7
+sangue por você.
+
+     E                  A          B
+Meu pequeno milagre não êxito em dizer
+A          E   B/D#    C#m
+na dureza desta vida se for preciso
+A
+morro pra
+
+ B7   E
+você viver.
+
+ E             B/D#          C#m
+Dia-a-Dia vi você crescendo tanto, não
+A        E/G#            F#
+deixe o mundo destruir o nosso
+B7
+encanto,
+
+ G#m7                        C#m
+longe de você eu choro pelos cantos,
+A                            B7
+sempre encharco a poesia com o meu
+pranto,
+
+E                   B/D#    C#m
+to lembrando o dia que você nasceu, o
+A             E/G#             F# B7
+primeiro beijo quem ti deu fui eu,
+
+G#m7
+to lembrando quando ti peguei nos
+C#m           A
+braços, naquele instante eu fui você,
+B7
+você foi eu.
+
+     E                   A
+Meu pequeno milagre que estar sempre
+B     A                 E
+ao seu lado, sou um pai apaixonado do
+meu
+
+ A          B  B7
+sangue por você.
+
+     E                  A          B
+Meu pequeno milagre não êxito em dizer
+A          E   B/D#    C#m
+na dureza desta vida se for preciso
+A
+morro pra
+
+ B7   E
+você viver.',
+  to_tsvector('portuguese', 'Meu Pequeno Milagre ' || '')
+),
+(
+  'enquanto-eu-te-adoro-flavio-vitor-jr',
+  'Enquanto Eu Te Adoro',
+  'Flávio Vitor Jr.',
+  'Flávio Vitor Jr.',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  D4  D
+
+[Primeira Parte]
+
+    D4        D   D4       D
+Eu vivo milagres todos os dias
+
+    D4         D          D4
+Eu vivo promessas que eu nem mais
+A/E
+pedia
+
+              D   D4           D  D4
+Eu vivo milagres     todos os dias
+
+               D  D4
+Eu vivo promessas
+
+                   A
+Que eu nem mais pedia
+
+[Refrão]
+
+                 G
+Enquanto eu Te adoro
+
+          D    A
+Você vai me curando
+
+                Bm7
+Enquanto eu Te busco
+
+              G
+Tua mão opera o que eu não consigo
+Bm
+fazer
+
+          G    D/F#
+E sem eu perceber
+
+                   Em7  A
+Vou sendo transformado
+
+                 G
+Enquanto eu Te adoro
+
+          D    A
+Você vai me curando
+
+                Bm7
+Enquanto eu Te busco
+
+              G
+Tua mão opera o que eu não consigo
+fazer
+
+               D/F#
+E sem eu perceber
+
+                   Em7  A
+Vou sendo transformado
+
+[Primeira Parte]
+
+           D     D4           D   G/D
+Eu vivo milagres    todos os dias
+
+            D     D4
+Eu vivo promessas
+
+                   A
+Que eu nem mais pedia
+
+           D     D4           D   D4
+Eu vivo milagres    todos os dias
+
+            Bm    G
+Eu vivo promessas
+
+                   A
+Que eu nem mais pedia, ah
+
+[Refrão]
+
+                 G
+Enquanto eu Te adoro
+
+          Bm   A
+Você vai me curando
+
+                Bm
+Enquanto eu Te busco
+
+              D/F#
+Tua mão opera o que eu não consigo
+G
+fazer
+
+               D/F#
+E sem eu perceber
+
+                   Em7  A
+Vou sendo transformado
+
+                 G
+Enquanto eu Te adoro
+
+          Bm   A
+Você vai me curando
+
+                Bm
+Enquanto eu Te busco
+
+              D/F#
+Tua mão opera o que eu não consigo
+G
+fazer
+
+               D/F#
+E sem eu perceber
+
+                   Em7  A
+Vou sendo transformado
+
+                   G  A  D
+Vou sendo transforma____do
+
+Ah
+
+Ah-ah-ah-ah
+
+[Ponte]
+
+ D       D/F#
+Cura, Jesus
+
+ G       D
+Cura, Jesus
+
+ D/F#           G
+Se o Senhor quiser
+
+ A      A/G     D/F#
+Se o Senhor quiser
+
+ Bm            G
+Mas se não quiser
+
+         A           D
+Ainda assim Te adorarei (ei)
+
+ D       D/F#
+Cura, Jesus
+
+ G       D
+Cura, Jesus
+
+ D/F#           G
+Se o Senhor quiser
+
+ A       A/G    D/F#
+Se o Senhor quiser
+
+ Bm            G
+Mas se não quiser
+
+         A           D
+Ainda assim Te adorarei
+
+  Em  D/F#  G  A
+Ado__ra____rei
+
+      D
+Adorarei
+
+  Em  D/F#  G  A
+Ado__ra____rei
+
+      D
+Adorarei
+
+  Em  D/F#  G  A
+Ado__ra____rei
+
+  Bm  A/C#  D
+Ado__ra____rei
+
+  Em  D/F#  G          A
+Ado__ra____rei, ei, ei
+
+      D
+Adorarei
+
+[Refrão Final]
+
+                 G
+Enquanto eu Te adoro
+
+          Bm   A
+Você vai me curando
+
+                Bm
+Enquanto eu Te busco
+
+              D/F#
+Tua mão opera o que eu não consigo
+G
+fazer
+
+               D/F#
+E sem eu perceber
+
+                   Em7  A
+Vou sendo transformado
+
+                 G
+Enquanto eu Te adoro
+
+          Bm   A
+Você vai me curando
+
+                Bm
+Enquanto eu Te busco
+
+              D/F#
+Tua mão opera o que eu não consigo
+G
+fazer
+
+               D/F#
+E sem eu perceber
+
+                   Em7  A
+Vou sendo transformado
+
+                   G  A  D
+Vou sendo transforma____do',
+  to_tsvector('portuguese', 'Enquanto Eu Te Adoro ' || '')
+),
+(
+  'ela-esta-aqui-part-pe-marcos-rogerio-flavio-vitor-jr',
+  'Ela Está Aqui (Part. Pe. Marcos Rogerio)',
+  'Flávio Vitor Jr. / Padre Marcos Rogério',
+  'Flávio Vitor Jr. / Padre Marcos Rogério',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Mariano / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  G  Bm
+
+       D                  Bm
+De Ave Maria em Ave Maria
+
+            G
+Eu sinto o céu
+
+            A
+Mover sobre mim
+
+          D  D4   D
+Ela está aqui
+
+          D  G      Bm7
+De Ave Maria em Ave Maria
+
+             G
+Eu vejo o milagre
+
+            A
+Chegar até mim
+
+             D
+Jesus quis assim
+
+                G
+É assim que eu luto minhas batalhas
+
+          Bm
+(De ave Maria em ave Maria)
+
+                 G
+É assim que eu venço minhas guerras
+
+          Bm
+(De ave Maria em ave Maria)
+
+                 G
+Em Cristo minha casa está firmada
+
+           Bm
+(De ave Maria em ave Maria)
+
+            G             A
+Eu vejo o céu mover sobre mim
+
+           D   D4  D
+Ela está aqui
+
+  G
+E quando Ele diz
+
+      Bm7
+Ainda não chegou a minha hora
+
+ G                        Bm      A
+Ergo a minha voz e chamo: Maria,
+Maria
+
+  G
+E quando Ele diz
+
+      Bm7
+Ainda não chegou a minha hora
+
+ G                        Bm     A
+Ergo minhas mãos e chamo: Maria, Maria
+(2x)',
+  to_tsvector('portuguese', 'Ela Está Aqui (Part. Pe. Marcos Rogerio) ' || '')
+),
+(
+  'alem-da-dor-flavio-vitor-jr',
+  'Além da Dor',
+  'Flávio Vitor Jr.',
+  'Flávio Vitor Jr.',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] C  G  Am  F  C  G  Am  F
+
+        C             G
+Existe vida, além da dor
+
+        Am               F
+Existe vida Eu ouço o Senhor
+
+         C             G
+Dizendo vida, além da dor
+
+                Dm        G
+Ele me diz que, ainda não acabou
+
+        C             G
+Existe vida, além da dor
+
+        Am               F
+Existe vida Eu ouço o Senhor
+
+         C             G
+Dizendo vida, além da dor
+
+                Dm        G  C
+Ele me diz que, ainda não acabou
+
+   G    Am   F         C
+Oooo Oooo Oooo não acabou!
+
+   G    Am   F
+Oooo Oooo Oooo
+
+              F           Am
+Quero sobreviver Quero chegar
+
+   G                        Am
+Ao fim da história eu já me vejo
+
+                G/B        C
+Contando o Testemunho da minha
+
+  C/E   F               Am
+Vitória ah Quero sobreviver
+
+                C
+Quero dizer que eu achei que
+
+       G                     F
+Iria morrer mas sobrevivi, viver
+
+         Am     G
+Quero chegar ao fim da história
+
+         Am                   G/B
+Eu já me vejo contando o testemunho
+
+    C     C/E   F               Am
+A minha vitória ah quero sobreviver
+
+                C
+Quero dizer que eu achei que
+
+       G                 F Am G
+Iria morrer mas sobrevivi
+
+        C             G
+Existe vida, além da dor
+
+        Am               F
+Existe vida Eu ouço o Senhor
+
+         C             G
+Dizendo vida, além da dor
+
+                Dm        G
+Ele me diz que, ainda não acabou
+
+        C             G
+Existe vida, além da dor
+
+        Am               F
+Existe vida Eu ouço o Senhor
+
+         C             G
+Dizendo vida, além da dor
+
+                Dm        G  C
+Ele me diz que, ainda não acabou',
+  to_tsvector('portuguese', 'Além da Dor ' || '')
+),
+(
+  'deus-da-biblia-flavio-vitor-jr',
+  'Deus da Bíblia',
+  'Flávio Vitor Jr.',
+  'Flávio Vitor Jr.',
+  'Eb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Eb  Eb4  Eb  Cm
+
+Eb
+Eu quero ver o que acontece quando eu
+Cm        Bb
+chamo o nome de Jesus
+
+Ab
+Eu quero ver o que acontece quando eu
+Cm        Bb
+chamo o nome de Jesus
+
+Eb
+Eu quero ver o que acontece quando eu
+Cm        Bb
+chamo o nome de Jesus
+
+Ab
+Eu quero ver o que acontece quando eu
+Cm        Bb
+chamo o nome de Jesus
+
+Ab                            Cm
+Pra curar, libertar e salvar, basta um
+olhar
+
+   Bb                         Ab
+O Deus da Bíblia ainda tem poder
+
+                              Cm
+Pra curar, libertar e salvar, basta um
+olhar
+
+   Bb                         Ab
+O Deus da Bíblia ainda tem poder
+
+                              Cm
+Pra curar, libertar e salvar, basta um
+olhar
+
+   Bb                         Ab
+O Deus da Bíblia ainda tem poder
+
+                              Cm
+Pra curar, libertar e salvar, basta um
+olhar
+
+   Bb                        Ab
+O Deus da Bíblia ainda tem poder
+
+( Eb  Eb4  Eb  Cm )
+
+( Ab  Cm  Bb )
+
+( Ab  Cm )
+
+Ab
+Se for apenas uma história não vale a
+Cm
+pena dar a vida
+
+                   Bb
+Melhor ficar na memória. Mas se for
+Ab
+mais do que uma história
+
+Se é Deus dando vitória, eu quero dar
+Cm
+a minha vida
+
+                          Bb
+Quero ser conhecido como aquele que
+Ab
+andou com Deus e fez história
+
+( Cm  Bb )
+
+Eb
+Eu quero ver o que acontece quando eu
+Cm
+chamo o nome de Jesus
+
+Ab
+Eu quero ver o que acontece quando eu
+Cm
+chamo o nome de Jesus
+
+Jesus
+Jesus
+Jesus
+
+[Final] Eb  Cm  Ab  Cm  Eb',
+  to_tsvector('portuguese', 'Deus da Bíblia ' || '')
+),
+(
+  'principe-da-paz-flavio-vitor-jr',
+  'Príncipe da Paz',
+  'Flávio Vitor Jr.',
+  'Flávio Vitor Jr.',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] C  G  Am  G  F9
+
+C
+  O príncipe da paz
+
+             G/B
+Roubou minha paz
+
+            Am
+E não me dá paz
+
+                          F9
+Enquanto eu não descanso nele
+
+(Eu não descanso)
+
+C
+  O príncipe da paz
+
+             G/B
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                          F9
+Enquanto eu não descanso nele
+
+F9            Am   G
+  Um nome, Yeshua
+
+Um cheiro, de incenso
+
+C                               F9
+  Quando a igreja se reúne para adorar
+
+F9          Am   G
+  Um ano,   2012
+
+Um dia, o do nosso encontro
+
+C                           F9
+  Quando eu deixei você me conquistar
+
+F9             Am   G
+   Uma vida, a minha
+
+Eu nunca imaginaria
+
+C                 C/E  F9
+  Onde esse amor iria  me levar
+
+Am                       G
+   Uma verdade eu nunca mais fui o
+mesmo
+
+C/E       F                     G
+    Eu perdi o meu sossego ao te
+encontrar
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele (Eu não
+descanso)
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele (o
+príncipe da paz)
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele (Eu não
+descanso)
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele
+
+[Ponte] C  G/B  Am  G  F9
+
+        C  G/B  Am  G  F9
+
+Am
+  Eu só sei pensar em você
+
+F9
+  Só sei pensar em você
+
+C
+  Só sei pensar em você
+
+G
+  Só sei pensar em você
+
+Am
+  Eu só sei pensar em você
+
+F9
+  Só sei pensar em você
+
+C
+  Só sei pensar em você
+
+G
+  Só sei pensar em você
+
+Am
+  Eu só sei pensar em você
+
+F9
+  Só sei pensar em você
+
+C
+  Só sei pensar em você
+
+G
+  Só sei pensar em você
+
+Am
+  Eu só sei pensar em você
+
+F9
+  Só sei pensar em você
+
+C
+  Só sei pensar em você
+
+G
+  Só sei pensar em você
+
+[Ponte] Am  F9  C  G
+
+        Am  F9  C  G
+
+        Am  F9  C  G
+
+        Am  F9  C  G
+
+F9            Am  G
+  Um nome, Yeshua
+
+Um cheiro, de incenso
+
+C                          C/E     F9
+  Quando a igreja se reúne para te
+adorar
+
+Am                       G
+   Uma verdade eu nunca mais fui o
+mesmo
+
+C/E      F                     G
+    Eu perdi o meu sossego ao te
+encontrar
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele (Eu não
+descanso)
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele (Eu não
+descanso)
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele (Eu não
+descanso)
+
+C
+  O príncipe da paz
+
+              G
+Roubou minha paz
+
+             Am
+E não me dá paz
+
+                    G     F9
+Enquanto eu não descanso nele
+
+Am
+  Eu só sei pensar em você
+
+F9
+  Só sei pensar em você
+
+C
+  Só sei pensar em você
+
+G
+  Só sei pensar em você
+
+Am
+  Eu só sei pensar em você
+
+F9
+  Só sei pensar em você
+
+C
+  Só sei pensar em você
+
+G
+  Só sei pensar em você
+
+[Final] C  G  Am  G  F9',
+  to_tsvector('portuguese', 'Príncipe da Paz ' || '')
+),
+(
+  'volta-pra-casa-dalvimar-gallo',
+  'Volta Pra Casa',
+  'Dalvimar Gallo',
+  'Dalvimar Gallo',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração / Misericórdia',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] E  F#m  E/G#  B  E
+
+E
+Não adianta se esconder
+
+       B/D#
+Não adianta nem fugir
+
+        C#m                  C#m/B
+Seus problemas continuarão aqui
+
+         F#m                       B
+Se o seu caso é sofrido, se os seus
+dias são doídos
+
+         A            B            E
+Os problemas são pra serem resolvidos
+
+      E7M
+Um ferimento mal curado
+
+       B/D#
+Um sangramento mal estancado
+
+        C#m                   C#m/B
+Faz a gente padecer de tanta dor
+
+      A              B      G#m
+Por favor, ouça teu pai, apostei tudo
+C#m
+em ti
+
+          A            B             E
+Volta pra casa, estou te esperando
+aqui
+Preparação: E A B E
+
+           F#m    B             G#m
+Volta pra casa, deita em meu colo
+C#m
+
+              F#m                 B
+O amor já foi dado, o perdão derramado
+
+             E
+Vem, vem ser feliz
+
+           F#m   B
+Volta pra casa, descansa em meus
+G#m C#m
+olhos
+
+            F#m                      B
+Não tenha medo, é o amor quem te
+espera
+
+              E
+E está todo aqui',
+  to_tsvector('portuguese', 'Volta Pra Casa ' || '')
+),
+(
+  'santo-emanuel-stenio',
+  'Santo',
+  'Emanuel Stênio / Canção Nova',
+  'Emanuel Stênio / Canção Nova',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Santo',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C     G/B   F  G
+Santo santo santo
+
+  C     G/B        F
+Senhor Deus do universo (bis)
+
+ Bb           F                 C
+Ceus e terra proclamam a vossa gloria
+
+ Bb     F      G
+Hosana nas alturas
+
+  Bb           F               C
+Bendito o que vem em nome do senhor
+
+  Bb    F      G
+Hosana nas alturas',
+  to_tsvector('portuguese', 'Santo ' || '')
+),
+(
+  'livre-no-espirito-emanuel-stenio',
+  'Livre No Espírito',
+  'Emanuel Stênio / Canção Nova',
+  'Emanuel Stênio / Canção Nova',
+  'Eb',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  4,
+  'Pentecostes / Louvor',
+  'Pentecostes',
+  '',
+  'popular',
+  '[Intro] Eb  Bb  F  Gm
+
+[Refrão]
+
+    Eb            Bb
+Quando o Espírito de Deus está aqui
+
+    F     Gm
+Eu sou livre
+
+     Eb            Bb
+Quando o Espírito de Deus se move em
+mim
+
+    F
+Eu sou livre
+
+    Eb            Bb
+Quando o Espírito de Deus está aqui
+
+    F     Gm
+Eu sou livre
+
+     Eb            Bb
+Quando o Espírito de Deus se move em
+mim
+
+    F
+Eu sou livre
+
+ Eb
+Tu és bem-vindo aqui
+
+ Gm
+Este lugar é teu
+
+ Eb         F
+Visita nossas almas
+
+ Eb
+Poder do alto vem
+
+ Gm
+Aviva os corações
+
+ Eb             F
+Traz liberdade a todos nós
+
+Hey
+
+[Refrão]
+
+    Eb            Bb
+Quando o Espírito de Deus está aqui
+
+    F     Gm
+Eu sou livre
+
+     Eb            Bb
+Quando o Espírito de Deus se move em
+mim
+
+    F
+Eu sou livre
+
+    Eb            Bb
+Quando o Espírito de Deus está aqui
+
+    F     Gm
+Eu sou livre
+
+     Eb            Bb
+Quando o Espírito de Deus se move em
+mim
+
+    F
+Eu sou livre
+
+ Eb
+Tu és bem-vindo aqui
+
+ Gm
+Este lugar é teu
+
+ Eb         F
+Visita nossas almas
+
+ Eb
+Poder do alto vem
+
+ Gm
+Aviva os corações
+
+ Eb             F
+Traz liberdade a todos nós
+
+[Refrão]
+
+    Eb            Bb
+Quando o Espírito de Deus está aqui
+
+    F     Gm
+Eu sou livre
+
+     Eb            Bb
+Quando o Espírito de Deus se move em
+mim
+
+    F
+Eu sou livre
+
+    Eb            Bb
+Quando o Espírito de Deus está aqui
+
+    F     Gm
+Eu sou livre
+
+     Eb            Bb
+Quando o Espírito de Deus se move em
+mim
+
+    F
+Eu sou livre',
+  to_tsvector('portuguese', 'Livre No Espírito ' || '')
+),
+(
+  'poder-pra-salvar-emanuel-stenio',
+  'Poder Pra Salvar',
+  'Emanuel Stênio / Canção Nova',
+  'Emanuel Stênio / Canção Nova',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  A  F#m  E
+
+[Primeira Parte]
+
+ D           A                F#m
+Todos necessitam de um amor perfeito
+
+ E          D
+Perdão e compaixão
+
+             A                F#m
+Todos necessitam de graça e esperança
+
+ E                D   D E D E
+De um Deus que salva
+
+[Pré-Refrão]
+
+ A               E
+Cristo move as montanhas
+
+       D         A          F#m
+E tem poder pra salvar, tem poder pra
+E
+salvar
+
+ A                 E
+Pra sempre, Autor da Salvação
+
+        D          A
+Jesus a morte venceu, sobre a
+F#m      E
+morte venceu
+
+ D               A           F#m
+Me aceitas com meus medos, falhas e
+E
+temores
+
+ E            D
+Enche meu viver
+
+ D               A       F#m
+A minha vida entrego, pra seguir Teus
+E
+passos
+
+ D         E
+A Ti me rendo
+
+[Refrão]
+
+ D             A             E
+Possa o mundo ver brilhar a Luz
+
+  (F#m)     D             A
+Cantamos, para a glória do Senhor
+E
+Jesus!',
+  to_tsvector('portuguese', 'Poder Pra Salvar ' || '')
+),
+(
+  'toca-me-jesus-emanuel-stenio',
+  'Toca-me Jesus',
+  'Emanuel Stênio / Canção Nova',
+  'Emanuel Stênio / Canção Nova',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  D9  A  A9
+
+        D  D9  A  A4
+
+D            A
+Eu vim aqui Senhor
+
+ Bm           G
+Pedir o Teu favor
+
+D                A
+Teu toque tem poder
+
+                  Bm
+De curar minhas feridas
+
+                  G
+Libertar a minha vida
+
+D                  A
+Pra me erguer do chão
+
+ Bm            G
+Mudar meu coração
+
+D               A
+Fazer-me enxergar
+
+                Bm
+E minha vida renovar
+
+                      G
+Vem tocar-me com Tuas Santas mãos
+
+Em           D/F#  G
+Sei Tua presença traz
+
+     D               A
+Esperança ao meu coração
+
+Em          D/F#  G
+Alimento a minha fé
+
+     Bm                 A
+Confiante, posso então clamar
+
+[Refrão]
+
+D           G
+Toca-me Jesus
+
+ D             G
+Cura o meu coração!
+
+ D/F#            G
+Derrama o Teu poder
+
+ D/F#             Bm
+Restaura a minha vida
+
+    Em                A  (Em7)
+Realiza a Tua obra em mim
+
+D                  A
+Pra me erguer do chão
+
+ Bm            G
+Mudar meu coração
+
+D               A
+Fazer-me enxergar
+
+                Bm
+E minha vida renovar
+
+                      G
+Vem tocar-me com Tuas Santas mãos
+
+Em           D/F#  G
+Sei Tua presença traz
+
+     D               A
+Esperança ao meu coração
+
+Em          D/F#  G
+Alimento a minha fé
+
+     Bm                 A
+Confiante, posso então clamar
+
+[Refrão]
+
+D           G
+Toca-me Jesus
+
+ D            G
+Cura o meu coração!
+
+  D/F#           G
+Derrama o Teu poder
+
+  D/F#            Bm
+Restaura a minha vida
+
+    Em                 A
+Realiza a Tua obra em mim
+
+[Solo] Em  Bm  D  A
+
+       Em  Bm  D  A  D/F#
+
+G   A Bm  D/F#     A9  D/F#     Em7
+Toca-me,       Senhor        Jesus!
+
+G   A Bm  D/F#     A9  D/F#     Em7
+Toca-me,       Senhor        Jesus!
+
+G   A Bm  D/F#     A9  D/F#     Em7
+Toca-me,       Senhor        Jesus!
+
+G   A Bm  D/F#     A9  D/F#     G  A4
+Toca-me,       Senhor        Jesus!
+
+D           G
+Toca-me Jesus
+
+ D             G
+Cura o meu coração!
+
+  D/F#            G
+Derrama o Teu poder
+
+  D/F#            Bm
+Restaura a minha vida
+
+   Em               A
+Realiza a Tua obra em mim
+
+D/F#        G/D
+Toca-me Jesus
+
+  D/F#         G/D
+Cura o meu coração!
+
+  D/F#            G
+Derrama o Teu poder
+
+  D/F#            Bm
+Restaura a minha vida
+
+   Em                 A
+Realiza a Tua obra em mim
+
+  D/F#            G
+Derrama o Teu poder
+
+  D/F#            Bm
+Restaura a minha vida
+
+    Em                A
+Realiza a Tua obra em mim
+
+[Final] G  A  Bm
+
+        D/F#  A9  D/F#  Em7',
+  to_tsvector('portuguese', 'Toca-me Jesus ' || '')
+),
+(
+  'cantemos-gloria-emanuel-stenio',
+  'Cantemos Glória',
+  'Emanuel Stênio / Canção Nova',
+  'Emanuel Stênio / Canção Nova',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Glória',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D            A   D                  A
+Um só povo unido, ao redor de um só
+Deus
+
+  Em                  F#m           G
+É o desejo do nosso Senhor um novo céu
+
+ D                 A   D
+Uma Igreja em festa, celebrando a
+A
+unidade
+
+  Em               F#m
+O amor vencerá e a paz reinará
+
+     G             A
+E o Cristo triunfará
+
+           D  A   G           A
+Cantemos Glória, cantemos Glória!
+
+    Bm               A
+Ao Rei forte santo Senhor
+
+          G    A
+Cantemos Glória!
+
+           D  A   G           A
+Cantemos Glória, cantemos Glória!
+
+    Bm               A
+Ao Rei forte santo Senhor
+
+           G   A            D
+Cantemos Glória! Ao Rei Jesus
+
+ D            A   D                  A
+Quando o povo se abrir a Palavra de
+Deus
+
+  Em                  F#m
+Todos encontrarão a verdade, nos
+G
+libertará
+
+ D               A   D              A
+Demonstrando o amor somos todos irmãos
+
+  Em               F#m
+O amor vencerá e a paz reinará
+
+     G             A
+E o Cristo triunfará
+
+    G                  D
+É preciso sair de si mesmo
+
+      G       A           Bm
+Para ir ao encontro do irmão
+
+    Em           F#m
+E unidos viver o Evangelho
+
+                   C    A
+Esperar a plena salvação
+
+    G                  D
+Contemplar a Glória eterna
+
+      G       A         Bm
+Todos juntos diante do Rei
+
+       Em              F#m
+Novos céus e uma nova terra
+
+                     C    A
+A promessa então se cumprirá',
+  to_tsvector('portuguese', 'Cantemos Glória ' || '')
+),
+(
+  'sacrificio-de-amor-fatima-souza',
+  'Sacrifício de amor',
+  'Fátima Souza',
+  'Fátima Souza',
+  'Bb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  15,
+  'Ofertório / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Bb  F/A  Gm7  Eb  F/Eb  Eb
+
+        Bb  F/A  Gm7  Eb  F/Eb  Eb
+
+Bb           F/A              Gm7
+   Enquanto pulsar o meu coração
+
+                Dm        Eb
+Enquanto o meu ser respirar
+
+      Bb         Cm            F4  F
+Cantarei e louvarei a Tua grandeza
+
+Bb              F/A                Gm7
+   Pois Tu és Aquele que um dia morreu
+
+             Dm              Eb
+Mas venceu a morte e ressuscitou
+
+             Bb
+Triunfou na glória
+
+               Ab   F/A
+E os anjos Te adoram
+
+             Bb          F/A
+Tu és o Cordeiro, aqui estás
+
+              Gm7          Dm
+Num pedaço de pão a se ofertar
+
+     Cm          Cm/Bb          F4  F
+És o Rei, o Salvador, o Pão da vida
+
+            Bb            F/A
+Tu és o Cordeiro, aqui estás
+
+   D          Gm7        Gm/F      Eb
+Sustento pra alma, estás vivo no altar
+Bb/D
+
+      Cm7                 Dm
+És o Rei, sacrifício de amor
+
+Gm7   Cm7  F4         F      Bb  F/A
+És o único em minha vida, Senhor
+Gm7  Eb  F/Eb  Eb
+
+Bb           F/A              Gm7
+   Enquanto pulsar o meu coração
+
+                Dm        Eb
+Enquanto o meu ser respirar
+
+      Bb         Cm            F4  F
+Cantarei e louvarei a Tua grandeza
+
+Bb              F/A                Gm7
+   Pois Tu és Aquele que um dia morreu
+
+             Dm              Eb
+Mas venceu a morte e ressuscitou
+
+             Bb
+Triunfou na glória
+
+               Ab   F/A
+E os anjos Te adoram
+
+             Bb          F/A
+Tu és o Cordeiro, aqui estás
+
+              Gm7          Dm
+Num pedaço de pão a se ofertar
+
+     Cm          Cm/Bb          F4  F
+És o Rei, o Salvador, o Pão da vida
+
+            Bb            F/A
+Tu és o Cordeiro, aqui estás
+
+   D          Gm7        Gm/F      Eb
+Sustento pra alma, estás vivo no altar
+Bb/D
+
+      Cm7                 Dm
+És o Rei, sacrifício de amor
+
+Gm7   Cm7  F4         F      Bb  F/A
+És o único em minha vida, Senhor
+Gm7  Gm/F  Cm
+
+F4           F     Bb  F/A  Gm7  Gm/F
+   Em minha vida Senhor
+Cm
+
+F4           F     Bb
+   Em minha vida Senhor',
+  to_tsvector('portuguese', 'Sacrifício de amor ' || '')
+),
+(
+  'santo-fatima-souza',
+  'Santo',
+  'Fátima Souza',
+  'Fátima Souza',
+  'Bm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Santo',
+  'Qualquer',
+  '',
+  'liturgica',
+  'Bm                  A
+Santo, Santo, Santo
+
+F#m7                      Bm7
+Senhor Deus do universo
+
+     G                        A
+O céu e a Terra proclamam
+
+              A/B  Bm   A/B Bm
+A vossa glória
+
+Bm                  A
+Santo, Santo, Santo
+
+F#m7                      Bm7
+Senhor Deus do universo
+
+     G                        A
+O céu e a Terra proclamam
+
+              A/B  Bm   A/B Bm
+A vossa glória
+
+    G            A
+Hosana, Hosana
+
+          D   A/C#    Bm
+Nas altuuuu........ras
+
+    G            A
+Hosana, Hosana
+
+          A/B  Bm   A/B Bm
+Nas alturas
+
+    G            A
+Hosana, Hosana
+
+          D   A/C#    Bm
+Nas altuuuu........ras
+
+    G            A
+Hosana, Hosana
+
+          A/B  Bm   A/B Bm
+Nas alturas
+
+      F#m          Bm
+Bendito o que vem
+
+       F#m            Bm
+Em nome do Senhor
+
+      F#m          Bm
+Bendito o que vem
+
+       F#m           Bm    Bm
+Em nome do Senhor
+
+G            A
+Hosana, Hosana
+
+          D   A/C#    Bm
+Nas altuuuu........ras
+
+    G            A
+Hosana, Hosana
+
+          A/B  Bm   A/B Bm
+Nas alturas
+
+G            A
+Hosana, Hosana
+
+          D   A/C#    Bm
+Nas altuuuu........ras
+
+    G            A
+Hosana, Hosana
+
+           G   A   Bm
+Nas altuuuuras',
+  to_tsvector('portuguese', 'Santo ' || '')
+),
+(
+  'nao-deixe-de-sonhar-fatima-souza',
+  'Não Deixe de Sonhar',
+  'Fátima Souza',
+  'Fátima Souza',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  26,
+  'Final / Esperança',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] D  D7M  G  D/F#  A
+
+D                   D7M
+Tudo que Deus prometeu
+
+G           D/F#  Em7
+Eu sei, Ele cumprirá
+
+G           D/F#     Em
+Eu sei, Ele não falhará
+
+D                     D7M
+Deus sonda o teu coração
+
+G        D/F#       Em7
+E sabe o que já sonhou
+
+G         D/F#        Em  A4  A
+E sabe de tudo que é teu
+
+        G7M               F#m7
+Se a espera dói, e só há desilusão
+F#m7(11)  F#m7
+
+   Em7           A
+Se não acredita mais
+
+        G7M
+Ouço a voz de Deus
+
+                 F#m7     F#m7(11)
+Pois nunca vi um justo só
+F#m7
+
+  Em7             A
+Abrace a esperança
+
+D/F#        G7M(9)
+Tudo que é teu
+
+             Bm
+Está no coração de Deus
+
+A           G7M
+Não deixe de sonhar
+
+            Bm7
+Basta enfim acreditar
+
+A          G7M(9)
+Tudo que é teu
+
+            Bm7
+Está no coração de Deus
+
+A         G
+Não deixe de sonhar
+
+              Bm7     A/C#  C/D
+Basta enfim acreditar
+
+G                   G7M
+Tudo que Deus prometeu
+
+C           G/B   Am7
+Eu sei, Ele cumprirá
+C          G/B       c/D
+Eu sei, Ele não falhará
+
+G                    G7M
+Deus sonda o teu coração
+
+C        G/B       Am7
+E sabe o que já sonhou
+
+C        G/B          C/D
+E sabe de tudo que é teu
+
+        C                  Bm7
+Se a espera dói, e só há desilusão
+Bm7(11)  Bm7
+
+   Am7           D    G/B
+Se não acredita mais
+
+       C
+Ouço a voz de Deus
+
+                 Bm7      Bm7(11)  Bm7
+Pois nunca vi um justo só
+
+   Am7            C/D
+Abrace a esperança
+
+G/B        C7M(9)
+Tudo que é teu
+
+           Em7
+Está no coração de Deus
+
+D          C7M(9)
+Não deixe de sonhar
+
+              Em7
+Basta enfim acreditar
+
+D          C7M(9)
+Tudo que é teu
+
+          Em7
+Está no coração de Deus
+
+D          C7M(9)
+Não deixe de sonhar
+
+               E4     E
+Basta enfim acreditar
+
+           A9
+Tudo que é teu
+
+           C#m7
+Está no coração de Deus
+
+ B         A7M(9)
+Não deixe de sonhar (não deixe de
+sonhar)
+
+            C#m7
+Basta enfim acreditar
+
+ B          A
+Tudo que é teu, (tudo que é teu)
+
+            C#m7
+Está no coração de Deus, (uuuh uuh
+uuuh)
+
+C#m/E  C#m/F#  A9
+Não    deixe   de sonhar
+
+ C#m
+Basta enfim acreditar
+
+          F#m
+Não deixe de sonhar!
+
+          C#m7
+Não deixe de sonhar
+
+          F#m7
+Não deixe de sonhar!
+
+  C#m7(9)
+Huh uuuhh',
+  to_tsvector('portuguese', 'Não Deixe de Sonhar ' || '')
+),
+(
+  'meu-ceu-fatima-souza',
+  'Meu Céu',
+  'Fátima Souza',
+  'Fátima Souza',
+  'B',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] B  D#m  B  D#m
+
+D#m            B         D#m
+Descobri meu céu meu paraíso
+
+            B       D#m
+Nele toda paz que eu preciso
+
+                C#9   B9
+Quem dera poder explicar
+
+            C#      D#m
+Palavras só não bastam
+
+                B9
+Tamanha é a riqueza
+
+          F#/A#    G#m
+Tamanha profundeza
+
+      B9   C#9
+Do meu amor
+
+B9      C#9   F#  C#9       D#m
+Te amo já não posso viver sem você
+
+B9       C#9  F#    C#9     D#m
+Tesouro a minha felicidade é te ter
+
+         B9             F#
+Sempre contigo pra onde for
+
+            B9         G#m      C#4
+Seguindo o caminho me leva ao Senhor
+C#
+
+D#m            B       D#m
+Descobri meu céu meu paraíso
+
+D#m        B           D#m
+Nele toda paz que eu preciso
+
+         C#9   B9
+Quero em amor me dar
+
+                  C#    D#m
+E todo amor te consagrar
+
+                B9
+Mostrar-te o infinito
+
+            F#/A#  G#m
+Nosso sonho tão bonito
+
+B9   C#4  C#
+Realizar
+
+B9      C#9   F#  C#9       D#m
+Te amo já não posso viver sem você
+
+B9       C#9  F#    C#9     D#m
+Tesouro a minha felicidade é te ter
+
+         B9             F#
+Sempre contigo pra onde for
+
+            B9         G#m      C#4
+Seguindo o caminho me leva ao Senhor
+C#',
+  to_tsvector('portuguese', 'Meu Céu ' || '')
+),
+(
+  'faz-me-um-vaso-novo-fatima-souza',
+  'Faz-me Um Vaso Novo',
+  'Fátima Souza',
+  'Fátima Souza',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  19,
+  'Adoração / Pentecostes',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A  G  D/F#  G
+
+     A4 A     A4      A    D9    A/C#
+Me quebra, me santifica, Espí__rito
+Bm              E4  F7M D/E
+faz tua obra em mim
+
+   A4 A     A4     A   D9    A/C# Bm
+Me sara, me purifica Espí__rito   põe
+E
+teu óleo em mim
+
+C#m      F#m    E6        D
+Vou   descer à casa do oleiro
+
+E   C#m    F#m    E6      D
+Vou  dei___xar que Ele me toque
+
+  D     A/C#        Bm            F#m
+Quebra-me de novo, se necessário for
+
+                 E
+Faz-me um vaso novo, faz-me um vaso
+D
+novo
+
+  E    C#m  F#m   E6        D
+ Vou    descer   à casa do oleiro
+
+  E     C#m     F#m     E6      D
+Vou     dei-----xar que Ele me toque
+
+D      A/C#     Bm                F#m
+Quebra-me de novo, se necessário for
+
+                 E
+Faz-me um vaso novo, faz-me um vaso
+D  E  A
+novo
+
+[Solo] G  A  G/B  A/C#
+
+       C9  Bm  D  E
+
+     A4 A     A4      A    D9    A/C#
+Me quebra, me santifica, Espí__rito
+Bm              E4  F7M D/E
+faz tua obra em mim
+
+   A4 A     A4     A   D9    A/C# Bm
+Me sara, me purifica Espí__rito   põe
+E
+teu óleo em mim
+
+C#m      F#m    E6        D
+Vou   descer à casa do oleiro
+
+E   C#m    F#m    E6      D
+Vou  dei___xar que Ele me toque
+
+  D     A/C#        Bm            F#m
+Quebra-me de novo, se necessário for
+
+                 E
+Faz-me um vaso novo, faz-me um vaso
+D
+novo
+
+  E    C#m  F#m   E6        D
+ Vou    descer   à casa do oleiro
+
+  E     C#m     F#m     E6      D
+Vou     dei-----xar que Ele me toque
+
+D      A/C#     Bm                F#m
+Quebra-me de novo, se necessário for
+
+                 E
+Faz-me um vaso novo, faz-me um vaso
+D
+novo
+
+Bm7               E  C#m
+Faz-me um vaso novo, faz-me um vaso
+D     E
+novo
+
+[Final] A  G  D/F#  G  A9',
+  to_tsvector('portuguese', 'Faz-me Um Vaso Novo ' || '')
+),
+(
+  'cuidas-de-mim-olivia-ferreira',
+  'Cuidas de Mim',
+  'Olívia Ferreira',
+  'Olívia Ferreira',
+  'B',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'B    B/D#       E                B  E
+ Cuidas de mim, sei que tu cuidas de
+mim, senhor
+
+           B    B/D#       E
+ Cuidas de mim, sei que tu cuidas de
+B  B4 B
+mim, senhor
+
+B/D#         E           B/D#
+Ainda que eu ande pelo vale
+
+         E                B/D#
+E o atravesse à sombra da morte
+
+          C#m  E/G# F#/A#   B B4 B
+Cuidas de mim, cuidas de mim
+
+B/D#             E             B/D#
+Mesmo que eu não queira tua presença
+
+                 E        G#m
+Mesmo que eu me afaste de ti
+
+          C#m  F#7(4/9)        B
+Cuidas de mim, cuidas de mim
+D#4 D#
+
+    G#m            D#m/F#    E
+Teu amor é como a rocha que não se
+B/D#
+quebra jamais
+
+D#4  D#  G#m      D#m/F#     E
+Seu amor é como o sol a nascer toda
+B/D#
+manhã
+
+      C#m             B/D#
+É um amor que me constrange
+
+         A           E/G#
+Que me envolve e me aquece
+
+     F#7(4/9)          B
+Esse amor és tu, senhor !',
+  to_tsvector('portuguese', 'Cuidas de Mim ' || '')
+),
+(
+  'sacrificio-olivia-ferreira',
+  'Sacrifício',
+  'Olívia Ferreira',
+  'Olívia Ferreira',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Ofertório / Adoração',
+  'Quaresma',
+  '',
+  'adoracao',
+  'F                C/E
+Teus trajetos eu quero percorrer
+
+Dm                        Bb       Gm
+Teu caminho, ó jesus, é o meu lugar
+
+F                   C/E
+Com tuas marcas, eu quero me marcar
+
+Dm               Bb
+Sofrer a dor pra perdoar
+
+   Dm           Bb
+Eu quero obedecer tua voz
+
+F             C/E
+Sacrificar-me por amar
+
+   Dm           Bb
+Eu quero te imitar, jesus
+
+F           C/E
+Vidas restaurar
+
+   Dm        Bb
+Eu quero ir além do véu
+
+   F            C/E
+Romper o impossível
+
+    Gm         Bb
+Me ajude a caminhar
+
+       F
+Quem escolhe o teu caminho
+
+       C/E
+Flores não vai encontrar
+
+       Dm
+Vêm coroas de espinhos
+
+      Bb
+Vêm motivos pra voltar
+
+           F
+Mas quem escolhe o teu caminho
+
+        C/E
+Além de tudo encontrará
+
+     Dm
+A maior das recompensas
+
+       Bb
+Que alguém pode ganhar
+
+Gm  C4(7/9) F
+Vida eterna',
+  to_tsvector('portuguese', 'Sacrifício ' || '')
+),
+(
+  'salmo-39-olivia-ferreira',
+  'Salmo 39',
+  'Olívia Ferreira',
+  'Olívia Ferreira',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Salmo / Meditação',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E       B7  C#m  G#m    A       F#m
+Eu disse: eis que venho, senhor com
+A    B7
+prazer faço a vossa vontade
+
+C#m        G#m        A
+Esperando, esperei no Senhor,
+C#m          B7       F#
+e inclinando-se ouviu meu clamor
+
+    A       C#m          B7       F#m
+Canto novo ele pôs em meus lábios, um
+C#m       B7
+poema em louvor ao Senhor
+
+E       B7  C#m  G#m    A
+Eis que venho fazer   com prazer
+F#m       A    B7
+a vossa vontade Senhor
+
+ C#m           G#m
+Sacrifício e oblação não
+A       C#m           B7          F#
+quisestes, mas abristes, Senhor meus
+ouvidos
+
+   A         C#m
+Não pedistes ofertas
+B7       F#m         C#m         B7
+nem vítimas, holocaustos por nossos
+pecados
+
+  A           F#m          B7
+E então eu vos disse: eis que venho
+
+E       B7  C#m  G#m    A
+Eis que venho fazer   com prazer
+F#m       A    B7
+a vossa vontade Senhor',
+  to_tsvector('portuguese', 'Salmo 39 ' || '')
+),
+(
+  'teu-sangue-olivia-ferreira',
+  'Teu Sangue',
+  'Olívia Ferreira',
+  'Olívia Ferreira',
+  'F#m',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração',
+  'Quaresma',
+  '',
+  'adoracao',
+  'INTRO:  F#m7 D    A E
+
+F#m7                     D
+Sangue que emana lá da cruz
+
+    F#m7                     E
+Teu sangue precioso, meu senhor
+
+    F#m7                     D
+Que na agonia corre pela terra
+
+   F#m7                    E
+Trazendo nova vida ao pecador
+
+   D             F#m7
+Consolo dos que choram
+
+      Bm  Bm/A     E
+Esperança, libertação
+
+   D             F#m7
+Consolo dos que choram
+
+      Bm  Bm/A     E
+Esperança, libertação
+
+      F#m7 D
+O teu sangue
+
+A            E
+Lava o meu pecado
+
+    F#m D
+É o sangue
+
+       A            E
+Pelo qual eu fui comprado
+
+    D       E       F#m7
+Sem ele não há redenção
+
+D         E         F#m7 D     A  E
+Preço da minha salvação
+
+(F#m7 D    A E)
+
+F#m7                     D
+Sangue que emana lá da cruz
+
+    F#m7                     E
+Teu sangue precioso, meu senhor
+
+    F#m7                     D
+Que na agonia corre pela terra
+
+   F#m7                    E
+Trazendo nova vida ao pecador
+
+   D             F#m7
+Consolo dos que choram
+
+      Bm  Bm/A     E
+Esperança, libertação
+
+   D             F#m7
+Consolo dos que choram
+
+      Bm  Bm/A     E
+Esperança, libertação
+
+      F#m7 D
+O teu sangue
+
+A            E
+Lava o meu pecado
+
+    F#m7 D
+É o sangue
+
+       A            E
+Pelo qual eu fui comprado
+
+    D       E       F#m7
+Sem ele não há redenção
+
+D         E          D
+Preço da minha salvação
+
+E     F#m7 D
+O teu sangue
+
+A            E
+Lava o meu pecado
+
+    F#m7 D
+É o sangue
+
+       A            E
+Pelo qual eu fui comprado
+
+    D       E       F#m7
+Sem ele não há redenção
+
+D         E          D    F#m7    E
+Preço da minha salvação
+F#m7
+
+D    F#m7    E    F#m7
+
+D           E        F#m7
+Sangue poderoso de jesus
+
+D          Bm        F#m7
+Sangue poderoso de jesus
+
+D           E        F#m7
+Sangue poderoso de jesus
+
+D          Bm        F#m7
+Sangue poderoso de jesus
+
+    D            E
+Invocamos teu poder
+
+F#m7
+Sangue de jesus
+
+D           Bm
+Toda honra, toda glória
+
+E                  F°   F#m7
+Seja toda a ti pelo teu sangue...
+
+      F#m7 D
+O teu sangue
+
+A            E
+Lava o meu pecado
+
+    F#m7 D
+É o sangue
+
+       A            E
+Pelo qual eu fui comprado
+
+    D       E       F#m7
+Sem ele não há redenção
+
+D         E         F#m7     D    E
+Preço da minha salvação
+F#m7     D',
+  to_tsvector('portuguese', 'Teu Sangue ' || '')
+),
+(
+  'chama-viva-olivia-ferreira',
+  'Chama Viva',
+  'Olívia Ferreira',
+  'Olívia Ferreira',
+  'Bbm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Pentecostes / Adoração',
+  'Pentecostes',
+  '',
+  'adoracao',
+  '[Intro] Bbm  Ab6  Gb  Ab/Gb  Db/F
+
+        Gb7M/Bb  Ab/C  Db4  Db
+
+Db            Ab/C       Bbm  Gb
+Aquece o meu coração, Senhor
+
+Db               Ab/C     Bbm
+Com o fogo da tua unção
+
+Db            Ab/C    Bbm  Gb
+Aquece o meu interi——or
+
+Db             Ab/C   Bbm
+Com fogo do teu amor
+
+Ebm   Ebm7/Db   Ab/C
+Quero aquie——-tar
+
+Db/F            Gb
+O meu ser em ti
+
+Ebm       Ebm7/Db   Ab/C
+Quero ouvir tua        voz
+
+Db/F       Gb  Ab/Gb  Gb  Ab/Gb
+A me dirigir
+
+Bbm     Ab6  Gb   Db/F
+Chama viva do altar
+
+Gb/Bb   Ab/C         Db
+Espírito Santo em mim
+
+Bbm        Ab6       Gb  Db/F
+Que a paixão por tua glória
+
+Gb/Bb       Ab/C  Db
+Venha me consumir',
+  to_tsvector('portuguese', 'Chama Viva ' || '')
+),
+(
+  'presenca-real-salette-ferreira',
+  'Presença Real',
+  'Salette Ferreira / Canção Nova',
+  'Salette Ferreira / Canção Nova',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  25,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G   Bm    C   C/E  D/F# (3x)
+
+G   Bm7   C   D4 D
+
+           G          D/F#  Em7
+Presença real  na  hóstia santa
+
+         D/F#  Am7   C        D4
+Presença re....al de Cristo Jesus
+
+    C/E   D/F#    G
+Cordeiro  imo....lado, puro e
+D/F#   Em
+sem mancha
+
+               Am       C         D4 D
+O Cordeiro é o filho de Deus Criador
+
+        G  D/F#  Em7
+Eu Te ado........ro
+
+      Am7   Em7  D/F#
+Eu Te lou...o....vo
+
+       Bm7   Em7
+Eu Te  a.....mo
+
+        Am7  Am/G    D
+Eu Te espe...e.......ro
+
+C/E    D/F#    G
+Meu    Se.....nhor
+
+G   Bm7   C   C/E   D/F#
+
+G   Bm7     C     D4
+
+  C/E      D/F#  G        D/F#   Em7
+O pão que alimenta e dá vida eterna
+
+          Am       C        D/F#
+O pão é o corpo de Nosso Senhor
+
+  C/E   D/F#   G          D/F# Em
+O vinho que  salva e me dá coragem
+
+            Am        C         D
+O vinho é o sangue do meu Redentor
+
+        G  D/F#   Em7
+Eu Te ado........ro
+
+      Am7   Em   D/F#
+Eu Te lou...o....vo
+
+       Bm7   Em7
+Eu Te  a.....mo
+
+        Am7  Em    D
+Eu Te espe...e.....ro
+
+C/E    D/F#    G
+Meu    Se.....nhor
+
+Preparação para subir 1 tom
+
+Orquestra: Bm   F#m  G  A   Bbm7M
+Bm   F#m  G  A4
+
+           Bm   F#m  G  A   Bbm7M
+Bm   C#m  D  E
+
+           A          E/G#  F#m
+Presença real  na  hóstia santa
+
+         E/G# Bm         D        E
+Presença re...al   de   Cristo Jesus
+
+    D/F#  E/G#    A        E/G# F#m
+Que sobe  o..... véu do sacra...mento
+
+          E/G#  Bm       D        E
+Contemplo a     face do meu Salvador
+
+        A  E/G# F#m7
+Eu Te ado.......ro
+
+      Bm7   F#m7  E4 E
+Eu Te lou...o.....vo
+
+       C#m7   D   A/C#
+eu Te  a.....mo
+
+        Bm7    F#m7   E/G#
+Eu Te espe.....e......ro
+
+ D     E         A      D  E
+Meu     Se......nhor    (2X)
+
+Instrumental final:
+
+A       C#m   D     Bm    E  (2X)
+
+F#m7    E     D     Bm    E
+
+A       A/G   F#m7  D     E    A',
+  to_tsvector('portuguese', 'Presença Real ' || '')
+),
+(
+  'restaura-nossa-casa-salette-ferreira',
+  'Restaura Nossa Casa',
+  'Salette Ferreira / Canção Nova',
+  'Salette Ferreira / Canção Nova',
+  'Bb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Família / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Bb             C       Dm
+Restaura a nossa casa senhor
+
+     F       C/E     Dm
+Sua benção derrama aqui
+
+       Bb      C        Dm
+Nossa casa vem reconstruir
+
+       G        Dm
+Com sinais e prodígios
+
+       Gm     Bb      C       Dm
+Sobre nós, derrama o seu Espírito
+
+Bb               C       Dm
+Restaura a sua Igreja, Senhor
+
+Bb               C       Dm
+Restaura a minha vida, Senhor',
+  to_tsvector('portuguese', 'Restaura Nossa Casa ' || '')
+),
+(
+  'celebrar-salette-ferreira',
+  'Celebrar',
+  'Salette Ferreira / Canção Nova',
+  'Salette Ferreira / Canção Nova',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  11,
+  'Entrada / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  'Intro: D   E A/C#   D   E F#m   D   E
+A/C#   Bm   A/C#   E   E
+
+ A        F#m        D    A         D
+Vamos celebrar o Senhor, vamos
+celebrar (2x)
+
+ D      E      F#m7     C#m7
+Vamos juntos louvar o Senhor
+
+ D          E        E/F# F#m
+Vamos bendizer o seu Nome
+
+ D      E      F#m7     C#m7
+Vamos juntos louvar o Senhor
+
+ D                   C#9
+Vamos bendizer o seu Nome
+
+          F#m       C#m           F#m
+Vamos celebrar o Senhor, Vamos exaltar
+C#m
+o Senhor (2x)
+
+ D     E        F#m7     C#m7
+Vamos juntos louvar o Senhor
+
+ D          E      E/F# F#m
+Sua glória enche a terra
+
+ D     E        F#m7     C#m7
+Vamos juntos louvar o Senhor
+
+ D                 C#9
+Sua glória enche a terra
+
+           D        E A/C#          D
+Vamos celebrar o Senhor, vamos exaltar
+E F#m
+o Senhor
+
+           D        E A/C#
+Vamos celebrar o Senhor, vamos
+D         C#9
+bendizer o seu Nome',
+  to_tsvector('portuguese', 'Celebrar ' || '')
+),
+(
+  'de-bracos-aberto-salette-ferreira',
+  'De Braços Aberto',
+  'Salette Ferreira / Canção Nova',
+  'Salette Ferreira / Canção Nova',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '(intro) C   Am   F   Em   Am   Am/G
+F    Fm
+
+C                 Am
+Nossa Senhora vem nos acolher
+
+F      Fm          C    C4/5+
+Em seu manto de amor
+
+C                 Am
+Somos seus filhos  cuida de nós
+
+F        Fm        C      Fm/C
+ Como cuidou de Jesus.
+
+C                 Am
+Nossa Senhora vem nos acolher
+
+F      Fm          C     C4/5+
+ Em seu manto de amor
+
+C                 Am
+Somos seus filhos  cuida de nós
+
+F        Fm        C       G
+ Como cuidou de Jesus.
+
+           C       C/E      F
+De braços abertos       vem nos
+C/E
+envolver
+
+    Dm       Fm         C     G
+Pois somos pequenos  ó mãe
+
+             C      C/E       F
+Vem  Nossa Senhora         vem nos
+C/E
+socorrer
+
+    Dm       Fm         C   G
+Pois somos pequenos  ó mãe
+
+C           Am
+Imaculada  Rainha do céu
+
+F        Fm        C      Fm/C
+ Virgem e mãe do amor
+
+C          Am
+Seu coração triunfará
+
+F     Fm       C      G
+ Sobre todo o mal.
+
+           C       C/E          F
+De braços abertos           vem nos
+C/E
+envolver
+
+   Dm       Fm         C     G
+Pois somos pequenos  ó mãe
+
+             C       C/E        F
+Vem  Nossa Senhora           vem nos
+C/E
+socorrer
+
+   Dm       Fm         C      G
+Pois somos pequenos  ó mãe
+
+           C        C/E         F
+De braços abertos           vem nos
+C/E
+envolver
+
+    Dm       Fm         C     G
+Pois somos pequenos  ó mãe
+
+             C       C/E         F
+Vem  Nossa Senhora           vem nos
+C/E
+socorrer
+
+   Dm       Fm         C      G
+Pois somos pequenos  ó mãe
+
+C           Am
+Seu coração triunfará
+
+F     Fm       C
+ Sobre todo o mal.',
+  to_tsvector('portuguese', 'De Braços Aberto ' || '')
+),
+(
+  'se-deus-e-por-nos-salette-ferreira',
+  'Se Deus É Por Nós',
+  'Salette Ferreira / Canção Nova',
+  'Salette Ferreira / Canção Nova',
+  'Gm',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  6,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  'Gm             F
+Se Deus é por nós,
+
+        Eb         Cm         F
+quem será, quem será contra nós? (2x)
+
+       Gm           F          Eb
+Nem a dor ou tribulação  Nem a fome ou
+Cm      F
+perseguição
+
+     Gm            F        Eb
+Nada pode nos separar, do amor de
+Cm        F
+Cristo Jesus
+
+      Bb       Eb         F        Gm
+Nem a vida, a morte  ou os principados
+
+       Bb        Eb         F     Gm
+Nem os anjos, o hoje, nem o amanhã
+
+     Gm      Bb           Eb      F
+As alturas, abismos, nem as criaturas
+
+      Gm                Eb
+têm a força pra nos separar
+
+      F       D
+do amor de Jesus
+
+Gm             F
+Se Deus é por nós,
+
+        Eb         Cm         F
+quem será, quem será contra nós? (2x)
+
+Gm            F   Eb        Cm     F
+Quem nos acusará? Quem nos condenará?
+
+Gm              F      Eb    Cm
+Quem nos separará do amor de Cristo
+F
+Jesus?
+
+       Bb      Eb        F       Gm
+Nem a vida, a morte  ou os principados
+
+       Bb        Eb       F     Gm
+Nem os anjos, o hoje, nem o amanhã
+
+     Gm      Bb           Eb      F
+As alturas, abismos, nem as criaturas
+
+      Gm                Eb
+têm a força pra nos separar
+
+      F       D
+do amor de Jesus',
+  to_tsvector('portuguese', 'Se Deus É Por Nós ' || '')
+),
+(
+  'depois-da-tempestade-part-ramon-amp-rafael-guilherme-de',
+  'Depois da Tempestade (Part. Ramon &amp; Rafael)',
+  'Guilherme de Sá',
+  'Guilherme de Sá',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Meditação / Esperança',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C
+Quando o vento gritava o meu nome
+
+                       Am
+E as ondas caíam sobre mim
+
+                        F
+Eu pensei que era o meu fim
+
+           Em                 G
+Me faltava chão, me faltava ar
+
+                       C
+Mas no meio do barulho todo
+
+                         Am
+Ouvi o Teu sussurro a me chamar
+
+                            F
+Teu olhar fazendo o medo ir embora
+
+    Em                    G
+Teu abraço me ensinando a confiar
+
+               C
+Te encontro no escuro
+
+               G
+Te encontro na dor
+
+               Am
+Te encontro no silêncio
+
+                    F
+Onde aprendo a existir
+
+                 C
+Depois da tempestade
+
+                G/B             Am
+Vem tua paz que acalma o mar em mim
+
+               F
+Teu amor me refaz
+
+                        Em
+Colo sagrado onde posso descansar
+
+      Dm                      G
+Eu me abandono em Ti, meu Senhor
+
+                 F       G
+Depois da tempestade
+
+          C
+Só Te adorar
+
+[Instrumental]
+
+C                         G/B
+O tempo passou sobre as ruínas
+
+Am
+Sem apagar o que sobrou
+
+F
+Descobri que a fé cria raízes
+
+                   G
+Que me fazem resistir
+
+                    C
+Agora dobro os meus joelhos
+
+        G/B            Am
+Sobre a mesma terra da dor
+
+                   F
+Cada lágrima virou semente
+
+                G
+Regada pelo Teu amor
+
+      C
+Se eu falho, sou acolhido
+
+         Am
+Se eu me perco, o tempo ensina
+
+         F
+Cada queda, um novo encontro
+
+     Dm              G
+Cada medo, tu a sentir
+
+                 (Pausa)
+Depois da tempestade
+
+                C      G/B      Am
+Vem tua paz que acalma o mar em mim
+
+               F
+Teu amor me refaz
+
+                        Em
+Colo sagrado onde posso descansar
+
+      Dm                      G
+Eu me abandono em Ti, meu Senhor
+
+                 F         G
+Depois da tempestade
+
+          Am       C
+Só Te adorar
+
+        F      G
+Só Te amar
+
+F
+Se a tormenta voltar um dia
+
+G
+Já não vou me desesperar
+
+Am
+Levo em mim tua Eucaristia
+
+C                              F
+É o céu que insiste em me abraçar
+G
+
+                 C
+Depois da tempestade
+
+          Am
+Só Te adorar
+
+        F     G
+Só Te amar
+
+                C
+Pra sempre Te amar',
+  to_tsvector('portuguese', 'Depois da Tempestade (Part. Ramon &amp; Rafael) ' || '')
+),
+(
+  'desperta-guilherme-de-sa',
+  'Desperta',
+  'Guilherme de Sá',
+  'Guilherme de Sá',
+  'E',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Louvor / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] E9  B4  C#m7  A9
+
+[Primeira Parte]
+
+E9    B4
+Aviva    o meu coração
+
+    C#m7        A9
+Cansado de esperar
+
+                E9     B4
+Religa Tua vida em mim
+
+ C#m7        A9
+Tua vida em mim
+
+    E9   B4
+Desperta
+
+                    C#m7   A9
+Tu que dormes na escuridão
+
+                  E9           B4
+Vem ouvir as trombetas de Sião
+C#m7  A9
+
+[Refrão]
+
+     C#m7(9)  B4
+Proclama
+
+                      A9
+Que Jesus voltando está
+
+                     C#m7(9)  B4
+Que o Seu Reino não findará
+
+                     A9
+Que o cordeiro é o Leão
+
+Que no trono está
+
+     C#m7(9)  B4
+Proclama
+
+                      A9
+Que Jesus voltando está
+
+                     C#m7(9)  B4
+Que o Seu Reino não findará
+
+                     A9
+Que o cordeiro é o Leão
+
+Que no trono está
+
+[Segunda Parte]
+
+C#m7(9)                 B4
+        Escuta povo meu
+
+Sou a promessa das nações
+
+A9
+   Vou levantar você
+
+                  C#m7(9)
+Para ser a minha voz
+
+                     B4
+E ser as minhas mãos
+
+                  A9
+E hoje nessa geração
+
+Te escolhi, és meu!
+
+C#m7(9)                 B4
+        Escuta povo meu
+
+Sou a promessa das nações
+
+A9
+   Vou levantar você
+
+                  C#m7(9)
+Para ser a minha voz
+
+                     B4
+E ser as minhas mãos
+
+                  A9
+E hoje nessa geração
+
+Te escolhi, és meu!
+
+[Interlúdio] C#m7(9)  B4  A9  B4
+
+              C#m7(9)  B4  A9  B4
+
+              C#m7(9)  B4  A9  B4
+
+              C#m7(9)  B4  A9  B4
+
+[Refrão]
+
+     C#m7(9)  B4
+Proclama
+
+                      A9
+Que Jesus voltando está
+
+                     C#m7(9)  B4
+Que o Seu Reino não findará
+
+                     A9
+Que o cordeiro é o Leão
+
+Que no trono está
+
+     C#m7(9)  B4
+Proclama
+
+                      A9
+Que Jesus voltando está
+
+                     C#m7(9)  B4
+Que o Seu Reino não findará
+
+                     A9
+Que o cordeiro é o Leão
+
+Que no trono está
+
+[Terceira Parte]
+
+    E9     B4
+Vou avivar    o teu coração
+
+    C#m7(9)      A9
+Cansado de esperar
+
+           E9             B4
+Vou te atrair, te conquistar
+
+                   C#m7(9)  A9
+Desperta, é tempo de mudar
+
+                   E9
+Desperta, é tempo de mudar',
+  to_tsvector('portuguese', 'Desperta ' || '')
+),
+(
+  'oleiro-guilherme-de-sa',
+  'Oleiro',
+  'Guilherme de Sá',
+  'Guilherme de Sá',
+  'Db',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração / Conversão',
+  'Quaresma',
+  '',
+  'adoracao',
+  '[Intro] Db  Bbm
+
+[Primeira Parte]
+
+Db                  Bbm
+Eu desejo que meus joelhos
+
+                         Db
+Sejam mais fortes que os pés
+
+                    Bbm
+Eu, que sou barro e lama
+
+                     Db
+Mistura da miséria e nada
+
+           Bbm                   Db
+Tenho construído todo santo dia
+
+                          Bbm
+Um pedaço da minha minha cruz   E um
+pouco de sentido
+
+                 Db
+Num mundo corrompido
+
+[Ponte]
+
+Bbm   Fm7             Gb
+ Deveras aqui, o que antes era
+
+                     Db
+Já não pode existir mais
+
+[Refrão]
+
+Fm7
+Eu preciso tanto ser moldado
+
+  Bbm                       Ab
+E que a Sua mão transforme todo meu
+ser
+
+       Gb                         Fm7
+Porque hoje eu sou, hoje eu sou, hoje
+eu sou
+
+         Db    C    Db    Bbm Gbm
+Um velho vaso quebrado
+
+[Segunda Parte]
+
+Db                  Bbm
+Eu sei que da minha dor
+
+             Db
+Ele cria o amanhã
+
+                         Bbm
+E a outros não remove os desafios
+
+                               Db
+Os torna maiores do que todos eles
+
+                Bbm                 Db
+Nós não fomos chamados a uma vida
+fácil
+
+                     Bbm           Gb
+Fomos feitos para uma vida com
+propósito
+
+               Db
+Em um amanhã inóspito
+
+[Refrão]
+
+Fm7
+Eu preciso tanto ser moldado
+
+  Bbm                       Ab
+E que a Sua mão transforme todo o meu
+ser
+
+       Gb                         Fm7
+Porque hoje eu sou, hoje eu sou, hoje
+eu estou
+
+         Db
+Um velho vaso quebrado
+
+    Ab/C         Bbm
+Completamente quebrado
+
+Ab             Gb
+Esquecido e deixado de lado
+
+Fm7               Ebm7
+Pronto para ser usado
+
+Gbm        Db   A Db A Db
+Mais uma vez
+
+[Solo] Db  Eb  Fm7  Gb  Db
+
+[Refrão]
+
+Fm7
+Eu preciso tanto ser moldado
+
+  Bbm                       Ab
+E que a Sua mão transforme todo o meu
+ser
+
+       Gb                         Fm7
+Porque hoje eu sou, hoje eu sou, hoje
+eu estou
+
+         Db    Ab    Db Fm7 Bbm Ab Gb
+Um velho vaso quebrado
+Fm7 Db Ab/C Db',
+  to_tsvector('portuguese', 'Oleiro ' || '')
+),
+(
+  'todos-os-sacrarios-da-terra-feat-eliana-ribeiro-guilherm',
+  'Todos os Sacrários da Terra feat. Eliana Ribeiro',
+  'Guilherme de Sá / Eliana Ribeiro',
+  'Guilherme de Sá / Eliana Ribeiro',
+  'Gb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Gb
+
+[Primeira Parte]
+
+       Db Ebm7
+Eu te ado-ro
+
+        Bbm7 Ab
+Eu te espe---ro
+
+      Gb Fm7      Bbm7
+Eu te a--mo, meu Deus
+
+[Pré-Refrão]
+
+Gb
+E em oração
+
+         Ab
+Peço perdão
+
+                 Db Ab
+Por quem não te ado-ra
+
+         Bbm7 Ab
+Não te espe---ra
+
+       Gb Fm7      Bbm7
+Não te a--ma, meu Deus
+
+[Refrão]
+
+        Gb
+Meu Senhor, tu és
+
+         Db
+Em todos os sacrários da Terra
+
+          Gb
+Sacratíssimo amor
+
+            Db
+Fogo santo, água viva, Sangue, Alma e
+Divindade
+
+       Bbm7    Ab
+Preciosíssimo Corpo
+
+Gb
+Que me toca
+
+Db              Ebm7
+E muda tudo que há
+
+Gb              Db
+Tudo que há em mim
+
+[REPETE TUDO]
+
+[FINAL]
+
+Gb
+E muda tudo que há, muda tudo que há
+
+Db
+Tudo que há, Tudo que há
+
+Gb              Db
+Tudo que há em mim',
+  to_tsvector('portuguese', 'Todos os Sacrários da Terra feat. Eliana Ribeiro ' || '')
+),
+(
+  'loucura-yuri-costa',
+  'Loucura',
+  'Yuri Costa',
+  'Yuri Costa',
+  'C',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] C  G  C  G
+
+[Primeira Parte]
+
+C            G
+Eu não sei parar
+
+                 C            G
+De agradecer por Seu Amor por mim
+
+             C
+E por todos nós
+
+          G       C
+Que respiramos O Seu Ar
+
+[Segunda Parte]
+
+C        G
+É A Sua Voz
+
+                      C
+Que eu quero sempre ouvir
+
+      G
+Toda manhã
+
+             C
+Me dizendo o que fazer
+
+   G
+E como fazer
+
+     C    G
+Me ensina
+
+[Pré-Refrão]
+
+G/B               C
+Eu me sinto tão bem
+
+                     D
+Mas me chamam de louco
+
+                                C
+Loucura é viver longe da Real
+Felicidade
+
+G/B                   C
+Acham que eu devo estar
+
+                 D
+De cabeça pra baixo
+
+Escandalizando esse mundo
+
+     C
+Com Amor de Verdade
+
+[Refrão]
+
+    G
+Me leva
+
+           C9
+Seja de avião ou a pé
+
+             Em7
+De carro ou busão
+
+              D9         C9
+Vou até os confins da terra
+
+    G
+Me leva
+
+           C9
+Seja como for eu vou lá
+
+            Em7
+Aonde Você precisar
+
+    D9            C9
+Só pra falar de Você
+
+( C9  G  C9  G )
+
+( C9  G  C9  G )
+
+[Segunda Parte]
+
+C        G
+É A Sua Voz
+
+                      C
+Que eu quero sempre ouvir
+
+      G
+Toda manhã
+
+             C
+Me dizendo o que fazer
+
+   G
+E como fazer
+
+     C    G
+Me ensina
+
+[Pré-Refrão]
+
+G/B               C
+Eu me sinto tão bem
+
+                     D
+Mas me chamam de louco
+
+                                C
+Loucura é viver longe da Real
+Felicidade
+
+G/B                   C
+Acham que eu devo estar
+
+                 D
+De cabeça pra baixo
+
+Escandalizando esse mundo
+
+     C
+Com Amor de Verdade
+
+[Refrão]
+
+    G
+Me leva
+
+           C9
+Seja de avião ou a pé
+
+             Em7
+De carro ou busão
+
+              D9         C9
+Vou até os confins da terra
+
+    G
+Me leva
+
+           C9
+Seja como for eu vou lá
+
+            Em7
+Aonde Você precisar
+
+    D9            C#9  D9  C9
+Só pra falar de Vo______cê
+
+[Refrão Final]
+
+    G
+Me leva
+
+           C9
+Seja de avião ou a pé
+
+             Em7
+De carro ou busão
+
+              D9         C9
+Vou até os confins da terra
+
+    G/B
+Me leva
+
+           C9
+Seja como for eu vou lá
+
+            Em7
+Aonde Você precisar
+
+    D9            C#9  D9  C9
+Só pra falar de Vo______cê
+
+           C#9  D9  C9
+Falar de Vo______cê
+
+   C#9  D9  C9  G/B   D4  G
+Me le___va le_______va me',
+  to_tsvector('portuguese', 'Loucura ' || '')
+),
+(
+  'tendas-yuri-costa',
+  'Tendas',
+  'Yuri Costa',
+  'Yuri Costa',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D
+
+Bm                   G
+Venham e tragam suas tendas
+
+             D
+Uma voz nos chama
+
+F#m
+Vamos acampar
+
+Bm                  G
+Neste lugar onde as dores
+
+                 Bm
+Problemas já não podem
+
+         A
+Nos amedrontar
+
+G                Bm
+Pois aqui está a fonte da vida
+
+     A                Bm
+Onde brota alegria sem fim
+
+G
+Água que lava
+
+Bm
+Inunda o deserto
+
+A
+Sacia a nossa sede
+
+        G
+Abre o coração
+
+              A
+Chegou a hora de despertar
+
+             D
+É impossível descrever
+
+                A
+Esse amor a nos transformar
+
+        Bm
+E agora já podemos ver
+
+                G
+Surgir um novo dia
+
+             A
+Nada pode se comparar
+
+Bm
+Não, nada será igual
+
+G
+A tudo que provamos aqui
+
+                Bm G  D  A
+Bendito seja o nome do Senhor
+
+Bm  G  D  A
+Oh oh oh oh oh
+
+Bm                  G
+Não da pra esquecer Acamps Shalom
+
+D        A
+É impossível descrever',
+  to_tsvector('portuguese', 'Tendas ' || '')
+),
+(
+  'amigo-yuri-costa',
+  'Amigo',
+  'Yuri Costa',
+  'Yuri Costa',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  4,
+  'Entrada / Acolhida',
+  'Qualquer',
+  '',
+  'popular',
+  'F
+O que é que eu vou falar pra Deus
+
+                    C
+Quando eu me encontrar com Ele?
+
+                Am7
+Seja aqui na terra, seja lá no Céu
+
+             G
+Eu quero ser amigo dele
+
+                     F
+O que é que eu vou falar pra Deus
+
+                    C
+Quando eu me encontrar com Ele?
+
+                Am7
+Seja aqui na terra, seja lá no Céu
+
+             G
+Eu quero ser amigo dele
+
+ F                               C
+Todo mundo quer ter um amigo pra
+contar
+
+                  Am7
+Pra sentar e conversar
+
+                G
+Confiar e partilhar a vida inteira
+
+ F                            C
+Nosso coração tem o desejo de estar
+
+                    Am7
+Num abraço que traz paz
+
+                G
+De janeiro a janeiro sem cessar
+
+      F
+E se eu te contar que conheci um dia
+C
+desse aí
+
+                         Am7
+Uma Pessoa que eu nunca vi
+
+                                 G
+Mas só de ouvir falar, seria
+facilmente meu melhor amigo
+
+   F
+Até descobri, que na verdade, sempre
+C
+esteve aqui
+
+                        Am7
+Comigo desde quando eu nasci
+
+                          G
+E antes de nascer já me amava e
+conhecia
+
+                     F
+O que é que eu vou falar pra Deus
+
+                    C
+Quando eu me encontrar com Ele?
+
+                Am7
+Seja aqui na terra, seja lá no Céu
+
+             G
+Eu quero ser amigo dele
+
+                     F
+O que é que eu vou falar pra Deus
+
+                    C
+Quando eu me encontrar com Ele?
+
+                Am7
+Seja aqui na terra, seja lá no Céu
+
+             G
+Eu quero ser amigo dele
+
+F
+  Papa parararapapa
+
+C
+  Papa parararapapa
+
+Am7
+    Papa parararapapa
+
+G
+  Eu quero ser amigo dele',
+  to_tsvector('portuguese', 'Amigo ' || '')
+),
+(
+  'pao-da-vida-yuri-costa',
+  'Pão da Vida',
+  'Yuri Costa',
+  'Yuri Costa',
+  'Bb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  35,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Bb  Eb  Gm  F  Eb
+
+Eb    F   Gm
+Nem amanheceu
+
+  Gm      F/A    Bb
+E eu já estava aqui
+
+Bb    Cm7  Bb/D       Eb
+Precisando tanto Te ouvir
+
+       Cm7                F/A
+É que nem dormir eu consegui
+
+           Bb        Bb/D  Eb
+Cabeça alagada de preocupação
+
+        Cm7    Cm/Bb    Am7(11)
+E os meus olhos são goteiras
+
+D7           Gm     Gm/F   Eb9
+Que só transbordam tantas dores
+
+Bb              Bb4   Bb     Bb9
+Vem, que a tempestade só se cala
+Bb  Eb
+com Tua Voz
+
+Que minhas feridas só se curam em Tuas
+F
+Mãos
+
+          Eb
+E a minha vida só ficará completa
+
+    F   Eb/G F/A
+Na Tua presença
+
+        Bb                      Eb
+Então entra, eu escancaro as portas
+
+                Gm                F
+Da minha casa, vem tomar café comigo
+
+      Bb/D
+Tenho muito pouco ou nada
+
+  Eb                Gm
+Pra Te oferecer, Jesus
+
+                      F
+Tu que És O Pão da Vida
+
+                Cm   Bb/D  Eb
+Mas fica, por favor, aqui
+
+     F
+Pra sempre
+
+[Intro] C  F  Am  G  F
+
+F     G  Am
+Nem amanheceu
+
+  Am      G/B    C
+E eu já estava aqui
+
+C   Dm7    C/E         F
+Precisando tanto Te ouvir
+
+       Dm7                G/B
+É que nem dormir eu consegui
+
+            C          C/E   F
+Cabeça alagada de preocupação
+
+          Dm7    Dm/C   Bm7(11)
+E os meus olhos são goteiras
+
+E7           Am    Am/G     F9
+Que só transbordam tantas dores
+
+C                C4    C      C9   C
+Vem, que a tempestade só se cala com
+F
+Tua Voz
+
+Que minhas feridas só se curam em Tuas
+G
+Mãos
+
+           F
+E a minha vida só ficará completa
+
+    G    F/A G/B
+Na Tua presença
+
+        C                       F
+Então entra, eu escancaro as portas
+
+                Am                G
+Da minha casa, vem tomar café comigo
+
+       C/E
+Tenho muito pouco ou nada
+
+   F                 Am
+Pra Te oferecer, Jesus
+
+                      G
+Tu que És O Pão da Vida
+
+                Dm   C/E F
+Mas fica, por favor, aqui
+
+     G
+Pra sempre
+
+        C                       F
+Então entra, eu escancaro as portas
+
+                Am                G
+Da minha casa, vem tomar café comigo
+
+       C/E
+Tenho muito pouco ou nada
+
+   F                 Am
+Pra Te oferecer, Jesus
+
+                      G
+Tu que És O Pão da Vida
+
+                Dm   C/E F
+Mas fica, por favor, aqui
+
+     G
+Pra sempre
+
+F             G
+Oh oh oh, oh oh
+
+                E/G#
+Fica comigo, Senhor
+
+     Am  G  D/F#        G4
+Pra sempre
+
+        C/G                    Fm/G#
+Então entra, eu escancaro as portas
+
+                Am7               G
+Da minha casa, vem tomar café comigo
+
+      C/E
+Tenho muito pouco ou nada
+
+   F                 Am
+Pra Te oferecer, Jesus
+
+                      G
+Tu que És O Pão da Vida
+
+                Dm    C/E  F
+Mas fica, por favor, aqui
+
+     G    F
+Pra sempre',
+  to_tsvector('portuguese', 'Pão da Vida ' || '')
+),
+(
+  'a-forca-da-fe-italo-villar',
+  'A Força da Fé',
+  'Italo Villar',
+  'Italo Villar',
+  'A',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  11,
+  'Louvor / Envio',
+  'Qualquer',
+  '',
+  'popular',
+  'Intro: A F#m7 D7+ E7
+
+A9                   F#m7
+É preciso crer que existe um Deus
+
+       D7+            Bm7     Esus4
+Que te ama acima de qualquer coisa.
+
+   A9                     F#m7
+De nada vale o homem sem a fé no seu
+Senhor
+
+   D7+             Bm7      Esus4
+É semelhante a um corpo sem vida.
+
+Bm7                  F#m7
+Não sejas como Pedro,que duvidou
+
+Bm7          D         Esus4
+Quando já estava caminhando sobre o
+E
+mar.
+
+Bm7                  F#m7
+Sê como Abraão, que confiou em Deus
+
+Bm7       D9        E7sus4
+E acreditou até o fim
+
+                  A9
+Vai correndo ao encontro do Pai
+
+               F#m7
+Ele espera ansioso por ti
+
+                   D9
+Não desista, dá um passo e verás com
+E7sus4
+os olhos da fé.
+
+                A9
+Que em tua vida tudo irá mudar
+
+                F#m7
+De coragem ele vai te encher
+
+                 D9
+Dará forças para continuar a
+E7sus4
+caminhar
+
+               D9
+É somente pela força da fé
+
+        E7sus4      A9
+Que a vitória virá.',
+  to_tsvector('portuguese', 'A Força da Fé ' || '')
+),
+(
+  'recomecar-italo-villar',
+  'Recomeçar',
+  'Italo Villar',
+  'Italo Villar',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  19,
+  'Adoração / Conversão',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A9  A9/C#  D7M  Dm7
+
+        G  C#m7  F#m7  Bm7
+
+        F7M  Dm7  G
+
+   A9       A9/C#    D7M    E7
+Eu vou recomeçar de onde caí
+
+   A9         A/C#         D7M   E7
+Eu vou me levantar, sair do chão
+
+    D7M                E/D
+Não vou mais me enganar
+
+          C#m7     F#m7
+Com a solidão e a dor
+
+    F7M          G7
+Só posso ser feliz voltando
+
+    E
+Ao meu primeiro amor
+
+D/E E/D C#m7     F#m7      Bm7
+Se a    lâmpada apagou, faltou azeite
+E7
+
+   E/D               C#m7      F#m7
+Jesus quer me tirar da escuridão
+
+     Bm7                 C#m7
+Se a fé esfriou e eu fugi de mim
+
+ F7M                      Dm7       Dm
+Jesus nunca negou-me o seu perdão
+E4  E7
+
+   A9       A9/C#
+Por isso eu vou voltar aos Átrios
+D7M      G7
+do Senhor
+
+    C#m7          F#m7       Bm7
+Ferido, mas fui eu quem quis assim
+E
+
+  D7M                           D
+Mas Deus vai restaurar
+
+ C#m7          F#m7
+Curar meu coração
+
+    F7M                DM7  Dm7  E7
+Eu sou eleito, Deus me ama me ama
+E4  E7
+
+    E7   E4  E7
+E me quer feliz',
+  to_tsvector('portuguese', 'Recomeçar ' || '')
+),
+(
+  'eu-sou-o-pao-do-ceu-italo-villar',
+  'Eu Sou o Pão do Céu',
+  'Italo Villar',
+  'Italo Villar',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] G9  D/F#  Em7  D7M
+
+        C9  C#  C/D
+
+G9       D/F#  Em7           Em7/D
+Eu sou o pão da vida, o pão do céu
+
+C7M      G/B     Am7        D   C/D
+Eu sou o Rei dos reis, o Salvador
+
+C7M      D      D#°         Em7
+Eu sou o Cristo, o Filho do Deus
+Em7/D# Em7/D C#5-/7
+Vivo
+
+    C7M     Am     D    C/D
+Me dei por vós só por amor
+
+G9          D/F# C7M       D
+Este é meu corpo tomai e comei
+
+G9           D/F# C7M     D    D#°
+Este é meu sangue tomai e bebei
+
+      Em7           Bm7
+Revestí-vos de minha força
+
+C7M         G/B  Am7        D
+Permanecei em mim eis que estou
+G9   C/D
+convosco até o fim
+
+G9    D/F#  Em7           Em7/D
+Eu venci o mundo vos livrei do mal
+
+C7M            G/B        Am7        D
+Tomei vossos pecados deixei lá na cruz
+C/D
+
+C7M      D       D#°             Em7
+Vos livrei, da morte tomei vossa dor
+Em7/D# Em7/D C#m5-/7
+
+C7M            Am7                D
+Venha tenha coragem eu sou o senhor
+C/D
+
+G9           D/F# C7M       D
+Este é meu corpo tomai e comei
+
+G9           D/F# C7M        D    D#°
+Este é meu sangue tomai e bebei
+
+      Em7           Bm7
+Revestí-vos de minha força
+
+C7M           G/B  Am7            D
+Estejais em mim eis que estou convosco
+G9   C/D
+até o fim',
+  to_tsvector('portuguese', 'Eu Sou o Pão do Céu ' || '')
+),
+(
+  'este-lugar-vai-tremer-italo-villar',
+  'Este Lugar Vai Tremer',
+  'Italo Villar',
+  'Italo Villar',
+  'C',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  10,
+  'Pentecostes / Louvor',
+  'Pentecostes',
+  '',
+  'popular',
+  'Intro: C  D  Em (3x)
+
+       C  D  B7
+
+( Em ) (4x)
+
+( B7 )
+
+Primeira Parte:
+
+Em              C      D
+ Este lugar vai tremer vai tremer
+
+Em               C   D
+ Porque Jesus presente aqui está
+
+Em              C        D
+ Este lugar vai tremer, vai tremer.
+
+Em                C       D   Em
+ Porque aqui se encontra o povo do
+C    D
+Senhor
+
+C       D           G      D/F#    Em
+ Fomos escolhidos para orar e anunciar
+a todos a palavra do Senhor
+
+ C             D
+Milagres e prodígios irão acontecer
+
+    C     D
+O nosso Deus fará
+
+ C       D
+O nosso Deus fará
+
+    C    D
+O nosso Deus fará
+
+ C       D
+O nosso Deus fará
+
+    Am    G/B
+O nosso Deus fará
+
+ B7        Em
+Este lugar tremer
+
+Em              C      D
+ Este lugar vai tremer vai tremer
+
+Em               C   D
+ Porque Jesus presente aqui está
+
+Em              C        D
+ Este lugar vai tremer, vai tremer.
+
+Em                C       D   Em
+ Porque aqui se encontra o povo do
+C    D
+Senhor
+
+C       D           G      D/F#    Em
+ Fomos escolhidos para orar e anunciar
+a todos a palavra do Senhor
+
+ C             D
+Milagres e prodígios irão acontecer
+
+    C     D
+O nosso Deus fará
+
+ C       D
+O nosso Deus fará
+
+    C    D
+O nosso Deus fará
+
+ C       D
+O nosso Deus fará
+
+    Am    G/B
+O nosso Deus fará
+
+ B7        Em
+Este lugar tremer
+
+Intro: C  D  Em (3x)  C  D  B7
+
+Em              C      D
+ Este lugar vai tremer vai tremer
+
+Em               C   D
+ Porque Jesus presente aqui está
+
+Em              C        D
+ Este lugar vai tremer, vai tremer.
+
+Em                C       D   Em
+ Porque aqui se encontra o povo do
+C    D
+Senhor
+
+Em              C      D
+ Este lugar vai tremer vai tremer
+
+Em               C   D
+ Porque Jesus presente aqui está
+
+Em              A/C#      Cm
+ Este lugar vai tremer, vai tremer.
+
+Em                C       D   Em
+ Porque aqui se encontra o povo do
+C    D
+Senhor',
+  to_tsvector('portuguese', 'Este Lugar Vai Tremer ' || '')
+),
+(
+  'dia-de-celebracao-italo-villar',
+  'Dia de Celebração',
+  'Italo Villar',
+  'Italo Villar',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  8,
+  'Entrada',
+  'Qualquer',
+  '',
+  'popular',
+  'C9          G
+Digno de louvor
+
+Am7
+E adoração
+
+       F           C9
+Toda honra toda gloria
+
+Dm7         G
+Pertence a ele.
+
+C9
+Palmas para o rei
+
+      G    Am7
+O leão de Judá
+
+F
+Que com misericórdia
+
+     C9           Dm7  G
+Resgatou a minha vida
+
+  F                 G            Em7
+Hoje e dia d celebração cantai, pois
+
+               Am7
+A vitoria e certa
+
+  F                G            C9
+Aleluia exaltemos aquele que venceu
+C7
+(bis)
+
+F       C
+Que venceu
+
+F       G
+Que venceu
+
+F       C      G   C
+Que venceu',
+  to_tsvector('portuguese', 'Dia de Celebração ' || '')
+),
+(
+  'mudou-minha-vida-pitter-di-laura',
+  'Mudou Minha Vida',
+  'Pitter Di Laura / Canção Nova',
+  'Pitter Di Laura / Canção Nova',
+  'C',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  9,
+  'Louvor / Testemunho',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] C  Em11  F9
+
+        C  Em11  F9
+
+C
+Não sou ninguém diante do
+
+Em11            F9
+Altar dos santos dos santos
+
+C
+Se ele não me conduzir, me
+
+Em11        F9
+Perco em meus planos
+
+Am           Em
+Só me resta entregar a
+
+       F9
+Minha vida em suas mãos
+
+Am         Em
+Para aceitar o teu querer
+
+F9
+Para mim
+
+Am           Em
+Só me resta entregar a
+
+       F9
+Minha vida em suas mãos
+
+Am   Em          F
+Para aceitar o teu querer
+
+G
+Para mim
+
+[Refrão]
+
+C
+O senhor mudou a minha vida
+
+G/B
+Entregando a sua vida
+
+Am
+O que posso mais querer
+
+Fm
+Sem ele, não sei mais viver
+
+C
+O senhor mudou a minha vida
+
+G/B
+Entregando a sua vida
+
+Am
+O que posso mais querer
+
+Fm
+Sem ele, não sei mais viver
+
+( C  Em11  F9 )
+
+( C  Em11  F9 )
+
+C
+Não sou ninguém diante do
+
+Em11            F9
+Altar dos santos dos santos
+
+C
+Se ele não me conduzir, me
+
+Em11        F9
+Perco em meus planos
+
+Am           Em
+Só me resta entregar a
+
+       F9
+Minha vida em suas mãos
+
+Am         Em
+Para aceitar o teu querer
+
+F9
+Para mim
+
+C
+O senhor mudou a minha vida
+
+G/B
+Entregando a sua vida
+
+Am
+O que posso mais querer
+
+Fm
+Sem ele, não sei mais viver
+
+G         C
+Porque ele é bom para mim',
+  to_tsvector('portuguese', 'Mudou Minha Vida ' || '')
+),
+(
+  'sentinela-da-manha-pitter-di-laura',
+  'Sentinela da Manhã',
+  'Pitter Di Laura / Canção Nova',
+  'Pitter Di Laura / Canção Nova',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  9,
+  'Jovens / Envio',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] Em  G  C
+
+Em                G
+No coração da noite
+
+C
+Pode o medo chegar
+
+Em                G
+Espero ansiosamente
+
+C
+A luz da aurora aparecer
+
+Bm7                           Am7
+Eu sei ... Que amanhã logo vem
+
+                              Bm7
+Vem o alvorecer de um novo tempo
+
+                Am7
+Mas ainda é noite
+
+G
+Tenho posto pra guardar
+
+       C
+Sou chamado a anunciar
+
+ G
+Até meu nome Deus trocou
+
+Am7                               D
+Agora eu já sei quem sou... Eu sou
+
+      C         G
+Sentinela da manhã
+
+       Am7                Bm7
+Que anuncia a chegada do sol
+
+     C             D
+Proclama que Jesus ressuscitou
+
+       C          G
+Sentinela da manhã
+
+     Am7                  Bm7
+Que anuncia a chegada do sol
+
+ C                         D
+Proclama que Jesus ressuscitou
+
+Em            D/F#      G
+Oh, oh, oh
+
+Em            D/F#      G
+Oh, oh, oh
+
+Em
+Eu sei que o dia vem
+
+Em7
+Vem Maranata vem
+
+Em
+Jesus, minha esperança
+
+Em7
+E nunca me engana
+
+Bm7                          Am7
+Eu sei ... O mundo quer sua luz
+
+                             Bm7
+Quer o alvorecer de um novo tempo
+
+                Am7
+Mas ainda é noite
+
+G
+Tenho um posto pra guardar
+
+Am7
+Sou chamado a anunciar
+
+Em
+Até meu nome Deus trocou
+
+Am7                               D
+Agora eu já sei quem sou... Eu sou
+
+      C         G
+Sentinela da manhã
+
+       Am7                Bm7
+Que anuncia a chegada do sol
+
+     C             D
+Proclama que Jesus ressuscitou
+
+     C           G
+Sentinela da manhã
+
+      Am                  Bm7
+Que anuncia a chegada do sol
+
+ C                           D
+Proclama que Jesus ressuscitou
+
+Em
+Oh, oh, oh',
+  to_tsvector('portuguese', 'Sentinela da Manhã ' || '')
+),
+(
+  'ate-jesus-voltar-pitter-di-laura',
+  'Até Jesus Voltar',
+  'Pitter Di Laura / Canção Nova',
+  'Pitter Di Laura / Canção Nova',
+  'C#m',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração / Envio',
+  'Advento',
+  '',
+  'adoracao',
+  '[Intro] C#m  E  C#m  E  C#m  E
+
+        C#m  E  B  F#m  C#m  E  B  F#m
+
+C#m
+Nasceu de novo em nosso meio a
+esperança
+
+       B                         F#
+De um dia contemplar a face do Senhor
+
+             C#m
+Que tem seu trono lá no céu
+
+                      B  F#
+Onde a alegria não termina
+
+         A                   B
+O nosso sonho é viver a santidade
+
+    C#m
+Adorando em espírito e em verdade
+
+          A                     B
+Perseverança e oração no dia a dia
+
+       C#m                      G#7
+Sustentados pela graça que nos guia
+
+Até Jesus voltar
+
+ C#m           E             B
+(Vem galera, vamo pra cima, acredita)
+
+F#
+Santos ou nada
+
+ C#m           E             B
+(Vem galera, vamo pra cima, não
+vacila)
+
+F#
+Até Jesus voltar
+
+C#m           E              B
+(Vem galera, vamo pra cima, acredita)
+
+F#
+Santos ou nada
+
+ C#m           E             B
+(Vem galera, vamo pra cima, não
+F#
+vacila)
+
+A    F#m            C#m    E
+  Ou santos ou nada,   ou santos ou
+nada
+
+Até Jesus voltar
+
+ C#m           E             B
+(Vem galera, vamo pra cima, acredita)',
+  to_tsvector('portuguese', 'Até Jesus Voltar ' || '')
+),
+(
+  'alguem-tao-jovem-carlo-acutis-pitter-di-laura',
+  'Alguém Tão Jovem – (Carlo Acutis)',
+  'Pitter Di Laura / Canção Nova',
+  'Pitter Di Laura / Canção Nova',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Santos / Eucaristia',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E                        B
+Como pode alguém tão jovem me fazer
+pensar
+
+         A  F#m              B
+Profundamente assim...sobre quem eu
+sou
+
+       E                        B
+Como pode alguém tão jovem desejar à
+deus
+
+          A    F#m           B
+Na eternidade assim amando e sendo
+amor
+
+      A               C#m
+Exemplo pra mim exemplo para nós
+
+          A  F#m                B
+Santo de calça jeans nós não estamos
+sós.
+
+       E                   C#m
+Eu quero de verdade buscar a santidade
+
+          A         F#m
+Tristeza é somente olhar pra mim
+
+              B
+Felicidade é olhar pra deus
+
+   A       E
+Meu supremo bem
+
+    A  F#m  B
+Meu supremo bem',
+  to_tsvector('portuguese', 'Alguém Tão Jovem – (Carlo Acutis) ' || '')
+),
+(
+  'ha-uma-uncao-de-deus-aqui-thiago-tome',
+  'Há Uma Unção de Deus Aqui',
+  'Thiago Tomé / Canção Nova',
+  'Thiago Tomé / Canção Nova',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração / Espírito Santo',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'C           G/B
+Espírito de amor
+
+                Am
+Doce hóspede da alma
+
+            F
+Espírito de força
+
+                C
+Espírito consolador
+
+              G/B
+Autor de todo bem
+
+                      Am
+Que cura o que está doente
+
+                  F
+Brisa do verão ardente
+
+               C ( G )
+Queremos Te louvar
+
+Dm                              G/B
+E ver jorrar do nosso interior rios de
+água viva
+
+     F
+Óh Espírito de santidade
+
+          Bb          G
+Age com poder neste lugar
+
+Eu sei
+
+C
+Há uma unção de Deus aqui
+
+G
+Há uma unção de Deus neste lugar
+
+Am                                  F
+E esta unção nos leva ao profundo amor
+
+                    C
+Nos leva a transbordar',
+  to_tsvector('portuguese', 'Há Uma Unção de Deus Aqui ' || '')
+),
+(
+  'ele-te-ouve-thiago-tome',
+  'Ele Te Ouve',
+  'Thiago Tomé / Canção Nova',
+  'Thiago Tomé / Canção Nova',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro]  E9
+
+E9
+Quem acredita em Deus
+
+F#m
+Nunca estará sozinho
+
+     A
+Pois Ele está, muito mais perto
+
+       E9
+Do que podemos imaginar
+
+E9
+Pra que buscar, em pessoas, lugares
+
+F#m
+O que só Deus pode te dar
+
+    A
+Um amor de verdade
+
+                   E9
+Deus nunca te deixará sozinho
+
+       A                 E/G#
+Ele te ouve, Deus escuta a sua voz
+
+         A                      E9
+Fale com Ele, Ele sabe o que é melhor
+
+[Solo] C#m   B   A',
+  to_tsvector('portuguese', 'Ele Te Ouve ' || '')
+),
+(
+  'eu-vencerei-thiago-tome',
+  'Eu Vencerei',
+  'Thiago Tomé / Canção Nova',
+  'Thiago Tomé / Canção Nova',
+  'C',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  5,
+  'Louvor / Confiança',
+  'Qualquer',
+  '',
+  'popular',
+  'C                         G
+Mesmo quando as forças se vão
+
+Dm                 F G
+E parece que tudo se perdeu
+
+  C                  G
+A visão não vê nada além
+
+ Dm                    F       G
+Mas obedeço à voz da minha fé que diz
+
+    Am             G
+Eu vencerei, no Senhor eu vencerei
+
+Dm             G
+Confiante eu declaro
+
+     F           G
+Para Deus nada é impossível
+
+   Am            G
+Eu vencerei, no Senhor eu vencerei
+
+Dm
+Eu escolho acreditar
+
+      G
+Que o milagre Ele fará! (2x)
+
+      C               G
+Mesmo quando Deus não faz
+
+Dm                F   G
+Do meu jeito e no meu tempo
+
+C                  G
+A obediência é o caminho
+
+Dm                             F
+Me submeto, pois sei, Deus tem o
+G
+melhor pra mim
+
+    Am             G
+Eu vencerei, no Senhor eu vencerei
+
+Dm             G
+Confiante eu declaro
+
+     F           G
+Para Deus nada é impossível
+
+   Am            G
+Eu vencerei, no Senhor eu vencerei
+
+Dm
+Eu escolho acreditar
+
+      G
+Que o milagre Ele fará! (2x)
+
+    Am                    G
+Eu confio no Senhor, eu espero no
+Senhor
+
+  Dm                      G
+Eu confio no Senhor, meu Deus! (2x)
+
+    Am                    G
+Eu confio no Senhor, eu espero no
+Senhor
+
+       Dm                 G
+E com Ele, eu sei que vencerei
+
+    Am             G
+Eu vencerei, no Senhor eu vencerei
+
+Dm             G
+Confiante eu declaro
+
+     F           G
+Para Deus nada é impossível
+
+   Am            G
+Eu vencerei, no Senhor eu vencerei
+
+Dm
+Eu escolho acreditar
+
+      G
+Que o milagre Ele fará!',
+  to_tsvector('portuguese', 'Eu Vencerei ' || '')
+),
+(
+  'diante-de-ti-fugirao-thiago-tome',
+  'Diante de Ti fugirão',
+  'Thiago Tomé / Pitter Di Laura',
+  'Thiago Tomé / Pitter Di Laura',
+  'F#m',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  8,
+  'Louvor / Batalha',
+  'Qualquer',
+  '',
+  'popular',
+  'F#m           E
+Vem Senhor pra reinar
+
+F#m          E
+Vem Senhor pra reinar
+
+    D7M
+Neste lugar
+
+F#m         E
+Vem Senhor governar
+
+F#m            E
+Com Tua luz dissipar
+
+     D7M
+Todo mal
+
+Bm7            E4 E
+Vem Senhor e impera
+
+Bm7            E4 E
+Vem Senhor e impera
+
+      A     E
+Diante de Ti fugirão
+
+      F#m     D7M
+Diante de Ti cairão
+
+    A    E
+Quem poderá resistir?
+
+      D7M
+Ao teu poder
+
+ Bm7        E
+Vem pra reinaaaaaarrr
+
+ Bm7        E
+Vem governaaaaarrrrrr
+
+ Bm7        E
+Vem imperaaaaaaaarrrrrr
+
+              D/F#  E/G#
+Senhor nosso Deeeeeeeeussssss',
+  to_tsvector('portuguese', 'Diante de Ti fugirão ' || '')
+),
+(
+  'amor-e-decisao-ricardo-sa',
+  'Amor É Decisão',
+  'Ricardo Sá / Canção Nova',
+  'Ricardo Sá / Canção Nova',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  10,
+  'Matrimônio / Família',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] A9  D  A9  D
+
+     A9                         D7M
+Como poderei dizer que foi por acaso
+
+      A9
+De repente quando eu vi estava ao teu
+D7M
+lado
+
+      F#m
+Teu amigo eu me tornei
+
+       C#m                      Bm
+Fui entrando em tua vida pra valer!
+
+                     E  D/E  E7
+Me encantei sem querer
+
+       A9
+Mas é Deus quem tudo faz, então tive
+D7M
+que esperar
+
+    A9                             D7M
+O amor quando é real, não leva-nos
+para o mal
+
+       F#m
+Mais maduro eu me tornei
+
+      C#m                           Bm
+E em Deus fui dando passos e hoje aqui
+
+              E               A  D/E
+Vim apenas dizer, amo muito você
+
+     A9        D           E
+Se amor é decisão eu decidi te amar
+
+      A             D           E
+Você veio em minha vida pra me
+completar
+
+     F#m
+E de Deus iremos ser
+
+       C#m                    Bm  E
+Lado a lado em qualquer situação
+
+                 A9
+Sendo um só coração
+
+[Solo] D  F#m  D  E  E7',
+  to_tsvector('portuguese', 'Amor É Decisão ' || '')
+),
+(
+  'a-escolhida-ricardo-sa',
+  'A Escolhida',
+  'Ricardo Sá / Canção Nova',
+  'Ricardo Sá / Canção Nova',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A  D  A  D
+
+[Primeira Parte]
+
+A                     E
+Uma entre todas foi a escolhida
+
+F#m                      C#m
+Foste tu Maria a serva preferida
+
+D             A
+Mãe do meu Senhor
+
+B7               E E7
+Mãe do meu salvador
+
+[Refrão]
+
+  A F#m    D        E         A F#m
+Maria,   cheia de graça e consolo
+
+D          E           A F#m
+Venha caminhar com teu povo
+
+D          E       A  E7
+Nossa mãe sempre serás
+
+[Segunda Parte]
+
+A                     E
+Roga pelos pecadores desta Terra
+
+F#m                               C#m
+Roga pelo povo que em seu Deus espera
+
+D             A
+Mãe do meu Senhor
+
+B7               E E7
+Mãe do meu salvador
+
+[Refrão]
+
+  A F#m    D        E         A F#m
+Maria,   cheia de graça e consolo
+
+D          E           A  F#m
+Venha caminhar com teu povo
+
+D          E       A
+Nossa mãe sempre serás',
+  to_tsvector('portuguese', 'A Escolhida ' || '')
+),
+(
+  'maria-de-deus-senhora-da-paz-ricardo-sa',
+  'Maria de Deus, Senhora da Paz',
+  'Ricardo Sá / Canção Nova',
+  'Ricardo Sá / Canção Nova',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C9               G/C         F
+É bom estarmos juntos Nesta mesa do
+G
+Senhor
+
+C9                 G/C         F
+E sentirmos Sua presença No calor do
+G
+nosso irmão
+
+C9               Em7            Dm
+Deus nos reune aqui Em um só espírito,
+G
+Um só coração
+
+C9            Em7             Dm
+Toda família vem Não falta ninguém
+G
+Nesta comunhão
+
+   C9               G/C            D/C
+E vem cantando entre nós  Maria de
+Deus, Senhora da Paz
+
+   F              F/G            C
+E vem orando por nós  A mãe de Jesus
+G
+
+C9             G/C          F        G
+Maria, nossa mãezinha Nos convida a
+união
+
+C9               G/C         F
+Sua presença nos une Faz-nos todos
+G
+mais irmãos
+
+C9              Em7             Dm
+Nossa Senhora escuta O nosso silêncio,
+G
+a nossa oração
+
+C9              Em7
+E apresenta ao Filho Que se dá no
+Dm                 G
+vinho Que se dá no pão',
+  to_tsvector('portuguese', 'Maria de Deus, Senhora da Paz ' || '')
+),
+(
+  'tua-graca-me-basta-ricardo-sa',
+  'Tua Graça Me Basta',
+  'Ricardo Sá / Canção Nova',
+  'Ricardo Sá / Canção Nova',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  19,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Am  G/A  Am  Em  Eb/F  C/G
+G#°
+
+        Am  D7/9  Fm  Fm/Eb  Dm7/9-
+Fm/G
+
+C9            Em7
+A Tua graça me basta, Senhor
+
+F9                         F/G
+É tudo o que eu preciso ter
+
+C9                    Em7
+O Teu Amor é o que me conduz
+
+ F9               F/G    G#°
+Razão maior do meu viver
+
+  Am       D7/9        G7M
+Contigo seguro eu sei estou
+
+F7M                   C9
+Em Tuas mãos eu espero
+
+Am
+Firma meus passos
+
+Em7
+Me mostra, Senhor
+
+        D/F#        F/G      Am   G
+Fazer Tua vontade é o que eu quero
+G/B
+
+ C        G/B         F/A          G
+Guia-me, leva-me, conduza-me por Tuas
+F    G
+veredas
+
+ C            Am         A/G Dm7/9 F/G
+Guia-me, leva-me, Senhor!',
+  to_tsvector('portuguese', 'Tua Graça Me Basta ' || '')
+),
+(
+  'maria-porta-do-ceu-alvaro-e-daniel',
+  'Maria Porta do Céu',
+  'Álvaro e Daniel',
+  'Álvaro e Daniel',
+  'B',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] B  A  G  B  A  C#  G
+
+D      G/D      D
+São Gabriel com Maria
+
+D     G/D         D
+São Rafael com Tobias
+
+ D/F#   G                       Bm
+São Miguel com todas as Hierarquias
+
+          A         G  D/G#
+Abre pra nós, essa via
+
+[Refrão]
+
+ G/D            D  G
+Maria, Porta do Céu
+
+            D
+Passa na frente, passa na frente
+
+             A  A7
+Abre os corações',
+  to_tsvector('portuguese', 'Maria Porta do Céu ' || '')
+),
+(
+  'asas-do-espirito-alvaro-e-daniel',
+  'Asas do espírito',
+  'Álvaro e Daniel',
+  'Álvaro e Daniel',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Pentecostes / Adoração',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'D    C    G    D        C G/B
+Voooa Voooa  Espírito
+
+D          G        D
+Vem, vem Espírito Santo
+
+C    G/B     D
+Vem iluminar
+
+D          G        D
+Vem, vem Espírito Santo
+
+C     G/B       D
+Sobre nós repousar
+
+      A
+Vou dançar na tua presença
+
+      Bm
+Vem Espírito me embalar
+
+G      A
+Vão surgir línguas de fogo
+
+            G               A
+Bailando no ar, bailando no ar
+
+ Bm             G
+Incendeia, Incendeia
+
+D          A
+Batiza-me Espírito
+
+Bm
+Santo
+
+          G
+Com tuas Asas
+
+D                    A
+Queimando meu corpo
+
+ Bm             G
+Incendeia, Incendeia
+
+D      A        Bm
+Sopra Espírito Santo
+
+G     D          A
+Sobrevoa esse lugar
+
+D    C    G    D
+Voooa Voooa  Espírito',
+  to_tsvector('portuguese', 'Asas do espírito ' || '')
+),
+(
+  'glorioso-sao-jose-alvaro-e-daniel',
+  'Glorioso São José',
+  'Álvaro e Daniel',
+  'Álvaro e Daniel',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'São José / Devoção',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A  F#m  D  E  D
+
+                    A
+Oh Glorioso São José
+
+                 D
+Deus confiou a ti
+
+                   Bm
+A missão de proteger
+
+                    E
+A Família de Nazaré
+
+     D                   A
+Nas vossas maiores aflições
+
+                   D
+Um anjo lhe apareceu
+
+                   Bm
+E num sonho entendeu
+
+                       D        E
+Que seria o pai, do filho de Deus
+
+  D
+Valei-me São José
+
+            E
+Nas minhas dúvidas e medos
+
+  D
+Valei-me São José
+
+           E
+Quando me bate o desespero
+
+  D
+Valei-me São José
+
+          E
+Quero seguir os seus exemplos
+
+      Bm        F#m
+Nas minhas orações
+
+   D            E
+Valei-me São José
+
+        D  E       F#m
+Oh Glorioso São José
+
+     D  E       F#m  A
+Glorioso São José
+
+ D
+Cuida da minha Família
+
+Como cuidou de Jesus e Maria
+
+                 E
+Valei-me São José
+
+        D  E       F#m
+Oh Glorioso São José
+
+     D  E        F#m  A
+Glorioso São José
+
+        D
+És meu Santo Protetor
+
+Meu poderoso intercessor
+
+                 E
+Valei-me São José
+
+   D
+Jesus, Maria, José
+
+                 E    F#m
+Minha família Vossa é
+
+Jesus, Maria, José
+
+                      D
+Minha Família Vossa é
+
+Jesus, Maria, José
+
+                E     F#m
+Minha família vossa é
+
+Jesus, Maria, José
+
+                D     E
+Minha família vossa é',
+  to_tsvector('portuguese', 'Glorioso São José ' || '')
+),
+(
+  'figueira-alvaro-e-daniel',
+  'Figueira',
+  'Álvaro e Daniel',
+  'Álvaro e Daniel',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração / Esperança',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A  E  F#m  D9
+
+        A  E  F#m  D9
+
+F#m                           D9
+Ainda que a figueira não floresça
+
+A9                        E
+Nem um fruto produza na videira
+
+    F#m               D9
+Toda via eu me alegrarei em ti
+
+     A9     E
+Só em ti senhor
+
+        Bm                D9
+Pode o fruto da oliveira mentir
+
+       A9                     E
+Nem os campos produzirem mantimentos
+
+   Bm                        D9
+O Senhor é minha força ele exaltarei
+
+ A9                      E
+Louvarei seu nome para sempre
+
+A9         E
+Cantarei, louvarei
+
+ F#m                     D9
+Adorarei seu nome para sempre
+
+A9              E
+Exaltarei, proclamarei
+
+  F#m                     D9
+A força do meu Deus eternamente
+
+A9                   E
+Tenho esperança, confiança e a certeza
+
+       F#m
+Que ele jamais falhará
+
+  D9               A         E
+Meu socorro ele proverá',
+  to_tsvector('portuguese', 'Figueira ' || '')
+),
+(
+  'tua-presenca-cura-ana-gabriela',
+  'Tua Presença Cura',
+  'Ana Gabriela',
+  'Ana Gabriela',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  D/F#  Em  C  D  G
+
+G                         D/F#
+Quero estar em tua presença
+
+Em                     D9       Em  D4
+Quero estar em tua presença Senhor
+D
+
+Am            D/F#        Em
+Se tocado eu for por tua misericórdia,
+C         Am
+novo eu serei
+
+             D/F#
+Se tocado eu for, por tua
+Em            C         Am   D
+misericórdia, novo eu serei
+
+             G    D/G
+Tua presença cura todas as feridas que
+Em
+causei
+
+D/E                      Am
+Todas as feridas que fizeram em mim,
+D
+Senhor!
+
+             G     D/G
+Tua presença cura todas as feridas que
+Em
+causei
+
+D/E                      Am
+Todas as feridas que fizeram em mim,
+D
+Senhor!
+
+G
+Eu confio, sim, eu creio!
+
+Am/G
+Eu espero, eu te amo
+
+          C              Am
+Pois, tua misericórdia recria o
+Em    D4 D
+meu viver!
+
+G
+Eu confio, sim, eu creio!
+
+Am
+Eu espero, eu te amo
+
+          C              Am
+Pois, tua misericórdia recria o
+Em     D4  D
+meu viver!
+
+             G    D/G
+Tua presença cura todas as feridas que
+Em
+causei
+
+                        Am
+Todas as feridas que fizeram em mim,
+D
+Senhor!
+
+             G     D/G
+Tua presença cura todas as feridas que
+Em
+causei
+
+                        Am
+Todas as feridas que fizeram em mim,
+D
+Senhor!
+
+C               G
+Cura-me, Senhor!',
+  to_tsvector('portuguese', 'Tua Presença Cura ' || '')
+),
+(
+  'espirito-de-amor-ana-gabriela',
+  'Espírito de Amor',
+  'Ana Gabriela',
+  'Ana Gabriela',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Pentecostes / Adoração',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'G
+Sopra sobre nós, Senhor
+
+       D/G
+Teu Espírito de Amor
+
+     C       G/B     Am    Bm     Em
+Faz jorrar sobre nós a Tua Água Viva
+
+        F    C/E    D
+Que nos lava por inteiro
+
+             G
+Faz em nós arder
+
+     Em             Bm
+O desejo de Te pertencer
+
+       C    G/B   Am
+Neste fogo de Amor
+
+                   Bm     Em
+Que nos dá forças pra viver
+
+              Am            Bm
+Vem recria-nos em Ti, Teu Poder nos
+Em
+faz sentir
+
+         F     C/E      D
+Vem nos dar uma nova vida!
+
+   G                Em
+O Teu Espírito de Amor, tudo pode
+Am        F
+fazer, tudo pode mudar
+
+   G                Em
+O Teu Espírito de Amor, tudo realiza
+Am      C          D
+em nós, escuta a nossa voz!
+
+C    D     Bm   C  (2x)
+
+              Am            Bm
+Vem recria-nos em Ti, Teu Poder nos
+Em
+faz sentir
+
+         F     C/E      D
+Vem nos dar uma nova vida!',
+  to_tsvector('portuguese', 'Espírito de Amor ' || '')
+),
+(
+  'espirito-de-deus-ana-gabriela',
+  'Espírito de Deus',
+  'Ana Gabriela',
+  'Ana Gabriela',
+  'G#m',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Pentecostes / Adoração',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'G#m      E           B          F#
+    Espírito de Deus vem sobre nós
+
+G#m       E             B         F#
+Com a Tua graça nos arrasta a tua voz
+
+G#m        E         B     F#
+Espírito de Deus vem com poder
+
+C#m                    D#
+Com a Tua força nós podemos vencer
+
+(4x)
+
+G#m
+Fonte de água viva enche-nos com teu
+amor
+Inflam as almas com teu fogo abrasador
+
+C#m                 D#
+Nova esperança hoje queremos ter
+
+G#m              C#m
+Para o livre voo alçar
+
+E            F#
+ A tua graça nos bastará
+REFRÃO:
+
+G#m           E         B        F#
+Vem e desce sobre nós Espírito Santo
+
+G#m           E       B        F#
+Transforma e muda-nos com teu amor
+
+G#m           E         B       F#
+Vem e desce sobre nós Espírito Santo
+G#m   E
+de Deus
+
+B          F#     G#m
+E faz-nos teus, Senhor
+
+G#m
+Fonte de água viva enche-nos com teu
+amor
+Inflam as almas com teu fogo abrasador
+
+C#m                   D#
+Nova esperança hoje queremos ter
+
+G#m               C#m
+Para o livre voo alçar
+
+E            F#
+ A tua graça nos bastará
+REFRÃO:
+
+C#m                     G#m
+    Vem vento impetuoso,    fazer
+B                F#
+morrer em nós o velho e nascer o novo
+
+C#m                   E   G#m
+    Chama que não se apaga, ardente
+F#
+como brasa, faz em nós sua morada
+
+        E   G#m
+Para sempre
+
+      F#                     D#
+Faz pulsar em nós o amor, Espírito
+Santo
+REFRÃO: (2x)',
+  to_tsvector('portuguese', 'Espírito de Deus ' || '')
+),
+(
+  'fogo-abrasador-ana-gabriela',
+  'Fogo Abrasador',
+  'Ana Gabriela',
+  'Ana Gabriela',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] E  B  C#m  G#m  A  E/G#  F#m
+
+E        B               C#m
+Se tu inflamas o meu coração
+
+        G#m                 A
+Se tu somente és a minha razão
+
+     E/G#   F#m
+De viver e amar
+
+E        B                 C#m
+Em tuas mãos minha vida está
+
+        G#m                    A
+Teu coração é onde eu quero morar/ e
+E/G#      F#m
+unir-me em amor
+
+      B          A
+Como fogo abrasador
+
+  C#m
+Inflama
+
+      F#m          B     E/G#  A
+Faz subir tuas centelhas de amor
+
+    C#m
+Em chamas
+
+        F#m      B           A9
+No teu coração aberto meu Senhor
+
+E        B                 C#m
+Seja adorado pra sempre Senhor
+
+          G#m                A
+Quero te amar como amado eu sou
+
+      E/G#     F#m7
+Em louvor me darei
+
+E       B              C#m
+Tua vontade, a minha, uma só
+
+        G#m                   A
+Teu coração e o meu sejam um só
+
+    E/G#      F#m
+Movimento de amor
+
+[Solo] A  E/G#  F#m  E/G#  A  C#m  G#m
+A',
+  to_tsvector('portuguese', 'Fogo Abrasador ' || '')
+),
+(
+  'sou-reflexo-danilo-casemiro',
+  'Sou Reflexo',
+  'Danilo Casemiro',
+  'Danilo Casemiro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G           D        E        Am   D
+Sou reflexo do teu Amor e espelho da
+tua beleza Senhor
+
+        G           D        E
+Sou reflexo do teu Amor e espelho da
+Am   D
+tua beleza Senhor
+
+        G                      D
+Nem as limitações ou minhas
+imperfeições
+
+           C           Em         Am
+Me impedirão de contemplar a tua face
+D
+em mim.(2x)
+
+     G           D        E
+Sou reflexo do teu Amor e espelho
+Am   D
+da tua beleza Senhor
+
+        G           D        E
+Sou reflexo do teu Amor e espelho da
+Am   D
+tua beleza Senhor
+
+        G                      D
+Nem as limitações ou minhas
+imperfeições
+
+           C           Em         Am
+Me impedirão de contemplar a tua face
+D
+em mim.(2x)
+
+F                       C
+  O teu Olhar em meu olhar
+
+G                              D
+  Restaura as pinturas que borrei
+
+                  F               C
+Os erros que cometi, o rosto escondido
+
+G                         D
+  Entre as marcas que deixei
+
+F                       C
+  O teu viver em meu viver
+
+G                  D
+  Me ensina como agir pra transpassar
+F
+a superfície
+
+                   C
+Ir além do meu querer
+
+G                      D            E
+  E mergulhar no teu amor, no teu amor
+
+        A                      E
+Nem as limitações ou minhas
+imperfeições
+
+           D           F#m         Bm
+Me impedirão de contemplar a tua face
+E
+em mim
+
+     A             E         D
+Sou reflexo do teu Amor e espelho da
+Bm    Dm          A
+tua beleza Senhor',
+  to_tsvector('portuguese', 'Sou Reflexo ' || '')
+),
+(
+  'vem-vem-vem-espirito-santo-danilo-casemiro',
+  'Vem, Vem, Vem Espírito Santo',
+  'Danilo Casemiro',
+  'Danilo Casemiro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Pentecostes / Invocação',
+  'Pentecostes',
+  '',
+  'adoracao',
+  '[Intro] G  G9
+
+ G    D/F#  Em     Em/D   C/G
+Vem, vem, vem, espírito santo,
+C9            D
+transforma a minha vida, quero
+
+      G  G9  G
+Renascer
+
+ G    D/F#  Em     Em/D   C/G
+Vem, vem, vem, espírito santo,
+C9            D
+transforma a minha vida, quero
+
+      G  G9  G
+Renascer
+
+G7             C/G
+  Quero abandonar-me em seu
+D/F#       G              D/F#
+amor, encharcar-me em seus rios
+
+    Em7       C/G          D
+Senhor, derrubar as barreiras do meu
+G  G9  G
+coração
+
+G7             C/G
+  Quero abandonar-me em seu
+D/F#       G              D/F#
+amor, encharcar-me em seus rios
+
+    Em7       C/G          D
+Senhor, derrubar as barreiras do meu
+G  G9  G
+coração
+
+ G    D/F#  Em     Em/D   C/G
+Vem, vem, vem, espírito santo,
+C9            D
+transforma a minha vida, quero
+
+      G  G9  G
+Renascer
+
+ G    D/F#  Em     Em/D   C/G
+Vem, vem, vem, espírito santo,
+C9            D
+transforma a minha vida, quero
+
+      G  G9  G
+Renascer
+
+G7             C/G
+  Quero abandonar-me em seu
+D/F#       G              D/F#
+amor, encharcar-me em seus rios
+
+    Em7       C/G          D
+Senhor, derrubar as barreiras do meu
+G  G9  G
+coração
+
+G7             C/G
+  Quero abandonar-me em seu
+D/F#       G              D/F#
+amor, encharcar-me em seus rios
+
+    Em7       C/G          D
+Senhor, derrubar as barreiras do meu
+G  G9  G
+coração
+
+[Final] G  G9  G',
+  to_tsvector('portuguese', 'Vem, Vem, Vem Espírito Santo ' || '')
+),
+(
+  'basta-uma-palavra-danilo-casemiro',
+  'Basta Uma Palavra',
+  'Danilo Casemiro',
+  'Danilo Casemiro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Comunhão / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  C9  Em7  Dsus4  D  C9  G
+
+                          C9
+Conheces meus pensamentos
+
+                            Em7
+Conheces meus medos e aflições
+
+             Dsus4            C9
+Conheces meu coração por inteiro
+G
+
+                            C9
+Se estou abatido, me acolhe
+
+                              Em7
+Se me falta forças, me socorre
+
+              Dsus4  D      C9      D
+Se insisto em cair, me levanta
+
+                       Am
+Não há impossível pra ti
+
+                          C9
+Basta uma palavra tua pra renascer
+
+                  Dsus4  D  G
+Um novo homem em mim
+
+                 D  Dsus4
+Renova a minha vida
+
+                 Em7
+Muda a minha história
+
+              C9           G
+Lança em mim agora, Senhor
+
+               F6(9)
+O teu amor que cura
+
+                Am
+O teu poder que salva
+
+                 C9      G
+O teu olhar que acalma
+
+                          C9
+Conheces meus pensamentos
+
+                            Em7
+Conheces meus medos e aflições
+
+             Dsus4  D        C9      G
+Conheces meu coração por inteiro
+
+                            C9
+Se estou abatido, me acolhe
+
+                              Em7
+Se me falta forças, me socorre
+
+              Dsus4  D     C9      D
+Se insisto em cair, me levanta
+
+                       Am
+Não há impossível pra ti
+
+                          C9
+Basta uma palavra tua pra renascer
+
+                  Dsus4  D  G
+Um novo homem em mim
+
+                 Dsus4  D
+Renova a minha vida
+
+                 Em7
+Muda a minha história
+
+              C9           G
+Lança em mim agora, Senhor
+
+               F6(9)
+O teu amor que cura
+
+                Em7
+O teu poder que salva
+
+                 Am
+O teu olhar que acalma
+
+  C9             Dsus4  D
+E anda comigo, oh Deus
+
+  Em7                        D/F#
+Estende tua mão a este filho teu
+
+  C9             Dsus4  D
+E anda comigo, oh Deus
+
+  Em7                        D/F#  G
+Estende tua mão a este filho teu
+
+               F6(9)
+Renova a minha vida
+
+                Am
+Muda a minha história
+
+              C9          G
+Lança em mim agora, Senhor
+
+               F6(9)
+O teu amor que cura
+
+                Em7
+O teu poder que salva
+
+                 Am
+O teu olhar que acalma
+
+  C9             Dsus4  D
+E anda comigo, oh Deus
+
+  Em7                        D/F#
+Estende tua mão a este filho teu
+
+  Em7          C9
+E me ama, e me ama
+
+  Em7          C9
+E me ama, e me ama',
+  to_tsvector('portuguese', 'Basta Uma Palavra ' || '')
+),
+(
+  'fala-senhor-marcio-todeschini',
+  'Fala Senhor',
+  'Márcio Todeschini / Canção Nova',
+  'Márcio Todeschini / Canção Nova',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Aclamação / Meditação',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  A/C#  G  Bm7  Em  G  A9
+
+  D        A/C#       G
+Deus quer falar comigo
+
+    Bm7          Em
+Em coisas tão pequenas
+
+ G          A9
+Nas coisas simples
+
+D/F#  G                     D
+     E eu quero ouvir Sua voz
+
+G               D    G  D/F#    Em
+Preciso estar atento  a todo movimento
+do Céu
+
+D/F#  G               A9
+       Em direção a mim
+
+D/F#     G      A9
+Fala Senhor, preciso ouvir Tua voz
+
+D    A/C#         Bm7
+Eis aqui o Teu servo
+
+          Em      D/F#  G       A9
+Fala no irmão, na Palavra, Senhor
+
+         D  A/C#  G
+E no meu coração
+
+         Em  D/F#  G  A
+E no meu coração',
+  to_tsvector('portuguese', 'Fala Senhor ' || '')
+),
+(
+  'sou-um-milagre-danilo-casemiro',
+  'Sou Um Milagre',
+  'Danilo Casemiro',
+  'Danilo Casemiro',
+  'Eb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  15,
+  'Ação de Graças',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Eb/G  Bb7/F  Eb  Db  Ab/C
+Bbm7  Eb/G  Ab
+
+        Eb/G  Fm  Eb  Db  Ab/C  Bbm7
+Eb/G
+
+1A PARTE (2X)
+
+             Ab
+Nunca houve noite que pudesse
+Cm Eb/Bb
+impedir
+
+             Db             Ab
+O nascer do Sol e a esperança
+
+             Ab                 Eb/G
+E não há problema que possa impedir
+
+             Db              Ab
+As mãos de Jesus pra me ajudar
+
+Ponte (2X)
+
+           Fm7               Eb/G
+Haverá um milagre dentro de mim
+
+         Em7      Fb°            Fm
+Vem descendo um rio pra me dar vida
+
+      Fm7                   Ab
+Este rio que emana lá da Cruz
+
+    Ab/C       Eb Eb
+Do lado de Jesus
+
+[Refrão (2X)]
+
+                Eb          Fm Fm7
+Aquilo que parecia impossível
+
+                Eb           Ab#4 Ab
+Aquilo que parecia não ter saída
+
+ C7/Fb          Fb°    C7/Fb    Fm
+Aquilo que parecia ser minha morte
+
+      Db                 Ab
+Mas Jesus mudou minha sorte
+
+         Eb              Ab
+Sou um milagre e estou aqui
+
+Final
+
+   Bbm    Db           Ab
+Usa-me, sou o Teu milagre
+
+   Bbm    Db           Ab
+Usa-me, eu quero Te servir
+
+   Bbm    Db          Ab
+Usa-me, sou à Tua imagem
+
+   Bbm    Db          Ab
+Usa-me, Ó Filho De Davi
+
+Volta PARA O REFRÃO 2X
+
+Final 2X
+
+Volta PARA O REFRÃO 2X
+
+Mas Jesus mudou minha sorte
+
+Sou um milagre e estou aqui',
+  to_tsvector('portuguese', 'Sou Um Milagre ' || '')
+),
+(
+  'vou-te-amar-marcio-todeschini',
+  'Vou Te Amar',
+  'Márcio Todeschini / Canção Nova',
+  'Márcio Todeschini / Canção Nova',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  17,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  D/F#  Am7  C/D  D9
+
+        G  D/F#  Am7  C/D  D9
+
+       G        D/G     C/E       G/B
+Eu tanto esperei pra te ver assim
+
+         Am7            G/B
+Já sofremos juntos, sonhamos juntos
+
+     Am7            C/D          D9
+Que bom poder dizer:   “Chegamos aqui"
+
+     G             D/G
+Tão bom é o nosso Deus que nos
+C/E        G/B
+quis assim
+
+            Am7       G/B
+Nossa humanidade tão diferente
+
+      Am7              C/D
+Com Ele a gente aprende o que é o amor
+G      Dm7  G7/9
+
+      C                       D/C
+É negar-se a si mesmo sempre que for
+preciso
+
+        G/B          Em
+Pra fazer o outro feliz
+
+     C                  D/C
+É dizer a verdade com carinho e
+ternura
+
+     Am7         G/B
+É estar presente,   ser presença,
+C9                   D9
+ser amigo e cuidar
+
+           G  Bm7           Am7
+Vou te amar,        porque Deus me
+D9
+ensina a ser teu
+
+           G  Bm7         Am7
+Vou te amar,        meu caminho pro
+D       G/B
+Céu é contigo
+
+       Em                 Em/D
+Foi fazendo a vontade do nosso Deus
+
+          C9       D9
+Que te encontrei
+
+Vou te amar
+
+( G  D/F#  Am7  C/D  D/F# )
+
+( G  D/F#  Am7  Dm7  G7/9 )
+
+             G   G/B  Am7  D9
+Vou te amar
+
+             G   G/B  Am7  D9
+Vou te amar',
+  to_tsvector('portuguese', 'Vou Te Amar ' || '')
+),
+(
+  'eu-quero-adorar-marcio-todeschini',
+  'Eu Quero Adorar',
+  'Márcio Todeschini / Canção Nova',
+  'Márcio Todeschini / Canção Nova',
+  'C7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C7M    F7M      G     Am7
+Eu quero adorar o meu Senhor
+
+                     F7M
+Diante dele vou prostrar o meu
+G  C9
+coração!
+
+       F9           G9        Am7
+Eu Te louvo meu Senhor, meu Deus
+
+        F9         G9    C9
+Te agradeço por estar aqui
+
+      F9            G9
+Te entrego minhas dores, meus
+E    Am7
+impossíveis
+
+           Bb
+A todo instante em minha vida
+
+  F/A     G    C9
+Eu vou Te adorar!
+
+C7M        F7M    G     Am7
+Eu quero adorar o meu Senhor
+
+                     F7M
+Diante dele vou prostrar o meu
+G   C9
+coração!
+
+  F9      G9    Am7
+E dar meu coração!
+
+ F9       G9  Am7
+E dar meu coração!
+
+  F9      G9    Am7
+E dar meu coração!
+
+ F9        G9  C9
+E dar meu coração!',
+  to_tsvector('portuguese', 'Eu Quero Adorar ' || '')
+),
+(
+  'antes-do-sol-nascer-nadia-santolli',
+  'Antes do sol nascer',
+  'Nádia Santolli',
+  'Nádia Santolli',
+  'A4',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A4  A  E/G#  F#m7  F#m7/E  D9
+
+[Primeira Parte]
+
+         A4      A
+Antes do sol nascer
+
+        A4      A  E/G#  F#m7 E/F#
+Quero estar em sua pre - sença
+F#m7
+
+        Bm7
+Quero falar de mim
+
+       D9                  E4     E
+E reconhecer meus erros e pedir perdão
+
+D/E       A4     A
+Antes do sol nascer
+
+          A4      A       E/G#
+Quero lembrar do teu sa - cri  -
+F#m7 E/F# F#m7
+fício
+
+               Bm7
+Do amor que o fez morrer
+
+              D9              E4 E
+Do amor que o faz viver e reinar
+
+[Refrão]
+
+ Fº       F#m7       E      D9
+Quero me ajoelhar antes do sol nascer
+
+Fº       F#m7        E      D9
+Quero me declarar antes do sol nascer
+
+ A/C#       Bm7                     E4
+Antes que o mundo acorde e tente negar
+E
+você
+          A4  A  E/G#  F#m7  F#m7/E
+Quero adorar
+D9
+
+[Primeira Parte]
+
+         A4      A
+Antes do sol nascer
+
+        A4      A  E/G#  F#m7 E/F#
+Quero estar em sua pre - sença
+F#m7
+
+        Bm7
+Quero falar de mim
+
+       D9                  E4     E
+E reconhecer meus erros e pedir perdão
+
+D/E       A4     A
+Antes do sol nascer
+
+          A4      A       E/G#
+Quero lembrar do teu sa - cri  -
+F#m7 E/F# F#m7
+fício
+
+               Bm7
+Do amor que o fez morrer
+
+              D9              E4 E
+Do amor que o faz viver e reinar
+
+[Refrão]
+
+ Fº       F#m7       E      D9
+Quero me ajoelhar antes do sol nascer
+
+Fº       F#m7        E      D9
+Quero me declarar antes do sol nascer
+
+ A/C#       Bm7                     E4
+Antes que o mundo acorde e tente negar
+E
+você
+          A4  A  E/G#  F#m7  F#m7/E
+Quero adorar
+D9
+
+ Fº       F#m7       E      D9
+Quero me ajoelhar antes do sol nascer
+
+Fº       F#m7        E      D9
+Quero me declarar antes do sol nascer
+
+ A/C#       Bm7                     E4
+Antes que o mundo acorde e tente negar
+E
+você
+          A4  A  E/G#  F#m7  F#m7/E
+Quero adorar
+D9',
+  to_tsvector('portuguese', 'Antes do sol nascer ' || '')
+),
+(
+  'deus-vai-alem-marcio-todeschini',
+  'Deus Vai Além',
+  'Márcio Todeschini / Canção Nova',
+  'Márcio Todeschini / Canção Nova',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro:  (D D4 C9) 4x
+
+D               G
+Tantos erros... ainda é tempo de
+voltar!
+
+       D               G
+Tantas marcas... não se prenda ao que
+passou!
+
+      Em           D/F#        Em
+Há um Deus que te espera, Ele te ama
+G      A4  A
+muito além!
+
+              G                   D/F#
+Além dos teus erros, dos erros dos
+outros!
+
+           Em          D/F#
+Além das escolhas tão erradas...
+
+           G                 D/F#
+Além dos limites, dos desequilíbrios,
+
+Em             D/F#        Em
+Muito além de ti,         além das
+G   A4     A
+diferenças!
+
+          G      A
+Deus vai além!               Deus vai
+D    D/F# G
+além!
+
+          G7+    A
+Deus vai além!               Deus vai
+D   D/F# G
+além!
+
+    Bm          A/C#          D
+Ele tanto amou o mundo que nos deu
+D/F#     G
+na Cruz, Jesus,
+
+          Bm            A/C#
+Pra que eu tenha a vida eterna...
+
+       G          A4    A
+Ele me ama muito além...
+
+              G                   D/F#
+Além dos teus erros, dos erros dos
+outros!
+
+           Em          D/F#
+Além das escolhas tão erradas...
+
+           G                 D/F#
+Além dos limites, dos desequilíbrios,
+
+Em             D/F#        Em
+Muito além de ti,         além das
+G   A4     A
+diferenças!
+
+          G      A
+Deus vai além!               Deus vai
+D    D/F# G
+além!
+
+          G7+    A
+Deus vai além!               Deus vai
+D   D/F# G
+além!',
+  to_tsvector('portuguese', 'Deus Vai Além ' || '')
+),
+(
+  'eu-lhe-darei-louvores-nadia-santolli',
+  'Eu Lhe Darei Louvores',
+  'Nádia Santolli',
+  'Nádia Santolli',
+  'Bm',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  11,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] Bm/D  D  F#m/E
+
+        E  Bm/D  D  A
+
+        Bm/D  D  F#m/E
+
+        E  Bm/D  D  F#m/E  E
+
+[Primeira Parte]
+
+F#m                   E
+A quem devo eu agradecer
+
+F#m                         E
+Por tudo que sou ou hei de ser
+
+F#m                    E
+Queria dar a Ele o melhor
+
+F#m
+Ouro, incenso e mirra
+
+E
+Mas tudo que eu tenho é minha própria
+vida
+
+[Refrão]
+
+             A
+Eu lhe darei louvores
+
+             E
+Eu lhe darei meu coração
+
+             D/B
+Eu lhe darei a vida toda
+
+          F#m      E
+Toda a minha gratidão
+
+             A
+Eu lhe darei louvores
+
+             E
+Eu lhe darei meu coração
+
+             D/B      C#m
+Eu lhe darei a vida toda
+
+             D      E Bm/D D F#m/E E
+Toda a minha adoração
+
+F#m                 E
+A quem deveria confiar
+
+F#m                       E
+Meu modo de agir e de pensar
+
+F#m                        E
+Sem medo vou abrir o coração
+
+D
+Erros e acertos
+
+        E4
+Pra Deus eu conto todos os meus
+E
+segredos
+
+[Refrão]
+
+             A
+Eu lhe darei louvores
+
+             E
+Eu lhe darei meu coração
+
+             D/B
+Eu lhe darei a vida toda
+
+          F#m      E
+Toda a minha gratidão
+
+             A
+Eu lhe darei louvores
+
+             E
+Eu lhe darei meu coração
+
+             D/B      C#m
+Eu lhe darei a vida toda
+
+             D      E Bm/D D F#m/E E
+Toda a minha adoração
+
+Bm/D   D
+Te darei louvores
+
+E/C#  A/C#
+Te darei louvores
+
+Bm/D    D
+Te darei louvores
+
+F#m
+Uh
+
+Bm/D   D
+Te darei louvores
+
+E/C#  A/C#
+Te darei louvores
+
+D/B             E
+Te darei louvores
+
+[Refrão]
+
+             A
+Eu lhe darei louvores
+
+             E
+Eu lhe darei meu coração
+
+             D/B
+Eu lhe darei a vida toda
+
+          F#m      E
+Toda a minha gratidão
+
+             A
+Eu lhe darei louvores
+
+             E
+Eu lhe darei meu coração
+
+             D/B      C#m
+Eu lhe darei a vida toda
+
+             D
+Toda a minha adoração
+
+[Final] E  Bm/D  D  F#m/E  E',
+  to_tsvector('portuguese', 'Eu Lhe Darei Louvores ' || '')
+),
+(
+  'impossivel-nao-te-amar-nadia-santolli',
+  'Impossivel Não Te Amar',
+  'Nádia Santolli',
+  'Nádia Santolli',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: G  F/G  C  Cm7
+
+G7M           F/G
+Deixe-me apenas te falar
+
+  C      Cm7
+É impossível não te amar
+
+ G7M         F/G
+Como não posso mais ficar
+
+ C          Cm7          Bb9
+Longe do alcance do teu olhar
+
+       Gm7      Bb9
+Quando você me olha amor
+
+        Gm7      Eb7+
+Quando você me abraça
+
+                Ebm7      Bb9
+Eu sinto a paz de um sonho bom
+
+            Gm        Bb9
+De um sonho que hoje é real
+
+       Gm7          Bb9
+Quando você me olha amor
+
+        Gm7         Eb7+
+Quando você me abraça
+
+            Ebm7         Bb9
+Eu posso ser o que sonhei
+
+            Gm
+Eu perco o medo de voar
+
+Eb7+     Ebm7            Bb9  Gm
+Só porque você me ama    Final: Só
+Eb7+  Ebm
+por que você me ama
+
+G#
+Não dá pra entender
+
+   G#
+Não há como explicar
+
+Bb9            Gm
+Hoje a solidão é uma página virada
+
+G#
+E o que Deus uniu
+
+       G#
+Ninguém pode separar
+
+  Bb9       F     G4    G
+Eu e você bem melhor assim
+
+( G  G7/9  C  Cm7 )',
+  to_tsvector('portuguese', 'Impossivel Não Te Amar ' || '')
+),
+(
+  'diante-do-altar-nadia-santolli',
+  'Diante do Altar',
+  'Nádia Santolli',
+  'Nádia Santolli',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: E  B  C#m  A  E  B  C#m  A
+
+ E                       B
+Não dá pra ficar longe de Você
+
+                   C#m
+Sem Ti não posso viver
+
+                 A
+Sem Ti não posso alcançar,
+
+               E
+Não posso conquistar
+
+                 B
+Se estiver na direção
+
+               C#m
+Tudo eu conseguirei
+
+         A
+Com autoridade falarei e o mar vai se
+E
+acalmar
+
+E                                 B
+Quem pode interferir nos planos do
+Senhor
+
+                                 C#m
+Quem pode impedir o que tens pra mim
+
+                          A
+Se quiseres podes fazer o inferno
+explodir
+
+            E
+Com as suas mãos
+
+Refrão:
+
+E                             B
+Não dá pra vencer sem o Teu poder
+
+                      C#m
+Quero estar diante do Altar
+
+                              A
+Pela fé recebo o que tens pra mim
+
+            E
+Deus estou aqui
+
+                           B
+Não dá pra vencer sem o Teu poder
+
+                       C#m
+Quero estar diante do Altar
+
+                              A
+Pela fé recebo o que tens pra mim
+
+             E                    B
+Deus estou aqui... posso te sentir.
+C#m A E
+
+Volta para o inicio até com suas mãos
+depois esse refrão.
+
+Refrão:
+
+E                             B
+Não dá pra vencer sem o Teu poder
+
+                      C#m
+Quero estar diante do Altar
+
+                              A
+Pela fé recebo o que tens pra mim
+
+            E
+Deus estou aqui
+
+                           B
+Não dá pra vencer sem o Teu poder
+
+                       C#m
+Quero estar diante do Altar
+
+                              A
+Pela fé recebo o que tens pra mim
+
+E
+Deus estou aqui...
+
+Solo: E  B  C#m  A  B
+
+Refrão:
+
+F#                            C#
+Não dá pra vencer sem o Teu poder
+
+                      D#m
+Quero estar diante do Altar
+
+                              B
+Pela fé recebo o que tens pra mim
+
+            F#
+Deus estou aqui
+
+                           C#
+Não dá pra vencer sem o Teu poder
+
+                       D#m
+Quero estar diante do Altar
+
+                              B
+Pela fé recebo o que tens pra mim
+
+             F#                C#  D#m
+Deus estou aqui... posso te sentir.
+B  F#',
+  to_tsvector('portuguese', 'Diante do Altar ' || '')
+),
+(
+  'familia-do-ceu-luciana-antunes',
+  'Familia do Céu',
+  'Luciana Antunes',
+  'Luciana Antunes',
+  'Bm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Família / Comunhão',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Bm       A           G
+Quem poderá nos separar do amor de
+Deus?
+
+Bm           A       G
+Nada nem ninguém poderá
+
+Bm        A         G
+Pois em Jesus somos mais que
+vencedores
+
+Bm       A      G
+Ele por nós lutará
+
+      D              A      Bm
+Eu protejo a minha família, eu rezo
+F#
+por ela
+
+G                      D
+A maior vitória que podemos conquistar
+
+        E                        A7
+É ser Família do céu aqui na terra
+
+      D              A      Bm
+Eu protejo a minha família, eu rezo
+F#
+por ela
+
+G                      D
+A maior vitória que podemos conquistar
+
+ E                       G  A   D
+Família do céu aqui na te_____rra
+
+( G  A  G  A )
+
+         G  A  Bm
+Não vou de—sis—tir
+
+        G A  Bm
+Nem de—sa—ni—mar
+
+       G  A    Bm
+A nossa a—li___ança
+
+Em       G         A7
+Foi consagrada no altar
+
+         G  A  Bm
+Não vou de—sis—tir
+
+        G A  Bm
+Nem de—sa—ni—mar
+
+       G   A    Bm
+A nossa a—li___ança
+
+Em       G         A7
+Foi consagrada no altar',
+  to_tsvector('portuguese', 'Familia do Céu ' || '')
+),
+(
+  'filho-amado-luciana-antunes',
+  'Filho Amado',
+  'Luciana Antunes',
+  'Luciana Antunes',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  21,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D               G       D
+Vem Espírito de Deus
+
+      D/F#            G
+E confirme no meu coração
+
+D/F#         Em   F#m7        G     A
+Que eu sou amado, sou filho amado
+
+             D
+Que amado eu sou
+
+   A            A/G           D/F#
+É bom Senhor saber que sou amado
+
+    A              A/G         D/F#
+Bem mais do que saber desejo crer
+
+ G        A/G
+Vem Espírito de amor
+
+F#m7       B7
+Me convença de que sou
+
+   E7          G/A         Bb7M
+Um filho amado feito para amar
+
+( F7M  Bb7M  B4  B )
+
+E               A       E
+Vem Espírito de Deus
+
+      E/G#            A
+E confirme no meu coração
+
+E/G#        F#m  G#m7        A     B
+Que eu sou amado, sou filho amado
+
+             E
+Que amado eu sou
+
+   B            B/A           E/G#
+É bom Senhor saber que sou amado
+
+    B              B/A         E/G#
+Bem mais do que saber desejo crer
+
+A         B/A
+Vem Espírito de amor
+
+G#m7       C#7
+Me convença de que sou
+
+   F#m7          A/B         E
+Um filho amado feito para amar',
+  to_tsvector('portuguese', 'Filho Amado ' || '')
+),
+(
+  'quando-eu-orar-luciana-antunes',
+  'Quando Eu Orar',
+  'Luciana Antunes',
+  'Luciana Antunes',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração / Oração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro:  C  Am  Dm  D°
+
+                  C9              Bb9
+Quando eu orar, a terra tem que
+estremecer
+
+           C9                      Bb9
+Quando eu orar, o céu eu tenho que
+adentrar
+
+      C         Dm7     G4/7
+Pois aquele que ora, em Deus já
+C9
+alcançou a vitória
+
+                Dm7     G4/7
+Pois aquele que ora, em Deus já
+G       C9
+alcançou a vitória  (2x)
+
+                 Bb9
+E as muralhas cairão, E as muralhas
+C9
+cairão
+
+                Dm7     G4/7
+C9
+Pois aquele que ora, Em Deus já
+alcançou a vitória (2x)
+
+             C9
+Quando eu adorar, a terra tem que
+Bb9
+estremecer
+
+             C9
+Quando eu adorar, o céu eu tenho que
+Bb9
+adentrar
+
+      C          Dm7      G4/7
+Pois aquele que adora, em Deus já
+C9
+alcançou a vitória
+
+                 Dm7      G4/7
+Pois aquele que adora, em Deus já
+G       C9
+alcançou a vitória  (2x)
+
+                 Bb9
+E as muralhas cairão, E as muralhas
+C9
+cairão
+
+                 Dm7      G4/7
+C9
+Pois aquele que adora, Em Deus já
+alcançou a vitória (2x)
+
+                Dm7     G4/7
+C9
+Pois aquele que ora, Em Deus já
+alcançou a vitória (2x)',
+  to_tsvector('portuguese', 'Quando Eu Orar ' || '')
+),
+(
+  'rico-banquete-luciana-antunes',
+  'Rico Banquete',
+  'Luciana Antunes',
+  'Luciana Antunes',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E          F#m7(11)
+Teu corpo, precioso corpo
+
+D9      A9              B9
+Dado a nós, para alimentar
+
+E               F#m7(11)
+Nosso espírito, encher de paz
+
+D9      A9       B9
+Para nutrir de amor
+
+E            F#m7(11)
+Teu sangue, precioso sangue
+
+D9      A9          B9
+Dado a nós, para apagar
+
+        E          F#m7(11)
+Nossos pecados, de nossas faltas
+
+D9      A9 B9      E
+Para lavar os corações
+
+         D9             A9
+Rico banquete assim não há
+
+           D9     A9       Bm7
+E não existirá jamais uma ceia tão
+C#m7
+farta
+
+    Bm7  E
+Senhor
+
+      D9           A9
+Felicidade tão completa
+
+     D9               A9
+Em saber que o meu Senhor
+
+    Bm7    C#m7      Bm7  E
+Se faz alimento por nós
+
+         D9             A9
+Rico banquete assim não há
+
+           D9     A9       Bm7
+E não existirá jamais uma ceia tão
+C#m7
+farta
+
+    Bm7  E
+Senhor
+
+      D9           A9
+Felicidade tão completa
+
+     D9               A9
+Em saber que o meu Senhor
+
+    Bm7    C#m7      Bm7        E
+Se faz alimento, alimento por amor',
+  to_tsvector('portuguese', 'Rico Banquete ' || '')
+),
+(
+  'viver-de-ceu-laura-salvador',
+  'Viver de Céu',
+  'Laura Salvador',
+  'Laura Salvador',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Am  F  G
+
+        Am  F  G
+
+Am             F
+É aqui no leito das núpcias
+
+C              G/B
+Que eu canto o meu louvor
+
+Am               F
+O meu corpo está para sempre
+
+C              G
+Unido ao Teu, aqui na cruz
+
+F                G                 Am
+É tudo Teu, minha vida, minhas
+fraquezas
+
+           C/E
+Minhas potências
+
+Dm
+Não Não há mais volta
+
+C/E            D
+Eu pertenço ao céu
+
+F                     C
+Viverei de amor até morrer de amor
+
+F                   Am
+Teu coração pulsando em mim
+
+F
+Eu sou teu, Tu és meu
+
+G              D
+Vamos viver de céu
+
+Am             D
+Baila, oh minh&#x27;alma
+
+Am            D
+Com Teu Doce Senhor
+
+Am          D/F#
+Melodias de eternidade
+
+F       D
+Dança, canta',
+  to_tsvector('portuguese', 'Viver de Céu ' || '')
+),
+(
+  'tu-es-a-minha-paz-laura-salvador',
+  'Tu és a minha paz',
+  'Laura Salvador',
+  'Laura Salvador',
+  'Ab',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Comunhão / Meditação',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Estrofe]
+
+Ab
+Eu vaguei
+
+Fm
+Por tantos lugares tentando achar
+
+Db
+Um lugar onde eu pudesse descansar
+
+Ab
+Mas, olha só
+
+Ab
+Me perdi de mim
+
+Fm
+Quando eu chorei
+
+Db
+Ouvi uma doce voz gritar dentro de mim
+
+Ab
+Volta filho, eu tenho saudade de ti
+
+Db
+Me abraça
+
+Fm
+Volta logo
+
+Ab
+Para o teu lar
+
+Db
+Pai, é Você
+
+Eb
+Que o meu coração
+
+Ab
+Procura sem cessar
+
+Fm
+Você é minha casa, o meu lar
+
+Db
+Me abraça
+
+Ab
+Me devolve a vida
+
+[Refrão]
+
+Ab
+Voltei e não quero ir embora
+
+Ab/C
+Tu és minha paz, meu Céu
+
+Db                  Eb
+Contigo eu tenho paz
+
+Ab
+Tu és a minha felicidade
+
+Ab/C
+Tu és minha casa
+
+Db      Ab
+Meu lar',
+  to_tsvector('portuguese', 'Tu és a minha paz ' || '')
+),
+(
+  'rei-da-eterna-gloria-laura-salvador',
+  'Rei da Eterna Glória',
+  'Laura Salvador',
+  'Laura Salvador',
+  'Fm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração / Cristo Rei',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Fm    Eb Db     Fm    Eb Db
+Ôô ÔÔ ÔÔ Ô (2x) ôô ôô ôô ô (2x)
+
+Fm                 Eb
+Ó portas, levantai vossos frontões
+
+Fm                        Eb
+Elevai-vos bem mais alto, antigas
+Db
+portas
+
+        Bbm          Cm           Db
+Afim de que o Rei da Glória possa
+entrar (bis)
+
+Fm     Eb     Db          Fm
+Reina, Reina, Senhor (2x) reina,
+Eb     Bb
+reina, senhor (2x)
+
+Ôô ÔÔ ÔÔ Ô (2x)
+
+  Ab           Eb             Db7M
+Dizei-nos: quem é este Rei da Glória?
+Db
+
+    Bbm         Cm              Db
+É o Senhor, o valoroso, onipotente
+
+ Ab        Eb             Cm
+Rei da Eterna Glória, Teu povo vem a
+Db
+Ti
+
+ Fm            Eb         Cm
+Rei da Eterna Glória, Teu povo vem a
+Db  C
+Ti
+
+ Fm     Eb     Db          Fm
+Reina, Reina, Senhor (2x) reina,
+Eb    Bb
+reina, senhor
+
+ Fm     Eb     Db          Fm
+Reina, Reina, Senhor (2x) reina,
+Eb    F
+reina, senhor
+
+Ôô ÔÔ ÔÔ Ô (2x)',
+  to_tsvector('portuguese', 'Rei da Eterna Glória ' || '')
+),
+(
+  'fonte-de-agua-viva-laercio-oliveira',
+  'Fonte de Água Viva',
+  'Laércio Oliveira',
+  'Laércio Oliveira',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Comunhão / Batismo',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Fonte de Água Viva
+Laércio Oliveira
+Tom: A
+
+ A9       A9/C#     D7M Dm6
+ Quero beber da tua fonte!
+
+A9        F#m7(11)    D/E Eb7(9/11+)
+D7M
+ Quero beber do Teu amor!
+
+D7M       E/D       C#m7 F#m7 Ebm7(5-)
+ Quero beber da Tua vi...da!
+
+                        E7(9)
+ Quero viver pra Ti Senhor!  (bis)
+
+           F#m7    A7M/E      D7M
+ E Transbordar Tua benção em mim!
+
+         F#m7    A7M/E      Ebm7(5-)
+ Levar a água da vida a fluir!
+
+          F#m7         A7M/E
+ E ser só Teu, somente Teu, meu
+D7M
+Senhor!
+
+            F#m7        A7M/E
+ Trazer no peito um coração que te
+D7M D/E
+adora!
+
+           F#m7     A7M/E     D7M
+ E transbordar Tua benção em mim!
+
+         F#m7    A7M/E      Ebm7(5-)
+ Levar a água da vida a fluir!
+
+          F#m7          A7M/E
+ E ser só Teu, somente Teu, meu
+D7M
+Senhor!
+
+           F#m7         A7M/E
+ Trazer no peito um coração que te
+D#m7(b5)  D/E
+adora,
+
+      F7M(9) Em7 (2x) F7M(9) Em7 Dm7
+ Sem fim!
+A9
+
+      A9 A7M(9)
+ Sem fim',
+  to_tsvector('portuguese', 'Fonte de Água Viva ' || '')
+),
+(
+  'e-justo-laercio-oliveira',
+  'É Justo',
+  'Laércio Oliveira',
+  'Laércio Oliveira',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C7+9               G/A  Dm7/9
+É justo que eu te louve
+
+Dm7/9     F/G               C7+9
+pois para mim é cura e salvação.
+
+C7+9               G/A
+É justo que eu te louve
+
+Dm7/9      F/G                 C7+9
+Pois para Ti é prova do meu amor.
+
+C            F7+          Em7
+   Posso louvar ao Senhor,
+
+         Dm7/9       F/G     C7+9
+posso adorar     ao meu Criador,
+
+          G/A      Dm7/9
+posso cantar ao Senhor,
+
+        F/G                 C7+9
+pois estou entregue ao Seu amor.',
+  to_tsvector('portuguese', 'É Justo ' || '')
+),
+(
+  'fa-de-sao-jose-laercio-oliveira',
+  'Fã de São José',
+  'Laércio Oliveira',
+  'Laércio Oliveira',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'São José',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E  E4  E                  C#m7
+Eu sou fã de São José,    Pai adotivo
+de Jesus
+
+                  A9   B
+Que educou o Salvador,    Sou devoto
+E    A9   E
+de José!
+
+           A7
+Um homem forte, silencioso, tão
+sensível, homem santo
+
+    E
+Em sonho, um dia, Deus lhe revelou
+
+     B7                  A7
+Seu plano de amor e salvação, de um
+Deus
+
+             E            B
+Que se encarnou no nosso meio, meu
+E
+irmão!
+
+        A7
+E a partir daquele dia, recebeu sua
+Maria
+
+         E
+A Virgem Mãe, do Filho amado de Deus
+Pai
+
+       B7                A7
+E defendeu a salvação do mundo
+
+                   E           B7
+No silêncio, castidade, e firmeza de
+E
+sua fé!
+
+        A7
+E na defesa da Família, sua fé era
+provada
+
+    E
+Na luta do combate espiritual!
+
+          B7                   A7
+Rogava ao céu o protetor, e os anjos
+respondiam
+
+         E          B7         E
+O seu escudo era o Deus de sua fé!
+
+ A7
+Pai da castidade, que viveu na
+santidade
+
+   E
+Lutou pra defender o Salvador
+
+   B7                   A7
+Valei-me São José, me defenda aí no
+céu
+
+          E            B7
+Que vou lutando pra seguir ao meu
+E
+Senhor!',
+  to_tsvector('portuguese', 'Fã de São José ' || '')
+),
+(
+  'tua-presenca-laercio-oliveira',
+  'Tua Presença',
+  'Laércio Oliveira',
+  'Laércio Oliveira',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  18,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Tua Presença
+Laércio Oliveira
+Tom: E
+
+[Intro] C7+9 [Bm7  Em7/9]  Am7  Bm7
+F7+ [Em7  Am7]
+
+E7+9    G#m7       A7+9   A/B
+Tua presença é bastante,  Para mim
+C#m7
+Senhor,
+
+      D7+9               C#m7
+E prostrar-me aos teus pés,
+
+C#m7/B     A7+9  G#m7  F#m7     A/B
+Pra te adorar, amar     Te exaltar ó
+E7+9
+Senhor!
+
+E7+9     G#m7      A7+9   Bbm7(b5)
+Tua presença é bastante,  Para mim
+E/B
+Senhor,
+
+       C°               C#m7
+E prostrar-me aos teus pés,
+
+ C#m7/B   A7+9   G#m7   F#m7     A/B
+Pra te adorar, amar      Te exaltar ó
+Senhor!
+
+A7+9   G#m7      F#m7
+Te amar, te louvar   E dizer que
+G#m7
+espero assim,
+
+D7+9     C#m7       A/B
+Teu amor, teu favor,
+
+A/B             B/A        G#m7
+E minha alma então, repousará em
+C#m7/9
+ti
+
+ F#m7   A/B         E7+9
+És meu Deus, meu Senhor!
+
+A7+9   G#m7      F#m7
+Te amar, te louvar   E dizer que
+G#m7
+espero assim,
+
+D7+9     C#m7       A/B
+Teu amor, teu favor,
+
+A/B             B/A        G#m7
+E minha alma então, repousará em
+C#m7/9
+ti
+
+ F#m7 G#m7  A7+9  A/B     D7+9
+És meu Deus, meu Senhor!
+
+D7+ [C#m7  F#m7/9]  Bm7 C#m7  G7+
+[F#m7 A/B]',
+  to_tsvector('portuguese', 'Tua Presença ' || '')
+),
+(
+  'por-tuas-chagas-raquel-carpenter',
+  'Por Tuas Chagas',
+  'Raquel Carpenter / Canção Nova',
+  'Raquel Carpenter / Canção Nova',
+  'B',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Cura / Adoração',
+  'Quaresma',
+  '',
+  'adoracao',
+  '[Intro] B9  G#m  E  B9  F#
+
+        B9  G#m  E  B9  F#
+
+[Primeira Parte]
+
+         B9    G#m7     E
+Por tuas chagas somos curados
+
+        B9     G#m7      F#
+Por teu sangue somos redimidos
+
+           B9    G#m7       E
+Na cruz venceu    todo pecado
+
+             B9         F#7
+Estás entre nós e o perigo
+
+      B9     F#     G#m
+O Teu sangue tem poder pra curar
+
+      B9     F#     G#m
+O Teu sangue tem poder pra salvar
+
+      E          G#m7/9
+O Teu sangue tem poder
+
+          D#m7      F#7
+Pra libertar o que crê
+
+[Primeira Parte]
+
+       E       B9              G#m9/D#
+No Teu sangue          curado sou
+
+       E      G#m7/9         F#
+No Teu sangue  livre        sou
+
+       E       B9              G#m9/D#
+No Teu sangue          curado sou
+
+       E      G#m7/9         F#
+No Teu sangue  livre        sou
+
+      E             G#m7/9
+Para aquele que crê
+
+             B9
+Nada é impossível!
+
+      E             G#m7/9
+Para aquele que crê
+
+            D#m7   F#7
+Nada é impossível',
+  to_tsvector('portuguese', 'Por Tuas Chagas ' || '')
+),
+(
+  'anjo-da-cura-raquel-carpenter',
+  'Anjo da Cura',
+  'Raquel Carpenter / Canção Nova',
+  'Raquel Carpenter / Canção Nova',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Cura / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'F
+Anjo da cura
+
+C/E
+Visita a minha casa
+
+Bb       Gm       C
+A providência trazei
+
+F                       C/E
+A minha causa assume comigo
+
+    Bb    Gm       C
+A misericórdia atraí
+
+Bb                     C
+      Vem guiar e curar
+
+          F      C/E      Dm
+A minha história transformar
+
+        Bb
+Me ensina a lutar
+
+        C                 Bb
+E o mal enfrentar pois contigo a
+Gm       C
+vitória virá
+
+    F               C/E
+São Rafael, Deus cura
+
+  Bb         Gm     Bb          C
+Nada vai impedir teu poder de agir
+
+    Dm            C/D
+São Rafael, Deus cura
+
+    Bb        Gm      Bb         C
+Nada vai impedir teu poder de agir',
+  to_tsvector('portuguese', 'Anjo da Cura ' || '')
+),
+(
+  'clamo-por-ti-raquel-carpenter',
+  'Clamo por Ti',
+  'Raquel Carpenter / Canção Nova',
+  'Raquel Carpenter / Canção Nova',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  C  D
+
+              G         C           D
+No Sangue de Jesus eu serei
+fortalecido
+
+              G             C
+No Sangue de Jesus está a força pra me
+D
+levantar
+
+                 Am
+É no Sangue de Jesus
+
+  C          D
+No Sangue de Jesus
+
+                G            C
+Enfrento minhas lutas contemplando a
+D
+Tua cruz
+
+               G          C          D
+Se estou no deserto Ele vem me
+encontrar
+
+                  Am
+Ele não me deixa só
+
+    C          D
+Eu posso confiar
+
+  Bm  Em  Bm  Em
+Jesus,  Jesus
+
+          C      Am             D
+Eu clamo por Ti, eu clamo por Ti
+
+ Bm Em   Bm   Em
+Jesus,  Jesus
+
+       C           Am              D
+O Teu Sangue tem poder e é perpétuo
+sobre mim
+
+  Bm  Em  Bm  Em
+Jesus,  Jesus
+
+          C      Am             D
+Eu clamo por Ti, eu clamo por Ti
+
+ Bm Em   Bm   Em
+Jesus,  Jesus
+
+       C          Am              D
+O Teu Sangue tem poder e é perpétuo
+G
+sobre mim
+
+                G            C
+Enfrento minhas lutas contemplando a
+D
+Tua cruz
+
+               G          C          D
+Se estou no deserto Ele vem me
+encontrar
+
+                  Am
+Ele não me deixa só
+
+    C          D
+Eu posso confiar
+
+  Bm  Em  Bm  Em
+Jesus,  Jesus
+
+          C      Am             D
+Eu clamo por Ti, eu clamo por Ti
+
+ Bm Em   Bm   Em
+Jesus,  Jesus
+
+       C           Am              D
+O Teu Sangue tem poder e é perpétuo
+sobre mim
+
+  Bm  Em  Bm  Em
+Jesus,  Jesus
+
+          C      Am             D
+Eu clamo por Ti, eu clamo por Ti
+
+ Bm Em   Bm   Em
+Jesus,  Jesus
+
+       C          Am              D
+O Teu Sangue tem poder e é perpétuo
+G
+sobre mim',
+  to_tsvector('portuguese', 'Clamo por Ti ' || '')
+),
+(
+  'entra-jesus-raquel-carpenter',
+  'Entra Jesus',
+  'Raquel Carpenter / Canção Nova',
+  'Raquel Carpenter / Canção Nova',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A                 F#m
+Entra Jesus, pode reinar aqui
+
+ D             Bm
+Meu coração pertence a Ti
+
+ D            E     A     Dm A
+Meu coração é Teu Jesus
+
+A
+Reina em mim
+
+F#m
+Reina em mim
+
+ D             Bm
+Todo o meu ser deseja a Ti
+
+ D                      F#m
+Todo o meu ser deseja a Ti
+
+D7M      E
+És bem vindo
+
+D    E F#m
+Pode entrar
+
+     Bm           C#m
+Toma teu lugar em mim
+
+      D           E
+Minha vida não pertence a mim
+
+     A   A7
+Sou Teu
+
+D7M      E
+És bem vindo
+
+D    E F#m
+Pode entrar
+
+     Bm           C#m
+Toma teu lugar em mim
+
+      D           E
+Minha vida não pertence a mim
+
+     A
+Sou Teu',
+  to_tsvector('portuguese', 'Entra Jesus ' || '')
+),
+(
+  'serei-curado-rogerinha-moreira',
+  'Serei curado',
+  'Rogerinha Moreira / Canção Nova',
+  'Rogerinha Moreira / Canção Nova',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Cura / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D        A/C#         Bm7
+Senhor, aquele que Tu amas
+
+A        G    D/F#       Em7 A4
+  Está doente,    está doente
+
+D                     A/C#  Bm7   D
+ Apressa-te em vir em meu socorro
+
+D              G     D/F#        Em7
+ Se for do teu agrado,   serei curado
+A4
+
+D        A/C#         Bm7
+Senhor, aquele que Tu amas
+
+A        G    D/F#       Em7 A4
+  Está doente,    está doente
+
+D                     A/C#  Bm7   A
+ Apressa-te em vir em meu socorro
+
+A              G     D/F#        Em7
+ Se for do teu agrado,   serei curado
+A
+
+     D                          A/C#
+Cura-me, sara as feridas do meu cora
+Bm  A
+ção
+
+      G             Em7
+Salva-me, envia Tua graça de
+A
+ressurreição
+
+        F#               F#/Bb
+Liberta-me, desejo ser inteiro
+Bm7 E/G#
+renovado
+
+          G                A
+Levanta-me, faz de mim um homem
+D    A
+ressuscitado
+
+G         A          F#m         Bm
+Cura-me, salva-me, liberta-me, Senhor
+4X
+
+D                      A/C# Bm  A
+Sara as feridas do meu cora ção
+
+      G             Em7
+Salva-me, envia Tua graça de
+A
+ressurreição
+
+        F#               F#/Bb
+Liberta-me, desejo ser inteiro
+Bm7 E/G#
+renovado
+
+          G                A
+Levanta-me, faz de mim um homem
+D    A
+ressuscitado
+
+     D                          A/C#
+Cura-me, sara as feridas do meu cora
+Bm  D
+ção
+
+      G             Em7
+Salva-me, envia Tua graça de
+A
+ressurreição
+
+        F#   F#/Bb  Bm7 E/G#
+Liberta-me
+
+          G                A
+Levanta-me, faz de mim um homem
+D    A
+ressuscitado',
+  to_tsvector('portuguese', 'Serei curado ' || '')
+),
+(
+  'mae-do-agora-rogerinha-moreira',
+  'Mãe do Agora',
+  'Rogerinha Moreira / Canção Nova',
+  'Rogerinha Moreira / Canção Nova',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  'F                 Dm7      Gm
+Maria passou por aqui   e viu   a
+Bb           C
+minha necessidade
+
+F                    Dm7
+Como Mãe atenta aos filhos   ela se
+Gm                    Bb
+importa e apresenta a Jesus  a
+
+       C
+Minha suplica
+
+Bb                    Gm
+  Nos momentos mais dificeis  me toma
+Dm7
+em seus braços   enxuga as
+
+        C/E
+Minhas lagrimas
+
+Bb            Gm
+ E aponta o caminho  pra encher as
+Dm7
+minhas talhas e o milagre
+
+       C  Bb/D  C/E  C
+Acontecer
+
+           F                  Dm7
+Ó Mãe do agora  do momento presente
+
+                Bb       Gm
+Da urgencia da hora es Maria minha
+Eb7M
+Mãe
+
+   C      F               C/E  Dm
+Ó Mãe do agora  do momento presente
+
+               Bb        Gm         C
+Da urgencia da hora es Maria minha Mãe
+Dm  C/E G/B  Bb Eb7M
+minha Mãe
+
+Bb                    Gm
+  Nos momentos mais dificeis  me toma
+Dm7
+em seus braços   enxuga as
+
+        C/E
+Minhas lagrimas
+
+Bb             Gm
+  E aponta o caminho  pra encher as
+Dm7
+minhas talhas e o milagre
+
+      C    Bb/D  C/E  C
+Acontecer
+
+           F                  Dm7
+Ó Mãe do agora  do momento presente
+
+               Bb        Gm
+Da urgencia da hora es Maria minha
+Eb7M
+Mãe
+
+   C       F              C/E  Dm7
+Ó Mãe do agora  do momento presente
+
+               Bb        Gm         C
+Da urgencia da hora es Maria minha Mãe
+
+       F    Dm
+Minha Mãe Maria
+
+        Bb
+Mae de Deus
+
+      Gm        Eb7M  C
+Minha mestra e rainha
+
+      Dm    Bb
+Minha Mãe Maria
+
+   F/A  Gm
+Mae de Deus
+
+      Gm/F       Eb   C
+Minha mestra e rainha',
+  to_tsvector('portuguese', 'Mãe do Agora ' || '')
+),
+(
+  'presenca-soberana-rogerinha-moreira',
+  'Presença Soberana',
+  'Rogerinha Moreira / Canção Nova',
+  'Rogerinha Moreira / Canção Nova',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Am                C  Dm
+Onde se dobram os joelhos
+
+ Am                  C    F
+Onde se voltam para o altar
+
+ Am                          F
+Existe um Deus tão grande e belo
+
+    C/E    F         G
+Poderoso, conosco Está
+
+Am               C  Dm
+Tua presença soberana
+
+Am                 F    G
+O teu amor nos surpreende
+
+Am                         F
+Como és tão grande e tão pequeno
+
+       C/E    F       G
+Hóstia santa, hostia amada
+
+C            F
+Gloria a Deus gloria a Cristo
+
+C              F         G
+Gloria a Cristo, que é Deus
+
+Am             F
+Gloria a Deus, santo é Cristo
+
+Dm              F    G
+Gloria a Cristo, santo de Deus
+
+C            F
+Gloria a Deus gloria a Cristo
+
+C              F         G
+Gloria a Cristo, que é Deus
+
+Am             F
+Gloria a Deus, santo é Cristo
+
+Dm              F    G    F    G
+Gloria a Cristo, santo de Deus
+
+Am                  C  Dm
+Onde prestamos reverencia
+
+Am                     C   F
+Onde expressamos nosso amor
+
+Am                  F
+E levantamos nossos braços
+
+   C/E    F       G
+Entoamos um só louvor
+
+Am               C  Dm
+No santuário habitarmos
+
+Am                 F    G
+E desejamos sempre assim
+
+Am                     F
+É o que suspira nossa alma
+
+       C/E    F       G
+Hóstia santa, hóstia amada',
+  to_tsvector('portuguese', 'Presença Soberana ' || '')
+),
+(
+  'santo-esplendor-rogerinha-moreira',
+  'Santo Esplendor',
+  'Rogerinha Moreira / Canção Nova',
+  'Rogerinha Moreira / Canção Nova',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F  Dm7  Bb
+
+F                         C/E
+O céu se abre, há paz na Terra
+
+            Bb             F
+É o grande rei que se aproxima
+
+ F                   C/E
+Louvor e glória, A majestade
+
+         Bb              F
+É o esplendor de Cristo vivo
+
+        Gm7 F/A Bb     C
+A Ele a gló-ria, o louvor
+
+        Gm7 F/A Bb     C
+A Ele a hon-ra e o poder
+
+              Bb          F/A
+Sejam dadas agora e para sempre
+
+        Gm         C4 C
+Pelos séculos sem fim
+
+F    C/E Dm7 Bb
+Jesus,   Jesus
+
+              Gm
+Eu posso te sentir neste lugar
+
+             Bb
+Eu quero te adorar
+
+       F
+Ó meu Senhor e Rei
+
+          F              C/E
+Os anjos cantam sua santidade
+
+       Bb                  F
+Luz infinita que invade o mundo
+
+         F                 C/E
+Vence a morte, dissipa as trevas
+
+          Bb              F
+Santo esplendor que gera vida
+
+        Gm7 F/A Bb     C
+A Ele a gló-ria, o louvor
+
+        Gm7 F/A Bb     C
+A Ele a hon-ra e o poder
+
+              Gm            F/A
+Sejam dadas agora e para sempre
+
+       Bb           C
+Pelos séculos sem fim
+
+[Solo] Eb  Dm7  Bb  Bbm7  F
+
+F     C/E  Dm7 Bb
+Jesus,    Jesus
+
+              Gm
+Eu posso te sentir neste lugar
+
+             Bb
+Eu quero te adorar
+
+       F           Gm7  C
+Ó meu Senhor e Rei
+
+F     C/E  Dm7 Bb
+Jesus,    Jesus
+
+               Gm
+Eu posso te sentir neste lugar
+
+             Bb
+Eu quero te adorar
+
+       F           Gm7  C
+Ó meu Senhor e Rei
+
+F      C/E  Dm7 Bb
+Jesus,    Jesus
+
+               Gm
+Eu posso te sentir neste lugar
+
+             Bb
+Eu quero te adorar
+
+       F           Eb  Bb  Db  Eb  F
+Ó meu Senhor e Rei',
+  to_tsvector('portuguese', 'Santo Esplendor ' || '')
+),
+(
+  'ousar-no-amor-rafael-morel',
+  'Ousar no Amor',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  G/B  C
+
+        G  G/B  C
+
+G          G/B      C
+Quero esconder-me em teu silêncio de
+D
+amor,
+
+ G        G/B      C
+Quero adorar-te Senhor
+
+   G        G/B       C
+ E em teu olhar descobrir assim quem
+D
+eu sou
+
+    Am                         D4
+Render-se a ti, me consumir só por
+D
+amor
+
+ Cm                    Bb/D
+Firme a tua vontade eu vou buscar
+Eb
+mesmo sem nada pra te dar
+
+                     Dm             Gm
+Perder-se em ti meu Deus eu quero
+sempre mais
+
+ Cm                    Bb/D
+Esvaziar meu ser e sob o teu olhar
+Eb               F             Gm
+abandonado vou ficar  Vem basta-me
+Senhor
+
+ Cm                    Bb/D
+Hoje o teu lado aberto vou tocar sim
+Eb                   Dm      Gm
+posso em ti acreditar é assim anunciar
+a tua paz
+
+ Cm                           Bb/D
+Em tuas chagas gloriosas meu senhor
+Eb                       D    G/b
+ferido fui por teu amor pra sempre
+serei teu
+
+       C       G/b     C          G/b
+C       G/b           Am
+D/F#
+Vou ousar no amor, ofertar minha dor
+em louvor  render-me inteiramente a ti
+Senhor
+
+        C         G/b     C
+Arriscar-me sem medo, revelar meus
+Em  D        C      G/b         Am
+segredos, me deixar invadir por teu
+amor
+
+  D                G
+Todo teu agora eu sou',
+  to_tsvector('portuguese', 'Ousar no Amor ' || '')
+),
+(
+  'docura-sem-fim-rafael-morel',
+  'Doçura Sem Fim',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro]  Em G  C
+
+         Em G  C
+
+ Em                 G         C   Em
+Como templo do teu infinito amor Quero
+D/F#          G
+pôr a minha vida ao teu dispor
+
+       Bm                  Em
+Vem viver, vem morar em mim Senhor.
+Am                        D
+Que já não seja eu quem viva, mas tu
+em mim
+
+ Em              G          C    Em
+No abismo da minha imperfeição, Teu
+D/F#     G
+perfeito e incansável  amor me
+recontrói e então
+
+      Bm         Em       Am
+Me envia com alegria a também a tua
+D          G   Em D/F#
+igreja reconstruir
+
+      G                           Em
+Transforma o que é amargo em mim Em
+doçura sem fim
+
+       C
+Pois quero unir-me a ti Senhor, Na
+Am      D
+alegria ou na dor
+
+         G           G5        G6
+E o que hoje me traz rejeição, Num
+G7
+beijo rompo a escravidão
+
+    C                          D
+E livre escolho, assim, morrer pra
+Am                   D
+mim. Definitivamente quero te dar
+Senhor  o meu
+
+ ( Em  G  C  Em  G  C )
+
+ ( G  Em  C )
+
+      F                Am
+Eu escolho a paz que a tua cruz me
+G                   D
+traz. Não quero mais viver pra mim
+
+      F                Am
+Eu escolho a paz que a tua cruz me
+G       Em         D  D
+traz. Pois a eternidade é meu fim',
+  to_tsvector('portuguese', 'Doçura Sem Fim ' || '')
+),
+(
+  'faz-repousar-rafael-morel',
+  'Faz Repousar',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D          D/C               G/B
+Estando fechadas as portas do lugar
+G/Bb
+onde se achavam
+
+D                D/C        G/B
+Jesus veio e se pôs no meio deles, e
+Gm
+disse
+
+   Bm       A           G
+Shalom! Mostrou-lhes as mãos e o lado
+
+   Bm          A       Em    G
+Shalom! Como o Pai me enviou   assim
+também eu vos
+
+   A
+Envio
+
+D                        Bm
+Sopra sobre nós Senhor como naquele
+dia
+
+    Em7               A
+Põe fim à agonia que ronda o nosso
+coração
+
+D                           Bm
+Sopra sobre nós então Teu Espírito
+Santo
+
+   Em7  D/F#  G      A         G
+E faz repousa___ar sobre nós a Tua paz
+
+( D/F#  Em7  Bm )
+
+( Em7  D/F# )
+
+Em7                      Bm
+    E mesmo quando nossa fé falhar
+
+G                      Bm
+  O Teu amor sei que insistirá
+
+       Em7        D/F#
+Em nos dá a experiência
+
+      G                A
+De o Teu lado aberto tocar
+
+D                        Bm
+Sopra sobre nós Senhor como naquele
+dia
+
+    Em7               A
+Põe fim à agonia que ronda o nosso
+coração
+
+D                           Bm
+Sopra sobre nós então Teu Espírito
+Santo
+
+   Em7  D/F#  G           A         G
+E faz repousa___ar sobre nós a Tua paz
+A
+
+D                        Bm
+Sopra sobre nós Senhor como naquele
+dia
+
+    Em7               A
+Põe fim à agonia que ronda o nosso
+coração
+
+D                           Bm
+Sopra sobre nós então Teu Espírito
+Santo
+
+   Em7  D/F#  G         A         G
+E faz repousa___ar sobre nós a Tua paz
+D',
+  to_tsvector('portuguese', 'Faz Repousar ' || '')
+),
+(
+  'novo-horizonte-rafael-morel',
+  'Novo Horizonte',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'Rafael Morel / Comunidade Católica Shalom',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  10,
+  'Jovens / Envio',
+  'Qualquer',
+  '',
+  'popular',
+  'D9         C9           G      Bm7
+Se tua voz em mim abre um caminho novo
+
+Em7                 D/F#
+Dai-me força para arriscar.
+
+G                   A    A#º
+Trilhar e assim recomeçar
+
+Bm7       F#m7    G    A
+Em ti, oh Rei dos Reis
+
+     D9            C9           Em7
+Se o Teu amor me invade e me revela
+Bm7
+onde devo ir
+
+Em7                D/F#
+Obra nova em meu viver
+
+G                 A    A#º
+Hoje eu já posso ver
+
+Bm7      D/F#    Em7          A9  G
+Brotar em mim o desejo de ir até fim
+
+Em7          A          D9
+Para onde quiseres me enviar
+
+Refrão 2x:
+
+A/C#      Bm7   F#m7     G     D9
+Novo horizonte, nova vereda eu
+encontrei
+
+Em7           D/F#       Em7         A
+Teu amor me impulsiona firme
+prosseguirei
+
+A#º      Bm7   F#m7     G     D9
+Um novo tempo, nova esperança posso
+ver
+
+Em7              D/F#
+Tua graça me faz capaz
+
+Em7         A      D9
+Tua vontade vou viver',
+  to_tsvector('portuguese', 'Novo Horizonte ' || '')
+),
+(
+  'mestre-amigo-nicodemos-costa',
+  'Mestre Amigo',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Comunhão / Vocacional',
+  'Qualquer',
+  '',
+  'adoracao',
+  'INTRO:   D   A/C#  Bm7   A   G  F#m7
+Em7   A7(11)
+
+        D     A/C#         Bm7
+Vou reclinar em teu peito,
+D/A   G              A7
+Mestre amigo
+
+                   D
+Quero escutar cada pulsar, teus
+A/C#           G/B
+desejos
+
+A7   A#°   Bm7
+Te perscrutar
+
+                    A
+Quero ajustar meu coração ai teu
+G
+
+      D/F#
+Senhor meu Deus
+
+    Em7              A7    A#°   Bm7
+E ser só teu, viver em Ti
+
+                A/C#                G
+Quero ajustar meu coração ao teu
+
+   D/F#
+Amado meu
+
+       Em7        A7           D
+Ser todo Teu, viver em ti
+
+Permanecer em ti',
+  to_tsvector('portuguese', 'Mestre Amigo ' || '')
+),
+(
+  'amar-te-mais-nicodemos-costa',
+  'Amar-te Mais',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'E7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  18,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro:  E7M   B/E   A/E   Bsus  C#suS
+G#m7  A7M F#m7    C#m7   D7M
+
+ E7M         G#m7      A9
+Amar-te mais que        a mim mesmo
+Bsus
+
+E7M          G#m7         A9     Bsus
+Amar-te mais que tudo que há aqui
+
+E9          G#m7     A9
+Amar-te mais que aos mais queridos
+
+F#m7           Bsus        D9 A/C#
+Amar-te e dar a vida só por ti
+Bsus E7M
+
+           G#m7
+Com minhas forças,
+
+A9  E/G#  Gm6         F#m7
+Com minha                alma, de todo
+Bsus
+coração
+
+B/A     G#m7     A9
+Viverei eu, só pra ti amar
+
+Gm7         F#m7        Bsus
+             Amar-te, amar-te,
+
+  A9           Bsus       E9
+Amar-te e dar a vida só por ti.',
+  to_tsvector('portuguese', 'Amar-te Mais ' || '')
+),
+(
+  'sao-jose-nicodemos-costa-nicodemos-costa',
+  'São José Nicodemos Costa',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'São José',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  A  E  A  Em
+
+        D  A  F#m  Bm  E  A  A7
+
+        D  A  E  A  Em
+
+        D  A  F#m  Bm  E  A  E7
+
+A        E/G#          F#m
+São José,  eu queria ser como tu
+C#m            D
+homem santo, homem de fé
+
+C#m             F#m  F#m7M/F  F#m7/E
+Que agradou a Deus.
+Ebm7(5-)
+
+A       E/G#        F#m          C#m
+São José,   tu obedecestes ao Pai   e
+D
+acolhestes com precisão
+
+E7              A    Em  A7
+ A mãe do Salvador
+
+D         C#m                Bm     E
+Ah! São José!  Homem casto, homem
+fiel,
+
+        A    A7         D    E7
+A tua pureza, eu quero ter,    pra
+A    Em  A7
+agradar a Deus.
+
+D          C#m               Bm     E
+Ah! São José!  Homem casto, homem
+fiel,
+
+        A    A7        D  E7
+A tua pureza, eu quero ter,
+
+              F#m  F#m7M/F  F#m7/E
+Pra agradar a Deus
+Ebm7(5-)
+
+A        E/G#      F#m      C#m
+Quando o anjo aparecia e em sonho a
+D
+ordem vinha,
+
+     C#m          F#m  F#m7M/F  F#m7/E
+Tu cuidava em cumprir.
+Ebm7(5-)
+
+A          E/G#       F#m       C#m
+Ah! que firmeza de vontade, tu amavas
+D
+na verdade,
+
+     E7          A      Em  A7
+Esquecendo-te de ti
+
+A       E/G#          F#m
+São José,  tu cuidavas do pequinino
+C#m             D
+Deus,   hoje em dia ele cresceu
+
+C#m              F#m  F#m7M/F  F#m7/E
+   Vem cuidar de mim.
+Ebm7(5-)
+
+A      E/G#              F#m
+Toma-me    pelas mãos da tua oração
+C#m             D
+e me entrega ao teu Jesus
+
+E7            A    Em  A7
+Quero amá-lo sim',
+  to_tsvector('portuguese', 'São José Nicodemos Costa ' || '')
+),
+(
+  'poder-do-alto-nicodemos-costa',
+  'Poder do Alto',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'Nicodemos Costa / Comunidade Católica Shalom',
+  'Em',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Pentecostes / Louvor',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'Intro:  Em7   Bm7   C9   G9   A7   C9
+Dsus    C9  B7    Em7   Bm7   C9  G9
+A7
+
+C9   D9   C9  G/B   Am7   G9
+
+     G9  G/B   C9   Em7   C9      Dsus
+Poder do        alto, vem sobre nós
+
+     G9      G/B  C9
+Ó sombra do altíssimo
+
+       Em7   D9     A/C#   D9
+Vem sobre nós agora
+
+            Em7   Bm7       C9
+Espírito Santo, ó luz infinita
+
+Am7              C9  D9   Em7       D9
+Ó paz tão bendita, consolo do Pai
+B7
+
+             G9            G/B
+Espírito Santo, do pobre alegria
+C9
+
+               Am7  Am/G
+O peso alivia             e o triste
+F9    Dsus
+refaz
+
+     G9      G/B     C9   Em7
+Poder, poder do alto, vem sobre nós
+C9  Dsus
+
+   G9         G/B  C9
+Ó Sombra do Altíssimo
+
+        Em7   D9       A/C#   B7
+Vem sobre nós, agora
+
+           Em7   Bm7                C9
+Espírito Santo, de pedra faz carne
+
+Am7           C9          D9
+No vil faz milagres e o fraco voraz
+B7
+
+            Em7    Bm7              C9
+Espírito Santo, suave harmonia
+D9  Em7
+
+                   C9  Am7
+Compõe melodias pro Filho e pro Pai.
+F9   D9  G9',
+  to_tsvector('portuguese', 'Poder do Alto ' || '')
+),
+(
+  'os-anjos-gustavo-osterno',
+  'Os Anjos',
+  'Gustavo Osterno / Comunidade Católica Shalom',
+  'Gustavo Osterno / Comunidade Católica Shalom',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Anjos / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E              A9
+Os anjos prepararam uma festa pra você
+
+         C#m       F# B
+os anjos prepararam uma festa pra você
+
+         E         D        A    Am
+os anjos prepararam uma festa pra você
+
+     B             E
+e com certeza, o céu vai descer!
+
+     E               A9       E
+Prepara o coração abre as portas e
+deixe o rei entrar
+
+   E            A9          B
+a alegria é tamanha que a nada se pode
+comparar!
+
+       E
+movendo os braços e as pernas
+
+     A9          C#m
+deixa todo o teu ser deus usar
+
+       Am
+já ouço um anjo gritando: vamos juntos
+celebrar
+
+     B
+que a glória do senhor vai encher esse
+lugar.',
+  to_tsvector('portuguese', 'Os Anjos ' || '')
+),
+(
+  'aos-teus-pes-guilherme-pontes',
+  'Aos Teus Pés',
+  'Guilherme Pontes / Comunidade Católica Shalom',
+  'Guilherme Pontes / Comunidade Católica Shalom',
+  'A7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A7M                 D7M
+Eu aos Teus pés, somente um pecador
+
+            A7M                 D7M
+Eu aos Teus pés, a vida enfim chegou
+
+       Bm7    E7
+Vou recomeçar
+
+            A7M                 D7M
+Eu aos Teus pés, perfumes a derramar
+
+             A7M                 D7M
+Eu aos Teus pés, só quero aqui ficar
+
+      Bm7     E7
+Quero Te amar
+
+D7M
+Sinto o Teu amor por mim, ouso até me
+aproximar
+
+A7M
+Mal vejo a hora de me dar por inteiro
+
+Bm7                        F#m7
+Lágrimas aos Teus pés, Teu amor me
+refaz
+
+D7M
+Ouço o Teu doce falar, bálsamo dentro
+de mim
+
+A7M
+E eu que pensei que estava me dando
+
+Bm7                              F#m7
+Mas na verdade Tu que te davas a mim
+
+               D7M
+O que posso fazer, só amar-te
+A7M
+perdidamente
+
+         D7M                  A7M
+Para sempre, te dou a minha vida
+
+               D7M
+O que posso fazer, só amar-te
+A7M
+perdidamente
+
+         D7M                  A7M
+Para sempre, te dou a minha vida
+
+( D7M  A7M  D7M  A7M )
+
+D7M
+Ouço o Teu doce falar, bálsamo dentro
+de mim
+
+  A7M
+E eu que pensei que estava me dando
+
+Bm7                              F#m7
+Mas na verdade Tu que te davas a mim
+
+               D7M     A7M
+O que posso fazer, só amar-te
+
+         D7M                  A7M
+Para sempre, te dou a minha vida
+
+               D7M
+O que posso fazer, só amar-te
+A7M
+perdidamente
+
+         D7M                   A7M
+Para sempre, te dou a minha vida
+
+                 D7M
+Te dou a minha vida, te dou a minha
+A7M
+vida
+
+                D7M  Bm7  A7M
+Te dou a minha vida',
+  to_tsvector('portuguese', 'Aos Teus Pés ' || '')
+),
+(
+  'nunca-te-abandonara-padre-adriano-zandona',
+  'Nunca Te Abandonará',
+  'Padre Adriano Zandoná',
+  'Padre Adriano Zandoná',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Esperança / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C                G
+Por mais que falem que tu não vais
+conseguir
+
+Am                       F
+Por mais que digam que tu não és capaz
+
+           C              G
+Confia em Deus, e assume sua promessa
+
+     Am             F
+Que ele vai te levantar
+
+   C                   G
+Por mais que a noite demore a passar
+
+        Am                     F
+E a angustia e a dor prostrem teu
+coração
+
+     C          G/B
+Espera em Deus, siga em frente
+
+      Dm           G
+A tristeza não é teu lugar
+
+   C                  G
+O choro pode durar uma noite, mas a
+Am               F
+vitória vem pela manhã
+
+       C
+Se a angustia e o medo tiraram a paz
+G
+do teu coração
+
+         Am                   F
+Existe um Deus que nunca te deixa
+
+                C
+E nunca te abandonará, nunca te
+G                   Am
+abandonará, nunca te abandonará,
+
+              F
+Nunca te abandonará',
+  to_tsvector('portuguese', 'Nunca Te Abandonará ' || '')
+),
+(
+  'cura-me-padre-adriano-zandona',
+  'Cura-me',
+  'Padre Adriano Zandoná',
+  'Padre Adriano Zandoná',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Cura / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C9                        G
+São tantas as memórias que preciso
+esquecer
+
+     Am7                    F
+São muitos desafios que preciso
+superar
+
+    C                       G
+Em meio às derrotas onde a dor roubou
+meus sonhos
+
+  Am7        C/E          F     G
+Escuto a Tua voz, o Teu amor a me
+C9   C4    C
+chamar
+
+     F  G  Am7        C            G
+Cura-me óh Pai, salva-me com Teu amor
+
+         F     G  Am7         C
+Sei que posso superar, vou contigo
+G
+caminhar
+
+      F G  Am7        C            G
+Cura-me óh Pai, salva-me com Teu amor
+
+          F      G  Am7          C
+Sou tão fraco e pecador, mas confio em
+G
+Teu amor
+
+     Am7     C/E      F    G    C9  C4
+e contigo eu sei, eu vencerei o mal
+C
+
+F     C        G    F   C   G
+Ôôô   ôô  ôôô  ôôô  ôô  ôô
+
+Bb    F   C    Bb   F   C
+Ôôô   ôô  ôôô  ôôô  ôô  ôô
+
+     Bb C  Dm7        F            C
+Cura-me óh Pai, salva-me com Teu amor
+
+        Bb     C  Dm7          F
+Sei que posso superar, vou contigo
+C
+caminhar
+
+     Bb C  Dm7         F           C
+Cura-me óh Pai, salva-me com Teu amor
+
+         Bb      C  Dm7          F
+Sou tão fraco e pecador, mas confio em
+C
+Teu amor
+
+     Dm7     F/A     Bb    C    F9  F4
+e contigo eu sei, eu vencerei o mal
+F
+
+Bb    F   C    Bb   F   C
+Ôôô   ôô  ôôô  ôôô  ôô  ôô',
+  to_tsvector('portuguese', 'Cura-me ' || '')
+),
+(
+  'agindo-deus-quem-impedira-padre-adriano-zandona',
+  'Agindo Deus Quem Impedirá',
+  'Padre Adriano Zandoná',
+  'Padre Adriano Zandoná',
+  'C',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  11,
+  'Louvor / Fé',
+  'Qualquer',
+  '',
+  'popular',
+  'C#
+Quantos medos e muralhas
+
+C#7M
+Vejo diante de mim
+
+A#m7           G#4           G#
+Impossíveis que visitam meu ser
+
+C#
+Peço por minha família
+
+C#7M
+Meus sonhos, meu coração
+
+A#m7      G#4       G#
+Senhor, podes me atender
+
+D#m7           C#/F
+Senhor vem me socorrer
+
+F#9     G#4        G#
+Senhor podes me atender
+
+F#/A#        G#4
+Senhor vem me socorrer
+
+C#9             C#/F
+Ó rei dos reis escuta minha
+
+F#9                     A#m7
+Voz,                    preciso ser
+G#      F#9
+liberto e curado
+
+C#9            C#/F      F#9
+Transforma minha vida e sara
+
+                  A#m7   G#     F#9
+Cura as feridas de dor, faz um milagre
+
+A#m7          G#       F#9
+Óh deus, confio em teu agir
+
+Especial
+
+A#m7         G#       F#9
+Eu sei que podes me ajudar
+
+A#m7              G#         F#9
+O impossível é possível para ti meu
+deus
+
+A#m7          G#      F#9
+O teu braço age e transforma
+
+C#/F               F#9
+Agindo deus quem impedirá?
+
+C#/G#                D#m7
+Agindo deus ninguém pode pedir!',
+  to_tsvector('portuguese', 'Agindo Deus Quem Impedirá ' || '')
+),
+(
+  'doce-hospede-da-alma-padre-adriano-zandona',
+  'Doce Hóspede da Alma',
+  'Padre Adriano Zandoná',
+  'Padre Adriano Zandoná',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Pentecostes / Adoração',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'C
+Doce hóspede da alma
+
+Am
+Vem em nós reinar
+
+F                     C
+Nós queremos mais de ti
+
+    C
+Restaura em nós a vossa imagem
+
+Am
+Que o pecado destruiu
+
+    F                   C
+Reaviva em nós o teu poder
+
+        Am
+És bem vindo aqui
+
+        F
+És bem vindo aqui
+
+        C                 G
+És bem vindo aqui, Espírito
+
+        Am
+És bem vindo aqui
+
+        F
+És bem vindo aqui
+
+        C                 G
+És bem vindo aqui, Espírito
+
+C
+Doce hóspede da alma
+
+Am
+Vem em nós reinar
+
+F                     C
+Nós queremos mais de ti
+
+    C
+Restaura em nós a vossa imagem
+
+Am
+Que o pecado destruiu
+
+    F                   C
+Reaviva em nós o teu poder
+
+        Am
+És bem vindo aqui
+
+        F
+És bem vindo aqui
+
+        C                 G
+És bem vindo aqui, Espírito
+
+        Am
+És bem vindo aqui
+
+        F
+És bem vindo aqui
+
+        C                 G
+És bem vindo aqui, Espírito
+
+         F
+Enche o nosso coração
+
+    G
+Reaviva os teus dons
+
+        Am
+És bem vindo aqui
+
+        C
+És bem vindo aqui
+
+     F                 G
+Redesenha o rosto de Cristo em nós
+
+        Am
+És bem vindo aqui
+
+        C
+És bem vindo aqui
+
+[Solo] F  G  Am  C
+
+       F  G  Am  C
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Vem nos tocar Espírito
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Vem nos tocar Espírito
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Nos libertar Espírito
+
+           F         G
+Vem nos curar Espírito
+
+           F         G
+Nos libertar Espírito
+
+         F
+Enche o nosso coração
+
+    G
+Reaviva os teus dons
+
+        Am
+És bem vindo aqui
+
+        C
+És bem vindo aqui
+
+     F                 G
+Redesenha o rosto de Cristo em nós
+
+        Am
+És bem vindo aqui
+
+        C
+És bem vindo aqui
+
+       F   G
+Espírito
+
+       Am  C
+Espírito
+
+       F
+Espírito',
+  to_tsvector('portuguese', 'Doce Hóspede da Alma ' || '')
+),
+(
+  'deus-age-em-nos-padre-juarez-de-castro',
+  'Deus Age Em Nós',
+  'Padre Juarez de Castro',
+  'Padre Juarez de Castro',
+  'Dm',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: Dm  C  Bb    Dm7     Bb
+
+ F                    Bb
+Quando eu me vi perdido
+
+              F
+Triste e aflito
+
+             Bb Bb
+Sem ter direção
+
+F                    Bb
+Quando eu me vi sozinho
+
+                  F
+Quando corri perigo
+
+               C C9
+Peguei na sua mão
+
+Bb
+Vi que nem sempre o que importa pra
+nós
+
+                       Gm
+Tem importância pra Deus
+
+ Bb
+Quando ouvi sua voz algo em mim
+C Gm
+renasceu
+
+Refrão:
+
+ F
+Canta, ora
+
+Bb
+Fecha os olhos
+
+                F
+Põe a mão no peito
+
+                   C Dm7
+Sinta no seu coração
+
+ F
+Nessa hora
+
+Bb                            Dm
+Que Deus age em nós do seu jeito
+
+                    D#
+Pai eu te peço perdão
+
+ Bb                          F Bbm
+Pai eu me entrego em suas mãos
+
+ G#
+Canta, ora
+
+C#
+Fecha  os olhos
+
+               G#
+Põe a mão no peito
+
+                   D# Bbm
+Sinta no seu coração
+
+ G#
+Nessa hora
+
+ C#                           Fm
+Que Deus age em nós do seu jeito
+
+                    F#
+Pai eu te peço perdão
+
+ C#                         G#
+Pai eu me entrego em suas mãos',
+  to_tsvector('portuguese', 'Deus Age Em Nós ' || '')
+),
+(
+  'tomo-posse-padre-juarez-de-castro',
+  'Tomo Posse',
+  'Padre Juarez de Castro',
+  'Padre Juarez de Castro',
+  'G',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  6,
+  'Louvor / Oração',
+  'Qualquer',
+  '',
+  'popular',
+  'G                D/F#              C
+ Bençãos são derramadas a cada
+instante
+
+ D                    C
+ há sempre um novo milagre para
+D     G
+acontecer
+
+ G                     D/F#
+ Deus quer quebrar as cadeias romper
+C
+as correntes
+
+ D                 C           D
+ quer libertar e curar todo aquele que
+G
+crê
+
+    C  D  G                D/F#     Em
+        Eu tomo posse da graca de Deus
+
+                               C
+        tomo posse da cura senhor
+
+              Am                 D  C
+        tomo posse da benção de hoje
+D
+(2x)
+
+  Em                   C
+ Eu espero em tua promessa
+
+       G           D
+ Eu confio eu tua obra Senhor
+
+    Em              C
+ acredito em tua palavra
+
+      G          D
+ no poder do teu nome senhooooor
+
+ C  D     G                D/F#     Em
+        Eu tomo posse da graca de Deus
+
+                               C
+        tomo posse da cura senhor
+
+              Am                 D  C
+        tomo posse da benção de hoje
+D
+(2x)',
+  to_tsvector('portuguese', 'Tomo Posse ' || '')
+),
+(
+  'em-tua-presenca-padre-juarez-de-castro',
+  'Em Tua Presença',
+  'Padre Juarez de Castro',
+  'Padre Juarez de Castro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G                       Am
+É teu este momento de adoração
+
+   Bm7                             Am
+Não tenho nem palavras para me
+expressar
+
+    G                           Am
+No brilho dessa luz que vem do teu
+olhar
+
+  C            D          G     D
+Encontro meu abrigo meu lugar
+
+          G
+E quando estamos juntos entre nós
+Am
+estás
+
+  Bm7                          Am
+Passando em nosso meio a nos abençoar
+
+   G                      Am
+E tocas com ternura com a tua mão
+
+  C             D          G   D
+ A cada um que  abre o coração
+
+            G     D/F#    Em7     Am
+Minhas mãos   se elevam/minha voz te
+Am/G     D
+louva
+
+  Bm      E7             Am Am/G
+ O meu ser se alegra/quando estou
+D        G
+em tua presença Senhor"',
+  to_tsvector('portuguese', 'Em Tua Presença ' || '')
+),
+(
+  'cancao-a-frei-galvao-padre-juarez-de-castro',
+  'Canção a Frei Galvão',
+  'Padre Juarez de Castro',
+  'Padre Juarez de Castro',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  4,
+  'Santos / Devoção',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] A  Bm  E  A
+
+       A                          Bm
+Vou pedir pra frei galvão interceder
+
+        E                       A
+Pra que um milagre possa acontecer
+
+        F#7                  Bm
+E eu consiga a graça de alcançar
+
+         E
+O que estou pedindo pra jesus me
+A
+atender
+
+       A                         Bm
+Vou rezar com muito amor e muita fé
+
+       E                           A
+Vou tomar as pílulas com tanto fervor
+
+        F#7                       Bm
+Eu tenho certeza que eu vou conseguir
+
+     E                           A
+O milagre que eu vim aqui lhe pedir
+
+             A              Bm
+Por intercessão de frei galvão
+
+              E                      A
+Eu vou conseguir o que eu vim lhe
+pedir
+
+                          Bm
+A cura pra mim eu vim buscar
+
+           E             A
+E frei galvão vai me ajudar
+
+             A              Bm
+Por intercessão de frei galvão
+
+          E                    A
+Eu tenho fé que eu irei conseguir
+
+                         Bm
+A cura pra mim eu vim buscar
+
+           E             A
+E frei galvão vai me ajudar',
+  to_tsvector('portuguese', 'Canção a Frei Galvão ' || '')
+),
+(
+  'a-arca-do-senhor-padre-rodrigo-natal',
+  'A Arca do Senhor',
+  'Padre Rodrigo Natal',
+  'Padre Rodrigo Natal',
+  'Gm',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  16,
+  'Mariano / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] Gm  Bb  F  Cm  Gm  F/A  Bb
+F/A
+
+        Gm  F  Eb
+
+Gm                                 Eb
+Já posso ver o esplendor da Tua glória
+
+                                   Bb
+Já posso até sentir o cheiro da
+vitória
+
+                   F
+Pois aqui neste lugar a Arca do Senhor
+Gm
+está
+
+                                   Eb
+É o Deus de Israel que tudo determina
+
+                                   Bb
+Já decretou vitória para a minha vida
+
+                  F
+Nada poderá impedir  a ação de Deus
+Eb        F
+nesse lugar
+
+              Bb
+A Arca do Senhor é sinal de vitória
+
+                F
+Para os que esperam para os que adoram
+
+               Gm
+Não haverá Jordão que me impedirá
+passar
+
+                Eb             F
+Nada pode impedir o que Deus tem para
+me dar
+
+    Bb
+A Arca do Senhor é sinal de vitória
+
+    F
+Para os que esperam para os que adoram
+
+              Gm
+Não haverá muralhas que me impedirão
+de acreditar
+
+          Eb             Cm        Eb
+Pois no agir de Deus o inimigo cairá
+Cm
+
+Gm                                 Eb
+Já posso ver o esplendor da Tua glória
+
+                                    Bb
+Já posso até sentir o cheiro da
+vitória
+
+                F     Bb
+Pois aqui neste lugar a Arca do Senhor
+F
+está
+
+Gm                             Eb
+É o Deus de Israel que tudo determina
+
+                                 Bb
+Já decretou vitória para a minha vida
+
+                     F
+Nada poderá impedir a ação de Deus
+Eb      F
+nesse lugar
+
+              Bb
+A Arca do Senhor é sinal de vitória
+
+                F
+Para os que esperam para os que adoram
+
+               Gm
+Não haverá Jordão que me impedirá
+passar
+
+                Eb             F
+Nada pode impedir o que Deus tem para
+me dar
+
+    Bb
+A Arca do Senhor é sinal de vitória
+
+    F
+Para os que esperam para os que adoram
+
+               Gm
+Não haverá muralhas que me impedirão
+de acreditar
+
+          Eb     Cm        Bb    F  Gm
+Pois no agir de Deus o inimigo cairá
+
+Gm
+Meu Deus está presente aqui
+
+F/A
+Meu Deus está à frente
+
+Bb
+A Arca eu vou levar, em Deus vou
+confiar
+
+Cm                Eb        F4
+E o impossível eu vou alcançar,
+G4  G
+alcançar
+
+              C
+A Arca do Senhor é sinal de vitória
+
+ Am               G
+Para os que esperam para os que adoram
+
+               Am
+Não haverá Jordão que me impedirá
+passar
+
+                F/A             G/B
+Nada pode impedir o que Deus tem para
+me dar
+
+    C/G
+A Arca do Senhor é sinal de vitória
+
+    G/B                 E7
+Para os que esperam para os que adoram
+
+ E7/G#     Am
+Não haverá muralhas que me impedirão
+de acreditar
+
+          F             Dm      G  Am
+Pois no agir de Deus o inimigo cairá
+G
+
+          F              Dm      G  Am
+Pois no agir de Deus o inimigo cairá
+G/B
+
+          F         Dm            Am
+Pois no agir de Deus o inimigo cairá
+G/B
+
+[Final] C  G/B  Am  G  Am',
+  to_tsvector('portuguese', 'A Arca do Senhor ' || '')
+),
+(
+  'cheiro-de-rosas-padre-rodrigo-natal',
+  'Cheiro de Rosas',
+  'Padre Rodrigo Natal',
+  'Padre Rodrigo Natal',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Mariano / Devoção',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Am  C9  G  D4
+
+Em7    D9        C9
+Estás aqui agraciada
+
+Em7      D9         C9
+Posso sentir teu perfume
+
+Em7    D9         C9
+Estás aqui Mãe do meu Senhor
+
+Em7       D9       Am C9
+Vem ficar perto de mim
+
+          G         D/F#
+Cheiro de Rosas, neste lugar
+
+  Em7  D/F#
+Maria aqui está
+
+      Am         Em       D9
+E o Espírito de Deus descerá
+
+          G         D/F#
+Cheiro de Rosas, neste lugar
+
+    Em7     D9
+A rainha presente está
+
+     Am         Em  D9  Am
+Pentecostes aconte..ce..rá
+
+( Am  C9  G  D4 / Am  C9  Em7  D4 )',
+  to_tsvector('portuguese', 'Cheiro de Rosas ' || '')
+),
+(
+  'ele-nao-perde-as-batalhas-padre-rodrigo-natal',
+  'Ele Não Perde As Batalhas',
+  'Padre Rodrigo Natal',
+  'Padre Rodrigo Natal',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  6,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] D#  Gm  F  D#  Gm  F  Bb
+
+No Deserto ele faz caminho
+
+Gm
+Onde há morte Ele sopra vida
+
+           D#     Gm
+Para a Sua glória
+
+            Bb
+Para a Sua glória
+
+Onde há falta ele é a provisão
+
+Gm
+O impossível ele realiza
+
+            D#    Gm
+Para a Sua glória
+
+               Bb  F/A
+Para a Sua glória
+
+        Cm                       D#
+Diante dele as muralhas vão ao chão
+
+        Gm    F                  Bb
+Ele é fiel e grande é o Seu poder
+
+                          Gm
+Ele não perde as batalhas
+
+Ele não perde as batalhas
+
+  F                       D#
+Oooh Meu Deus nunca falhou
+
+         F             D#         Gm
+Ele é fiel, Ele não perde as batalhas
+F  Bb
+
+( D#  Gm  F )
+
+Bb
+No Deserto ele faz caminho
+
+Gm
+Onde há morte Ele sopra vida
+
+           D#     Gm
+Para a Sua glória
+
+            Bb
+Para a Sua glória
+
+Onde há falta ele é a provisão
+
+Gm
+O impossível ele realiza
+
+       F   D#    Gm
+Para a Sua glória
+
+               Bb  F/A
+Para a Sua glória
+
+ Cm                     D#
+Diante dele as muralhas vão ao chão
+
+        Gm    F                  Bb
+Ele é fiel e grande é o Seu poder
+
+                          Gm
+Ele não perde as batalhas
+
+Ele não perde as batalhas
+
+    F                     D#
+Oooh Meu Deus nunca falhou
+
+         F                  Bb
+Ele é fiel, Ele não perde as batalhas
+
+                          Gm
+Ele não perde as batalhas
+
+Ele não perde as batalhas
+
+    F                     D#
+Oooh Meu Deus nunca falhou
+
+         F                  D#      Gm
+Ele é fiel, Ele não perde as batalhas
+F
+
+(D#  Gm  F)
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F  Bb
+O impossível Ele pode realizar
+
+                          Gm
+Ele não perde as batalhas
+
+Ele não perde as batalhas
+
+    F                     D#
+Oooh Meu Deus nunca falhou
+
+         F                  Bb
+Ele é fiel, Ele não perde as batalhas
+
+                          Gm
+Ele não perde as batalhas
+
+Ele não perde as batalhas
+
+    F                     D#
+Oooh Meu Deus nunca falhou
+
+         F                  Bb
+Ele é fiel, Ele não perde as batalhas
+Gm
+
+    F                     D#
+Oooh Meu Deus nunca falhou
+
+         F                  D#      Gm
+Ele é fiel, Ele não perde as batalhas
+F
+
+D# Gm F
+Ôoooooo
+
+     D#         Gm
+Meu Deus nunca falhou
+
+         F
+Ele é o Deus do impossível
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F
+O impossível Ele pode realizar
+
+       D#           Gm       F  Bb
+O impossível Ele pode realizar
+
+                          Gm
+Ele não perde as batalhas
+
+Ele não perde as batalhas
+
+    F                     D#
+Oooh Meu Deus nunca falhou
+
+         F                  Bb
+Ele é fiel, Ele não perde as batalhas
+Gm
+
+    F                     D#
+Oooh Meu Deus nunca falhou
+
+         F                       Bb
+Ele é fiel, Ele não perde as batalhas',
+  to_tsvector('portuguese', 'Ele Não Perde As Batalhas ' || '')
+),
+(
+  'aguenta-firme-padre-rodrigo-natal',
+  'Aguenta Firme',
+  'Padre Rodrigo Natal',
+  'Padre Rodrigo Natal',
+  'F#m',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  6,
+  'Esperança / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  'Tom: F#m
+
+[Intro] F#m  D  F#m  D
+
+F#m               D                  A
+    Essa é a ordem, marchar em volta
+
+            G#m
+E não desistir
+
+F#m                  D
+    Seguir em frente
+
+                A               G#m
+Pois a promessa, Deus irá cumprir
+
+Bm            D               F#m
+Também falou, não desanime, guarde a
+E
+tua fé
+
+Bm                D
+Na última volta, toque as trombetas
+
+F#m       E
+Clame, clame
+
+A             D                 F#m
+Aguenta firme, que a vitória Deus
+
+             E       D
+Coloque em tuas mãos
+
+A              D              F#m
+Aguenta firme, que neste cerco
+
+          E     D
+Muralhas cairão
+
+[Solo] F#m  D  F#m  D
+
+F#m               D                  A
+    Essa é a ordem, marchar em volta
+
+            G#m
+E não desistir
+
+F#m                  D
+    Seguir em frente
+
+                A               G#m
+Pois a promessa, Deus irá cumprir
+
+Bm            D               F#m
+Também falou, não desanime, guarde a
+E
+tua fé
+
+Bm                D
+Na última volta, toque as trombetas
+
+F#m       E
+Clame, clame
+
+A             D                 F#m
+Aguenta firme, que a vitória Deus
+
+             E      D
+Coloque em tuas mãos
+
+A              D               F#m
+Aguenta firme, que neste cerco
+
+          E     D
+Muralhas cairão
+
+Bm
+Ele é o mesmo Deus
+
+     D
+Não abandona os seus
+
+A                     G#m
+Está cuidando de você
+
+   Bm
+Não temo um dia mal
+
+  D
+Acalme o coração
+
+A                  E
+Tudo está em suas mãos
+
+A             D                 F#m
+Aguenta firme, que a vitória Deus
+
+             E       D
+Coloque em tuas mãos
+
+A              D               F#m
+Aguenta firme, que neste cerco
+
+          E     D
+Muralhas cairão
+
+A             D                 F#m
+Aguenta firme, que a vitória Deus
+
+             E       D
+Coloque em tuas mãos
+
+A              D               F#m
+Aguenta firme, que neste cerco
+
+          E     D
+Muralhas cairão
+
+   A         D       F#m      E     D
+Oh  oh  oh, oh oh oh, oh oh, oh oh',
+  to_tsvector('portuguese', 'Aguenta Firme ' || '')
+),
+(
+  'senhora-da-assuncao-padre-marcos-rogerio',
+  'Senhora da Assunção',
+  'Padre Marcos Rogério',
+  'Padre Marcos Rogério',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] E  B/D#  C#m  A
+
+        C#m  B  A
+
+E              B/D#
+Bendita e agraciada
+
+C#m               A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   A     B       A
+Senhora da Assunção!
+
+    E           B
+Bendita e agraciada
+
+C#m               A
+Nossa Senhora da Glória
+
+  C#m          B
+Rainha incomparável
+
+  F#m   E/G#    A    C#m  B
+Senhora da Assunção!
+
+   E               B/D#
+Uma mulher revestida do sol
+
+C#m            A
+Tendo a lua debaixo dos pés
+
+E                B
+És do teu povo Rainha e Mãe
+
+C#m            A
+És da Igreja Farol para os céus
+
+   E               B/D#
+Lírio formoso, ornado de luz
+
+C#m                     A
+Entre as mulheres, Deus a elegeu
+
+E                     B
+Vens ensinar, qual escola de amor
+
+C#m                A
+A tudo fazer como Cristo disser
+
+   E             B/D#
+És coroada de glória e esplendor
+
+  C#m              A
+A graça do alto em ti habitou
+
+E                B
+Intercessora, Senhora da Luz
+
+C#m                 A
+Vens conduzir o teu povo a Jesus
+
+   E                B/D#
+Canta a Igreja e pede um favor
+
+C#m                   A
+Tu como Mãe não se esqueças de nós!
+
+E                    B
+Quando, enfim, nossa hora chegar
+
+C#m                A
+Junto de Ti nós queremos estar
+
+    E           B
+Bendita e agraciada
+
+C#m               A
+Nossa Senhora da Glória
+
+  C#m          B
+Rainha incomparável
+
+  F#m   E/G#    A
+Senhora da Assunção!
+
+    E           B
+Bendita e agraciada
+
+C#m               A
+Nossa Senhora da Glória
+
+  C#m          B
+Rainha incomparável
+
+  F#m   E/G#    A
+Senhora da Assunção!
+
+    E           B
+Bendita e agraciada
+
+C#m               A
+Nossa Senhora da Glória
+
+  C#m          B
+Rainha incomparável
+
+  F#m   E/G#    A
+Senhora da Assunção!
+
+    E           B
+Bendita e agraciada
+
+C#m               A
+Nossa Senhora da Glória
+
+  C#m          B
+Rainha incomparável
+
+  F#m   E/G#    A
+Senhora da Assunção!
+
+[Final] C#m  B  E/G#  A
+
+        C#m  B  E/G#  A',
+  to_tsvector('portuguese', 'Senhora da Assunção ' || '')
+),
+(
+  'fica-conosco-senhor-padre-joao-carlos',
+  'Fica Conosco Senhor',
+  'Padre João Carlos',
+  'Padre João Carlos',
+  'G7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  34,
+  'Comunhão / Emaús',
+  'Páscoa',
+  '',
+  'liturgica',
+  '[Intro] G7M  C9/G  G7M  C9/G
+
+(Cordas)
+
+   G7M         C9/G      G7M
+C9/G
+
+(Violão)
+
+   G7M      C9/G          G7M
+C9/G
+
+[Primeira Parte]
+
+   G                    G7M
+Andavam pensando, tão tristes
+
+    G6            Am  Am7M
+De Jerusalém a Emaús
+
+    Am7                 D
+Os dois seguidores de Cristo
+
+                C         G/B  D7/A
+Logo após o episódio da cruz
+
+    G                     G7M
+Enquanto assim vão conversando
+
+   G7                C
+Jesus se chegou devagar
+
+     Am                 D
+De que vocês vão palestrando
+
+         C         D          G  D7
+E ao Senhor não puderam enxergar
+
+[Refrão]
+
+ G      G7M    G6    G
+Fica conosco, Senhor
+
+   Em                 Am  Dm/F
+É tarde e a noite já vem
+
+ Am               D
+Fica conosco, Senhor
+
+       Am        D        G  C  D
+Somos Teus seguidores também
+
+[Segunda Parte]
+
+     G                 G7M
+Não sabes então, forasteiro
+
+   G6             Am  Am7M
+Aquilo que aconteceu
+
+      Am7            D
+Foi preso Jesus nazareno
+
+                  C      G/B  D7/A
+Redentor que esperou Israel
+
+     G                G7M
+Os chefes a morte tramaram
+
+    G7               C
+Do Santo Profeta de Deus
+
+   Am               D
+O justo foi crucificado
+
+       C        D       G  D
+A esperança do povo morreu
+
+[Refrão]
+
+ G      G7M    G6    G
+Fica conosco, Senhor
+
+   Em                 Am  Dm/F
+É tarde e a noite já vem
+
+ Am               D
+Fica conosco, Senhor
+
+       Am        D        G  C  D
+Somos Teus seguidores também
+
+[Terceira Parte]
+
+      G                G7M
+Três dias enfim se passaram
+
+     G6               Am  Am7M
+Foi tudo uma doce ilusão
+
+    Am7                   D
+Um susto, as mulheres pregaram
+
+                     C           G/B
+Não encontraram Seu corpo mais, não
+
+D7/A     G                  G7M
+     Disseram que Ele está vivo
+
+     G7                  C
+Que disso souberam em visão
+
+   Am                D
+Estava o sepulcro vazio
+
+        C          D         G  D
+Mas do Mestre ninguém sabe, não
+
+[Refrão]
+
+ G      G7M    G6    G
+Fica conosco, Senhor
+
+   Em                 Am  Dm/F
+É tarde e a noite já vem
+
+ Am               D
+Fica conosco, Senhor
+
+       Am        D        G  C  D
+Somos Teus seguidores também
+
+[Interlúdio] G  C/G  A2  D6/A
+
+[Quarta Parte]
+
+   A                   A7M
+Jesus foi então relembrando
+
+      F#m                Bm  Bm7M
+Pro Cristo na glória entrar
+
+    Bm7               E7
+Profetas já tinham falado
+
+               D         A  E
+Sofrimentos devia enfrentar
+
+   A             A7M
+E pelo caminho afora
+
+   A7             D
+Ardia-lhes o coração
+
+   Bm                 E7
+Falava-lhes das escrituras
+
+    D         E      A  E
+Explicando a Sua missão
+
+[Refrão]
+
+ A      A7M    A6    A
+Fica conosco, Senhor
+
+   F#m                Bm  Em/F#
+É tarde e a noite já vem
+
+ Bm               E
+Fica conosco, Senhor
+
+       Bm        E        A  D  E
+Somos Teus seguidores também
+
+[Quinta Parte]
+
+    A                  A7M
+Chegando afinal ao destino
+
+   F#m/A             Bm  Bm7M
+Jesus fez que ia passar
+
+    Bm7               E7
+Mas eles demais insistiram
+
+                    D       A/C#  E7/B
+Vem, Senhor, vem conosco ficar
+
+    A               A7M
+Sentado com eles à mesa
+
+      A7                 D
+Deu graças e o pão repartiu
+
+     Bm                        E7
+Dos dois foi tão grande a surpresa
+
+        D           E          A  E
+Jesus Cristo, o Senhor, ressurgiu
+
+[Refrão]
+
+ A      A7M    A6    A
+Fica conosco, Senhor
+
+   F#m                Bm  Em/F#
+É tarde e a noite já vem
+
+ Bm               E
+Fica conosco, Senhor
+
+       D         E        A  E
+Somos Teus seguidores também
+
+ A
+Fica conosco, Senhor
+
+   F#m                Bm  F#
+É tarde e a noite já vem
+
+ Bm               E
+Fica conosco, Senhor
+
+       Bm        E        F  G  A9
+Somos Teus seguidores também',
+  to_tsvector('portuguese', 'Fica Conosco Senhor ' || '')
+),
+(
+  'irma-maria-padre-joao-carlos',
+  'Irmã Maria',
+  'Padre João Carlos',
+  'Padre João Carlos',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G
+A caminhar pelas estradas da Judéia
+
+       Am       D7        G
+Da Samaria e de toda Galiléia
+
+           G7                     C
+Vai lado a lado, caminhando com Jesus!
+
+     Cm        G
+De Caná até à cruz
+
+          D7         G
+A irmã Maria vai com fé.
+
+       G         Am
+Irmã Maria de Nazaré
+
+       D7           G
+Irmã Maria, irmã na fé
+
+        F          G           C   Cm
+Irmã do povo que caminha com Jesus!
+
+           G        D7             G
+A irmã Maria vai conosco e vai com fé.
+
+       G
+A caminhar pelas estrados da história
+
+         Am           D7
+Em companhia dos cristãos, os filhos
+G
+seus
+
+       G7                           C
+Acompanhando o povo humilde e sofredor
+
+      Cm           G
+Todo luta contra a dor
+
+            D7            G
+Conta com a Virgem Mãe de Deus',
+  to_tsvector('portuguese', 'Irmã Maria ' || '')
+),
+(
+  'bem-vindos-padre-joao-carlos',
+  'Bem-vindos!',
+  'Padre João Carlos',
+  'Padre João Carlos',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Entrada / Acolhida',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G   Em             Am
+Você   que está chegando
+
+    D
+Bem-vindo, seja
+
+    G  D
+Bem-vindo
+
+G   Em             Am
+Você   que está chegando
+
+    D
+Bem-vindo, seja
+
+    G  D
+Bem-vindo!
+
+     G    Em       Am
+Só estava faltando você aqui
+
+     D
+Só estava
+
+         G       D
+Faltando você, irmão
+
+     G    Em       Am
+Só estava faltando você aqui
+
+    C       D      G
+Bem-vindo à Celebração',
+  to_tsvector('portuguese', 'Bem-vindos! ' || '')
+),
+(
+  'ave-maria-da-vitoria-padre-joao-carlos',
+  'Ave Maria da Vitória',
+  'Padre João Carlos',
+  'Padre João Carlos',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro]  G  A  F#m  Bm  Gm  A  D
+
+D
+Às seis da tarde eu fecho os meus
+olhos
+
+                 A
+E peço à Virgem Maria
+
+Em                     Em7+
+Pra me envolver em seu manto
+
+                Em7                  A
+E guiar os meus passos de noite e de
+dia
+
+D                      D7+
+ Ah, minha mãe, não me deixes,
+D7
+intercede por mim
+
+                 G
+Me conduz e ilumina
+
+Gm                  D        Bm
+Faz um milagre, concede esta graça
+
+     E               A
+Tem pena do meu coração
+
+D            D7+
+A minha Nossa Senhora, coberta de
+D7                  G
+estrelas, Por Deus escolhida
+
+Gm                    D    Bm
+Mãe dos aflitos, dos abandonados
+
+E                    A
+Escuta esta minha oração
+
+D A  D       Em  B    Em
+Ave! Maria, cheia de Graça
+
+G        A        F#m       Bm
+Roga por nós, pecadores tão sós
+
+Em       A       D
+Que recorremos a vós
+
+( G  D/F#  Em  A  D )
+
+Santa Maria, Mãe de Deus, rogai por
+nós, pecadores, agora e na hora da
+nossa morte. Amém',
+  to_tsvector('portuguese', 'Ave Maria da Vitória ' || '')
+),
+(
+  'da-me-seus-olhos-padre-ezequiel-dal-pozzo',
+  'Dá-me Seus Olhos',
+  'Padre Ezequiel Dal Pozzo',
+  'Padre Ezequiel Dal Pozzo',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração / Oração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  G  D  G
+
+D                        G
+Dá-me Teus olhos, quero ver
+
+                             D
+Dá-me Tuas palavras, quero falar
+
+              G
+Dá-me Teu parecer
+
+D                        G
+Dá-me Teus pés, eu quero ir
+
+                            D
+Dá-me Teus desejos para sentir
+
+               G
+Dá-me Teu parecer
+
+[Pré-Refrão]
+
+Em              D   G
+Dá-me o que eu preciso
+
+                  A  G  A
+Para ser como Tú és
+
+[Refrão]
+
+D                   G       D
+Dá-me Tua voz, e o Teu alento
+
+A                     Bm
+Toma meu tempo é para Ti
+
+            G                D
+Dá-me o caminho que devo seguir
+
+D             G              D
+Dá-me Teus sonhos, Teus desejos
+
+A                        Bm
+Teus pensamentos, Teu sentir
+
+           G            A
+Dá-me Tua vida, para viver
+
+[Segunda Parte]
+
+D                      G
+Deixa-me ver o que Tú vês
+
+                          D
+Dá-me Tua graça, e Teu poder
+
+               G
+Dá-me Teu coração
+
+D                      G
+Deixa-me ver Teu interior
+
+                              D
+Para eu ser mudado pelo Teu amor
+
+               G
+Dá-me Teu coração
+
+[Pré-Refrão]
+
+Em             D    G
+Dá-me o que eu preciso
+
+           Bm       A  G  A
+Para ser como Tú és
+
+[Refrão]
+
+D          G               D
+Dá-me Tua voz, e o Teu alento
+
+  A                   Bm
+Toma meu tempo é para Ti
+
+            G                G
+Dá-me o caminho que devo seguir
+
+G            D               G
+Dá-me Teus sonhos, Teus desejos
+
+ A                        Bm
+Teus pensamentos, Teu sentir
+
+           G            A
+Dá-me Tua vida, para viver
+
+[Pós-Refrão]
+
+D                      G
+Dá-me Teus olhos quer ver
+
+                         D
+Dá-me Tua graça e Teu poder
+
+               G
+Dá-me teu parecer',
+  to_tsvector('portuguese', 'Dá-me Seus Olhos ' || '')
+),
+(
+  'o-sol-se-poe-padre-ezequiel-dal-pozzo',
+  'O Sol se Põe',
+  'Padre Ezequiel Dal Pozzo',
+  'Padre Ezequiel Dal Pozzo',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  15,
+  'Final / Esperança',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] E  E7M  C#m  A  E/G#  F#m  B
+A/C#  B/C#  E  E9  E4  E  E4  E6  E
+
+E                         B/D# B
+O sol se põe e o sino que bate
+
+    B7           E
+Ao som da Ave-Maria
+
+                               B/D#
+Voltamos pra casa depois do trabalho
+B
+
+   B7                           E
+Sentindo aqui dentro a nossa alegria
+
+[Refrão]
+
+               Bm    E       A
+/:Quando à tardinha Nossa Senhora
+
+                           E
+Se fica lá fora tentando rezar
+
+                                   B
+É forte a emoção que se sente no peito
+
+                    A          E
+Precisa ser forte para não chorar.:/
+E E9 E4 E E4 E6 E
+
+             E                  B/D#
+Quando em criança nos marcou bastante
+B
+
+B7                           E
+Certos momentos de grande emoção
+
+                          B/D#   B
+O pôr do sol, a casa e o poente
+
+           B7               E
+Que nós trazemos na recordação
+
+[Refrão]
+
+E                              B/D#  B
+Maria em meus olhos me olha profundo
+
+B7                              E
+Querendo falar de uma grande missão
+
+                                  B/D#
+Tem gente sofrendo e morrendo de fome
+B
+
+B7                           E
+Preciso lutar pela libertação!
+
+[Refrão]
+
+Final: A  B  E',
+  to_tsvector('portuguese', 'O Sol se Põe ' || '')
+),
+(
+  'o-escudo-padre-ezequiel-dal-pozzo',
+  'O Escudo',
+  'Padre Ezequiel Dal Pozzo',
+  'Padre Ezequiel Dal Pozzo',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  8,
+  'Louvor / Confiança',
+  'Qualquer',
+  '',
+  'popular',
+  'D
+Por toda a minha vida
+
+                    Em
+Oh Senhor, Te louvarei
+
+                           A
+Pois meu fôlego é a Tua vida
+
+                 D
+E nunca me cansarei
+
+Posso ouvir a Tua voz
+
+                          Em
+Que é mais doce do que o mel
+
+                     A
+Que me tira desta cova
+
+                D
+E me leva até o céu
+
+Já vi fogo e terremotos
+
+                    Em
+Vento forte que passou
+
+                 A
+Já vivi tantos perigos
+
+                    D
+Mas a Tua voz me acalmou
+
+Tu dá ordem às estrelas
+
+                      Em
+E ao mar, os seus limites
+
+                    A
+Eu me sinto tão seguro
+
+                      D
+No Teu colo, oh, Altíssimo
+
+            Em
+Não há ferrolhos
+
+       F#m           G     A
+Nem portas que se fechem diante da Tua
+D
+voz
+
+          Bm         F#m
+Não há doenças, nem culpa
+
+( G  A  D )
+
+Que fiquem de pé diante de nós
+
+           Bm         F#m
+E a tempestade se acalma
+
+   G            A        D
+Na voz Daquele que tudo criou
+
+            Bm      F#m
+Pois Tua palavra é pura
+
+   G            A         D
+Escudo para os que Nele creem
+
+( Bm  F  A#m  G  A  D )
+
+           Bm
+Não há ferrolhos
+
+        F#m         G       A
+Nem portas que se fechem diante da Tua
+D
+voz
+
+         Bm          F#m
+Não há doenças, nem culpa
+
+  G            A            D
+Que fiquem de pé diante de nós
+
+          Bm        F#m
+E a tempestade se acalma
+
+    G          A         D
+Na voz Daquele que tudo criou
+
+           Bm       F#m
+Pois Sua palavra é pura
+
+    G           A         D
+Escudo para os que Nele creem',
+  to_tsvector('portuguese', 'O Escudo ' || '')
+),
+(
+  'minha-alegria-padre-ezequiel-dal-pozzo',
+  'Minha Alegria',
+  'Padre Ezequiel Dal Pozzo',
+  'Padre Ezequiel Dal Pozzo',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  4,
+  'Entrada / Ação de Graças',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] E  B  E
+
+         B7                   E
+O sol se põe, mais um dia se vai
+
+         B7               E
+Busquei viver, minha vocação
+
+            B7              E
+Recebi tua luz, recebi tua paz
+
+               B7                E
+Senti tua presença, com o teu o amor
+
+              B7
+Sei que nada faço,
+
+                A           E
+Sem tua graça que me faz andar
+
+              B7
+Todo o meu trabalho
+
+           A             E
+Oferenda a ti vai se tornar
+
+          B7                E
+Fruto do amor, tem outro sabor
+
+          B7                E
+Fruto do amor, tem outro sabor
+
+            B7              E
+É sinal de luz, vem do coração
+
+              B7                   E
+Vida que acontece, é bênção, comunhão
+
+              B7            E
+Fonte de esperança, de renovação
+
+           B7             A
+Minha alegria, é servir a ti pra ser
+E
+feliz
+
+              B7              A
+Mesmo na incerteza, ouço tua voz a me
+E
+chamar
+
+         B7                E
+Vai anunciar, vai fazer o bem
+
+             B7                  E
+Não te deixo só, contigo vou também
+
+[Solo] E  B  E  B  E
+
+           B7             E
+Sem ti eu sei, nada vou fazer
+
+              B7                  E
+Mesmo se eu plantar, nada vai nascer
+
+                B7               E
+Todos os meus passos, pedem tua luz
+
+               B7                   E
+Sei que me sustentas, meu mestre Jesus
+
+           B7             A
+Minha alegria, é servir a ti pra ser
+E
+feliz
+
+              B7              A
+Mesmo na incerteza, ouço tua voz a me
+E
+chamar
+
+         B7                E
+Vai anunciar, vai fazer o bem
+
+             B7                  E
+Não te deixo só, contigo vou também
+
+[Final] E  B  E  B  E',
+  to_tsvector('portuguese', 'Minha Alegria ' || '')
+),
+(
+  'o-meu-chamado-pe-delton-filho',
+  'O Meu Chamado',
+  'Pe. Delton Filho',
+  'Pe. Delton Filho',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Vocacional / Comunhão',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  G7M  Em  G  G7M  G  Em
+
+G          G/E
+Com a tua voz tu me chamaste
+
+G       G/E
+Para consolar os corações
+
+Bm7        C9
+Levar a todos a tua palavra
+
+Bm7              Am7      D
+A cada um, Senhor, te apresentar
+
+G          G/E
+Quem vais enviar, senão a mais ninguém
+
+G      G/E
+Quem então irá falar de ti
+
+Bm7        C9
+Quem enviaremos às nações?
+
+Bm7          Am7   D
+Quem Senhor, me dia! Quem irá?
+
+     G      D     G/E
+O chamado, que fizeste para mim
+
+D    C          G/B      Am        D
+É maior do que eu bem maior do que eu
+
+     G     G/B   G/E
+O chamado que fizeste para mim
+
+         Am        G/B          Cm
+É mais forte que eu bem mais forte que
+D
+eu
+
+   G          G/E
+A quem iremos nós ouvir, Senhor?
+
+  G                    G/E
+Pois só tu és verdade para nós
+
+Bm7            C9
+Diga onde querer que eu vá
+
+Bm7         Am7   D
+Que sem medo, Senhor, eu irei!',
+  to_tsvector('portuguese', 'O Meu Chamado ' || '')
+),
+(
+  'poe-tuas-maos-pe-delton-filho',
+  'Põe Tuas Mãos',
+  'Pe. Delton Filho',
+  'Pe. Delton Filho',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  28,
+  'Cura / Oração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro]  C7+  Bm  Am  D/E  D/F#  F/G
+G7  C7+  D
+
+          G
+Põe Tuas mãos nas minhas chagas Senhor
+C/G
+Jesus
+
+         D/F#
+Põe Tuas mãos na minha lepra meu
+G  D#º
+Salvador
+
+         Em7                  D
+Põe Tuas mãos na minha mente, óh meu
+C7+  Em7
+Senhor
+
+         Am7            Am7/G   D/F#
+Restaura-me completamente, óh meu Deus
+D
+
+          G
+Põe Tuas mãos nas minhas chagas Senhor
+C/E
+Jesus
+
+         D/F#
+Põe Tuas mãos na minha lepra meu
+Cm/G  G  D/F#
+Salvador
+
+         Em7                  D
+Põe Tuas mãos na minha mente, óh meu
+C7+  Em7
+Senhor
+
+         Am7             C/D     C/E
+Restaura-me completamente, óh meu Deus
+D/F#
+
+G   G/B     C   D         G  D/F#
+Cu.......ra-me, óh meu Senhor
+
+Em          C    D        G  D/F#
+Cu.......ra-me, meu Salvador
+
+Em                 D     C
+Quero sentir Tuas mãos e escutar Tua
+G/B
+voz
+
+Am               Am/G
+Quero sentir Teu amor, Tua paz e Teu
+D  D  C/E D/F#
+perdão
+
+G   G/B     C   D         G  D/F#
+Cu.......ra-me, óh meu Senhor
+
+Em          C    D        G  D/F#
+Cu.......ra-me, meu Salvador
+
+Em                 D     C
+Quero sentir Tuas mãos e escutar Tua
+G/B
+voz
+
+Am               Am/G
+Quero sentir Teu amor, Tua paz e Teu
+D/F#  C/E  D
+perdão
+
+[Solo]  C7+  Bm  Am  Em  D  C7+  G  D
+C  D
+
+         G
+Pon tus manos en mis llagas Señor
+C/G
+Jesús,
+
+        D/F#                       G
+pon tus manos en mi lepra, mi Salvador
+D#º
+
+        Em7                D
+Pon tus manos en mi mente, oh , mi
+C7+  Bm
+Señor
+
+        Am7              D     C/E
+restáurame completamente, oh mi Dios
+E/G#
+
+A  A/C#   D   E         A  E/G#
+Sá......name, oh, mi Jesús,
+
+F#m       D   E       A  A/C#
+sá......name, oh mi Señor,
+
+ D                A/C#    Bm
+quiero sentir tus manos y escuchar tu
+A/C#
+voz
+
+ D                A/C#
+Quiero sentir tu amor tu paz y tu
+E  D/F#  E/G#
+perdón
+
+A          D/F#  E       Dm/A  E/G#
+Cu.......ra-me, óh meu Senhor
+
+F#m         D    E  E/G#  A  A/C#
+Cu.......ra-me, meu Salvador
+
+D                 A/C#   Bm
+Quero sentir Tuas mãos e escutar Tua
+F#m
+voz
+
+D                 A/C#
+Quero sentir Teu amor, Tua paz e Teu
+E
+perdão
+
+(  D7+  C#m  Bm  E  A  )',
+  to_tsvector('portuguese', 'Põe Tuas Mãos ' || '')
+),
+(
+  'cristo-eu-te-amo-pe-delton-filho',
+  'Cristo Eu Te Amo',
+  'Pe. Delton Filho',
+  'Pe. Delton Filho',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  20,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: G  G4  G  Cm/G  G  G4  G  G4
+Cm/G
+
+             G       G4  G
+Cristo Eu Te Amo,            Cristo
+D/F#   Em   D/E  Em
+Eu Te Amo
+
+        D       C          D/C   D
+Não há ninguém como Tu,
+G   Cm/G   G   G9
+Jesus
+
+             G       G4  G
+Cristo Eu Te Amo,            Cristo
+D/F#   Em   D/E  Em
+Eu Te Amo
+
+         D       C         C/D  D
+Não há ninguém como Tu,
+G  G  G/B  C   G  G/B   C/D
+Jesus
+
+                        G   G4  G
+Eu não sei onde eu estaria
+
+           D/F#  Em  D/E   Em
+Se a Ti eu não tivesse
+
+              D    C     D
+Se eu não te conhecesse
+
+És meu Deus, e me
+C/E    D      C      D    G   G4 G
+ama................as: Jesus
+
+  D          G      G4  G
+Cristo Eu Te Amo,            Cristo
+D/F#   Em    D/E  Em
+Eu Te Amo
+
+         D      C            D
+Não há ninguém como Tu,
+G   G  G/B  Cm    G F
+Jesus
+
+ Solo: D#  F  D#/G  F/A  Bb
+
+       Cm Bb/D  D#  F  D
+
+                       G  G4  G
+E não sei onde eu estaria
+
+           D/F#  Em  D/E   Em
+Se a Ti eu não tivesse
+
+              D    C     D
+Se eu não te conhecesse
+
+És meu Deus, e me
+C/E    C      D           G  Cm  G  D
+ama................as: Jesus
+
+  D          G      C  D  G
+Cristo Eu Te Amo,            Cristo
+D/F#   Em     D/E  Em
+Eu Te Amo
+
+         D      C            D
+Não há ninguém como Tu,
+G     C    D     G
+Jesus
+
+  D          G      C  D  G
+Cristo Eu Te Amo,            Cristo
+D/F#   Em     D/E  Em
+Eu Te Amo
+
+         D      C            D
+Não há ninguém como Tu,
+C/E    D/F#   G     C
+Jesus
+
+Em  D/F#   Bm  C   D
+
+C/E  D/F#   G  C
+
+Em  D/F#   Bm  C   G',
+  to_tsvector('portuguese', 'Cristo Eu Te Amo ' || '')
+),
+(
+  'eterna-misericordia-pe-delton-filho',
+  'Eterna Misericórdia',
+  'Pe. Delton Filho',
+  'Pe. Delton Filho',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  17,
+  'Misericórdia / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Introdução: G  D  Em  Em/G D/F# Em D
+C  G/B  Am Am/G Am/F#  C/F  C/E  D4
+
+G    D/F#    Em                 C
+Tua misericórdia, se estende a nós,
+G/B        Am             D4 D
+teu corpo sangue alma e divindade
+Senhor (Bis)
+
+C      G/B      Am       (Am   G/B) D
+Tende misericórdia (3x)
+D4
+
+G      D/F#   Em
+Eterno Pai,        nós vos
+Em/G  D/F# Em    D     G
+ofe……re………ce…...mos,
+
+        D/F#          Em        Em/G
+O corpo sangue e alma   e divin….da……
+D/F#   Em    D   C   D    G
+de de Nosso Senhor,   Jesus (2x)
+(D#°)
+
+Em    Em7+/D#  Em7/D          Em/C#
+Em expia…………ção, dos nossos pecados,
+
+C       G/B   Am           D     D#°
+E dos pecados, do mundo inteiro
+
+Em   Em7+/D#  Em7/D           Em/C#
+Em expia…………ção, dos nossos pecados,
+
+C       G/B   (Am  G C/E Em C/E F  F)
+E dos pecados, do mundo inteiro
+D
+
+Eterno Pai...
+
+Final  G   C   G   D   C   G    C
+G       D   C  C',
+  to_tsvector('portuguese', 'Eterna Misericórdia ' || '')
+),
+(
+  'neste-nome-ha-poder-padre-cleidimar',
+  'Neste nome há poder',
+  'Padre Cleidimar',
+  'Padre Cleidimar',
+  'Em',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  22,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] Em7  F9  C/G  G
+
+   C9                  F9/C
+Jesus, neste nome há poder
+
+   C9             C/E   F9
+Jesus, neste nome há poder
+
+      Gb°        C/E        E7(9)
+O seu nome é poderoso, Sua glória em
+Am D/A Fm6
+toda a terra
+
+     C/G    F/G        C9 F/G
+Há poder no Nome de Jesus
+
+    C9                  F9/C
+Jesus, neste nome há poder
+
+   C9             C/E   F9
+Jesus, neste nome há poder
+
+      Gb°        C/E        E7(9)
+O seu nome é poderoso, Sua glória em
+Am D/A Fm6
+toda a terra
+
+     C/G    F/G        C9 F/G
+Há poder no Nome de Jesus
+
+       C9        G/B       Am7  A7
+O impossível Ele pode realizar
+
+       Dm7   C/E  F         G4 G
+O impossível Ele pode realizar
+
+       Em7              A7(4)   A/C#
+O impossível, sim o impossível
+
+       Dm7  C/E F      Am7    G   C9
+O impossível a mim Ele pode realizar
+F/G
+
+       C9        G/B       Am7  A/C#
+O impossível Ele pode realizar
+
+       Dm7   C/E  F         G4 G
+O impossível Ele pode realizar
+
+       Em7              A7(4)   A/C#
+O impossível, sim o impossível
+
+       Dm7  C/E F      Am7    G   C9
+O impossível a nós Ele pode realizar
+
+( G/A  Am  G  G4  F7M )
+
+C9        G/A  Am   G   G4     F7M
+Je..e..e..su...us,  Je..e..e..sus!
+
+C9        G/A  Am   G   G4     F7M
+Je..e..e..su...us,  Je..e..e..sus!
+
+C9        G/A  Am   G   G4     F7M
+Je..e..e..su...us,  Je..e..e..sus!
+
+C9        G/A  Am   G   G4     F7M
+Je..e..e..su...us,  Je..e..e..sus!
+
+O nome de Jesus tem poder!
+
+C9        G/A  Am   G   G4     F7M
+Je..e..e..su...us,  Je..e..e..sus!
+
+C9        G/A  Am   G   G4     F7M
+Je..e..e..su...us,  Je..e..e..sus!
+
+       C9        G/B     Am7  A7
+O impossível Ele já realizou
+
+       Dm7   C/E  F       G4 G
+O impossível Ele já realizou
+
+       Em7              A7(4)   A7
+O impossível, sim o impossível
+
+       Dm7  C/E F      Am7  G   C9
+O impossível a mim Ele já realizou
+F/G
+
+       C9        G/B     Am7  A7
+O impossível Ele já realizou
+
+       Dm7   C/E  F       G4 G
+O impossível Ele já realizou
+
+       Em7              A7(4)   A7
+O impossível, sim o impossível
+
+       Dm7  C/E F      Am7  G   C9
+O impossível a nós Ele já realizou',
+  to_tsvector('portuguese', 'Neste nome há poder ' || '')
+),
+(
+  'reina-senhor-padre-cleidimar',
+  'Reina, Senhor',
+  'Padre Cleidimar',
+  'Padre Cleidimar',
+  'Bb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro: Bb7+  F/A  Gm7  Bb7+  F/A  Gm7
+
+C7/4/9  F7+  Ab7+  Gm7 C7/4/9
+
+F7+       Gm7      Bb7+    Bb/C
+Reina Senhor neste santo lugar
+
+F7+    Gm7      Eb7+   Bb/C
+Aqui estamos pra te exaltar
+
+F7+    Gm7         Bb7+       Bb/C
+Te entronizamos neste templo santo
+
+F7+   Gm7     Bb7+  Bb/C
+Em união para Te adorar
+
+Gm7     F/A        Bb7+         F/A
+Nós exaltamos Senhor, Te exaltamos!
+
+  Gm7    F/A        Bb7+        F/A
+Te glorificamos Senhor, glorificamos!
+
+Gm7     F/A        Bb7+   Am7
+Te bendizemos Senhor
+
+      Gm7           Bb/C     Bb/D
+E pra sempre cantaremos a Ti
+
+   C/E         F7+
+Louvores, ó Deus!',
+  to_tsvector('portuguese', 'Reina, Senhor ' || '')
+),
+(
+  'chuva-de-bencaos-padre-cleidimar',
+  'Chuva de Bençãos',
+  'Padre Cleidimar',
+  'Padre Cleidimar',
+  'B',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  6,
+  'Louvor / Bênção',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro]  B9  F#  Ebm  C#9
+
+         B9  F#  Ebm  C#9
+
+         B9  F#  Ebm  C#9
+
+         B9  F#  Ebm  C#9
+
+       Ebm                B9
+A tua benção o senhor vai derramar
+aqui
+
+      Ebm                  B9
+A tua benção o senhor vai conceder a
+mim
+
+  Ebm                    C#9
+Felizes os que temem o senhor
+
+   B9                          C#9
+Felizes os que andam em seus caminhos
+
+  G#m       F#      B9      C#9
+Será abençoado se deixares o pecado
+
+  G#m       B5      B9      C#9
+Será abençoada sua família e sua casa
+
+         F#   B5    Ebm    C#9
+Derrama chuva, chuva de bênçãos
+
+         F#   B5    Ebm    C#9
+Derrama chuva, chuva de bênçãos
+
+      G#m              B9  C#9
+E as maldições serão quebradas
+
+      G#m              B9  C#9
+E as maldições serão quebradas
+
+          B9  F#  Ebm  C#9
+Pela tua mão (Ôôôôôôôoôô...)',
+  to_tsvector('portuguese', 'Chuva de Bençãos ' || '')
+),
+(
+  'o-calice-padre-hewaldo-trevisan',
+  'O Cálice',
+  'Padre Hewaldo Trevisan',
+  'Padre Hewaldo Trevisan',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Ofertório / Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] A  E/G#  F#m  F#m/E
+
+         D/F#  A/C#  Bm  E7(4)  E
+
+A          E/G#
+Quando as dores da vida ti ferem a
+F#m  F#m/E
+alma
+
+D               F#m              E7(4)
+E a cada dia as lutas apagam tua fé
+E
+
+C#7
+O mar se agita revolto
+
+      F#m           F#m/E      D
+E as ondas querendo te     afogar
+
+Bm
+E todas as portas fecharam-se para
+E7(4) E
+você
+
+A                    E/G#
+Parece que Deus não escuta o teu
+F#m   F#m/E
+lamento
+
+      D                   F#m
+E às vezes tu pensas em abandonar tua
+E7(4) E
+cruz
+
+C#7
+E chega a pensar que és o único
+
+F#m         F#m/E     D
+Que têm se sentindo assim
+
+  A/E                 E
+O cálice amargo que bebes vai chegar
+A  A4 E
+ao fim
+
+A                   E/G#
+Saiba que Deus tem olhado o teu
+F#m    F#m/E
+sofrimento
+
+D               F#m
+O teu lamento chegou ao trono do
+E7(4)  E
+Senhor
+
+A                      E/G#
+Deus têm estado a seu lado em todo o
+F#m  F#m/E
+tempo
+
+D             E      D/F#        E
+Na hora da angústia, na hora da dor
+
+A                 E/G#
+Saiba não há provação que dura pra
+F#m  F#m/E
+sempre
+
+D                    F#m
+E que depois da tempestade o sol vai
+E7(4)  E
+brilhar
+
+A                    E/G#
+Pois não há luta que dure por todo
+F#m   F#m/E
+tempo
+
+D               E           D     E
+É Deus quem te garante a vitória vai
+A
+chegar
+
+( A  E/G#  F#m  F#m/E )
+
+( D/F#  A/C#  Bm  E7(4)  E )
+
+A                    E/G#
+Parece que Deus não escuta o teu
+F#m    F#m/E
+lamento
+
+D                        F#m
+E às vezes tu pensas em abandonar tua
+E7(4) E
+cruz
+
+C#7
+E chega a pensar que és o único
+
+    F#m      F#m/E      D
+Que têm se sentindo assim
+
+  A/E                 E
+O cálice amargo que bebes vai chegar
+A  A4 E
+ao fim
+
+A                   E/G#
+Saiba que Deus tem olhado o teu
+F#m   F#m/E
+sofrimento
+
+D               F#m
+O teu lamento chegou ao trono do
+E7(4) E
+Senhor
+
+A                      E/G#
+Deus têm estado a seu lado em todo o
+F#m   F#m/E
+tempo
+
+D              E     D/F#        E
+Na hora da angústia, na hora da dor
+
+A               E/G#
+Saiba não há provação que dura pra
+F#m   F#m/E
+sempre
+
+D                    F#m
+E que depois da tempestade o sol vai
+E7(4)  E
+brilhar
+
+A                   E/G#
+Pois não há luta que dure por todo
+F#m F#m/E
+tempo
+
+D                 E         D     E
+É Deus quem te garante a vitória vai
+F#m   F#m/E
+chegar
+
+D                 E         D     E
+É Deus quem te garante a vitória vai
+A
+chegar
+
+[Final] A  E/G#  F#m  D  A',
+  to_tsvector('portuguese', 'O Cálice ' || '')
+),
+(
+  'deus-me-abraca-padre-cleidimar',
+  'Deus me Abraça',
+  'Padre Cleidimar',
+  'Padre Cleidimar',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  17,
+  'Cura / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Introd.: G D/F# D/F C/E C/Eb Bb9 A/C#
+C/D
+
+      G9         D/F#          C/E
+Onde posso apresentar minhas feridas
+D/F#
+
+       G9         D/F#        C/E
+A quem posso entregar a minha vida
+D/F#
+a   (2x)
+
+Em7   D9     C9    Am7      Bm7
+Só... em... Deus encontro refúgio
+
+Em7   D9     C9    Am7       D
+Só... em... Deus encontro a paz
+
+Em7   D9    C9     Am7      Bm7
+Só... em... Deus encontro refúgio
+
+Em7   D9      C9
+Só... em... Deus
+
+ D9      C9     G/B      C9    G/B Am7
+Deus me acolhe, Deus me abraça,
+G9   D/F#   C/E      E4  E
+Deus me ama..a..a
+
+D/F#       C9    G       C9    G/B Am7
+Deus me acolhe, Deus me abraça,
+G9   D/F#   C/E  D/F#  G
+Deus me ama..a....a',
+  to_tsvector('portuguese', 'Deus me Abraça ' || '')
+),
+(
+  'eis-me-aqui-o-deus-frei-telles-ramon',
+  'Eis-me Aqui, Ó Deus',
+  'Frei Telles Ramon',
+  'Frei Telles Ramon',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Entrada / Vocacional',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C              Em
+Eis-me aqui, ó Deus!
+
+Am              Em  F
+Eis-me aqui, ó Deus!
+
+       C          G  A
+Para fazer a tua vontade
+
+F      Em      G     C
+Eis-me aqui, ó Deus!',
+  to_tsvector('portuguese', 'Eis-me Aqui, Ó Deus ' || '')
+),
+(
+  'eis-o-dia-do-senhor-frei-telles-ramon',
+  'Eis o Dia do Senhor',
+  'Frei Telles Ramon',
+  'Frei Telles Ramon',
+  'Bb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Entrada',
+  'Páscoa',
+  '',
+  'liturgica',
+  'Bb     C7     F     Dm
+Eis o dia do Senhor
+
+      Gm      C7          F
+Celebremos o Seu Eterno Amor
+
+       Bb       C         Dm C/E F
+Entre nós a presença do Ama---do
+
+       Bb       C      F
+Do Messias que foi imolado
+
+      Bb       C        Dm C/E F
+Ao redor de Jesus, a memó---ria
+
+       Bb      C        F
+Vida plena em nossa história
+
+      Bb       C         Dm C/E F
+Este dia nos trouxe a vitó---ria
+
+     Bb          C          F
+Salvação que se faz nossa glória
+
+     Bb       C       Dm C/E F
+Escutamos o Cristo Pala---vra
+
+     Bb             C          F
+A Jesus que em Seu Sangue nos lava
+
+       Bb      C         Dm C/E F
+Ao partimos o pão da verda---de
+
+     Bb     C        F
+Assumimos real liberdade
+
+          Bb        C        Dm C/E F
+Porta estreita da cruz: avance---mos
+
+       Bb      C       F
+Ao banquete celeste rumemos
+
+      Bb     C          Dm C/E F
+Celebremos até que ele ve---nha
+
+       Bb       C         F
+E constantes a fé nos mantenha',
+  to_tsvector('portuguese', 'Eis o Dia do Senhor ' || '')
+),
+(
+  'tu-es-a-razao-da-jornada-jose-acacio-santana',
+  'Tu És a Razão da Jornada',
+  'José Acácio Santana',
+  'José Acácio Santana',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] D7  G  A7  G  D
+
+        D7  G  D  A7  D
+
+    D              A7
+Um dia escutei teu chamado
+
+        Bm                A G D
+Divino recado batendo no coração
+
+      G                  D
+Deixei deste mundo as promessas e
+
+          A7                 G A D
+Fui bem depressa no rumo da Tua mão!
+
+[Refrão]
+
+     D7              G
+Tu és a razão da jornada
+
+               A7        G       D
+Tu és minha estrada meu guia meu fim
+
+    D7                  G
+No grito que vem do teu povo
+
+             A         G         D
+Te escuto de novo, chamando por mim
+A7
+
+   D             A7
+Os anos passaram ligeiro
+
+          Bm                  A  G  D
+Me fiz um obreiro do reino de paz e
+amor
+
+    G                 D
+Nos mares do mundo navego
+
+                 A7
+E às redes me entrego, tornei-me teu
+G A D
+pescador
+
+  D                A7
+Embora tão fraco e pequeno
+
+         Bm                     A
+Caminho sereno com a força que vem de
+G  D
+ti
+
+    G                D
+E a cada momento que passa
+
+             A7                G A7 D
+Revivo esta graça de ser teu sinal
+aqui',
+  to_tsvector('portuguese', 'Tu És a Razão da Jornada ' || '')
+),
+(
+  'em-tua-cruz-nos-nos-gloriamos-frei-telles-ramon',
+  'Em Tua Cruz, Nós Nos Gloriamos!',
+  'Frei Telles Ramon',
+  'Frei Telles Ramon',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Semana Santa / Cruz',
+  'Quaresma',
+  '',
+  'liturgica',
+  'F  Dm   C F                 Am
+Em tu - a cruz nós nos gloriamos
+
+  Gm            C7 F  Gm    C
+Ó Cristo, Salvador do mun - do
+
+A/C#   Dm  (D7) Gm           C7  F
+Em tua cruz     nós nos gloria - mos
+
+          Am          Gm      Bb
+01. Foi preciso que o Senhor passasse
+Dm            C7  F
+pela cruz para ofertar-se
+
+          Am          Gm      Bb
+02. Nossa glória está na cruz, por
+Dm            C7  F
+onde o Senhor salvou o mundo
+
+          Am          Gm      Bb
+03. Sacramento de Deus Pai é o Filho
+Dm            C7  F
+que se entrega em liberdade
+
+          Am          Gm      Bb
+04. Não se vive sem amor, e a prova
+Dm            C7  F
+que se ama é o martírio
+
+          Am          Gm      Bb
+05. Com Jesus eu morrei, mas vou
+Dm            C7  F
+ressuscitar também com ele
+
+          Am          Gm      Bb
+06. O Senhor que foi morrer, nos fez
+Dm            C7  F
+também com ele renascidos',
+  to_tsvector('portuguese', 'Em Tua Cruz, Nós Nos Gloriamos! ' || '')
+),
+(
+  'tua-mesa-senhor-jose-acacio-santana',
+  'Tua Mesa, Senhor',
+  'José Acácio Santana',
+  'José Acácio Santana',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G                    Em      Am
+1. Tua mesa, senhor, tem lugares
+sobrando,
+
+          D                   D7
+ Porque muitos irmãos não puderam
+G
+chegar.
+
+       G                  Em
+ É preciso mais gente que vá
+Am  Cm
+proclamando
+
+                 G           D       G
+ Que só tu és o pão que nos pode
+salvar.
+
+        G7        Am
+Quem está nesta mesa,
+
+          D   D7  G
+Quem já tem seu lugar,
+
+      G7           Am
+Compreenda a grandeza
+
+        D    D7    G
+Do teu reino anunciar.
+
+        G                    Em
+2. Multiplicas o pão que sustenta e
+Am
+sacia,
+
+       D              D7      G
+ Para ser alimento de libertação.
+
+      G                  Em
+ É preciso mais gente que sinta
+Am  Cm
+alegria
+
+                 G           D
+ De fazer a partilha com os outros
+G
+irmãos.
+
+        G7        Am
+Quem está nesta mesa,
+
+          D   D7  G
+Quem já tem seu lugar,
+
+      G7           Am
+Compreenda a grandeza
+
+        D    D7    G
+Do teu reino anunciar.
+
+        G                    Em
+3. Tu vieste salvar o que estava
+Am
+perdido
+
+          D                    D7
+ E, por esta missão, deste a vida na
+G
+cruz.
+
+      G                    Em
+ É preciso mais gente que viva o
+Am  Cm
+sentido
+
+                 G           D       G
+ Do projeto cristão de no mundo ser
+luz.
+
+        G7        Am
+Quem está nesta mesa,
+
+          D   D7  G
+Quem já tem seu lugar,
+
+      G7           Am
+Compreenda a grandeza
+
+        D    D7    G
+Do teu reino anunciar.',
+  to_tsvector('portuguese', 'Tua Mesa, Senhor ' || '')
+),
+(
+  'como-e-bonito-senhor-jose-acacio-santana',
+  'Como É Bonito, Senhor',
+  'José Acácio Santana',
+  'José Acácio Santana',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Entrada / Acolhida',
+  'Qualquer',
+  '',
+  'liturgica',
+  'A       E7      A            D
+Como é bonito Senhor, cada manhã te
+A
+agradecer
+
+         E7       A             D
+Mais uma vez teu amor vem me chamar
+B7     E7
+para viver
+
+   A             D       Bm    B7   E7
+Contigo, Pai de amor, eu quero
+caminhar
+
+    A       C#7     F#m   A
+E assim por onde eu for  irás me
+E7   A
+acompanhar
+
+A        E7      A             D
+Como é bonito Senhor, cada manhã ter o
+A
+meu pão
+
+      E7        A         D   B7
+E desejá-lo também a cada um  dos meus
+E7
+irmãos
+
+   A             D       Bm    B7   E7
+Contigo, Pai de amor, eu quero
+caminhar
+
+    A       C#7     F#m   A
+E assim por onde eu for  irás me
+E7   A
+acompanhar
+
+A        E7      A             D
+Como é bonito Senhor, cada manhã
+A
+recomeçar
+
+           E7       A           D  B7
+Tendo a certeza e a fé que tua mão vai
+E7
+me ajudar
+
+   A             D       Bm    B7   E7
+Contigo, Pai de amor, eu quero
+caminhar
+
+    A       C#7     F#m   A
+E assim por onde eu for  irás me
+E7   A
+acompanhar',
+  to_tsvector('portuguese', 'Como É Bonito, Senhor ' || '')
+),
+(
+  'pao-da-vida-comunhao-jose-acacio-santana',
+  'Pão da Vida (Comunhão)',
+  'José Acácio Santana',
+  'José Acácio Santana',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G                  D7      G
+Teu filho amado, ó mãe querida/ Na
+D        D7            G
+comunhão se tornou o pão da vida.
+(bis)
+
+ G       D7                   C  G
+1-O Salvador, que geraste, Maria/ É
+D7             G
+nossa vida na eucaristia.
+
+ G       D7                   C  G
+2-A humanidade que deste a Jesus/ É
+D7                 G
+alimento que ao céu nos conduz.
+
+ G             D7
+3-Ouvindo as preces da mãe, com
+C     G        D7                 G
+carinho/ O Filho amado mudou água em
+vinho.
+
+ G         D7                  C  G
+4-Pelos pedidos da mãe tão querida/
+D7                G
+Cristo Jesus mudará nossa vida.',
+  to_tsvector('portuguese', 'Pão da Vida (Comunhão) ' || '')
+),
+(
+  'caminhando-com-maria-jose-acacio-santana',
+  'Caminhando Com Maria',
+  'José Acácio Santana',
+  'José Acácio Santana',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Mariano',
+  'Qualquer',
+  '',
+  'liturgica',
+  'A
+Santa Mãe Maria, nesta travessia,
+E7
+cubra-nos teu manto cor de anil
+
+             Bm
+Guarda nossa vida, mãe Aparecida,
+E7        A
+Santa padroeira do Brasil
+
+A7               D  E7  A
+A________________ve Maria,
+E7     A
+A_________________ve Maria
+
+A7               D  E7  A
+A________________ve Maria,
+E7     A
+A_________________ve Maria
+
+             A
+Mulher peregrina, força feminina, a
+E7
+mais importante que existiu
+
+             Bm
+Com justiça queres que nossas mulheres
+E7         A
+sejam construtoras do Brasil
+
+[Refrão]
+
+            A
+Com amor divino guarda os peregrinos
+E7
+nesta caminhada para o além!
+
+              Bm
+Dá-lhes companhia pois também um dia
+E7         A
+foste peregrina de Belém',
+  to_tsvector('portuguese', 'Caminhando Com Maria ' || '')
+),
+(
+  'bom-e-louvar-o-senhor-nosso-deus-pe-ney-brasil',
+  'Bom É Louvar o Senhor, Nosso Deus',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Entrada',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C       Am       Dm           G
+Bom é louvar o Senhor, nosso Deus
+Em         Am
+cantar salmos ao nome do
+
+ Dm         G
+Altíssi----mo
+
+ C       Am       Dm       G
+Com alegria aclamar seu amor, sua
+Em        F   G     C
+glória, bondade e poder
+
+  Am                   Em
+1.Como tuas obras me alegram, Senhor
+F                     C
+os teus prodígios suscitam louvor
+
+ F       G          C        Am
+Tua presença eu contemplo no céu  olho
+Dm         D          G
+a terra: também nela estás
+
+  Am                 Em           F
+2.Tu engrandeces o homem mortal: da
+C
+natureza ele é rei e senhor
+
+F            G          C
+De honra o coroaste, de glória e
+Am         Dm             D
+poder, pouco menos que aos anjos do
+
+G
+Céu
+
+  Am                    Em
+3.Narram os céus o que fez tua mão,
+F                C
+todo universo teu nome bendiz
+
+F      G        C        Am
+A criação é um canto de amor, e esse
+Dm         D      G
+canto é também meu louvor',
+  to_tsvector('portuguese', 'Bom É Louvar o Senhor, Nosso Deus ' || '')
+),
+(
+  'brilhe-a-vossa-luz-pe-ney-brasil',
+  'Brilhe a Vossa Lúz',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Aclamação / Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C                               G7
+Brilhe a vossa luz, brilhe para sempre
+
+                                 C
+Sejam luminosas vossas mãos e as
+mentes
+
+F              C    Dm       G7    C
+Brilhe a vossa luz, brilhe a vossa luz
+
+F              C    G7             C
+Brilhe a vossa luz, brilhe a vossa
+luz!
+
+                     G7
+Vós sois a luz do mundo, a todos
+C
+aclarai
+
+               G7                    C
+Afugentando as trevas, ao pai
+glorificai!
+
+C                               G7
+Brilhe a vossa luz, brilhe para sempre
+
+                                 C
+Sejam luminosas vossas mãos e as
+mentes
+
+F              C    Dm       G7    C
+Brilhe a vossa luz, brilhe a vossa luz
+
+F              C    G7             C
+Brilhe a vossa luz, brilhe a vossa
+luz!
+
+                   G7
+A vossa luz é o cristo que dentro em
+C
+vós está
+
+               G7                C
+Via, verdade e vida, ele vos guiará!
+
+C                               G7
+Brilhe a vossa luz, brilhe para sempre
+
+                                 C
+Sejam luminosas vossas mãos e as
+mentes
+
+F              C    Dm       G7    C
+Brilhe a vossa luz, brilhe a vossa luz
+
+F              C    G7             C
+Brilhe a vossa luz, brilhe a vossa
+luz!
+
+                    G7
+Rompendo o jugo iníquo, banindo a
+C
+opressão
+
+              G7                     C
+A vossa luz rebrilha e as trevas
+fugirão!
+
+C                               G7
+Brilhe a vossa luz, brilhe para sempre
+
+                                 C
+Sejam luminosas vossas mãos e as
+mentes
+
+F              C    Dm       G7    C
+Brilhe a vossa luz, brilhe a vossa luz
+
+F              C    G7             C
+Brilhe a vossa luz, brilhe a vossa
+luz!
+
+                  G7
+Ninguém a luz acende deixando-a se
+C
+esconder
+
+             G7                   C
+Vossa luz ilumine, faça a vida vencer!
+
+C                               G7
+Brilhe a vossa luz, brilhe para sempre
+
+                                 C
+Sejam luminosas vossas mãos e as
+mentes
+
+F              C    Dm       G7    C
+Brilhe a vossa luz, brilhe a vossa luz
+
+F              C    G7             C
+Brilhe a vossa luz, brilhe a vossa
+luz!',
+  to_tsvector('portuguese', 'Brilhe a Vossa Lúz ' || '')
+),
+(
+  'bendito-sejais-senhor-pe-ney-brasil',
+  'Bendito Sejais, Senhor',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'F       A7      Dm
+Bendito sejais, Senhor
+
+       Bb       G7    C
+Pelos dons que apresentamos
+
+    Am  Bb    C
+Bendito pelo pão
+
+    Am  Gm   C7
+Bendito pelo vinho
+
+   Bb      C       Am   Dm
+Bendito sejais, também
+
+     Gm    Bb   C      F  Gm  C7
+Pela graça no caminho!
+
+   F       A7      Dm
+Bendito sejais, Senhor
+
+       Bb       G7    C
+Pelos dons que apresentamos
+
+    Am  Bb    C
+Bendito pela fé
+
+    Am  Gm     C7
+Bendito pela Igreja
+
+   Bb      C       Am   Dm
+Bendito sejais, também
+
+     Gm    Bb   C      F  Gm  C7
+Pela força da peleja!
+
+   F       A7      Dm
+Bendito sejais, Senhor
+
+       Bb       G7    C
+Pelos dons que apresentamos
+
+    Am  Bb    C
+Bendito pelo amor
+
+    Am  Gm   C7
+Bendito pela vida
+
+   Bb      C       Am   Dm
+Bendito sejais, também
+
+       Gm    Bb    C      F  Gm  C7
+Pelas nossas mãos unidas!',
+  to_tsvector('portuguese', 'Bendito Sejais, Senhor ' || '')
+),
+(
+  'na-festa-de-um-casamento-pe-ney-brasil',
+  'Na Festa de Um Casamento',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'Pe. Ney Brasil / Hinário Litúrgico CNBB',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Matrimônio / Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] E  E7  A  F#m  B7  G#m  B7  E
+
+    E            F#m           B7
+ Na festa de um casamento em Caná da
+E
+Galiléia
+
+     C#m   Fº      F#m      B7
+Estavam entre os convivas Maria e seu
+E
+filho Jesus
+
+ C#7               F#m     B7
+"Eles não têm mais vinho! Eles não têm
+E
+mais vinho!"
+
+      E7             A   F#m
+É a intercessão de Mari...a sempre
+E      B7     E
+atenta à situação
+
+[Refrão]
+
+F#m             B7
+Vamos encher as talhas
+
+ E        F#m      G#m
+Encher as talhas de água
+
+         A       G#m   F#m  B7
+Que o Senhor transformará
+
+        G#m       B7   E
+Que o Senhor transformará
+
+   E            F#m
+Jesus, na sua resposta,
+B7         E
+misteriosamente nega
+
+   C#m           Fº      F#m
+ "Mulher, o que há entre nós? Minha
+B7               E
+hora ainda não chegou!"
+
+ C#7           F#m     B7
+"O que disser fazei-o! O que disser
+E
+fazei-o!"
+
+ E7           A   F#m        E
+Quando Ele parece negar-se nós vamos
+B7     E
+obedecer
+
+   E                F#m           B7
+Estavam ali as seis talhas destinadas
+E
+para a água
+
+C#m       Fº    F#m         B7
+Aos empregados Jesus dirigiu-se com o
+E
+seu poder
+
+C#7                 F#m     B7
+"Enchei de água as talhas! Enchei de
+E
+água as talhas!"
+
+ E7                  A   F#m  E
+E a água mudou-se em vinho, vinho
+B7     E
+reconfortador
+
+    E              F#m           B7
+Também em nossas famílias quando falta
+E
+o amor e a paz
+
+    C#m        Fº      F#m
+Que a intercessão de Maria esteja
+B7               E
+atenta em nosso favor
+
+C#7           F#m     B7
+O que disser façamos, o que disser
+E
+façamos
+
+ E7                   A  F#m   E
+E com seu poder nossa água o amor vai
+B7     E
+transformar',
+  to_tsvector('portuguese', 'Na Festa de Um Casamento ' || '')
+),
+(
+  'pai-nosso-pai-pai-pai-pe-irala',
+  'Pai Nosso - Pai Pai Pai',
+  'Pe. Irala',
+  'Pe. Irala',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Pai Nosso / Oração',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C             F           C
+Cantemos confiantes a oração
+
+         D7           G7
+Que o senhor nos ensinou
+
+C           F       C            G7
+Pai, pai, pai, pai nosso que estais no
+C
+céu
+
+C                  F      C
+Santificado seja o vosso nome
+
+         F          C
+Venha a nós o vosso reino
+
+     F                C
+Seja feita a vossa vontade
+
+         D7            G7
+Assim na terra como no céu
+
+C           F       C            G7
+Pai, pai, pai, pai nosso que estais no
+C
+céu
+
+               F     C         D7 G7
+O pão nosso de cada dia nos dai hoje
+
+       F                 C
+E perdoai-nos as nossas ofensas
+
+   F                C
+Assim como nós perdoamos
+
+           D7         G7
+A quem nos tenha ofendido
+
+C           F       C            G7
+Pai, pai, pai, pai nosso que estais no
+C
+céu
+
+   F                            C
+E não nos deixeis cair em tentação
+
+       F          C
+Mas livrai-nos do mal
+
+C           F       C            G7
+Pai, pai, pai, pai nosso que estais no
+C
+céu',
+  to_tsvector('portuguese', 'Pai Nosso - Pai Pai Pai ' || '')
+),
+(
+  'maos-abertas-pe-irala',
+  'Mãos Abertas',
+  'Pe. Irala / Hinário Litúrgico CNBB',
+  'Pe. Irala / Hinário Litúrgico CNBB',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'A     E       F#m   A      D      E7
+Nesta prece Senhor, venho te oferecer,
+
+D      E7     A  F#m  Bm   E7      A
+O crepitar da chama, a certeza de dar.
+
+A          E    F#m            C#m
+Eu te ofereço o sol que brilha forte.
+
+A            D            E
+Te ofereço a dor do meu irmão.
+
+D E   A      F#m
+A fé, na esperança,
+
+Bm7 E7      A      E7
+E o meu amor.
+
+A     E       F#m   A      D      E7
+Nesta prece Senhor, venho te oferecer,
+
+D      E7     A  F#m  Bm   E7      A
+O crepitar da chama, a certeza de dar.
+
+A          E     F#m             C#m
+Eu te ofereço as mãos que estão
+abertas,
+
+A            D          E
+O cansaço do passo mantido,
+
+D   E   A      F#m
+Meu grito mais forte,
+
+Bm7 E7 A      E7
+De louvor.
+
+A     E       F#m   A      D      E7
+Nesta prece Senhor, venho te oferecer,
+
+D      E7     A  F#m  Bm   E7      A
+O crepitar da chama, a certeza de dar.
+
+A          E        F#m   C#m
+Eu te ofereço o que vi de belo,
+
+A        D          E
+No interior dos corações.
+
+D E A      F#m
+A coragem de me,
+
+Bm7  E7 A      E7
+transformar.',
+  to_tsvector('portuguese', 'Mãos Abertas ' || '')
+),
+(
+  'quem-nos-separara-chi-ci-separera-marco-frisina',
+  'Quem Nos Separará - Chi Ci Separerà',
+  'Marco Frisina',
+  'Marco Frisina',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  22,
+  'Comunhão / Meditação',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D          A/C# Bm G      F#m7
+Quem nos separará  do seu Amor?
+
+Em      Bm/D  G           A
+A tribulação, talvez a espada?
+
+Bm            F#m7 G     A     D
+Nem morte ou vida nos separará
+
+Em7        Bm  Em    D  A7     D
+Do amor de Cristo,o nosso Senhor
+
+D          A/C# Bm G      F#m7
+Quem nos separará  da sua paz?
+
+Em       Bm/D  G         A
+A perseguição, talvez a dor?
+
+Bm      F#m7  G         D
+Nenhum poder nos separará
+
+Em7         Bm  Em/G   D  A7      D
+D&#x27;aquele que morreu por nós
+
+Eb          Bb/D Cm    Ab        Gm7
+Quem nos separará  da sua alegria?
+
+Fm      Cm/Eb  Ab7             Bb
+Que poderá tirar-nos do seu perdão?
+
+Cm         Gm7   Ab        Eb
+Ninguém no mundo nos afastará
+
+Fm         Cm  Fm/Ab  Eb  Bb7  Eb
+Da vida em Cristo, o nosso Senhor',
+  to_tsvector('portuguese', 'Quem Nos Separará - Chi Ci Separerà ' || '')
+),
+(
+  'eis-me-aqui-marco-frisina',
+  'Eis-me Aqui',
+  'Marco Frisina',
+  'Marco Frisina',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Entrada / Vocacional',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Refrão]
+
+ D       A   Em      Bm
+Eis-me aqui! Eis-me aqui!
+
+G  D            A4   A
+Senhor, eis que ve---nho
+
+ Bm    F#m/A  G       D/F#
+Eis-me aqui! Eis- me aqui!
+
+ Em        Bm          Em7/G  A  D
+Faça‐se em mim a tua vonta______de!
+
+ D        G           D  A
+No meu Senhor eu espere--i
+
+Bm            G        A
+E ele se enclinou para mim
+
+Em   A7         Bm  F#m/A
+E ouvindo o meu grito
+
+G       E7/G#     A4  A
+Me liberto---u da morte
+
+[Refrão]
+
+ D       A   Em      Bm
+Eis-me aqui! Eis-me aqui!
+
+ G  D             A4  A
+Senhor, eis que ve---nho
+
+ Bm    F#m/A  G       D/F#
+Eis-me aqui! Eis- me aqui!
+
+Em         Bm          Em7/G  A  D
+Faça-se em mim a tua vonta-------de!
+
+D       G        D   A/C#
+Os meu pés Ele apoiou
+
+Bm        G         A
+ Os meus passos firmou
+
+Em      A7     Bm      F#m/A
+Ele colocou em minha boca
+
+G        E7/G#    A4  A
+Um canto novo de louvor
+
+[Refrão]
+
+ D       A   Em      Bm
+Eis-me aqui! Eis-me aqui!
+
+ G  D            A4  A
+Senhor, eis que ve---nho
+
+ Bm    F#m/A  G       D/F#
+Eis-me aqui! Eis- me aqui!
+
+ Em        Bm          Em7/G  A   D
+Faça-se em mim a tua vonta-------de!
+
+D       G             D   A/C#
+Os sacrifícios não quiseste
+
+Bm        G          A
+ Mas me abriste o ouvido
+
+Em     A7       Bm   F#m/A
+Não pediste holocausto
+
+ G         E7/G#          A4  A
+E então eu disse: Eis que venho
+
+[Refrão]
+
+ D       A   Em      Bm
+Eis-me aqui! Eis-me aqui!
+
+ G  D            A4  A
+Senhor, eis que ve---nho
+
+ Bm    F#m/A  G       D/F#
+Eis-me aqui! Eis- me aqui!
+
+ Em        Bm      Em7/G  A   D
+Faça-se em mim a tua vonta-------de!',
+  to_tsvector('portuguese', 'Eis-me Aqui ' || '')
+),
+(
+  'vienen-con-alegria-cesareo-gabarain',
+  'Vienen con alegría',
+  'Cesáreo Gabaráin',
+  'Cesáreo Gabaráin',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Entrada',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D
+VIENEN CON ALEGRÍA, SEÑOR,
+
+                   D7
+CANTANC  VIENEN CON ALEGRIA, SEÑOR,
+
+G                       D
+LOS QUE CAE NAN POR A  VIDA, SEÑOR,
+
+     E7        A7     D
+SEMBRANC  TU PAZ Y AMOR.
+
+D                       A
+Vienen trayendo la esperanza
+
+                      D
+a un mundo cargado de ansiedad,
+
+                         A
+un mundo que busca y que no alcanza
+
+                    D
+caminos de amor y de amistad.
+
+D                          A
+Vienen trayendo entre sus manos
+
+                              D
+esfuerzos de hermanos por la paz,
+
+                        A
+deseos de un mundo más humano
+
+                          D
+que nacen del bien y la verdad.
+
+D                       A
+Cuando el odio y la violencia
+
+                   D
+aniden en nuestro corazón,
+
+                    A
+el mundo sabrá que por herencia
+
+                     D
+le aguardan tristezas y dolor.',
+  to_tsvector('portuguese', 'Vienen con alegría ' || '')
+),
+(
+  'o-hostia-santa-marco-frisina',
+  'Ó Hostia Santa',
+  'Marco Frisina',
+  'Marco Frisina',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  18,
+  'Adoração / Eucaristia',
+  'Corpus Christi',
+  '',
+  'liturgica',
+  'C  Am    C   F     C     Am   D7
+Ó Hós - tia san - ta, tu és o pão da
+G4   G
+vi  -i  da!
+
+C      F     C       Am      F      G
+Ó Sacramen - to tão Grande e
+In,compará..vel
+
+C    C7        F        C         Am
+Sa – gra - do  co-or. - po e sangue do
+Em   E7
+Deus vi - vo
+
+C     Am    F     Dm      C   G7  C
+Cor..deiro Santo (da Nova Ali – an -
+ça)
+
+C Am  C   F  C     Am     D7      G4
+Ó Hóstia santa, maná dos peregri.i.nos
+G
+
+C  Am  C F C        Am         F   G
+Nes.te deserto,o pão que que nos
+revigo...ra
+
+C     C7       F C   Am     Em    E7
+Dos..que. procu..ram a terra
+prometi.i.da
+
+C    Am   F        Dm           C G7 C
+Tu.. és a fonte que jorra a Água
+Vi.i.va
+
+C   Am  C  F   C   Am    D7   G4 G
+Ó. Hóstia san.ta, Amor ines.gotá.a.vel
+
+C  Am C   F  C         Am      Em  E7
+Santo dos Santos, Deus forte e
+poderoso
+C   C7    F C     Am    Em   E7.   or
+No.sso re.fú.u.gio na vida e na mor.te
+
+C     Am    F     Dm      C    G7  C
+Do.ce Esperança para os pecado.o.res
+A
+
+D  Bm    D   G     D    Bm   E7
+Ó Hós - tia san - ta, remédio para
+A4   A
+as al - mas
+
+D    Bm   G    D       Bm      G
+No mar da vi - da, farol que nos
+A
+orienta
+
+D    D7   G  D      Bm     F#m   F#7
+Dos que pelejam, triunfo    na batalh
+- - a
+
+D     Bm    G     Em      D   A7  D
+Na noite escura, luz que ilumina
+
+G         D   G        D   A
+Confio em Ti, ó hóstia santa!
+
+G         D        G    A   D
+Confio em Ti, hóstia san     ta!',
+  to_tsvector('portuguese', 'Ó Hostia Santa ' || '')
+),
+(
+  'alma-misionera-cesareo-gabarain',
+  'Alma Misionera',
+  'Cesáreo Gabaráin',
+  'Cesáreo Gabaráin',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G                  C
+1.Señor, toma mi vida nueva,   antes
+G
+que la espera
+
+                  D
+desgaste años en mi.
+
+   G                        C
+Estoy dispuesto a lo que quieras, no
+G
+importa lo que sea,
+
+    D            G   D
+tú llámame a servir.
+
+     G             D         Em
+Llévame donde los hombres necesiten
+C
+tus palabras
+
+    G                     Am D
+necesiten mis ganas de vivir,
+
+       G          D              Em
+donde falte la esperanza, donde falte
+C
+la alegría
+
+       G   Am         D      G
+simplemente  por no saber de ti.
+
+2. Te doy mi corazón sincero, para
+gritar sin miedo
+tu grandeza, Señor.
+Tendré mis manos sin cansancio,
+tu historia entre mis labios y fuerza
+en la oración.
+
+3. Y así, en marcha iré cantando, por
+calles predicando
+lo bello que es tu amor.
+Señor, tengo alma misionera, condúceme
+a la tierra
+que tenga sed de Dios.',
+  to_tsvector('portuguese', 'Alma Misionera ' || '')
+),
+(
+  'tan-cerca-de-mi-cesareo-gabarain',
+  'Tan cerca de mí',
+  'Cesáreo Gabaráin',
+  'Cesáreo Gabaráin',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'Intro:
+
+C  F  C  Dm -C7
+
+F  G   C
+
+G7
+
+C   G        C  Dm -C7
+Tan cerca de mí,
+
+F   D       G   F -G
+tan cerca de mí,
+
+C   F        C
+que hasta le puedo tocar,
+
+  G         C
+Jesús está aquí.
+
+F -G
+
+   C             G
+1] Ya no busco a Cristo en las
+C      Bb -C7
+alturas,
+
+F          G               C
+ni le buscaré en la oscuridad.
+
+F            G     C        Am
+Dentro de mi ser, en mi corazón,
+D                          G
+(VI-3-1-0 IV-0)
+siento que Jesús conmigo está.
+
+   C          G            C      Bb
+2] Yo le contaré lo que me pasa,
+-C7
+
+F            G            C
+como a mis amigos le hablaré.
+
+F             G   C              Am
+Yo no sé si es El quien habita en mí
+D                          G
+(VI-3-1-0 IV-0)
+o si soy yo quien habita en El.
+
+   C           G        C      Bb -C7
+3] Mírale a tu lado caminando
+
+F          G           C
+en las alegrías y el dolor.
+
+F        G   C              Am
+A tu lado va siempre al caminar,
+D                    G   (VI-3-1-0
+IV-0)
+Él es un amigo de verdad.
+
+Final: C
+
+E|E|----------------------------------
+-------------------------||',
+  to_tsvector('portuguese', 'Tan cerca de mí ' || '')
+),
+(
+  'grande-e-o-senhor-adhemar-de-campos',
+  'Grande É o Senhor',
+  'Adhemar de Campos',
+  'Adhemar de Campos',
+  'A',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  8,
+  'Louvor / Adoração',
+  'Qualquer',
+  '',
+  'popular',
+  '[Primeira Parte]
+
+  A9           D9
+Grande é o Senhor
+
+                   A9
+E mui digno de louvor
+
+    D9              E/G#
+Na cidade do nosso Deus
+
+           F#m7(11)/C#
+Seu Santo monte
+
+E                Bm11  C#m  D6(9)  E5
+Alegria de toda terra
+
+  A9           D9
+Grande é o Senhor
+
+                       A9
+Em quem nós temos a vitória
+
+     D9
+Que nos ajuda
+
+ E/G#        F#m7(11)/C#
+Contra o inimigo
+
+    E
+Por isso diante Dele
+
+          Bm11  C#m  D6(9)  E5
+Nos prostramos
+
+[Refrão]
+
+    A9                       C#m
+Queremos o Teu nome engrandecer
+
+D9       C#m
+E agradecer-Te
+
+        Bm11            E
+Por tua obra em nossas vidas
+
+     A9                     C#m
+Confiamos em Teu infinito amor
+
+      D9         C#m
+Pois só Tu és o Deus eterno
+
+ Bm11       E       D9  E  A9
+Sobre toda terra e Céus
+
+    A9                       C#m
+Queremos o Teu nome engrandecer
+
+D9       C#m
+E agradecer-Te
+
+        Bm11            E
+Por tua obra em nossas vidas
+
+     A9                     C#m
+Confiamos em Teu infinito amor
+
+      D9         C#m
+Pois só Tu és o Deus eterno
+
+ Bm11       E       D9  E  A9
+Sobre toda terra e Céus
+
+    A9                       C#m
+Queremos o Teu nome engrandecer
+
+D9       C#m
+E agradecer-Te
+
+        Bm11            E
+Por tua obra em nossas vidas
+
+     A9                     C#m
+Confiamos em Teu infinito amor
+
+      D9         C#m
+Pois só Tu és o Deus eterno
+
+ Bm11       E       D9  E  A9
+Sobre toda terra e Céus
+
+    A9                       C#m
+Queremos o Teu nome engrandecer
+
+D9       C#m
+E agradecer-Te
+
+        Bm11            E
+Por tua obra em nossas vidas
+
+     A9                     C#m
+Confiamos em Teu infinito amor
+
+      D9         C#m
+Pois só Tu és o Deus eterno
+
+ Bm11       E       D9  E  A9
+Sobre toda terra e Céus',
+  to_tsvector('portuguese', 'Grande É o Senhor ' || '')
+),
+(
+  'o-nosso-general-e-cristo-adhemar-de-campos',
+  'O Nosso General É Cristo',
+  'Adhemar de Campos',
+  'Adhemar de Campos',
+  'Cm',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  12,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] Cm  Cm7(9)  Cm  Cm7(9)
+
+        Cm  Cm7(9)  Cm  Cm7(9)
+
+        Cm  Cm7(9)  Cm  Cm7(9)
+
+        Cm  Cm7(9)  Cm  Cm7(9)
+
+[Primeira Parte]
+
+       ( Cm  Cm7(9) )
+Pelo Senhor marchamos sim
+
+        ( Ab7M  Bb/Ab )
+E o seu exército poderoso é
+
+      Fm7        Bb              Cm7
+Sua glória será vista em toda a terra
+
+[Segunda Parte]
+
+        ( Cm  Cm7(9) )
+Vamos cantar o canto da vitória
+
+        ( Ab7M  Bb/Ab )
+Glória a Deus, vencemos a batalha
+
+     Fm7          Bb        Cm7
+Toda arma contra nós perecerá
+
+[Refrão]
+
+   Ab7M             Eb7M
+O nosso general é Cristo
+
+    Ab7M          Eb7M
+Seguimos os seus passos
+
+    Ab7M        Fm7   Bb   Cm7
+Nenhum inimigo nos resistirá
+
+   Ab7M             Eb7M
+O nosso general é Cristo
+
+    Ab7M          Eb7M
+Seguimos os seus passos
+
+    Ab7M      ( Fm  Gm  Ab  Bb  Cm )
+Nenhum inimigo nos re__sis_ti__rá
+
+( Cm  Cm7(9) )
+
+[Terceira Parte]
+
+        ( Cm  Cm7(9) )
+Com o Messias marchamos sim
+
+       ( Ab7M  Bb/Ab )
+Em suas mãos a chave da vitória
+
+         Fm7              Bb
+Que nos leva a possuir a terra
+Cm7
+prometida
+
+[Primeira Parte]
+
+       ( Cm  Cm7(9) )
+Pelo Senhor marchamos sim
+
+        ( Ab7M  Bb/Ab )
+E o seu exército poderoso é
+
+      Fm7        Bb              Cm7
+Sua glória será vista em toda a terra
+
+[Segunda Parte]
+
+        ( Cm  Cm7(9) )
+Vamos cantar o canto da vitória
+
+        ( Ab7M  Bb/Ab )
+Glória a Deus, vencemos a batalha
+
+     Fm7          Bb        Cm7
+Toda arma contra nós perecerá
+
+[Refrão Final]
+
+   Ab7M             Eb7M
+O nosso general é Cristo
+
+    Ab7M          Eb7M
+Seguimos os seus passos
+
+    Ab7M      ( Fm  Gm  Ab  Bb  Cm )
+Nenhum inimigo nos re__sis_ti__rá
+
+   Ab7M             Eb7M
+O nosso general é Cristo
+
+    Ab7M          Eb7M
+Seguimos os seus passos
+
+    Ab7M      ( Fm  Gm  Ab  Bb  Cm )
+Nenhum inimigo nos re__sis_ti__rá
+
+   Ab7M             Eb7M
+O nosso general é Cristo
+
+    Ab7M          Eb7M
+Seguimos os seus passos
+
+    Ab7M      ( Fm  Gm  Ab  Bb  Cm )
+Nenhum inimigo nos re__sis_ti__rá
+
+   Ab7M             Eb7M
+O nosso general é Cristo
+
+    Ab7M          Eb7M
+Seguimos os seus passos
+
+    Ab7M      ( Fm  Gm  Ab  Bb  Cm )
+Nenhum inimigo nos re__sis_ti__rá
+
+    Fm7    Gm   Ab    Bb   Fm7
+Nenhum inimigo nos resistirá
+
+   Eb/G ( Ab  Bb ) C
+Resisti__rá',
+  to_tsvector('portuguese', 'O Nosso General É Cristo ' || '')
+),
+(
+  'amigo-de-deus-adhemar-de-campos',
+  'Amigo de Deus',
+  'Adhemar de Campos',
+  'Adhemar de Campos',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  A/C#  Bm  Em  D  A
+
+        D  A/C#  Bm  D/F#  G  A  D
+
+      D     A/C#       Bm
+Não existe nada melhor
+
+        D    A/C#       G
+Do que ser amigo de Deus
+
+      Bm    A       E/G#
+Caminhar seguro na luz
+
+       Bm     A/C#   D
+Desfrutar do seu   amor
+
+       Em     D   A/C#
+Ter a paz no coração
+
+       Em        D    A/C#
+Viver sempre em comunhão
+
+     G       A
+E assim perceber
+
+       D    D/F#  G
+A grandeza do  poder
+
+      D/A      A      G
+De Jesus, meu Bom Pastor
+
+( D  A/C#  Bm  Em  D  A )
+
+( D  A/C#  Bm  D/F#  G  A  D )
+
+      D     A/C#       Bm
+Não existe nada melhor
+
+        D    A/C#       G
+Do que ser amigo de Deus
+
+      Bm    A       E/G#
+Caminhar seguro na luz
+
+       Bm     A/C#   D
+Desfrutar do seu   amor
+
+       Em     D   A/C#
+Ter a paz no coração
+
+       Em        D    A/C#
+Viver sempre em comunhão
+
+     G       A
+E assim perceber
+
+       D    D/F#  G
+A grandeza do  poder
+
+      D/A      A      D  G/D  D
+De Jesus, meu Bom Pastor
+
+       Em     D   A/C#
+Ter a paz no coração
+
+       Em        D    A/C#
+Viver sempre em comunhão
+
+     G       A
+E assim perceber
+
+       D    D/F#  G
+A grandeza do  poder
+
+      D/A      A      D  G/D  D
+De Jesus, meu Bom Pastor
+
+      D/A      A      G
+De Jesus, meu Bom Pastor
+
+[Final] G  D/F#  Em  D',
+  to_tsvector('portuguese', 'Amigo de Deus ' || '')
+),
+(
+  'aos-pes-da-cruz-kleber-lucas',
+  'Aos Pés da Cruz',
+  'Kleber Lucas',
+  'Kleber Lucas',
+  'Ab',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  30,
+  'Adoração',
+  'Quaresma',
+  '',
+  'adoracao',
+  '[Intro] Ab9  Eb/G  Fm7
+
+        Db7M  Eb7(4/9)
+
+        Ab9  Eb/G  Fm7
+
+        Db7M  Eb7(9)
+
+[Primeira Parte]
+
+ Ab9
+Meu Jesus, maravilhoso és
+
+ Fm7(9)
+Minha inspiração a prosseguir
+
+   Bbm7
+E mesmo quando tudo não vai bem
+
+    Db               Eb7(4/9)
+Eu continuo olhando para Ti
+
+      Ab9
+Pois sei que Tu tens o melhor pra mim
+
+   Fm7(9)
+Há um segredo no Teu coração
+
+     Bbm7
+Oh, dá-me forças pra continuar
+
+     Db                 Eb7(4/9)
+Guardando a promessa em oração
+
+[Pré-Refrão]
+
+Ab9
+    Firme, oh Deus, está o meu
+Eb/G  Fm7
+cora__ção
+
+              F7(4)        Bbm7
+Firme nas promessas do Senhor
+
+               Bbm/Ab     Gb
+Eu continuo olhando para Ti
+
+                    Eb7(4/9)     Ab
+E assim eu sei que posso prosseguir
+
+[Refrão]
+
+                      Ab/Gb
+E mesmo quando eu chorar
+
+           F7(4)      Bbm7
+As minhas lágrimas serão
+
+                    Dbm7
+Para regar a minha fé
+
+        Dbm6        Ab
+E consolar meu coração
+
+                              Ab/Gb
+Pois o que chora aos pés da cruz
+
+             F7(4)     Bbm7
+Clamando em nome de Jesus
+
+                     Db
+Alcançará de Ti, Senhor
+
+       Eb              Ab9
+Misericórdia, graça e luz
+
+( Eb/G  Fm7  Db7M  Eb7(9) )
+
+( Ab9  Eb/G  Fm7 )
+
+( Db  E7(4) E7 )
+
+[Segunda Parte]
+
+     A2
+Teu grande amor não cessa
+
+  F#m7
+Eterno, não tem fim
+
+       Bm7             D
+Quão grande és Tu, Senhor
+
+       E7(4/9)      E
+Quão grande és pra mim
+
+      A2
+Tua graça é o meu refúgio
+
+    F#m7           C#m  F#m
+Descanso no Teu poder
+
+ Bm7    D7M      E7(4/9)  E
+Maravilhoso és, maravi__lhoso és pra
+A2
+mim
+
+[Pré-Refrão]
+
+                            E/G#  F#m7
+Firme, oh Deus, está o meu cora__ção
+
+              F#7(4)       Bm7
+Firme nas promessas do Senhor
+
+               Bm/A       G9
+Eu continuo olhando para Ti
+
+                    E7(4/9)      A2
+E assim eu sei que posso prosseguir
+
+[Refrão Final]
+
+                      A/G
+E mesmo quando eu chorar
+
+           F#7(4)     Bm7
+As minhas lágrimas serão
+
+                    Dm7
+Para regar a minha fé
+
+        Dm6         A2
+E consolar meu coração
+
+                              A/G
+Pois o que chora aos pés da cruz
+
+             F#7(4)    Bm7
+Clamando em nome de Jesus
+
+                     D
+Alcançará de Ti, Senhor
+
+       E7              A2
+Misericórdia, graça e luz
+
+                      A/G
+E mesmo quando eu chorar
+
+           F#7(4)     Bm7
+As minhas lágrimas serão
+
+                    Dm7
+Para regar a minha fé
+
+        Dm6         A2
+E consolar meu coração
+
+                              A/G
+Pois o que chora aos pés da cruz
+
+             F#7(4)    Bm7
+Clamando em nome de Jesus
+
+                     D
+Alcançará de Ti, Senhor
+
+       E7(9)           A2
+Misericórdia, graça e luz
+
+( E/G#  F#m7  D7M )
+
+       E7(4/9)         A  E/G#  F#m7
+Misericórdia, graça e luz
+
+D7M        E7(4/9)         A2
+    Misericórdia, graça e luz',
+  to_tsvector('portuguese', 'Aos Pés da Cruz ' || '')
+),
+(
+  'familia-regis-danese',
+  'Família',
+  'Régis Danese',
+  'Régis Danese',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  17,
+  'Família',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] G9  G/F  C/E  Eb7M
+
+        G9  G/F  C/E  Eb7M
+
+[Primeira Parte]
+
+        G9                D/F#
+Te agradeço pela minha família
+
+       G/F                 C/E
+E por Tua presença no meu lar
+
+        Am7                   G/B
+Te agradeço pelo pão de cada dia
+
+          C9                  D  D4  D
+Que o Senhor nunca deixou faltar
+
+        G9                   D/F#
+Te agradeço pela nossa harmonia
+
+       G/F                   C/E
+Só em Ti Senhor podemos confiar
+
+           Am7                 G/B
+Já Te agradeço pelas Tuas maravilhas
+
+        C9               C9/E     D4
+E os milagres que ainda há de operar
+D
+
+[Refrão]
+
+           G9    G/B     C/E
+A minha família       é benção do
+D/F#
+Senhor
+
+      D/C       G/B         C9
+Me ensina a tratar minha família com
+D4  D
+amor
+
+               Em7  G/B  C9
+Edifica minha casa      para o teu
+G/B
+louvor
+
+   C9      G/D           C/D         G
+A minha família é um presente do
+Senhor
+
+( G/F  C/E  Eb7M )
+
+[Primeira Parte]
+
+        G9                D/F#
+Te agradeço pela minha família
+
+       G/F                 C/E
+E por Tua presença no meu lar
+
+        Am7                   G/B
+Te agradeço pelo pão de cada dia
+
+          C9                  D  D4  D
+Que o Senhor nunca deixou faltar
+
+        G9                   D/F#
+Te agradeço pela nossa harmonia
+
+       G/F                   C/E
+Só em Ti Senhor podemos confiar
+
+           Am7                 G/B
+Já Te agradeço pelas Tuas maravilhas
+
+        C9               C9/E     D4
+E os milagres que ainda há de operar
+D
+
+[Refrão]
+
+           G9    G/B     C/E
+A minha família       é benção do
+D/F#
+Senhor
+
+      D/C       G/B         C9
+Me ensina a tratar minha família com
+D4  D
+amor
+
+               Em7  G/B  C9
+Edifica minha casa      para o teu
+G/B
+louvor
+
+   C9      G/D           C/D
+A minha família é um presente do
+G  C/E  D/F#
+Senhor
+
+           G9      C/E          D/F#
+A minha família é benção do Senhor
+
+      D/C       G/B         C9
+Me ensina a tratar minha família com
+D4
+amor
+
+    D          Em7  G/B  C9
+Edifica minha casa      para o teu
+G/B
+louvor
+
+   C9      G/D           C/D
+A minha família é um presente do
+G/D
+Senhor
+
+           G9    G/B     C/E
+A minha família       é benção do
+D/F#
+Senhor
+
+                G/B         C9
+Me ensina a tratar minha família com
+D4  D
+amor
+
+               Em7  C9            G/B
+Edifica minha casa para o teu louvor
+
+   C9      G/D           C/D         G
+A minha família é um presente do
+Senhor
+
+( G/B  C/E  C9  D/F#  Am )
+
+           G/B     C/E          D/F#
+A minha família é benção do Senhor
+
+      D/C       G/B         C9
+Me ensina a tratar minha família com
+D4  D
+amor
+
+               Em7  G/B  C9
+Edifica minha casa      para o teu
+G/B
+louvor
+
+   C9      G/D           C/D         G
+A minha família é um presente do
+Senhor
+
+[Final] G/F  C/E  G',
+  to_tsvector('portuguese', 'Família ' || '')
+),
+(
+  'te-agradeco-kleber-lucas',
+  'Te Agradeço',
+  'Kleber Lucas',
+  'Kleber Lucas',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Ação de Graças',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F  Bb9  F/C  C#º
+
+        Dm  C/E  F  Bb9
+
+[Primeira Parte]
+
+F                  C
+  Eu Te agradeço, Deus
+
+                   Dm7
+Por se lembrar de mim
+
+              Bb9
+E pelo Teu favor
+
+                    F
+E o que me faz crescer
+
+              C
+Eu vivo pela fé, e não vacilo
+
+Dm7
+    Eu não paro, eu não desisto
+
+Bb9
+    Eu sou de Deus, eu sou de Cristo
+
+[Interlúdio] F  C  Dm7  Bb9
+
+             F  C  Dm7  Bb9
+
+F                   C
+  Eu Te agradeço, Deus
+
+                   Dm7
+Por se lembrar de mim
+
+              Bb9
+E pelo Teu favor
+
+                    F
+E o que me faz crescer
+
+              C
+Eu vivo pela fé, e não vacilo
+
+Dm7
+    Eu não paro, eu não desisto
+
+Bb9
+    Eu sou de Deus, eu sou de Cristo
+
+[Pré-Refrão]
+
+F            C
+  Você mudou a minha história
+
+Dm7
+    E fez o que ninguém
+
+Bb9
+    Podia imaginar
+
+F               C
+ Você acreditou e isso é tudo
+
+Dm7
+    Só vivo para você
+
+Bb9
+    Não sou do mundo, não
+
+[Refrão]
+
+F          C         Dm7
+  A honra, a glória, a força
+
+ Bb9
+Todo louvor a Deus
+
+F              C             Dm7
+  E o levantar   das minhas mãos
+
+              Bb9             F
+É pra dizer que Te pertenço, Deus
+
+[Segunda Parte]
+
+F                   C
+  Eu te agradeço a Deus
+
+Que no deserto
+
+ Dm7                Bb9
+Não me deixou morrer
+
+E nem desanimar
+
+F                C
+  E como aquela mãe que não desiste
+
+Dm7                      Bb9
+    Você não se esqueceu     você
+insiste
+
+[Pré-Refrão]
+
+F            C
+  Você mudou a minha história
+
+Dm7
+    E fez o que ninguém
+
+Bb9
+    Podia imaginar
+
+F                C
+  Você acreditou e isso é tudo
+
+Dm7
+    Só vivo para você
+
+Bb9
+    Não sou do mundo, não
+
+[Refrão]
+
+F          C         Dm7
+  A honra, a glória, a força
+
+ Bb9
+Todo louvor a Deus
+
+F              C             Dm7
+  E o levantar   das minhas mãos
+
+              Bb9             F
+É pra dizer que Te pertenço, Deus
+
+[Solo]
+
+F           C
+Oh! oh, oh, oh
+
+        Dm7/A
+Oh, oh, oh
+
+        Bb9
+Oh, oh, oh
+
+F           C
+Oh! oh, oh, oh
+
+        Dm7/A
+Oh, oh, oh
+
+        Bb9
+Oh, oh, oh
+
+[Pré-Refrão]
+
+F            C
+  Você mudou   a minha história
+
+Dm7
+    E fez o que ninguém
+
+Bb9
+    Podia imaginar
+
+F                C
+  Você acreditou   e isso é tudo
+
+Dm7
+    Só vivo pra você
+
+Bb9
+    Não sou do mundo, não
+
+[Refrão]
+
+F         C         Dm7
+ A honra, a glória, a força
+
+ Bb9
+Todo louvor a Deus
+
+F              C             Dm7
+  E o levantar   das minhas mãos
+
+              Bb9             F
+É pra dizer que Te pertenço, Deus
+
+          C         Dm7
+ A honra, a glória, a força
+
+ Bb9
+Todo louvor a Deus
+
+F              C             Dm7
+  E o levantar   das minhas mãos
+
+              Bb9             F
+É pra dizer que Te pertenço, Deus
+
+[Final] F  C  Dm7  Bb9
+
+        F  C  Dm7  Bb9
+
+        F  C  Dm7  Bb9
+
+        F  C  Dm7  Bb9  F',
+  to_tsvector('portuguese', 'Te Agradeço ' || '')
+),
+(
+  'de-todas-as-tribos-guilherme-kerr',
+  'De Todas As Tribos',
+  'Guilherme Kerr',
+  'Guilherme Kerr',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Entrada / Missões',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  A/D  G/D  A/D
+
+        D  A/D  G/D  A/D
+
+D           A     G      A
+De todas as tribos povos e raças
+
+D        A          G
+Muitos virão Te louvar
+
+    D       A        G           A
+De tantas culturas, línguas e nações
+
+   Em7           C      G/B       A9
+No tempo e no espaço virão Te adorar
+A  A9
+
+   D         D/F#         G
+Bendito seja sempre o cordeiro
+
+Bm7      Bm/A     G        A A9
+Filho de Deus, raiz de Davi
+
+D           D/F#        G
+Bendito seja Seu santo nome
+
+Bm7     Bm7/A   G    A    D
+Cristo Jesus, presente aqui
+
+  D         A     G         A
+Remidos comprados grande multidão
+
+D        A       G
+Muitos virão Te louvar
+
+ D       A       G       A
+Povo escolhido, Teu reino e nação
+
+   Em7          C      G/B      A9 A
+No tempo e no espaço virão te adorar
+A9
+
+  D         D/F#         G
+Bendito seja sempre o cordeiro
+
+Bm7      Bm/A     G        A A9
+Filho de Deus, raiz de Davi
+
+D           D/F#        G
+Bendito seja Seu santo nome
+
+Bm7     Bm7/A   G    A    D
+Cristo Jesus, presente aqui
+
+    D         A    G       A
+E a nós só nos cabe tudo dedicar
+
+  D      A       G
+Oferta suave ao Senhor
+
+D        A       G          A
+Dons e talentos queremos consagrar
+
+    Em7      C         G/B     A9
+E a vida no Teu altar p&#x27;ra Teu
+louvor
+
+ D         D/F#         G
+Bendito seja sempre o cordeiro
+
+Bm7      Bm/A     G        A A9
+Filho de Deus, raiz de Davi
+
+D           D/F#        G
+Bendito seja Seu santo nome
+
+Bm7     Bm7/A   G    A    D
+Cristo Jesus, presente aqui',
+  to_tsvector('portuguese', 'De Todas As Tribos ' || '')
+),
+(
+  'tu-podes-regis-danese',
+  'Tu Podes',
+  'Régis Danese',
+  'Régis Danese',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] C9  G/B  Am7  F
+
+[Primeira Parte]
+
+C9            G/B
+   Como Bartimeu
+
+                    Am
+Eu preciso de um milagre
+
+         F
+Só o Senhor pode fazer
+
+C/E                        G/B
+    Eu farei o que for preciso
+
+                    Am
+Pra que ouça minha voz
+
+            Am/G    F       C/E
+Filho de Davi    socorre-me
+
+Dm                     C/E
+   Sem ti eu sou tão frágil
+
+F                C/E
+A tua mão me sustenta de pé
+
+Dm                     C/E
+   Mesmo que tudo se acabe
+
+Dm           F9      G4  G  F
+   Ainda me resta a fé
+
+[Refrão]
+
+              C9              G/B
+O que eu não posso fazer, Tu podes
+
+     Am7                      F
+A mudança que eu preciso, Tu podes
+
+     C9                      G/B
+O milagre que eu espero, tu podes
+
+                    F
+Senhor vem me socorrer
+
+         C/E                   G/B
+O meu milagre senhor, eu tomo posse
+
+         Am7                  F
+A cura que eu preciso, eu tomo posse
+
+         C/E                    G
+A minha bênção Senhor, eu tomo posse
+
+                       F
+Abro as mãos para receber
+
+[Primeira Parte]
+
+C9            G/B
+   Como Bartimeu
+
+                    Am
+Eu preciso de um milagre
+
+         F
+Só o Senhor pode fazer
+
+C/E                        G/B
+    Eu farei o que for preciso
+
+                    Am
+Pra que ouça minha voz
+
+            Am/G    F       C/E
+Filho de Davi    socorre-me
+
+Dm                     C/E
+   Sem ti eu sou tão frágil
+
+F                C/E
+A tua mão me sustenta de pé
+
+Dm                     C/E
+   Mesmo que tudo se acabe
+
+Dm           F9      G4  G  F
+   Ainda me resta a fé
+
+[Refrão]
+
+              C9              G/B
+O que eu não posso fazer, Tu podes
+
+     Am7                      F
+A mudança que eu preciso, Tu podes
+
+     C9                      G/B
+O milagre que eu espero, tu podes
+
+                    F
+Senhor vem me socorrer
+
+         C/E                   G/B
+O meu milagre senhor, eu tomo posse
+
+         Am7                 F
+A cura que eu preciso, eu tomo posse
+
+         C/E                    G
+A minha bênção Senhor, eu tomo posse
+
+                       F
+Abro as mãos para receber
+
+              C9              G/B
+O que eu não posso fazer, Tu podes
+
+     Am7                      F
+A mudança que eu preciso, Tu podes
+
+     C9                      G/B
+O milagre que eu espero, tu podes
+
+                    F
+Senhor vem me socorrer
+
+         C/E                   G/B
+O meu milagre senhor, eu tomo posse
+
+         Am7                  F
+A cura que eu preciso, eu tomo posse
+
+         C/E                    G
+A minha bênção Senhor, eu tomo posse
+
+                       F
+Abro as mãos para receber
+
+              C9              G/B
+O que eu não posso fazer, Tu podes
+
+     Am7                      F
+A mudança que eu preciso, Tu podes
+
+     C9                      G/B
+O milagre que eu espero, tu podes
+
+                    F
+Senhor vem me socorrer
+
+         C/E                   G/B
+O meu milagre senhor, eu tomo posse
+
+         Am7                  F
+A cura que eu preciso, eu tomo posse
+
+         C/E                    G
+A minha bênção Senhor, eu tomo posse
+
+                       F
+Abro as mãos para receber
+
+[Final] C9  G/B  F  C',
+  to_tsvector('portuguese', 'Tu Podes ' || '')
+),
+(
+  'nao-ha-deus-como-tu-elizeu-gomes',
+  'Não Há Deus Como Tu',
+  'Elizeu Gomes',
+  'Elizeu Gomes',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  10,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  'D   A/C#  Bm   Bm/A
+Não há Deus como tu
+
+       G    A     D  D7  D7/4
+Não há Deus como tu
+
+        G               A
+Que guerreia as minhas guerras
+
+      D     A/C#   Bm
+E me faz um vencedor
+
+        G   A     D  D7  D7/4
+Não há Deus como tu
+
+   G          A            D  D7  D7/4
+Eu abro o coração pra te adorar
+
+     G           A              D  D7
+Levanto as minhas mãos pra te exaltar
+D7/4
+
+   G             A     A#°
+Eu ergo a minha voz pra te
+Bm  Bm/A  E/G#    E
+louva---aa---aa
+
+  Em    G    A    D           (Bm)
+Não há Deus como tu',
+  to_tsvector('portuguese', 'Não Há Deus Como Tu ' || '')
+),
+(
+  'terco-da-misericordia-instituto-hesed',
+  'Terço da Misericórdia',
+  'Instituto Hesed / Irmã Kelly Patrícia / Irmã Maria Raquel',
+  'Instituto Hesed / Irmã Kelly Patrícia / Irmã Maria Raquel',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Devoção / Misericórdia',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C                        G
+ Eterno pai, eu vos ofereço
+
+  Am        G          C            Em
+O corpo e o sangue, a alma e a
+divindade
+
+    Am                    G
+De vosso diletíssimo filho
+
+         C            Am
+Nosso senhor Jesus      cristo
+
+      Dm
+Em expiação dos nossos pecados
+
+Am                G
+E do mundo inteiro
+
+       C              G
+ Pela sua dolorosa paixão
+
+       Dm        Am                G
+Tende misericórdia de nós e do mundo
+inteiro (10x)
+
+      Am           C            G
+Deus santo, Deus forte, Deus imortal
+
+      Dm              Am
+Tende piedade de nós e do mundo
+G
+inteiro (3x)',
+  to_tsvector('portuguese', 'Terço da Misericórdia ' || '')
+),
+(
+  'transformando-dor-em-amor-instituto-hesed',
+  'Transformando Dor Em Amor',
+  'Instituto Hesed / Irmã Maria Raquel',
+  'Instituto Hesed / Irmã Maria Raquel',
+  'F',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F  Am  G  F  Am  G
+
+         F
+Transformando dor em amor pelo poder
+G
+da minha fé
+
+         F
+Transformando dor em amor pelo poder
+G
+da minha fé
+
+            Am
+A cada lágrima
+
+              F
+A cada escuridão
+
+                 G
+A cada prece eu sei
+
+            Am
+A cada lágrima
+
+               F
+A cada escuridão
+
+                G
+A cada prece eu sei
+
+             C
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+              Am             F
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+             C
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+              Am             F
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+[Intro] F  Am  G  F  Am  G
+
+         F
+Transformando dor em amor pelo
+F7M          G
+poder da minha fé
+
+         F
+Transformando dor em amor pelo
+F7M          G
+poder da minha fé
+
+            Am
+A cada lágrima
+
+              F
+A cada escuridão
+
+                 G
+A cada prece eu sei
+
+            Dm
+A cada lágrima
+
+             C/E
+A cada escuridão
+
+                 G
+A cada prece eu sei
+
+             C
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+            Am                F
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+             C
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+            Am               F
+Eu tenho um Deus que não se cansa de
+G
+me levantar
+
+             C/G              G/B G
+Eu tenho um Deus que não se cansa
+
+              Am             F
+Eu tenho um Deus que não se cansa de
+G
+me perdoar
+
+             C
+Eu tenho um Deus que não se cansa de
+G/B
+me amar
+
+              Am             F
+Eu tenho um Deus que não se cansa de
+G
+me levantar',
+  to_tsvector('portuguese', 'Transformando Dor Em Amor ' || '')
+),
+(
+  'confio-em-ti-instituto-hesed',
+  'Confio Em Ti',
+  'Instituto Hesed / Irmã Kelly Patrícia / Irmã Maria Raquel',
+  'Instituto Hesed / Irmã Kelly Patrícia / Irmã Maria Raquel',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D                   Bm
+Oh Jesus, ao teu coração
+
+F#m                    G
+Confio a minha necessidade
+
+D          Bm                 G
+Toma-a, e depois deixa o teu coração
+A
+atuar
+
+D            G        Bm
+Oh Jesus, eu conto contigo
+
+Bm            A
+Eu confio em ti!
+
+D           F#m
+Oh Jesus, em ti estou seguro
+
+G               A
+Eu me entrego a ti!
+
+Bm               F#m       Bm
+Tu disseste: se queres agradar-me,
+F#m
+confia em mim!
+
+Bm           F#m            Bm
+Se queres agradar-me mais, confia
+G    A
+mais, imensamente mais!
+
+Bm                        G   A    Bm
+Confia mais, imensamente mais, confia!
+
+                 G
+As almas que confiam em ti
+
+               Bm
+Serão recompensadas por ti
+
+            G              A
+Sagrado coração de Jesus, eu confio em
+D  D7
+ti!
+
+           G                  A
+Não há confusão que dure pra sempre
+
+Bm            G        D
+Eu sei em que acredito
+
+          F#m        Bm           D
+Minha esperança não será decepcionada!
+
+      Bm         F#m           Bm
+Tu disseste: Se queres agradar-me,
+F#m
+confia em mim!
+
+Bm             F#m
+Se queres agradar-me mais
+
+    Bm                    G    A
+Confia mais, imensamente mais!
+
+    Bm                    G   A    Bm
+Confia mais, imensamente mais, confia!',
+  to_tsvector('portuguese', 'Confio Em Ti ' || '')
+),
+(
+  'sao-muito-felizes-pe-lindberg-pires',
+  'São Muito Felizes',
+  'Pe. Lindberg Pires',
+  'Pe. Lindberg Pires',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'E         C#m            A
+São muito felizes os que creem mesmo
+B       G#
+sem ver que estás,
+
+         C#m        A               B
+Senhor Jesus sob o pão presente e vivo
+E
+no meio de nós.
+
+Refrão:
+
+C#m   B      A G#   C#m  A   B7
+EIS   O MEU CORPO: TOMAI E COMEI
+
+C#m   B      A G#   C#m   B    E
+EIS   O MEU SANGUE: TOMAI E BEBEI
+
+E       C#m              A
+Só tua vitória, sobre a morte fez nos
+B
+sorrir.
+
+  G#            C#m
+É a alegria de saber
+
+     A             B
+O futuro de nossa vida é viver junto
+E
+ao Pai.
+
+E       C#m              A
+Com esta certeza, de Teu reino estar
+B
+entre nós.
+
+  G#            C#m
+Entregamos - te Senhor,
+
+ A             B
+Nossa vida a trabalhar na construção
+E
+da paz.
+
+ E       C#m              A
+Juntos nesta hora, nós queremos te
+B
+agradecer,
+
+ G#                   C#m
+Pois tua vida em nossa vida
+
+ A             B
+Nos faz, Senhor ser sinais de um
+E
+futuro feliz.',
+  to_tsvector('portuguese', 'São Muito Felizes ' || '')
+),
+(
+  'corpo-sangue-alma-e-divindade-fraternidade-o-caminho',
+  'Corpo, Sangue, Alma e Divindade',
+  'Fraternidade O Caminho',
+  'Fraternidade O Caminho',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Comunhão / Adoração',
+  'Corpus Christi',
+  '',
+  'liturgica',
+  '[Primeira Parte]
+D            A
+Mãos que se levantam para consagrar
+Bm            A
+Lábios que se abrem para proclamar
+Em            D              E
+Santificai, ó Deus, este pão e este
+G            A             A7
+Vinho, a fim de que se torne incruento
+sacrifício
+
+[Refrão]
+D                        A
+Não é mais pão, não é mais vinho agora
+Bm                     G
+Agora humano e divino é corpo
+Em         A             A7
+Sangue, alma e divindade de Nosso
+Jesus Cristo (2x)
+
+[Segunda Parte]
+D                        A       Bm
+Isto é meu corpo: tomai e comei
+                 A
+Cálice do meu sangue: tomai e bebei
+Em         D          E
+Quem come a minha carne e bebe o
+G                        A       A7
+Meu sangue, permanece em mim e eu nele
+permanecerei
+
+[Refrão]
+D                        A
+Não é mais pão, não é mais vinho agora
+Bm                     G
+Agora humano e divino é corpo
+Em         A             A7
+Sangue, alma e divindade de Nosso
+Jesus Cristo
+
+[Terceira Parte]
+D                         A
+Para compreender grande mistério
+Em                              A
+Não se pode crer no que os olhos sobre
+o altar enxergam
+D                        A
+É preciso ver com os olhos da fé
+Em                          A
+Que apesar das aparências é Deus
+A7
+escondido
+
+[Final]
+D                              A
+Adoro-te para comungar, comungo-te
+G
+para adorar
+D                A      G
+Adoro-te para comungar, comungo-te
+A      D
+para te adorar',
+  to_tsvector('portuguese', 'Corpo, Sangue, Alma e Divindade ' || '')
+),
+(
+  'prova-de-amor-fraternidade-o-caminho',
+  'Prova de Amor',
+  'Fraternidade O Caminho',
+  'Fraternidade O Caminho',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Comunhão / Adoração',
+  'Quaresma',
+  '',
+  'adoracao',
+  'A9       E/G#     F#m
+Prova de amor maior não há
+F#m7/E   Bm7
+A de um Deus pra nos salvar
+E
+Nasceu numa manjedoura
+A9       E/G#     F#m
+Prova de amor maior não há
+F#m7/E   Bm7
+A de um Deus pra nos salvar
+E
+Morreu pregado numa cruz
+
+D        E        F#m7
+Prova de amor maior não há
+Bm7
+A que vemos neste altar
+E        A    A7
+Um Deus que se fez pão
+D        E
+Pão da vida, pão do céu
+C#m7     F#m7
+Maior prova de amor
+Bm7      E        A    A7
+Adorai o corpo do Senhor
+
+A
+O corpo de meu Deus
+E
+Faz morada em mim
+A
+O sangue de meu Deus
+E
+Purifica o meu
+F
+E corre por minhas veias
+Am
+Me traz vida e salvação
+F                      G        E
+Por onde ele passa é notável a sua
+unção',
+  to_tsvector('portuguese', 'Prova de Amor ' || '')
+),
+(
+  'como-e-bom-sentir-fraternidade-o-caminho',
+  'Como É Bom Sentir',
+  'Fraternidade O Caminho',
+  'Fraternidade O Caminho',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração / Espírito Santo',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  D/F#  Em  C  Am  D
+
+G        D/F#       Em
+Como é bom sentir o teu Amor tocar em
+mim
+C                            Am
+Como é bom sentir o teu Amor tocar em
+mim
+D
+O teu Amor tocar em mim (2x)
+
+G        D/F#       Em
+Como é bom sentir o teu Amor tocar em
+mim
+C                            Am
+Como é bom sentir o teu Amor tocar em
+mim
+D
+O teu Amor tocar em mim
+
+G         D/F#     Em
+Brisa suave, vento impetuoso
+C9                  Am
+Chama que queima, purifica, fogo que
+D
+devora',
+  to_tsvector('portuguese', 'Como É Bom Sentir ' || '')
+),
+(
+  'celebrai-alianca-de-misericordia',
+  'Celebrai',
+  'Comunidade Aliança de Misericórdia',
+  'Comunidade Aliança de Misericórdia',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  10,
+  'Entrada / Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] D  A  G  D7M
+        Bm  A  G  D  A
+
+D                          A
+Diga a todos que Deus é bom
+      G                  A
+Proclamai as maravilhas de Deus
+       Bm               A
+Com misericórdia vida eterna o mundo
+G
+alcançará
+D                          A
+Diga a todos que Deus é bom
+      G                  A
+Proclamai as maravilhas de Deus
+       Bm               A
+Com misericórdia vida eterna o mundo
+G
+alcançará
+
+Em                  A
+Fomos alcançados por ti o teu coração
+D   Bm7
+quero expressar
+     G           Em
+Teu amor me alcançou pelo mundo eu vou
+A
+proclamar
+
+[Refrão]
+      G             A
+Celebrai as maravilhas de Deus
+      F#m           Bm7
+Uma aliança de misericórdia
+      G             A
+Teu amor em mim revelará sua
+C   A7
+misericórdia
+      G             A
+Celebrai as maravilhas de Deus
+      F#m           Bm7
+Uma aliança de misericórdia
+      G             A
+Teu amor em mim revelará sua
+G   A7
+misericórdia',
+  to_tsvector('portuguese', 'Celebrai ' || '')
+),
+(
+  'seduziste-me-alianca-de-misericordia',
+  'Seduziste-me',
+  'Comunidade Aliança de Misericórdia',
+  'Comunidade Aliança de Misericórdia',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  15,
+  'Adoração / Vocacional',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  C  G  C
+
+G            C
+Tu fostes mais forte que eu
+G
+Tu me dominastes Senhor
+C
+E agora eu posso dizer
+Cm6         G
+Seduziste-me Senhor
+C
+Tua voz eu posso ouvir
+G
+Teu amor que me conquistou
+Am7
+E agora eu posso dizer
+D4        D     C   F7
+Estou aqui meu Senhor, meu Senhor
+
+[Refrão]
+      G        D/F#
+Seduziste-me Senhor
+    C9
+E eu me deixei seduzir
+    Em      D      C9    D4
+Pelo teu amor, por isso estou aqui
+      G        D/F#
+Seduziste-me Senhor
+    C9
+E eu me deixei seduzir
+    G/B      Am7    D4    D
+Ouvir tua voz dizendo
+    G    G/B   C9
+Vinde a mim
+    D4   Em   Bm7   C9
+Vinde a mim
+
+[Final]
+G  C/G  G  F  C/E  G',
+  to_tsvector('portuguese', 'Seduziste-me ' || '')
+),
+(
+  'verdade-alianca-de-misericordia',
+  'Verdade',
+  'Comunidade Aliança de Misericórdia',
+  'Comunidade Aliança de Misericórdia',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Bm7  F#m  A  E
+        D  F#m  A  E  D
+
+A    D/A    A    Bm7
+Diante de você, oh Verdade
+D
+As minhas máscaras caem
+A
+Minha falsa identidade
+D               E/G#         A    F#m
+As mentiras que eu acreditava sobre
+mim
+G          D       E4    E
+Eu que acreditava ser quem eu sou
+
+Bm7              F#m
+Senhor vós me sondais e conheceis
+Bm7              F#m
+Sabeis quando me sento e me levanto
+G                  A
+Conheces o mais íntimo de mim
+Bm7          D          E4    E
+Tu sondas as profundezas do meu ser
+
+[Refrão]
+G    D    A    E
+Haaaa misericórdia e amor
+G    D    A            E4
+Verdade encarnada, minha imagem
+resgatou
+G    D    A    E
+Haaaa misericórdia e amor
+G    D    A            E4
+Beleza encarnada, minha imagem
+restaurou
+
+[Final]
+Bm7  F#m  A  E  D
+Nana nana, nana nana
+Bm7  F#m  E  D
+Nana nana, nana nana',
+  to_tsvector('portuguese', 'Verdade ' || '')
+),
+(
+  'eu-te-ofereco-o-meu-viver-pe-jose-candido',
+  'Eu Te Ofereço o Meu Viver',
+  'Padre José Cândido',
+  'Padre José Cândido',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C    Em    Am    Em
+Eu te ofereço o meu viver
+C    Am    D7    G
+O meu agir, meu pensamento
+C    Em    Am    Em
+A minha força, minha fraqueza
+C    Am    D7    G
+Eu fui chamado para a doação
+
+[Refrão]
+F                 C         F
+Neste ofertório, renovarei
+C
+F                   C       D7 G
+O meu desejo de servir
+F               C          F
+Mesmo sabendo que nada sou
+C
+F                C         G7 C
+Eis-me, Senhor, aqui estou
+
+C    Em    Am    Em
+Quem me seguir terá que sofrer
+C    Am    D7    G
+Tomar a cruz e ser pregado
+C    Em    Am    Em
+A cruz sem ti, quem vai suportar
+C    Am    D7    G
+Porém contigo não é nada
+
+C    Em    Am    Em
+Minha alegria é ser presença
+C    Am    D7    G
+É ser sinal de esperança
+C    Em    Am    Em
+Farei da vida a oblação
+C    Am    D7    G
+Que tu fizeste ao Pai de todos nós',
+  to_tsvector('portuguese', 'Eu Te Ofereço o Meu Viver ' || '')
+),
+(
+  'anunciai-pelo-mundo-pe-jose-candido',
+  'Anunciai Pelo Mundo',
+  'Padre José Cândido',
+  'Padre José Cândido',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D    Em    F#m    Gm
+Anunciai pelo mundo e pregai
+D    E7    A7
+Meu amor e minha paz
+D    Em    F#m    Gm
+Eu vos ungi, vos escolhi, vos amei
+D    A7    D    D7
+Ide amar o povo meu
+
+[Refrão]
+G          G#º    D    B7
+Sois minhas mãos, pra abençoar
+Em    A7    D    D7
+Meu coração, pra muito amar
+G          Em    D    B7
+Sois os meus lábios pra profetizar
+E7    A    A7
+Somos os Teus operários, Senhor
+
+G          G#º    D/A    B7
+Sois luz do mundo pra iluminar
+Em    A7    D    D7
+Sois sal da terra para transformar
+G          Em    D    B7
+Sois meus amigos, agradecemos
+E7    A    A7
+Somos os Teus operários, Senhor',
+  to_tsvector('portuguese', 'Anunciai Pelo Mundo ' || '')
+),
+(
+  'a-semente-brotou-e-cresceu-pe-jose-candido',
+  'A Semente Brotou e Cresceu',
+  'Padre José Cândido',
+  'Padre José Cândido',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G                    C            Am
+1. A semente brotou e cresceu, porque
+D7    G    D7
+eu acolhi a voz do Senhor
+G                    C            Am
+Ele fala por meio da Bíblia, o livro
+D7    G
+que ensina a gente o amor
+
+[Refrão]
+D7                        G        Em
+Deus é Pai, Deus é bom pra nós
+Am         D7           G
+Sua palavra é de salvação
+G7                         C        E
+Pois a vida que Ele nos dá
+Am         D7           G
+Satisfaz nosso coração
+
+G                    C
+2. Oferendas que mais vos agradam,
+Am    D7    G    D7
+Senhor, são as obras de um bom coração
+G                    C
+São os passos que damos na vida,
+Am    D7    G
+em caminho da nossa libertação
+
+G                    C            Am
+3. Na missão que de vós recebemos, com
+D7    G    D7
+firmeza devemos, Senhor, lutar
+G                    C            Am
+Defendendo os valores humanos, para o
+D7    G
+mundo poder melhorar',
+  to_tsvector('portuguese', 'A Semente Brotou e Cresceu ' || '')
+),
+(
+  'o-teu-amor-nao-falha-gustavo-osterno',
+  'O Teu Amor Não Falha',
+  'Gustavo Osterno / Guilherme Pontes / Comunidade Católica Shalom',
+  'Gustavo Osterno / Guilherme Pontes / Comunidade Católica Shalom',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Am  F  C  G  (2x)
+
+Am        F
+Quando a noite vai chegando
+C          G
+E então penso em desistir
+Am        F          C   G
+Clamo o Teu nome, Jesus
+Am        F
+Quando as forças se acabam
+C          G
+E me canso de lutar
+Am        F          C   G
+Clamo o Teu nome, Jesus
+
+[Refrão]
+F           C          G
+Tu és o mesmo pra sempre
+Dm       F
+Teu amor não muda
+C                       G    Dm
+Se o choro dura uma noite
+      F
+A alegria vem pela manhã
+C                       G
+Se o mar se enfurecer
+     Dm       F
+Eu não tenho o que temer
+C                       G
+Porque eu sei que me amas
+     Dm       F
+Teu amor não falha
+
+[Segunda Parte]
+Am           F
+Nada vai me separar
+C                  G
+Mesmo se eu me abalar
+Am        F         C   G
+Teu amor não falha
+Am           F
+Mesmo sem merecer
+C                             G
+Tua graça se derrama sobre mim
+Am        F         C   G
+Teu amor não falha
+
+[Ponte]
+F           Am         G
+Fazes que tudo coopere para o meu bem',
+  to_tsvector('portuguese', 'O Teu Amor Não Falha ' || '')
+),
+(
+  'jesus-manso-e-humilde-de-coracao-juninho-cassimiro',
+  'Jesus, Manso e Humilde de Coração',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G               Bm     C       G
+Jesus manso e humilde, de coração
+
+C           G              D
+Dai-me um coração igual ao Teu
+
+           C
+Um coração novo
+
+               Bm
+Um coração de carne
+
+               C    D
+Um coração que ama
+
+         C          Am            D
+Criai em mim um coração que seja puro
+Bm
+
+      C            Am            D
+E renovai em mim o vosso Santo
+Espírito
+
+              G           D/F#
+De Vossa face não me rejeiteis ó
+Em
+Senhor
+
+              G           D/F#
+De Vossa face não me rejeiteis ó
+Em
+Senhor',
+  to_tsvector('portuguese', 'Jesus, Manso e Humilde de Coração ' || '')
+),
+(
+  'o-beijo-mistico-part-vinicius-oliveira-juninho-cassimiro',
+  'O Beijo Místico (part. Vinicius Oliveira)',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  22,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Am  Bm  C  D
+
+G7M
+Bem no centro do meu coração
+
+                Am7
+Há o desejo de unir-me a Ti
+
+               Bm7             C
+Deus de Deus e Luz da Luz, Cordeiro
+D
+imolado
+
+G7M
+Hóstia consagrada sobre o altar
+
+                      Am7
+Ardentemente quer se consumir
+
+               Bm7        C          D
+Em minha pobre alma e encher-me de
+alegria
+
+( Am7  Bm7  C  D  B7 )
+
+Em7      Bm7                    C
+És o Sol, que ilumina-me por inteiro
+
+G/B Am7        Bm7     C        D7(4)
+   Adoro-te, adoro-te, abandono-me
+D7
+
+               G
+Te comungar Jesus como se fosse a
+C
+primeira vez
+
+        G/B     Am7        F      D
+Como se fosse a última e a única vez
+
+  G7M
+O Belo dia entre todos
+
+                   Am7
+O beijo místico de meu Jesus
+
+             Bm7      C         D
+Um beijo de amor, só sinto-me amado
+E7
+
+    A7M
+Por Ti morrer, Beleza Eterna
+
+                    Bm7
+És o meu tesouro és tudo
+
+        C#m7      D       E
+Amo-te, dou-me a Ti para sempre
+
+( Bm7  C#m7  D  E  Fm  C#° )
+
+F#m7     C#m7                    D
+És o Sol, que ilumina-me por inteiro
+
+A/C# Bm7        C#m7    D       E7(4)
+    Adoro-te, adoro-te, abandono-me
+E7
+
+               A
+Te comungar Jesus como se fosse a
+D
+primeira vez
+
+        A/C#    Bm7        E4      E7
+Como se fosse a última e a única vez
+
+               A
+Te comungar Jesus como se fosse a
+D
+primeira vez
+
+        A/C#    Bm7        G        E
+Como se fosse a última e a única ve-ez
+
+               A
+Te comungar Jesus como se fosse a
+D
+primeira vez
+
+        A/C#    Bm7        E4      E7
+Como se fosse a última e a única vez
+
+               A
+Te comungar Jesus como se fosse a
+D
+primeira vez
+
+        A/C#    Bm7    G      E  A7M
+Como se fosse a última e a única ve-ez',
+  to_tsvector('portuguese', 'O Beijo Místico (part. Vinicius Oliveira) ' || '')
+),
+(
+  'da-me-tua-graca-juninho-cassimiro',
+  'Dá-me Tua Graça',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'F7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F7M  Em7  Dm7  G
+
+[Primeira Parte]
+
+Am7
+      Pobre desse olhar
+
+         F7M
+Que se encanta e se prende nas coisas
+que a
+
+   Em7
+Ferrugem corrói
+
+Am7
+      Não faço o bem que quero
+
+      Em7
+Mas o mal que não
+
+Quero_oooo
+
+ Am            Dm7         G  G/B
+Faço o que aborreço_oooooo
+
+C
+   Eu ponho em ti minha
+
+    Am7
+Esperança
+
+     Dm
+Pois quando eu me sinto fraco
+
+ F            G
+Então é que sou forte
+
+C
+   Eu ponho em ti minha
+
+     Am
+Esperança
+
+      Dm7
+Pois quando eu me sinto fraco
+
+  F             G  G/B
+Então é que sou forte
+
+[Pré-Refrão]
+
+        F
+O meu amparo é o
+
+                 Em7
+Senhor, o meu sustento és Tu Senhor,
+sem a Tua
+
+  Dm             Am7
+Graça ninguém é forte
+
+           G
+Ninguém é Santo
+
+[Refrão]
+
+            F
+Dá-me Tua Graça
+
+            Em7
+Dá-me Tua Graça
+
+           Dm7   Am7
+Dá-me Tua Graça Amado
+
+ G
+Meu',
+  to_tsvector('portuguese', 'Dá-me Tua Graça ' || '')
+),
+(
+  'te-buscar-juninho-cassimiro',
+  'Te Buscar',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'D7M',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  13,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D7M             F#m7
+És a luz que eu busco toda noite
+
+G7M           A#7M        A7(4/9)
+És a voz que preciso nas manhãs
+
+D7M             F#m7
+O abrigo que eu busco no cansaço
+
+G7M           A#7M        A  D/F#
+És a força que me faz levantar
+
+G7M                             F#m7
+A companhia que eu preciso no deserto
+
+                                 Em11
+É o calor que eu procuro no inverno
+
+       A#7M      A  D/F#
+Sempre ouço que Tu és
+
+G7M                              F#m7
+A companhia que eu preciso no deserto
+
+                                 Em11
+É o calor que eu procuro no inverno
+
+       A#7M      A  D/F#
+Sim eu sei que Tu és
+
+G7M
+O cordeiro de Deus
+
+       Em7
+És a estrela da manhã
+
+     F#m7
+És o Leão de Judá
+
+     G7M
+Onde moras?
+
+A  D/F#              G7M
+Onde estás que eu irei
+
+      Bm            A        G7M
+Não espero mais um segundo eu irei
+
+ A     D/F#           G7M
+Onde estás, que eu irei
+
+(Bm  A)
+
+A#7M                Am7
+Durante as noites busquei
+
+                        A#7M
+No meu leito eu sempre busquei
+
+                     Am7  Dm7  (Am7)
+Aquele que meu coração ama
+
+A#7M            Am7
+Vou levantar e correr por todo canto
+
+           Gm7     A#7M      A   D/F#
+Em todo lugar... até O encontrar
+
+G7M
+O cordeiro de Deus
+
+       Em7
+És a estrela da manhã
+
+     F#m7
+És o Leão de Judá
+
+     G7M
+Onde moras?
+
+A  D/F#              G7M
+Onde estás que eu irei
+
+      Bm            A        G7M
+Não espero mais um segundo eu irei
+
+ A     D/F#           G7M
+Onde estás, que eu irei
+
+( Bm  A )
+
+G7M
+Hoje eu quero te encontrar
+
+F#m7
+Com toda força venho te buscar
+
+Em7     Bm    A    D/F#
+Iê, Iê, Iê, Iê
+
+G7M
+Hoje eu quero te encontrar
+
+F#m7
+Com toda força venho te buscar
+
+Em7     Bm    A    D/F#
+Iê, Iê, Iê, Iê',
+  to_tsvector('portuguese', 'Te Buscar ' || '')
+),
+(
+  'te-amar-juninho-cassimiro',
+  'Te Amar',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'A7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A7M   D9     A7M  D9
+
+   A7M        A7M(9)      D9
+Te amar  Te amar Te amar e desprezar
+tudo que é meu
+
+   A7M        A7M(9)  A/C#    D9
+Te amar  Te amar Te amar e assim
+correr para tua cruz
+
+Bm7               C#m7        D
+   Pois nada mais necessito,     só
+E4     E
+uma coisa é preciso
+
+        F#m7    E       A/C#    D9
+Estar perto de Ti,    estar perto de
+Ti
+
+            F#m7   E       A/C#     D9
+   estar perto de Ti,    estar perto
+de Ti
+
+*solo:  A7M   D9     A7M  A/C#  D9
+
+   A7M       A7M(9)   A/C#    D9
+D7M(9)
+Te amar Te amar Te amar    e me
+demorar junto a Tua cruz
+
+   A7M       A7M(9)    A/C#      D9
+Te amar Te amar Te amar    e deixar
+morrer tudo o que é meu
+
+Bm7               C#m7   D
+  Pois só Tua graça me basta ,  Quero
+E4          E
+subir as montanhas
+
+          F#m7   E       A/C#       D9
+E Te buscar meu Senhor,     e Te
+buscar meu Senhor
+
+          F#m7   E       A/C#       D9
+E Te buscar meu Senhor,     e Te
+buscar meu Senhor
+
+Bm7               C#m7        D9
+  Ficar aos pés da tua cruz     Te
+E4      E
+olhar e ver que me olhas
+
+         F#m7  E    A/C#      D9
+E Te amar meu Senhor,   estar perto de
+Ti
+
+          F#m7   E   A/C#       D9
+E Te buscar meu Senhor,     Te amar
+A7M
+meu Jesus',
+  to_tsvector('portuguese', 'Te Amar ' || '')
+),
+(
+  'em-busca-do-amado-juninho-cassimiro',
+  'Em Busca do Amado',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'G             Am7
+Desejosa esta minh&#x27;alma de
+Bm7      Am7
+encontrar o seu amor
+
+        G          Am7             Bm7
+Sai cantando na colina à pra procurar,
+C9
+seja onde for
+
+   Am7          Bm7              Am7
+Diante de um espelho ver suas manchas
+Bm7
+e sua dor
+
+   Am7          Bm7         Am/C
+Sozinha no deserto vai clamando o seu
+C/D
+amor
+
+G            Am7         Bm7
+Só quem satisfaz a minha alma é o meu
+C9
+Jesus
+
+      G            Am7
+Eu preciso te encontrar meu doce
+Bm7           D4 D
+amigo, me abandonar
+
+           Am7    Bm7      Am7
+Sei que a tua piedade pode sempre me
+Bm7
+alcançar
+
+  Am7      Bm7           C9
+A tua compaixão lhe traz aqui pra me
+D4 D
+abraçar
+
+             G  Bm
+Me acolhe Jesus
+
+             C9         D/F#
+Deixa em tua casa eu adentrar
+
+               Bm7             Em7
+Eu tiro as sandálias dos meus pés
+
+        Am7                   D4
+Eu renuncio o mal que há em mim
+
+             G  Bm
+Me acolhe Jesus
+
+                 C9         D/F#
+Eu quero em Teus átrios adentrar
+
+          Bm7             Em7
+Eu me abandono em Teu coração
+
+          Am7                D4
+Eu já não existo e só quero ser
+
+               C9  Em7 C9 Em7 C9
+Se for com o Senhor',
+  to_tsvector('portuguese', 'Em Busca do Amado ' || '')
+),
+(
+  'quero-o-corpo-e-sangue-part-maria-clara-falcao-juninho-c',
+  'Quero o Corpo e Sangue (part. Maria Clara Falcão)',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  16,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] A  Em  E  F#m
+
+        D  Bm  E  A
+
+        E4  E
+
+  A           E         F#m
+Quem pode deixar de te amar
+
+      E                D7M
+Te olhando assim no altar
+
+       A           Bm
+A tua luz e o teu corpo
+
+D               Eb°        A
+Ser reflexo de Deus me consola
+
+       F#m        B4
+Quero ser feliz agora
+
+      B            E       E5+
+Algo vai mudar em mim vai sim
+
+ A          E          F#m
+Sinto que aqui é meu lugar
+
+         E       A     D7M     A
+Neste encontro quero estar repleto de
+Bm
+tua graça
+
+D        Ebº      A           F#m
+Alivia o meu coração traz pra mim o
+B4
+teu perdão
+
+            B     E4   E
+Teu perfume me arrasta
+
+  D              E          F#m  E
+Quero o corpo e sangue de Jesus
+
+D     E               F#m
+Vencedor por mim na cruz
+
+D    E        A  E/G#    F#m      D
+Alegria de viver vida da vida é você
+
+        E            A    D7M E A F#m
+Deus de Deus a me querer
+Bm E
+
+( F#m  C#m  D  A )
+
+( Dm  A  Dm  A )
+
+A           E           F#m
+Tantos como eu aqui vão ter
+
+         E           D7M
+Neste encontro com você
+
+    A               Bm   A
+Um dom que é tão sublime
+
+Dm7            Ebº           A
+E então a cada passo em teu rumo
+
+    F#m           B4
+De amor eu me consumo
+
+      B             E
+Se você sorrir pra mim. Sorrir pra
+mim!
+
+  D              E          F#m  E
+Quero o corpo e sangue de Jesus
+
+D     E               F#m
+Vencedor por mim na cruz
+
+D    E        A  E        F#m      D
+Alegria de viver vida da vida é você
+
+         E            A
+Deus de Deus a me querer
+
+( D7M  E  A  F#m )
+
+( Bm  E  A )
+
+( E  A )
+
+D    E        A   E       F#m      D
+Alegria de viver vida da vida é você
+
+         E            A   F#m
+Deus de Deus a me querer
+
+D   E           A
+O pão que me agrada
+
+  F#m  E      D
+Amor que me arrasta
+
+   E           A      F#m  E
+A dor de Deus por mim
+
+Bm    Dm        C#m
+Perfume que faltava
+
+   F#m           Bm
+O sangue que me lava
+
+    Dm                A  Dm  A
+Um dom de paz sem fim
+
+      Dm       A        D  A
+Minha comunhão sem fim!',
+  to_tsvector('portuguese', 'Quero o Corpo e Sangue (part. Maria Clara Falcão) ' || '')
+),
+(
+  'sentinela-do-amanha-banda-arkanjos',
+  'Sentinela do Amanha',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Bm',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Intro:
+
+Em7(9)              C9
+No coração da noite   Pode o medo
+chegar
+
+Em7(9)              C9
+Espero ansiosamente  A luz da aurora
+aparecer
+
+       Bm                     C7M
+Eu sei, que a manhã logo vem, vem o
+Bm
+alvorecer de um novo tempo
+
+              Am
+Mas ainda é noite
+
+G                           Am
+Tenho um posto pra guardar Sou chamado
+a anunciar
+
+G                        Am
+Até meu nome Deus trocou Agora eu já
+Bm
+sei quem sou, eu sou...
+
+    C7M      Bm7
+Sentinela da Manhã
+
+       C7M                 Bm
+Que anuncia a chegada do sol
+
+     C7M                    Bm7
+Proclama que Jesus Ressuscitou
+
+Em7(9)
+C9
+Eu sei que o dia vem, Vem, maranathá
+vem
+
+Em7(9)                              C9
+Jesus minha esperança Que nunca me
+engana
+
+  Bm7                      C7M
+Eu sei mundo quer sua luz Quer o
+Bm
+alvorecer de um novo tempo
+
+               Am
+Mas ainda é noite...',
+  to_tsvector('portuguese', 'Sentinela do Amanha ' || '')
+),
+(
+  'cheiro-de-rosas-comunidade-colo-de-deus',
+  'Cheiro de Rosas',
+  'Comunidade Colo de Deus',
+  'Comunidade Colo de Deus',
+  'F#m',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Mariano / Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F#m  E  D (2x)
+
+F#m   E           D
+Estás aqui, agraciada!
+
+F#m      E          D
+Posso sentir teu perfume
+
+F#m     E           D
+Estás aqui, Mãe do meu Senhor
+
+F#m        E        D
+Vem ficar perto de mim
+
+           A9     E
+Cheiro de rosas nesse lugar
+
+ F#m    E
+Maria aqui está
+
+       F#m      D
+E o Espírito de Deus
+
+    E
+Descerá!
+
+           A9     E
+Cheiro de rosas nesse lugar
+
+    F#m      E
+A Rainha presente está
+
+     D           E
+Pentecostes acontecerá!
+
+ F#m  E  D (2x)
+
+F#m   E           D
+Estás aqui, agraciada!
+
+F#m      E          D
+Posso sentir teu perfume
+
+F#m     E           D
+Estás aqui, Mãe do meu Senhor
+
+F#m        E        D
+Vem ficar perto de mim
+
+           A9     E
+Cheiro de rosas nesse lugar
+
+ F#m    E
+Maria aqui está
+
+       F#m      D
+E o Espírito de Deus
+
+    E
+Descerá!
+
+           A9     E
+Cheiro de rosas nesse lugar
+
+    F#m      E
+A Rainha presente está
+
+     D           E
+Pentecostes acontecerá!
+
+ F#m  E  D (2x)
+
+           A9     E
+Cheiro de rosas nesse lugar
+
+ F#m    E
+Maria aqui está
+
+       F#m      D
+E o Espírito de Deus
+
+    E
+Descerá!
+
+           A9     E
+Cheiro de rosas nesse lugar
+
+    F#m    E
+A Rainha aqui está
+
+     D           E
+Pentecostes acontecerá!
+
+ F#m  E  D (2x)
+
+     D           E  A
+Pentecostes acontecerá!',
+  to_tsvector('portuguese', 'Cheiro de Rosas ' || '')
+),
+(
+  'gavetas-comunidade-colo-de-deus',
+  'Gavetas',
+  'Comunidade Colo de Deus',
+  'Comunidade Colo de Deus',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Am             G   Dm
+Ouvi meu Jesus dizer, toma sua cruz e
+F
+seguia-me
+
+ Am               G     Dm
+Ouvi meu Jesus dizer, ide por todo o
+F
+mundo
+
+ Am               G      Dm
+Eu ouvi meu Jesus dizer, venham a mim
+F
+os cansados
+
+ Am                  G    Dm
+Eu ouvi meu Jesus dizer, eu vos darei
+F
+descanso
+
+         F           Am
+Oferto a minha vida aos teus pés
+
+            C                 G
+Não deixo nada escondido em minhas
+gavetas
+
+      F             Am         G
+Eu te dou tudo que sou! Eu te dou tudo
+Dm
+que sou!
+
+( F  C  G  F  Am  G )
+
+           Am                       F
+Tens o meu coração, tens a minha vida
+em tuas mãos
+
+           C               G
+Minha esperança, estou logo atrás de
+ti
+
+          Dm                    F
+Sigo teus passos meu amado, pra onde
+eu iria?
+
+         Am                     G
+Sigo teus passos meu amado, pra onde
+eu iria?',
+  to_tsvector('portuguese', 'Gavetas ' || '')
+),
+(
+  'so-comunidade-colo-de-deus',
+  'Só',
+  'Comunidade Colo de Deus',
+  'Comunidade Colo de Deus',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  3,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D
+Não aceito menos do que ser o teu
+A
+amigo
+
+        F#m
+O teu melhor amigo
+
+        D                    A
+Só de ouvir o som da tua voz não me
+
+Sinto só
+
+          F#m     D             A
+Não me sinto só, não me sinto só
+
+                   D
+Não quero mais trocar Teu coração por
+
+      F#m
+ Outro não
+
+                                 D
+Se tirar Você de mim não sobra nada
+A
+nada
+
+            D        A
+Não sobra nada, nada
+
+                      D  A
+Sem Você me sinto só, só',
+  to_tsvector('portuguese', 'Só ' || '')
+),
+(
+  'humano-mayara-marques',
+  'Humano',
+  'Mayara Marques',
+  'Mayara Marques',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  'D
+Se tenho medo, é que sou humano
+
+                    A
+Sempre me sinto a pior
+
+               F#m
+E vivo me culpando
+
+                        C#m
+No que eu não tenho controle
+
+                   D
+E acabo me frustrando
+
+                           A
+Se eu erro é tentando acertar
+
+              F#m
+Vivo de recomeços
+
+             C#m
+Eu não vou parar
+
+              D                   A
+Começou com você, quando você me viu
+
+            F#m                  C#m
+E eu te escolhi quando você me olhou
+
+                    D
+Me apaixonei por você, Deus
+
+                          A
+Que mesmo sendo tão grande, quis
+F#m               C#m
+florescer nesse pequeno vaso eu
+
+ D       A                      F#m
+Eu, sou eu, esse pequeno vaso sou eu
+C#m',
+  to_tsvector('portuguese', 'Humano ' || '')
+),
+(
+  'irei-aos-altares-de-deus-padre-wallison-rodrigues',
+  'Irei Aos Altares de Deus',
+  'Padre Wallison Rodrigues',
+  'Padre Wallison Rodrigues',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Entrada',
+  'Qualquer',
+  '',
+  'liturgica',
+  'E                     B7
+Irei aos altares de Deus
+
+ E     E7             Am
+Irei aos altares de Deus
+
+ G#m   C#m   F#m  B7  E
+O Deus da minha alegria
+
+  E                 G#m
+Fazei-me justiça, meu Deus
+
+  A         F#m7
+Defendei a minha causa contra gente
+B7
+impiedosa
+
+  F#m             F#7           B7
+Livrai-me do homem mentiroso e
+perverso
+
+    E                   G#m
+Vós, ó Deus, sois meu refúgio
+
+  A        F#m7        B7
+Por que me abandonastes?
+
+  F#m
+Por que andar triste
+
+F#7          B7
+Sob a opressão do inimigo?
+
+    E                       G#m
+Enviai vossa luz, vossa verdade
+
+  A       F#m7                  B7
+Sejam elas o meu guia e me conduzam
+
+  F#m             F#7           B7
+Ao vosso monte santo, à vossa casa
+
+    E                   G#m
+E eu irei ao altar do senhor Deus
+
+  A      F#m7        B7
+Do Deus da minha alegria
+
+  F#m                F#7
+Ao som do instrumento o louvarei
+
+ B7
+Senhor meu Deus
+
+    E                         G#m
+Por que minh’alma entristece e
+desfalece?
+
+  A     F#m7              B7
+Espera em Deus: ainda louvarei
+
+  F#m     F#7           B7
+O meu salvador e meu Deus',
+  to_tsvector('portuguese', 'Irei Aos Altares de Deus ' || '')
+),
+(
+  'de-graca-senhor-padre-wallison-rodrigues',
+  'De Graça Senhor',
+  'Padre Wallison Rodrigues',
+  'Padre Wallison Rodrigues',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G      D/F#    Em       Am
+De graça Sen -  hor, os  dons nós
+D
+recebemos
+
+      C         G      D7         G
+E em honra de Maria, a Vós
+apresentamos
+
+      C         G      D7         G
+E em honra de Maria, a Vós
+apresentamos
+
+    G           C          D
+Bendito senhor Deus, do universo
+G
+criador
+
+       C     G/B   Am           D
+Pelos frutos desta terra, bendigamos
+C/D    G
+ao senhor
+
+    G           C          D
+Bendito senhor Deus, do universo
+G
+criador
+
+      C     G/B  Am          D
+Pelo pão da nutrição, bendigamos
+C/D    G
+ao senhor
+
+    G           C          D
+Bendito senhor Deus, do universo
+G
+criador
+
+      C   G/B     Am        D    C/D
+Pelo vinho da alegria, bendigamos ao
+G
+senhor',
+  to_tsvector('portuguese', 'De Graça Senhor ' || '')
+),
+(
+  'confesso-a-deus-padre-wallison-rodrigues',
+  'Confesso a Deus',
+  'Padre Wallison Rodrigues',
+  'Padre Wallison Rodrigues',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  11,
+  'Ato Penitencial',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D
+Confesso a Deus
+
+Em        A
+Todo-poderoso
+
+    F#m    F#m7     Bm
+E a vós, irmãos e irmãs
+
+      Em          A
+Que pequei muitas vezes
+
+         F#m         F#m/C#
+Por pensamentos e palavras
+
+Bm        Bm/D
+Atos e omissões
+
+Bm7       Em
+Por minha culpa
+
+      A
+Minha culpa
+
+      A7         D
+Minha tão grande culpa
+
+         D
+E peço à Virgem Maria
+
+    G
+Aos Anjos e Santos
+
+    Bm              D
+E a vós, irmãos e irmãs
+
+      Em              A     A7      D
+Que rogueis por mim a Deus, nosso
+Senhor',
+  to_tsvector('portuguese', 'Confesso a Deus ' || '')
+),
+(
+  'deus-sacia-seu-povo-padre-wallison-rodrigues',
+  'Deus Sacia seu povo',
+  'Padre Wallison Rodrigues',
+  'Padre Wallison Rodrigues',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C           E7           Am
+Deus é a Fonte e Princípio deste mundo
+
+   G         C
+Criou todo vivente
+
+    G7           C   G
+Moldou seus corações
+
+          C          E7        Am
+Rompeu o véu que encobria cada rosto
+
+    G         C
+Chamou a conhecê-lo
+
+   G7           C   C7
+Feliz contemplação
+
+      F
+Pai Eterno
+
+   D7           G
+Bendito sejais vós!
+
+C   F                    C
+Saciais com ‘Maná’sempre novo
+
+          G7                  C   C7
+A fome do povo – Pão de Salvação
+
+      F
+Jesus Cristo
+
+    D7              G
+É o Pão descido do céu
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+          C              E7        Am
+Deus libertou seu povo outrora no
+Egito
+
+   G           C
+Cercou-o de cuidado
+
+    G7              C   G
+Guardou com muito amor
+
+            C           E7          Am
+Deu face a face os mandamentos da
+Aliança
+
+    G             C
+Em nuvem sobre a terra
+
+   G7           C   C7
+Desceu em esplendor
+
+      F
+Pai Eterno
+
+   D7           G
+Bendito sejais vós!
+
+C   F                    C
+Saciais com ‘Maná’sempre novo
+
+          G7                  C   C7
+A fome do povo – Pão de Salvação
+
+      F
+Jesus Cristo
+
+    D7              G
+É o Pão descido do céu
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+             C        E7          Am
+“Eu sou” – Aquele que é e sempre será!
+
+    G            C
+– Revela o Santo Nome
+
+   G7         C    G
+Do Verdadeiro Deus
+
+        C            E7          Am
+Em providência Ele ampara o seu povo
+
+    G            C
+Bondade de suas mãos
+
+    G7            C    C7
+Que ultrapassa os Céus
+
+      F
+Pai Eterno
+
+   D7           G
+Bendito sejais vós!
+
+C   F                    C
+Saciais com ‘Maná’sempre novo
+
+          G7                  C   C7
+A fome do povo – Pão de Salvação
+
+      F
+Jesus Cristo
+
+    D7              G
+É o Pão descido do céu
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+Deus habitou no meio dos que Ele
+elegeu
+
+Mostrou a sua Glória
+
+– Mistério de bondade
+
+Eternamente desposou a humanidade
+
+Amou com amor eterno
+
+Amou-a na verdade
+
+      F
+Pai Eterno
+
+   D7           G
+Bendito sejais vós!
+
+C   F                    C
+Saciais com ‘Maná’sempre novo
+
+          G7                  C   C7
+A fome do povo – Pão de Salvação
+
+      F
+Jesus Cristo
+
+    D7              G
+É o Pão descido do céu
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+Deus enviou seu Filho Amado a este
+mundo
+
+Suprema caridade
+
+Que emana Salvação
+
+À comunhão de sua vida e sua glória
+
+Chamou todo vivente
+
+– Sublime Encarnação
+
+      F
+Pai Eterno
+
+   D7           G
+Bendito sejais vós!
+
+C   F                    C
+Saciais com ‘Maná’sempre novo
+
+          G7                  C   C7
+A fome do povo – Pão de Salvação
+
+      F
+Jesus Cristo
+
+    D7              G
+É o Pão descido do céu
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação
+
+ C    F                 C
+Eis a festa da ‘Nova Aliança’
+
+             G7              C
+Bendita esperança de libertação',
+  to_tsvector('portuguese', 'Deus Sacia seu povo ' || '')
+),
+(
+  'como-e-bom-bendizer-ofertorio-padre-wallison-rodrigues',
+  'Como É Bom Bendizer! (Ofertório)',
+  'Padre Wallison Rodrigues',
+  'Padre Wallison Rodrigues',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  'G                     D   C
+  Como é bom te bendizer,    ao cantar
+G
+os nossos versos
+
+       G7         C            D
+Senhor Deus do universo:"Sê bendito
+G
+para sempre!"
+
+                   D      C
+1. Sê bendito para sempre,   Senhor,
+G
+Deus do universo
+
+      G7            C    D
+Do nascer ao pôr do sol,    o teu Nome
+G     G7
+é louvado
+
+                 C          D
+Cantaremos o teu Nome em sublime
+G
+louvação
+
+                   D      C
+2. Sê bendito para sempre,    Senhor,
+G
+Deus do universo
+
+      G7           C   D
+Pelo teu imenso amor      que envolve
+G     G7
+a criação
+
+                  C          D
+Cantaremos o teu amor em sublime
+G
+louvação
+
+                   D      C
+3. Sê bendito para sempre,    Senhor,
+G
+Deus do universo
+
+      G7            C     D
+Pelos frutos desta terra,      no
+G     G7
+labor da criação
+
+                    C           D
+Cantaremos os teus feitos com sublime
+G
+louvação',
+  to_tsvector('portuguese', 'Como É Bom Bendizer! (Ofertório) ' || '')
+),
+(
+  'devo-anunciar-as-cidades-dom-carlos-alberto-navarro',
+  'Devo Anunciar Às Cidades',
+  'Dom Carlos Alberto Navarro',
+  'Dom Carlos Alberto Navarro',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Final / Envio',
+  'Qualquer',
+  '',
+  'liturgica',
+  'Tom: Em
+
+   Em                 Am
+1. Devo anunciar às cidades
+
+               B7                Em
+   O Reino de Deus proclamava Jesus
+
+   D                G
+   Fui para isto mandado
+
+             F#7                    B7
+   E tão necessário que eu vá até o
+fim
+
+   Em                 Am
+   Trago a mensagem feliz
+
+                    B7
+   Vou aos pobres falar quero os
+E
+escravos livrar
+
+   Am        D#°    Em
+ |:É que o Espírito Santo me ungiu,
+C
+enviou
+
+                                   B7
+                                 Está
+Em
+sobre mim.:|
+
+   Em                   Am
+2. Tão importante é seu Reino
+
+                 B7
+   Que nada é maior, nada o pode
+Em
+igualar
+
+   D                  G
+   Reino que nos libertando
+
+              F#7                B7
+   Perdoa o pecado, destrói todo mal
+
+   Em               Am
+   Reino que dá alegria
+
+                   B7
+   De estarmos com Deus que veremos no
+E
+Céu
+
+       Am       D#°       Em
+ |:E_a_porta do Reino é a Cruz do
+Senhor
+
+                             Nosso
+C    B7   Em
+Deus imortal.:|',
+  to_tsvector('portuguese', 'Devo Anunciar Às Cidades ' || '')
+),
+(
+  'outra-vez-desces-do-ceu-dom-carlos-alberto-navarro',
+  'Outra Vez Desces do Céu',
+  'Dom Carlos Alberto Navarro',
+  'Dom Carlos Alberto Navarro',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'Am     Dm
+   Ó jesus  o pai, quando quis nos
+G         C
+salvar e remir
+
+E   Am                   F
+Desejou que nascesses também
+
+                         E
+De mulher como todos nascemos
+
+      Am     Dm
+Todo filho, então, das mulheres, teu
+G      C
+pai assumiu
+
+                        F
+O adotou para ser teu irmão
+
+                         E
+Pois a ti semelhantes seremos
+
+ Am                   Dm
+Outra vez, desces do céu
+
+     G                   C
+Por amor, e nos dás redenção
+
+         Am                F
+Que teu pai concedeu à tua mãe
+
+        E7    Am
+Desde a conceição
+
+   Am       Dm        G
+A mulher, também, ao pecar, morte e
+C
+dor nos legou
+
+E       Am                   F
+Mas teu pai fez que nova mulher
+
+                            E
+Operasse outra vez para a vida
+
+      Am     Dm       G
+Esta vida és tu, o messias que o mundo
+C
+esperou
+
+                             F
+Desde a queda dos pais, emanuel
+
+                         E
+Uma virgem nos foi prometida
+
+[Refrão]
+
+         Am     Dm        G
+Ser tua mãe, ó deus, é cumprir a mais
+C
+alta missão
+
+                                  F
+Sendo assim, desde o instante inicial
+
+                     E
+Foi imune de todo pecado
+
+         Am  Dm         G
+Quando em nazaré foi saudada por ordem
+C
+do pai
+
+                         F
+Gabriel reconhece este dom
+
+                          E
+Esta graça que é seu predicado
+
+[Refrão]
+
+     Am    Dm      G
+Com amor e fé, consentiu logo em ser
+C
+tua mãe
+
+                         F
+Sem pecado, serviu bem melhor
+
+                       E
+A pessoa e a obra do filho
+
+       Am     Dm        G
+Obediência e fé, que faltaram à
+C
+primeira mulher
+
+                           F
+Em tua serva e tua mãe, senhor
+
+                             E
+Encontrava outra vez o seu brilho
+
+[Refrão]
+
+        Am     Dm   G
+Sempre unida à ti avançou peregrina de
+C
+fé
+
+                             F
+Do natal, foi contigo até a cruz
+
+                         E
+Consentindo no teu sacrifício
+
+    Am     Dm        G
+E naquela cruz tu disseste a joão “eis
+C
+tua mãe”
+
+                            F
+E nos deste essa mãe, salvador
+
+                                 E
+Que serviu-te com amor desde o início
+
+[Refrão]
+
+  Am        Dm        G
+Pentecostes vem: os apóstolos fazem
+C
+oração
+
+                             F
+E este espírito que ela já tem
+
+                             E
+Por suas preces foi dado à igreja
+
+      Am      Dm         G
+Ao chegar ao fim de sua vida terrestre
+C
+, ó jesus
+
+                          F
+Corpo e alma levados ao céu, qual
+E
+rainha   o universo festeja',
+  to_tsvector('portuguese', 'Outra Vez Desces do Céu ' || '')
+),
+(
+  'o-coracao-do-homem-dom-carlos-alberto-navarro',
+  'O Coração do Homem',
+  'Dom Carlos Alberto Navarro',
+  'Dom Carlos Alberto Navarro',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Ato Penitencial / Quaresma',
+  'Quaresma',
+  '',
+  'liturgica',
+  'C          F  C       F
+R. O coração do ho_mem que quer
+G7    C   G7
+liber_tação
+
+     C      C7     F   F#º
+   Encontra sua respos_ta na
+G   G7    C   G7
+evangelização
+
+          C               E7
+1. Que_é evangelizar? É a todos contar
+
+            Am               E7
+   Deus nos ama com amor de Pai
+
+     F       F#º     C  Am
+   E dando o próprio Fi_lho
+
+        D7                G7
+   No Espírito os homens atrai
+
+       C                      E7
+   É dizer que em Jesus somos todos
+irmãos
+
+         Am              E7
+   Salvação tem começo aqui
+
+       F      F#º  C  Am
+   Mas só na eternida_de
+
+      D7   G7    C   G7
+   Se deve concluir
+
+        C                  E7
+2. Para_evangelizar não nos basta
+pregar
+
+        Am                 E7
+   A missão ainda é bem maior
+
+     F      F#º   C  Am
+   Fazer pessoas, po_vos
+
+     D7                   G7
+   Mudar todo o seu interior
+
+      C                     E7
+   Ajudados por Deus, converter
+corações
+
+       Am              E7
+   Renovar formas de viver
+
+     F   F#º    C  Am
+   Modificar critérios
+
+        D7 G7    C   G7
+   E_os ideais rever',
+  to_tsvector('portuguese', 'O Coração do Homem ' || '')
+),
+(
+  'o-anjo-conduz-catarina-dom-carlos-alberto-navarro',
+  'O Anjo Conduz Catarina',
+  'Dom Carlos Alberto Navarro',
+  'Dom Carlos Alberto Navarro',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Comunhão / Devoção',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C              Am   F  G7
+Comemorando as aparições
+
+        C           Am        Dm
+É impossível que alguém não sinta
+
+          E         E7      Am
+Crescer o amor pela Virgem Mãe
+
+             D7     D            G  G7
+Que veio em mil oitocentos e trinta
+
+[Refrão]
+
+      C  C7  F
+Ó Catarina, vem!
+
+        C       G7           C  G7
+A Santa Virgem quer falar a ti
+
+         C  C7  F  F7
+Ouçamos nós também
+
+          C            G7    C
+A Mãe de Deus vai nos instruir
+
+  C        Am    F G7
+É Catarina Labouré
+
+               C           Am    Dm
+Que escuta em julho a voz infantil
+
+          E      E7       Am
+Acorda e vem à capela, Irmã!
+
+             D7         D
+E em meio à noite, a Irmãzinha o
+G  G7
+seguiu
+
+[Refrão]
+
+      C  C7  F
+Ó Catarina, vem!
+
+        C       G7           C  G7
+A Santa Virgem quer falar a ti
+
+         C  C7  F  F7
+Ouçamos nós também
+
+          C            G7    C
+A Mãe de Deus vai nos instruir
+
+   C                Am        F  G7
+Ninguém notou no caminho os dois
+
+           C       Am     Dm
+Não falta luz; o menino avança
+
+            E            E7   Am
+Trancada a porta, usa um dedo só
+
+          D7              D
+Reluz a Igreja; entra a Irmã e a
+G  G7
+criança
+
+[Refrão]
+
+      C  C7  F
+Ó Catarina, vem!
+
+        C       G7           C  G7
+A Santa Virgem quer falar a ti
+
+         C  C7  F  F7
+Ouçamos nós também
+
+          C            G7    C
+A Mãe de Deus vai nos instruir',
+  to_tsvector('portuguese', 'O Anjo Conduz Catarina ' || '')
+),
+(
+  'jorra-uma-fonte-de-graca-dom-carlos-alberto-navarro',
+  'Jorra Uma Fonte de Graça',
+  'Dom Carlos Alberto Navarro',
+  'Dom Carlos Alberto Navarro',
+  'Am',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Comunhão',
+  'Qualquer',
+  '',
+  'liturgica',
+  'Am                  G
+Jorra uma fonte de graça de teu
+F                   E7
+sacrifício na cruz, o Senhor
+
+Am                  G
+Que é renovado na missa
+
+              F                    E7
+Lembrança perpétua da morte de um Deus
+Am A7
+Vencedor
+
+ Dm  G7   C          F    Dm    E7
+Evangelização, nos leva até o próprio
+Am    A7
+Deus
+
+ Dm         G7    C     Am     F   Dm
+Aqui, na eucaristia; e noutra vida que
+E7    Am   E7
+virá no céu
+
+Am                   G
+Para anunciar o evangelho, a igreja se
+F                  E7
+nutre do vinho e do pão
+
+Am                     G
+Prova de amor que nos deste
+
+            F           E7
+Exemplo de como devemos amar nosso
+Am A7
+irmão
+
+Dm  G7   C          F    Dm    E7
+Evangelização, nos leva até o próprio
+Am    A7
+Deus
+
+ Dm         G7    C     Am     F   Dm
+Aqui, na eucaristia; e noutra vida que
+E7    Am   E7
+virá no céu
+
+Am                  G
+Dizes no teu testamento que o mundo
+F                 E7
+crerá, saberá quem tu és
+
+Am                    G
+Vendo a unidade da igreja
+
+             F                  E7
+Reflexo do amor, entre ti e teu Pai,
+Am A7
+nos fiéis
+
+Dm  G7   C          F    Dm    E7
+Evangelização, nos leva até o próprio
+Am    A7
+Deus
+
+ Dm         G7    C     Am     F   Dm
+Aqui, na eucaristia; e noutra vida que
+E7    Am   E7
+virá no céu
+
+Am                 G
+Teu evangelho renova, faz dar
+F                   E7
+testemunho, nos leva a anunciar
+
+Am                    G
+Quando ele é bem acolhido
+
+            F
+Mais um coração se une ao grupo
+E7        Am A7
+cristão, para amar
+
+Dm  G7   C          F    Dm    E7
+Evangelização, nos leva até o próprio
+Am    A7
+Deus
+
+ Dm         G7    C     Am     F   Dm
+Aqui, na eucaristia; e noutra vida que
+E7    Am   E7
+virá no céu
+
+Am                 G                F
+Os pequeninos e pobres reclamam de nós
+E7
+desapego total
+
+Am                  G
+Na santidade, renúncia
+
+             F               E7
+A igreja procura imitar teu amor
+Am A7
+radical
+
+Dm  G7   C          F    Dm    E7
+Evangelização, nos leva até o próprio
+Am    A7
+Deus
+
+ Dm         G7    C     Am     F   Dm
+Aqui, na eucaristia; e noutra vida que
+E7    Am   E7
+virá no céu
+
+Am                     G
+Sempre que a igreja promove a paz,
+F              E7
+liberdade, justiça também
+
+Am                       G
+Lembra que estás em quem sofre
+
+               F
+E o amor só descansa se a dor não
+E7           Am A7
+ferir mais ninguém
+
+Dm  G7   C          F    Dm    E7
+Evangelização, nos leva até o próprio
+Am    A7
+Deus
+
+ Dm         G7    C     Am     F   Dm
+Aqui, na eucaristia; e noutra vida que
+E7    Am   E7
+virá no céu',
+  to_tsvector('portuguese', 'Jorra Uma Fonte de Graça ' || '')
+),
+(
+  'o-senhor-esta-para-chegar-padre-silvio-milanez',
+  'O Senhor Está Para Chegar',
+  'Padre Sílvio Milanez',
+  'Padre Sílvio Milanez',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Entrada / Advento',
+  'Advento',
+  '',
+  'liturgica',
+  'D          G     D
+O senhor está pra chegar
+
+      Bm        A    D  A7
+Já se cumpre a profecia
+
+      D        G    D
+O seu reino então será
+
+     Bm      A   D D7
+Liberdade e alegria
+
+       G        A9     F#m  Bm
+E as nações, enfim, recebem
+
+      Em   A9    D   D7
+Salvação a cada dia
+
+      G         A9     F#m  Bm
+E as nações, enfim, recebem
+
+      Em   A    D
+Salvação a cada dia
+
+      A9       A7        D
+Das alturas orvalhem os céus
+
+      A9          A7         D    D7
+E das nuvens, que chova a justiça
+
+       G       A9       F#m Bm
+Que a terra se abra ao amor
+
+     Em     A9         D  G D
+E germine o Deus salvador
+
+        D    G      D
+Vem de novo restaurar-nos
+
+       Bm    A9  D  A
+De que lado estará?
+
+     D    G       D
+Indignado contra nós?
+
+    Bm    A7     D  D7
+E a vida, não darás?
+
+     G     A9  F#m  Bm
+Salvação e alegria
+
+      Em       A9   D  G D
+Outra vez não buscarás?
+
+ A                 D
+Das alturas orvalhem os céus
+
+      A                      D   D7
+E das nuvens, que chova a justiça
+
+       G       A         D Bm
+Que a terra se abra ao amor
+
+     Em     A         D  G D
+E germine o Deus salvador
+
+    D      G    D
+Escutemos sua palavra
+
+     Bm       A7     D  A
+É de paz que vai falar
+
+       D          G      D
+Paz ao povo e aos seus fiéis
+
+       Bm     A7    D  D7
+A quem dele se achegar
+
+     G       A9    F#m Bm
+Está perto a salvação
+
+      Em    A9      D  G D
+E a gloria  vai voltar',
+  to_tsvector('portuguese', 'O Senhor Está Para Chegar ' || '')
+),
+(
+  'vieram-apressados-os-pastores-padre-silvio-milanez',
+  'Vieram Apressados Os Pastores',
+  'Padre Sílvio Milanez',
+  'Padre Sílvio Milanez',
+  'Bb',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  10,
+  'Entrada / Natal',
+  'Natal',
+  '',
+  'liturgica',
+  'Bb        Bb/D        Eb   Cm
+Vieram apressados os pastores
+
+       F        F7        Bb
+E encontraram maria com josé
+
+      Gm      Bb7/F      Eb   E°
+E o menino deitado no presépio
+
+      Bb/F    F          Bb
+E o menino deitado no presépio
+
+ Gm
+1. Cantai a Deus, a Deus louvai
+
+                      F
+Cantai um salmo a seu nome!
+
+Eb
+O seu nome é senhor
+
+          Cm   F7
+Exultai diante dele!
+
+  Bb        Bb/D         Eb   Cm
+Vieram apressados os pastores
+
+       F        F7        Bb
+E encontraram maria com josé
+
+      Gm      Bb7/F       Eb   E°
+E o menino deitado no presépio
+
+      Bb/F    F          Bb
+E o menino deitado no presépio
+
+ Gm
+2. Dos órfãos ele é pai
+
+                  F
+E das viúvas protetor
+
+Eb
+É assim o nosso Deus
+
+             Cm    F7
+Em sua santa habitação
+
+  Bb        Bb/D        Eb   Cm
+Vieram apressados os pastores
+
+       F        F7        Bb
+E encontraram maria com josé
+
+      Gm      Bb7/F       Eb   E°
+E o menino deitado no presépio
+
+      Bb/F    F          Bb
+E o menino deitado no presépio
+
+ Gm
+3. É o senhor quem dá abrigo
+
+                F
+Dá um lar aos deserdados
+
+Eb
+Quem liberta os prisioneiros
+
+           Cm     F7
+E os sacia com fartura
+
+  Bb        Bb/D        Eb   Cm
+Vieram apressados os pastores
+
+       F        F7        Bb
+E encontraram maria com josé
+
+       Gm      Bb7/F      Eb   E°
+E o menino deitado no presépio
+
+      Bb/F    F          Bb
+E o menino deitado no presépio
+
+ Gm
+4. Bendito seja Deus
+
+                  F
+Bendito seja cada dia
+
+Eb
+O Deus da nossa salvação
+
+                  Cm  F7
+Que carrega os nossos fardos!
+
+  Bb        Bb/D        Eb   Cm
+Vieram apressados os pastores
+
+       F        F7        Bb
+E encontraram maria com josé
+
+       Gm      Bb7/F      Eb   E°
+E o menino deitado no presépio
+
+      Bb/F    F          Bb
+E o menino deitado no presépio',
+  to_tsvector('portuguese', 'Vieram Apressados Os Pastores ' || '')
+),
+(
+  'venho-senhor-oferecer-maria-do-rosario',
+  'Venho, Senhor, Oferecer',
+  'Maria do Rosário',
+  'Maria do Rosário',
+  'Em',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  22,
+  'Ofertório',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Primeira Parte]
+
+Em9                   D9    Em9
+  Venho, Senhor, oferecer      com
+Bm7
+esse vinho e esse pão
+
+C9                        Em9  Am7
+  Tudo que existe em meu ser  tudo que
+B7        Em9  E4/F# B
+há em meu coração
+
+Em9                   D9    Em9
+  Vejo agora em Teu Altar      essa
+Bm7
+oferta de amor
+
+C9                     Em9    Am
+Quero também Te consagrar
+B7     Em   B4  B
+toda minha vida Senhor
+
+[Refrão]
+
+  E           G#m          C#m   B/D#
+E quando este Pão for levantado
+Db/F
+
+   F#m        F#m/E          B     B/A
+E junto com o vinho consagrado
+
+      E          E7/D
+Também as minhas mãos a
+A/C#       Am/C
+Ti levantarei
+
+  B4         E4/F# B7     Em    E4/F#
+Entoarei louvores ao meu Rei
+B7
+
+Em9                   D9    Em9
+  Vejo agora em Teu Altar      essa
+Bm7
+oferta de amor
+
+C9                     Em9    Am
+Quero também Te consagrar
+E4/F#  B7     Em   B4  B
+toda minha vida Senhor',
+  to_tsvector('portuguese', 'Venho, Senhor, Oferecer ' || '')
+),
+(
+  'so-em-deus-maria-do-rosario',
+  'Só Em Deus',
+  'Maria do Rosário',
+  'Maria do Rosário',
+  'Ab',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração / Comunhão',
+  'Qualquer',
+  '',
+  'adoracao',
+  'Ab    Eb/G     Fm7        Eb/G
+Só em Deus o repouso encontrei .
+Db    Eb    Ab
+Só em Deus achei abrigo
+
+Ab    Eb/G   Fm7        Eb/G
+Ele é rocha firme   ,   amor .
+Db      Eb      Ab
+Ele é meu grande amigo
+
+   Db              Fm  Fm/Eb      Db
+Ele é Jesus , meu salvador .     Jesus
+Eb       Fm        Fm/Eb
+, meu rei e Senhor    ( Eu sei )
+
+    Db             Fm  Fm/Eb      Db
+Ele é Jesus , meu salvador .     Jesus
+Eb       Ab
+, meu rei e Senhor
+
+Ab    Eb/G      Fm        Eb/G
+Só em Deus fortaleza encontrei .
+Db    Eb   Ab
+Pra vencer o inimigo
+
+Ab    Eb/G      Fm       Eb/G
+Só em Deus a vitória alcancei .
+Db       Eb     Ab
+Ele      sempre está comigo
+
+   Db              Fm  Fm/Eb       Db
+Ele é Jesus , meu salvador .     Jesus
+Eb       Fm        Fm/Eb
+, meu rei e Senhor    ( Eu sei )
+
+   Db          Fm  Fm/Eb    Db
+Ele é Jesus , meu salvador . Jesus ,
+Eb        Ab
+meu rei e Senhor
+
+[Solo] Ab  Eb/G  Fm7  Eb/G  Db  Eb  Ab
+
+       Ab  Eb/G  Fm7  Eb/G  Db  Eb  Ab
+
+   Db              Fm  Fm/Eb
+Ele é Jesus , meu salvador .
+Db        Eb       Fm         Fm/Eb
+Jesus , meu rei e Senhor    ( Eu sei )
+
+    Db             Fm  Fm/Eb
+Ele é Jesus , meu salvador .
+Db        Eb        Ab
+Jesus , meu rei e Senhor
+
+ Ab    Eb/G     Fm7        Eb/Gb
+Só em Deus o repouso encontrei .
+Db     Eb    Ab
+Só em Deus achei abrigo',
+  to_tsvector('portuguese', 'Só Em Deus ' || '')
+),
+(
+  'com-minha-mae-estarei-maria-do-rosario',
+  'Com Minha Mãe Estarei',
+  'Maria do Rosário',
+  'Maria do Rosário',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  'C                 F        G7
+Com  minha Mãe estarei, Na Santa
+C
+glória um dia
+
+     Am         Dm       G7          C
+Junto a Virgem Maria, no céu
+triunfarei.
+
+    F        C         G7           C
+No Céu!  No Céu!   Com minha mãe
+estarei.
+
+    F        C         G7            C
+No Céu!  No Céu!   Com minha mãe
+estarei.
+
+  C                F       G7
+Com minha Mãe estarei, aos anjos me
+C
+ajuntando
+
+    Am          Dm      G7
+Do Onipotente ao mando, Hosanas lhe
+C
+darei.
+
+ C        F        G7          C
+Com minha Mãe estarei, então coroa
+digna
+
+    Am     Dm         G7      C
+De sua mão benigna, feliz receberei.
+
+  C            F    G7     C
+Com minha Mãe estarei, e sempre neste
+exílio
+
+   Am           Dm        G7      C
+De seu piedoso auxílio, com fé me
+valerei.',
+  to_tsvector('portuguese', 'Com Minha Mãe Estarei ' || '')
+),
+(
+  'forca-da-minha-fraquesa-maria-do-rosario',
+  'Força da Minha Fraquesa',
+  'Maria do Rosário',
+  'Maria do Rosário',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  6,
+  'Adoração / Cura',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A                              D
+1-Jesus  a minha  rocha , eu não vou
+A
+desanimar
+
+A                           D
+As cruzes  dessa  vida , com ele  vou
+A
+carregar
+
+        F#m                         Bm
+Nem um  mal  e  nem  a  dor, nada  vai
+me  derrubar
+
+          D           Bm          E
+Porque a minha   confiança, nele vou
+depositar
+
+  A                           C#m
+Jesus , força  da  minha  fraqueza,
+D
+confio  no  teu  amor , creio
+
+          E
+No  teu  poder
+
+  A                         C#m
+Jesus , tua presença é vitoriosa,
+D
+nenhum  mal  eu  vou  temer
+
+                     Bm
+Contigo  a  minha  frente , tenho
+E           A
+tudo,  pra vencer !
+
+   A                            D
+2-Jesus  é  a  verdade , ele  veio  me
+A
+ensinar
+
+A chamar  a  Deus  de  pai , sempre
+D        A
+amar  e  perdoar
+
+ F#m                            Bm
+Palavra  de  vida  eterna , só ele
+tem  pra dar
+
+           D           Bm            E
+Por  isso  minha  confiança , nele
+vou  depositar .
+
+   A                                D
+3-Jesus  é  meu  senhor ,  e  não  vai
+A
+me  abandonar
+
+Um lugar   bem  ao  seu  lado , ele
+D          A
+foi  me  preparar
+
+ F#m                             Bm
+Combati do bom  combate, junto  dele
+vou  ficar
+
+         D         Bm           E
+Porque minha  confiança , nele vou
+depositar',
+  to_tsvector('portuguese', 'Força da Minha Fraquesa ' || '')
+),
+(
+  'hino-as-sete-dores-da-santissima-virgem-maria-do-rosario',
+  'Hino às Sete Dores da Santíssima Virgem',
+  'Maria do Rosário',
+  'Maria do Rosário',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Mariano',
+  'Quaresma',
+  '',
+  'adoracao',
+  'D      Bm         Em       A7
+Bendita sejais, Senhora das Dores
+
+Em            A      G    A    D
+Ouvi nossos rogos, Mãe dos pecadores
+
+D        Bm          Em           A7
+Ó mãe dolorosa, que aflita chorais
+
+Em            A       Em   A    D
+Repleta de angústia, Bendita sejais
+
+D           Bm.     Em       A7
+A voz de Simeão no templo escutais
+
+Em           A      Em   A     D
+Cruéis profecias, Bendita sejais
+
+D             Bm      Em      A7
+O Céu manda um Anjo dizer que fujais
+
+Em              A.     Em  A      D
+Da fúria de Herodes, Bendita sejais
+
+D            Bm      Em        A7
+Voltando do Templo, Jesus não achais
+
+Em              A        F  A     D
+Que susto sofrestes, Bendita sejais
+
+D          Bm       Em             A7
+Que dor indizível, quando O encontrai
+
+Em               A    Em   A      D
+Com a cruz às costas, Bendita sejais
+
+D            Bm7     Em         A7
+A dor ainda cresce quando contemplais
+
+Em          A    Em  A       D
+Jesus expirando, Bendita sejais
+
+D          Bm    Em          A7
+No vosso regaço, seu corpo abrigais
+
+Em           A    Em   A    D
+Com ele abraçada, Bendita sejais
+
+D            Bm        Em       A7
+Sem filho e tal filho então suportais
+
+Em         A      Em    A     D
+Cruel solidão, Bendita sejais',
+  to_tsvector('portuguese', 'Hino às Sete Dores da Santíssima Virgem ' || '')
+),
+(
+  'invocamos-missao-mundo-novo',
+  'Invocamos',
+  'Missão Mundo Novo / Eros Biondini',
+  'Missão Mundo Novo / Eros Biondini',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  30,
+  'Entrada / Espírito Santo',
+  'Pentecostes',
+  '',
+  'popular',
+  'E9           C#m
+Invocamos o teu nome
+
+    E           G#m
+Invocamos o teu poder
+
+     A9             C#m7
+Invocamos a tua presença no meio de
+B7(4)   B7   A9   B
+nós
+
+E/G#     F#m    E9          C#m
+In........vo.....camos o teu nome
+
+    E           G#m
+Invocamos o teu poder
+
+    A9              C#m7
+Invocamos a tua presença no meio de
+B7(4)  B7
+nós
+
+      E9       A
+Manifesta senhor             o teu
+F#m
+poder
+
+     C#m7     B          F#/A#      A9
+Manifesta senhor a tua for.........ça
+
+     E/G#       A9               F#m
+Manifesta senhor nesse
+
+                       C#m7        A9
+O teu  gran...de    amooooor que tudo
+B7
+pode cura......r
+
+      E9        A
+Manifesta senhor              o teu
+F#m
+poder
+
+     C#m7         B          F#/A#
+Com prodígios, milagres, sinais
+A9
+
+     E/G#     A9               F#m
+Manifesta senhor
+
+                        C#m7
+O teu  gran...de    amooooor que
+A9 E/G#   B7(4) B7
+tudo pode cura......r
+
+[Solo] G  G/B  C  D/C  D
+
+       Em  B9  G  A/C#  F/C
+
+       Am  Dm7  Bb  C/Bb  F/A
+
+F/A         Bb    D#     Gm
+Manifesta senhor  o teu poder
+
+  Dm7      Dm7/C       G/B         Bb
+Manifesta Senhor a tua for.........ça
+
+F/A         Bb          Gm
+Manifesta Senhor nesse lugar
+
+Gm     F/A      Bb   Gm  Dm7
+O teu  gran...de    amooooor que tudo
+Bb F/A      C
+pode cura......r
+
+F            F/A           D#  Bb/D
+Manifesta senhor  o teu poder
+
+  Dm7      Dm7/C       G/B   Bb
+Com prodígios, milagres, sinais
+
+F/A         Bb          Gm
+Manifesta senhor nesse lugar
+
+Gm     F/A      Bb   Gm  Dm7
+O teu  gran...de    amooooor que tudo
+Bb F/A      C
+pode cura......r',
+  to_tsvector('portuguese', 'Invocamos ' || '')
+),
+(
+  'tomo-posse-missao-mundo-novo',
+  'Tomo Posse',
+  'Missão Mundo Novo / Eros Biondini',
+  'Missão Mundo Novo / Eros Biondini',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  false,
+  27,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] D9  Bm7  E4
+
+        E  E/G#  A4
+
+        E/G#  F#m7  E/G#
+
+        A  Bm7  D  E4
+
+        E  A4
+
+A                A/C#
+Bênçãos são derramadas
+
+          D    E/D E4/D
+A cada instante
+
+E                  D/E
+Há sempre um novo milagre
+
+           A   D/A E/A
+Para acontecer
+
+A                   A/C#
+Deus quer quebrar as cadeias
+
+               D   E/D E4/D
+Romper as correntes
+
+E              D/E
+Quer libertar e curar
+
+              A   D/F# E
+Todo aquele que crê
+
+A
+Eu tomo posse da
+
+E/G#   F#m
+Graça de Deus
+
+     E/G#
+Tomo posse da
+
+ A    Bm7
+Cura Senhor
+
+      D
+Tomo posse da
+
+         E    D/F# E/G#
+Bênção de hoje
+
+A
+Eu tomo posse da
+
+E/G#   F#m
+Graça de Deus
+
+     E/G#
+Tomo posse da
+
+ A    Bm7
+Cura Senhor
+
+      D
+Tomo posse da
+
+         E4   E
+Bênção de hoje
+
+A                A/C#
+Bênçãos são derramadas
+
+          D    E/D E4/D
+A cada instante
+
+E                  D/E
+Há sempre um novo milagre
+
+           A   D/A E/A
+Para acontecer
+
+A                   A/C#
+Deus quer quebrar as cadeias
+
+               D   E/D E4/D
+Romper as correntes
+
+E              D/E
+Quer libertar e curar
+
+              A   D/F# E
+Todo aquele que crê
+
+A
+Eu tomo posse da
+
+E/G#   F#m
+Graça de Deus
+
+     E/G#
+Tomo posse da
+
+ A    Bm7
+Cura Senhor
+
+      D
+Tomo posse da
+
+         E    D/F# E/G#
+Bênção de hoje
+
+A
+Eu tomo posse da
+
+E/G#   F#m
+Graça de Deus
+
+     E/G#
+Tomo posse da
+
+ A    Bm7
+Cura Senhor
+
+      D
+Tomo posse da
+
+         E4   E
+Bênção de hoje
+
+    F#m    F#m7/E    D7M
+Eu espero em Tua promessa
+
+     A         A/C#     E
+Eu confio em Tua obra Senhor
+
+   F#m    F#m7/E   D7M
+Acredito na Tua palavra
+
+   Bm7(9)              E  F
+No poder do teu nome Senhor
+
+Bb
+Eu tomo posse da
+
+F/A     Gm
+Graça de Deus
+
+      F/A   Bb     Cm7
+Tomo posse da cura Senhor
+
+      Eb
+Tomo posse da bênção
+
+   F    Eb/G F/A
+De hoje
+
+Bb
+Eu tomo posse da
+
+F/A     Gm
+Graça de Deus
+
+      F/A   Bb     Cm7
+Tomo posse da cura Senhor
+
+      Eb
+Tomo posse da bênção
+
+   F4  F
+De hoje',
+  to_tsvector('portuguese', 'Tomo Posse ' || '')
+),
+(
+  'todo-teu-missao-mundo-novo',
+  'Todo Teu',
+  'Missão Mundo Novo / Eros Biondini',
+  'Missão Mundo Novo / Eros Biondini',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  12,
+  'Adoração / Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G9  G7M  G/B  C  D
+
+G            G7M
+Quero colocar
+
+           G/B  C9       F C
+Em tuas mãos a minha vida.
+
+     G             G7M
+Me deixar remodelar
+
+        G/B        C
+Como um vaso do oleiro.
+
+D                 G/B         Am
+O meu coração ponho hoje em teu altar
+
+D                     G/B       C
+Minha vida está pronta pra recomeçar
+
+         D C9/D
+Ao lado teu
+
+      G     D/F#      Em
+Ser todo teu, inteiro teu
+
+       C     G/B    Am        D   C9/D
+Quero ajuntar cada pedaço do meu ser
+
+        G      D/F#     Em
+Ser todo teu, inteiro teu
+
+          Am      G/B   C
+Quero te dar os meus pedaços para
+
+D
+Que
+
+                     G
+Um vaso novo eu possa ser',
+  to_tsvector('portuguese', 'Todo Teu ' || '')
+),
+(
+  'fogo-do-espirito-missao-mundo-novo',
+  'Fogo do Espírito',
+  'Missão Mundo Novo / Eros Biondini',
+  'Missão Mundo Novo / Eros Biondini',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Pentecostes / Espírito Santo',
+  'Pentecostes',
+  '',
+  'adoracao',
+  '[Intro] E  F#m  A
+
+        E  F#m  A  B4
+
+        E  F#m  A
+
+        E  F#m  A  B4
+
+        C#m  B  A
+
+      E             F#m
+Já se levanta um povo escolhido
+
+         G#m                   A
+Uma geração nova de homens restaurados
+
+             E            B
+Que vão incendiar os corações
+
+      E             F#m
+Já se escuta um grito de guerra
+
+         G#m                   A
+O clamor do Espírito sobre a face da
+terra
+
+             E            B
+E os corações vão se incendiar
+
+   C#m          A           B    G#m
+Nós vamos incendiar,  incendiar
+
+    A          E             B
+Com fogo do Espírito esse lugar
+
+    C#m         A
+Nós vamos incendiar
+
+     B/D# G#m             A
+Incendiar             com fogo do
+E       B     E
+Espírito esse lugar',
+  to_tsvector('portuguese', 'Fogo do Espírito ' || '')
+),
+(
+  'nas-asas-do-senhor-missao-mundo-novo',
+  'Nas Asas do Senhor',
+  'Missão Mundo Novo / Eros Biondini',
+  'Missão Mundo Novo / Eros Biondini',
+  'A',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Adoração / Comunhão',
+  'Qualquer',
+  '',
+  'adoracao',
+  'A                            E
+Sei que os que confiam no Senhor
+
+                F#m
+Revigoram suas forças
+
+                  D
+Suas forças se renovam
+
+ A                     E
+Posso até cair ou vacilar
+
+                 F#m
+Mas consigo levantar
+
+                 D
+Pois recebo dele asas
+
+       Bm                     E4 E
+E como águia me preparo pra voar
+
+         A                E/G#   F#m
+Eu posso ir muito além de onde estou
+
+                    D
+Vou nas asas do Senhor
+
+       A/C#  Bm           E
+O seu amor é o que me conduz
+
+        A          E/G#      F#m
+Posso voar e subir sem me cansar
+
+                      D     A/C#
+Ir pra frente sem me fatigar
+
+        Bm        E4    E
+Vou com asas como águia
+
+                   A
+Pois confio no Senhor',
+  to_tsvector('portuguese', 'Nas Asas do Senhor ' || '')
+),
+(
+  'gloria-a-deus-nas-alturas-gilson-celerino',
+  'Gloria a Deus Nas Alturas',
+  'Gilson Celerino',
+  'Gilson Celerino',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Glória',
+  'Qualquer',
+  '',
+  'liturgica',
+  'D        Bm          A  D
+Glória a Deus nas alturas
+
+A        Bm         A  F#m
+E paz na terra aos homens
+
+    D    A7 D
+Por Ele amados!
+
+D            A7       D
+Senhor Deus, Rei dos céus
+
+D             A7   D
+Deus Pai todo-poderoso
+
+Am                        B7   Em
+Nós vos louvamos, nós vos bendizemos
+
+A7                               D
+Nós vos adoramos, nós vos glorificamos
+
+Bm            Em
+Nós vos damos graças
+
+A7                D
+Por vossa imensa glória
+
+D        Bm          A D
+Glória a Deus nas alturas
+
+A        Bm         A  F#m
+E paz na terra aos homens
+
+    D    A7 D
+Por Ele amados!
+
+D                    A7        D
+Senhor Jesus Cristo, Filho Unigênito
+
+D
+Senhor Deus, Cordeiro de Deus, Filho
+A7       D
+de Deus Pai
+
+Am                 B7      Em
+Vós que tirais o pecado do mundo
+
+A7               D
+Tende piedade de nós!
+
+D7                 B7      Em
+Vós que tirais o pecado do mundo
+
+A7               D
+Acolhei a nossa súplica
+
+Bm                          Em
+Vós que estais a direita do Pai
+
+A7                D
+Tende piedade de nós!
+
+D        Bm          A D
+Glória a Deus nas alturas
+
+A        Bm         A  F#m
+E paz na terra aos homens
+
+    D    A7 D
+Por Ele amados!
+
+D       A7    D
+Só vós sois o Santo
+
+D      A7   D
+Só vós o Senhor
+
+Am                   B7   Em
+Só vós o Altíssimo, Jesus Cristo
+
+A7             D
+Com o Espírito Santo
+
+Bm                Em  Em  A7  D
+Na glória de Deus Pai. A__a___amém!',
+  to_tsvector('portuguese', 'Gloria a Deus Nas Alturas ' || '')
+),
+(
+  'hino-a-cristo-rei-gilson-celerino',
+  'Hino a Cristo Rei',
+  'Gilson Celerino',
+  'Gilson Celerino',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  26,
+  'Entrada / Final',
+  'Tempo Comum',
+  '',
+  'liturgica',
+  'E  B7/E E  A    F#m/A   B
+Glória, louvor, honra a ti
+
+         E    G#m/B B7 C#7
+Ó Cristo Rei, Re____dentor
+
+F#m6/A C#7/G# F#m
+So__be a      ti
+
+   Dm6/F  A/E G#7/D# C#m C#m/B C#m/A#
+Piedoso hosa_________na
+
+      E/B C#m7 A6 B E
+Dos peque__nos o clamor!
+
+E                  A    A/G F#
+ De Israel rei esperado
+
+                B     B/A G#
+De Davi ilustre filho
+
+           G#/F#    C#m C#m/B F#
+O Senhor é que te envia
+
+                       B4 B
+Ouve, pois, nosso estribilho
+
+E  B7/E E  A    F#m/A   B
+Glória, louvor, honra a ti
+
+         E    G#m/B B7 C#7
+Ó Cristo Rei, Re____dentor
+
+F#m6/A C#7/G# F#m
+So__be a      ti
+
+   Dm6/F  A/E G#7/D# C#m C#m/B C#m/A#
+Piedoso hosa_________na
+
+      E/B C#m7 A6 B E
+Dos peque__nos o clamor!
+
+E                  A     A/G F#
+ Todos juntos te celebram
+
+                       B    B/A G#
+Quer na terra ou nas alturas
+
+            G#/F#    C#m C#m/B F#
+Cantam todos teus louvores
+
+                   B4 B
+Anjos, homens, criaturas
+
+E  B7/E E  A    F#m/A   B
+Glória, louvor, honra a ti
+
+         E    G#m/B B7 C#7
+Ó Cristo Rei, Re____dentor
+
+F#m6/A C#7/G# F#m
+So__be a      ti
+
+   Dm6/F  A/E G#7/D# C#m C#m/B C#m/A#
+Piedoso hosa_________na
+
+      E/B C#m7 A6 B E
+Dos peque__nos o clamor!
+
+E                   A    A/G F#
+ Veio a ti o povo hebreu
+
+                     B     B/A G#
+Com seus ramos, suas palmas
+
+            G#/F# C#m C#m/B F#
+Também hoje te trazemos
+
+                     B4 B
+Nossos hinos, nossas almas
+
+E  B7/E E  A    F#m/A   B
+Glória, louvor, honra a ti
+
+         E    G#m/B B7 C#7
+Ó Cristo Rei, Re____dentor
+
+F#m6/A C#7/G# F#m
+So__be a      ti
+
+   Dm6/F  A/E G#7/D# C#m C#m/B C#m/A#
+Piedoso hosa_________na
+
+      E/B C#m7 A6 B E
+Dos peque__nos o clamor!
+
+E                   A    A/G F#
+ Festejaram a tua entrada
+
+                     B  B/A G#
+Que ao calvário conduzia
+
+           G#/F#  C#m C#m/B F#
+Mas, agora que tu reinas
+
+                 B4 B
+É maior nossa alegria
+
+E  B7/E E  A    F#m/A   B
+Glória, louvor, honra a ti
+
+         E    G#m/B B7 C#7
+Ó Cristo Rei, Re____dentor
+
+F#m6/A C#7/G# F#m
+So__be a      ti
+
+   Dm6/F  A/E G#7/D# C#m C#m/B C#m/A#
+Piedoso hosa_________na
+
+      E/B C#m7 A6 B E
+Dos peque__nos o clamor!
+
+E                      A    A/G F#
+ Agradaram-te os seus hinos
+
+                  B    B/A G#
+Nossos hinos igualmente
+
+               G#/F#   C#m C#m/B F#
+O que é bom tu sempre acolhes
+
+                    B4 B
+Rei bondoso, Rei clemente
+
+E  B7/E E  A    F#m/A   B
+Glória, louvor, honra a ti
+
+         E    G#m/B B7 C#7
+Ó Cristo Rei, Re____dentor
+
+F#m6/A C#7/G# F#m
+So__be a      ti
+
+   Dm6/F  A/E G#7/D# C#m C#m/B C#m/A#
+Piedoso hosa_________na
+
+      E/B C#m7 A6 B E
+Dos peque__nos o clamor!',
+  to_tsvector('portuguese', 'Hino a Cristo Rei ' || '')
+),
+(
+  'santo-campanha-da-fraternidade-gilson-celerino',
+  'Santo Campanha da Fraternidade',
+  'Gilson Celerino',
+  'Gilson Celerino',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  18,
+  'Santo',
+  'Quaresma',
+  '',
+  'liturgica',
+  'D     A/C#     Bm    Bm/A   G    Em
+Santo, santo, santo,     Senhor, Deus
+A4
+do Universo!
+
+D        A/C#      Bm  Bm/A    G    Em
+O céu e a terra proclamam, proclamam a
+A4   D/F#
+vossa glória.
+
+G         A/G       F#m  B7/D#
+Hosana, Hosana nas alturas!
+
+Em         A7      Am7   D7
+Hosana, Hosana nas alturas!
+
+G        A/G        F#m  B7/D#
+Hosana, Hosana nas alturas!
+
+Em  A     D
+Ho..saaa..na!
+
+C/D                D9     C/E
+Bendito aquele que vem em nome do
+A4     D/F#
+Senhor!
+
+G         A/G       F#m  B7/D#
+Hosana, Hosana nas alturas!
+
+Em         A7      Am7   D7
+Hosana, Hosana nas alturas!
+
+G        A/G        F#m  B7/D#
+Hosana, Hosana nas alturas!
+
+Em  A     D
+Ho..saaa..na!',
+  to_tsvector('portuguese', 'Santo Campanha da Fraternidade ' || '')
+),
+(
+  'cordeiro-de-deus-gilson-celerino',
+  'Cordeiro de Deus',
+  'Gilson Celerino',
+  'Gilson Celerino',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Cordeiro',
+  'Qualquer',
+  '',
+  'liturgica',
+  'C           Fm         C        Fm
+Cordeiro DE DEUS QUE TIRAIS O PECADO
+C
+DO MUNDO
+
+C        F      G       Em     Am
+Tende PIEDADE, TENDE PIEDADE, TENDE
+Dm   G   C     Fm
+PIEDADE DE NÓS!
+
+C           Fm         C        Fm
+Cordeiro DE DEUS QUE TIRAIS O PECADO
+C
+DO MUNDO
+
+C        F      G       Em     Am
+Tende PIEDADE, TENDE PIEDADE, TENDE
+Dm   G   C     Fm
+PIEDADE DE NÓS!
+
+C           Fm         C        Fm
+Cordeiro DE DEUS QUE TIRAIS O PECADO
+C
+DO MUNDO
+
+C         F    G       Em    Am
+Dai-nos A PAZ, A VOSSA PAZ, DAI-NOS A
+Dm   G   C    Fm  C
+VOSSA PAZ!',
+  to_tsvector('portuguese', 'Cordeiro de Deus ' || '')
+),
+(
+  'aleluia-ressuscitei-o-pai-gilson-celerino',
+  'Aleluia, Ressuscitei, Ó Pai',
+  'Gilson Celerino',
+  'Gilson Celerino',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  19,
+  'Aclamação ao Evangelho',
+  'Páscoa',
+  '',
+  'liturgica',
+  'D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G  D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!
+
+      F             Cm
+1. às núpcias do cordeiro
+
+   Am7     D7     Gm
+Em brancas vestes vamos
+
+     Eb             Dm
+Transposto o mar vermelho
+
+   Bb7    E7     A
+Ao cristo rei cantamos
+
+D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G  D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!
+
+       F               Cm
+2. por nós no altar da cruz
+
+    Am7     D7  Gm
+Seu corpo  ofereceu
+
+  Eb          Dm
+Bebendo deste sangue
+
+   Bb7    E7  A
+Nascemos para Deus
+
+D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G  D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!
+
+       F                Cm
+3. seu sangue em nossas portas
+
+ Am7     D7    Gm
+Afasta anjo o irado
+
+    Eb             Dm
+Das mãos dum rei injusto
+
+    Bb7    E7   A
+Seu povo é libertado
+
+D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G  D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!
+
+     F           Cm
+4. ó vítima verdadeira
+
+     Am7     D7     Gm
+Do inferno a porta abris
+
+  Eb             Dm
+Livrais o povo escravo
+
+     Bb7   E7     A
+Dais vida  ao infeliz
+
+D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G  D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!
+
+      F              Cm
+5. da morte o cristo volta
+
+  Am7     D7     Gm
+A vida é  seu troféu
+
+    Eb           Dm
+O inferno traz cativo
+
+    Bb7    E7    A
+E a todos abre o céu
+
+D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!
+
+     F              Cm
+6. Jesus, pascal cordeiro
+
+   Am7     D7      Gm
+Em vós se alegra o povo
+
+     Eb         Dm
+Que, livre pela graça
+
+   Bb7     E7     A
+Em vós  nasceu de novo
+
+D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!
+
+     F              Cm
+7. a glória seja ao cristo
+
+   Am7     D7   Gm
+Da morte   vencedor
+
+   Eb               Dm
+Ao pai e ao santo espírito
+
+  Bb7    E7      A
+O nosso igual louvor
+
+D        A/C#    Bm     Bm/A
+Aleluia, ressuscitei, ó pai
+
+G D/F#   Em7       A
+E sempre contigo estou
+
+D             A/C#   Bm  Bm/A
+Sobre mim pousaste a tua mão
+
+G     D/F#  Em      Bm
+Maravilhoso é teu saber
+
+C    G      A  D
+Aleluia, alelu-ia!',
+  to_tsvector('portuguese', 'Aleluia, Ressuscitei, Ó Pai ' || '')
+),
+(
+  'em-teu-nome-somos-povo-reunido-eurivaldo-silva-ferreira',
+  'Em teu nome somos povo reunido',
+  'Eurivaldo Silva Ferreira',
+  'Eurivaldo Silva Ferreira',
+  'C',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  9,
+  'Entrada',
+  'Qualquer',
+  '',
+  'liturgica',
+  '[Intro] C  G  B  Em  Am  G  Am  D  G
+
+1.ª Estrofe
+
+       G          D7      G
+Em teu nome somos povo reunido
+
+      Em         B7             Em
+Congregado por Jesus, que é teu Filho
+
+       B                     Em Am
+Eis a Igreja assumindo seu batismo
+
+      Em           C           G
+Tua Palavra traz a nós um novo brilho
+
+[Refrão]
+
+C         G     B   Em
+Somos teu povo, ó Senhor
+
+Am     G        A  D
+A tua Igreja em oração
+
+C         G      B    Em
+Eis nosso canto, o louvor
+
+Am      G          Am D G
+A Ti, ó Pai, nossa louvação!
+
+2.ª Estrofe
+
+      G           D7            G
+Neste Dia que o Senhor fez para nós
+
+      Em            B7             Em
+Nossa prece sobe ao céu como um clamor
+
+     B                           Em Am
+É o Cristo tão presente em nosso meio
+
+        Em         C           G
+Que nos chama à acolhida e ao amor
+
+[Repete Refrão]
+
+[Intro] C  G  B  Em  Am  G  Am  D  G
+
+3.ª Estrofe
+
+      G        D7            G
+Nossa oração comum se faz fermento
+
+       Em              B7         Em
+Para o Reino então crescer na caridade
+
+       B                    Em Am
+Tua Palavra é hoje nosso alimento
+
+     Em             C          G
+Fortalece e é fonte da fraternidade
+
+[Repete Refrão]
+
+4.ª Estrofe
+
+         G           D7             G
+Que se espalhe nossa voz ao mundo
+inteiro
+
+    Em            B7        Em
+Tua graça é fonte de libertação!
+
+         B7                      Em Am
+Reis, profetas, sacerdotes, hoje somos
+
+       Em        C             G
+Construindo novo reino, povo irmão
+
+[Repete Refrão]',
+  to_tsvector('portuguese', 'Em teu nome somos povo reunido ' || '')
+),
+(
+  'hino-da-campanha-da-fraternidade-2005-eurivaldo-silva-fe',
+  'Hino da Campanha da Fraternidade 2005',
+  'Eurivaldo Silva Ferreira',
+  'Eurivaldo Silva Ferreira',
+  'F#m',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Entrada / Campanha da Fraternidade',
+  'Quaresma',
+  '',
+  'liturgica',
+  'F#m                     E
+Vinde todos os povos da terra
+
+     D                A
+Para juntos a paz celebrar
+
+F#7    Bm               F#m
+Não queremos o ódio e a guerra
+
+      C#7               F#m
+Mas a paz, a justiça cantar
+
+      Bm               F#m
+Vinde todos em nome de Cristo
+
+     Bm        E         A
+Mensageiros da paz e do amor
+
+      Bm               F#m
+Percorrei o caminho do mundo
+
+      C#7              F#m
+Proclamando a paz do Senhor
+
+F#m                     E
+Vinde todos, mulheres e homens
+
+      D               A
+Na alegria também celebrar
+
+F#7  Bm             F#m
+O reino de paz e justiça
+
+     C#7               F#m
+Novo céu, nova terra virá
+
+F#m                      E
+Vinde jovens, crianças e velhos
+
+      D                    A
+Jesus Cristo também vos chamou
+
+F#7  Bm               F#m
+A mensagem do seu Evangelho
+
+     C#7                F#m
+É de paz, de justiça e amor',
+  to_tsvector('portuguese', 'Hino da Campanha da Fraternidade 2005 ' || '')
+),
+(
+  'hino-nossa-senhora-da-assuncao-padre-marcos-rogerio',
+  'Hino Nossa Senhora da Assunção',
+  'Padre Marcos Rogério',
+  'Padre Marcos Rogério',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  7,
+  'Mariano',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] E  B/D#  C#m  A
+
+        C#m  B  A
+
+    E         B/D#
+Bendita e agraciada
+
+C#m               A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+    A    B       A
+Senhora da Assunção!
+
+   E       B/D#
+Bendita e agraciada
+
+C#m                A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   F#m  E/G#       A   C#m  B
+Senhora  da  Assunção!
+
+E              B/D#
+Uma mulher revestida do sol
+
+C#m            A
+Tendo a lua debaixo dos pés
+
+E                B
+És do teu povo Rainha e Mãe
+
+C#m             A
+És da Igreja Farol para os céus
+
+    E       B/D#
+Bendita e agraciada
+
+C#m                A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   F#m  E/G#       A   C#m  B
+Senhora  da  Assunção!
+
+ E              B/D#
+Lírio formoso, ornado de luz
+
+C#m                     A
+Entre as mulheres, Deus a elegeu
+
+ E                    B
+Vens ensinar, qual escola de amor
+
+  C#m               A
+A tudo fazer como Cristo disser
+
+   E       B/D#
+Bendita e agraciada
+
+C#m                A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   F#m  E/G#       A   C#m  B
+Senhora  da  Assunção!
+
+E             B/D#
+És coroada de glória e esplendor
+
+  C#m              A
+A graça do alto em ti habitou
+
+E                 B
+Intercessora, Senhora da Luz
+
+C#m                  A
+Vens conduzir o teu povo a Jesus
+
+   E       B/D#
+Bendita e agraciada
+
+C#m                A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   F#m  E/G#       A   C#m  B
+Senhora  da  Assunção!
+
+ E              B/D#
+Canta a Igreja e pede um favor
+
+C#m                    A
+Tu como Mãe não se esqueças de nós!
+
+  E                   B
+Quando, enfim, nossa hora chegar
+
+C#m                 A
+Junto de Ti nós queremos estar
+
+   E          B/D#
+Bendita e agraciada
+
+C#m                A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   F#m   E/G#      A
+Senhora   da  Assunção!
+
+   E          B/D#
+Bendita e agraciada
+
+C#m                A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   F#m   E/G#      A
+Senhora   da  Assunção!
+
+   E          B/D#
+Bendita e agraciada
+
+C#m                A
+Nossa Senhora da Glória
+
+ C#m           B
+Rainha incomparável
+
+   F#m   E/G#      A
+Senhora   da  Assunção!
+
+[Final] C#m  B  E/G#  A
+
+        C#m  B  E/G#  A',
+  to_tsvector('portuguese', 'Hino Nossa Senhora da Assunção ' || '')
+),
+(
+  'bandito-seras-part-alexandre-pires-padre-hewaldo-trevisa',
+  'Bandito Serás (part. Alexandre Pires)',
+  'Padre Hewaldo Trevisan',
+  'Padre Hewaldo Trevisan',
+  'F',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  22,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] F  C/E  Dm  C/E
+
+        F  C/E  Dm  C/E
+
+F             C/E        Dm      C/E
+Não, este não po_____de ser      teu
+F
+fim
+
+F                C/E   Dm    C/E
+Não é o que Deus son___nhou pra
+Bb9             C4 C7
+ti não podes aceitar
+
+F            C/E   Dm    C/E    F
+Ver tua família    se    aca   bar
+
+F        C/E   Dm   C   Bb9
+Tua esperança  se   apagar Tua fé se
+C4   C7
+esmorecer
+
+Fm           Fm7M          Fm/Eb
+Sei que é difícil crer que sim, se
+Bb/D          Db9
+tudo em volta  diz que não
+
+             Bbm
+E a angústia te faz
+Gm7(5-)    C7
+esquece__________er
+
+Fm      Fm7M         Fm/Eb
+De tudo que Deus prometeu que sobre a
+Bb/D       Db9
+tua vida estão
+
+           Bbm          Eb/G Eb7
+As mesmas bênçãos de Abraão
+
+Ab    Ab/C  C#9      Eb9
+Ben__dita  será tua casa
+
+Ab   Ab/C    C#9         Eb9
+Ben__ditos serão teus filhos
+
+    Fm       Cm  C#     Eb  F
+E Deus engrandecerá teu nome
+
+( F  C/E  Dm  C/E )
+
+( F  C/E  Dm  C/E )
+
+F             C/E       Dm   C/E   F
+Não, este não po_____de ser  teu  fim
+
+F                C/E    Dm   C/E
+Não é o que Deus son___nhou pra
+Bb9             C4  C7
+ti não podes aceitar
+
+F          C/E   Dm   C/E    F
+Ver tua família  se   aca   bar
+
+F       C/E   Dm   C   Bb9
+Tua esperança se   apagar Tua fé se
+C4   C7
+esmorecer
+
+Fm           Fm7M          Fm/Eb
+Sei que é difícil crer que sim, se
+Bb/D          Db9
+tudo em volta diz  que não
+
+             Bbm
+E a angústia te faz
+Gm7(5-)      C7
+esquece__________er
+
+Fm       Fm7M      Fm/Eb
+De tudo que Deus prometeu que  sobre a
+Bb/D       Db9
+tua vida estão
+
+           Bbm           Eb   Db/F
+As mesmas bênçãos de Abraão
+Eb/G
+
+Ab    Ab/C    C#9       Eb9
+Ben__dita    será tua casa
+
+Ab   Ab/C    C#9        Eb9
+Ben__ditos serão teus filhos
+
+    Fm       Cm  C#     Eb  Ab
+E Deus engrandecerá teu nome
+
+Ab      Db/F
+    Teu nome
+
+[Final] Eb/G  Ab/C  Db/F  Eb/G  Ab',
+  to_tsvector('portuguese', 'Bandito Serás (part. Alexandre Pires) ' || '')
+),
+(
+  'muitos-virao-te-louvar-guilherme-kerr',
+  'Muitos Virão Te Louvar',
+  'Guilherme Kerr',
+  'Guilherme Kerr',
+  'D',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  14,
+  'Entrada / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] D  A/D  G/D  A/D
+
+        D  A/D  G/D  A/D
+
+D           D/F#     G      A
+De todas as tribos povos e raças
+
+D        D/F#          G
+Muitos virão Te louvar
+
+    D       D/F#        G           A
+De tantas culturas, línguas e nações
+
+   Em7           C      G/B       A9
+No tempo e no espaço virão Te adorar
+A  A9
+
+   D         D/F#         G
+Bendito seja sempre o cordeiro
+
+Bm7      F#m7     G        A A9
+Filho de Deus, raiz de Davi
+
+D           D/F#        G
+Bendito seja Seu santo nome
+
+Bm7     Bm7/A   G    A    D
+Cristo Jesus, presente aqui
+
+  D       D/F#     G         A
+Remidos comprados grande multidão
+
+D       D/F#         G
+Muitos virão Te louvar
+
+ D      D/F#        G       A
+Povo escolhido, Teu reino e nação
+
+   Em7          C      G/B      A9 A
+No tempo e no espaço virão te adorar
+A9
+
+  D         D/F#         G
+Bendito seja sempre o cordeiro
+
+Bm7      Bm/A     G        A A9
+Filho de Deus, raiz de Davi
+
+D           D/F#        G
+Bendito seja Seu santo nome
+
+Bm7     Bm7/A   G    A    D
+Cristo Jesus, presente aqui
+
+    D      D/F#     G       A
+E a nós só nos cabe tudo dedicar
+
+  D      D/F#       G
+Oferta suave ao Senhor
+
+D       D/F#        G          A
+Dons e talentos queremos consagrar
+
+    Em7      C         G/B     A9
+E a vida no Teu altar p&#x27;ra Teu
+louvor
+
+ D         D/F#         G
+Bendito seja sempre o cordeiro
+
+Bm7      Bm/A     G        A A9
+Filho de Deus, raiz de Davi
+
+D           D/F#        G
+Bendito seja Seu santo nome
+
+Bm7     Bm7/A   G    A    D
+Cristo Jesus, presente aqui',
+  to_tsvector('portuguese', 'Muitos Virão Te Louvar ' || '')
+),
+(
+  'o-verbo-virou-gente-guilherme-kerr',
+  'O Verbo Virou Gente',
+  'Guilherme Kerr',
+  'Guilherme Kerr',
+  'G',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  8,
+  'Natal / Entrada',
+  'Natal',
+  '',
+  'adoracao',
+  '[Intro] G  G/B  G/E  D4  D
+
+G              G/B
+O Verbo virou gente
+
+G/E                 D4
+E habitou entre nós
+
+G          G/B
+Cheio de graça
+
+G/E      D4
+E de verdade
+
+C9       G/B    Am7      D7  G
+E vimos Sua glória como a do Pai
+
+C9       G/B     Am7    D7  G
+E vimos Sua glória, glória do Pai',
+  to_tsvector('portuguese', 'O Verbo Virou Gente ' || '')
+),
+(
+  'seja-engrandecido-guilherme-kerr',
+  'Seja engrandecido',
+  'Guilherme Kerr',
+  'Guilherme Kerr',
+  'G',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  23,
+  'Adoração / Louvor',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] G  Bm  Em  Em/D  A/C#  C
+
+        Bm  Em  C  A7(4)  A7  D7
+
+ G                   Bm
+Seja engrandecido, ó Deus da minha
+vida
+
+   C            G/A A7      D7
+Tu és o Deus da minha salvação
+
+G                   Bm
+És a minha Rocha, a minha segurança
+
+     C           G/A   A7    D7
+Meus lábios sempre te exaltarão
+
+    G              F/G      G7
+Aleluia(Aleluia)te louvo(Te louvo)
+
+        C          G/A   A7    D7
+Pois sei que sobre todos és Senhor
+
+    G              F/G      G7
+Aleluia(Aleluia)te louvo(Te louvo)
+
+        C G/B       Am7    D7(4)   G
+Pois sei que sobre todos és Senhor
+C/G  G  C/G  D7
+
+    G              F/G      G7
+Aleluia(Aleluia)te louvo(Te louvo)
+
+        C          G/A   A7    D7
+Pois sei que sobre todos és Senhor
+
+    G              F/G      G7
+Aleluia(Aleluia)te louvo(Te louvo)
+
+       C G/B        Am7    B/D#  Em
+Pois sei que sobre todos és Senhor
+
+[Solo] Bm  F#m5+  Dm5-/F  Am7  Am7/G
+F#º  B7(13-)  B7
+
+       Em  Bm  F#m5+  Dm5-/F  Am  G/B
+C9  G/B  Am7  Am7/G  D7
+
+    G                 F/G      G7
+Aleluia!(Aleluia!) aleluia!(Aleluia!)
+
+    C      Am7   C/D   G D7
+Aleluia! Louvemos ao Senhor',
+  to_tsvector('portuguese', 'Seja engrandecido ' || '')
+),
+(
+  'ele-vem-aleluia-elizeu-gomes',
+  'Ele Vem, Aleluia',
+  'Elizeu Gomes',
+  'Elizeu Gomes',
+  'A',
+  96,
+  '4/4',
+  'Pop Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  false,
+  true,
+  4,
+  'Louvor',
+  'Qualquer',
+  '',
+  'popular',
+  '[Intro] A, F#m
+
+  A
+Ele vive, aleluia
+
+Ele vive, aleluia
+
+  D
+Cristo vive, aleluia
+
+  A
+Ele vive, aleluia
+
+ E           D
+Cristo vive
+
+ A
+Aleluia
+
+A
+Se você for a Budokai
+
+Vai encontrar os restos
+
+                D
+Mortais do seu buda
+
+            A
+Ah, vai encontrar
+
+A
+Se você for ao Egito
+
+Vai encontrar os restos mortais do
+E   D
+faraó Oh
+
+   A
+Vai encontrar
+
+Mais se você for a Jerusalém
+
+Vai encontrar um sepulcro também
+
+            D
+Só que está vazio
+
+          A             E A
+Ele não está lá ... Eh
+
+ A
+Ele vive, aleluia
+
+Ele vive, aleluia
+
+  D
+Cristo vive, aleluia
+
+  A
+Ele vive, aleluia
+
+ E           D
+Cristo vive
+
+ A
+Aleluia...
+
+( A  D  A  E  D  A )
+
+            A
+Quem está doente Ele vai curar
+
+                          A
+Quem está caído Ele vai levantar
+
+           D
+Quem está triste Ele vai alegrar
+
+              A
+Quem está oprimido Ele vai libertar
+
+ E        D
+Por ele vive
+
+   A
+Aleluia
+
+A
+Ele vive, aleluia
+
+Ele vive, aleluia
+
+  D
+Cristo vive, aleluia
+
+  A
+Ele vive, aleluia
+
+ E           D
+Cristo vive
+
+ A
+Aleluia
+
+E           D
+Cristo vive
+
+ A
+Aleluia
+
+E           D
+Cristo vive
+
+ A
+Aleluia',
+  to_tsvector('portuguese', 'Ele Vem, Aleluia ' || '')
+),
+(
+  'espere-em-deus-elizeu-gomes',
+  'Espere Em Deus',
+  'Elizeu Gomes',
+  'Elizeu Gomes',
+  'Gb7M',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  false,
+  19,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  '[Intro] Gb7M  Ab/Gb  Fm7  Ab/Bb  Bm7
+B9  Ab7  Ab7(b9)
+
+[Primeira Parte]
+
+Db9        Ebm7
+Mas os que esperam
+
+Fsus4 F/A Bbm
+No Senhor
+
+Gb9             Db/F     Ebm7  Ab7
+Renovarão suas forças e voarão
+
+Db9            Ebm7
+Correrão não se cansarão
+
+Fsus4   F/A Bbm
+Nem se fadigarão
+
+Gb9           Db/F  Ab7      Ab Db/F
+Espera pois somente no Senhor
+
+[Refrão]
+
+Gbmaj7   Ab/Gb    Fm7         Ab/Bb
+Não   se  vá        espere um pouco
+Bbm7
+mais
+
+Ebm7         Gb9          Eb/G  Ab7
+Deus vai conduzir     a   situação
+Db/F
+
+Gbmaj7   Ab/Gb    Fm7         Ab/Bb
+Não   se  vá        espere um pouco
+Bbm7
+mais
+
+Ebm7      Ab7     Ab Db9    Db/F
+Meu Jesus ainda é Senhor
+
+[Solo] Gb7M  Ab/Gb  Fm7  Ab/Bb  Bm7
+Ebm7  Ab7  Ab  Db9  Ab7
+
+[Segunda Parte]
+
+Db9           Ebm7
+Espera pois em Deus
+
+Fsus4      F/A Bbm
+E Ele fortalecerá
+
+Gb9              Db/F      Ebm7
+Concederá o que deseja teu coração
+Ab7
+
+Db9       Ebm7
+Espera em silencio
+
+Fsus4    F/A   Bbm
+No             Senhor
+
+Gb9           Db/F   Ab7     Ab Db/F
+Ele é o teu escudo e ajudador
+
+[Refrão]
+
+Gbmaj7   Ab/Gb    Fm7         Ab/Bb
+Não   se  vá        espere um pouco
+Bbm7
+mais
+
+Ebm7         Gb9          Eb/G  Ab7
+Deus vai conduzir     a   situação
+Db/F
+
+Gbmaj7   Ab/Gb    Fm7         Ab/Bb
+Não   se  vá        espere um pouco
+Bbm7
+mais
+
+Ebm7      Ab7     Ab Db9    Db/F
+Meu Jesus ainda é Senhor
+
+[Final]
+
+Ebm7
+Meu Jesus
+
+Ab         Db9     Ab/Bb Bm7  Gb Ab
+Ainda é o Senhor
+Db9',
+  to_tsvector('portuguese', 'Espere Em Deus ' || '')
+),
+(
+  'porque-insiste-fraternidade-casa-de-maria',
+  'Porque Insiste?',
+  'Fraternidade Casa de Maria',
+  'Fraternidade Casa de Maria',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E                    A
+Porque insiste em se afastar de mim,
+E              A
+pelos pecados?
+
+E                              A
+Pois se quando caístes, te levei em
+meus braços,
+
+      E                    A
+Te Peguei pela mão, lhe ergui do chão.
+B
+
+C#m           G#m        A
+Mais mesmo assim, te perdoou e
+B
+abençôo... Uooo... o
+
+C#m           G#m        A
+Mais mesmo assim, te perdoou e
+B
+abençôo•.
+
+C#m        G#m                A
+Mais eu te amo, te chamo, pois antes
+B
+do ventre da mãe, já te conheci.
+
+C#m        G#m                A
+Mais eu te amo, te chamo, pois antes
+E           A   E  A B
+do ventre da mãe, já te conheci.
+
+E             A      E
+Renovarei tua vida, transformarei seu
+A
+viver.
+
+E                     A
+Para sempre serás meu filho amado
+E                      A            B
+perdoado e querido em vida mudado.
+
+C#m            G#m        A
+Então mesmo assim, te perdoou e
+B
+abençôo... Uooo... o
+
+C#m            G#m        A
+Então mesmo assim, te perdoou e
+B
+abençôo.
+
+C#m           G#m              A
+Mais eu te amo, te chamo, pois antes
+B
+do ventre da mãe, já te conheci.
+
+C#m           G#m              A
+Mais eu te amo, te chamo, pois antes
+B
+do ventre da mãe, já te conheci.',
+  to_tsvector('portuguese', 'Porque Insiste? ' || '')
+),
+(
+  'quero-mergulhar-fraternidade-casa-de-maria',
+  'Quero Mergulhar',
+  'Fraternidade Casa de Maria',
+  'Fraternidade Casa de Maria',
+  'E',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Adoração',
+  'Qualquer',
+  '',
+  'adoracao',
+  'E                    A9
+Diante de tua presença
+
+               E
+Quero me entregar
+
+                   A9
+Me consumir por inteiro
+
+       E
+Só por ti
+
+         C#m     B9
+Quero Mergulhar
+
+         A9
+em tuas águas(Senhor)
+
+         C#m    B9
+Quero renascer
+
+         A9
+Do teu Espírito',
+  to_tsvector('portuguese', 'Quero Mergulhar ' || '')
+),
+(
+  'vem-espirito-santo-fraternidade-casa-de-maria',
+  'Vem Espírito Santo',
+  'Fraternidade Casa de Maria',
+  'Fraternidade Casa de Maria',
+  'D',
+  74,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Pentecostes / Espírito Santo',
+  'Pentecostes',
+  '',
+  'adoracao',
+  'D            Bm
+Vem, Espírito Santo
+
+ G              A
+Vem em mim e repousa
+
+Bm              A
+Vem curar a minh&#x27;alma
+
+ G                A
+Vem sondar o meu ser!
+
+ Bm               A
+Toca agora o meu ser
+
+   G              A
+Restaura o meu viver!
+
+Bm               A
+Vem trazer água viva
+
+ G               A
+Vem lavar o meu ser
+
+Bm               A
+Vem trazer água viva
+
+ G               A
+Vem lavar o meu ser
+
+Bm               A
+Vem trazer água viva
+
+ G               A
+Vem lavar o meu ser',
+  to_tsvector('portuguese', 'Vem Espírito Santo ' || '')
 )
 ON CONFLICT (id) DO UPDATE SET
   title = EXCLUDED.title,
