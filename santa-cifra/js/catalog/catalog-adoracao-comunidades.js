@@ -7133,5 +7133,65 @@ window.SongsCatalogAdoracaoComunidades = [
       "liturgicalNotes": "Excelente para Ação de Graças, orações comunitárias, terços e vigílias."
     },
     "cifra": "[Intro] G  Dm7  G7  C  C#º  G  Em  A7  D7  G\n\n[Primeira Parte]\nG      Dm7   G7\n1. Se as águas do mar da vida\nC      C#º    G    D/F#\nQuiserem te afogar,\nEm           A7\nSegura na mão de Deus\n    D7\nE vai!\nG      Dm7   G7\nSe as tristezas desta vida\nC      C#º    G    D/F#\nQuiserem te sufocar,\nEm           D7          G   G7\nSegura na mão de Deus e vai!\n\n[Refrão]\nC              D/C\nSegura na mão de Deus,\nBm7         Em\nSegura na mão de Deus,\nAm7          D7          G   G7\nPois ela, ela te sustentará!\nC              D/C\nNão temas, segue adiante\nBm7         Em\nE não olhes para trás:\nAm7          D7          G\nSegura na mão de Deus e vai!\n\n[Segunda Parte]\nG      Dm7   G7\n2. Se a jornada é pesada\nC      C#º    G    D/F#\nE te cansas da caminhada,\nEm           A7\nSegura na mão de Deus\n    D7\nE vai!\nG      Dm7   G7\nOrando, jejuando,\nC      C#º    G    D/F#\nConfiando e vigiando,\nEm           D7          G   G7\nSegura na mão de Deus e vai!\n\n[Refrão]\n\n[Terceira Parte]\nG      Dm7   G7\n3. O Espírito do Senhor\nC      C#º    G    D/F#\nSempre te revestirá,\nEm           A7\nSegura na mão de Deus\n    D7\nE vai!\nG      Dm7   G7\nJesus Cristo prometeu\nC      C#º    G    D/F#\nQue jamais te deixará,\nEm           D7          G   G7\nSegura na mão de Deus e vai!\n\n[Refrão Final]\nC              D/C\nSegura na mão de Deus,\nBm7         Em\nSegura na mão de Deus,\nAm7          D7          G   G7\nPois ela, ela te sustentará!\nC              D/C\nNão temas, segue adiante\nBm7         Em\nE não olhes para trás:\nAm7          D7          G\nSegura na mão de Deus e vai!"
+  },
+  {
+    "id": "sentinela-da-manha-banda-arkanjos",
+    "title": "Sentinela da Manhã",
+    "composer": "Banda Arkanjos",
+    "liturgicalMoment": "Louvor / Vigília",
+    "liturgicalSeason": "Qualquer",
+    "originalKey": "D",
+    "bpm": 78,
+    "timeSignature": "4/4",
+    "rhythmName": "Balada",
+    "rhythmPattern": "↓   ↓ ↑   ↑ ↓",
+    "isMostUsed": false,
+    "isSimple": true,
+    "chordCount": 4,
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Banda+Arkanjos+Sentinela+da+Manha",
+    "liturgicalAnalysis": {
+      "status": "Canto Jovem Vocacional",
+      "score": 90,
+      "documentRef": "Isaías 21, 11; Carta aos Jovens",
+      "biblicalRef": "Is 21, 11",
+      "justification": "Clássico da juventude católica e encontros da Banda Arkanjos.",
+      "repertoireType": "adoracao",
+      "specialDay": "Encontros de Jovens",
+      "normExplanation": "Canto de vigília e compromisso cristão para jovens discípulos."
+    },
+    "cifra": "[Intro] D  A  Bm  G\n\n[Primeira Parte]\nD           A\nSentinela da manhã,\nBm          G\nVigia sem cessar,\nD           A\nA noite vai passar,\nBm           G\nO Sol vai raiar!\n\n[Refrão]\nD          A\nEis que vem o Senhor,\nBm          G\nPríncipe da Paz,\nD           A\nTodo joelho se dobrará,\nBm           G\nToda língua confessará!",
+    "repertoireType": "adoracao",
+    "specialDay": "Encontros de Jovens",
+    "liturgicalNormNote": "Canto da juventude carismática e vigílias da Banda Arkanjos."
+  },
+  {
+    "id": "a-cruz-sagrada-anjos-de-resgate",
+    "title": "A Cruz Sagrada (Oração de São Bento)",
+    "composer": "Anjos de Resgate",
+    "liturgicalMoment": "Louvor / Combate Espiritual",
+    "liturgicalSeason": "Qualquer",
+    "originalKey": "Em",
+    "bpm": 80,
+    "timeSignature": "4/4",
+    "rhythmName": "Pop Rock Orante",
+    "rhythmPattern": "↓   ↓ ↑   ↑ ↓",
+    "isMostUsed": true,
+    "isSimple": true,
+    "chordCount": 4,
+    "youtubeUrl": "https://www.youtube.com/results?search_query=Anjos+de+Resgate+A+Cruz+Sagrada",
+    "liturgicalAnalysis": {
+      "status": "Oração Tradicional da Igreja",
+      "score": 94,
+      "documentRef": "Medalha e Oração de São Bento",
+      "biblicalRef": "Gl 6, 14",
+      "justification": "Musicalização célebre da oração milenar da Cruz de São Bento gravada pelos Anjos de Resgate.",
+      "repertoireType": "devocional",
+      "specialDay": "Festa de São Bento e Retiros",
+      "normExplanation": "Oração litúrgica de libertação e exaltação da Santa Cruz."
+    },
+    "cifra": "[Intro] Em  C  G  D\n\n[Refrão]\nEm              C\nA Cruz Sagrada seja a minha luz!\nG               D\nNão seja o dragão meu guia!\nEm              C\nRetira-te, satanás!\nG               D\nNunca me aconselhes coisas vãs!\n\n[Segunda Parte]\nEm             C\nÉ mau o que tu me ofereces,\nG              D\nBebe tu mesmo o teu veneno!\nEm             C\nA Cruz Sagrada seja a minha luz,\nG        D       Em\nEm Nome do Senhor Jesus!",
+    "repertoireType": "devocional",
+    "specialDay": "Festa de São Bento e Retiros",
+    "liturgicalNormNote": "Oração cantada de proteção espiritual da Santa Cruz."
   }
 ];

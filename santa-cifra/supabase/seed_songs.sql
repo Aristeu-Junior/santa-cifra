@@ -1,6 +1,6 @@
 -- SANTA CIFRA — Seed de Músicas Litúrgicas e Populares Católicas
 -- Gerado automaticamente a partir de data/songs.json (Versão 3.8.5)
--- Total de músicas: 521
+-- Total de músicas: 552
 
 INSERT INTO public.songs (
   id, title, artist, composer, original_key, bpm, time_signature,
@@ -1575,28 +1575,124 @@ Vós, porém, ó meu Senhor, não fiqueis longe;
   '[Intro] Dm  Gm  A7  Dm
 
 [Refrão]
-   Dm     Gm         A7          Dm
+   Dm           Gm        A7          Dm
 Pecador, agora é tempo de pesar e de temor:
-   Bb        Gm         A7          Dm
-Serve a Deus, despreza o mundo, já não sejas pecador!
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!
 
 [Primeira Parte]
-   Dm       Gm         A7          Dm
+   Dm           Gm         A7           Dm
 1. Neste tempo sacrossanto, o pecado faz horror;
-   Bb        Gm         A7          Dm
-Contemplando a Cruz de Cristo, convertei-vos ao Senhor!
+       Bb             Gm
+   Contemplando a Cruz de Cristo,
+         A7           Dm
+   Convertei-vos ao Senhor!
 
 [Refrão]
-   Dm     Gm         A7          Dm
+   Dm           Gm        A7          Dm
 Pecador, agora é tempo de pesar e de temor:
-   Bb        Gm         A7          Dm
-Serve a Deus, despreza o mundo, já não sejas pecador!
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!
 
 [Segunda Parte]
-   Dm      Gm         A7          Dm
-2. Rasgai vossos corações, e não vossas vestes;
-   Bb        Gm         A7          Dm
-Voltai para o vosso Deus, que é bondoso e compassivo!',
+   Dm           Gm        A7          Dm
+2. Vinde, vinde, pecadores, vinde todos pelejar;
+      Bb             Gm
+   Contra as forças do inimigo,
+         A7          Dm
+   Nossa alma libertar!
+
+[Refrão]
+   Dm           Gm        A7          Dm
+Pecador, agora é tempo de pesar e de temor:
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!
+
+[Terceira Parte]
+   Dm          Gm          A7            Dm
+3. Lembra, ó homem, que és pó e ao pó hás de voltar;
+      Bb            Gm
+   Aproveita o tempo breve
+          A7           Dm
+   Que te resta pra chorar!
+
+[Refrão]
+   Dm           Gm        A7          Dm
+Pecador, agora é tempo de pesar e de temor:
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!
+
+[Quarta Parte]
+   Dm          Gm         A7           Dm
+4. Pelas dores cruciantes que Jesus por nós sofreu;
+      Bb           Gm
+   Pelo sangue derramado
+          A7            Dm
+   Que na cruz nos redimiu!
+
+[Refrão]
+   Dm           Gm        A7          Dm
+Pecador, agora é tempo de pesar e de temor:
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!
+
+[Quinta Parte]
+   Dm          Gm          A7             Dm
+5. Vede lá no alto Monte a Cruz de nosso Redentor;
+       Bb            Gm
+   De braços abertos chama:
+            A7          Dm
+   "Vinde a Mim por Meu amor!"
+
+[Refrão]
+   Dm           Gm        A7          Dm
+Pecador, agora é tempo de pesar e de temor:
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!
+
+[Sexta Parte]
+   Dm           Gm        A7           Dm
+6. Rasgai vossos corações, e não vossas vestes;
+      Bb          Gm
+   Voltai para o vosso Deus,
+       A7            Dm
+   Compassivo e clemente!
+
+[Refrão]
+   Dm           Gm        A7          Dm
+Pecador, agora é tempo de pesar e de temor:
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!
+
+[Sétima Parte]
+   Dm           Gm          A7             Dm
+7. Ó Jesus, compadecido, perdoai os nossos erros;
+        Bb           Gm
+   E nos concedei a graça
+            A7             Dm
+   De viver nos Vossos passos!
+
+[Refrão Final]
+   Dm           Gm        A7          Dm
+Pecador, agora é tempo de pesar e de temor:
+    Bb             Gm
+Serve a Deus, despreza o mundo,
+     A7           Dm
+Já não sejas pecador!',
   to_tsvector('portuguese', 'Pecador, Agora É Tempo (Quarta-Feira de Cinzas e Quaresma) ' || '')
 ),
 (
@@ -32952,8 +33048,8 @@ Que me cura por amor',
 (
   'pe-fabio-de-melo-incendeia-minha-alma',
   'Incendeia Minha Alma',
-  'Padre Fábio de Melo / Rogério / Júlio',
-  'Padre Fábio de Melo / Rogério / Júlio',
+  'Padre Fábio de Melo / Frei Gilson',
+  'Padre Fábio de Melo / Rogério / Júlio / Intérprete: Frei Gilson',
   'C',
   74,
   '4/4',
@@ -33086,7 +33182,7 @@ Incendeia minha alma
 
       G         D/F#       A4  A
 Incendeia minha alma, Senhor',
-  to_tsvector('portuguese', 'Incendeia Minha Alma ' || '')
+  to_tsvector('portuguese', 'Incendeia Minha Alma ' || 'Padre Fábio de Melo / Frei Gilson')
 ),
 (
   'pe-fabio-de-melo-vida',
@@ -38081,6 +38177,1361 @@ E não olhes para trás:
 Am7          D7          G
 Segura na mão de Deus e vai!',
   to_tsvector('portuguese', 'Segura na Mão de Deus ' || '')
+),
+(
+  'coracao-novo-banda-arkanjos',
+  'Coração Novo',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'C',
+  70,
+  '4/4',
+  'Balada Lenta',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Ato Penitencial',
+  'Qualquer',
+  'Ez 36, 26',
+  'adoracao',
+  '[Intro] C  G/B  Am  F
+
+[Primeira Parte]
+C            G/B
+Dá-me um coração novo,
+Am           F
+Dá-me um coração puro,
+C          G/B
+Que saiba perdoar,
+Am          F
+Que saiba amar!
+
+[Refrão]
+C            G
+Lava a minha alma,
+Am           F
+Muda a minha vida,
+C           G/B
+Toma o meu coração,
+Am             F
+Faz dele Tua habitação!
+
+[Segunda Parte]
+C             G/B
+Cria em mim, ó Deus,
+Am           F
+Um coração renovado,
+C              G/B
+Põe dentro de mim
+Am             F
+Um espírito dedicado!
+
+[Refrão]
+C            G
+Lava a minha alma,
+Am           F
+Muda a minha vida,
+C           G/B
+Toma o meu coração,
+Am             F
+Faz dele Tua habitação!',
+  to_tsvector('portuguese', 'Coração Novo ' || '')
+),
+(
+  'quem-como-deus-banda-arkanjos',
+  'Quem Como Deus? (São Miguel Arcanjo)',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Em',
+  82,
+  '4/4',
+  'Balada Pop',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  4,
+  'Final e Envio',
+  'Qualquer',
+  'Ap 12, 7',
+  'devocional',
+  '[Intro] Em  C  G  D
+
+[Primeira Parte]
+Em             C
+Quem como Deus?
+G              D
+Ninguém como Deus!
+Em             C
+Quem como Deus?
+G              D
+Ninguém como Deus!
+
+[Refrão]
+Em               C
+São Miguel Arcanjo,
+G           D
+Vem nos defender,
+Em             C
+Neste nosso combate,
+G            D
+Vem nos socorrer!
+
+[Segunda Parte]
+Em             C
+Com Tua espada de luz,
+G            D
+Vem nos proteger,
+Em          C
+Sob as asas da fé,
+G           D
+Vamos vencer!
+
+[Refrão]
+Em               C
+São Miguel Arcanjo,
+G           D
+Vem nos defender,
+Em             C
+Neste nosso combate,
+G            D
+Vem nos socorrer!',
+  to_tsvector('portuguese', 'Quem Como Deus? (São Miguel Arcanjo) ' || '')
+),
+(
+  'sentinela-da-manha-banda-arkanjos',
+  'Sentinela da Manhã',
+  'Banda Arkanjos',
+  'Banda Arkanjos',
+  'D',
+  78,
+  '4/4',
+  'Balada',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Louvor / Vigília',
+  'Qualquer',
+  'Is 21, 11',
+  'adoracao',
+  '[Intro] D  A  Bm  G
+
+[Primeira Parte]
+D           A
+Sentinela da manhã,
+Bm          G
+Vigia sem cessar,
+D           A
+A noite vai passar,
+Bm           G
+O Sol vai raiar!
+
+[Refrão]
+D          A
+Eis que vem o Senhor,
+Bm          G
+Príncipe da Paz,
+D           A
+Todo joelho se dobrará,
+Bm           G
+Toda língua confessará!',
+  to_tsvector('portuguese', 'Sentinela da Manhã ' || '')
+),
+(
+  'deus-trino-padre-zeca',
+  'Deus Trino (Em Nome do Pai)',
+  'Padre Zeca',
+  'Padre Zeca',
+  'A',
+  96,
+  '4/4',
+  'Balada Jovem',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  6,
+  'Entrada',
+  'Qualquer',
+  'Mt 28, 19',
+  'liturgica',
+  '[Intro] A  D  A  E7
+
+[Primeira Parte]
+A
+Em nome do Pai,
+D
+Em nome do Filho,
+A
+Em nome do Espírito Santo,
+E7
+Estamos aqui!
+A
+Em nome do Pai,
+D
+Em nome do Filho,
+A
+Em nome do Espírito Santo,
+E7          A
+Estamos aqui!
+
+[Refrão]
+D            E
+Para louvar e agradecer,
+C#m          F#m
+Bendizer e adorar:
+Bm           E7
+Estamos aqui, Senhor,
+A
+A Teu dispor!
+D            E
+Para louvar e agradecer,
+C#m          F#m
+Bendizer e adorar:
+Bm          E7
+Te louvar e te bendizer,
+A
+Senhor!',
+  to_tsvector('portuguese', 'Deus Trino (Em Nome do Pai) ' || '')
+),
+(
+  'deus-e-dez-padre-zeca',
+  'Deus É Dez',
+  'Padre Zeca',
+  'Padre Zeca',
+  'D',
+  110,
+  '4/4',
+  'Pop Animado',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  true,
+  true,
+  4,
+  'Final e Envio',
+  'Qualquer',
+  'Sl 148',
+  'popular',
+  '[Intro] D  G  Bm  A
+
+[Primeira Parte]
+D
+Tudo o que Jesus conquistou na cruz
+G
+É direito nosso, é nossa herança!
+Bm
+Todas as bênçãos de Deus pra nós
+A
+Tomamos posse, é nossa herança!
+
+[Refrão]
+D
+Deus é dez pra mim!
+G
+Deus é dez pra você!
+Bm
+Deus é dez pra todos nós!
+A              D
+Deus é dez demais!',
+  to_tsvector('portuguese', 'Deus É Dez ' || '')
+),
+(
+  'quero-te-dar-a-paz-padre-zeca',
+  'Quero Te Dar a Paz',
+  'Padre Zeca',
+  'Padre Zeca',
+  'G',
+  80,
+  '4/4',
+  'Balada',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Abraço da Paz',
+  'Qualquer',
+  'Jo 14, 27',
+  'liturgica',
+  '[Intro] G  Em  C  D7
+
+[Primeira Parte]
+G               Em
+Aperte a minha mão,
+C               D7
+Irmão, quero te dar a paz!
+G               Em
+Do meu Senhor Jesus,
+C               D7
+A paz que Ele nos traz!
+
+[Refrão]
+G                Em
+A paz do meu Senhor,
+C              D7
+A paz do Seu amor,
+G              Em
+Pra você, meu irmão,
+C         D7       G
+De todo o meu coração!',
+  to_tsvector('portuguese', 'Quero Te Dar a Paz ' || '')
+),
+(
+  'nas-asas-do-senhor-padre-zeca',
+  'Nas Asas do Senhor',
+  'Padre Zeca',
+  'Padre Zeca',
+  'D',
+  72,
+  '4/4',
+  'Balada Lenta Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  5,
+  'Comunhão',
+  'Qualquer',
+  'Sl 91, 4',
+  'adoracao',
+  '[Intro] D  G  Bm  A
+
+[Primeira Parte]
+D                  G
+Se a tempestade me alcançar,
+Bm                 A
+E as ondas tentarem me afogar,
+D               G
+Eu sei em quem confiei:
+Bm              A
+Em Tuas asas me abrigarei!
+
+[Refrão]
+D
+Nas asas do Senhor
+G
+Eu vou voar,
+Bm
+Em Seu grande amor
+A
+Descansar!',
+  to_tsvector('portuguese', 'Nas Asas do Senhor ' || '')
+),
+(
+  'dia-de-sol-padre-alessandro-campos',
+  'Dia de Sol',
+  'Padre Alessandro Campos',
+  'Padre Alessandro Campos',
+  'G',
+  112,
+  '2/4',
+  'Sertanejo Alegre',
+  '↓ ↑ ↓ ↑',
+  false,
+  true,
+  true,
+  5,
+  'Final e Envio',
+  'Qualquer',
+  'Sl 117, 24',
+  'popular',
+  '[Intro] G  D  C  G
+
+[Primeira Parte]
+G
+Hoje é um dia de sol,
+C
+Hoje é dia de alegria,
+D
+Vem louvar ao Senhor,
+G
+Com Jesus e com Maria!
+
+[Refrão]
+G           D
+Canta, meu povo,
+C            G
+Com fé no coração,
+G           D
+Jesus é o caminho,
+C      D     G
+A nossa salvação!',
+  to_tsvector('portuguese', 'Dia de Sol ' || '')
+),
+(
+  'esse-e-meu-deus-padre-alessandro-campos',
+  'Esse É Meu Deus',
+  'Padre Alessandro Campos',
+  'Padre Alessandro Campos',
+  'C',
+  104,
+  '4/4',
+  'Toada Sertaneja',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  true,
+  true,
+  4,
+  'Final e Envio',
+  'Qualquer',
+  'Ex 15, 2',
+  'popular',
+  '[Intro] C  G  Am  F
+
+[Primeira Parte]
+C
+Esse é o Deus que abre o mar,
+G
+Esse é o Deus que faz milagre,
+Am
+Que não me deixa fraquejar,
+F
+Que cura toda enfermidade!
+
+[Refrão]
+C            G
+Esse é o meu Deus poderoso,
+Am           F
+Esse é o meu Deus soberano!
+C          G
+Nele eu confio a minha vida,
+Am        F     C
+Nele eu espero todo ano!',
+  to_tsvector('portuguese', 'Esse É Meu Deus ' || '')
+),
+(
+  'diario-de-maria-martin-valverde',
+  'Diário de Maria',
+  'Martín Valverde',
+  'Martín Valverde',
+  'C',
+  64,
+  '4/4',
+  'Balada Dolorosa',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  6,
+  'Comunhão / Semana Santa',
+  'Quaresma',
+  'Jo 19, 25',
+  'liturgica',
+  '[Intro] C  G/B  Am  F  G
+
+[Primeira Parte]
+C            G/B
+Te olhei nos olhos
+Am
+Quando eras pequenino,
+F              Dm
+Em meus braços te embalei
+G
+Com todo amor divino.
+
+[Segunda Parte]
+C             G/B
+Hoje te vejo pregado
+Am
+Nesta cruz de dor e fel,
+F            Dm
+Entregando Tua vida
+G
+Por amor a Israel.
+
+[Refrão]
+C           G/B
+Dorme, meu Filho,
+Am
+Dorme em paz,
+F            Dm
+A promessa do Teu Pai
+G
+Logo se cumprirá!
+C            G/B
+A morte não tem a palavra,
+Am
+Nem o sepulcro tem poder:
+F            G
+Ao terceiro dia
+C
+Hás de renascer!',
+  to_tsvector('portuguese', 'Diário de Maria ' || '')
+),
+(
+  'gloria-a-deus-nas-alturas-martin-valverde',
+  'Glória a Deus nas Alturas (Glória)',
+  'Martín Valverde',
+  'Martín Valverde',
+  'Dm',
+  88,
+  '4/4',
+  'Balada Solene',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Glória',
+  'Qualquer',
+  'Lc 2, 14',
+  'liturgica',
+  '[Intro] Dm  C  Bb  A7
+
+[Refrão]
+Dm        C
+Glória, glória,
+Bb            A7
+A Deus nas alturas!
+Dm        C
+E paz na terra
+Bb     A7       Dm
+Aos homens de amor!
+
+[Primeira Parte]
+Dm            C
+Senhor Deus, Rei dos céus,
+Bb             A7
+Deus Pai Todo-Poderoso:
+Dm             C
+Nós vos louvamos,
+Bb             A7
+Nós vos bendizemos!
+
+[Refrão]
+Dm        C
+Glória, glória,
+Bb            A7
+A Deus nas alturas!
+Dm        C
+E paz na terra
+Bb     A7       Dm
+Aos homens de amor!',
+  to_tsvector('portuguese', 'Glória a Deus nas Alturas (Glória) ' || '')
+),
+(
+  'invocamos-eros-biondini',
+  'Invocamos',
+  'Eros Biondini',
+  'Eros Biondini',
+  'E',
+  68,
+  '4/4',
+  'Balada Lenta Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão / Adoração',
+  'Pentecostes',
+  'Rm 8, 26',
+  'adoracao',
+  '[Intro] E  C#m  A  B7
+
+[Primeira Parte]
+E            C#m
+Invocamos o Teu Nome,
+A            B7
+Invocamos Tua presença,
+E            C#m
+Invocamos Teu poder,
+A           B7
+Vem, Espírito Santo!
+
+[Refrão]
+E             C#m
+Vem sobre nós, Senhor!
+A             B7
+Vem sobre nós, Senhor!
+E          C#m
+Com Teu fogo Santo,
+A      B7       E
+Vem renovar o mundo!',
+  to_tsvector('portuguese', 'Invocamos ' || '')
+),
+(
+  'civilizacao-do-amor-eros-biondini',
+  'Civilização do Amor',
+  'Eros Biondini',
+  'Eros Biondini',
+  'A',
+  98,
+  '4/4',
+  'Pop Rock Católico',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  true,
+  true,
+  4,
+  'Final e Envio',
+  'Qualquer',
+  '1 Jo 4, 7-12',
+  'popular',
+  '[Intro] A  D  F#m  E
+
+[Primeira Parte]
+A             D
+Uma nova terra,
+F#m          E
+Um novo céu,
+A              D
+Onde a justiça reine,
+F#m          E
+Onde o amor seja lei!
+
+[Refrão]
+A            D
+Construir a Civilização,
+F#m          E
+A Civilização do Amor!
+A             D
+Onde todos sejam irmãos,
+F#m      E          A
+Na presença do Senhor!',
+  to_tsvector('portuguese', 'Civilização do Amor ' || '')
+),
+(
+  'bendito-sejais-que-maravilha-turra',
+  'Bendito Sejais (Que Maravilha, Senhor, Estar Aqui)',
+  'Frei Luiz Turra',
+  'Frei Luiz Turra',
+  'G',
+  76,
+  '3/4',
+  'Valsa Litúrgica',
+  '↓   ↓ ↑',
+  true,
+  true,
+  true,
+  5,
+  'Oferendas',
+  'Qualquer',
+  'Sl 103, 14; 1 Cor 10, 16',
+  'liturgica',
+  '[Intro] G  D  Em  C  D  G
+
+[Refrão]
+G              D
+Bendito sejais, Senhor,
+Em             C
+Pelo pão que nós trazemos!
+G               D
+Bendito sejais, Senhor,
+C        D       G
+Pelo vinho que colhemos!
+
+[Primeira Parte]
+G              D
+1. Fruto da terra e do trabalho,
+Em               C
+   Oferta pura do nosso altar;
+G             D
+   Em Teu Corpo e Teu Sangue,
+C      D         G
+   Jesus vai transformar!
+
+[Refrão]
+G              D
+Bendito sejais, Senhor,
+Em             C
+Pelo pão que nós trazemos!
+G               D
+Bendito sejais, Senhor,
+C        D       G
+Pelo vinho que colhemos!',
+  to_tsvector('portuguese', 'Bendito Sejais (Que Maravilha, Senhor, Estar Aqui) ' || '')
+),
+(
+  'jesus-cristo-ontem-hoje-turra',
+  'Jesus Cristo, Ontem, Hoje e Sempre',
+  'Frei Luiz Turra',
+  'Frei Luiz Turra',
+  'G',
+  88,
+  '4/4',
+  'Marcha Litúrgica',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Entrada',
+  'Qualquer',
+  'Hb 13, 8',
+  'liturgica',
+  '[Intro] G  C  D  G
+
+[Refrão]
+G               C
+Jesus Cristo, ontem e hoje,
+Am             D7
+Jesus Cristo, sempre e sempre!
+G             C
+Ele é o Alfa, Ele é o Ômega,
+G         D7       G
+Rei dos reis eternamente!
+
+[Primeira Parte]
+G               C
+1. Caminheiro da esperança,
+Am              D7
+   Vem guiar o nosso andar;
+G               C
+   Nesta mesa da Aliança,
+G        D7        G
+   Tua graça vem nos dar!
+
+[Refrão]
+G               C
+Jesus Cristo, ontem e hoje,
+Am             D7
+Jesus Cristo, sempre e sempre!
+G             C
+Ele é o Alfa, Ele é o Ômega,
+G         D7       G
+Rei dos reis eternamente!',
+  to_tsvector('portuguese', 'Jesus Cristo, Ontem, Hoje e Sempre ' || '')
+),
+(
+  'sopra-em-nos-irma-ana-paula',
+  'Sopra em Nós',
+  'Irmã Ana Paula',
+  'Irmã Ana Paula',
+  'C',
+  66,
+  '4/4',
+  'Balada Suave',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão / Adoração',
+  'Pentecostes',
+  'Ez 37, 9',
+  'adoracao',
+  '[Intro] Am7  G/B  C  F
+
+[Primeira Parte]
+Am7         G/B
+Sopra em nós Teu sopro, ó Pai,
+C           F
+Vem nos restaurar!
+Am7         G/B
+Sopra em nós Teu fogo, ó Deus,
+C           F
+Vem nos inflamar!
+
+[Refrão]
+C            G
+Espírito de Deus,
+Am7          F
+Vem sobre nós!
+C            G/B
+Espírito de Amor,
+Am7         F
+Renova o coração!',
+  to_tsvector('portuguese', 'Sopra em Nós ' || '')
+),
+(
+  'fica-irma-ana-paula',
+  'Fica',
+  'Irmã Ana Paula',
+  'Irmã Ana Paula',
+  'D',
+  68,
+  '4/4',
+  'Balada Lenta',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão',
+  'Qualquer',
+  'Lc 24, 29',
+  'liturgica',
+  '[Intro] D  G  Bm  A
+
+[Primeira Parte]
+D            G
+Fica, Senhor, já é tarde,
+Bm             A
+O dia já declinou;
+D             G
+Fica conosco à mesa,
+Bm             A
+Parte conosco o pão!
+
+[Refrão]
+D            G
+Fica aqui, Senhor!
+Bm           A
+Fica aqui, Senhor!
+D             G
+Nossa alma tem sede
+Bm       A      D
+Do Teu divino amor!',
+  to_tsvector('portuguese', 'Fica ' || '')
+),
+(
+  'sobe-a-jerusalem-waldeci-farias',
+  'Sobe a Jerusalém',
+  'Waldeci Farias',
+  'Waldeci Farias',
+  'D',
+  72,
+  '3/4',
+  'Valsa Quaresmal',
+  '↓   ↓ ↑',
+  true,
+  true,
+  true,
+  6,
+  'Oferendas',
+  'Quaresma',
+  'Lc 9, 51; Is 53',
+  'liturgica',
+  '[Intro] D  F#7  Bm  G  A7  D
+
+[Primeira Parte]
+D            F#7     Bm
+Sobe a Jerusalém,
+G            A7      D
+Virgem Mãe tão dolorosa;
+D             F#7    Bm
+Leva em Tuas mãos de mãe
+G             A7     D
+Nossa prece piedosa!
+
+[Refrão]
+D            F#7    Bm
+Trazemos o pão e o vinho,
+G            A7      D
+Ofertas do nosso altar:
+D             F#7     Bm
+Com Cristo no Seu caminho,
+G          A7       D
+Queremos nos ofertar!',
+  to_tsvector('portuguese', 'Sobe a Jerusalém ' || '')
+),
+(
+  'vem-e-eu-mostrarei-waldeci-farias',
+  'Vem, e Eu Mostrarei (O Povo de Deus no Deserto)',
+  'Waldeci Farias',
+  'Waldeci Farias',
+  'G',
+  84,
+  '4/4',
+  'Balada Vocacional',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Entrada',
+  'Qualquer',
+  'Ex 3, 7-10',
+  'liturgica',
+  '[Intro] G  Em  C  D  G
+
+[Primeira Parte]
+G               Em
+Vem, e Eu mostrarei
+C               D
+Que meu povo no deserto
+G               Em
+Não caminha sozinho:
+C              D     G
+Eu estou sempre por perto!
+
+[Refrão]
+G           Em
+Vai, profeta do amor,
+C            D
+Leva a Minha Palavra!
+G           Em
+Eu serei tua força,
+C          D        G
+Tua voz que não se cala!',
+  to_tsvector('portuguese', 'Vem, e Eu Mostrarei (O Povo de Deus no Deserto) ' || '')
+),
+(
+  'recebe-nossa-vida-alianca-misericordia',
+  'Recebe Nossa Vida',
+  'Aliança de Misericórdia',
+  'Aliança de Misericórdia',
+  'F',
+  70,
+  '4/4',
+  'Balada Suave',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Oferendas',
+  'Qualquer',
+  'Rm 12, 1',
+  'liturgica',
+  '[Intro] F  Am  Bb  C
+
+[Primeira Parte]
+F            Am
+Recebe, Senhor,
+Bb           C
+O pão e o vinho;
+F            Am
+Recebe, Senhor,
+Bb           C
+O nosso carinho!
+
+[Refrão]
+Bb           C
+Recebe a nossa vida,
+Am           Dm
+Nosso coração sincero;
+Gm           C
+Tudo o que nós somos,
+Bb      C     F
+A Ti nós entregamos!',
+  to_tsvector('portuguese', 'Recebe Nossa Vida ' || '')
+),
+(
+  'onde-reina-o-amor-ubi-caritas-taize',
+  'Onde Reina o Amor (Ubi Caritas)',
+  'Comunidade de Taizé',
+  'Comunidade de Taizé',
+  'F',
+  60,
+  '3/4',
+  'Canto Meditativo Monástico',
+  '↓   ↓ ↑',
+  true,
+  true,
+  true,
+  4,
+  'Comunhão / Lava-Pés',
+  'Semana Santa',
+  '1 Jo 4, 16',
+  'liturgica',
+  '[Intro] F  C  Dm  Bb  C  F
+
+[Refrão Contemplativo]
+F      C        Dm
+Onde reina o amor,
+Bb      C     F
+Deus aí está!
+F      C        Dm
+Onde reina o amor,
+Bb      C     F
+Deus aí está!',
+  to_tsvector('portuguese', 'Onde Reina o Amor (Ubi Caritas) ' || '')
+),
+(
+  'misericordia-senhor-taize',
+  'Misericórdia, Senhor (Misericordias Domini)',
+  'Comunidade de Taizé',
+  'Comunidade de Taizé',
+  'Dm',
+  62,
+  '4/4',
+  'Ostinato Meditativo',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  4,
+  'Ato Penitencial',
+  'Quaresma',
+  'Sl 89, 2',
+  'liturgica',
+  '[Intro] Dm  A  Dm  C  F  A  Dm
+
+[Ostinato Meditativo]
+Dm             A      Dm
+Misericórdia, ó Senhor,
+C              F      A
+Pra sempre eu cantarei!
+Dm             A      Dm
+Misericórdia, ó Senhor,
+Bb      A      Dm
+Pra sempre cantarei!',
+  to_tsvector('portuguese', 'Misericórdia, Senhor (Misericordias Domini) ' || '')
+),
+(
+  'eis-me-aqui-senhor-frei-fabreti',
+  'Eis-me Aqui, Senhor (O Senhor É o Pastor Que Me Conduz)',
+  'Frei Fabreti',
+  'Frei Fabreti',
+  'E',
+  72,
+  '4/4',
+  'Balada Pastoral Litúrgica',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão',
+  'Qualquer',
+  '1 Sm 3, 4; Is 6, 8',
+  'liturgica',
+  '[Intro] E  A  B7  E
+
+[Refrão]
+E              A
+Eis-me aqui, Senhor!
+B7             E
+Eis-me aqui, Senhor!
+C#m            F#m
+Pra fazer Tua vontade,
+B7             E
+Pra viver no Teu amor!
+
+[Primeira Parte]
+E              A
+1. O Senhor me chamou
+B7             E
+   Pelo meu próprio nome;
+C#m            F#m
+   Eu respondo com fé:
+B7             E
+   Eis-me aqui, Senhor!',
+  to_tsvector('portuguese', 'Eis-me Aqui, Senhor (O Senhor É o Pastor Que Me Conduz) ' || '')
+),
+(
+  'eu-me-levanto-salmo-50-veloso',
+  'Eu Me Levanto (Salmo 50)',
+  'Padre Reginaldo Veloso',
+  'Padre Reginaldo Veloso',
+  'Dm',
+  68,
+  '4/4',
+  'Toada Penitencial Nordestina',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  4,
+  'Ato Penitencial',
+  'Quaresma',
+  'Sl 50, 1-3',
+  'liturgica',
+  '[Intro] Dm  Gm  A7  Dm
+
+[Refrão]
+Dm            Gm
+Eu me levanto hoje,
+A7            Dm
+Vou a meu Pai voltar:
+Dm              Gm
+Pequei contra o céu,
+A7              Dm
+Vem, Senhor, me perdoar!
+
+[Primeira Parte]
+Dm             Gm
+1. Tende piedade de mim,
+A7             Dm
+   Ó Deus de bondade e amor;
+Dm            Gm
+   Lavai toda a minha culpa,
+A7             Dm
+   Perdoai o meu clamor!',
+  to_tsvector('portuguese', 'Eu Me Levanto (Salmo 50) ' || '')
+),
+(
+  'o-primeiro-olhar-anjos-de-resgate',
+  'O Primeiro Olhar',
+  'Anjos de Resgate',
+  'Anjos de Resgate',
+  'G',
+  72,
+  '4/4',
+  'Balada Pop Romântica e Pastoral',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão / Matrimônio',
+  'Qualquer',
+  'Gn 2, 24',
+  'adoracao',
+  '[Intro] G  D/F#  Em  C  D
+
+[Primeira Parte]
+G            D/F#
+Quando Te vi pela primeira vez,
+Em           C
+Senti meu coração disparar;
+G           D/F#
+Era o amor que Deus me prometeu,
+Em          C          D
+Pronto pra me abençoar!
+
+[Refrão]
+G           D/F#
+Foi no primeiro olhar,
+Em          C
+No primeiro abraço,
+G           D/F#
+Que Deus uniu nossas vidas,
+Em       D        G
+Num só coração e laço!',
+  to_tsvector('portuguese', 'O Primeiro Olhar ' || '')
+),
+(
+  'a-cruz-sagrada-anjos-de-resgate',
+  'A Cruz Sagrada (Oração de São Bento)',
+  'Anjos de Resgate',
+  'Anjos de Resgate',
+  'Em',
+  80,
+  '4/4',
+  'Pop Rock Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  4,
+  'Louvor / Combate Espiritual',
+  'Qualquer',
+  'Gl 6, 14',
+  'devocional',
+  '[Intro] Em  C  G  D
+
+[Refrão]
+Em              C
+A Cruz Sagrada seja a minha luz!
+G               D
+Não seja o dragão meu guia!
+Em              C
+Retira-te, satanás!
+G               D
+Nunca me aconselhes coisas vãs!
+
+[Segunda Parte]
+Em             C
+É mau o que tu me ofereces,
+G              D
+Bebe tu mesmo o teu veneno!
+Em             C
+A Cruz Sagrada seja a minha luz,
+G        D       Em
+Em Nome do Senhor Jesus!',
+  to_tsvector('portuguese', 'A Cruz Sagrada (Oração de São Bento) ' || '')
+),
+(
+  'forca-e-vitoria-eliana-ribeiro',
+  'Força e Vitória',
+  'Eliana Ribeiro',
+  'Eliana Ribeiro',
+  'Bm',
+  100,
+  '4/4',
+  'Pop Animado',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  true,
+  true,
+  5,
+  'Louvor / Final',
+  'Qualquer',
+  'Fl 4, 13',
+  'popular',
+  '[Intro] Bm  G  A  D  F#7
+
+[Primeira Parte]
+Bm
+Todo joelho se dobrará,
+G
+Toda língua proclamará:
+A
+Jesus Cristo é o Senhor,
+F#7
+Para a glória do Pai!
+
+[Refrão]
+Bm          G
+Força e vitória
+A           D     F#7
+Tem a nossa oração!
+Bm          G
+Força e vitória
+A           Bm
+No Sangue do Cordeiro!',
+  to_tsvector('portuguese', 'Força e Vitória ' || '')
+),
+(
+  'mae-peregrina-padre-antonio-maria',
+  'Mãe Peregrina (Mãe Admirável)',
+  'Padre Antonio Maria',
+  'Padre Antonio Maria',
+  'D',
+  78,
+  '4/4',
+  'Toada Mariana',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Final e Envio / Mariano',
+  'Qualquer',
+  'Lc 1, 39',
+  'devocional',
+  '[Intro] D  G  A7  D
+
+[Primeira Parte]
+D              A7
+Mãe Admirável, ó Mãe Peregrina,
+G              A7         D
+A Tua visita aquece e ilumina!
+D              A7
+Tu és a rainha do nosso rincão,
+G               A7          D
+Protege e acolhe o nosso coração!
+
+[Refrão]
+D             G
+Vem, Mãe querida,
+A7            D
+Vem nos visitar!
+D             G
+Traz Tua bênção
+A7            D
+Pra todo este lar!',
+  to_tsvector('portuguese', 'Mãe Peregrina (Mãe Admirável) ' || '')
+),
+(
+  'cura-senhor-padre-antonio-maria',
+  'Cura, Senhor',
+  'Padre Antonio Maria',
+  'Padre Antonio Maria',
+  'C',
+  68,
+  '4/4',
+  'Balada Lenta Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  4,
+  'Comunhão / Cura',
+  'Qualquer',
+  'Tg 5, 14',
+  'adoracao',
+  '[Intro] C  G  Am  F
+
+[Primeira Parte]
+C             G
+Cura, Senhor, onde dói,
+Am            F
+Cura, Senhor, bem aqui!
+C            G
+Cura a ferida da alma,
+Am           F
+Dá-me a Tua santa calma!
+
+[Refrão]
+C           G
+Cura, meu Senhor Jesus,
+Am          F
+Pela força da Tua Cruz!
+C            G
+Toca o meu coração,
+Am      F      C
+Dá-me a Tua salvação!',
+  to_tsvector('portuguese', 'Cura, Senhor ' || '')
+),
+(
+  'tempo-de-graca-ziza-fernandes',
+  'Tempo de Graça',
+  'Ziza Fernandes',
+  'Ziza Fernandes',
+  'G',
+  70,
+  '4/4',
+  'Balada Poética',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '2 Cor 6, 2',
+  'adoracao',
+  '[Intro] G  C  Em  D
+
+[Primeira Parte]
+G            C
+É tempo de graça,
+Em           D
+É tempo de paz;
+G             C
+O que ficou pra trás
+Em            D
+Não me fere mais!
+
+[Refrão]
+C            D
+Deus faz nova todas as coisas,
+Em           Bm
+Deus refaz o meu caminho;
+C            D
+Nele posso descansar,
+Em       D        G
+Nunca estou sozinho!',
+  to_tsvector('portuguese', 'Tempo de Graça ' || '')
+),
+(
+  'fogo-suave-ziza-fernandes',
+  'Fogo Suave',
+  'Ziza Fernandes',
+  'Ziza Fernandes',
+  'E',
+  64,
+  '4/4',
+  'Balada Lenta',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  false,
+  true,
+  4,
+  'Comunhão / Adoração',
+  'Pentecostes',
+  'Ct 8, 6',
+  'adoracao',
+  '[Intro] E  C#m  A  B7
+
+[Primeira Parte]
+E              C#m
+Fogo suave que queima,
+A              B7
+Que não consome a alma;
+E              C#m
+Chama que acalma o peito,
+A            B7
+Trazendo Tua calma!
+
+[Refrão]
+E          C#m
+Arde em mim, Senhor!
+A          B7
+Arde com Teu amor!
+E           C#m
+Consome o meu viver,
+A      B7       E
+Vem me fazer renascer!',
+  to_tsvector('portuguese', 'Fogo Suave ' || '')
 )
 ON CONFLICT (id) DO UPDATE SET
   title = EXCLUDED.title,

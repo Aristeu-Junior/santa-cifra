@@ -1,10 +1,10 @@
 {
-  "version": "3.9.6",
-  "apkVersionCode": 25,
-  "buildId": "sc-v3.9.6-cancioneiro-catolico-famous-first-running-list-no-hero-secure-login-v30",
-  "totalSongs": 521,
-  "liturgicalSongs": 283,
-  "popularSongs": 238,
+  "version": "3.9.8",
+  "apkVersionCode": 27,
+  "buildId": "sc-v3.9.8-authentic-photos-all-bands-arcanjos-expanded-catalog-no-overflow-v34",
+  "totalSongs": 552,
+  "liturgicalSongs": 295,
+  "popularSongs": 257,
   "apkDownloadUrl": "https://santa-cifra.surge.sh/santa-cifra.apk",
   "liveUrl": "https://santa-cifra.surge.sh"
 }
