@@ -76,9 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Tema salvo pelo usuário; sem escolha salva, segue o tema do aparelho.
   const savedTheme = localStorage.getItem('santa_cifra_theme');
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-    document.body.classList.add('dark-mode');
+  // O tema vive em <html> e <body> ao mesmo tempo: trocar só um deixa o outro preso no escuro.
+  function applyTheme(isDark) {
+    document.documentElement.classList.toggle('dark-mode', isDark);
+    document.body.classList.toggle('dark-mode', isDark);
+    document.documentElement.style.backgroundColor = isDark ? '#000000' : '#E9E9E9';
   }
+  applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const syncThemeColor = () => {
     if (themeMeta) themeMeta.content = document.body.classList.contains('dark-mode') ? '#000000' : '#E9E9E9';
@@ -194,8 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   dom.btnToggleTheme.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
+    const isDark = !document.body.classList.contains('dark-mode');
+    applyTheme(isDark);
     localStorage.setItem('santa_cifra_theme', isDark ? 'dark' : 'light');
     syncThemeIcons();
     syncThemeColor();
