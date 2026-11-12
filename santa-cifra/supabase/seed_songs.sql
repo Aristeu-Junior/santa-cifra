@@ -1,6 +1,6 @@
 -- SANTA CIFRA — Seed de Músicas Litúrgicas e Populares Católicas
 -- Gerado automaticamente a partir de data/songs.json (Versão 3.8.5)
--- Total de músicas: 552
+-- Total de músicas: 560
 
 INSERT INTO public.songs (
   id, title, artist, composer, original_key, bpm, time_signature,
@@ -1575,120 +1575,150 @@ Vós, porém, ó meu Senhor, não fiqueis longe;
   '[Intro] Dm  Gm  A7  Dm
 
 [Refrão]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
 Já não sejas pecador!
 
 [Primeira Parte]
-   Dm           Gm         A7           Dm
-1. Neste tempo sacrossanto, o pecado faz horror;
+   Dm              Gm
+1. Neste tempo sacrossanto,
+   A7           Dm
+   O pecado faz horror;
        Bb             Gm
    Contemplando a Cruz de Cristo,
          A7           Dm
    Convertei-vos ao Senhor!
 
 [Refrão]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
 Já não sejas pecador!
 
 [Segunda Parte]
-   Dm           Gm        A7          Dm
-2. Vinde, vinde, pecadores, vinde todos pelejar;
+   Dm           Gm
+2. Vinde, vinde, pecadores,
+   A7           Dm
+   Vinde todos pelejar;
       Bb             Gm
    Contra as forças do inimigo,
          A7          Dm
    Nossa alma libertar!
 
 [Refrão]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
 Já não sejas pecador!
 
 [Terceira Parte]
-   Dm          Gm          A7            Dm
-3. Lembra, ó homem, que és pó e ao pó hás de voltar;
+   Dm          Gm
+3. Lembra, ó homem, que és pó
+         A7            Dm
+   E ao pó hás de voltar;
       Bb            Gm
    Aproveita o tempo breve
           A7           Dm
    Que te resta pra chorar!
 
 [Refrão]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
 Já não sejas pecador!
 
 [Quarta Parte]
-   Dm          Gm         A7           Dm
-4. Pelas dores cruciantes que Jesus por nós sofreu;
+   Dm          Gm
+4. Pelas dores cruciantes
+         A7           Dm
+   Que Jesus por nós sofreu;
       Bb           Gm
    Pelo sangue derramado
           A7            Dm
    Que na cruz nos redimiu!
 
 [Refrão]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
 Já não sejas pecador!
 
 [Quinta Parte]
-   Dm          Gm          A7             Dm
-5. Vede lá no alto Monte a Cruz de nosso Redentor;
+   Dm          Gm
+5. Vede lá no alto Monte
+        A7             Dm
+   A Cruz de nosso Redentor;
        Bb            Gm
    De braços abertos chama:
             A7          Dm
    "Vinde a Mim por Meu amor!"
 
 [Refrão]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
 Já não sejas pecador!
 
 [Sexta Parte]
-   Dm           Gm        A7           Dm
-6. Rasgai vossos corações, e não vossas vestes;
+   Dm           Gm
+6. Rasgai vossos corações,
+      A7           Dm
+   E não vossas vestes;
       Bb          Gm
    Voltai para o vosso Deus,
        A7            Dm
    Compassivo e clemente!
 
 [Refrão]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
 Já não sejas pecador!
 
 [Sétima Parte]
-   Dm           Gm          A7             Dm
-7. Ó Jesus, compadecido, perdoai os nossos erros;
+   Dm           Gm
+7. Ó Jesus, compadecido,
+        A7             Dm
+   Perdoai os nossos erros;
         Bb           Gm
    E nos concedei a graça
             A7             Dm
    De viver nos Vossos passos!
 
 [Refrão Final]
-   Dm           Gm        A7          Dm
-Pecador, agora é tempo de pesar e de temor:
+   Dm           Gm
+Pecador, agora é tempo
+        A7          Dm
+De pesar e de temor:
     Bb             Gm
 Serve a Deus, despreza o mundo,
      A7           Dm
@@ -39532,6 +39562,504 @@ Consome o meu viver,
 A      B7       E
 Vem me fazer renascer!',
   to_tsvector('portuguese', 'Fogo Suave ' || '')
+),
+(
+  'convivio-dos-eleitos-banda-arkanjos',
+  'Convívio dos Eleitos',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'G',
+  72,
+  '4/4',
+  'Balada Pop Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  6,
+  'Comunhão / Adoração',
+  'Qualquer',
+  'Fl 3, 8',
+  'adoracao',
+  '[Intro] G  C9  Em  D  C9
+
+[Primeira Parte]
+G               C9
+O Senhor me libertou,
+                      Em
+O que mais me prende aqui!
+D              C9
+Nada me seduz, nada!
+
+G                C9
+Meu amor por Ti, Jesus,
+                     Em
+É o que tenho de valor:
+D              C9
+Nada me atrai, nada!
+
+[Segunda Parte]
+Am             Bm     C9
+Tarde Te amei, meu Senhor,
+Am             Bm    C9
+Mas Te encontrei, amor!
+Am              Bm     C9
+Meu maior bem é ser Teu,
+D
+Todo Teu, Jesus!
+
+[Pré-Refrão]
+Am            D
+Por nada eu Te trocaria,
+Bm            Em
+Por nada eu Te deixaria:
+C9          D
+Nada, nada, nada!
+
+[Refrão]
+G                 C9
+Concedei-me o convívio
+              Em
+Dos Vossos eleitos!
+D                  C9
+Eu sonho com o céu todo tempo!
+Am7             Bm7
+Não quero honras nem riquezas,
+C                D
+Eu prefiro o Paraíso!
+
+[Refrão Final]
+G                 C9
+Concedei-me o convívio
+              Em
+Dos Vossos eleitos!
+D                  C9
+Eu sonho com o céu todo tempo!
+Am7             Bm7
+Não quero honras nem riquezas,
+C       D         G
+Eu prefiro o Paraíso!',
+  to_tsvector('portuguese', 'Convívio dos Eleitos ' || '')
+),
+(
+  'santa-cruz-banda-arkanjos',
+  'Santa Cruz',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'G',
+  68,
+  '4/4',
+  'Balada da Cruz',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  6,
+  'Comunhão / Semana Santa',
+  'Quaresma',
+  'Gl 6, 14',
+  'liturgica',
+  '[Intro] G  Bm7  C9  D
+
+[Primeira Parte]
+G                     Bm7
+Todos os pecados meus e os seus
+                  C9
+Foram cravados no madeiro,
+                 Am7    D
+Pois Jesus nos lavou na cruz!
+G                     Bm7
+Ele se fez Cordeiro e tomou
+                 C9
+Toda dor que era nossa:
+             Am7      D
+Com amor Ele nos libertou!
+
+[Pré-Refrão]
+C9             Bm7       Em7
+Ele desceu da Sua glória santa
+C9            Bm7      Em7
+Pra se fazer sacrifício por nós;
+Am7               Bm7
+Como ovelha muda ao matadouro,
+C9              D
+Obedeceu até a morte de cruz!
+
+[Refrão]
+G       Bm7       C9
+Ó Santa Cruz, bendita Cruz!
+             D          G
+O amor por ela se revelou!
+G           Bm7        C9
+Nós somos a Igreja da Cruz,
+                 D
+Por isso a exaltamos, Senhor!
+
+[Segunda Parte]
+C9              Bm7
+Não há mais barreira entre nós:
+C9         D        G
+O véu do templo rasgou!
+C9            Bm7
+O céu está aberto pra nós,
+Am7            D      G
+A graça de Deus triunfou!',
+  to_tsvector('portuguese', 'Santa Cruz ' || '')
+),
+(
+  'meu-tesouro-banda-arkanjos',
+  'Meu Tesouro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'F',
+  70,
+  '4/4',
+  'Balada Lenta',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão / Adoração',
+  'Qualquer',
+  'Mt 6, 21',
+  'adoracao',
+  '[Intro] Bb  Am7  Gm7  C
+
+[Primeira Parte]
+F                Am7
+Onde está meu coração,
+Gm7              C
+Ali estará o meu tesouro!
+F                Am7
+O meu desejo é Te amar,
+Gm7               C
+Sentir Tua paz e Teu amor!
+
+[Segunda Parte]
+F            Am7
+Pobre coração ferido,
+Bb            Am7
+Que buscou amores vãos:
+Gm7           Am7
+Volta agora para o Pai,
+Bb            C
+Que te acolhe em Suas mãos!
+
+[Refrão]
+Bb                Am7
+Ergue o teu olhar pra Deus:
+Bb                 Am7
+Nele há amor sem fim!
+Gm7          Am7
+Ele é o teu maior tesouro,
+Bb           C         F
+O Teu abrigo até o fim!',
+  to_tsvector('portuguese', 'Meu Tesouro ' || '')
+),
+(
+  'dia-da-bencao-banda-arkanjos',
+  'Dia da Bênção (Faz Chover)',
+  'Banda Arkanjos',
+  'Banda Arkanjos',
+  'F',
+  78,
+  '4/4',
+  'Balada Pop Louvor',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  true,
+  true,
+  5,
+  'Louvor / Efusão',
+  'Qualquer',
+  'Ml 3, 10',
+  'popular',
+  '[Intro] F  Dm  Bb  C
+
+[Primeira Parte]
+F
+Hoje as portas do céu
+Dm
+Vão se abrir para nós:
+Bb
+Deus está aqui
+C
+Neste santo lugar!
+
+F
+É o próprio Jesus
+Dm
+Com Seu Espírito Santo
+Bb
+Trazendo a paz
+C
+E as bênçãos do céu!
+
+[Pré-Refrão]
+Dm           Am
+Cura o meu coração,
+Bb          F
+Muda a minha vida:
+Gm            C
+Só Tu podes realizar!
+
+[Refrão]
+F             C/E
+Faz chover, Senhor,
+Dm
+Sobre nós águas vivas!
+Bb
+Abre as comportas do céu
+C
+Neste santo lugar!
+
+F              C/E
+Derrama em nós, Jesus,
+Dm
+Uma chuva de bênçãos:
+Bb
+Hoje é o dia de Deus,
+C                F
+Eu tomo posse da graça!',
+  to_tsvector('portuguese', 'Dia da Bênção (Faz Chover) ' || '')
+),
+(
+  'teus-planos-juninho-cassimiro',
+  'Teus Planos',
+  'Juninho Cassimiro',
+  'Juninho Cassimiro',
+  'G',
+  68,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  6,
+  'Comunhão / Adoração',
+  'Qualquer',
+  'Jr 29, 11',
+  'adoracao',
+  '[Intro] G  Am7  Bm7  C  D
+
+[Primeira Parte]
+G
+Eu me abro ao Teu querer,
+Am7
+Eu me rendo à Tua voz;
+Bm7
+Quero me submeter,
+C               D
+Quero conhecer Teus planos!
+
+G
+Os passos que dei sem Ti
+Am7
+Só me fizeram chorar;
+Bm7
+O tanto que me enganei:
+C                 D
+Me arrependo dos meus planos!
+
+[Pré-Refrão]
+Am7      G       D/F#
+Sem Ti nada posso fazer!
+Em       C
+Onde eu posso ir
+Am7
+Se o céu que procuro
+C              D
+Só encontro em Ti?
+
+[Refrão]
+G           F
+Os passos são Teus,
+C
+O meu próximo minuto é Teu:
+C/D                G
+Se não for assim, não me deixe ir!
+
+G            F
+Dou minha mão a Ti,
+C
+Fecho os olhos e confio em Ti:
+C/D     G
+Leva-me, Senhor!',
+  to_tsvector('portuguese', 'Teus Planos ' || '')
+),
+(
+  'o-poco-juninho-cassimiro-frei-gilson',
+  'O Poço (Deus Sedento)',
+  'Juninho Cassimiro / Intérprete: Frei Gilson',
+  'Juninho Cassimiro / Intérprete: Frei Gilson',
+  'A',
+  66,
+  '4/4',
+  'Balada Meditativa Profunda',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão / Quaresma',
+  'Quaresma',
+  'Jo 4, 10',
+  'liturgica',
+  '[Intro] A  C#m7  D  E
+
+[Primeira Parte]
+A
+Quer se encontrar com o Amor?
+F#m             E       D
+Quer se deparar com um olhar?
+A
+Ele está sentado ali,
+F#m            E       D
+Na beira do poço a te esperar!
+
+[Segunda Parte]
+A              C#m7
+Que tal sentar naquele poço
+D                 E
+E dar de beber ao Deus sedento?
+A             C#m7
+Se conhecesses o Seu dom,
+D             E
+Beberias da água viva!
+
+[Refrão]
+F#m         C#m7
+Vai lá, rasga o teu coração
+D            E
+E vem até Jesus!
+A           C#m7
+Conta pra Ele como estás,
+D                 E
+Deixa Ele te curar na cruz!
+
+F#m         C#m7
+O amor de Deus vai te acolher,
+D             E
+Ele só quer te libertar:
+A            E
+Vem a este poço de amor,
+D      E         A
+Água viva Ele te dará!',
+  to_tsvector('portuguese', 'O Poço (Deus Sedento) ' || '')
+),
+(
+  'coracoes-ao-alto-banda-arkanjos',
+  'Corações ao Alto',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'D',
+  94,
+  '4/4',
+  'Pop Louvor Efusivo',
+  '↓   ↓ ↑   ↑ ↓',
+  false,
+  true,
+  true,
+  5,
+  'Louvor / Prefácio',
+  'Qualquer',
+  'Cl 3, 1',
+  'popular',
+  '[Intro] Bm  F#m  G  A  Bm
+
+[Primeira Parte]
+Bm          F#m
+Queremos voltar ao primeiro amor,
+G              A      Bm
+Esvaziar-nos de todo o mal:
+G             F#m
+Se temos a Ti, Senhor,
+G             A        Bm
+O que mais nos atrai aqui?
+
+[Refrão]
+G           F#m
+Corações ao alto!
+G              A      Bm
+O nosso coração está em Deus!
+G           F#m
+Corações ao alto!
+G              A      Bm
+O nosso coração está em Deus!
+
+[Segunda Parte]
+Em            Bm
+Se vivemos pelo Espírito,
+G            A       Bm
+Andemos no Santo Espírito!
+Em            Bm
+Se vivemos pelo Espírito,
+G            A       Bm
+Andemos no Santo Espírito!
+
+[Ponte]
+D            A        Bm
+Sopra dos quatro cantos,
+G             A
+O sopro da vida de Deus!
+D            A        Bm
+E levanta sobre esta terra
+G        A         Bm
+Um povo santo e fiel!',
+  to_tsvector('portuguese', 'Corações ao Alto ' || '')
+),
+(
+  'face-a-face-banda-arkanjos',
+  'Face a Face',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'Banda Arkanjos / Juninho Cassimiro',
+  'C',
+  70,
+  '4/4',
+  'Balada Orante',
+  '↓   ↓ ↑   ↑ ↓',
+  true,
+  true,
+  true,
+  5,
+  'Comunhão / Adoração',
+  'Qualquer',
+  '1 Cor 13, 12',
+  'adoracao',
+  '[Intro] C  Em  Dm7  G
+
+[Primeira Parte]
+C                    Em
+Face a face com meu Deus,
+                   Dm7
+Com os anjos cantarei!
+                   G
+Lá a noite não existe,
+                 C
+Nem tão pouco a dor!
+
+[Segunda Parte]
+C
+Ele foi preparar um lugar,
+Em
+Uma linda morada nos céus;
+F
+Voltará para me buscar,
+Dm7            G
+Para sempre com Ele habitar!
+
+[Refrão]
+C              Em
+Finalmente livre eu sou!
+Dm7           G
+Livre eternamente eu sou!
+C              Em
+Face a face com meu Deus,
+Dm7        G       C
+Descanso eterno eu terei!',
+  to_tsvector('portuguese', 'Face a Face ' || '')
 )
 ON CONFLICT (id) DO UPDATE SET
   title = EXCLUDED.title,
