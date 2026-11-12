@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const syncThemeColor = () => {
-    if (themeMeta) themeMeta.content = document.body.classList.contains('dark-mode') ? '#0e1013' : '#f3f4f6';
+    if (themeMeta) themeMeta.content = document.body.classList.contains('dark-mode') ? '#000000' : '#E9E9E9';
   };
   syncThemeIcons();
   syncThemeColor();

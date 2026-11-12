@@ -964,7 +964,7 @@
 .btn-whatsapp-magic {
   height: 44px;
   border-radius: var(--radius-pill);
-  background: #25d366;
+  background: var(--accent);
   color: var(--on-accent);
   display: flex;
   align-items: center;
@@ -977,7 +977,7 @@
 }
 
 .btn-whatsapp-magic:hover {
-  background: #20ba5a;
+  background: var(--accent-strong);
 }
 
 /* Autocomplete de Sugestão de Músicas */
@@ -1725,12 +1725,12 @@
   gap: 6px;
   padding: 4px 12px;
   border-radius: var(--radius-pill);
-  background-color: #1877f2;
-  color: var(--on-accent) !important;
+  background-color: var(--bg-subtle);
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-color);
   font-size: 0.82rem;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 1px 4px rgba(24, 119, 242, 0.3);
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 

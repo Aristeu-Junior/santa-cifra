@@ -496,7 +496,7 @@
     let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" class="chord-svg guitar-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Acorde ${chordName}">`;
 
     // Nome do acorde em destaque
-    svg += `<text x="${width/2}" y="18" text-anchor="middle" font-family="'Fira Code', ui-monospace, monospace" font-size="15" font-weight="700" fill="var(--chord-color, #9e1b22)">${chordName}</text>`;
+    svg += `<text x="${width/2}" y="18" text-anchor="middle" font-family="'Fira Code', ui-monospace, monospace" font-size="15" font-weight="700" fill="var(--chord-color, #ECD3B5)">${chordName}</text>`;
 
     // Nut (pestana do headstock) ou indicador lateral de casa alta
     if (baseFret === 1) {
@@ -540,9 +540,9 @@
         const barH = 13;
 
         // Barra sólida contínua da pestana ("dedo deitado")
-        svg += `<rect x="${xFrom - 7}" y="${yBarre - barH / 2}" width="${barW}" height="${barH}" rx="${barH / 2}" ry="${barH / 2}" fill="var(--chord-color, #9e1b22)" />`;
+        svg += `<rect x="${xFrom - 7}" y="${yBarre - barH / 2}" width="${barW}" height="${barH}" rx="${barH / 2}" ry="${barH / 2}" fill="var(--chord-color, #ECD3B5)" />`;
         // Indicador do dedo indicador (1) na pestana
-        svg += `<text x="${xFrom}" y="${yBarre + 3.8}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9.5" font-weight="700" fill="#ffffff">1</text>`;
+        svg += `<text x="${xFrom}" y="${yBarre + 3.8}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9.5" font-weight="700" fill="var(--on-accent, #000)">1</text>`;
       }
     }
 
@@ -562,9 +562,9 @@
         if (relFret >= 1 && relFret <= 5) {
           const y = topMargin + (relFret - 0.5) * fretSpacing;
           const finger = (info.fingers && info.fingers[i]) ? info.fingers[i] : '';
-          svg += `<circle cx="${x}" cy="${y}" r="6.5" fill="var(--chord-color, #9e1b22)" stroke="#ffffff" stroke-width="0.8" />`;
+          svg += `<circle cx="${x}" cy="${y}" r="6.5" fill="var(--chord-color, #ECD3B5)" stroke="var(--bg-surface, #000)" stroke-width="0.8" />`;
           if (finger) {
-            svg += `<text x="${x}" y="${y + 3.8}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9.5" font-weight="700" fill="#ffffff">${finger}</text>`;
+            svg += `<text x="${x}" y="${y + 3.8}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="9.5" font-weight="700" fill="var(--on-accent, #000)">${finger}</text>`;
           }
         }
       }
@@ -596,17 +596,17 @@
     let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" class="chord-svg keyboard-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Acorde ${chordName} no Teclado">`;
     
     // Título e variação
-    svg += `<text x="${width/2}" y="15" text-anchor="middle" font-family="'Fira Code', monospace" font-size="12" font-weight="700" fill="var(--chord-color, #9e1b22)">${chordName} (Teclado)</text>`;
+    svg += `<text x="${width/2}" y="15" text-anchor="middle" font-family="'Fira Code', monospace" font-size="12" font-weight="700" fill="var(--chord-color, #ECD3B5)">${chordName} (Teclado)</text>`;
 
     // Teclas Brancas
     whiteKeys.forEach((noteId, i) => {
       const x = i * whiteKeyW;
       const isPlayed = activeKeys.includes(noteId);
-      const fill = isPlayed ? 'var(--accent-tint, #fbe8ea)' : '#ffffff';
+      const fill = isPlayed ? '#ECD3B5' : '#E9E9E9';
 
-      svg += `<rect x="${x}" y="${topOffset}" width="${whiteKeyW}" height="${whiteKeyH}" fill="${fill}" stroke="#2b2f38" stroke-width="0.8" rx="1.5" />`;
+      svg += `<rect x="${x}" y="${topOffset}" width="${whiteKeyW}" height="${whiteKeyH}" fill="${fill}" stroke="#000000" stroke-width="0.8" rx="1.5" />`;
       if (isPlayed) {
-        svg += `<circle cx="${x + whiteKeyW / 2}" cy="${topOffset + whiteKeyH - 12}" r="3.8" fill="var(--chord-color, #9e1b22)" />`;
+        svg += `<circle cx="${x + whiteKeyW / 2}" cy="${topOffset + whiteKeyH - 12}" r="3.8" fill="var(--chord-color, #ECD3B5)" />`;
       }
     });
 
@@ -621,11 +621,11 @@
     blackKeysDef.forEach(({ id, alt, pos }) => {
       const x = (pos + 1) * whiteKeyW - (blackKeyW / 2);
       const isPlayed = activeKeys.includes(id) || (alt && activeKeys.includes(alt));
-      const fill = isPlayed ? 'var(--chord-color, #9e1b22)' : '#1a1d24';
+      const fill = isPlayed ? 'var(--chord-color, #ECD3B5)' : '#000000';
 
       svg += `<rect x="${x}" y="${topOffset}" width="${blackKeyW}" height="${blackKeyH}" fill="${fill}" stroke="#111" stroke-width="0.8" rx="1" />`;
       if (isPlayed) {
-        svg += `<circle cx="${x + blackKeyW / 2}" cy="${topOffset + blackKeyH - 9}" r="3" fill="#ffffff" />`;
+        svg += `<circle cx="${x + blackKeyW / 2}" cy="${topOffset + blackKeyH - 9}" r="3" fill="var(--on-accent, #000)" />`;
       }
     });
 
@@ -650,7 +650,7 @@
     const fretSpacing = (height - topMargin - 16) / 4;
 
     let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" class="chord-svg ${instrument}-svg" xmlns="http://www.w3.org/2000/svg" role="img">`;
-    svg += `<text x="${width/2}" y="16" text-anchor="middle" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="var(--chord-color, #9e1b22)">${chordName}</text>`;
+    svg += `<text x="${width/2}" y="16" text-anchor="middle" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="var(--chord-color, #ECD3B5)">${chordName}</text>`;
 
     if (baseFret === 1) {
       svg += `<rect x="${sideMargin}" y="${topMargin - 2}" width="${width - 2 * sideMargin}" height="3.5" rx="1" fill="var(--text-main, #333)" />`;
@@ -692,8 +692,8 @@
         const barW = (xTo - xFrom) + 12;
         const barH = 12;
 
-        svg += `<rect x="${xFrom - 6}" y="${yBarre - barH / 2}" width="${barW}" height="${barH}" rx="${barH / 2}" ry="${barH / 2}" fill="var(--chord-color, #9e1b22)" />`;
-        svg += `<text x="${xFrom}" y="${yBarre + 3.5}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8.5" font-weight="700" fill="#ffffff">1</text>`;
+        svg += `<rect x="${xFrom - 6}" y="${yBarre - barH / 2}" width="${barW}" height="${barH}" rx="${barH / 2}" ry="${barH / 2}" fill="var(--chord-color, #ECD3B5)" />`;
+        svg += `<text x="${xFrom}" y="${yBarre + 3.5}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8.5" font-weight="700" fill="var(--on-accent, #000)">1</text>`;
       }
     }
 
@@ -710,9 +710,9 @@
         if (relFret >= 1 && relFret <= 4) {
           const y = topMargin + (relFret - 0.5) * fretSpacing;
           const finger = (info.fingers && info.fingers[i]) ? info.fingers[i] : '';
-          svg += `<circle cx="${x}" cy="${y}" r="5.5" fill="var(--chord-color, #9e1b22)" stroke="#ffffff" stroke-width="0.8" />`;
+          svg += `<circle cx="${x}" cy="${y}" r="5.5" fill="var(--chord-color, #ECD3B5)" stroke="var(--bg-surface, #000)" stroke-width="0.8" />`;
           if (finger) {
-            svg += `<text x="${x}" y="${y + 3.5}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8.5" font-weight="700" fill="#ffffff">${finger}</text>`;
+            svg += `<text x="${x}" y="${y + 3.5}" text-anchor="middle" font-family="'Fira Code', monospace" font-size="8.5" font-weight="700" fill="var(--on-accent, #000)">${finger}</text>`;
           }
         }
       }

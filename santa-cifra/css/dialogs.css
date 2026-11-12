@@ -15,7 +15,7 @@ dialog:modal {
 dialog::backdrop {
   overflow: hidden;
   overscroll-behavior: contain;
-  background-color: rgba(14, 16, 19, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 dialog.app-dialog[open] {
@@ -675,7 +675,7 @@ dialog.app-dialog[open] {
   height: 52px;
   border-radius: 50%;
   background-color: var(--accent);
-  color: #ffffff;
+  color: var(--on-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -766,16 +766,16 @@ dialog.app-dialog[open] {
   font-family: var(--font-sans);
   font-size: 0.98rem;
   font-weight: 700;
-  color: #ffffff !important;
-  background-color: #dc2626 !important;
-  border: 1px solid #b91c1c !important;
+  color: var(--on-accent) !important;
+  background-color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
   cursor: pointer;
   transition: background-color 0.18s var(--ease-out), transform 0.18s var(--ease-out);
-  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.28);
 }
 
 .btn-logout-full:hover {
-  background-color: #b91c1c !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   transform: translateY(-1px);
 }
 
@@ -784,12 +784,12 @@ dialog.app-dialog[open] {
 }
 
 .btn-danger {
-  color: #dc2626 !important;
-  border-color: rgba(220, 38, 38, 0.3) !important;
+  color: var(--text-main) !important;
+  border-color: var(--border-color) !important;
 }
 
 .btn-danger:hover {
-  background-color: rgba(220, 38, 38, 0.08) !important;
+  background-color: var(--accent-tint) !important;
 }
 
 /* Avatar Badge no Botão do Header */
@@ -801,7 +801,7 @@ dialog.app-dialog[open] {
   height: 22px;
   border-radius: 50%;
   background-color: var(--accent);
-  color: #ffffff;
+  color: var(--on-accent);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -937,3 +937,5 @@ dialog.app-dialog[open] {
   font-size: 1.7rem;
   letter-spacing: 0;
 }
+
+.auth-masthead:focus { outline: none; }

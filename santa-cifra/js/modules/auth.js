@@ -1345,7 +1345,7 @@ window.SantaCifra = window.SantaCifra || {};
         if (btnSave) {
           const oldTxt = btnSave.textContent;
           btnSave.textContent = 'Salvo com Sucesso!';
-          btnSave.style.background = '#2e7d32';
+          btnSave.style.background = 'var(--accent-strong)';
           setTimeout(() => {
             btnSave.textContent = oldTxt;
             btnSave.style.background = '';

@@ -3,31 +3,31 @@
    ========================================================================== */
 
 :root {
-  --bg-page: #f3f4f6;
-  --bg-surface: #ffffff;
-  --bg-subtle: #e7e9ee;
-  --bg-hover: #dcdfe6;
+  --bg-page: #E9E9E9;
+  --bg-surface: #F4F4F4;
+  --bg-subtle: #DCDCDC;
+  --bg-hover: #CFCFCF;
 
-  --text-main: #111317;
-  --text-secondary: #373c46;
-  --text-muted: #5e6573;
+  --text-main: #000000;
+  --text-secondary: #2B2B2B;
+  --text-muted: #555555;
 
-  --accent: #8f1d24;
-  --accent-strong: #6e141a;
-  --accent-tint: #f9ebec;
-  --on-accent: #ffffff;
-  --chord-color: #9e1b22;
+  --accent: #000000;
+  --accent-strong: #2B2B2B;
+  --accent-tint: #ECD3B5;
+  --on-accent: #ECD3B5;
+  --chord-color: #6B4F2A;
 
   /* Classificação do repertório */
-  --lit: #15803d;
-  --lit-tint: #e6f4ea;
-  --pop: #a8500a;
-  --pop-tint: #fbf0e0;
+  --lit: #5B4426;
+  --lit-tint: #ECD3B5;
+  --pop: #3A3A3A;
+  --pop-tint: #D4D4D4;
 
   /* Ouro sacro: solenidades e destaques litúrgicos */
-  --gold: #8a6416;
-  --gold-tint: #f6edd5;
-  --gold-line: #d9bf7f;
+  --gold: #5B4426;
+  --gold-tint: #ECD3B5;
+  --gold-line: #C9AB82;
 
   /* Cores litúrgicas (calendário) */
   --lc-verde: #2f7d4b;
@@ -36,12 +36,12 @@
   --lc-roxo: #6b3fa0;
   --lc-rosa: #cf5a8a;
 
-  --border-color: #d5d9e0;
-  --border-subtle: #e5e8ee;
+  --border-color: #BDBDBD;
+  --border-subtle: #D3D3D3;
 
-  --shadow-soft: 0 1px 2px rgba(17, 19, 23, 0.05), 0 4px 12px rgba(17, 19, 23, 0.05);
-  --shadow-raised: 0 2px 4px rgba(17, 19, 23, 0.06), 0 12px 28px rgba(17, 19, 23, 0.12);
-  --shadow-dialog: 0 8px 16px rgba(17, 19, 23, 0.1), 0 24px 48px rgba(17, 19, 23, 0.2);
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-raised: 0 2px 4px rgba(0, 0, 0, 0.08), 0 12px 28px rgba(0, 0, 0, 0.14);
+  --shadow-dialog: 0 8px 16px rgba(0, 0, 0, 0.12), 0 24px 48px rgba(0, 0, 0, 0.24);
 
   --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-sans: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -63,29 +63,29 @@
 :root.dark-mode,
 html.dark-mode,
 body.dark-mode {
-  --bg-page: #0e1013;
-  --bg-surface: #16191e;
-  --bg-subtle: #20242c;
-  --bg-hover: #292e38;
+  --bg-page: #000000;
+  --bg-surface: #0D0D0D;
+  --bg-subtle: #171717;
+  --bg-hover: #222222;
 
-  --text-main: #eef0f4;
-  --text-secondary: #b7bdc9;
-  --text-muted: #8a92a1;
+  --text-main: #E9E9E9;
+  --text-secondary: #B8B8B8;
+  --text-muted: #8F8F8F;
 
-  --accent: #e05a61;
-  --accent-strong: #f07b81;
-  --accent-tint: #2b181b;
-  --on-accent: #1b0b0d;
-  --chord-color: #eb656c;
+  --accent: #ECD3B5;
+  --accent-strong: #F6E7D2;
+  --accent-tint: #1E1912;
+  --on-accent: #000000;
+  --chord-color: #ECD3B5;
 
-  --lit: #5bd68a;
-  --lit-tint: #14261b;
-  --pop: #f2b84b;
-  --pop-tint: #2a2112;
+  --lit: #ECD3B5;
+  --lit-tint: #1E1912;
+  --pop: #B0B0B0;
+  --pop-tint: #1C1C1C;
 
-  --gold: #e3bd5c;
-  --gold-tint: #262012;
-  --gold-line: #5a4a22;
+  --gold: #ECD3B5;
+  --gold-tint: #1E1912;
+  --gold-line: #5E5240;
 
   --lc-verde: #4fbf7a;
   --lc-branco: #f1ead6;
@@ -93,12 +93,12 @@ body.dark-mode {
   --lc-roxo: #a98be0;
   --lc-rosa: #ee82ae;
 
-  --border-color: #2a2f39;
-  --border-subtle: #1f232b;
+  --border-color: #2A2A2A;
+  --border-subtle: #1B1B1B;
 
-  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.25);
-  --shadow-raised: 0 2px 4px rgba(0, 0, 0, 0.35), 0 12px 28px rgba(0, 0, 0, 0.45);
-  --shadow-dialog: 0 8px 16px rgba(0, 0, 0, 0.4), 0 24px 48px rgba(0, 0, 0, 0.6);
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-raised: 0 2px 4px rgba(0, 0, 0, 0.55), 0 12px 28px rgba(0, 0, 0, 0.7);
+  --shadow-dialog: 0 8px 16px rgba(0, 0, 0, 0.6), 0 24px 48px rgba(0, 0, 0, 0.8);
 
   color-scheme: dark;
 }

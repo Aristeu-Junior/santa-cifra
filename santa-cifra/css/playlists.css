@@ -294,7 +294,7 @@
   height: 38px;
   border-radius: 50%;
   background-color: var(--accent);
-  color: #ffffff;
+  color: var(--on-accent);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -343,9 +343,9 @@
   gap: 6px;
   padding: 7px 14px;
   border-radius: var(--radius-sm);
-  background: rgba(220, 38, 38, 0.08);
-  color: #dc2626;
-  border: 1px solid rgba(220, 38, 38, 0.3);
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
   font-family: var(--font-sans);
   font-size: 0.86rem;
   font-weight: 600;
@@ -356,9 +356,9 @@
 }
 
 .btn-account-logout:hover {
-  background: #dc2626;
-  color: #ffffff;
-  border-color: #dc2626;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
 }
 
 .btn-account-login {
@@ -368,7 +368,7 @@
   padding: 8px 16px;
   border-radius: var(--radius-sm);
   background: var(--accent);
-  color: #ffffff;
+  color: var(--on-accent);
   border: 1px solid var(--accent);
   font-family: var(--font-sans);
   font-size: 0.88rem;
@@ -380,7 +380,7 @@
 }
 
 .btn-account-login:hover {
-  background: var(--accent-hover, #78151b);
+  background: var(--accent-strong);
 }
 
 @media (max-width: 600px) {
