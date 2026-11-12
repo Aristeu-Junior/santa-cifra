@@ -4,42 +4,54 @@
 window.SantaCifra = window.SantaCifra || {};
 
 window.SantaCifra.renderHeroShowcase = function renderHeroShowcase() {
-  const { state, dom, esc } = window.SantaCifra;
-  if (state.searchQuery.length > 0) {
+  const { dom } = window.SantaCifra;
+  // Seção "Em Destaque" desativada a pedido do usuário em favor da lista corrida unificada do Cancioneiro
+  if (dom && dom.heroShowcase) {
     dom.heroShowcase.style.display = 'none';
-    return;
   }
-  dom.heroShowcase.style.display = 'block';
-  dom.heroQuickGrid.innerHTML = '';
+};
 
-  let list = [];
-  if (state.heroMode === 'mostUsed') {
-    list = state.songs.filter(s => s.isMostUsed).slice(0, 8);
-  } else {
-    list = state.songs.filter(s => s.isSimple).sort((a, b) => (a.chordCount || 4) - (b.chordCount || 4)).slice(0, 8);
+window.SantaCifra.getSongPopularityScore = function getSongPopularityScore(song) {
+  if (!song) return 0;
+  let score = 0;
+  const comp = (song.composer || '').toLowerCase();
+  const title = (song.title || '').toLowerCase();
+
+  // Artistas consagrados e mais tocados do cancioneiro católico
+  if (comp.includes('zezinho')) score += 500;
+  else if (comp.includes('marcelo rossi')) score += 500;
+  else if (comp.includes('fábio de melo') || comp.includes('fabio de melo')) score += 500;
+  else if (comp.includes('frei gilson')) score += 500;
+  else if (comp.includes('jonas abib') || comp.includes('canção nova')) score += 450;
+  else if (comp.includes('shalom')) score += 450;
+  else if (comp.includes('anjos de resgate') || comp.includes('rosa de saron') || comp.includes('tony allysson') || comp.includes('thiago brado')) score += 400;
+  else if (comp.includes('walmir alencar') || comp.includes('adoração e vida') || comp.includes('vida reluz')) score += 400;
+  else if (comp.includes('colo de deus') || comp.includes('toca de assis') || comp.includes('o caminho')) score += 350;
+  else if (comp.includes('reginaldo manzotti') || comp.includes('reginaldo veloso') || comp.includes('miria') || comp.includes('weber')) score += 300;
+
+  // Hinos e clássicos católicos universais (super hits)
+  const superHits = [
+    'amar como jesus amou', 'um certo galileu', 'oração pela família', 'oracao pela familia',
+    'maria de nazaré', 'maria de nazare', 'estou pensando em deus', 'utopia',
+    'erguei as mãos', 'erguei as maos', 'noites traiçoeiras', 'noites traicoeiras', 'basta querer',
+    'tudo é do pai', 'tudo e do pai', 'minha bênção', 'minha bencao',
+    'eu seguirei', 'incendeia minha alma', 'tu és o centro', 'tu es o centro', 'eu te levantarei',
+    'não dá mais pra voltar', 'nao da mais pra voltar', 'como são belos os pés', 'como sao belos os pes',
+    'estrangeiro aqui', 'belíssimo esposo', 'belissimo esposo', 'oferta de amor', 'ressuscitou',
+    'o primeiro olhar', 'amigos pela fé', 'amigos pela fe', 'a chave do coração', 'abraço de pai', 'abraco de pai',
+    'a barca', 'segura na mão de deus', 'segura na mao de deus', 'oração de são francisco', 'oracao de sao francisco',
+    'como és lindo', 'como es lindo', 'ninguém te ama como eu', 'ninguem te ama como eu',
+    'pecador, agora é tempo', 'pecador, agora e tempo', 'como a ovelha perdida'
+  ];
+  if (superHits.some(hit => title.includes(hit))) {
+    score += 350;
   }
 
-  list.forEach(song => {
-    const mini = document.createElement('button');
-    mini.type = 'button';
-    mini.className = 'hero-mini-card';
-    const coverUrl = window.SantaCifra.getSongCoverUrl(song);
-    mini.innerHTML = `
-      <div class="hero-mini-cover" aria-hidden="true">
-        <img class="hero-cover-img" src="${coverUrl}" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/artists/default-cover.jpg'">
-        <span class="hero-cover-key" title="Tom original: ${esc(song.originalKey)}">${esc(song.originalKey)}</span>
-      </div>
-      <span class="hero-mini-info">
-        <span class="hero-mini-title">${esc(song.title)}</span>
-        <span class="hero-mini-sub">${esc(song.liturgicalMoment)} &middot; Tom ${esc(song.originalKey)} &middot; ${song.chordCount || 4} acordes</span>
-      </span>
-    `;
-    mini.addEventListener('click', () => {
-      state.activeQueuePlaylistId = null;
-      window.SantaCifra.openSongView(song);
-    });
-    dom.heroQuickGrid.appendChild(mini);
-  });
+  if (song.isMostUsed) score += 120;
+  if (song.liturgicalAnalysis && song.liturgicalAnalysis.score) {
+    score += song.liturgicalAnalysis.score;
+  }
+  return score;
 };
 
 window.SantaCifra.matchesArtistFilter = function matchesArtistFilter(song, af) {
@@ -136,7 +148,7 @@ window.SantaCifra.updateRepertoireDivisionCounters = function updateRepertoireDi
 /** Linha de música reutilizada no catálogo e na página do artista. */
 window.SantaCifra.createSongRow = function createSongRow(song) {
   const { state, ICONS, esc } = window.SantaCifra;
-  const isFav = window.SantaCifra.isSongFavorited(song.id);
+  const isFav = typeof window.SantaCifra.isSongFavorited === 'function' ? window.SantaCifra.isSongFavorited(song.id) : false;
   const isLit = (song.repertoireType || 'liturgica') === 'liturgica';
   const repBadgeHtml = isLit
     ? '<span class="rep-badge rep-badge-liturgica" title="Aprovada para os ritos da Santa Missa (IGMR / CNBB)">Para a Missa</span>'
@@ -277,10 +289,9 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
   });
 
   const n = filtered.length;
-  const noun = n === 1 ? 'música' : 'músicas';
   dom.catalogResultsTitle.textContent = state.searchQuery
     ? `${n} ${n === 1 ? 'resultado' : 'resultados'} para "${state.searchQuery}"`
-    : `${n} ${noun}`;
+    : `Cancioneiro Católico (${n} cânticos)`;
 
   const { extra, total } = window.SantaCifra.countActiveFilters();
   dom.filtersCount.hidden = extra === 0;
@@ -298,7 +309,7 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
     return;
   }
 
-  // Ordenação inteligente: Mostra as mais famosas e mais usadas primeiro
+  // Ordenação inteligente: Mostra as mais famosas e consagradas primeiro (Pe. Zezinho, Pe. Marcelo Rossi, Pe. Fábio de Melo, Frei Gilson, Mons. Jonas Abib, Shalom, etc.)
   filtered.sort((a, b) => {
     if (q) {
       const aTitle = (a.title || '').toLowerCase();
@@ -307,28 +318,22 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
       const bStarts = bTitle.startsWith(q);
       if (aStarts && !bStarts) return -1;
       if (!aStarts && bStarts) return 1;
-      if (a.isMostUsed && !b.isMostUsed) return -1;
-      if (!a.isMostUsed && b.isMostUsed) return 1;
+      const scoreDiff = window.SantaCifra.getSongPopularityScore(b) - window.SantaCifra.getSongPopularityScore(a);
+      if (scoreDiff !== 0) return scoreDiff;
       return aTitle.localeCompare(bTitle, 'pt-BR');
     }
 
     // Página inicial sem busca:
-    // 1º: Músicas mais usadas / mais famosas primeiro (isMostUsed === true)
-    if (a.isMostUsed && !b.isMostUsed) return -1;
-    if (!a.isMostUsed && b.isMostUsed) return 1;
-
-    // 2º: Relevância litúrgica
-    const scoreA = (a.liturgicalAnalysis && a.liturgicalAnalysis.score) || 80;
-    const scoreB = (b.liturgicalAnalysis && b.liturgicalAnalysis.score) || 80;
-    if (scoreA !== scoreB) return scoreB - scoreA;
-
-    // 3º: Ordem alfabética
+    // Ordenação estrita por popularidade e mais tocadas no Cancioneiro Católico
+    const scoreDiff = window.SantaCifra.getSongPopularityScore(b) - window.SantaCifra.getSongPopularityScore(a);
+    if (scoreDiff !== 0) return scoreDiff;
     return (a.title || '').localeCompare(b.title || '', 'pt-BR');
   });
 
-  // Renderização em lotes de 24 músicas para performance instantânea e clareza visual
-  const BATCH_SIZE = 24;
+  // Renderização corrida contínua com carregamento progressivo e fluido para lista extensa
+  const BATCH_SIZE = 60;
   let renderedCount = 0;
+  let catalogObserver = null;
 
   function renderNextBatch() {
     const slice = filtered.slice(renderedCount, renderedCount + BATCH_SIZE);
@@ -349,13 +354,25 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
       const btnMore = document.createElement('button');
       btnMore.type = 'button';
       btnMore.className = 'btn-load-more-catalog';
-      btnMore.innerHTML = `Carregar mais músicas <span style="opacity: 0.7; font-size: 0.82rem; margin-left: 6px;">(${renderedCount} de ${filtered.length})</span>`;
+      btnMore.innerHTML = `Continuar lista do cancioneiro <span style="opacity: 0.7; font-size: 0.82rem; margin-left: 6px;">(${renderedCount} de ${filtered.length} cânticos)</span>`;
       btnMore.addEventListener('click', () => {
         renderNextBatch();
       });
 
       moreWrap.appendChild(btnMore);
       dom.songsGrid.appendChild(moreWrap);
+
+      // Carregamento automático contínuo por rolagem (IntersectionObserver)
+      if (window.IntersectionObserver) {
+        if (catalogObserver) catalogObserver.disconnect();
+        catalogObserver = new IntersectionObserver((entries) => {
+          if (entries[0] && entries[0].isIntersecting) {
+            catalogObserver.disconnect();
+            renderNextBatch();
+          }
+        }, { rootMargin: '300px' });
+        catalogObserver.observe(moreWrap);
+      }
     }
   }
 
@@ -371,19 +388,23 @@ window.SantaCifra.populateArtistOptGroup = function populateArtistOptGroup() {
 window.SantaCifra.bindCatalogEvents = function bindCatalogEvents() {
   const { state, dom } = window.SantaCifra;
 
-  dom.heroBtnMostUsed.addEventListener('click', () => {
-    state.heroMode = 'mostUsed';
-    dom.heroBtnMostUsed.classList.add('active');
-    dom.heroBtnSimple.classList.remove('active');
-    window.SantaCifra.renderHeroShowcase();
-  });
+  if (dom.heroBtnMostUsed) {
+    dom.heroBtnMostUsed.addEventListener('click', () => {
+      state.heroMode = 'mostUsed';
+      dom.heroBtnMostUsed.classList.add('active');
+      if (dom.heroBtnSimple) dom.heroBtnSimple.classList.remove('active');
+      window.SantaCifra.renderHeroShowcase();
+    });
+  }
 
-  dom.heroBtnSimple.addEventListener('click', () => {
-    state.heroMode = 'simple';
-    dom.heroBtnSimple.classList.add('active');
-    dom.heroBtnMostUsed.classList.remove('active');
-    window.SantaCifra.renderHeroShowcase();
-  });
+  if (dom.heroBtnSimple) {
+    dom.heroBtnSimple.addEventListener('click', () => {
+      state.heroMode = 'simple';
+      dom.heroBtnSimple.classList.add('active');
+      if (dom.heroBtnMostUsed) dom.heroBtnMostUsed.classList.remove('active');
+      window.SantaCifra.renderHeroShowcase();
+    });
+  }
 
   let searchTimer = null;
   dom.searchInput.addEventListener('input', (e) => {

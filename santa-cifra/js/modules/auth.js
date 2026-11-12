@@ -1326,33 +1326,7 @@ window.SantaCifra = window.SantaCifra || {};
       });
     }
 
-    // Atalho para Acesso Pastoral do Pároco (se recebeu link de convite)
-    const btnTestMarlson = document.getElementById('btnTestMarlsonLogin') || document.getElementById('btnTestMarlissonLogin');
-    if (btnTestMarlson) {
-      btnTestMarlson.addEventListener('click', async () => {
-        try {
-          btnTestMarlson.disabled = true;
-          btnTestMarlson.textContent = 'Conectando como Pároco...';
-          await loginAsPriestMarlson();
-        } finally {
-          btnTestMarlson.disabled = false;
-          btnTestMarlson.textContent = '✝️ Testar como Pároco (Pe. Marlson Assis de Araújo)';
-        }
-      });
-    }
-
-    const btnOpenPriestPrompt = document.getElementById('btnOpenPriestInvitePrompt');
-    if (btnOpenPriestPrompt) {
-      btnOpenPriestPrompt.addEventListener('click', () => {
-        const dlg = document.getElementById('authDialog');
-        if (dlg) dlg.close();
-        if (window.SantaCifra.parish && window.SantaCifra.parish.openPriestRegisterDialog) {
-          window.SantaCifra.parish.openPriestRegisterDialog();
-        }
-      });
-    }
-
-    // Gerador de Convite Pastoral para o Padre
+    // Gerador de Convite Pastoral para o Padre (Compartilhamento exclusivo pelo Administrador/Padre)
     const btnGenPriest = document.getElementById('btnGeneratePriestInviteLink') || document.getElementById('btnGeneratePriestMagicLink');
     if (btnGenPriest) {
       btnGenPriest.addEventListener('click', () => {

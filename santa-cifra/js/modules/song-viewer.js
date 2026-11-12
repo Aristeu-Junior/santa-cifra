@@ -460,32 +460,79 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
     window.SantaCifra.goBack(state.activeQueuePlaylistId ? 'playlists' : 'home');
   });
 
-  dom.btnAutoScroll.addEventListener('click', () => {
-    if (state.isScrolling || dom.scrollFloatingController.style.display !== 'none') {
+  if (dom.btnAutoScroll) {
+    dom.btnAutoScroll.addEventListener('click', () => {
+      if (state.isScrolling || (dom.scrollFloatingController && dom.scrollFloatingController.style.display !== 'none')) {
+        window.SantaCifra.stopAutoScroll();
+        if (dom.scrollFloatingController) dom.scrollFloatingController.style.display = 'none';
+      } else {
+        window.SantaCifra.startAutoScroll();
+      }
+    });
+  }
+
+  const updateSpeedDisplay = () => {
+    const formatted = `${state.scrollSpeed.toFixed(1)}x`;
+    if (dom.floatingSpeedValue) dom.floatingSpeedValue.textContent = formatted;
+    if (dom.btnFloatingSpeed) dom.btnFloatingSpeed.textContent = formatted;
+  };
+
+  if (dom.btnFloatingTop) {
+    dom.btnFloatingTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  if (dom.btnFloatingSpeedDec) {
+    dom.btnFloatingSpeedDec.addEventListener('click', () => {
+      state.scrollSpeed = Math.max(0.3, +(state.scrollSpeed - 0.1).toFixed(1));
+      updateSpeedDisplay();
+      if (state.isScrolling) window.SantaCifra.startAutoScroll();
+    });
+  }
+
+  if (dom.btnFloatingSpeedInc) {
+    dom.btnFloatingSpeedInc.addEventListener('click', () => {
+      state.scrollSpeed = Math.min(4.0, +(state.scrollSpeed + 0.1).toFixed(1));
+      updateSpeedDisplay();
+      if (state.isScrolling) window.SantaCifra.startAutoScroll();
+    });
+  }
+
+  if (dom.floatingSpeedBadge) {
+    dom.floatingSpeedBadge.addEventListener('click', () => {
+      const speeds = [0.5, 1.0, 1.5, 2.0, 3.0];
+      const cur = Math.round(state.scrollSpeed * 10) / 10;
+      const idx = speeds.indexOf(cur);
+      state.scrollSpeed = idx >= 0 ? speeds[(idx + 1) % speeds.length] : 1.0;
+      updateSpeedDisplay();
+      if (state.isScrolling) window.SantaCifra.startAutoScroll();
+    });
+  }
+
+  if (dom.btnFloatingSpeed) {
+    dom.btnFloatingSpeed.addEventListener('click', () => {
+      const speeds = [0.5, 1, 1.5, 2, 3];
+      const nextIdx = (speeds.indexOf(state.scrollSpeed) + 1) % speeds.length;
+      state.scrollSpeed = speeds[nextIdx];
+      updateSpeedDisplay();
+      if (state.isScrolling) window.SantaCifra.startAutoScroll();
+    });
+  }
+
+  if (dom.btnFloatingPlay) {
+    dom.btnFloatingPlay.addEventListener('click', () => {
+      if (state.isScrolling) window.SantaCifra.stopAutoScroll();
+      else window.SantaCifra.startAutoScroll();
+    });
+  }
+
+  if (dom.btnFloatingClose) {
+    dom.btnFloatingClose.addEventListener('click', () => {
       window.SantaCifra.stopAutoScroll();
-      dom.scrollFloatingController.style.display = 'none';
-    } else {
-      window.SantaCifra.startAutoScroll();
-    }
-  });
-
-  dom.btnFloatingPlay.addEventListener('click', () => {
-    if (state.isScrolling) window.SantaCifra.stopAutoScroll();
-    else window.SantaCifra.startAutoScroll();
-  });
-
-  dom.btnFloatingSpeed.addEventListener('click', () => {
-    const speeds = [0.5, 1, 1.5, 2, 3];
-    const nextIdx = (speeds.indexOf(state.scrollSpeed) + 1) % speeds.length;
-    state.scrollSpeed = speeds[nextIdx];
-    dom.btnFloatingSpeed.textContent = `${state.scrollSpeed}x`;
-    if (state.isScrolling) window.SantaCifra.startAutoScroll();
-  });
-
-  dom.btnFloatingClose.addEventListener('click', () => {
-    window.SantaCifra.stopAutoScroll();
-    dom.scrollFloatingController.style.display = 'none';
-  });
+      if (dom.scrollFloatingController) dom.scrollFloatingController.style.display = 'none';
+    });
+  }
 
   dom.btnMetronome.addEventListener('click', () => {
     if (!state.currentSong || !window.LiturgicalMetronome) return;

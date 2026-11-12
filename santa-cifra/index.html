@@ -36,14 +36,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css?v=29">
-  <link rel="stylesheet" href="css/layout.css?v=29">
-  <link rel="stylesheet" href="css/catalog.css?v=29">
-  <link rel="stylesheet" href="css/playlists.css?v=29">
-  <link rel="stylesheet" href="css/calendar.css?v=29">
-  <link rel="stylesheet" href="css/parish.css?v=29">
-  <link rel="stylesheet" href="css/viewer.css?v=29">
-  <link rel="stylesheet" href="css/dialogs.css?v=29">
+  <link rel="stylesheet" href="css/tokens.css?v=30">
+  <link rel="stylesheet" href="css/layout.css?v=30">
+  <link rel="stylesheet" href="css/catalog.css?v=30">
+  <link rel="stylesheet" href="css/playlists.css?v=30">
+  <link rel="stylesheet" href="css/calendar.css?v=30">
+  <link rel="stylesheet" href="css/parish.css?v=30">
+  <link rel="stylesheet" href="css/viewer.css?v=30">
+  <link rel="stylesheet" href="css/dialogs.css?v=30">
 </head>
 <body data-view="home">
 
@@ -165,19 +165,8 @@
     <!-- ============ CIFRAS (CATÁLOGO) ============ -->
     <section class="catalog-section" id="catalogSection">
 
-      <div class="hero-showcase" id="heroShowcase">
-        <div class="hero-top-row">
-          <h2 class="section-heading">Em destaque</h2>
-          <div class="segmented-control" role="group" aria-label="Tipo de destaque">
-            <button type="button" class="seg-btn active" id="heroBtnMostUsed" data-hero="mostUsed">Mais tocadas</button>
-            <button type="button" class="seg-btn" id="heroBtnSimple" data-hero="simple">Mais fáceis</button>
-          </div>
-        </div>
-        <div class="hero-quick-grid" id="heroQuickGrid"></div>
-      </div>
-
       <div class="catalog-controls">
-        <h2 class="section-heading">Repertório</h2>
+        <h2 class="section-heading">Cancioneiro Litúrgico &amp; Devocional</h2>
 
         <div class="repertoire-type-grid" id="repertoireTypeGrid" role="group" aria-label="Tipo de repertório">
           <button type="button" class="rep-type-card active" data-reptype="all" aria-pressed="true">
@@ -217,7 +206,7 @@
 
         <div class="filters-bar">
           <div class="filters-header-row">
-            <div class="filter-group-title" id="catalogResultsTitle" aria-live="polite">Repertório</div>
+            <div class="filter-group-title" id="catalogResultsTitle" aria-live="polite">Cancioneiro Católico</div>
             <div class="filters-actions">
               <button type="button" class="btn-text" id="btnClearFilters" hidden>Limpar filtros</button>
               <button type="button" class="btn-outline filters-toggle" id="btnToggleFilters" aria-expanded="false" aria-controls="filtersPanel">
@@ -786,14 +775,6 @@
       </div>
       <div class="dialog-actions">
         <button type="submit" class="btn-primary-solid btn-block" id="btnSubmitLogin">Entrar no Santa Cifra</button>
-      </div>
-      <div class="priest-login-help-box">
-        <button type="button" class="link-btn-priest-invite" id="btnOpenPriestInvitePrompt">
-          <span>Acesso pastoral do Pároco (cadastro por convite)</span>
-        </button>
-        <button type="button" class="btn-test-priest-marlisson" id="btnTestMarlsonLogin" title="Acessar instantaneamente como o Pároco Pe. Marlson Assis de Araújo (Paróquia Santo Antônio de Pádua - Ferraz de Vasconcelos / Diocese de Mogi das Cruzes)">
-          <span>Entrar como Pároco (Pe. Marlson Assis de Araújo)</span>
-        </button>
       </div>
       <div class="auth-footer-prompt">
         <span>Não tem uma conta?</span>
@@ -1371,28 +1352,28 @@
     </form>
   </dialog>
 
-  <script src="js/transposition.js?v=29"></script>
-  <script src="js/chords-data.js?v=29"></script>
-  <script src="js/metronome.js?v=29"></script>
+  <script src="js/transposition.js?v=30"></script>
+  <script src="js/chords-data.js?v=30"></script>
+  <script src="js/metronome.js?v=30"></script>
 
-  <script src="js/catalog/catalog-ordinario-salmos.js?v=29"></script>
-  <script src="js/catalog/catalog-entrada-final.js?v=29"></script>
-  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=29"></script>
-  <script src="js/catalog/catalog-adoracao-comunidades.js?v=29"></script>
-  <script src="js/songs-catalog.js?v=29"></script>
-  <script src="js/supabase-client.js?v=29"></script>
+  <script src="js/catalog/catalog-ordinario-salmos.js?v=30"></script>
+  <script src="js/catalog/catalog-entrada-final.js?v=30"></script>
+  <script src="js/catalog/catalog-ofertorio-comunhao.js?v=30"></script>
+  <script src="js/catalog/catalog-adoracao-comunidades.js?v=30"></script>
+  <script src="js/songs-catalog.js?v=30"></script>
+  <script src="js/supabase-client.js?v=30"></script>
 
-  <script src="js/modules/icons.js?v=29"></script>
-  <script src="js/modules/auth.js?v=29"></script>
-  <script src="js/modules/state.js?v=29"></script>
-  <script src="js/modules/artists-view.js?v=29"></script>
-  <script src="js/modules/catalog-view.js?v=29"></script>
-  <script src="js/modules/playlists-view.js?v=29"></script>
-  <script src="js/modules/liturgical-calendar.js?v=29"></script>
-  <script src="js/modules/parish-manager.js?v=29"></script>
-  <script src="js/modules/song-viewer.js?v=29"></script>
-  <script src="js/modules/ota-updater.js?v=29"></script>
-  <script src="js/app.js?v=29"></script>
+  <script src="js/modules/icons.js?v=30"></script>
+  <script src="js/modules/auth.js?v=30"></script>
+  <script src="js/modules/state.js?v=30"></script>
+  <script src="js/modules/artists-view.js?v=30"></script>
+  <script src="js/modules/catalog-view.js?v=30"></script>
+  <script src="js/modules/playlists-view.js?v=30"></script>
+  <script src="js/modules/liturgical-calendar.js?v=30"></script>
+  <script src="js/modules/parish-manager.js?v=30"></script>
+  <script src="js/modules/song-viewer.js?v=30"></script>
+  <script src="js/modules/ota-updater.js?v=30"></script>
+  <script src="js/app.js?v=30"></script>
   <script>
     if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
       let refreshing = false;
@@ -1403,7 +1384,7 @@
         }
       });
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js?v=29').then((reg) => {
+        navigator.serviceWorker.register('sw.js?v=30').then((reg) => {
           reg.update();
         }).catch(() => {});
       });

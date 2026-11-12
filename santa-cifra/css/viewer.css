@@ -769,18 +769,20 @@
     border-radius: 0;
     border-left: none;
     border-right: none;
-    padding: 14px 10px 24px;
+    padding: 16px 12px 28px;
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
+    overflow-x: auto;
   }
 
   .cifra-pre {
-    line-height: 1.55;
-    font-size: clamp(10.5px, 2.9vw, 13.5px);
+    line-height: 1.58;
+    font-size: clamp(10px, 2.75vw, 12.8px);
     tab-size: 2;
     box-sizing: border-box;
     max-width: 100%;
+    word-break: normal;
   }
 
   .song-bottom-meta {
