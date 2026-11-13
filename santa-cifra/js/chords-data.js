@@ -220,7 +220,34 @@
       { name: 'Posição 1 (Pestana 4ª casa)', frets: [-1, 4, 6, 6, 5, 4], fingers: [0, 1, 3, 4, 2, 1], barre: 4, baseFret: 4 }
     ],
     'G#m': [
+      { name: 'Posição 1 (Pestana 4ª casa)', frets: [4, 6, 6, 4, 4, 4], fingers: [1, 3, 4, 1, 1, 1], barre: 4, baseFret: 4 },
+      { name: 'Posição 2 (Sem bordão, 4ª casa)', frets: [-1, -1, 6, 4, 4, 4], fingers: [0, 0, 3, 1, 1, 1], barre: 4, baseFret: 4 }
+    ],
+    'G#m7': [
+      { name: 'Posição 1 (Pestana 4ª casa)', frets: [4, 6, 4, 4, 4, 4], fingers: [1, 3, 1, 1, 1, 1], barre: 4, baseFret: 4 },
+      { name: 'Posição 2 (4ª casa)', frets: [4, -1, 4, 4, 4, -1], fingers: [1, 0, 2, 3, 4, 0], baseFret: 4 }
+    ],
+    'C#m7': [
+      { name: 'Posição 1 (Pestana 4ª casa)', frets: [-1, 4, 6, 4, 5, 4], fingers: [0, 1, 3, 1, 2, 1], barre: 4, baseFret: 4 }
+    ],
+    'C#': [
+      { name: 'Posição 1 (Pestana 4ª casa)', frets: [-1, 4, 6, 6, 6, 4], fingers: [0, 1, 2, 3, 4, 1], barre: 4, baseFret: 4 },
+      { name: 'Posição 2 (Pestana 9ª casa)', frets: [9, 11, 11, 10, 9, 9], fingers: [1, 3, 4, 2, 1, 1], barre: 9, baseFret: 9 }
+    ],
+    'G#': [
+      { name: 'Posição 1 (Pestana 4ª casa)', frets: [4, 6, 6, 5, 4, 4], fingers: [1, 3, 4, 2, 1, 1], barre: 4, baseFret: 4 }
+    ],
+    'Abm': [
       { name: 'Posição 1 (Pestana 4ª casa)', frets: [4, 6, 6, 4, 4, 4], fingers: [1, 3, 4, 1, 1, 1], barre: 4, baseFret: 4 }
+    ],
+    'Ebm': [
+      { name: 'Posição 1 (Pestana 6ª casa)', frets: [-1, 6, 8, 8, 7, 6], fingers: [0, 1, 3, 4, 2, 1], barre: 6, baseFret: 6 }
+    ],
+    'Eb7': [
+      { name: 'Posição 1 (Pestana 6ª casa)', frets: [-1, 6, 8, 6, 8, 6], fingers: [0, 1, 3, 1, 4, 1], barre: 6, baseFret: 6 }
+    ],
+    'Gb': [
+      { name: 'Posição 1 (Pestana 2ª casa)', frets: [2, 4, 4, 3, 2, 2], fingers: [1, 3, 4, 2, 1, 1], barre: 2, baseFret: 2 }
     ]
   };
 
@@ -454,6 +481,27 @@
   /**
    * Retorna a lista de variações cadastradas de um acorde para um instrumento
    */
+  const ENHARMONIC_ROOTS = {
+    'G#': 'Ab', 'Ab': 'G#',
+    'A#': 'Bb', 'Bb': 'A#',
+    'C#': 'Db', 'Db': 'C#',
+    'D#': 'Eb', 'Eb': 'D#',
+    'F#': 'Gb', 'Gb': 'F#'
+  };
+
+  function toEnharmonic(chord) {
+    const m = /^([A-G][#b]?)(.*)$/.exec(chord);
+    if (!m || !ENHARMONIC_ROOTS[m[1]]) return null;
+    return ENHARMONIC_ROOTS[m[1]] + m[2];
+  }
+
+  function lookupInDict(dict, candidate) {
+    if (dict[candidate] && dict[candidate].length > 0) return dict[candidate];
+    const enh = toEnharmonic(candidate);
+    if (enh && dict[enh] && dict[enh].length > 0) return dict[enh];
+    return null;
+  }
+
   function getChordVariations(chordName, instrument = 'guitar') {
     if (!chordName) return [];
     const clean = chordName.replace(/[(),]/g, '').trim();
@@ -464,8 +512,23 @@
     else if (instrument === 'ukulele') dict = UKULELE_CHORDS;
     else if (instrument === 'cavaquinho') dict = CAVAQUINHO_CHORDS;
 
-    if (dict[clean] && dict[clean].length > 0) return dict[clean];
-    if (dict[slashRoot] && dict[slashRoot].length > 0) return dict[slashRoot];
+    const exact = lookupInDict(dict, clean);
+    if (exact) return exact;
+
+    const rootHit = lookupInDict(dict, slashRoot);
+    if (rootHit) return rootHit;
+
+    // Redução progressiva de tensões (ex: G#m9 -> G#m7 -> G#m)
+    const stripped = slashRoot.replace(/(add\d+|sus[24]?|7M|7\+|9|11|13|6|4)$/i, '');
+    if (stripped && stripped !== slashRoot) {
+      const strippedHit = lookupInDict(dict, stripped);
+      if (strippedHit) return strippedHit;
+    }
+    const baseTriad = slashRoot.replace(/^([A-G][#b]?m?).*$/, '$1');
+    if (baseTriad && baseTriad !== slashRoot) {
+      const triadHit = lookupInDict(dict, baseTriad);
+      if (triadHit) return triadHit;
+    }
 
     // Fallback padrão se não catalogado
     if (instrument === 'keyboard') {
@@ -485,13 +548,14 @@
     const safeIdx = Math.max(0, Math.min(varIndex, variations.length - 1));
     const info = variations[safeIdx] || variations[0];
     const baseFret = info.baseFret || 1;
+    const effectiveFret = baseFret > 1 ? baseFret : (info.barre && info.barre > 1 ? info.barre : 1);
 
-    const width = 126;
-    const height = 155;
+    const width = 136;
+    const height = 168;
     const topMargin = 34;
-    const sideMargin = 22;
+    const sideMargin = 28;
     const stringSpacing = (width - 2 * sideMargin) / 5;
-    const fretSpacing = (height - topMargin - 18) / 5;
+    const fretSpacing = (height - topMargin - 30) / 5;
 
     let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" class="chord-svg guitar-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Acorde ${chordName}">`;
 
@@ -503,7 +567,7 @@
       svg += `<rect x="${sideMargin}" y="${topMargin - 2}" width="${width - 2 * sideMargin}" height="4" rx="1.5" fill="var(--text-main, #333)" />`;
     } else {
       svg += `<line x1="${sideMargin}" y1="${topMargin}" x2="${width - sideMargin}" y2="${topMargin}" stroke="var(--border-color, #666)" stroke-width="1.6" />`;
-      svg += `<text x="${sideMargin - 6}" y="${topMargin + fretSpacing * 0.65}" text-anchor="end" font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="var(--text-secondary, #666)">${baseFret}ª</text>`;
+      svg += `<text x="${sideMargin - 6}" y="${topMargin + fretSpacing * 0.68}" text-anchor="end" font-family="'Fira Code', monospace" font-size="11.5" font-weight="800" fill="var(--chord-color, #ECD3B5)">${baseFret}ª</text>`;
     }
 
     // Linhas verticais (6 cordas)
@@ -569,6 +633,10 @@
         }
       }
     });
+
+    const fretColor = effectiveFret > 1 ? 'var(--chord-color, #ECD3B5)' : 'var(--text-secondary, #888)';
+    const fretWeight = effectiveFret > 1 ? '700' : '600';
+    svg += `<text x="${width / 2}" y="${height - 6}" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="${fretWeight}" fill="${fretColor}">${effectiveFret}ª casa</text>`;
 
     svg += `</svg>`;
     return svg;
@@ -641,13 +709,14 @@
     const safeIdx = Math.max(0, Math.min(varIndex, variations.length - 1));
     const info = variations[safeIdx] || variations[0];
     const baseFret = info.baseFret || 1;
+    const effectiveFret = baseFret > 1 ? baseFret : (info.barre && info.barre > 1 ? info.barre : 1);
 
-    const width = 105;
-    const height = 138;
+    const width = 116;
+    const height = 150;
     const topMargin = 30;
-    const sideMargin = 18;
+    const sideMargin = 24;
     const stringSpacing = (width - 2 * sideMargin) / 3;
-    const fretSpacing = (height - topMargin - 16) / 4;
+    const fretSpacing = (height - topMargin - 28) / 4;
 
     let svg = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" class="chord-svg ${instrument}-svg" xmlns="http://www.w3.org/2000/svg" role="img">`;
     svg += `<text x="${width/2}" y="16" text-anchor="middle" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="var(--chord-color, #ECD3B5)">${chordName}</text>`;
@@ -656,7 +725,7 @@
       svg += `<rect x="${sideMargin}" y="${topMargin - 2}" width="${width - 2 * sideMargin}" height="3.5" rx="1" fill="var(--text-main, #333)" />`;
     } else {
       svg += `<line x1="${sideMargin}" y1="${topMargin}" x2="${width - sideMargin}" y2="${topMargin}" stroke="var(--border-color, #666)" stroke-width="1.5" />`;
-      svg += `<text x="${sideMargin - 5}" y="${topMargin + fretSpacing * 0.65}" text-anchor="end" font-family="'Fira Code', monospace" font-size="10.5" font-weight="700" fill="var(--text-secondary, #666)">${baseFret}ª</text>`;
+      svg += `<text x="${sideMargin - 5}" y="${topMargin + fretSpacing * 0.68}" text-anchor="end" font-family="'Fira Code', monospace" font-size="11" font-weight="800" fill="var(--chord-color, #ECD3B5)">${baseFret}ª</text>`;
     }
 
     // 4 cordas
@@ -717,6 +786,10 @@
         }
       }
     });
+
+    const fretColor = effectiveFret > 1 ? 'var(--chord-color, #ECD3B5)' : 'var(--text-secondary, #888)';
+    const fretWeight = effectiveFret > 1 ? '700' : '600';
+    svg += `<text x="${width / 2}" y="${height - 5}" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="${fretWeight}" fill="${fretColor}">${effectiveFret}ª casa</text>`;
 
     svg += `</svg>`;
     return svg;

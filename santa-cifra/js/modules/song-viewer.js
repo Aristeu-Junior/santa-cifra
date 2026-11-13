@@ -238,7 +238,13 @@ function updateModalChordView() {
     titleEl.textContent = totalVars > 1 ? `Posição ${currentModalVarIndex + 1} de ${totalVars}` : 'Posição Canônica';
   }
   if (descEl) {
-    descEl.textContent = currentVar.name || currentVar.desc || '';
+    const baseFret = currentVar.baseFret || (currentVar.barre > 1 ? currentVar.barre : 1);
+    let varDesc = currentVar.name || currentVar.desc || '';
+    if (currentModalInstrument !== 'keyboard' && !/casa/i.test(varDesc)) {
+      const casaLabel = baseFret > 1 ? `${baseFret}ª casa` : '1ª casa (região aberta)';
+      varDesc = varDesc ? `${varDesc} • ${casaLabel}` : casaLabel;
+    }
+    descEl.textContent = varDesc;
   }
   if (btnPrev) {
     btnPrev.disabled = currentModalVarIndex === 0;
