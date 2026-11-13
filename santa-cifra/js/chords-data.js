@@ -674,9 +674,9 @@
     const posFrets = frets.filter(f => f > 0);
     const minPos = posFrets.length ? Math.min(...posFrets) : 1;
     const maxPos = posFrets.length ? Math.max(...posFrets) : 1;
-    const baseFret = maxPos <= 4 ? 1 : minPos;
+    const isOpen = frets.some(f => f === 0);
+    const baseFret = (!isOpen && minPos >= 2) ? minPos : (maxPos <= 5 ? 1 : minPos);
     const barre = (tmpl.barre !== null && shift > 0) ? (tmpl.barre + shift) : null;
-    const isOpen = shift === 0 && frets.some(f => f === 0);
     const fingers = isOpen
       ? frets.map((f, idx) => (f === 0 ? 0 : tmpl.fingers[idx]))
       : tmpl.fingers.slice();
@@ -768,7 +768,8 @@
     const posFrets = frets.filter(f => f > 0);
     const minPos = posFrets.length ? Math.min(...posFrets) : 1;
     const maxPos = posFrets.length ? Math.max(...posFrets) : 1;
-    const baseFret = maxPos <= 4 ? 1 : minPos;
+    const isOpen = frets.some(f => f === 0);
+    const baseFret = (!isOpen && minPos >= 2) ? minPos : (maxPos <= 4 ? 1 : minPos);
     const barre = (tmpl.barre !== null && shift >= 0) ? (tmpl.barre + shift) : null;
     const effective = barre || baseFret;
     const name = effective > 1 ? `Posição ${effective}ª casa` : 'Posição 1ª casa';
@@ -872,12 +873,16 @@
     // Nome do acorde em destaque
     svg += `<text x="${width/2}" y="18" text-anchor="middle" font-family="'Fira Code', ui-monospace, monospace" font-size="15" font-weight="700" fill="var(--chord-color, #ECD3B5)">${chordName}</text>`;
 
-    // Nut (pestana do headstock) ou indicador lateral de casa alta
+    // Nut (pestana do headstock) ou indicador lateral da casa ao lado da pestana/traste
     if (baseFret === 1) {
       svg += `<rect x="${sideMargin}" y="${topMargin - 2}" width="${width - 2 * sideMargin}" height="4" rx="1.5" fill="var(--text-main, #333)" />`;
+      if (info.barre && info.barre >= 2 && info.barre <= 5) {
+        const yBarreLabel = topMargin + (info.barre - 0.5) * fretSpacing + 4;
+        svg += `<text x="${sideMargin - 8}" y="${yBarreLabel}" text-anchor="end" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700" fill="var(--chord-color, #ECD3B5)">${info.barre}</text>`;
+      }
     } else {
       svg += `<line x1="${sideMargin}" y1="${topMargin}" x2="${width - sideMargin}" y2="${topMargin}" stroke="var(--border-color, #666)" stroke-width="1.6" />`;
-      svg += `<text x="${sideMargin - 6}" y="${topMargin + fretSpacing * 0.68}" text-anchor="end" font-family="'Fira Code', monospace" font-size="11.5" font-weight="800" fill="var(--chord-color, #ECD3B5)">${baseFret}ª</text>`;
+      svg += `<text x="${sideMargin - 8}" y="${topMargin + fretSpacing * 0.5 + 4}" text-anchor="end" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700" fill="var(--chord-color, #ECD3B5)">${baseFret}</text>`;
     }
 
     // Linhas verticais (6 cordas)
@@ -1033,9 +1038,13 @@
 
     if (baseFret === 1) {
       svg += `<rect x="${sideMargin}" y="${topMargin - 2}" width="${width - 2 * sideMargin}" height="3.5" rx="1" fill="var(--text-main, #333)" />`;
+      if (info.barre && info.barre >= 2 && info.barre <= 4) {
+        const yBarreLabel = topMargin + (info.barre - 0.5) * fretSpacing + 3.5;
+        svg += `<text x="${sideMargin - 7}" y="${yBarreLabel}" text-anchor="end" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="700" fill="var(--chord-color, #ECD3B5)">${info.barre}</text>`;
+      }
     } else {
       svg += `<line x1="${sideMargin}" y1="${topMargin}" x2="${width - sideMargin}" y2="${topMargin}" stroke="var(--border-color, #666)" stroke-width="1.5" />`;
-      svg += `<text x="${sideMargin - 5}" y="${topMargin + fretSpacing * 0.68}" text-anchor="end" font-family="'Fira Code', monospace" font-size="11" font-weight="800" fill="var(--chord-color, #ECD3B5)">${baseFret}ª</text>`;
+      svg += `<text x="${sideMargin - 7}" y="${topMargin + fretSpacing * 0.5 + 3.5}" text-anchor="end" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="700" fill="var(--chord-color, #ECD3B5)">${baseFret}</text>`;
     }
 
     // 4 cordas
