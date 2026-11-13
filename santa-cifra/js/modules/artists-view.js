@@ -287,6 +287,28 @@ window.SantaCifra = window.SantaCifra || {};
       .toLowerCase();
   }
 
+  /**
+   * Ordena as músicas de um artista da mais famosa para a menos famosa.
+   * 1) as listadas em SC.ARTIST_HITS (artist-hits.js), na ordem da lista;
+   * 2) as demais, por SC.getSongPopularityScore (mais usadas, super hits, nota litúrgica);
+   * 3) empate: ordem original do catálogo.
+   */
+  SC.sortArtistSongsByFame = function sortArtistSongsByFame(name, songs) {
+    const hits = (SC.ARTIST_HITS && SC.ARTIST_HITS[name]) || [];
+    const scoreFn = SC.getSongPopularityScore || (() => 0);
+    const rankOf = (song) => {
+      const t = foldKey(song.title);
+      for (let i = 0; i < hits.length; i++) {
+        if (t.includes(hits[i])) return i;
+      }
+      return hits.length;
+    };
+    return songs
+      .map((song, idx) => ({ song, idx, rank: rankOf(song), score: scoreFn(song) }))
+      .sort((a, b) => (a.rank - b.rank) || (b.score - a.score) || (a.idx - b.idx))
+      .map(x => x.song);
+  };
+
   function findArtistSlug(text) {
     const raw = foldKey(text);
     for (let i = 0; i < ARTIST_KEYWORD_MAP.length; i++) {
@@ -362,6 +384,7 @@ window.SantaCifra = window.SantaCifra || {};
     const { state } = SC;
     if (!name) return;
     state.selectedArtist = name;
+    state.artistSongSort = 'fame';
     SC.switchTab('artists', { history: 'push' });
     window.scrollTo({ top: 0 });
   };
@@ -373,9 +396,12 @@ window.SantaCifra = window.SantaCifra || {};
     dom.artistDetailView.hidden = !showingDetail;
 
     if (showingDetail) {
-      const songs = SC.getArtistSongs(state.selectedArtist)
-        .slice()
-        .sort((a, b) => a.title.localeCompare(b.title, 'pt-BR'));
+      const artistSongs = SC.getArtistSongs(state.selectedArtist).slice();
+      const songs = state.artistSongSort === 'alpha'
+        ? artistSongs.sort((a, b) => a.title.localeCompare(b.title, 'pt-BR'))
+        : SC.sortArtistSongsByFame(state.selectedArtist, artistSongs);
+      dom.artistSongSortFame.classList.toggle('active', state.artistSongSort !== 'alpha');
+      dom.artistSongSortAlpha.classList.toggle('active', state.artistSongSort === 'alpha');
       const coverUrl = SC.getArtistCoverUrl(state.selectedArtist);
       dom.artistDetailAvatar.innerHTML = `
         <img class="artist-avatar-img" src="${coverUrl}" alt="" onerror="this.remove()">
@@ -446,6 +472,13 @@ window.SantaCifra = window.SantaCifra || {};
       const card = e.target.closest('.artist-card');
       if (card) SC.openArtist(card.dataset.artist);
     });
+
+    const setSongSort = (mode) => {
+      state.artistSongSort = mode;
+      SC.renderArtistsView();
+    };
+    dom.artistSongSortFame.addEventListener('click', () => setSongSort('fame'));
+    dom.artistSongSortAlpha.addEventListener('click', () => setSongSort('alpha'));
 
     dom.btnArtistBack.addEventListener('click', () => SC.goBack('artists'));
 

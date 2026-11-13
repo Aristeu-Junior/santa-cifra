@@ -647,6 +647,10 @@
   flex-shrink: 0;
 }
 
+.artist-songs-sort {
+  margin: 0 0 16px;
+}
+
 .artist-hero {
   display: flex;
   align-items: center;

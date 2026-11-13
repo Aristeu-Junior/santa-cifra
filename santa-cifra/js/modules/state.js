@@ -37,6 +37,7 @@ window.SantaCifra.state = {
   artists: [],
   selectedArtist: null,
   artistSort: 'count',
+  artistSongSort: 'fame',
   artistQuery: '',
 
   songIdToSaveInFolder: null,
@@ -114,6 +115,8 @@ window.SantaCifra.initDOM = function initDOM() {
     artistsCountText: byId('artistsCountText'),
     artistSortCount: byId('artistSortCount'),
     artistSortAlpha: byId('artistSortAlpha'),
+    artistSongSortFame: byId('artistSongSortFame'),
+    artistSongSortAlpha: byId('artistSongSortAlpha'),
     artistSearchInput: byId('artistSearchInput'),
     artistsGrid: byId('artistsGrid'),
     btnArtistBack: byId('btnArtistBack'),
