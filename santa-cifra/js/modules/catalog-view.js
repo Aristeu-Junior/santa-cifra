@@ -117,13 +117,9 @@ window.SantaCifra.matchesArtistFilter = function matchesArtistFilter(song, af) {
 
 window.SantaCifra.updateRepertoireDivisionCounters = function updateRepertoireDivisionCounters() {
   const { state, dom } = window.SantaCifra;
-  const total = state.songs.length;
-  const litCount = state.songs.filter(s => (s.repertoireType || 'liturgica') === 'liturgica').length;
-  const popCount = state.songs.filter(s => s.repertoireType === 'popular').length;
-
-  if (dom.countRepAll) dom.countRepAll.textContent = String(total);
-  if (dom.countRepLiturgica) dom.countRepLiturgica.textContent = String(litCount);
-  if (dom.countRepPopular) dom.countRepPopular.textContent = String(popCount);
+  if (dom.countRepAll) { dom.countRepAll.hidden = true; dom.countRepAll.textContent = ''; }
+  if (dom.countRepLiturgica) { dom.countRepLiturgica.hidden = true; dom.countRepLiturgica.textContent = ''; }
+  if (dom.countRepPopular) { dom.countRepPopular.hidden = true; dom.countRepPopular.textContent = ''; }
 
   // A regra litúrgica só aparece quando o usuário escolhe um dos dois tipos.
   if (dom.repertoireRuleBanner && dom.repertoireRuleText) {
@@ -290,8 +286,8 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
 
   const n = filtered.length;
   dom.catalogResultsTitle.textContent = state.searchQuery
-    ? `${n} ${n === 1 ? 'resultado' : 'resultados'} para "${state.searchQuery}"`
-    : `Cancioneiro Católico (${n} cânticos)`;
+    ? `Resultados para "${state.searchQuery}"`
+    : 'Cancioneiro Católico';
 
   const { extra, total } = window.SantaCifra.countActiveFilters();
   dom.filtersCount.hidden = extra === 0;
@@ -354,7 +350,7 @@ window.SantaCifra.renderCatalog = function renderCatalog() {
       const btnMore = document.createElement('button');
       btnMore.type = 'button';
       btnMore.className = 'btn-load-more-catalog';
-      btnMore.innerHTML = `Continuar lista do cancioneiro <span style="opacity: 0.7; font-size: 0.82rem; margin-left: 6px;">(${renderedCount} de ${filtered.length} cânticos)</span>`;
+      btnMore.textContent = 'Continuar lista do cancioneiro';
       btnMore.addEventListener('click', () => {
         renderNextBatch();
       });

@@ -1,7 +1,7 @@
 {
-  "version": "4.1.0",
-  "apkVersionCode": 34,
-  "buildId": "sc-v4.1.0-catalog-3321-songs-v41",
+  "version": "4.1.1",
+  "apkVersionCode": 35,
+  "buildId": "sc-v4.1.1-hide-song-counts-v42",
   "totalSongs": 3321,
   "liturgicalSongs": 693,
   "popularSongs": 2628,
