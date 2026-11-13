@@ -363,6 +363,31 @@
   overflow: hidden;
 }
 
+@media (min-width: 901px) {
+  .songs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .songs-list .song-row {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+  }
+
+  .songs-list .empty-state {
+    grid-column: 1 / -1;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+  }
+}
+
 .song-row {
   display: flex;
   align-items: center;

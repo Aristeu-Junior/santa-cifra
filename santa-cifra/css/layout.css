@@ -35,13 +35,15 @@ html.is-ios #btnDownloadApk {
 }
 
 .header-container {
-  max-width: 1160px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
   min-height: var(--header-h);
-  padding: 10px 24px;
+  padding: 10px clamp(16px, 2.5vw, 40px);
   display: flex;
   align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 10px 16px;
 }
 
 /* Logo */
@@ -90,9 +92,9 @@ html.is-ios #btnDownloadApk {
 }
 
 .search-container {
-  flex: 1;
-  min-width: 0;
-  max-width: 420px;
+  flex: 1 1 260px;
+  min-width: 240px;
+  max-width: 560px;
 }
 
 .search-icon-svg {
@@ -479,9 +481,10 @@ html.is-ios #btnDownloadApk {
 }
 
 .main-content {
-  max-width: 1160px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
-  padding: 28px 24px 72px;
+  padding: 24px clamp(16px, 2.5vw, 40px) 72px;
 }
 
 .catalog-section,
@@ -509,7 +512,28 @@ html.is-ios #btnDownloadApk {
   gap: 12px;
 }
 
-/* ---------- Telas médias ---------- */
+/* ---------- Telas médias (laptops / janelas estreitas) ---------- */
+@media (max-width: 1340px) and (min-width: 901px) {
+  .search-container {
+    max-width: none;
+  }
+  .header-utils {
+    margin-left: auto;
+  }
+  .main-nav {
+    order: 4;
+    flex-basis: 100%;
+    margin-left: 0;
+    padding-top: 6px;
+    border-top: 1px solid var(--border-subtle);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .main-nav::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @media (max-width: 1320px) {
   .util-label {
     display: none;

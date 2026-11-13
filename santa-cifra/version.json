@@ -1,7 +1,7 @@
 {
-  "version": "4.0.0",
-  "apkVersionCode": 29,
-  "buildId": "sc-v4.0.0-complete-artists-catalog-876-v36",
+  "version": "4.0.1",
+  "apkVersionCode": 30,
+  "buildId": "sc-v4.0.1-desktop-fullwidth-search-fix-v37",
   "totalSongs": 876,
   "liturgicalSongs": 368,
   "popularSongs": 508,

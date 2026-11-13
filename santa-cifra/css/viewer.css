@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .song-view-section {
-  max-width: 980px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
 }
 
