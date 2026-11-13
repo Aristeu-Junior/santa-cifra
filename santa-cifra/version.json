@@ -1,10 +1,10 @@
 {
-  "version": "4.1.3",
-  "apkVersionCode": 37,
-  "buildId": "sc-v4.1.3-catholic-artists-audit-v44",
-  "totalSongs": 2096,
+  "version": "4.1.4",
+  "apkVersionCode": 38,
+  "buildId": "sc-v4.1.4-walmir-cifraclub-assisted-scroll-v45",
+  "totalSongs": 2107,
   "liturgicalSongs": 384,
-  "popularSongs": 1712,
+  "popularSongs": 1723,
   "apkDownloadUrl": "https://santa-cifra.surge.sh/santa-cifra.apk",
   "liveUrl": "https://santa-cifra.surge.sh"
 }

@@ -843,3 +843,51 @@
     gap: 6px;
   }
 }
+
+/* ---------- Rolagem Assistida (Modo Karaokê Rítmico) ---------- */
+.cifra-pre .cifra-line {
+  display: inline;
+  transition: opacity 0.22s ease, color 0.18s ease;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-upcoming {
+  opacity: 0.42;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-sung {
+  opacity: 0.62;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-active-line {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-active-chord-line {
+  opacity: 1;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-lyric-line {
+  cursor: pointer;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-active-line .karaoke-word {
+  color: var(--text-secondary);
+  transition: color 0.12s ease, text-shadow 0.12s ease;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-active-line .karaoke-word.is-word-lit {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.cifra-pre.assisted-scroll-active .cifra-line.is-active-line .karaoke-word.is-word-current {
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+.scroll-floating-controller.is-assisted-mode .floating-speed-badge {
+  min-width: 72px;
+  color: var(--accent);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}

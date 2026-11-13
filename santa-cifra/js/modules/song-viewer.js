@@ -5,6 +5,9 @@ window.SantaCifra = window.SantaCifra || {};
 
 window.SantaCifra.openSongView = function openSongView(songOrId, opts) {
   const { state, dom } = window.SantaCifra;
+  if (window.SantaCifra.AssistedScroll && window.SantaCifra.AssistedScroll.isActive()) {
+    window.SantaCifra.AssistedScroll.stop();
+  }
   const song = typeof songOrId === 'string'
     ? state.songs.find(s => s.id === songOrId)
     : songOrId;
@@ -129,13 +132,14 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
   const uniqueChords = T.extractUniqueChords(processedText);
 
   const lines = processedText.split('\n');
-  const htmlLines = lines.map(line => {
+  const htmlLines = lines.map((line, idx) => {
     if (/^\s*\[[^\]]+\]\s*$/.test(line)) {
-      return esc(line).replace(/\[([^\]]+)\]/g, '<span class="section-label">[$1]</span>');
+      const inner = esc(line).replace(/\[([^\]]+)\]/g, '<span class="section-label">[$1]</span>');
+      return `<span class="cifra-line is-section-line" data-cifra-line="${idx}">${inner}</span>`;
     }
 
     if (T.isChordLine(line)) {
-      return line.replace(/(\[[^\]]+\]|\S+)/g, (token) => {
+      const inner = line.replace(/(\[[^\]]+\]|\S+)/g, (token) => {
         if (token.startsWith('[') && token.endsWith(']')) {
           return `<span class="section-label">${esc(token)}</span>`;
         }
@@ -145,8 +149,15 @@ window.SantaCifra.renderCifraAndChords = function renderCifraAndChords() {
         }
         return esc(token);
       });
+      return `<span class="cifra-line is-chord-line" data-cifra-line="${idx}">${inner}</span>`;
     }
-    return esc(line);
+
+    if (!line.trim()) {
+      return `<span class="cifra-line is-blank-line" data-cifra-line="${idx}">${esc(line)}</span>`;
+    }
+
+    const karaokeInner = line.replace(/(\S+)/g, (word) => `<span class="karaoke-word">${esc(word)}</span>`);
+    return `<span class="cifra-line is-lyric-line" data-cifra-line="${idx}">${karaokeInner}</span>`;
   });
 
   dom.cifraPre.innerHTML = htmlLines.join('\n');
@@ -463,17 +474,47 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
   dom.btnPrint.addEventListener('click', () => window.print());
 
   dom.btnBack.addEventListener('click', () => {
+    if (window.SantaCifra.AssistedScroll && window.SantaCifra.AssistedScroll.isActive()) {
+      window.SantaCifra.AssistedScroll.stop();
+    }
     window.SantaCifra.goBack(state.activeQueuePlaylistId ? 'playlists' : 'home');
   });
 
   if (dom.btnAutoScroll) {
     dom.btnAutoScroll.addEventListener('click', () => {
+      if (window.SantaCifra.AssistedScroll && window.SantaCifra.AssistedScroll.isActive()) {
+        window.SantaCifra.AssistedScroll.stop();
+      }
       if (state.isScrolling || (dom.scrollFloatingController && dom.scrollFloatingController.style.display !== 'none')) {
         window.SantaCifra.stopAutoScroll();
         if (dom.scrollFloatingController) dom.scrollFloatingController.style.display = 'none';
       } else {
         window.SantaCifra.startAutoScroll();
       }
+    });
+  }
+
+  if (dom.btnAssistedScroll) {
+    dom.btnAssistedScroll.addEventListener('click', () => {
+      const AS = window.SantaCifra.AssistedScroll;
+      if (!AS) return;
+      if (AS.isActive()) {
+        AS.stop();
+      } else {
+        AS.start();
+      }
+    });
+  }
+
+  if (dom.cifraPre) {
+    dom.cifraPre.addEventListener('click', (e) => {
+      const AS = window.SantaCifra.AssistedScroll;
+      if (!AS || !AS.isActive()) return;
+      if (e.target.closest('.chord-token')) return;
+      const lineEl = e.target.closest('[data-cifra-line]');
+      if (!lineEl) return;
+      const idx = Number(lineEl.getAttribute('data-cifra-line'));
+      if (!Number.isNaN(idx)) AS.seekToLine(idx);
     });
   }
 
@@ -485,12 +526,22 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
 
   if (dom.btnFloatingTop) {
     dom.btnFloatingTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const AS = window.SantaCifra.AssistedScroll;
+      if (AS && AS.isActive()) {
+        AS.restart();
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     });
   }
 
   if (dom.btnFloatingSpeedDec) {
     dom.btnFloatingSpeedDec.addEventListener('click', () => {
+      const AS = window.SantaCifra.AssistedScroll;
+      if (AS && AS.isActive()) {
+        AS.adjustBpm(-4);
+        return;
+      }
       state.scrollSpeed = Math.max(0.3, +(state.scrollSpeed - 0.1).toFixed(1));
       updateSpeedDisplay();
       if (state.isScrolling) window.SantaCifra.startAutoScroll();
@@ -499,6 +550,11 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
 
   if (dom.btnFloatingSpeedInc) {
     dom.btnFloatingSpeedInc.addEventListener('click', () => {
+      const AS = window.SantaCifra.AssistedScroll;
+      if (AS && AS.isActive()) {
+        AS.adjustBpm(4);
+        return;
+      }
       state.scrollSpeed = Math.min(4.0, +(state.scrollSpeed + 0.1).toFixed(1));
       updateSpeedDisplay();
       if (state.isScrolling) window.SantaCifra.startAutoScroll();
@@ -507,6 +563,8 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
 
   if (dom.floatingSpeedBadge) {
     dom.floatingSpeedBadge.addEventListener('click', () => {
+      const AS = window.SantaCifra.AssistedScroll;
+      if (AS && AS.isActive()) return;
       const speeds = [0.5, 1.0, 1.5, 2.0, 3.0];
       const cur = Math.round(state.scrollSpeed * 10) / 10;
       const idx = speeds.indexOf(cur);
@@ -528,6 +586,11 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
 
   if (dom.btnFloatingPlay) {
     dom.btnFloatingPlay.addEventListener('click', () => {
+      const AS = window.SantaCifra.AssistedScroll;
+      if (AS && AS.isActive()) {
+        AS.togglePause();
+        return;
+      }
       if (state.isScrolling) window.SantaCifra.stopAutoScroll();
       else window.SantaCifra.startAutoScroll();
     });
@@ -535,6 +598,8 @@ window.SantaCifra.bindSongViewerEvents = function bindSongViewerEvents() {
 
   if (dom.btnFloatingClose) {
     dom.btnFloatingClose.addEventListener('click', () => {
+      const AS = window.SantaCifra.AssistedScroll;
+      if (AS && AS.isActive()) AS.stop();
       window.SantaCifra.stopAutoScroll();
       if (dom.scrollFloatingController) dom.scrollFloatingController.style.display = 'none';
     });

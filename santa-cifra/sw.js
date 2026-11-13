@@ -1,4 +1,4 @@
-const CACHE_NAME = 'santa-cifra-v44';
+const CACHE_NAME = 'santa-cifra-v45';
 const ASSETS = [
   './',
   './index.html',
@@ -31,7 +31,8 @@ const ASSETS = [
   './js/modules/playlists-view.js?v=42',
   './js/modules/liturgical-calendar.js?v=42',
   './js/modules/parish-manager.js?v=42',
-  './js/modules/song-viewer.js?v=42',
+  './js/modules/assisted-scroll.js?v=44',
+  './js/modules/song-viewer.js?v=44',
   './js/modules/ota-updater.js?v=42',
   './js/app.js?v=42',
   './assets/icon.svg',

@@ -160,6 +160,7 @@ window.SantaCifra.initDOM = function initDOM() {
     btnShareSongWhatsApp: byId('btnShareSongWhatsApp'),
 
     btnAutoScroll: byId('btnAutoScroll'),
+    btnAssistedScroll: byId('btnAssistedScroll'),
     scrollFloatingController: byId('scrollFloatingController'),
     btnFloatingPlay: byId('btnFloatingPlay'),
     btnFloatingTop: byId('btnFloatingTop'),
