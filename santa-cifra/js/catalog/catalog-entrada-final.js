@@ -6208,5 +6208,35 @@ window.SongsCatalogEntradaFinal = [
     "repertoireType": "popular",
     "specialDay": "Louvor",
     "liturgicalNormNote": "Música Católica de Adoração e Louvor: ideal para grupos de oração, adoração e retiros."
+  },
+  {
+    "id": "padre-reginaldo-manzotti-vinde-a-mim",
+    "title": "Vinde a Mim",
+    "composer": "Padre Reginaldo Manzotti",
+    "liturgicalMoment": "Entrada",
+    "liturgicalSeason": "Qualquer",
+    "originalKey": "F#m",
+    "bpm": 76,
+    "timeSignature": "4/4",
+    "rhythmName": "Canto Litúrgico",
+    "rhythmPattern": "↓   ↓ ↑   ↑ ↓ ↑",
+    "isMostUsed": false,
+    "isSimple": false,
+    "chordCount": 11,
+    "youtubeUrl": "",
+    "liturgicalAnalysis": {
+      "status": "Aprovado para Liturgia",
+      "score": 92,
+      "documentRef": "IGMR / Hinário Litúrgico CNBB",
+      "biblicalRef": "",
+      "justification": "Canto litúrgico adequado ao momento ritual indicado.",
+      "repertoireType": "liturgical",
+      "specialDay": "Missa Dominical e Celebrações",
+      "normExplanation": "Canto Litúrgico Próprio para a Santa Missa."
+    },
+    "cifra": "​A                      F#m       Bm\n​Ao olhar a hóstia santa, elevada no\naltar\n\n​                 E\n​Não é apenas pão e vinho, é o Senhor\nA\nque aqui está\n\n​                          A7\n​De joelhos eu me prostro, é Jesus que\nD\nvai passar\n\n​     Dm       A           E\n​É o santo de Israel que faz santo\nA     E/G#\nesse lugar\n\n​        F#m  F#m/E       D        E\n​É o Senhor      que me acolhe com o\nA   E/G#\nseu doce olhar\n\n​        F#m  F#m/E         D     E\n​É o Senhor       que, tão perto, eu\nA     E/G#\nposso tocar\n\n​        F#m F#m/E     D   A/C# Bm E A   Dm A Dm A\n​É o Senhor     que agindo em mim está\n\n​A                        F#m        B\n​Ao olhar a multidão, como ovelhas sem\nm\npastor\n\n​                 E\n​Foi movido em compaixão e o convite\nA\nentão lançou\n\n​\n​Vinde a mim vós, os cansados, e eu\nA7    D\nvos aliviarei\n\n​    Dm         A      E           A\n​O meu fardo tão pesado, ó Senhor, te\nE/G#\nentregarei",
+    "repertoireType": "liturgical",
+    "specialDay": "Missa Dominical e Celebrações",
+    "liturgicalNormNote": "Canto Litúrgico Próprio para a Santa Missa."
   }
 ];
