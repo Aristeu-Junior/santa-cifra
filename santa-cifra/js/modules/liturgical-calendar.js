@@ -295,6 +295,14 @@ window.SantaCifra = window.SantaCifra || {};
       return buildInfo(date, 'Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo', 'branco', 'Solenidade', 'Tempo Comum', '34ª Semana');
     }
 
+    // 3b. Solenidades Fixas (Imaculada Conceição, São José, Anunciação, etc.) têm precedência sobre férias do Advento/Quaresma
+    const earlyFeastKey = `${m + 1}-${d}`;
+    const earlyFixed = FIXED_FEASTS[earlyFeastKey];
+    if (earlyFixed && earlyFixed.rank === 'Solenidade' && dow !== 0 && !isSameDay(date, xmas) && date >= baptism) {
+      const feastSeason = (date >= adventStart && date < xmas) ? 'Advento' : (date > ashWednesday && date < palmSunday) ? 'Quaresma' : 'Tempo Comum';
+      return buildInfo(date, earlyFixed.title, earlyFixed.color, earlyFixed.rank, feastSeason, earlyFixed.rank);
+    }
+
     // 4. Advento
     if (date >= adventStart && date < xmas) {
       const diffDays = Math.floor((date - adventStart) / 86400000);
@@ -306,15 +314,40 @@ window.SantaCifra = window.SantaCifra || {};
       return buildInfo(date, `${getWeekdayName(dow)}-feira da ${advWeek}ª Semana do Advento`, 'roxo', 'Féria', 'Advento', `${advWeek}ª Semana`);
     }
 
-    // 5. Natal e Oitavário
+    // 5. Natal e Oitavário + Tempo do Natal (até o Batismo do Senhor)
     if (isSameDay(date, xmas)) {
       return buildInfo(date, 'Solenidade do Natal do Senhor', 'branco', 'Solenidade', 'Natal', 'Oitava');
     }
     if (date > xmas && date <= new Date(y, 11, 31)) {
-      if (dow === 0 || isSameDay(date, new Date(y, 11, 30))) {
+      const xmasDow = xmas.getDay();
+      const isHolyFamily = xmasDow === 0 ? isSameDay(date, new Date(y, 11, 30)) : dow === 0;
+      if (isHolyFamily) {
         return buildInfo(date, 'Festa da Sagrada Família de Jesus, Maria e José', 'branco', 'Festa', 'Natal', 'Oitava');
       }
+      const decFeast = FIXED_FEASTS[`${m + 1}-${d}`];
+      if (decFeast) {
+        return buildInfo(date, decFeast.title, decFeast.color, decFeast.rank, 'Natal', 'Oitava');
+      }
       return buildInfo(date, `Dia na Oitava do Natal (${d} de Dezembro)`, 'branco', 'Festa', 'Natal', 'Oitava');
+    }
+    if (date < baptism) {
+      if (m === 0 && d === 1) {
+        return buildInfo(date, 'Solenidade de Santa Maria, Mãe de Deus', 'branco', 'Solenidade', 'Natal', 'Oitava');
+      }
+      if (isSameDay(date, epiphany)) {
+        return buildInfo(date, 'Solenidade da Epifania do Senhor', 'branco', 'Solenidade', 'Natal', 'Tempo do Natal');
+      }
+      const janFeast = FIXED_FEASTS[`${m + 1}-${d}`];
+      if (janFeast && dow !== 0) {
+        return buildInfo(date, janFeast.title, janFeast.color, janFeast.rank, 'Natal', 'Tempo do Natal');
+      }
+      if (dow === 0) {
+        return buildInfo(date, '2º Domingo depois do Natal', 'branco', 'Domingo', 'Natal', 'Tempo do Natal');
+      }
+      return buildInfo(date, `${getWeekdayName(dow)}-feira do Tempo do Natal`, 'branco', 'Féria', 'Natal', 'Tempo do Natal');
+    }
+    if (isSameDay(date, baptism)) {
+      return buildInfo(date, 'Festa do Batismo do Senhor', 'branco', 'Festa', 'Natal', 'Tempo do Natal');
     }
 
     // 6. Quaresma
@@ -385,10 +418,9 @@ window.SantaCifra = window.SantaCifra || {};
       const diff = Math.floor((date - baptism) / 86400000);
       return Math.max(1, Math.floor(diff / 7) + 1);
     }
-    // Segunda parte do Tempo Comum (contagem regressiva até Cristo Rei = semana 34)
-    const diffToChristKing = Math.floor((christTheKing - date) / 86400000);
-    const weeksRemaining = Math.floor(diffToChristKing / 7);
-    return Math.max(1, Math.min(34, 34 - weeksRemaining));
+    // Segunda parte do Tempo Comum (Cristo Rei = 34º Domingo; seg-sáb após Cristo Rei = 34ª Semana)
+    const daysAfterChristKing = Math.floor((date - christTheKing) / 86400000);
+    return Math.max(1, Math.min(34, 34 + Math.floor(daysAfterChristKing / 7)));
   }
 
   /**
@@ -592,293 +624,141 @@ window.SantaCifra = window.SantaCifra || {};
    * Curadoria Inteligente de Cantos para o dia
    */
   function getSongSuggestions(date, title, color, season, rank, readings) {
-    const m = date.getMonth() + 1;
-    const d = date.getDate();
+    const y = date.getFullYear();
+    const dayOfYear = Math.floor((date - new Date(y, 0, 0)) / 86400000);
+    const daySeed = y * 366 + dayOfYear;
+    const isLent = season === 'Quaresma' || season === 'Semana Santa';
+    const isEaster = season === 'Páscoa';
+    const isAdvent = season === 'Advento';
+    const isChristmas = season === 'Natal';
+    const titleLower = (title || '').toLowerCase();
+    const isMarian = /(nossa senhora|maria|imaculada|assunção|aparecida|fátima|guadalupe)/i.test(titleLower);
 
-    // 1. São Martinho de Tours (11 de Novembro)
-    if (m === 11 && d === 11) {
-      return [
-        {
-          moment: 'Entrada',
-          songId: 'toda-a-terra-te-exalta',
-          title: 'Toda a Terra Te Adore, ó Senhor do Universo',
-          composer: 'Hinário Litúrgico CNBB (Salmo 65)',
-          why: 'Acolhe a assembleia com o louvor sóbrio e solene à santidade de Deus, expressando a fidelidade apostólica de São Martinho.'
-        },
-        {
-          moment: 'Salmo',
-          songId: 'o-senhor-e-meu-pastor-salmo-23',
-          title: 'O Senhor É Meu Pastor, Nada Me Faltará (Salmo 23)',
-          composer: 'Lecionário Dominical / Frei Fabreti',
-          why: 'Salmo responsorial de confiança inabalável em Deus na caminhada cristã.'
-        },
-        {
-          moment: 'Aclamação',
-          songId: 'aleluia-como-o-pai-me-amou',
-          title: 'Aleluia, Como o Pai Me Amou',
-          composer: 'Padre Zezinho, scj',
-          why: 'Aclama o Evangelho sobre o amor gratuito e o serviço desinteressado ensinado por Jesus.'
-        },
-        {
-          moment: 'Ofertório',
-          songId: 'sabes-senhor-o-que-temos',
-          title: 'Sabes, Senhor, o que Temos É Tão Pouco pra Dar',
-          composer: 'Lindbergh Pires',
-          why: 'Conecta com a célebre passagem de São Martinho dividindo sua capa militar com o pobre mendigo faminto de Cristo.'
-        },
-        {
-          moment: 'Comunhão',
-          songId: 'eu-vim-para-que-todos-tenham-vida',
-          title: 'Eu Vim para que Todos Tenham Vida',
-          composer: 'Pe. José Weber, SVD / CNBB',
-          why: '“Onde está o teu irmão, Eu estou presente nele!” — síntese eucarística do amor ao próximo vivido por São Martinho.'
-        },
-        {
-          moment: 'Final',
-          songId: 'segura-na-mao-de-deus',
-          title: 'Segura na Mão de Deus',
-          composer: 'Nelson Monteiro da Mota',
-          why: 'Envio confortador e perseverante para testemunhar o Evangelho com caridade fraterna no dia a dia.'
-        }
-      ];
-    }
+    const allLiturgical = Array.isArray(SC.state && SC.state.songs)
+      ? SC.state.songs.filter(s => s && s.repertoireType !== 'popular')
+      : [];
 
-    // 2. Santa Cecília (22 de Novembro - Padroeira dos Músicos)
-    if (m === 11 && d === 22) {
-      return [
-        {
-          moment: 'Entrada',
-          songId: 'de-alegria-vibrei-no-senhor',
-          title: 'De Alegria Vibrei no Senhor',
-          composer: 'Pe. Sílvio Milanez / Hinário Litúrgico CNBB',
-          why: 'Canto de júbilo e exultação sagrada entoando os hinos da Igreja em louvor ao Senhor dos exércitos.'
-        },
-        {
-          moment: 'Salmo',
-          songId: 'sonda-me-senhor-salmo-138',
-          title: 'Sonda-me, Senhor, e Me Conhece (Salmo 138)',
-          composer: 'Salmo 138 / Meditativo',
-          why: 'Oração de entrega e louvor íntimo de quem coloca sua voz e talentos inteiramente a serviço de Deus.'
-        },
-        {
-          moment: 'Aclamação',
-          songId: 'aleluia-a-minha-alma-abrirei',
-          title: 'Aleluia, a Minha Alma Abrirei',
-          composer: 'Tradicional Litúrgico',
-          why: 'Aclamação pura que prepara o coração dos fiéis para ouvir a Palavra viva de Deus.'
-        },
-        {
-          moment: 'Ofertório',
-          songId: 'pao-e-vinho-te-apresentamos',
-          title: 'Pão e Vinho Te Apresentamos Nesse Altar',
-          composer: 'Ministério Amor e Adoração / Canção Nova',
-          why: 'Oferta do pão, vinho e dos dons musicais no altar da redenção com profunda reverência.'
-        },
-        {
-          moment: 'Comunhão',
-          songId: 'sacramento-da-comunhao-nelsinho',
-          title: 'Sacramento da Comunhão (Senhor, Quando Te Vejo)',
-          composer: 'Diácono Nelsinho Corrêa / Canção Nova',
-          why: 'Canto místico de contemplação eucarística ideal para músicos e cantores sacros.'
-        },
-        {
-          moment: 'Final',
-          songId: 'seja-luz-anjos-de-resgate',
-          title: 'Seja Luz',
-          composer: 'Anjos de Resgate / Marcelinho',
-          why: 'Canto de bênção e envio para que a música sacra seja farol e luz em meio às trevas.'
-        }
-      ];
-    }
-
-    // 3. Nossa Senhora Aparecida (12 de Outubro)
-    if (m === 10 && d === 12) {
-      return [
-        {
-          moment: 'Entrada',
-          songId: 'dai-nos-a-bencao-o-mae-querida-aparecida',
-          title: 'Dai-nos a Bênção, Ó Mãe Querida (Solenidade de Aparecida)',
-          composer: 'Hino Tradicional do Santuário Nacional',
-          why: 'O hino solene e oficial dos devotos que abre a celebração da Padroeira do Brasil no Santuário Nacional.'
-        },
-        {
-          moment: 'Salmo',
-          songId: 'cantico-de-maria-magnificat-pe-zezinho',
-          title: 'Cântico de Maria (Meu Espírito Exulta de Alegria)',
-          composer: 'Padre Zezinho, scj',
-          why: 'O Magnificat proclamado por Maria louvando a Deus que exalta os humildes e derruba os poderosos.'
-        },
-        {
-          moment: 'Aclamação',
-          songId: 'aleluia-alguem-do-povo-exclama',
-          title: 'Aleluia, Alguém do Povo Exclama',
-          composer: 'Hinário Litúrgico CNBB',
-          why: '“Felizes os que ouvem a Palavra de Deus e a põem em prática!” — a aclamação das festas marianas.'
-        },
-        {
-          moment: 'Ofertório',
-          songId: 'muitos-graos-de-trigo',
-          title: 'Muitos Grãos de Trigo se Tornaram Pão',
-          composer: 'José Acácio Santana',
-          why: 'Apresentação dos frutos do trabalho do povo brasileiro junto ao altar de Deus.'
-        },
-        {
-          moment: 'Comunhão',
-          songId: 'vejam-eu-andei-pelas-vilas',
-          title: 'Vejam, Eu Andei Pelas Vilas',
-          composer: 'Frei Fabreti / Hinário Litúrgico',
-          why: '“Meu Pai me mandou acolher e cuidar!” — união eucarística com os pequeninos e necessitados.'
-        },
-        {
-          moment: 'Final',
-          songId: 'maria-de-nazare-pe-zezinho',
-          title: 'Maria de Nazaré',
-          composer: 'Padre Zezinho, scj',
-          why: 'Canto devocional mariano clássico consagrando o lar e a pátria sob o manto de Nossa Senhora.'
-        }
-      ];
-    }
-
-    // 4. Quaresma / Semana Santa
-    if (season === 'Quaresma' || season === 'Semana Santa') {
-      return [
-        {
-          moment: 'Entrada',
-          songId: 'eis-o-tempo-de-conversao',
-          title: 'Eis o Tempo de Conversão',
-          composer: 'Pe. José Weber, SVD / CNBB',
-          why: 'Canto penitencial clássico que conclama a comunidade ao jejum, oração e retorno sincero a Deus.'
-        },
-        {
-          moment: 'Salmo',
-          songId: 'misericordia-o-senhor-pois-pecamos-salmo-50',
-          title: 'Misericórdia, ó Senhor, pois Pecamos (Salmo 50)',
-          composer: 'Lecionário Quaresmal / CNBB',
-          why: 'O Salmo Miserere oficial dos domingos e ritos da Quaresma.'
-        },
-        {
-          moment: 'Aclamação',
-          songId: 'aleluia-a-minha-alma-abrirei',
-          title: 'Aclamação Quaresmal ao Evangelho',
-          composer: 'Lecionário Romano',
-          why: 'Louvor e honra a Cristo que nos instrui pelo Evangelho rumo à Páscoa.'
-        },
-        {
-          moment: 'Ofertório',
-          songId: 'sabes-senhor-o-que-temos',
-          title: 'Sabes, Senhor, o que Temos É Tão Pouco pra Dar',
-          composer: 'Lindbergh Pires',
-          why: 'A humildade de quem oferece o pouco que tem esperando a graça redentora do Senhor.'
-        },
-        {
-          moment: 'Comunhão',
-          songId: 'eu-vim-para-que-todos-tenham-vida',
-          title: 'Eu Vim para que Todos Tenham Vida',
-          composer: 'Pe. José Weber / CNBB',
-          why: 'A caridade fraterna como fruto indispensável da verdadeira comunhão e penitência.'
-        },
-        {
-          moment: 'Final',
-          songId: 'segura-na-mao-de-deus',
-          title: 'Segura na Mão de Deus',
-          composer: 'Nelson Monteiro da Mota',
-          why: 'Fortalecimento na fé para vencer as tentações do deserto e caminhar com Cristo.'
-        }
-      ];
-    }
-
-    // 5. Páscoa / Pentecostes
-    if (season === 'Páscoa' || season === 'Pentecostes') {
-      return [
-        {
-          moment: 'Entrada',
-          songId: 'cristo-ressuscitou-aleluia-venceu-a-morte',
-          title: 'Cristo Ressuscitou, Aleluia! Venceu a Morte Com Amor',
-          composer: 'Hinário Litúrgico CNBB',
-          why: 'O hino solene da vitória pascal de Cristo sobre o pecado e a morte.'
-        },
-        {
-          moment: 'Salmo',
-          songId: 'enviai-o-vosso-espirito-senhor-salmo-103',
-          title: 'Enviai o Vosso Espírito, Senhor (Salmo 103)',
-          composer: 'Lecionário / Solenidade de Pentecostes',
-          why: 'Súplica do Salmo 103 para renovar a face da terra com os dons do Espírito Santo.'
-        },
-        {
-          moment: 'Aclamação',
-          songId: 'aleluia-como-o-pai-me-amou',
-          title: 'Aleluia Pascal',
-          composer: 'Padre Zezinho, scj',
-          why: 'Júbilo aleluiático que ressoa por toda a oitava e tempo pascal.'
-        },
-        {
-          moment: 'Ofertório',
-          songId: 'muitos-graos-de-trigo',
-          title: 'Muitos Grãos de Trigo se Tornaram Pão',
-          composer: 'José Acácio Santana',
-          why: 'O grão sepultado na terra floresceu em abundância na ressurreição.'
-        },
-        {
-          moment: 'Comunhão',
-          songId: 'estas-entre-nos-tu-es-minha-vida',
-          title: 'Estás Entre Nós (Tu És Minha Vida)',
-          composer: 'Pe. Jonas Abib / Tradicional',
-          why: 'Profissão viva de fé no Ressuscitado que caminha e permanece para sempre com Sua Igreja.'
-        },
-        {
-          moment: 'Final',
-          songId: 'a-barca-tu-te-abeiraste-da-praia',
-          title: 'A Barca (Tu Te Abeiraste da Praia)',
-          composer: 'Cesáreo Gabaráin',
-          why: 'O envio apostólico à beira do lago de Tiberíades para lançar as redes e evangelizar.'
-        }
-      ];
-    }
-
-    // 6. Tempo Comum padrão e Domingos em geral
-    return [
+    const SLOT_DEFS = [
       {
         moment: 'Entrada',
-        songId: 'toda-a-terra-te-exalta',
-        title: 'Toda a Terra Te Adore, ó Senhor do Universo',
-        composer: 'Hinário Litúrgico CNBB (Salmo 65)',
-        why: 'Canto clássico de abertura litúrgica que reúne o povo de Deus no louvor bíblico dos salmos.'
+        match: m => m === 'Entrada' || m === 'Entrada / Acolhida' || m === 'Entrada / Vocacional' || m === 'Entrada / Missões' || m === 'Entrada / Advento' || m === 'Entrada / Natal' || m === 'Natal / Entrada' || m === 'Entrada / Final' || m === 'Entrada / Campanha da Fraternidade',
+        whyDefault: 'Canto processional de abertura que congrega a assembleia para a celebração.'
       },
       {
         moment: 'Salmo',
-        songId: 'o-senhor-e-meu-pastor-salmo-23',
-        title: 'O Senhor É Meu Pastor, Nada Me Faltará (Salmo 23)',
-        composer: 'Lecionário Dominical / Salmo Responsorial',
-        why: 'Meditação cantada sobre a providência amorosa do Bom Pastor que conduz Seu rebanho.'
+        match: m => m === 'Salmo' || m === 'Salmo / Meditação',
+        whyDefault: 'Salmo Responsorial meditativo que responde à Palavra proclamada.'
       },
       {
         moment: 'Aclamação',
-        songId: 'aleluia-como-o-pai-me-amou',
-        title: 'Aleluia, Como o Pai Me Amou',
-        composer: 'Padre Zezinho / Hinário Litúrgico',
-        why: 'Prepara a assembleia para acolher com amor o Evangelho do Reino anunciado por Cristo.'
+        match: m => m === 'Aclamação' || m === 'Aclamação ao Evangelho' || m === 'Aclamação / Comunhão',
+        whyDefault: isLent
+          ? 'Aclamação quaresmal ao Evangelho sem Aleluia, conforme determina a IGMR (n. 62).'
+          : 'Aclamação festiva para acolher a proclamação do Santo Evangelho.'
       },
       {
         moment: 'Ofertório',
-        songId: 'pao-e-vinho-te-apresentamos',
-        title: 'Pão e Vinho Te Apresentamos Nesse Altar',
-        composer: 'Ministério Amor e Adoração / Canção Nova',
-        why: 'Entrega sincera das oferendas do altar em consonância com a liturgia eucarística.'
+        match: m => m === 'Ofertório' || m === 'Oferendas' || m === 'Ofertório / Comunhão',
+        whyDefault: 'Canto de preparação das oferendas (pão e vinho) levadas ao altar.'
       },
       {
         moment: 'Comunhão',
-        songId: 'pelos-prados-e-campinas-verdejantes',
-        title: 'Pelos Prados e Campinas Verdejantes',
-        composer: 'Frei Fabreti / Salmo 23',
-        why: 'Comunhão pacífica no banquete do Senhor que nos prepara uma mesa diante dos irmãos.'
+        match: m => m === 'Comunhão' || m === 'Comunhão / Ação de Graças' || m === 'Comunhão / Semana Santa' || m === 'Comunhão / Lava-Pés' || m === 'Comunhão / Matrimônio' || m === 'Comunhão / Quaresma' || m === 'Acolhida / Comunhão' || m === 'Família / Comunhão' || m === 'Comunhão / Batismo' || m === 'Comunhão / Vocacional' || m === 'Comunhão / Emaús' || m === 'Vocacional / Comunhão' || m === 'Matrimônio / Comunhão' || m === 'Comunhão / Adoração' || m === 'Comunhão / Meditação',
+        whyDefault: 'Canto eucarístico que acompanha a procissão e partilha do Corpo e Sangue de Cristo.'
       },
       {
         moment: 'Final',
-        songId: 'o-povo-de-deus-no-deserto-andava',
-        title: 'O Povo de Deus no Deserto Andava',
-        composer: 'Padre Zezinho / Nelly da Silva Barros',
-        why: 'Envio alegre e perseverante da comunidade em marcha na esperança do Reino.'
+        match: m => m === 'Final' || m === 'Final / Envio' || m === 'Final e Envio' || m === 'Final e Envio / Mariano' || m === 'Ação de Graças',
+        whyDefault: 'Canto de envio missionário que conclui a celebração com louvor.'
       }
+    ];
+
+    const SEASON_LOCKED_RE = /(quaresma|semana santa|cinzas|paixão|páscoa|pascal|advento|natal|epifania|pentecostes|corpus christi|cristo rei|finados|todos os santos|ramos|lava-pés)/i;
+
+    function hasAleluia(song) {
+      const hay = ((song.id || '') + ' ' + (song.title || '') + ' ' + (song.cifra || '')).toLowerCase();
+      return /aleluia|alleluia/.test(hay);
+    }
+
+    function pickForSlot(slot, slotIdx) {
+      if (!allLiturgical.length) return null;
+      let pool = allLiturgical.filter(s => slot.match(s.liturgicalMoment || ''));
+      if (!pool.length) return null;
+
+      // IGMR 62: Nunca sugerir Aleluia na Quaresma / Semana Santa
+      if (isLent) {
+        const noAleluia = pool.filter(s => !hasAleluia(s));
+        if (noAleluia.length) pool = noAleluia;
+      }
+
+      // Filtragem / priorização por Tempo Litúrgico
+      const seasonTag = s => ((s.liturgicalSeason || '') + ' ' + (s.specialDay || '') + ' ' + (s.title || '') + ' ' + (s.liturgicalMoment || '')).toLowerCase();
+      let preferred = [];
+
+      const notSequence = s => !/sequência|lauda sion|victimae paschali|veni sancte spiritus/i.test((s.title || '') + ' ' + (s.id || ''));
+
+      if (isLent) {
+        preferred = pool.filter(s => notSequence(s) && /(quaresma|cinzas|semana santa|paixão|attende domine|louvor e glória|conversão|deserto|salmo 50|salmo 21|salmo 30)/i.test(seasonTag(s)) && !/(natal|páscoa|pentecostes|corpus christi)/i.test(seasonTag(s)));
+      } else if (isEaster) {
+        preferred = pool.filter(s => notSequence(s) && /(páscoa|pascal|ressusc|exsultet|este é o dia)/i.test(seasonTag(s)) && !/(quaresma|cinzas|natal|advento|finados)/i.test(seasonTag(s)));
+      } else if (isAdvent) {
+        preferred = pool.filter(s => notSequence(s) && /(advento|maranatha|da cepa brotou|vigília|vigiai|eis que vem|prepara)/i.test(seasonTag(s)) && !/(pentecostes|corpus christi|páscoa|quaresma)/i.test(seasonTag(s)));
+      } else if (isChristmas) {
+        preferred = pool.filter(s => notSequence(s) && /(natal|epifania|menino|belém|adeste|noite feliz|hoje nasceu)/i.test(seasonTag(s)) && !/(corpus christi|pentecostes|páscoa|quaresma)/i.test(seasonTag(s)));
+      } else if (isMarian) {
+        preferred = pool.filter(s => notSequence(s) && /(maria|nossa senhora|mariano|aparecida|magnificat|serva)/i.test(seasonTag(s)));
+      }
+
+      // Em Tempo Comum padrão, evitar cantos presos a outros tempos fortes (Natal, Quaresma, Páscoa, Advento, Finados)
+      if (!preferred.length) {
+        const neutral = pool.filter(s => {
+          const ls = (s.liturgicalSeason || 'Qualquer');
+          if (ls === 'Qualquer' || ls === 'Tempo Comum' || ls === 'Todas') {
+            return !SEASON_LOCKED_RE.test((s.title || '') + ' ' + (s.specialDay || '')) && notSequence(s);
+          }
+          return false;
+        });
+        preferred = neutral.length ? neutral : pool;
+      }
+
+      const sorted = preferred.slice().sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+      const idx = Math.abs(daySeed * 7 + slotIdx * 37) % sorted.length;
+      const chosen = sorted[idx];
+
+      return {
+        moment: slot.moment,
+        songId: chosen.id,
+        title: chosen.title,
+        composer: chosen.composer || 'Repertório Litúrgico',
+        why: chosen.liturgicalAnalysis && chosen.liturgicalAnalysis.length < 180
+          ? chosen.liturgicalAnalysis
+          : slot.whyDefault
+      };
+    }
+
+    const dynamicSuggestions = SLOT_DEFS.map((slot, idx) => pickForSlot(slot, idx)).filter(Boolean);
+    if (dynamicSuggestions.length >= 4) {
+      return dynamicSuggestions;
+    }
+
+    if (isLent) {
+      return [
+        { moment: 'Entrada', songId: 'eis-o-tempo-de-conversao', title: 'Eis o Tempo de Conversão', composer: 'Pe. José Weber / CNBB', why: 'Abertura sóbria própria do caminho quaresmal.' },
+        { moment: 'Salmo', songId: 'salmo-50-piedade-o-senhor-tende-piedade-quaresma', title: 'Piedade, Ó Senhor, Tende Piedade (Salmo 50)', composer: 'Pe. José Weber / CNBB', why: 'Salmo penitencial de confiança na misericórdia divina.' },
+        { moment: 'Aclamação', songId: 'louvor-e-gloria-a-ti-senhor-quaresma', title: 'Louvor e Glória a Ti, Senhor', composer: 'Lecionário Romano / CNBB', why: 'Aclamação quaresmal sem Aleluia (IGMR 62).' },
+        { moment: 'Ofertório', songId: 'sabes-senhor-o-que-temos', title: 'Sabes, Senhor, o que Temos É Tão Pouco pra Dar', composer: 'Pe. Lindberg Pires', why: 'Oferta humilde da vida junto ao pão e ao vinho.' },
+        { moment: 'Comunhão', songId: 'pelos-prados-e-campinas-verdejantes', title: 'Pelos Prados e Campinas Verdejantes', composer: 'Frei Fabreti / Salmo 23', why: 'Comunhão serena e meditativa.' },
+        { moment: 'Final', songId: 'vitoria-tu-reinaras-o-cruz-tu-nos-salvaras', title: 'Vitória, Tu Reinarás! Ó Cruz, Tu Nos Salvarás!', composer: 'Hinário Litúrgico CNBB', why: 'Envio na esperança da Cruz redentora.' }
+      ];
+    }
+
+    return [
+      { moment: 'Entrada', songId: 'toda-a-terra-te-exalta', title: 'Toda a Terra Te Adore, ó Senhor do Universo', composer: 'Hinário Litúrgico CNBB', why: 'Canto processional de abertura da celebração.' },
+      { moment: 'Salmo', songId: 'salmo-22-o-senhor-e-o-pastor-que-me-conduz-pe-jose-weber', title: 'O Senhor É o Pastor Que Me Conduz (Salmo 22)', composer: 'Pe. José Weber, svd', why: 'Salmo responsorial de confiança no Bom Pastor.' },
+      { moment: 'Aclamação', songId: 'aleluia-como-o-pai-me-amou', title: 'Aleluia, Como o Pai Me Amou', composer: 'Pe. Zezinho / Hinário Litúrgico', why: 'Aclamação festiva ao Santo Evangelho.' },
+      { moment: 'Ofertório', songId: 'sabes-senhor-o-que-temos', title: 'Sabes, Senhor, o que Temos É Tão Pouco pra Dar', composer: 'Pe. Lindberg Pires', why: 'Apresentação das oferendas do pão e do vinho.' },
+      { moment: 'Comunhão', songId: 'pelos-prados-e-campinas-verdejantes', title: 'Pelos Prados e Campinas Verdejantes', composer: 'Frei Fabreti / Salmo 23', why: 'Canto eucarístico da mesa do Senhor.' },
+      { moment: 'Final', songId: 'o-povo-de-deus-no-deserto-andava', title: 'O Povo de Deus no Deserto Andava', composer: 'Pe. Zezinho / CNBB', why: 'Canto de envio da assembleia em missão.' }
     ];
   }
 
